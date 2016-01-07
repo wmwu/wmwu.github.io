@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #F7F8EE;
+}
+#wrap {
+  margin: 0 auto;
+  width: 750px;
+  background-color: #FFFFFF;
+}
+#header {
+  background-color: #F7F8EE;
+}
+#header h1 {
+  overflow: hidden;
+  line-height: 36px;
+  font-family: Georgia, Crimson, serif;
+  font-size: 24px;
+  letter-spacing: 8px;
+  font-weight: lighter;
+  color: #333333;
+  margin: 0 auto;
+  padding: 60px 0 24px 20px;
+}
+#header h2 {
+  overflow: hidden;
+  line-height: 28px;
+  font-family: Arial, Helvetica, 'Open Sans', sans-serif;
+  font-size: 20px;
+  letter-spacing: 6px;
+  font-variant: small-caps;
+  font-weight: lighter;
+  color: #333333;
+  margin: 0 auto;
+  padding: 0 0 24px 16px;
+  width: 720px;
+}
+#nav {
+  overflow: hidden;
+  background-color: #E6E6E6;
+  height: 48px;
+}
+#nav a {
+  display: block;
+  font-family: Arial, Helvetica, 'Open Sans', sans-serif;
+  font-size: 14px;
+  color: #336666;
+  line-height: 28px;
+  letter-spacing: 1px;
+  text-align: left;
+  margin: 10px 0px 0 20px;
+  text-decoration: none;
+}
+#nav a:hover {
+  color: #CC3300;
+  background-color: #E6E6E6;
+  border-bottom: 1px solid #CC3300;
+}
+#nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+#nav li {
+  display: block;
+  float: left;
+}
+#main {
+  overflow: hidden;
+  background-color: #FFFFFF;
+  width: 510px;
+  float: right;
+}
+#main h2 {
+  margin: 42px 0 24px 60px;
+  text-align: left;
+  color: #CC3300;
+  line-height: 100%;
+  font-family: Georgia, Crimson, serif;
+  font-size: 22px;
+  font-weight: 100;
+  letter-spacing: 2px;
+}
+#main p {
+  padding: 0 60px 0 60px;
+  margin: 12px auto;
+  font-family: Arial, Helvetica, "Open Sans", sans-serif;
+  font-size: 15px;
+  letter-spacing: 0;
+  line-height: 180%;
+  color: #333333;
+}
+#sidebar {
+  border-bottom: 1px solid white;
+  background-color: #E6E6E6;
+  height: 420px;
+  width: 240px;
+  float: left;
+}
+#sidebar p {
+  font-family: Georgia, Crimson, serif;
+  font-size: 15px;
+  letter-spacing: 0;
+  line-height: 24px;
+  color: #333333;
+  text-align: left;
+  padding: 0 24px 0 24px;
+  margin: 18px auto;
+}
+#footer {
+  background-color: #FFFFFF;
+  clear: both;
+  height: 0px;
+}
+#main p.quote {
+  width: 200px;
+  margin: 0 60px 0 auto;
+}
