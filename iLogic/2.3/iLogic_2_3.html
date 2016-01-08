@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Three Operations</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../iLogic.css" type="text/css">
+<script type="text/javascript" src="to.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+<div id="hwrap">
+  <div id="hwrap2">
+    <div id="header">
+      <h1>iLogic</h1>
+    </div>
+  </div>
+</div>
+
+<div id="nwrap">
+  <div id="nwrap2">
+    <div id="nav">
+      <ul>
+        <li><a href="javascript:;" onclick="window.location.assign('../../index.html');">HOME</a></li>
+        <li><a href="javascript:;" onclick="window.location.assign('../table-of-contents.html');">TABLE OF CONTENTS</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div id="mwrap">
+  <div id="mwrap2">
+    <div id="main">
+<!--    <span class="pdf"><a href="javascript:;" onclick="window.open('iLogic_2_3.pdf');return false;">PDF</a></span>
+//-->
+
+    <h2>2.3 Three Operations</h2>
+    <p>A categorical statement such as</p>
+
+    <p class="display">Some employed workers are not people with health insurance.</p>
+
+    <p>can be rewritten as</p>
+
+    <p class="display">
+      Some people without health insurance are <em>not</em> <em>un</em>employed
+      workers.</p>
+
+    <p>to counter the bias that people without health insurance are people
+    without jobs. The logic rules that enable us to do so are called the three
+    transformation rules or operations. They are <strong>conversion</strong>,
+    <strong>contraposition</strong> and <strong>obversion</strong>. When applied
+    to the right kinds of statements, they yield new statements that are
+    <strong>logically equivalent</strong> to the original statements.</p>
+
+    <p>Two statements are logically equivalent if they <em>necessarily</em>
+    have the same truth value. That is, if one of them is true, the other must
+    also be true, and if one of them is false, the other must also be false. We
+    can illustrate that two statements <em>p</em> and <em>q</em> are logically
+    equivalent in terms of the truth table by ruling out the second and the
+    third cases.</p>
+
+    <div style="width: 520px; height: 200px; border: none; margin: 0 0 0
+    48px"> <iframe class="sc80" src="TT_Equivalence.html" style="width: 750px;
+    height: 300px; border: none; ; overflow: hidden"></iframe> </div>
+
+    <h3 id="Conversion">2.3.1 Conversion</h3>
+
+    <p>The operation conversion moves the subject term to the predicate term
+    position, and moves the predicate term to the subject term position. In
+    short, it switches the subject and the predicate terms. Click on the
+    Conversion button below to see what the operation does when applied to the
+    <span class="var2"><strong>A</strong></span> statement.</p>
+
+    <div style="width: 320px; height: 260px; border: none; margin: 0 0 0
+    144px"> <iframe class="sc90" src="Conversion.html" style="width: 600px;
+    height: 480px; border: none; ; overflow: hidden"></iframe> </div>
+
+    <p>Applying an operation to a statement would yield a new statement. To
+    see whether the new statement is logically equivalent to the original
+    statement, we can use the Venn Diagrams. The following diagram shows how
+    sets, their complements and the intersections are represented as different
+    colored areas. To see the areas, move the cursor on top of each term.</p>
+
+    <div style="width: 480px; height: 320px; border: none; margin: 0 0 0
+    72px"> <iframe class="sc80" src="Sets_Complements_Intersections.html"
+    style="width: 720px; height: 500px; border: none; overflow:
+    hidden"></iframe> </div>
+
+    <p>Applying conversion to <span
+    class="var2"><strong>E</strong></span> and <span
+    class="var2"><strong>I</strong></span> statements will
+    yield logically equivalent statements. From the Venn Diagrams we can see
+    clearly why they are equivalent. Notice that the diagrams on the right-hand
+    side are the mirror images of the ones on the left.</p>
+
+    <div style="width: 480px; height: 320px; border: none; margin: 0 0 0
+    72px"> <iframe class="sc80" src="Conversion_EI.html"
+    style="width: 720px; height: 500px; border: none; overflow:
+    hidden"></iframe> </div>
+
+    <p>For example, if we apply conversion to the <span
+    class="var2"><strong>E</strong></span> statement</p>
+
+    <p class="display"> No ravens are white birds.</p>
+
+    <p>we would get a logically equivalent statement</p>
+
+    <p class="display"> No white birds are ravens.</p>
+
+    <p>Applying conversion to the <span class="var2"><strong>I</strong></span>
+    statement</p>
+
+    <p class="display"> Some swans are white birds.</p>
+
+    <p>would yield a logically equivalent statement</p>
+
+    <p class="display"> Some white birds are swans.</p>
+
+    <p>However, when applied to the <span
+    class="var2"><strong>A</strong></span> and <span
+    class="var2"><strong>O</strong></span> statements, conversion does not
+    yield logically equivalent statements.</p>
+
+    <div style="width: 480px; height: 320px; border: none; margin: 0 0 0
+    72px"> <iframe class="sc80" src="Conversion_AO.html"
+    style="width: 720px; height: 500px; border: none; overflow:
+    hidden"></iframe> </div>
+
+    <p>In every pair, the Venn diagrams are not mirror images of each other.</p>
+
+    <p>Applying conversion to the <span class="var2"><strong>A</strong></span>
+    statement</p>
+
+    <p class="display"> All tigers are mammals.</p>
+
+    <p>would result in a statement</p>
+
+    <p class="display"> All mammals are tigers.</p>
+
+    <p>which is false, and thus cannot be logically equivalent to the original
+    statement. It is also evident that the <span
+    class="var2"><strong>O</strong></span> statement</p>
+
+    <p class="display"> Some mammals are not whales.</p>
+
+    <p>is not logically equivalent to</p>
+
+    <p class="display"> Some whales are not mammals.</p>
+
+    <h3 id="Contraposition">2.3.2 Contraposition</h3>
+
+    <p>The operation contraposition has two steps:</p>
+		<ol class="display">
+			<li>Like conversion, it switches the subject and the predicate terms;</li>
+			<li>Afterwards, it replaces the two terms with their complements.</li>
+		</ol>
+
+		<p>Click on the Contraposition button below to see what the operation
+		does when applied to the <span class="var2"><strong>A</strong></span>
+		statement.</p>
+
+    <div style="width: 360px; height: 260px; border: none; margin: 0 0 0
+    108px"> <iframe class="sc90" src="Contraposition.html" style="width: 600px;
+    height: 480px; border: none; ; overflow: hidden"></iframe> </div>
+
+    <p>Applying contraposition to <span
+    class="var2"><strong>A</strong></span> and <span
+    class="var2"><strong>O</strong></span> statements will
+    yield logically equivalent statements. Again, this can be seen by comparing
+    the Venn diagrams.</p>
+
+    <div style="width: 480px; height: 320px; border: none; margin: 0 0 0
+    72px"> <iframe class="sc80" src="Contraposition_AO.html"
+    style="width: 800px; height: 500px; border: none; overflow:
+    hidden"></iframe> </div>
+
+    <p>Contraposition would transform the <span
+    class="var2"><strong>A</strong></span> statement</p>
+
+    <p class="display"> All animals that can fly are animals with wings.</p>
+
+    <p>into</p>
+
+    <p class="display"> All animals without wings are animals that cannot
+    fly.</p>
+
+    <p>To see more clearly the operation at work, we can use &ldquo;<span
+    class="var">F</span>&rdquo; for &ldquo;animals that can fly&rdquo; and
+    &ldquo;<span class="var">W</span>&rdquo; for &ldquo;animals with
+    wings.&rdquo; The term &ldquo;animals that cannot fly&rdquo; would then be
+    &ldquo;<span class="var">non-F</span>,&rdquo; and &ldquo;animals without
+    wings&rdquo; would be &ldquo;<span class="var">non-W</span>.&rdquo;</p>
+
+    <p class="display"> All <span class="var2"><em>F</em></span> are <span
+    class="var2"><em>W</em></span>. = All <em><span
+    class="var">non-W</span></em> are <em><span
+    class="var">non-F</span></em>.</p>
+
+    <p>This example illustrates how contraposition helps us recognize that two
+    sentences are logically equivalent. The pair of <span
+    class="var2"><strong>O</strong></span> statements that we
+    saw at the beginning of this section</p>
+
+    <p class="display"> Some employed workers are not people with health
+    insurance. (Some <span class="var2"><em>E</em></span> are not <span
+    class="var2"><em>H</em></span>.)</p>
+
+    <p>and</p>
+
+    <p class="display"> Some people without health insurance are not unemployed
+    workers. (Some <span class="var" style="white-space: nowrap">non-H</span>
+    are not <span class="var">non-E</span>.)</p>
+
+    <p>are also logically equivalent because of contraposition. So are the
+    following two <span class="var2"><strong>O</strong></span>
+    statements</p>
+
+    <p class="display">Some useful gadgets are not successful inventions. (Some
+    <span class="var">U</span> are not <span class="var">S</span>.)</p>
+
+    <p class="display">= Some unsuccessful inventions are not useless gadgets.
+    (Some <span class="var">non-S</span> are not <span style="white-space:
+    nowrap"><span class="var">non-U</span>.)</span></p>
+
+    <p>When contraposition is applied to the <span
+    class="var2"><strong>E</strong></span> and <span
+    class="var2"><strong>I</strong></span> statements, the new
+    statements would not be logically equivalent to the original ones.
+    We can see this clearly from their Venn Diagrams.</p>
+
+    <div style="width: 480px; height: 320px; border: none; margin: 0 0 0
+    72px"> <iframe class="sc80" src="Contraposition_EI.html"
+    style="width: 720px; height: 500px; border: none; overflow:
+    hidden"></iframe> </div>
+
+    <p>For example, these two <span class="var2"><strong>E</strong></span>
+    statements are not logically equivalent:</p>
+
+    <p class="display">No dead organisms are immortal beings. (No <span
+      class="var">non-L</span> are <span class="var">non-M</span>.)</p>
+
+    <p class="display">≠ No mortal beings are living organisms. (No <span
+      class="var">M</span> are <span   class="var">L</span>.)</p>
+
+    <p> Nor are the following pair of <span
+    class="var2"><strong>I</strong></span> statements:</p>
+
+    <p class="display">Some persuasive arguments are illogical. (Some <span
+      class="var">P</span> are <span class="var">non-L</span>.)</p>
+
+    <p class="display">≠ Some logical arguments are unpersuasive. (Some <span
+      class="var">L</span> are <span class="var">non-P</span>.)</p>
+
+    <h3 id="Obversion">2.3.3 Obversion</h3>
+
+    <p>The operation obversion is quite different from the previous two. It
+    also has two steps:</p>
+
+    <ol class="display">
+      <li>Change the quality of the statement;</li>
+      <li>Replace the predicate term with its complement.</li>
+    </ol>
+
+    <p>The first step means changing an affirmative statement to a negative
+    statement, or a negative statement to an affirmative one. So if the
+    original statement is an <span class="var2"><strong>A</strong></span>
+    statement, whose quality is affirmative, obversion would turn it into
+    an <span class="var2"><strong>E</strong></span> statement, whose quality is
+    negative. Next, the predicate term <span class="var">P</span> is replaced
+    with its complement <span class="var">non-P</span>. Click on the Obversion
+    button to see the resulting <span class="var2"><strong>E</strong></span>
+    statement.</p>
+
+    <div style="width: 360px; height: 260px; border: none; margin: 0 0 0
+    164px"> <iframe class="sc90" src="Obversion.html" style="width: 600px;
+    height: 480px; border: none; ; overflow: hidden"></iframe> </div>
+
+    <p>The quality of the <span class="var2"><strong>O</strong></span>
+    statement is negative. When we apply obversion to an <span
+    class="var2"><strong>O</strong></span> statement, we would turn it into an
+    <span class="var2"><strong>I</strong></span> statement, whose quality is
+    affirmative. After replacing the predicate term <span class="var">P</span>
+    with <span class="var">non-P</span>, we would then have Some <span
+    class="var">S</span> are <span class="var">non-P</span>.</p>
+
+    <div style="width: 360px; height: 260px; border: none; margin: 0 0 0
+    154px"> <iframe class="sc90" src="Obversion2.html" style="width: 600px;
+    height: 480px; border: none; ; overflow: hidden"></iframe> </div>
+
+		<p>Applying obversion to categorical statements will always yield logically
+		equivalent statements.</p>
+
+    <p class="display">All <span class="var">S</span> are <span
+      class="var">P</span>. = No <span class="var">S</span> are <span
+      class="var">non-P</span>.</p>
+
+    <p class="display">No <span class="var">S</span> are <span
+      class="var">P</span>. = All <span
+      class="var">S</span> are <span
+      class="var">non-P</span>.</p>
+
+      <p class="display">Some <span class="var">S</span> are <span
+      class="var">P</span>. = Some <span
+      class="var">S</span> are not <span
+      class="var">non-P</span>.</p>
+
+      <p class="display">Some <span class="var">S</span> are not
+      <span class="var">P</span>. = Some <span
+      class="var">S</span> are <span
+      class="var">non-P</span>.</p>
+
+
+    <p>As we can see in the following examples, obversion is fairly common in
+    daily language. Even though the jargon &ldquo;obversion&rdquo; may be new to
+    you, you have used it countless times before.</p>
+
+    <p class="display">No genetic diseases are contagious. (No D are C.)</p>
+		<p class="display">= All genetic diseases are non-contagious. (All D are
+		non-C.)</p>
+
+    <p class="display">Some medical tests are not accurate. (Some T are not
+    A.)</p>
+		<p class="display">= Some medical tests are inaccurate. (Some T are
+		non-A.)</p>
+
+    <p class="display">Some people are irrational. (Some P are non-R.)</p>
+		<p class="display"> = Some people are not rational. (Some P are not R.)</p>
+
+    <p>After an operation is applied, if the new statement is logically
+    equivalent to the original one, then the two must have the same truth
+    value. But if they are not logically equivalent, then the new statement
+    does not have to share the same truth value with the original statement.
+    This means that the truth value of the new statement may or may not be the
+    same as the truth value of the original statement. As a result, the truth
+    value of the new statement would be undetermined.</p>
+
+  <h3 id="Ex231">Exercise 2.3</h3>
+
+  <ol class="ex_sec">
+    <li>Give the new statement or determine which operation is used to derive
+    the new statement. Then decide whether the new statement is true (<span
+    class="var2">T</span>), false (<span class="var2">F</span>) or
+    undetermined (<span class="var2">?</span>).</li>
+  </ol>
+
+    <table style="margin: 12px 24px 0 43px;">
+    <tbody>
+			<tr>
+			  <td style="text-align:right;">&nbsp;</td>
+			  <td style="vertical-align:bottom"><div style="width: 210px;
+			  font-weight: bold;">Given Statement (<span
+			  class="var2">T/F</span>)</div></td>
+			  <td style="vertical-align:bottom"><div style="width: 145px; font-weight:
+			  bold;">Operation</div></td>
+			  <td style="vertical-align:bottom"><div style="width: 250px;
+			  font-weight: bold;">New Statement</div></td>
+			  <td style="vertical-align:bottom"><div style="width: 60px; font-weight:
+			  bold;"><span class="var2">T/F/?</span></div></td>
+			</tr>
+			<tr>
+			  <td style="text-align:right;">1.</td>
+			  <td style="height: 36px">All B are non-C. (<span class="var2">T</span>)</td>
+			  <td>Conversion</td>
+			  <td><input type="text" id="to23101s" name="to23101s"
+			  class="form231"><img class="mark231c" id="to23101sc" src="mc.png"><img
+			  class="mark231e" id="to23101se" src="me.png"></td>
+			  <td><input type="text" id="to23101v" name="to23101v"
+			  class="form232"><img class="mark231c" id="to23101vc" src="mc.png"><img
+			  class="mark231e" id="to23101ve" src="me.png"></td>
+			</tr>
+			<tr>
+			  <td style="text-align:right;">2.</td>
+			  <td style="height: 36px">Some M are not non-A. (<span class="var2">F</span>)</td>
+			  <td>Contraposition</td>
+			  <td><input type="text" id="to23102s" name="to23102s"
+			  class="form231"><img class="mark231c" id="to23102sc" src="mc.png"><img
+			  class="mark231e" id="to23102se" src="me.png"></td>
+			  <td><input type="text" id="to23102v" name="to23102v"
+			  class="form232"><img class="mark231c" id="to23102vc" src="mc.png"><img
+			  class="mark231e" id="to23102ve" src="me.png"></td>
+			</tr>
+			<tr>
+			  <td style="text-align:right;">3.</td>
+			  <td style="height: 36px">No H are non-G. (<span class="var2">F</span>)</td>
+			  <td>Conversion</td>
+			  <td><input type="text" id="to23103s" name="to23103s"
+			  class="form231"><img class="mark231c" id="to23103sc" src="mc.png"><img
+			  class="mark231e" id="to23103se" src="me.png"></td>
+			  <td><input type="text" id="to23103v" name="to23103v"
+			  class="form232"><img class="mark231c" id="to23103vc" src="mc.png"><img
+			  class="mark231e" id="to23103ve" src="me.png"></td>
+			</tr>
+			<tr>
+			  <td style="text-align:right;">4.</td>
+			  <td style="height: 36px">Some non-K are H. (<span class="var2">T</span>)</td>
+			  <td>Obversion</td>
+			  <td><input type="text" id="to23104s" name="to23104s"
+			  class="form231"><img class="mark231c" id="to23104sc" src="mc.png"><img
+			  class="mark231e" id="to23104se" src="me.png"></td>
+			  <td><input type="text" id="to23104v" name="to23104v"
+			  class="form232"><img class="mark231c" id="to23104vc" src="mc.png"><img
+			  class="mark231e" id="to23104ve" src="me.png"></td>
+			</tr>
+			<tr>
+			  <td style="text-align:right;">5.</td>
+			  <td style="height: 36px">No non-R are non-D. (<span class="var2">T</span>)</td>
+			  <td>Contraposition</td>
+			  <td><input type="text" id="to23105s" name="to23105s"
+			  class="form231"><img class="mark231c" id="to23105sc" src="mc.png"><img
+			  class="mark231e" id="to23105se" src="me.png"></td>
+			  <td><input type="text" id="to23105v" name="to23105v"
+			  class="form232"><img class="mark231c" id="to23105vc" src="mc.png"><img
+			  class="mark231e" id="to23105ve" src="me.png"></td>
+			</tr>
+			<tr>
+			  <td style="text-align:right;">6.</td>
+			  <td style="height: 36px">All non-N are W. (<span class="var2">F</span>)</td>
+			  <td>Obversion</td>
+			  <td><input type="text" id="to23106s" name="to23106s"
+			  class="form231"><img class="mark231c" id="to23106sc" src="mc.png"><img
+			  class="mark231e" id="to23106se" src="me.png"></td>
+			  <td><input type="text" id="to23106v" name="to23106v"
+			  class="form232"><img class="mark231c" id="to23106vc" src="mc.png"><img
+			  class="mark231e" id="to23106ve" src="me.png"></td>
+			</tr>
+			<tr>
+			  <td style="text-align:right;">7.</td>
+			  <td style="height: 36px">Some S are not non-E. (<span class="var2">T</span>)</td>
+			  <td>Obversion</td>
+			  <td><input type="text" id="to23107s" name="to23107s"
+			  class="form231"><img class="mark231c" id="to23107sc" src="mc.png"><img
+			  class="mark231e" id="to23107se" src="me.png"></td>
+			  <td><input type="text" id="to23107v" name="to23107v"
+			  class="form232"><img class="mark231c" id="to23107vc" src="mc.png"><img
+			  class="mark231e" id="to23107ve" src="me.png"></td>
+			</tr>
+			<tr>
+			  <td style="text-align:right;">8.</td>
+			  <td style="height: 36px">All non-P are G. (<span class="var2">T</span>)</td>
+			  <td>Contraposition</td>
+			  <td><input type="text" id="to23108s" name="to23108s"
+			  class="form231"><img class="mark231c" id="to23108sc" src="mc.png"><img
+			  class="mark231e" id="to23108se" src="me.png"></td>
+			  <td><input type="text" id="to23108v" name="to23108v"
+			  class="form232"><img class="mark231c" id="to23108vc" src="mc.png"><img
+			  class="mark231e" id="to23108ve" src="me.png"></td>
+			</tr>
+			<tr>
+			  <td style="text-align:right;">9.</td>
+			  <td style="height: 36px">No D are non-R. (<span class="var2">F</span>)</td>
+			  <td>Contraposition</td>
+			  <td><input type="text" id="to23109s" name="to23109s"
+			  class="form231"><img class="mark231c" id="to23109sc" src="mc.png"><img
+			  class="mark231e" id="to23109se" src="me.png"></td>
+			  <td><input type="text" id="to23109v" name="to23109v"
+			  class="form232"><img class="mark231c" id="to23109vc" src="mc.png"><img
+			  class="mark231e" id="to23109ve" src="me.png"></td>
+			</tr>
+			<tr>
+			  <td style="text-align:right;">10.</td>
+			  <td style="height: 36px">Some non-S are not T. (<span class="var2">F</span>)</td>
+			  <td>Obversion</td>
+			  <td><input type="text" id="to23110s" name="to23110s"
+			  class="form231"><img class="mark231c" id="to23110sc" src="mc.png"><img
+			  class="mark231e" id="to23110se" src="me.png"></td>
+			  <td><input type="text" id="to23110v" name="to23110v"
+			  class="form232"><img class="mark231c" id="to23110vc" src="mc.png"><img
+			  class="mark231e" id="to23110ve" src="me.png"></td>
+			</tr>
+			<tr>
+			  <td style="text-align:right;">11.</td>
+			  <td style="height: 36px">Some U are not L. (<span class="var2">T</span>)</td>
+			  <td><input type="text" id="to23111o" name="to23111o"
+			  class="form231o"><img class="mark231c" id="to23111oc" src="mc.png"><img
+			  class="mark231e" id="to23111oe" src="me.png"></td>
+			  <td>Some U are non-L.</td>
+			  <td><input type="text" id="to23111v" name="to23111v"
+			  class="form232"><img class="mark231c" id="to23111vc" src="mc.png"><img
+			  class="mark231e" id="to23111ve" src="me.png"></td>
+			</tr>
+			<tr>
+			  <td style="text-align:right;">12.</td>
+			  <td style="height: 36px">No K are non-M. (<span class="var2">F</span>)</td>
+			  <td><input type="text" id="to23112o" name="to23112o"
+			  class="form231o"><img class="mark231c" id="to23112oc" src="mc.png"><img
+			  class="mark231e" id="to23112oe" src="me.png"></td>
+			  <td>No non-M are K.</td>
+			  <td><input type="text" id="to23112v" name="to23112v"
+			  class="form232"><img class="mark231c" id="to23112vc" src="mc.png"><img
+			  class="mark231e" id="to23112ve" src="me.png"></td>
+			</tr>
+			<tr>
+			  <td style="text-align:right;">13.</td>
+			  <td style="height: 36px">All non-B are A. (<span class="var2">T</span>)</td>
+			  <td><input type="text" id="to23113o" name="to23113o"
+			  class="form231o"><img class="mark231c" id="to23113oc" src="mc.png"><img
+			  class="mark231e" id="to23113oe" src="me.png"></td>
+			  <td>No non-B are non-A.</td>
+			  <td><input type="text" id="to23113v" name="to23113v"
+			  class="form232"><img class="mark231c" id="to23113vc" src="mc.png"><img
+			  class="mark231e" id="to23113ve" src="me.png"></td>
+			</tr>
+			<tr>
+			  <td style="text-align:right;">14.</td>
+			  <td style="height: 36px">Some F are non-D. (<span class="var2">F</span>)</td>
+			  <td><input type="text" id="to23114o" name="to23114o"
+			  class="form231o"><img class="mark231c" id="to23114oc" src="mc.png"><img
+			  class="mark231e" id="to23114oe" src="me.png"></td>
+			  <td>Some D are non-F.</td>
+			  <td><input type="text" id="to23114v" name="to23114v"
+			  class="form232"><img class="mark231c" id="to23114vc" src="mc.png"><img
+			  class="mark231e" id="to23114ve" src="me.png"></td>
+			</tr>
+			<tr>
+			  <td style="text-align:right;">15.</td>
+			  <td style="height: 36px">Some non-R are A. (<span class="var2">F</span>)</td>
+			  <td><input type="text" id="to23115o" name="to23115o"
+			  class="form231o"><img class="mark231c" id="to23115oc" src="mc.png"><img
+			  class="mark231e" id="to23115oe" src="me.png"></td>
+			  <td>Some non-R are not non-A.</td>
+			  <td><input type="text" id="to23115v" name="to23115v"
+			  class="form232"><img class="mark231c" id="to23115vc" src="mc.png"><img
+			  class="mark231e" id="to23115ve" src="me.png"></td>
+			</tr>
+			<tr>
+			  <td style="text-align:right;">16.</td>
+			  <td style="height: 36px">Some C are not non-H. (<span class="var2">F</span>)</td>
+			  <td><input type="text" id="to23116o" name="to23116o"
+			  class="form231o"><img class="mark231c" id="to23116oc" src="mc.png"><img
+			  class="mark231e" id="to23116oe" src="me.png"></td>
+			  <td>Some non-H are not C.</td>
+			  <td><input type="text" id="to23116v" name="to23116v"
+			  class="form232"><img class="mark231c" id="to23116vc" src="mc.png"><img
+			  class="mark231e" id="to23116ve" src="me.png"></td>
+			</tr>
+			<tr>
+			  <td style="text-align:right;">17.</td>
+			  <td style="height: 36px">All T are non-S. (<span class="var2">F</span>)</td>
+			  <td><input type="text" id="to23117o" name="to23117o"
+			  class="form231o"><img class="mark231c" id="to23117oc" src="mc.png"><img
+			  class="mark231e" id="to23117oe" src="me.png"></td>
+			  <td>All S are non-T.</td>
+			  <td><input type="text" id="to23117v" name="to23117v"
+			  class="form232"><img class="mark231c" id="to23117vc" src="mc.png"><img
+			  class="mark231e" id="to23117ve" src="me.png"></td>
+			</tr>
+			<tr>
+			  <td style="text-align:right;">18.</td>
+			  <td style="height: 36px">Some non-P are G. (<span class="var2">F</span>)</td>
+			  <td><input type="text" id="to23118o" name="to23118o"
+			  class="form231o"><img class="mark231c" id="to23118oc" src="mc.png"><img
+			  class="mark231e" id="to23118oe" src="me.png"></td>
+			  <td>Some non-P are not non-G.</td>
+			  <td><input type="text" id="to23118v" name="to23118v"
+			  class="form232"><img class="mark231c" id="to23118vc" src="mc.png"><img
+			  class="mark231e" id="to23118ve" src="me.png"></td>
+			</tr>
+			<tr>
+			  <td style="text-align:right;">19.</td>
+			  <td style="height: 36px">No non-D are M. (<span class="var2">F</span>)</td>
+			  <td><input type="text" id="to23119o" name="to23119o"
+			  class="form231o"><img class="mark231c" id="to23119oc" src="mc.png"><img
+			  class="mark231e" id="to23119oe" src="me.png"></td>
+			  <td>No non-M are D.</td>
+			  <td><input type="text" id="to23119v" name="to23119v"
+			  class="form232"><img class="mark231c" id="to23119vc" src="mc.png"><img
+			  class="mark231e" id="to23119ve" src="me.png"></td>
+			</tr>
+			<tr>
+			  <td style="text-align:right;">20.</td>
+			  <td style="height: 36px">All B are non-C. (<span class="var2">T</span>)</td>
+			  <td><input type="text" id="to23120o" name="to23120o"
+			  class="form231o"><img class="mark231c" id="to23120oc" src="mc.png"><img
+			  class="mark231e" id="to23120oe" src="me.png"></td>
+			  <td>All non-C are B.</td>
+			  <td><input type="text" id="to23120v" name="to23120v"
+			  class="form232"><img class="mark231c" id="to23120vc" src="mc.png"><img
+			  class="mark231e" id="to23120ve" src="me.png"></td>
+			</tr>
+	  </tbody>
+	</table>
+
+	<button type="button" class="ca33" id="chans1" onclick="checkAnswers1();">Check Answers</button>
+
+    <ol id="Ex232" class="ex_sec" start="2">
+      <li>Suppose you are stranded on a desert island. In searching for foods,
+      you discover that some bright-colored fungi on the island are edible. Use
+      three operations and the logical relations in the Squares of Opposition
+      to infer whether the following sentences are true (<span
+      class="var2">T</span>), false (<span class="var2">F</span>) or
+      undetermined (<span class="var2">?</span>).</li>
+    </ol>
+    <ol class="ex_q23">
+      <li><img class="mark232c" id="to2321c" src="mc.png"><img class="mark232e"
+      id="to2321e" src="me.png"><input type="text" id="to2321" name="to2321"
+      class="form232">
+			All bright-colored fungi on the island are edible.</li>
+      <li><img class="mark232c" id="to2322c" src="mc.png"><img class="mark232e"
+      id="to2322e" src="me.png"><input type="text" id="to2322" name="to2322"
+      class="form232">
+      Some bright-colored fungi on the island are not edible.</li>
+      <li><img class="mark232c" id="to2323c" src="mc.png"><img class="mark232e"
+      id="to2323e" src="me.png"><input type="text" id="to2323" name="to2323"
+      class="form232">
+      Some edible fungi on the island are bright-colored.</li>
+      <li><img class="mark232c" id="to2324c" src="mc.png"><img class="mark232e"
+      id="to2324e" src="me.png"><input type="text" id="to2324" name="to2324"
+      class="form232">
+      Some edible fungi on the island are not bright-colored.</li>
+      <li><img class="mark232c" id="to2325c" src="mc.png"><img class="mark232e"
+      id="to2325e" src="me.png"><input type="text" id="to2325" name="to2325"
+      class="form232">
+			No edible fungi on the island are bright-colored.</li>
+      <li><img class="mark232c" id="to2326c" src="mc.png"><img class="mark232e"
+      id="to2326e" src="me.png"><input type="text" id="to2326" name="to2326"
+      class="form232">
+      All bright-colored fungi on the island are inedible.</li>
+      <li><img class="mark232c" id="to2327c" src="mc.png"><img class="mark232e"
+      id="to2327e" src="me.png"><input type="text" id="to2327" name="to2327"
+      class="form232">
+      All edible fungi on the island are non-bright-colored.</li>
+      <li><img class="mark232c" id="to2328c" src="mc.png"><img class="mark232e"
+      id="to2328e" src="me.png"><input type="text" id="to2328" name="to2328"
+      class="form232">
+      Some inedible fungi on the island are bright-colored.</li>
+      <li><img class="mark232c" id="to2329c" src="mc.png"><img class="mark232e"
+      id="to2329e" src="me.png"><input type="text" id="to2329" name="to2329"
+      class="form232">
+      Some non-bright-colored fungi on the island are edible.</li>
+      <li><img class="mark232c" id="to23210c" src="mc.png"><img class="mark232e"
+      id="to23210e" src="me.png"><input type="text" id="to23210" name="to23210"
+      class="form232">
+      All non-bright-colored fungi on the island are edible.</li>
+    </ol>
+
+	<button type="button" class="ca33" id="chans2" onclick="checkAnswers2();">Check Answers</button>
+
+    <p>&nbsp;</p>
+
+      <p><a class="license" rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/us/"><img alt="Creative
+      Commons License" style="border-width: 0pt;" src="https://i.creativecommons.org/l/by-nc-nd/3.0/us/88x31.png"> </a> <br>
+      This work is licensed under a <a rel="license"
+      href="https://creativecommons.org/licenses/by-nc-nd/3.0/us/">Creative Commons
+      Attribution-Noncommercial-No Derivative Works 3.0 United States License</a>.</p>
+    </div>
+
+    <div id="sidebar">
+    </div>
+  </div>
+</div>
+
+<div id="fwrap">
+  <div id="fwrap2">
+    <div id="footer">
+      <p><a href="javascript:;" onclick="window.location.assign('../2.2/iLogic_2_2.html');">&larr;&nbsp;&nbsp;PREVIOUS</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="javascript:;" onclick="window.location.assign('../2.4/iLogic_2_4.html');">NEXT&nbsp;&nbsp;&rarr;</a></p>
+  </div>
+  </div>
+</div>
+
+
+</body>
+</html>
