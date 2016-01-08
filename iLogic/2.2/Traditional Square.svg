@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<svg version="1.2" baseProfile="tiny" viewBox="0 0 3048 3048" preserveAspectRatio="xMidYMid" fill-rule="evenodd" clip-path="url(#presentation_clip_path)" stroke-width="28.222" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:presentation="urn:oasis:names:tc:opendocument:xmlns:presentation:1.0" xmlns:smil="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0" xmlns:anim="urn:oasis:names:tc:opendocument:xmlns:animation:1.0" xml:space="preserve">
+ <defs>
+  <clipPath id="presentation_clip_path" clipPathUnits="userSpaceOnUse">
+   <rect x="0" y="0" width="3048" height="3048"/>
+  </clipPath>
+ </defs>
+ <g id="id2" class="Master_Slide" clip-path="url(#presentation_clip_path)">
+  <g id="bg-id2" visibility="visible" class="Background">
+   <rect fill="none" stroke="none" x="0" y="0" width="3048" height="3048"/>
+  </g>
+  <g id="bo-id2" visibility="visible" class="BackgroundObjects"/>
+ </g>
+ <g id="id1" class="Slide" visibility="visible" clip-path="url(#presentation_clip_path)">
+  <g class="Group">
+   <g class="com.sun.star.drawing.CustomShape">
+    <g>
+     <path fill="none" stroke="rgb(0,0,0)" d="M 1524,2991 L 57,2991 57,57 2991,57 2991,2991 1524,2991"/>
+     <rect fill="none" stroke="none" x="57" y="57" width="2935" height="2935"/>
+    </g>
+   </g>
+   <g class="com.sun.star.drawing.LineShape">
+    <g>
+     <path fill="none" stroke="rgb(0,0,0)" d="M 57,57 L 2991,2991"/>
+    </g>
+   </g>
+   <g class="com.sun.star.drawing.LineShape">
+    <g>
+     <path fill="none" stroke="rgb(0,0,0)" d="M 57,2991 L 2991,57"/>
+    </g>
+   </g>
+  </g>
+ </g>
+</svg>
