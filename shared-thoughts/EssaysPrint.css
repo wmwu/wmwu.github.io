@@ -1,0 +1,163 @@
+@charset "UTF-8";
+/* Global Styles */
+
+body {
+	margin:0px;
+	}
+	
+td {
+	font:16px georgia;
+	color:#000000;
+	}
+	
+a {
+	color: #3f7070;
+	text-decoration:none;
+	font-weight:bold;
+	}
+	
+a:hover {
+	color: #990000;
+	text-decoration:underline;
+	}
+	
+/* ID Styles */
+	
+#navigation a {
+	font:12px arial;
+	color: #336666;
+	text-decoration:none;
+	letter-spacing:.1em;
+	}
+	
+#navigation a:hover {
+	color: #993300;
+	text-decoration:underline;
+	}
+
+#padding {
+	padding:20px 5px 20px 5px;
+	}
+	
+#weekdays th {
+	font:12px arial;
+	color: #ffffff;
+	letter-spacing:.2em;
+	}
+
+#calheader td {
+	font-weight:bold;
+	}
+
+/* Class Styles */
+
+.logo {
+	font:20px "times new roman";
+	color: #333300;
+	letter-spacing:.4em;
+	font-weight:bold;
+	}
+
+.sidebarText {
+	font:14px georgia;
+	color: #336666;
+	line-height:18px;
+	}
+	
+.bodyText {
+	font:16px georgia;
+	line-height:24px;
+	color:#000000;
+	}
+	
+.dropcap {
+  float: left;
+  font: normal 40pt/0.8em georgia, serif;
+  color: #666666;
+  margin-right: 3px;
+}
+	
+.pageName {
+	font:22px georgia;
+	color: black;
+	letter-spacing:.1em;
+	line-height:26px;
+	}
+	
+.subHeader {
+	font:16px georgia;
+	color: #669999;
+	font-weight:bold;
+	line-height:20px;
+	letter-spacing:.1em;
+	}
+	
+.navText {
+	font:14px arial;
+	color: #333300;
+	letter-spacing:.1em;
+	}
+	
+.calendarText {
+	font:13px arial;
+	line-height:14px;
+	color:#333333;
+	}
+	
+.display {
+	margin-left: 50px; margin-right: 50px;
+	}
+
+.var {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-style: italic;
+	}
+
+.symb {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-style: normal;
+	}
+
+.box {
+	margin-left: 50px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	}
+
+.bluebox {
+	margin-left: 50px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	background-color: #e6ecff;
+	border-style: solid;
+	border-color: gray;
+	border-width: 2px;
+	border-spacing: 0px;
+	}
+
+.conclusion {
+	border-top: 1px solid;
+	}
+
+.figure {
+	margin-left: 10px;
+	}
+
+.top {
+	color: #ffffff;
+	}
+
+.top:hover {
+	color: #ffffff;
+	}
+
+#ex ol li {
+	list-style: upper-roman;
+	margin-top: 20px;
+	}
+
+#ex ol ol li {
+	list-style: decimal;
+	margin-top: 10px;
+	}
+
