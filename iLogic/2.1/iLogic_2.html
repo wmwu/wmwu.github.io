@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Categorical Logic</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../iLogic.css" type="text/css">
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+<div id="hwrap">
+  <div id="hwrap2">
+    <div id="header">
+      <h1>iLogic</h1>
+    </div>
+  </div>
+</div>
+
+<div id="nwrap">
+  <div id="nwrap2">
+    <div id="nav">
+      <ul>
+        <li><a href="javascript:;"
+        onclick="window.location.assign('../../index.html');">HOME</a></li>
+        <li><a href="javascript:;" onclick="window.location.assign('../table-of-contents.html');">TABLE OF CONTENTS</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div id="mwrap">
+  <div id="mwrap2">
+    <div id="main">
+<!--      <span class="pdf"><a href="javascript:;"
+      onclick="window.open('iLogic_2.pdf');return false;">PDF</a></span>
+//-->
+
+<h1>2 Categorical Logic</h1>
+
+<p>In Categorical Logic, we learn how to use the Venn Diagram to determine the
+validity of a special type of deductive arguments called categorical
+syllogisms. For example, to decide whether the following argument is valid</p>
+
+  <p class="display"> Some fair people are apathetic and some apathetic people
+  are not kind. So some fair people are not kind.</p>
+
+<p>we translate the argument into its categorical standard form</p>
+
+  <table class="box">
+    <tbody>
+      <tr>
+        <td width="180px">Some <span class="var">A</span> are not <span
+        class="var">K</span>.</td>
+        <td width="340px">&nbsp;</td>
+        <td width="80px">&nbsp;</td>
+      </tr>
+      <tr>
+        <td style="border-bottom: 1px solid black">Some <span
+        class="var">F</span> are <span class="var">A</span>.</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>Some <span class="var">F</span> are not <span
+        class="var">K</span>.</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+    </tbody>
+  </table>
+
+<p>The letters &ldquo;<span class="var">A</span>&rdquo;, &ldquo;<span
+class="var">K</span>&rdquo;, and &ldquo;<span class="var">F</span>&rdquo; stand
+for the three terms in the arguments</p>
+
+  <p class="display"><span class="var">A</span>: apathetic people</p>
+  <p class="display"><span class="var">K</span>: kind people</p>
+  <p class="display"><span class="var">F</span>: fair people</p>
+
+<p>Then, using a formal procedure called the Venn Diagram method, we can find
+out that the form is invalid. The argument is therefore not a good argument.</p>
+
+<h2>2.1 Categorical Statements</h2>
+
+<p>A categorical statement expresses how two sets of things relate to each
+other. For example, the statement &ldquo;All ravens are black birds&rdquo;
+tells us that every member of the set ravens is also a member of the set black
+birds.</p>
+
+<p>A categorical statement is made up of four components:</p>
+
+      <div style="width: 550px; height: 200px; margin: 0 0 -10px 60px">
+      <iframe class="sc70" src="CS_Components.html" style="width: 800px; height:
+      360px; border: 0; overflow: hidden"></iframe>
+      </div>
+
+<p style="margin-top: 0px">The subject term and the predicate term stand for
+the two sets whose logical relation is characterized by the statement.</p>
+
+<h3 id="Sets">2.1.1 Sets</h3>
+
+<p>A <strong>set</strong> is a group or class of things that share certain
+properties in common. For example, the set of ravens is a group of large birds
+that have black feathers and a croaking cry. Each of such a bird is said to be
+a member of the set.</p>
+
+      <p>A general term such as &ldquo;ravens&rdquo; or &ldquo;dinosaurs&rdquo;
+      refers to, or denotes, a set. The set of all dinosaurs that ever existed
+      is called the <strong>referent</strong> of the term
+      &ldquo;dinosaurs.&rdquo;</p>
+
+      <div style="width: 550px; height: 240px; margin: 0 0 -10px 60px">
+      <iframe class="sc70" src="Referent_of_Set.html" style="margin: -300px 0 0
+      6px; width: 800px; height: 860px; border: 0; overflow: hidden"></iframe>
+      </div>
+
+      <p style="margin-top: 0px">A set with no member is called an
+      <strong>empty set</strong>, symbolized as &empty;. For example, since
+      there is no pink elephant, the term &ldquo;pink elephants&rdquo; denotes
+      an empty set. Other terms that refer to empty sets include
+      &ldquo;centaurs&rdquo; and &ldquo;elves&rdquo; because they are depicted
+      in mythologies and do not exist in the real world.</p>
+
+      <div style="width: 550px; height: 240px; margin: 0 0 -10px 60px">
+      <iframe class="sc70" src="Empty_Set.html" style="margin: -300px 0 0 6px;
+      width: 800px; height: 860px; border: 0; overflow: hidden"></iframe>
+      </div>
+
+      <p style="margin-top: 0px">The <strong>universe of discourse</strong> is
+      the set of all things being discussed. If we are talking about animals,
+      the universe of discourse would be the set of animals. If we are
+      discussing people, the universe of discourse would be the set of
+      people.</p>
+
+      <p>Visually, the blue circle represents the set <span
+      class="var">S</span> and a rectangle stands for
+      the universe of discourse.</p>
+
+      <div style="width: 550px; height: 190px; margin: 0 0 -10px 60px">
+      <iframe class="sc70" src="Universe_of_Discourse.html" style="width: 800px;
+      height: 360px; border: 0; overflow: hidden"></iframe>
+      </div>
+
+      <p style="margin-top: 0px">The complement of the set <span
+      class="var">S</span> is the set <span class="var">non-S</span> (or <span
+      class="var">S</span><span class="var3">C</span>). It contains everything
+      in the universe of discourse except the members of the set <span
+      class="var">S</span>. Represented visually, <span
+      class="var">non-S</span> is the blue area outside the circle.</p>
+
+      <div style="width: 550px; height: 190px; margin: 0 0 -10px 60px">
+      <iframe class="sc70" src="Complement.html" style="width: 800px; height:
+      360px; border: 0; overflow: hidden"></iframe>
+      </div>
+
+      <p style="margin-top: 0px">The union of a set and its complement is the
+      universe of discourse. That is, <span class="var">S</span> <span
+      class="var2">&cup;</span> <span class="var">S</span><span
+      class="var3">C</span> <span class="var2">=</span> <span
+      class="var">U</span>.</p>
+
+      <p>The visual way of representing a set with a circle may give rise to
+      the impression that a set has a clear border and we can always clearly
+      and precisely determine whether something belongs to the set. However, it
+      should be noted that while some sets are crisp, many are <strong>fuzzy
+      sets</strong>. A fuzzy set has a grey area for whether something is its
+      member. For example, there are borderline cases of whether a man is bald.
+      So the set of bald men is a fuzzy set. It is more accurate to represent a
+      fuzzy set as a circle with a blur boundary.</p>
+
+      <div style="width: 550px; height: 190px; margin: 0 0 -10px 60px">
+      <iframe class="sc70" src="Fuzzy_Set.html" style="width: 800px; height:
+      360px; border: 0; overflow: hidden"></iframe>
+      </div>
+
+      <h3 id="Quantifiers_and_Copula">2.1.2 Quantifiers and Copula</h3>
+
+      <p>The first word in a categorical statement is the quantifier. The
+      quantifier determines the <strong>quantity</strong> of a categorical
+      statement. There are two quantifiers in Categorical Logic:
+      &ldquo;All&rdquo; and &ldquo;Some.&rdquo; The word &ldquo;All&rdquo; is
+      the universal quantifier. It is used to say something about every member
+      of the set denoted by the subject term. &ldquo;Some&rdquo; is the
+      existential quantifier. It is sometimes called the particular quantifier.
+      It is used to say something about at least one member of the set denoted
+      by the subject term.</p>
+
+      <p>A copula is a verb that links the subject and predicate terms
+      together. In the standard categorical statement form, the only copula
+      that can be used is the verb &ldquo;are.&rdquo; If a categorical
+      statement is written with other verbs, it has to be rephrased using the
+      standard copula &ldquo;are.&rdquo; For example,</p>
+
+      <p class="display">Some birds cannot fly.</p>
+
+      <p>is not a standard categorical statement. It has to be rewritten as</p>
+
+      <p class="display">Some birds are not flyers.</p>
+
+      <p>In doing so, we then have two terms &ldquo;birds&rdquo; and
+      &ldquo;flyers&rdquo; that designate two sets. The copula is used to
+      affirm or deny membership, that is, to indicate whether members of the
+      first set are also members of the second set. If it affirms membership,
+      then we say the categorical statement is affirmative; if it denies
+      membership, then the statement is negative. Being affirmative or negative
+      is called the <strong>quality</strong> of a categorical statement.</p>
+
+      <h3 id="A_E_I_O_Statements">2.1.3 The <span class="var2"><strong>A E I
+      O</strong></span> Statements</h3>
+
+      <p>Given two sets, it is possible that every member of the first set is
+      also a member of the second set. It is also possible that none of the
+      member of the first set is a member of the second set. The third
+      possibility is that there is at least one member of the first set that is
+      also a member of the second set. The fourth is that at least one member
+      of the first set is not a member of the second set. As a result, there
+      are four types of categorical statements.</p>
+
+      <p><strong><em>The</em> <span class="var">A</span>
+      <em>Statement</em></strong></p>
+
+      <p>The <span class="var2"><strong>A</strong></span> statement is the
+      universal affirmative statement. It asserts that every member of the set
+      <span class="var">S</span> is also a member of the set <span
+      class="var">P</span>. It has the statement form that</p>
+
+      <p class="display">All <span class="var">S</span> are <span
+      class="var">P</span>.</p>
+
+      <p>Here <span class="var">S</span> is the variable used for the subject
+      term and <span class="var">P</span> is the variable for the predicate
+      term. The statement</p>
+
+      <p class="display">All dolphins are mammals.</p>
+
+      <p>asserts that every member of the set dolphins is also a member of the
+      set mammals.</p>
+
+      <p><strong><em>The</em> <span class="var">E</span>
+      <em>Statement</em></strong></p>
+
+      <p>The <span class="var2"><strong>E</strong></span> statement is the
+      universal negative statement. It says that none of the member of the set
+      <span class="var">S</span> is also a member of the set <span
+      class="var">P</span>. It has the statement form that</p>
+
+      <p class="display">No <span class="var">S</span> are <span
+        class="var">P</span>.</p>
+
+      <p>The statement</p>
+
+      <p class="display">No bats are birds.</p>
+
+      <p>denies any bat the membership of the set birds. In other words, the two
+      sets do not share any member in common.</p>
+
+      <p>You may wonder why we do not use</p>
+
+      <p class="display">All <span class="var">S</span> are not <span
+        class="var">P</span>.</p>
+
+      <p>as the statement form for the <span
+      class="var2"><strong>E</strong></span> statement. The reason is that the
+      statement form is ambiguous. Given the context and our background
+      knowledge about the world, we would sometimes read &ldquo;All <span
+      class="var">S</span> are not <span class="var">P</span>&rdquo; as meaning
+      &ldquo;No <span class="var">S</span> are <span
+      class="var">P</span>,&rdquo; but on other occasions, we would take it to
+      mean &ldquo;Some <span class="var">S</span> are not <span
+      class="var">P</span>.&rdquo; For example, given what we know about
+      emeralds, we would take &ldquo;All emeralds are not blue&rdquo; to mean
+      that no emeralds are blue. However, given what we know about apples, we
+      would not misinterpret &ldquo;All apples are not green&rdquo; as meaning
+      that no apples are green. Rather, we would take it as an emphatic way of
+      saying that some apples are not green. To avoid confusion, logicians
+      choose to use the form &ldquo;No <span class="var">S</span> are <span
+      class="var">P</span>&rdquo; for the <span
+      class="var2"><strong>E</strong></span> statement.</p>
+
+      <p><strong><em>The</em> <span class="var">I</span>
+      <em>Statement</em></strong></p>
+
+      <p>The <span class="var2"><strong>I</strong></span> statement is the
+      particular affirmative statement. It asserts that at least one member of
+      the set <span class="var">S</span> is also a member of the set <span
+      class="var">P</span>. It has the statement form that</p>
+
+      <p class="display">Some <span class="var">S</span> are <span
+        class="var">P</span>.</p>
+
+      <p>The statement</p>
+
+      <p class="display">Some dinosaurs are carnivores.</p>
+
+      <p>asserts that at least there is one dinosaur that is also a
+      carnivore.</p>
+
+      <p><strong><em>The</em> <span class="var">O</span>
+      <em>Statement</em></strong></p>
+
+      <p>The <span class="var2"><strong>O</strong></span> statement is the
+      particular negative statement. It denies at least one member of the set
+      <span class="var">S</span> the membership of the set <span
+      class="var">P</span>. That is, it claims that at least one member of the
+      set <span class="var">S</span> is not a member of the set <span
+      class="var">P</span>. It has the statement form that</p>
+
+      <p class="display">Some <span class="var">S</span> are not <span
+        class="var">P</span>.</p>
+
+      <p>The statement</p>
+
+      <p class="display">Some reptiles are not animals with legs.</p>
+
+      <p>asserts that there is at least one reptile that is not an animal with
+      leg.</p>
+
+      <h3 id="Venn_Diagrams_for_Statements">2.1.4 Venn Diagrams for
+      Statements</h3>
+
+      <p>A categorical statement has a subject term and a predicate term. We use
+      two overlapping circles to represent the two sets denoted by the two
+      terms.</p>
+
+      <div style="width: 550px; height: 190px; margin: 0 0 -10px 60px">
+      <iframe class="sc70" src="2_Circles_Venn_Diagram.html" style="margin:
+      -250px 0 0 0; width: 800px; height: 720px; border: 0; overflow:
+      hidden"></iframe>
+      </div>
+
+      <p>The two overlapping circles form three areas: area <em>&alpha;</em>,
+      <em>&beta;</em> and <em>&gamma;</em>. Everything in the area
+      <em>&alpha;</em> is a member of <span class="var">S</span>, but not a
+      member of <span class="var">P</span>. Everything in the area
+      <em>&beta;</em> is a member of <span class="var">S</span>, and a member
+      of <span class="var">P</span>. Everything in the area <em>&gamma;</em> is
+      a member of <span class="var">P</span>, but not a member of <span
+      class="var">S</span>.</p>
+
+      <p><strong><em>The Venn Diagram for the</em> <span
+      class="var">A</span> <em>Statement</em></strong></p>
+
+      <p>In the Venn Diagram for the <span
+      class="var2"><strong>A</strong></span> statement &ldquo;All dolphins are
+      mammals,&rdquo; the area <em>&alpha;</em> is shaded. This means that the
+      area is empty. Therefore, all members of the set <span
+      class="var">D</span> (the set of dolphins) must be in the area
+      <em>&beta;</em>. But if they are in the area <em>&beta;</em>, then they
+      must also be members of the set <span class="var">M</span> (the set of
+      mammals).</p>
+
+      <div style="width: 500px; height: 210px; margin: 0 0 0 60px">
+      <iframe class="sc70" src="Venn_Diagram_A.html" style="width: 1000px;
+      height: 430px; border: 0; overflow: hidden"></iframe>
+      </div>
+
+      <p><strong><em>The Venn Diagram for the</em> <span
+      class="var">E</span> <em>Statement</em></strong></p>
+
+      <p>In the Venn Diagram for the <span
+      class="var2"><strong>E</strong></span> statement &ldquo;No bats are
+      birds,&rdquo; the area <em>&beta;</em> is shaded. This means that the
+      area is empty. Therefore, all members of the set <span
+      class="var">B</span> (the set of bats) must be in the area
+      <em>&alpha;</em>. But if they are in the area <em>&alpha;</em>, then they
+      cannot be members of the set <span class="var">D</span> (the set of
+      birds).</p>
+
+      <div style="width: 500px; height: 210px; margin: 0 0 0 60px">
+      <iframe class="sc70" src="Venn_Diagram_E.html" style="width: 1000px; height:
+      430px; border: 0; overflow: hidden"></iframe>
+      </div>
+
+      <p><strong><em>The Venn Diagram for the</em> <span
+      class="var">I</span> <em>Statement</em></strong></p>
+
+      <p>In the Venn Diagram for the <span
+      class="var2"><strong>I</strong></span> statement &ldquo;Some dinosaurs
+      are carnivores,&rdquo; there is an &ldquo;<span
+      class="var2">X</span>&rdquo; in the area <em>&beta;</em>. This means that
+      the area is not empty, i.e., there is at least one member of the set
+      <span class="var">D</span> (the set of dinosaurs) in the area
+      <em>&beta;</em>. But if it is in the area <em>&beta;</em>, then it must
+      also be a member of the set <span class="var">C</span> (the set of
+      carnivores).</p>
+
+      <div style="width: 500px; height: 210px; margin: 0 0 0 60px">
+      <iframe class="sc70" src="Venn_Diagram_I.html" style="width: 1000px; height:
+      430px; border: 0; overflow: hidden"></iframe>
+      </div>
+
+      <p><strong><em>The Venn Diagram for the</em> <span
+      class="var">O</span> <em>Statement</em></strong></p>
+
+      <p>In the Venn Diagram for the <span
+      class="var2"><strong>O</strong></span> statement &ldquo;Some reptiles are
+      not animals with legs,&rdquo; there is an &ldquo;<span
+      class="var2">X</span>&rdquo; in the area <em>&alpha;</em>. This means
+      that the area is not empty, i.e., there is at least one member of the set
+      <span class="var">R</span> (the set of reptiles) in the area
+      <em>&alpha;</em>. But if it is in the area <em>&alpha;</em>, then it
+      cannot be a member of the set <span class="var">A</span> (the set of
+      animals with legs).</p>
+
+      <div style="width: 500px; height: 210px; margin: 0 0 0 60px">
+      <iframe class="sc70" src="Venn_Diagram_O.html" style="width: 1000px; height:
+      430px; border: 0; overflow: hidden"></iframe>
+      </div>
+
+      <h3 id="Ex21">Exercise 2.1</h3>
+
+      <ol class="ex_sec" start="1">
+        <li>Decide which of the following terms refer to empty sets.
+        </li>
+      </ol>
+
+      <table class="box" style="margin-top: 20px">
+        <tr>
+          <td width="200px">dragons</td>
+          <td width="200px">mammoths</td>
+          <td width="200px">electrons</td>
+        </tr>
+        <tr>
+          <td>pirates</td>
+          <td>ghosts</td>
+          <td>souls</td>
+        </tr>
+        <tr>
+          <td>psychics</td>
+          <td>magicians</td>
+          <td>witches</td>
+        </tr>
+        <tr>
+          <td>geometric shapes</td>
+          <td>music</td>
+          <td>black holes</td>
+        </tr>
+        <tr>
+          <td>demons</td>
+          <td>space aliens</td>
+          <td>imaginary numbers</td>
+        </tr>
+      </table>
+
+      <ol class="ex_sec" start="2">
+        <li>Decide which of the following terms refer to fuzzy sets.
+        </li>
+      </ol>
+
+      <table class="box" style="margin-top: 20px">
+        <tr>
+          <td width="200px">tables</td>
+          <td width="200px">dogs</td>
+          <td width="200px">books</td>
+        </tr>
+         <tr>
+          <td>white flowers</td>
+          <td>trees</td>
+          <td>skyscrapers</td>
+        </tr>
+        <tr>
+          <td>friends</td>
+          <td>gadgets</td>
+          <td>toddlers</td>
+        </tr>
+        <tr>
+          <td>cars</td>
+          <td>smart people</td>
+          <td>prime numbers</td>
+        </tr>
+          <tr>
+          <td>managers</td>
+          <td>heroes</td>
+          <td>planets</td>
+        </tr>
+            </tr>
+          <tr>
+          <td>valid arguments</td>
+          <td>middle class</td>
+          <td>games</td>
+        </tr>
+      </table>
+
+      <p>&nbsp;</p>
+
+      <p><a class="license" rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/us/"><img alt="Creative
+      Commons License" style="border-width: 0pt;" src="https://i.creativecommons.org/l/by-nc-nd/3.0/us/88x31.png"> </a> <br>
+      This work is licensed under a <a rel="license"
+      href="https://creativecommons.org/licenses/by-nc-nd/3.0/us/">Creative Commons
+      Attribution-Noncommercial-No Derivative Works 3.0 United States License</a>.</p>
+    </div>
+
+    <div id="sidebar">
+    </div>
+  </div>
+</div>
+
+<div id="fwrap">
+  <div id="fwrap2">
+    <div id="footer">
+      <p><a href="javascript:;" onclick="window.location.assign('../1.3/iLogic_1_3.html');">&larr;&nbsp;&nbsp;PREVIOUS</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="javascript:;" onclick="window.location.assign('../2.2/iLogic_2_2.html');">NEXT&nbsp;&nbsp;&rarr;</a></p>
+  </div>
+  </div>
+</div>
+
+
+</body>
+</html>
