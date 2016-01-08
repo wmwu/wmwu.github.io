@@ -1,0 +1,2421 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Propositional Logic</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../iLogic.css" type="text/css">
+    <style type = "text/css">
+      @font-face {
+      font-family: "Arial Unicode MS";
+      src: url("../Arial Unicode.ttf");
+      }
+      @font-face {
+      font-family: "Verdana";
+      src: url("../Verdana.ttf");
+      }
+      @font-face {
+      font-family: "Verdana Italic";
+      src: url("../Verdana Italic.ttf");
+      }
+    </style>
+<script type="text/javascript" src="Symbolization.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+<div id="hwrap">
+  <div id="hwrap2">
+    <div id="header">
+      <h1>iLogic</h1>
+    </div>
+  </div>
+</div>
+
+<div id="nwrap">
+  <div id="nwrap2">
+    <div id="nav">
+      <ul>
+        <li><a href="javascript:;" onclick="window.location.assign('../../index.html');">HOME</a></li>
+        <li><a href="javascript:;" onclick="window.location.assign('../Table of Contents.html');">TABLE OF CONTENTS</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div id="mwrap">
+  <div id="mwrap2">
+    <div id="main">
+<!--      <span class="pdf"><a href="javascript:;" onclick="window.open('iLogic_3.pdf');return false;">PDF</a></span>
+//-->
+
+<h1>3 Propositional Logic</h1>
+
+<p>In this chapter, we study the second system of deduction, Propositional
+Logic. We are going to learn how to use the truth table to determine the
+validity of some deductive arguments, whose validity is much more difficult to
+determine using the system of Categorical Logic. For example, it would feel
+unnatural to paraphrase the following argument into a categorical syllogism and
+then decide its validity.</p>
+
+<p class="display">Either interest rates will be raised or inflation will get
+worse. Since inflation will get worse, interest rates will be raised.</p>
+
+<p>So instead, we symbolize the argument in a different way to see its logical
+form. First of all, we use the capital letters &ldquo;<span
+class="var">R</span>&rdquo; and &ldquo;<span class="var">W</span>&rdquo; to
+stand for the sentences &ldquo;Interest rates will be raised&rdquo; and
+&ldquo;Inflation will get worse.&rdquo; We then use the symbol &ldquo;<span
+class="symb">&or;</span>&rdquo; for the phrase &ldquo;Either &hellip; or
+&hellip;&rdquo; and symbolize the first sentence as &ldquo;<span
+class="var">R <span class="symb">&or; </span>W</span>&rdquo;. As a result, we
+get the following argument form:</p>
+
+  <table style="margin: 10px 0 10px 50px">
+    <tbody>
+      <tr>
+        <td width="80px" style="padding: 6px 6px 6px 10px"><span class="var">R
+        <span class="symb">&or;</span> W</span> </td>
+      </tr>
+      <tr>
+        <td width="80px" style="padding: 6px 6px 6px 10px"><span
+        class="var">W</span> </td>
+      </tr>
+      <tr>
+        <td class="conclusion" width="80px" style="padding: 6px 6px 6px
+        10px"><span class="var">R</span> </td>
+      </tr>
+    </tbody>
+  </table>
+
+<p class="display"><span class="var">R</span>: Interest rates will be
+raised.</p>
+
+<p class="display"><span class="var">W</span>: Inflation will get worse.</p>
+
+<p>To decide whether the argument form is valid, we will learn a formal
+procedure called the truth table method. By using the method, we can find out
+that the form is invalid. The argument is therefore not a good argument.</p>
+
+<h2>3.1 Symbolization</h2>
+
+<p>In Propositional Logic, we use a capital letter to represent a
+<strong>simple sentence</strong>. Simple sentences are relatively short and do
+not contain any other sentence as a component. Here are three examples of
+simple sentences:</p>
+
+  <p class="display">Snow is white.</p>
+
+  <p class="display">The sky is blue.</p>
+
+  <p class="display">Nancy will go to the party.</p>
+
+<p>We can use the letter &ldquo;<span class="var">S</span>&rdquo; to symbolize
+&ldquo;Snow is white&rdquo; and &ldquo;<span class="var">B</span>&rdquo; for
+&ldquo;The sky is blue.&rdquo;</p>
+
+<p>In contrast with simple sentences, a sentence like</p>
+
+  <p class="display">John will not go to the party.</p>
+
+<p>is a shortened form of the more wordy sentence</p>
+
+  <p class="display">It is not the case that John will go to the party.</p>
+
+<p>which contains the simple sentence &ldquo;John will go to the party&rdquo;
+as a clause. Sentences that contain at least one simple sentence as a component
+are called <strong>compound sentences</strong>.</p>
+
+<h3 id="Five_Types_of_Compound_Sentences">3.1.1 Five Types of Compound
+Sentences</h3>
+
+<p>To symbolize compound sentences we need to use symbols. There are five
+different types of compound sentences.</p>
+
+<h4 class="western">Negations</h4>
+
+<p>The sentence</p>
+
+  <p class="display">Inflation is not getting worse.</p>
+
+<p>can be rewritten as</p>
+
+  <p class="display">It is not the case that inflation is getting worse.</p>
+
+<p>This makes it clear that it is a negation of the simple sentence
+&ldquo;Inflation is getting worse.&rdquo; Accordingly, we can symbolize it as
+<span class="symb">&sim;</span><span class="var">I</span>. Here the symbol
+&ldquo;<span class="symb">&sim;</span>&rdquo; (tilde) stands for &ldquo;It is
+not the case that &hellip;&rdquo; and the letter &ldquo;<span
+class="var">I</span>&rdquo; symbolizes the simple sentence &ldquo;Inflation is
+getting worse.&rdquo;</p>
+
+  <table class="display2">
+    <tr>
+      <td></td>
+      <td>Inflation is not getting worse.</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; padding-top: 6px">=</td>
+      <td style="padding-top: 6px"><span class="symb">&sim;</span><span
+      class="var">I</span></td>
+  </table>
+
+<p>Notice that there is no space between &ldquo;<span
+class="symb">&sim;</span>&rdquo; and &ldquo;<span class="var">I</span>&rdquo;.
+The equal sign &ldquo;=&rdquo; is used to indicate that the sentence and its
+symbolized expression &ldquo;<span class="symb">&sim;<span
+class="var">I</span></span>&rdquo; are logically equivalent.</p>
+
+<h4 class="western">Conjunctions</h4>
+
+<p>Here is an example of conjunction and its symbolized expression:</p>
+
+  <table class="display2">
+    <tr>
+      <td></td>
+      <td>Globalization and free trade are good for business corporations.</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; padding-top: 6px">=</td>
+      <td style="padding-top: 6px"><span class="var">G <span
+      class="symb">&#x2022;</span> F</span></td>
+  </table>
+
+<p>It is easier to see how the symbolization works by expanding the original sentence as</p>
+
+  <table class="display2">
+    <tr>
+      <td></td>
+      <td>Globalization is good for business corporations and free trade is
+      good for business corporations.</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; padding-top: 6px">=</td>
+      <td style="padding-top: 6px"><span class="var">G <span
+      class="symb">&#x2022;</span> F</span></td>
+    <tr>
+      <td></td>
+      <td style="padding-top: 6px"><span class="var">G</span>: Globalization
+      is good for business corporations.</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td style="padding-top: 6px"><span class="var">F</span>: Free trade is
+      good for business corporations.</td>
+    </tr>
+  </table>
+
+<p>The letter &ldquo;<span class="var">G</span>&rdquo; stands for
+&ldquo;Globalization is good for business corporations,&rdquo; and &ldquo;<span
+class="var">F</span>&rdquo; represents &ldquo;Free trade is good for business
+corporations.&rdquo; The symbol &ldquo;<span
+class="symb">&#x2022;</span>&rdquo; (dot) is used to symbolize the English
+connective &ldquo;and&rdquo;. Notice that there is a space between &ldquo;<span
+class="var">G</span>&rdquo; and &ldquo;<span
+class="symb">&#x2022;</span>&rdquo; and between &ldquo;<span
+class="symb">&#x2022;</span>&rdquo; and &ldquo;<span
+class="var">F</span>&rdquo;. Both <span class="var">G</span> and <span
+class="var">F</span> are called the <strong>conjuncts</strong> of the
+conjunction. The symbolization is fairly intuitive and there is a one-to-one
+correspondence to the English sentence.<sup id="fnref:1"><a href="#fn:1"
+class="footnote">1</a></sup></p>
+
+<p>In the next conjunction,</p>
+
+  <table class="display2">
+    <tr>
+      <td></td>
+      <td>The cause of schizophrenia is not demonic possession, but
+      defective genes.</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; padding-top: 6px">=</td>
+      <td style="padding-top: 6px">The cause of schizophrenia is not demonic
+      possession, but the cause of schizophrenia is defective genes.</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; padding-top: 6px">=</td>
+      <td style="padding-top: 6px"><span class="symb">&sim;</span><span
+      class="var">P <span class="symb">&#x2022;</span> G</span></td>
+  </table>
+
+<p>The letter &ldquo;<span class="var">P</span>&rdquo; is used to stand for
+&ldquo;The cause of schizophrenia is demonic possession,&rdquo; and
+&ldquo;<span class="var">G</span>&rdquo; for &ldquo;The cause of schizophrenia
+is defective genes.&rdquo; Notice that the first conjunct <span
+class="symb">&sim;</span><span class="var">P</span> is a negation.</p>
+
+<h4>Disjunctions</h4>
+
+<p>In the next example, two simple sentences are connected with the connective
+&ldquo;or&rdquo; to form a disjuction.
+
+  <table class="display2">
+    <tr>
+      <td></td>
+      <td>The economy will slow down or inflation will get worse.</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; padding-top: 6px">=</td>
+      <td style="padding-top: 6px"><span class="var">E <span
+      class="symb">&or;</span> I</span></td>
+  </table>
+
+<p>The letter &ldquo;<span class="var">E</span>&rdquo; is used to symbolize
+&ldquo;The economy will slow down,&rdquo; and &ldquo;<span
+class="var">I</span>&rdquo; symbolizes &ldquo;Inflation will get worse.&rdquo;
+Both <span class="var">E</span> and <span class="var">I</span> are called the
+<strong>disjuncts</strong> of the disjunction. The symbol &ldquo;<span
+class="symb">&or;</span>&rdquo; (wedge) is used to symbolize common English
+connectives such as &ldquo;or&rdquo; and &ldquo;either &hellip; or
+&hellip;&rdquo;.</p>
+
+<p>The sentence</p>
+
+  <p class="display">It won&rsquo;t rain or snow.</p>
+
+<p>is a negation of a disjunction. We can see this by rewriting it as </p>
+
+  <table class="display2">
+    <tr>
+      <td></td>
+      <td>It is not the case that it will rain or it will snow.</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; padding-top: 6px">=</td>
+      <td style="padding-top: 6px"><span class="symb">&sim;</span><span
+      class="var2">(</span><span class="var">R <span class="symb">&or;</span>
+      S<span class="var2">)</span></span></td>
+    <tr>
+      <td></td>
+      <td style="padding-top: 6px"><span class="var">R</span>: It will
+      rain.</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td style="padding-top: 6px"><span class="var">S</span>: It will
+      snow.</td>
+    </tr>
+  </table>
+
+<h4 class="western">Conditionals</h4>
+
+<p>The most commonly seen conditional sentences are sentences combined together
+using the phrase &ldquo;If &hellip;, then &hellip;&rdquo;.</p>
+
+  <table class="display2">
+    <tr>
+      <td></td>
+      <td>If the worldwide demand for oil continues to grow, then gas prices
+      will keep on rising.</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; padding-top: 6px">=</td>
+      <td style="padding-top: 6px"><span class="var">D <span
+      class="symb">&sup;</span> G</span></td>
+  </table>
+
+<p>The symbol &ldquo;<span class="symb">&sup;</span>&rdquo; (horseshoe) is used
+to symbolize the phrase &ldquo;If &hellip;, then &hellip;&rdquo;. In doing so,
+we treat conditionals as material conditionals, even though it should be noted
+that there are differences between material conditionals and other types of
+conditionals such as indicative conditionals and counterfactual
+conditionals.</p>
+
+<h4 class="western">Biconditionals</h4>
+
+<p>Sentences such as</p>
+
+  <table class="display2">
+    <tr>
+      <td></td>
+      <td>The defendant is guilty if and only if the jury reaches such a
+      verdict.</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; padding-top: 6px">=</td>
+      <td style="padding-top: 6px"><span class="var">D <span
+      class="symb">&equiv;</span> J</span></td>
+  </table>
+
+      <p>are biconditional sentences. The phrase &ldquo;if and only
+      if&rdquo; is symbolized using &ldquo;<span
+      class="symb">&equiv;</span>&rdquo; (triple bar). We will study conditionals
+      and biconditionals in more details later on in this section.</p>
+
+<p>The following table lists the five connectives and the types of compound
+sentences they are used to form.</p>
+
+    <div style="width: 360px; height: 240px; border: none; margin: 0 0 0
+    24px"> <iframe class="sc85" src="5_Connectives.html" style="width:
+    7200px; height: 480px; border: none; overflow: hidden"></iframe>
+    </div>
+
+<h3 id="Use_of_Parentheses">3.1.2 The Use of Parentheses</h3>
+
+<p>When we symbolize compound statements, it is important to use parentheses
+properly when they are required. Notice the difference between sentences (3.1a)
+and (3.1b).</p>
+
+  <table class="display2">
+    <tr>
+      <td></td>
+      <td style="width: 520px">Mike will go to college or find a job, and get
+      married.</td>
+      <td style="vertical-align: bottom"><span style="font-family: sans-serif;
+      font-size: .8em"><span style="background: #e6ecff">3.1a</span></span></td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; padding-top: 6px">=</td>
+      <td style="padding-top: 6px"><span class="var"><span
+      class="var2">(</span>C <span class="symb">&or;</span> J<span
+      class="var2">)</span> <span class="symb">&#x2022;</span> M</span></td>
+  </table>
+
+  <table class="display2">
+    <tr>
+      <td></td>
+      <td style="width: 520px">Mike will go to college, or find a job and get
+      married.</td>
+      <td style="vertical-align: bottom"><span style="font-family: sans-serif;
+      font-size: .8em"><span style="background: #e6ecff">3.1b</span></span></td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; padding-top: 6px">=</td>
+      <td style="padding-top: 6px"><span class="var">C <span
+      class="symb">&or;</span> <span class="var2">(</span>J <span
+      class="symb">&#x2022;</span> M<span class="var2">)</span></span></td>
+  </table>
+
+<p>Without the parentheses, the symbolized expression <span class="var">C <span
+class="symb">&or;</span> J <span class="symb">&#x2022;</span> M</span> amounts
+to the sentence without the comma &ldquo;,&rdquo;.</p>
+
+<p class="display">Mike will go to college or find a job and get married.</p>
+
+<p>The sentence is ambiguous because we would not be able to tell whether it
+means (3.1a) or (3.1b).</p>
+
+<p>Early on, we saw the sentence</p>
+
+  <table class="display2">
+    <tr>
+      <td></td>
+      <td>It won&rsquo;t rain or snow.</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; padding-top: 6px">=</td>
+      <td style="padding-top: 6px"><span class="symb">&sim;</span><span
+      class="var2">(</span><span class="var">R <span class="symb">&or;</span>
+      S<span class="var2">)</span></span></td>
+  </table>
+
+<p>Since it is a negation of the disjunction <span class="var">R <span
+class="symb">&or;</span> S</span>, we need to put parentheses around the
+disjunction.</p>
+
+<h3 id="Conditional_Sentences">3.1.3 Conditional Sentences</h3>
+
+<p>Conditional sentences such as</p>
+
+  <p class="display">If it rains, then the game will be postponed.</p>
+
+<p class="display">Interest rates will be raised if inflation gets worse.</p>
+
+<p>are used frequently in Propositional Logic. They have the common form of</p>
+
+  <p class="display">If <em>p</em>, then <em>q</em>.</p>
+
+<p>or</p>
+
+  <p class="display"><em>q</em> if <em>p</em>.</p>
+
+<p>Here the italic letters &ldquo;<em>p</em>&rdquo; and
+&ldquo;<em>q</em>&rdquo; are used as variables for sentences. Notice that
+&ldquo;<em>q</em> if <em>p</em>&rdquo; is just another way of writing &ldquo;If
+<em>p</em>, then <em>q</em>.&rdquo;</p>
+
+<h4>Symbolizing Conditionals</h4>
+
+<p>As stated above, we treat conditional sentences as material conditionals and
+symbolize them using the connective &ldquo;<span
+class="symb">&sup;</span>&rdquo;.
+
+<table class="bluebox" style="page-break-inside: avoid">
+<tbody>
+  <tr>
+    <td width="480px" style="padding: 12px">If <em>p</em>, then
+      <em>q</em>.&emsp;=&emsp;<em>q</em> if
+      <em>p</em>.&emsp;=&emsp;<em>p</em> <span
+      class="symb">&sup;</span>
+      <em>q<span class="display"></span></em><br>
+      If <em>p</em>, then <em>q</em>.&emsp;=&emsp;<em>p</em> only if
+      <em>q</em>.&emsp;=&emsp;<em>p</em> <span
+      class="symb">&sup;</span>
+      <em>q</em> </td>
+  </tr>
+</tbody>
+</table>
+
+<p class="above">Using the above formula, we can see that the following three
+sentences are simply different ways of writing the same conditional.</p>
+
+  <table class="display2">
+    <tr>
+      <td></td>
+      <td>If Tim is a football player, then Tim is an athlete.</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; padding-top: 6px">=</td>
+      <td style="padding-top: 6px">Tim is an athlete if Tim is a football
+      player.</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; padding-top: 6px">=</td>
+      <td style="padding-top: 6px">Tim is a football player only if Tim is an
+      athlete.</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; padding-top: 6px">=</td>
+      <td style="padding-top: 6px"><span class="var">F <span
+      class="symb">&sup;</span> A</span></td>
+    <tr>
+      <td></td>
+      <td style="padding-top: 6px"><span class="var">F</span>: Tim is a
+      football player.</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td style="padding-top: 6px"><span class="var">A</span>: Tim is an
+      athlete.</td>
+    </tr>
+  </table>
+
+      <p>Pay special attention to the difference between the word
+      &ldquo;if&rdquo; and the phrase &ldquo;only if&rdquo; when
+      they are used in the middle of sentences.</p>
+
+      <h4 class="western">The Sufficient Condition and the Necessary Condition</h4>
+
+<p>In a conditional <em>p</em> <span class="symb">&sup;</span> <em>q</em>,
+<em>p</em> is called the <strong>antecedent</strong>, and <em>q</em> is the
+<strong>consequent</strong>. The antecedent is a <strong>sufficient
+condition</strong> for the consequent, and the consequent is a
+<strong>necessary condition</strong> for the antecedent.</p>
+
+<p>To say that <em>p</em> is a sufficient condition for <em>q</em> means that
+<em>p</em> is all that is needed for <em>q</em> to be the case.</p>
+
+  <table class="bluebox" style="page-break-inside: avoid">
+    <tbody>
+      <tr>
+        <td></td>
+        <td width="480px" style="padding-top: 12px"><em>p</em> is a sufficient
+        condition for <em>q</em>.</td>
+      </tr>
+      <tr>
+        <td style="padding: 3px 6px 12px 12px">=</td>
+        <td width="480px" style="padding: 3px 0 12px 0"><em>p</em> is all
+        that is needed for <em>q</em> to be the case.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p class="above">For example, in the conditional</p>
+
+  <table class="display2">
+    <tr>
+      <td></td>
+      <td>If it rains, then the game will be postponed.</td>
+    </tr>
+    <tr>
+      <td style="padding-top: 6px">=</td>
+      <td style="padding-top: 6px"><span class="var">R <span
+      class="symb">&sup;</span> P</span></td>
+    <tr>
+      <td></td>
+      <td style="padding-top: 6px"><span class="var">R</span>: It rains.</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td style="padding-top: 6px"><span class="var">P</span>: The game will be
+      postponed.</td>
+    </tr>
+  </table>
+
+<p><span class="var">R</span> is a sufficient condition for <span
+class="var">P</span>. This means that raining is all that is needed for the
+game to be postponed. In other words, raining alone can result in the game
+being postponed. In the next example,</p>
+
+  <p class="display">If it is a dolphin, then it is a mammal.</p>
+
+<p>being a dolphin is a sufficient condition for an animal being a mammal.</p>
+
+<p>If <em>p</em> is a sufficient condition for <em>q</em>, then this also means
+that <em>q</em> is a necessary condition for <em>p</em>. So being a mammal is a
+necessary condition for being a dolphin. That is, without being a mammal, an
+animal cannot be a dolphin.</p>
+
+  <table class="bluebox" style="page-break-inside: avoid">
+    <tbody>
+      <tr>
+        <td></td>
+        <td width="480px" style="padding-top: 12px"><em>q</em> is a necessary
+        condition for <em>p</em>.</td>
+      </tr>
+      <tr>
+        <td style="padding: 3px 6px 12px 12px">=</td>
+        <td width="480px" style="padding: 3px 0 12px 0">Without <em>q</em>, it
+        cannot be the case that <em>p</em>.</td>
+      </tr>
+    </tbody>
+  </table>
+
+<p style="margin-bottom: 0in">In the conditional</p>
+
+<p class="display">Alex can earn a high school diploma only if he passes the Exit Examination.</p>
+
+<p>passing the exam is a necessary condition for earning the diploma, that is, without passing the exam, Alex would not be able to earn the high school diploma.</p>
+
+<p style="margin-bottom: 0in">In 1.3, we learn about certain concepts such as
+validity and soundness used in argument evaluation. For a deductive argument to
+be sound, it needs to be valid and have true/acceptable premises. So if a
+deductive argument is not valid, it cannot be sound. This means that being a
+valid argument is a necessary condition for being a sound argument.</p>
+
+<p>In the sentence</p>
+
+  <table class="display2">
+    <tr>
+      <td></td>
+      <td>Tim will go camping only if it does not rain or snow.</td>
+    </tr>
+    <tr>
+      <td style="padding-top: 6px">=</td>
+      <td style="padding-top: 6px"><span
+          class="var">C <span class="symb">&sup; &sim;</span><span
+          class="var2">(</span>R <span
+          class="symb">&or;</span> S<span
+          class="var2">)</span></span></td>
+        <td width="10%"></td>
+  </table>
+
+<p>the negation <span class="var"><span class="symb">&sim;</span><span
+class="var2">(</span>R <span class="symb">&or;</span> S<span
+class="var2">)</span></span> is the consequent. This means that a necessary
+condition for Tim to go camping is that it does not rain or snow. So if it
+rains or snows, Tim will not go camping.</p>
+
+<h4>Biconditionals</h4>
+
+<p>The following sentence is a biconditional sentence and is symbolized with
+the connective &ldquo;<span class="symb">&equiv;</span>&rdquo; (triple bar).</p>
+
+  <table class="display2">
+    <tr>
+      <td></td>
+      <td style="width: 520px">Maria will receive a pay raise if and only if
+      she gets the TV commercial account.</td>
+      <td style="vertical-align: bottom"><span style="font-family: sans-serif;
+      font-size: .8em"><span style="background: #e6ecff">3.1c</span></span></td>
+    </tr>
+    <tr>
+      <td style="padding-top: 6px">=</td>
+      <td style="padding-top: 6px"><span class="var"><span class="var">P <span
+      class="symb">&equiv;</span> A</span></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td style="padding-top: 6px"><span class="var">P</span>: Maria will
+      receive a pay raise.</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td style="padding-top: 6px"><span class="var">A</span>: Maria gets the
+      TV commercial account.</td>
+    </tr>
+  </table>
+
+<p>A biconditional is really a conjunction of two conditionals. The connective
+&ldquo;<span class="symb">&equiv;</span>&rdquo; typically stands for the
+English phrase &ldquo; &hellip; if and only if &hellip;&rdquo;. The formula</p>
+
+  <p class="display"><em>p</em> if and only if <em>q</em></p>
+
+<p>is an abbreviation for</p>
+
+  <table class="display2">
+    <tr>
+      <td></td>
+      <td>(<em>p</em> if <em>q</em>) and (<em>p</em> only if <em>q</em>)</td>
+    </tr>
+    <tr>
+      <td style="padding-top: 6px">=</td>
+      <td style="padding-top: 6px; width: 300px">(<em>q</em> <span
+      class="symb">&sup;</span> <em>p</em>) and (<em>p</em> <span
+      class="symb">&sup;</span> <em>q</em>)</td>
+  </table>
+
+<p>Fully symbolized, it becomes</p>
+
+  <p class="display">(<em>q</em> <span class="symb">&sup;</span> <em>p</em>)
+  <span class="symb">&#x2022;</span> (<em>p</em> <span
+  class="symb">&sup;</span> <em>q</em>)</p>
+
+<p>Now in the first conditional <em>q</em> <span class="symb">&sup;</span>
+<em>p</em>, <em>q</em> is the antecedent. This means that <em>q</em> is a
+sufficient condition for <em>p</em>. In the second condition <em>p</em> <span
+class="symb">&sup;</span> <em>q</em>, <em>q</em> is the consequent, and hence
+is a necessary condition for <em>p</em>. The two conditionals together says
+that <em>q</em> is both a sufficient condition and a necessary condition for
+<em>p</em>.</p>
+
+<p>Moreover, since</p>
+
+<p class="display">(<em>q</em> <span class="symb">&sup;</span> <em>p</em>) and
+(<em>p</em> <span class="symb">&sup;</span> <em>q</em>)</p>
+
+<p>is logically equivalent to</p>
+
+  <p class="display">(<em>p</em> <span class="symb">&sup;</span> <em>q</em>)
+  and (<em>q</em> <span class="symb">&sup;</span> <em>p</em>)</p>
+
+<p>this means that <em>p</em> is also both a sufficient condition and a
+necessary condition for <em>q</em>.</p>
+
+<p>In the example we just saw</p>
+
+  <table class="display2">
+    <tr>
+      <td></td>
+      <td style="width: 520px">Maria will receive a pay raise if and only if
+      she gets the TV commercial account.</td>
+      <td style="vertical-align: bottom"><span style="font-family: sans-serif;
+      font-size: .8em"><span style="background: #e6ecff">3.1c</span></span></td>
+    </tr>
+    <tr>
+      <td style="padding-top: 6px">=</td>
+      <td style="padding-top: 6px"><span class="var"><span class="var">P <span
+      class="symb">&equiv;</span> A</span></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td style="padding-top: 6px"><span class="var">P</span>: Maria will
+      receive a pay raise.</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td style="padding-top: 6px"><span class="var">A</span>: Maria gets the
+      TV commercial account.</td>
+    </tr>
+  </table>
+
+<p>Maria&rsquo;s getting the TV commercial account is <em>both a sufficient
+condition and a necessary condition</em> for her receiving a pay raise. This
+means that getting the account is the only thing she needs to do to receive a
+pay raise. Moreover, without getting the account, she won&rsquo;t receive a pay
+raise. That is, getting the account is also the only way she can receive a pay
+raise:</p>
+
+      <table class="box" width="560" border="0" cellpadding="5" cellspacing="0"
+      style="page-break-inside: avoid">
+        <tbody>
+          <tr valign="top">
+            <td width="250">getting the account </td>
+            <td width="60">&rarr; </td>
+            <td width="250">receiving a pay raise </td>
+          </tr>
+          <tr valign="top">
+            <td width="250">not getting the account </td>
+            <td width="60">&rarr; </td>
+            <td width="250">not receiving a pay raise </td>
+          </tr>
+        </tbody>
+      </table>
+
+<p>Compare (3.1c) with the next example:</p>
+
+  <table class="display2">
+    <tr>
+      <td></td>
+      <td style="width: 520px">Maria will receive a pay raise <em>if</em> she
+      gets the TV commercial account.</td>
+      <td style="vertical-align: bottom"><span style="font-family: sans-serif;
+      font-size: .8em"><span style="background: #e6ecff">3.1d</span></span></td>
+    </tr>
+    <tr>
+      <td style="padding-top: 6px">=</td>
+      <td style="padding-top: 6px"><span class="var"><span class="var">A <span
+      class="symb">&sup;</span> P</span></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td style="padding-top: 6px"><span class="var">P</span>: Maria will
+      receive a pay raise.</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td style="padding-top: 6px"><span class="var">A</span>: Maria gets the
+      TV commercial account.</td>
+    </tr>
+  </table>
+
+<p>The conditional says that Maria&rsquo;s getting the TV commercial account is
+a <em>sufficient</em> condition for her receiving a pay raise. This means that
+all she needs to do to receive a pay raise is to get the account. Notice the
+conditional does not say that getting the account is a necessary condition for
+the pay raise. So it leaves it open whether Maria will receive a pay raise if
+she does not get the account. This means that it is possible for Maria to
+receive a pay raise even though she fails to land the account. One possible
+scenario is that Maria does not get the account, but manages to sell the
+commercial to another company and as a result receives a pay raise.</p>
+
+  <table class="box" width="600" border="0" cellpadding="5" cellspacing="0"
+  style="page-break-inside: avoid">
+    <tbody>
+      <tr valign="top">
+        <td width="250">getting the account </td>
+        <td width="60">&rarr; </td>
+        <td width="290">receiving a pay raise </td>
+      </tr>
+      <tr valign="top">
+        <td width="250">not getting the account </td>
+        <td width="60">&rarr; </td>
+        <td width="290">may or may not receive a pay raise </td>
+      </tr>
+    </tbody>
+  </table>
+
+<p>The important difference between (3.1c) and (3.1d) is that (3.1c)
+specifically says that getting the account is required (that is, a necessary
+condition) for Maria to receive a pay raise whereas (3.1d) does not say that it
+is required. This makes (3.1d) less demanding than (3.1c). Now compare the
+above two examples with another one:</p>
+
+  <table class="display2">
+    <tr>
+      <td></td>
+      <td style="width: 520px">Maria will receive a pay raise <em>only if</em>
+      she gets the TV commercial account.</td>
+      <td style="vertical-align: bottom"><span style="font-family: sans-serif;
+      font-size: .8em"><span style="background: #e6ecff">3.1e</span></span></td>
+    </tr>
+    <tr>
+      <td style="padding-top: 6px">=</td>
+      <td style="padding-top: 6px"><span class="var"><span class="var">P <span
+      class="symb">&sup;</span> A</span></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td style="padding-top: 6px"><span class="var">P</span>: Maria will
+      receive a pay raise.</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td style="padding-top: 6px"><span class="var">A</span>: Maria gets the
+      TV commercial account.</td>
+    </tr>
+  </table>
+
+<p>The sentence (3.1e) says that Maria&rsquo;s getting the TV commercial
+account is a <em>necessary</em> condition for her receiving a pay raise. This
+means that without getting the account, she won&rsquo;t receive a pay raise.
+But (3.1e) does not specify that getting the account is a sufficient condition
+for receiving a pay raise. So Maria may or may not receive a pay raise even if
+she does get the account.</p>
+
+  <table class="box" width="600" border="0" cellpadding="5" cellspacing="0"
+  style="page-break-inside: avoid">
+    <tbody>
+      <tr valign="top">
+        <td width="250">getting the account </td>
+        <td width="60">&rarr; </td>
+        <td width="290">may or may not receive a pay raise </td>
+      </tr>
+      <tr valign="top">
+        <td width="250">not getting the account </td>
+        <td width="60">&rarr; </td>
+        <td width="290">not receiving a pay raise </td>
+      </tr>
+    </tbody>
+  </table>
+
+<p>It is important to notice the differences among the three examples here. The
+specification of condition(s) makes (3.1d) the best deal among the three for
+Maria, and (3.1e) the least favorable.</p>
+
+<h3 id="Exclusive_vs_Nonexclusive_Disjunctions">3.1.4 Exclusive vs.
+Nonexclusive Disjunctions</h3>
+
+<p>The connectives &ldquo;or&rdquo; and &ldquo;either &hellip; or&rdquo; are
+used in two distinct ways in daily discourses. When a host asks you
+&ldquo;Coffee or Tea?&rdquo;, it is implicitly implied that you should choose
+coffee or tea, but not both. The connective &ldquo;or&rdquo; is used in the
+<strong>exclusive</strong> sense to mean &ldquo;one or the other, but not
+both.&rdquo; Afterwards, when the host asks you again &ldquo;Cream or
+sugar?&rdquo;, you can respond by saying &ldquo;Both, please.&rdquo; Now the
+connective is used in the <strong>nonexclusive</strong> sense of &ldquo;one or
+the other, or both.&rdquo;</p>
+
+<p>Here is an example of &ldquo;either &hellip; or &hellip;&rdquo; used in the
+nonexclusive sense:</p>
+
+  <table class="display2">
+    <tr>
+      <td></td>
+      <td style="width: 520px">Either fire or smoke can damage the
+      paintings.</td>
+      <td style="vertical-align: bottom"><span style="font-family: sans-serif;
+      font-size: .8em"><span style="background: #e6ecff">3.1f</span></span></td>
+    </tr>
+    <tr>
+      <td style="padding-top: 6px">=</td>
+      <td style="padding-top: 6px"><span style="white-space: nowrap"><span
+      class="var">F <span class="symb">&or;</span> S</span></span></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td style="padding-top: 6px"><span class="var">F</span>: Fire can damage
+      the paintings.</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td style="padding-top: 6px"><span class="var">S</span>: Smoke can damage
+      the paintings.</td>
+    </tr>
+  </table>
+
+<p>If either fire or smoke alone can damage the paintings, then the two
+together can damage the paintings. In Propositional Logic, the wedge
+&ldquo;<span class="symb">&or;</span>&rdquo; is used to symbolize nonexclusive
+disjunctions. So the sentence (3.1f) is symbolized as <span style="white-space:
+nowrap"><span class="var">F <span class="symb">&or;</span> S</span></span>. By
+contrast, in the next sentence &ldquo;either &hellip; or &hellip;&rdquo; is
+used in the exclusive sense.</p>
+
+  <table class="display2">
+    <tr>
+      <td></td>
+      <td style="width: 520px">The Federal Reserve will either raise
+      interest rates or leave them intact.</td>
+      <td style="vertical-align: bottom"><span style="font-family: sans-serif;
+      font-size: .8em"><span style="background: #e6ecff">3.1g</span></span></td>
+    </tr>
+    <tr>
+      <td style="padding-top: 6px">=</td>
+      <td style="padding-top: 6px"><span style="white-space: nowrap"><span
+      class="var"><span class="var2">(</span>R <span class="symb">&or;</span>
+      L<span class="var2">)</span> <span class="symb">&#x2022;</span> <span
+      class="symb">&sim;</span><span class="var2">(</span>R <span
+      class="symb">&#x2022;</span> L<span
+      class="var2">)</span></span></span></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td style="padding-top: 6px"><span class="var">R</span>: The Federal
+      Reserve will raise interest rates.</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td style="padding-top: 6px"><span class="var">L</span>: The Federal
+      Reserve will leave interest rates intact.</td>
+    </tr>
+  </table>
+
+<p>Obviously the Federal Reserve cannot both raise interest rates and keep them
+intact. Consequently, we have to symbolize (3.1g) as <span style="white-space:
+nowrap"><span class="var"><span class="var2">(</span>R <span
+class="symb">&or;</span> L<span class="var2">)</span> <span
+class="symb">&#x2022;</span> <span class="symb">&sim;</span><span
+class="var2">(</span>R <span class="symb">&#x2022;</span> L<span
+class="var2">)</span></span></span>. The first conjunct <span
+style="white-space: nowrap"><span class="var">R <span class="symb">&or;</span>
+L</span></span> means that the Federal Reserve will do one or the other, or
+both. But the second conjunct <span style="white-space: nowrap"><span
+class="symb">&sim;</span><span class="var2">(</span><span class="var">R <span
+class="symb">&#x2022;</span> L<span class="var2">)</span></span></span> says
+that the Federal Reserve will not do both. So together, they capture the
+meaning of &ldquo;one or the other, but not both.&rdquo;</p>
+
+<h4 class="western">How to Symbolize &ldquo;unless&rdquo;</h4>
+
+<p>A compound sentence formed with the connective &ldquo;unless&rdquo; can be
+symbolized as a conditional or a biconditional, depending on the meaning of the
+sentence. It can also be symbolized as a disjunction. But in doing so, we need
+to pay attention to whether it is the exclusive or the nonexclusive
+disjunction. The sentence</p>
+
+  <table class="display2" style="margin-left: 56px">
+    <tr>
+      <td style="width: 520px">Jeff cannot graduate unless he completes all the
+      GE requirements.</td>
+      <td style="vertical-align: bottom"><span style="font-family: sans-serif;
+      font-size: .8em"><span style="background: #e6ecff">3.1h</span></span></td>
+    </tr>
+  </table>
+
+<p>states clearly that fulfilling the GE requirements is a necessary condition
+for Jeff to graduate. That is, without fulfilling the GE requirement, Jeff
+cannot graduate. So we can rewrite (3.1h) as</p>
+
+  <table class="display2">
+    <tr>
+      <td></td>
+      <td style="width: 520px">Jeff can graduate only if he completes all
+      the GE requirements.</td>
+      <td style="vertical-align: bottom"><span style="font-family: sans-serif;
+      font-size: .8em"><span style="background: #e6ecff">3.1i</span></span></td>
+    </tr>
+    <tr>
+      <td style="padding-top: 6px">=</td>
+      <td style="padding-top: 6px"><span class="var">G <span
+          class="symb">&sup;</span> C</span></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td style="padding-top: 6px"><span class="var">G</span>: Jeff can
+          graduate.</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td style="padding-top: 6px"><span class="var">C</span>: Jeff completes
+          all the GE requirements.</td>
+    </tr>
+  </table>
+
+<p>The sentence (3.1i) is also logically equivalent to</p>
+
+  <table class="display2">
+    <tr>
+      <td></td>
+      <td style="width: 520px">If Jeff does not complete all the GE
+      requirements, then he cannot graduate.</td>
+      <td style="vertical-align: bottom"><span style="font-family: sans-serif;
+      font-size: .8em"><span style="background: #e6ecff">3.1j</span></span></td>
+    </tr>
+    <tr>
+      <td style="padding-top: 6px">=</td>
+      <td style="padding-top: 6px"><span class="symb">&sim;</span><span
+      class="var">C <span class="symb">&sup;</span> <span
+      class="symb">&sim;</span>G</span></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td style="padding-top: 6px"><span class="var">G</span>: Jeff can
+      graduate.</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td style="padding-top: 6px"><span class="var">C</span>: Jeff completes
+      all the GE requirements.</td>
+    </tr>
+  </table>
+
+<p>We can also rewrite (3.1h) as</p>
+
+  <table class="display2">
+    <tr>
+      <td></td>
+      <td style="width: 520px">Either Jeff completes all the GE
+      requirements or he cannot graduate.</td>
+      <td style="vertical-align: bottom"><span style="font-family: sans-serif;
+      font-size: .8em"><span style="background: #e6ecff">3.1k</span></span></td>
+    </tr>
+    <tr>
+      <td style="padding-top: 6px">=</td>
+      <td style="padding-top: 6px"><span style="white-space: nowrap"><span
+      class="var">C <span class="symb">&or;</span> <span
+      class="symb">&sim;</span>G</span></span></td>
+    </tr>
+  </table>
+
+<p>Notice (3.1k) is symbolized as a nonexclusive disjunction <span
+style="white-space: nowrap"><span class="var">C <span
+class="symb">&or;</span> <span class="symb">&sim;</span>G</span></span>,
+because it is possible that Jeff completes all the GE requirements but still
+cannot graduate due to, say, having not yet met the total unit requirement.</p>
+
+<p>Since <em>p</em> <span class="symb">&or;</span> <em>q</em> is logically
+equivalent to <em>q</em> <span class="symb">&or;</span> <em>p</em>, now if we
+let <em>p</em> = <span class="var">C</span> and <em>q</em> = <span
+class="symb">&sim;<span class="var">G</span></span>, then we can see clearly
+that <span style="white-space: nowrap"><span class="var">C <span
+class="symb">&or;</span> <span class="symb">&sim;</span>G</span></span> is
+logically equivalent to <span style="white-space: nowrap"><span
+class="symb">&sim;</span><span class="var">G <span class="symb">&or;</span>
+C</span></span>. As a result, we can symbolize (3.1h) as <span
+style="white-space: nowrap"><span class="symb">&sim;</span><span
+class="var">G <span class="symb">&or;</span> C</span></span>.</p>
+
+  <table class="display2">
+    <tr>
+      <td></td>
+      <td style="width: 520px">Jeff cannot graduate unless he completes all
+      the GE requirements.</td>
+      <td style="vertical-align: bottom"><span style="font-family: sans-serif;
+      font-size: .8em"><span style="background: #e6ecff">3.1h</span></span></td>
+    </tr>
+    <tr>
+      <td style="padding-top: 6px">=</td>
+      <td style="padding-top: 6px"><span style="white-space: nowrap"><span
+      class="symb">&sim;</span><span class="var">G <span
+      class="symb">&or;</span> C</span></span></td>
+    </tr>
+  </table>
+
+<p>This shows us that we can symbolize &ldquo;unless&rdquo; in the nonexclusive
+sense with the symbol &ldquo;<span class="symb">&or;</span>&rdquo;. Now compare
+(3.1h) with the next sentence:</p>
+
+  <table class="display2">
+    <tr>
+      <td></td>
+      <td style="width: 520px">Mike will remain single unless he marries
+      Katie.</td>
+      <td style="vertical-align: bottom"><span style="font-family: sans-serif;
+      font-size: .8em"><span style="background: #e6ecff">3.1l</span></span></td>
+    </tr>
+    <tr>
+      <td style="padding-top: 6px">=</td>
+      <td style="padding-top: 6px"><span class="var">S <span
+      class="symb">&equiv;</span> <span class="symb">&sim;</span>K</span></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td style="padding-top: 6px"><span class="var">S</span>: Mike will remain
+      single.</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td style="padding-top: 6px"><span class="var">K</span>: Mike marries
+      Katie.</td>
+    </tr>
+  </table>
+
+<p>(3.1l) means that if Mike does not marry Katie, then he will remain single,
+and if he marries Katie, he would not remain single. (The second conditional is
+normally left unstated because there is no need to say the obvious.) The two
+conditionals together say that marrying Katie is both a sufficient condition
+and a necessary condition for Mike&rsquo;s not staying single. So we can
+rewrite it as</p>
+
+  <table class="display2">
+    <tr>
+      <td></td>
+      <td style="width: 520px">Mike will remain single if and only if he does
+      not marry Katie.</td>
+      <td style="vertical-align: bottom"><span style="font-family: sans-serif;
+      font-size: .8em"><span style="background: #e6ecff">3.1m</span></span></td>
+    </tr>
+    <tr>
+      <td style="padding-top: 6px">=</td>
+      <td style="padding-top: 6px"><span class="var">S <span
+      class="symb">&equiv;</span> <span class="symb">&sim;</span>K</span></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td style="padding-top: 6px"><span class="var">S</span>: Mike will remain
+      single.</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td style="padding-top: 6px"><span class="var">K</span>: Mike marries
+      Katie.</td>
+    </tr>
+  </table>
+
+<p>The example shows that we can symbolize &ldquo;unless&rdquo; in the
+exclusive sense with the triple bar &ldquo;<span
+class="symb">&equiv;</span>&rdquo; and the tilde &ldquo;<span
+class="symb">&sim;</span>&rdquo;.</p>
+
+<h3 id="Not_both_and_Both_not">3.1.5 &ldquo;Not &hellip; both &hellip;&rdquo;
+and &ldquo;Both &hellip; not &hellip;&rdquo;</h3>
+
+<p>It is important not to conflate &ldquo;Not &hellip; both &hellip;&rdquo; and
+&ldquo;Both &hellip; not &hellip;&rdquo;. Compare these two sentences:</p>
+
+  <table class="display2">
+    <tr>
+      <td></td>
+      <td style="width: 520px">Not both Monet and Chopin are painters.</td>
+      <td style="vertical-align: bottom"><span style="font-family: sans-serif;
+      font-size: .8em"><span style="background: #e6ecff">3.1n</span></span></td>
+    </tr>
+    <tr>
+      <td style="padding-top: 6px">=</td>
+      <td style="padding-top: 6px">It is not the case that Monet is a painter
+      and Chopin is a painter.</td>
+    </tr>
+    <tr>
+      <td style="padding-top: 6px">=</td>
+      <td style="padding-top: 6px"><span class="symb">&sim;</span><span
+      class="var2">(</span><span class="var">M <span
+      class="symb">&#x2022;</span> C<span class="var2">)</span></span></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td style="padding-top: 6px"><span
+          class="var">M</span>: Monet is a painter.</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td style="padding-top: 6px"><span
+          class="var">C</span>: Chopin is a painter.</td>
+    </tr>
+  </table>
+
+  <table class="display2">
+    <tr>
+      <td></td>
+      <td style="width: 520px">Both Dvo&#x159;ák and Schubert are not
+      painters.</td>
+      <td style="vertical-align: bottom"><span style="font-family: sans-serif;
+      font-size: .8em"><span style="background: #e6ecff">3.1o</span></span></td>
+    </tr>
+    <tr>
+      <td style="padding-top: 6px">=</td>
+      <td style="padding-top: 6px">Dvo&#x159;ák is not a painter and Schubert
+      is not a painter.</td>
+    </tr>
+    <tr>
+      <td style="padding-top: 6px">=</td>
+      <td style="padding-top: 6px"><span class="symb">&sim;</span><span
+      class="var">D <span class="symb">&#x2022;</span> <span
+      class="symb">&sim;</span>S</span></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td style="padding-top: 6px"><span class="var">D</span>: Dvo&#x159;ák is
+      a painter.</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td style="padding-top: 6px"><span class="var">S</span>: Schubert is a
+      painter.</td>
+    </tr>
+  </table>
+
+<p>The sentence (3.1n) denies that both Monet and Chopin are painters. That is,
+it says that at least one of them is not a painter. It can be rephrased as</p>
+
+  <table class="display2">
+    <tr>
+      <td></td>
+      <td style="width: 520px">Either Monet or Chopin is not a painter.</td>
+      <td style="vertical-align: bottom"><span style="font-family: sans-serif;
+      font-size: .8em"><span style="background: #e6ecff">3.1p</span></span></td>
+    </tr>
+    <tr>
+      <td style="padding-top: 6px">=</td>
+      <td style="padding-top: 6px">Either Monet is not a painter or Chopin is
+      not a painter.</td>
+    </tr>
+    <tr>
+      <td style="padding-top: 6px">=</td>
+      <td style="padding-top: 6px"><span class="symb">&sim;</span><span
+      class="var">M&nbsp;<span class="symb">&or;</span>&nbsp;<span
+      class="symb">&sim;</span>C</span></td>
+    </tr>
+  </table>
+
+<p>It is probably easier to see why (3.1p) is symbolized as <span
+class="symb">&sim;</span><span class="var">M <span
+class="symb">&or;</span><span class="var2">&nbsp;</span><span class="symb">&sim;</span>C</span> if we expand
+it fully as</p>
+
+  <p class="display">Either Monet is not a painter or Chopin is not a
+  painter.</p>
+
+<p>Since (3.1n) and (3.1p) are logically equivalent, we have <span
+class="symb">&sim;</span><span class="var2">(</span><span class="var">M <span
+class="symb">&#x2022;</span> C<span class="var2">)</span></span> <span
+class="var">=</span> <span class="symb">&sim;</span><span class="var">M <span
+class="symb">&or;</span> <span class="symb">&sim;</span>C</span>.</p>
+
+<p>By contrast, the sentence (3.1o) is a conjunction.</p>
+
+  <table class="display2">
+    <tr>
+      <td></td>
+      <td style="width: 520px">Both Dvo&#x159;ák and Schubert are not
+      painters.</td>
+      <td style="vertical-align: bottom"><span style="font-family: sans-serif;
+      font-size: .8em"><span style="background: #e6ecff">3.1o</span></span></td>
+    </tr>
+    <tr>
+      <td style="padding-top: 6px">=</td>
+      <td style="padding-top: 6px">Dvo&#x159;ák is not a painter and Schubert
+      is not a painter.</td>
+    </tr>
+    <tr>
+      <td style="padding-top: 6px">=</td>
+      <td style="padding-top: 6px"><span class="symb">&sim;</span><span
+      class="var">D <span class="symb">&#x2022;</span> <span
+      class="symb">&sim;</span>S</span></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td style="padding-top: 6px"><span class="var">D</span>: Dvo&#x159;ák is
+      a painter.</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td style="padding-top: 6px"><span class="var">S</span>: Schubert is a
+      painter.</td>
+    </tr>
+  </table>
+
+<p>Moreover, (3.1o) is logically equivalent to both sentences below:</p>
+
+  <table class="display2">
+    <tr>
+      <td></td>
+      <td style="width: 520px">Not either Dvo&#x159;ák or Schubert is a
+      painter.</td>
+      <td style="vertical-align: bottom"><span style="font-family: sans-serif;
+      font-size: .8em"><span style="background: #e6ecff">3.1q</span></span></td>
+    </tr>
+    <tr>
+      <td style="padding-top: 6px">=</td>
+      <td style="padding-top: 6px">It is not the case that either
+      Dvo&#x159;ák is a painter or Schubert is a painter.</td>
+    </tr>
+    <tr>
+      <td style="padding-top: 6px">=</td>
+      <td style="padding-top: 6px"><span class="symb">&sim;</span><span
+      class="var2">(</span><span class="var">D <span
+      class="symb">&or;</span> S<span class="var2">)</span></span></td>
+    </tr>
+  </table>
+
+  <table class="display2">
+    <tr>
+      <td></td>
+      <td style="width: 520px">Neither Dvo&#x159;ák nor Schubert is a
+      painter.</td>
+      <td style="vertical-align: bottom"><span style="font-family: sans-serif;
+      font-size: .8em"><span style="background: #e6ecff">3.1r</span></span></td>
+    </tr>
+    <tr>
+      <td style="padding-top: 6px">=</td>
+      <td style="padding-top: 6px">It is not the case that either
+      Dvo&#x159;ák is a painter or Schubert is a painter.</td>
+    </tr>
+    <tr>
+      <td style="padding-top: 6px">=</td>
+      <td style="padding-top: 6px"><span class="symb">&sim;</span><span
+      class="var2">(</span><span class="var">D <span
+      class="symb">&or;</span> S<span class="var2">)</span></span></td>
+    </tr>
+  </table>
+
+<p>Both (3.1q) and (3.1r) deny that at least one of them is a painter. So <span
+style="white-space: nowrap"><span class="symb">&sim;</span><span
+class="var">D <span class="symb">&#x2022;</span> <span
+class="symb">&sim;</span>S</span></span> is logically equivalent to <span
+style="white-space: nowrap"><span class="symb">&sim;</span><span
+class="var2">(</span><span class="var">D <span class="symb">&or;</span> S<span
+class="var2">)</span></span></span>.</p>
+
+<p>The following formulas sum up the differences between &ldquo;Not &hellip;
+both &hellip;&rdquo; and &ldquo;Both &hellip; not&nbsp;&hellip;&rdquo; and show
+how to symbolize them:</p>
+
+  <table class="bluebox" style="page-break-inside: avoid">
+      <tr>
+        <td align="right" style="padding: 12px 3px 3px 12px">&nbsp;</td>
+        <td width="140px" style="padding: 12px 3px 3px 3px">Not both <em>p</em>
+            and <em>q</em></td>
+        <td width="20px" align="center" style="padding: 12px 3px 3px 3px">=</td>
+        <td width="300px" style="padding: 12px 3px 3px 3px"><span
+        class="symb">&sim;</span>(<em>p</em> <span class="symb">&#x2022;</span>
+        <em>q</em>)</td>
+      </tr>
+      <tr>
+        <td align="right" style="padding: 3px 3px 12px 12px">=</td>
+        <td style="padding: 3px 3px 12px 3px">Either <span
+        class="symb">&sim;</span><em>p</em> or <span
+        class="symb">&sim;</span><em>q</em></td>
+        <td style="padding: 3px 3px 12px 3px" align="center">=</td>
+        <td style="padding: 3px 3px 12px 3px"><span
+        class="symb">&sim;</span><em>p</em> <span class="symb">&or;</span>
+        <span class="symb">&sim;</span><em>q</em></td>
+      </tr>
+  </table>
+
+  <table class="bluebox" style="margin-top: 20px; page-break-inside: avoid">
+      <tr>
+        <td align="right" style="padding: 12px 3px 3px 12px">&nbsp;</td>
+        <td width="140px" style="padding: 12px 3px 3px 3px">Both <span
+        class="symb">&sim;</span><em>p</em> and <span
+        class="symb">&sim;</span><em>q</em></td>
+        <td width="20px" align="center" style="padding: 12px 3px 3px 3px">=</td>
+        <td width="300px" style="padding: 12px 3px 3px 3px"><span
+        class="symb">&sim;</span><em>p</em> <span
+        class="symb">&#x2022;</span> <span
+        class="symb">&sim;</span><em>q</em></td>
+      </tr>
+      <tr>
+        <td align="right" style="padding: 3px 3px 3px 12px">=</td>
+        <td style="padding: 3px 3px 3px 3px">Not either <em>p</em> or
+        <em>q</em></td>
+        <td style="padding: 3px 3px 3px 3px" align="center">=</td>
+        <td style="padding: 3px 3px 3px 3px"><span
+        class="symb">&sim;</span>(<em>p</em> <span class="symb">&or;</span>
+        <em>q</em>)</td>
+      </tr>
+      <tr>
+        <td align="right" style="padding: 3px 3px 12px 12px">=</td>
+        <td style="padding: 3px 3px 12px 3px">Neither <em>p</em> nor
+        <em>q</em>&emsp;</td>
+        <td align="center" style="padding: 3px 3px 12px 3px">=</td>
+        <td style="padding: 3px 3px 12px 3px"><span
+        class="symb">&sim;</span>(<em>p</em> <span class="symb">&or;</span>
+        <em>q</em>)</td>
+      </tr>
+  </table>
+
+<p>As a matter of fact, these two formulas are called <strong>De Morgan&rsquo;s
+laws</strong> in logic.</p>
+
+<hr>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p style="margin-left: -18px;">In Propositional Logic, a capital letter
+      without quotation marks represents a simple statement. When we want to
+      talk about the letter itself, we put quotation marks around the letter.
+      Following this convention, we would say that &ldquo;<span
+      class="var">B</span>&rdquo; is the second letter in the symbolized
+      expression &ldquo;<span class="var">A <span
+      class="symb">&#x2022;</span> B</span>&rdquo;. By contrast, we would say
+      that <span class="var">B</span> is the second conjunct in the conjunction
+      <span class="var">A <span class="symb">&#x2022;</span> B</span>. This is
+      important because it would be a mistake to say that &ldquo;<span
+      class="var">B</span>&rdquo; is the second conjunct in the conjunction
+      <span class="var">A <span class="symb">&#x2022;</span> B</span>.</p> <p
+      style="margin-left: -18px;">Following the same convention, we say
+      &ldquo;<span class="symb">T</span>&rdquo; and &ldquo;<span
+      class="symb">F</span>&rdquo; are two capital letters, but <span
+      class="symb">T</span> (true) and <span class="symb">F</span> (false) are
+      two possible truth values of a statement in Propositional Logic. <a
+      href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+
+<h3 id="Ex31">Exercise 3.1</h3>
+
+  <ol class="ex_sec" start="1">
+    <li>Symbolize the following sentences using the five logical connectives
+      and the capital letters provided.</li>
+  </ol>
+
+    <ol class="ex_q">
+
+			<li>Nancy won&rsquo;t come to the party. (N)</li>
+				<input type="text" class="form31s" name="s301" id="s301"
+				onfocus="doItOnFocus(this)">
+				<img class="mark31c" id="s301c" src="mc.png">
+				<img class="mark31e" id="s301e" src="me.png">
+			<div class="operator31">
+				<button type="button" onclick="tilde();">&sim;</button>
+				<button type="button" onclick="dot();">&#x2022;</button>
+				<button type="button" onclick="wedge();">&or;</button>
+				<button type="button" onclick="horseshoe();">&sup;</button>
+				<button type="button" onclick="triplebar();">&equiv;</button>
+				<button type="button" class="ca" onclick="checkanswer01();">Check
+				Answer</button>
+			</div>
+
+			<li>Nancy and Jeff will come to the party. (N, J)</li>
+				<input type="text" class="form31s" name="s302" id="s302"
+				onfocus="doItOnFocus(this)">
+				<img class="mark31c" id="s302c" src="mc.png">
+				<img class="mark31e" id="s302e" src="me.png">
+			<div class="operator31">
+				<button type="button" onclick="tilde();">&sim;</button>
+				<button type="button" onclick="dot();">&#x2022;</button>
+				<button type="button" onclick="wedge();">&or;</button>
+				<button type="button" onclick="horseshoe();">&sup;</button>
+				<button type="button" onclick="triplebar();">&equiv;</button>
+				<button type="button" class="ca" onclick="checkanswer02();">Check
+				Answer</button>
+			</div>
+
+			<li>Nancy and Jeff won&rsquo;t come to the party. (N, J)</li>
+				<input type="text" class="form31s" name="s303" id="s303"
+				onfocus="doItOnFocus(this)">
+				<img class="mark31c" id="s303c" src="mc.png">
+				<img class="mark31e" id="s303e" src="me.png">
+			<div class="operator31">
+				<button type="button" onclick="tilde();">&sim;</button>
+				<button type="button" onclick="dot();">&#x2022;</button>
+				<button type="button" onclick="wedge();">&or;</button>
+				<button type="button" onclick="horseshoe();">&sup;</button>
+				<button type="button" onclick="triplebar();">&equiv;</button>
+				<button type="button" class="ca" onclick="checkanswer03();">Check
+				Answer</button>
+			</div>
+
+			<li>Nancy or Jeff will come to the party. (N, J)</li>
+				<input type="text" class="form31s" name="s304" id="s304"
+				onfocus="doItOnFocus(this)">
+				<img class="mark31c" id="s304c" src="mc.png">
+				<img class="mark31e" id="s304e" src="me.png">
+			<div class="operator31">
+				<button type="button" onclick="tilde();">&sim;</button>
+				<button type="button" onclick="dot();">&#x2022;</button>
+				<button type="button" onclick="wedge();">&or;</button>
+				<button type="button" onclick="horseshoe();">&sup;</button>
+				<button type="button" onclick="triplebar();">&equiv;</button>
+				<button type="button" class="ca" onclick="checkanswer04();">Check
+				Answer</button>
+			</div>
+
+			<li>Nancy or Jeff won&rsquo;t come to the party. (N, J)</li>
+				<input type="text" class="form31s" name="s305" id="s305"
+				onfocus="doItOnFocus(this)">
+				<img class="mark31c" id="s305c" src="mc.png">
+				<img class="mark31e" id="s305e" src="me.png">
+			<div class="operator31">
+				<button type="button" onclick="tilde();">&sim;</button>
+				<button type="button" onclick="dot();">&#x2022;</button>
+				<button type="button" onclick="wedge();">&or;</button>
+				<button type="button" onclick="horseshoe();">&sup;</button>
+				<button type="button" onclick="triplebar();">&equiv;</button>
+				<button type="button" class="ca" onclick="checkanswer05();">Check
+				Answer</button>
+			</div>
+
+			<li>Nancy will come to the party, but Jeff won&rsquo;t. (N, J)</li>
+				<input type="text" class="form31s" name="s306" id="s306"
+				onfocus="doItOnFocus(this)">
+				<img class="mark31c" id="s306c" src="mc.png">
+				<img class="mark31e" id="s306e" src="me.png">
+			<div class="operator31">
+				<button type="button" onclick="tilde();">&sim;</button>
+				<button type="button" onclick="dot();">&#x2022;</button>
+				<button type="button" onclick="wedge();">&or;</button>
+				<button type="button" onclick="horseshoe();">&sup;</button>
+				<button type="button" onclick="triplebar();">&equiv;</button>
+				<button type="button" class="ca" onclick="checkanswer06();">Check
+				Answer</button>
+			</div>
+
+			<li>Nancy won&rsquo;t come to the party, but Jeff will. (N, J)</li> 				<input type="text" class="form31s" name="s307" id="s307"
+				onfocus="doItOnFocus(this)">
+				<img class="mark31c" id="s307c" src="mc.png">
+				<img class="mark31e" id="s307e" src="me.png">
+			<div class="operator31">
+				<button type="button" onclick="tilde();">&sim;</button>
+				<button type="button" onclick="dot();">&#x2022;</button>
+				<button type="button" onclick="wedge();">&or;</button>
+				<button type="button" onclick="horseshoe();">&sup;</button>
+				<button type="button" onclick="triplebar();">&equiv;</button>
+				<button type="button" class="ca" onclick="checkanswer07();">Check
+				Answer</button>
+			</div>
+
+			<li>If Nancy is invited, then Jeff will come to the party. (N, J)</li>    				<input type="text" class="form31s" name="s308" id="s308"
+				onfocus="doItOnFocus(this)">
+				<img class="mark31c" id="s308c" src="mc.png">
+				<img class="mark31e" id="s308e" src="me.png">
+			<div class="operator31">
+				<button type="button" onclick="tilde();">&sim;</button>
+				<button type="button" onclick="dot();">&#x2022;</button>
+				<button type="button" onclick="wedge();">&or;</button>
+				<button type="button" onclick="horseshoe();">&sup;</button>
+				<button type="button" onclick="triplebar();">&equiv;</button>
+				<button type="button" class="ca" onclick="checkanswer08();">Check
+				Answer</button>
+			</div>
+
+			<li>Jeff will come to the party if Nancy is invited. (J, N)</li>
+				<input type="text" class="form31s" name="s309" id="s309"
+				onfocus="doItOnFocus(this)">
+				<img class="mark31c" id="s309c" src="mc.png">
+				<img class="mark31e" id="s309e" src="me.png">
+			<div class="operator31">
+				<button type="button" onclick="tilde();">&sim;</button>
+				<button type="button" onclick="dot();">&#x2022;</button>
+				<button type="button" onclick="wedge();">&or;</button>
+				<button type="button" onclick="horseshoe();">&sup;</button>
+				<button type="button" onclick="triplebar();">&equiv;</button>
+				<button type="button" class="ca" onclick="checkanswer09();">Check
+				Answer</button>
+			</div>
+
+			<li>Jeff will come to the party only if Nancy is invited. (J, N)</li>
+				<input type="text" class="form31s" name="s310" id="s310"
+				onfocus="doItOnFocus(this)">
+				<img class="mark31c" id="s310c" src="mc.png">
+				<img class="mark31e" id="s310e" src="me.png">
+			<div class="operator31">
+				<button type="button" onclick="tilde();">&sim;</button>
+				<button type="button" onclick="dot();">&#x2022;</button>
+				<button type="button" onclick="wedge();">&or;</button>
+				<button type="button" onclick="horseshoe();">&sup;</button>
+				<button type="button" onclick="triplebar();">&equiv;</button>
+				<button type="button" class="ca" onclick="checkanswer10();">Check
+				Answer</button>
+			</div>
+
+			<li>Jeff will come to the party if and only if Nancy is invited. (J,
+			N)</li>
+				<input type="text" class="form31s" name="s311" id="s311"
+				onfocus="doItOnFocus(this)">
+				<img class="mark31c" id="s311c" src="mc.png">
+				<img class="mark31e" id="s311e" src="me.png">
+			<div class="operator31">
+				<button type="button" onclick="tilde();">&sim;</button>
+				<button type="button" onclick="dot();">&#x2022;</button>
+				<button type="button" onclick="wedge();">&or;</button>
+				<button type="button" onclick="horseshoe();">&sup;</button>
+				<button type="button" onclick="triplebar();">&equiv;</button>
+				<button type="button" class="ca" onclick="checkanswer11();">Check
+				Answer</button>
+			</div>
+
+			<li>Jeff will not come to the party if Nancy is invited. (J, N)</li>
+				<input type="text" class="form31s" name="s312" id="s312"
+				onfocus="doItOnFocus(this)">
+				<img class="mark31c" id="s312c" src="mc.png">
+				<img class="mark31e" id="s312e" src="me.png">
+			<div class="operator31">
+				<button type="button" onclick="tilde();">&sim;</button>
+				<button type="button" onclick="dot();">&#x2022;</button>
+				<button type="button" onclick="wedge();">&or;</button>
+				<button type="button" onclick="horseshoe();">&sup;</button>
+				<button type="button" onclick="triplebar();">&equiv;</button>
+				<button type="button" class="ca" onclick="checkanswer12();">Check
+				Answer</button>
+			</div>
+
+			<li>Jeff will come to the party only if Nancy is not invited. (J, N)</li> 				<input type="text" class="form31s" name="s313" id="s313"
+				onfocus="doItOnFocus(this)">
+				<img class="mark31c" id="s313c" src="mc.png">
+				<img class="mark31e" id="s313e" src="me.png">
+			<div class="operator31">
+				<button type="button" onclick="tilde();">&sim;</button>
+				<button type="button" onclick="dot();">&#x2022;</button>
+				<button type="button" onclick="wedge();">&or;</button>
+				<button type="button" onclick="horseshoe();">&sup;</button>
+				<button type="button" onclick="triplebar();">&equiv;</button>
+				<button type="button" class="ca" onclick="checkanswer13();">Check
+				Answer</button>
+			</div>
+
+			<li>Jeff will come to the party if and only if Nancy is not invited. (J,
+			N)</li>
+				<input type="text" class="form31s" name="s314" id="s314"
+				onfocus="doItOnFocus(this)">
+				<img class="mark31c" id="s314c" src="mc.png">
+				<img class="mark31e" id="s314e" src="me.png">
+			<div class="operator31">
+				<button type="button" onclick="tilde();">&sim;</button>
+				<button type="button" onclick="dot();">&#x2022;</button>
+				<button type="button" onclick="wedge();">&or;</button>
+				<button type="button" onclick="horseshoe();">&sup;</button>
+				<button type="button" onclick="triplebar();">&equiv;</button>
+				<button type="button" class="ca" onclick="checkanswer14();">Check
+				Answer</button>
+			</div>
+
+			<li>Jeff will not come to the party if both Kathy and Nancy are invited.
+			(J, K, N)</li>
+				<input type="text" class="form31s" name="s315" id="s315"
+				onfocus="doItOnFocus(this)">
+				<img class="mark31c" id="s315c" src="mc.png">
+				<img class="mark31e" id="s315e" src="me.png">
+			<div class="operator31">
+				<button type="button" onclick="tilde();">&sim;</button>
+				<button type="button" onclick="dot();">&#x2022;</button>
+				<button type="button" onclick="wedge();">&or;</button>
+				<button type="button" onclick="horseshoe();">&sup;</button>
+				<button type="button" onclick="triplebar();">&equiv;</button>
+				<button type="button" class="ca" onclick="checkanswer15();">Check
+				Answer</button>
+			</div>
+
+			<li>Jeff will not come to the party if both Kathy and Nancy are not
+			invited. (J, K, N)</li>
+				<input type="text" class="form31s" name="s316" id="s316"
+				onfocus="doItOnFocus(this)">
+				<img class="mark31c" id="s316c" src="mc.png">
+				<img class="mark31e" id="s316e" src="me.png">
+			<div class="operator31">
+				<button type="button" onclick="tilde();">&sim;</button>
+				<button type="button" onclick="dot();">&#x2022;</button>
+				<button type="button" onclick="wedge();">&or;</button>
+				<button type="button" onclick="horseshoe();">&sup;</button>
+				<button type="button" onclick="triplebar();">&equiv;</button>
+				<button type="button" class="ca" onclick="checkanswer16();">Check
+				Answer</button>
+			</div>
+
+			<li>If Nancy is not invited, then Jeff will not come to the party but
+			Bill will. (N, J, B)</li>
+				<input type="text" class="form31s" name="s317" id="s317"
+				onfocus="doItOnFocus(this)">
+				<img class="mark31c" id="s317c" src="mc.png">
+				<img class="mark31e" id="s317e" src="me.png">
+			<div class="operator31">
+				<button type="button" onclick="tilde();">&sim;</button>
+				<button type="button" onclick="dot();">&#x2022;</button>
+				<button type="button" onclick="wedge();">&or;</button>
+				<button type="button" onclick="horseshoe();">&sup;</button>
+				<button type="button" onclick="triplebar();">&equiv;</button>
+				<button type="button" class="ca" onclick="checkanswer17();">Check
+				Answer</button>
+			</div>
+
+			<li>Jeff will come to the party only if Nancy is invited but Bill
+			isn&rsquo;t. (J, N, B)</li>
+				<input type="text" class="form31s" name="s318" id="s318"
+				onfocus="doItOnFocus(this)">
+				<img class="mark31c" id="s318c" src="mc.png">
+				<img class="mark31e" id="s318e" src="me.png">
+			<div class="operator31">
+				<button type="button" onclick="tilde();">&sim;</button>
+				<button type="button" onclick="dot();">&#x2022;</button>
+				<button type="button" onclick="wedge();">&or;</button>
+				<button type="button" onclick="horseshoe();">&sup;</button>
+				<button type="button" onclick="triplebar();">&equiv;</button>
+				<button type="button" class="ca" onclick="checkanswer18();">Check
+				Answer</button>
+			</div>
+
+			<li>Both Emma and Jessica are married. (E, J)</li>
+				<input type="text" class="form31s" name="s319" id="s319"
+				onfocus="doItOnFocus(this)">
+				<img class="mark31c" id="s319c" src="mc.png">
+				<img class="mark31e" id="s319e" src="me.png">
+			<div class="operator31">
+				<button type="button" onclick="tilde();">&sim;</button>
+				<button type="button" onclick="dot();">&#x2022;</button>
+				<button type="button" onclick="wedge();">&or;</button>
+				<button type="button" onclick="horseshoe();">&sup;</button>
+				<button type="button" onclick="triplebar();">&equiv;</button>
+				<button type="button" class="ca" onclick="checkanswer19();">Check
+				Answer</button>
+			</div>
+
+			<li>Both Emma and Jessica are not married. (E, J)</li>
+				<input type="text" class="form31s" name="s320" id="s320"
+				onfocus="doItOnFocus(this)">
+				<img class="mark31c" id="s320c" src="mc.png">
+				<img class="mark31e" id="s320e" src="me.png">
+			<div class="operator31">
+				<button type="button" onclick="tilde();">&sim;</button>
+				<button type="button" onclick="dot();">&#x2022;</button>
+				<button type="button" onclick="wedge();">&or;</button>
+				<button type="button" onclick="horseshoe();">&sup;</button>
+				<button type="button" onclick="triplebar();">&equiv;</button>
+				<button type="button" class="ca" onclick="checkanswer20();">Check
+				Answer</button>
+			</div>
+
+			<li>Emma is not married, but Jessica is. (E, J)</li>
+				<input type="text" class="form31s" name="s321" id="s321"
+				onfocus="doItOnFocus(this)">
+				<img class="mark31c" id="s321c" src="mc.png">
+				<img class="mark31e" id="s321e" src="me.png">
+			<div class="operator31">
+				<button type="button" onclick="tilde();">&sim;</button>
+				<button type="button" onclick="dot();">&#x2022;</button>
+				<button type="button" onclick="wedge();">&or;</button>
+				<button type="button" onclick="horseshoe();">&sup;</button>
+				<button type="button" onclick="triplebar();">&equiv;</button>
+				<button type="button" class="ca" onclick="checkanswer21();">Check
+				Answer</button>
+			</div>
+
+			<li>Either Emma or Jessica is married. (E, J)</li>
+				<input type="text" class="form31s" name="s322" id="s322"
+				onfocus="doItOnFocus(this)">
+				<img class="mark31c" id="s322c" src="mc.png">
+				<img class="mark31e" id="s322e" src="me.png">
+			<div class="operator31">
+				<button type="button" onclick="tilde();">&sim;</button>
+				<button type="button" onclick="dot();">&#x2022;</button>
+				<button type="button" onclick="wedge();">&or;</button>
+				<button type="button" onclick="horseshoe();">&sup;</button>
+				<button type="button" onclick="triplebar();">&equiv;</button>
+				<button type="button" class="ca" onclick="checkanswer22();">Check
+				Answer</button>
+			</div>
+
+			<li>Either Emma or Jessica is not married. (E, J)</li>
+				<input type="text" class="form31s" name="s323" id="s323"
+				onfocus="doItOnFocus(this)">
+				<img class="mark31c" id="s323c" src="mc.png">
+				<img class="mark31e" id="s323e" src="me.png">
+			<div class="operator31">
+				<button type="button" onclick="tilde();">&sim;</button>
+				<button type="button" onclick="dot();">&#x2022;</button>
+				<button type="button" onclick="wedge();">&or;</button>
+				<button type="button" onclick="horseshoe();">&sup;</button>
+				<button type="button" onclick="triplebar();">&equiv;</button>
+				<button type="button" class="ca" onclick="checkanswer23();">Check
+				Answer</button>
+			</div>
+
+			<li>Not both Emma and Jessica are married. (E, J)</li>
+				<input type="text" class="form31s" name="s324" id="s324"
+				onfocus="doItOnFocus(this)">
+				<img class="mark31c" id="s324c" src="mc.png">
+				<img class="mark31e" id="s324e" src="me.png">
+			<div class="operator31">
+				<button type="button" onclick="tilde();">&sim;</button>
+				<button type="button" onclick="dot();">&#x2022;</button>
+				<button type="button" onclick="wedge();">&or;</button>
+				<button type="button" onclick="horseshoe();">&sup;</button>
+				<button type="button" onclick="triplebar();">&equiv;</button>
+				<button type="button" class="ca" onclick="checkanswer24();">Check
+				Answer</button>
+			</div>
+
+			<li>Not either Emma or Jessica is married. (E, J)</li>
+				<input type="text" class="form31s" name="s325" id="s325"
+				onfocus="doItOnFocus(this)">
+				<img class="mark31c" id="s325c" src="mc.png">
+				<img class="mark31e" id="s325e" src="me.png">
+			<div class="operator31">
+				<button type="button" onclick="tilde();">&sim;</button>
+				<button type="button" onclick="dot();">&#x2022;</button>
+				<button type="button" onclick="wedge();">&or;</button>
+				<button type="button" onclick="horseshoe();">&sup;</button>
+				<button type="button" onclick="triplebar();">&equiv;</button>
+				<button type="button" class="ca" onclick="checkanswer25();">Check
+				Answer</button>
+			</div>
+
+			<li>Neither Emma nor Jessica is married. (E, J)</li>
+				<input type="text" class="form31s" name="s326" id="s326"
+				onfocus="doItOnFocus(this)">
+				<img class="mark31c" id="s326c" src="mc.png">
+				<img class="mark31e" id="s326e" src="me.png">
+			<div class="operator31">
+				<button type="button" onclick="tilde();">&sim;</button>
+				<button type="button" onclick="dot();">&#x2022;</button>
+				<button type="button" onclick="wedge();">&or;</button>
+				<button type="button" onclick="horseshoe();">&sup;</button>
+				<button type="button" onclick="triplebar();">&equiv;</button>
+				<button type="button" class="ca" onclick="checkanswer26();">Check
+				Answer</button>
+			</div>
+
+			<li>Chris will take logic or psychology. (L, P)</li>
+				<input type="text" class="form31s" name="s327" id="s327"
+				onfocus="doItOnFocus(this)">
+				<img class="mark31c" id="s327c" src="mc.png">
+				<img class="mark31e" id="s327e" src="me.png">
+			<div class="operator31">
+				<button type="button" onclick="tilde();">&sim;</button>
+				<button type="button" onclick="dot();">&#x2022;</button>
+				<button type="button" onclick="wedge();">&or;</button>
+				<button type="button" onclick="horseshoe();">&sup;</button>
+				<button type="button" onclick="triplebar();">&equiv;</button>
+				<button type="button" class="ca" onclick="checkanswer27();">Check
+				Answer</button>
+			</div>
+
+			<li>Chris will take logic and psychology. (L, P)</li>
+				<input type="text" class="form31s" name="s328" id="s328"
+				onfocus="doItOnFocus(this)">
+				<img class="mark31c" id="s328c" src="mc.png">
+				<img class="mark31e" id="s328e" src="me.png">
+			<div class="operator31">
+				<button type="button" onclick="tilde();">&sim;</button>
+				<button type="button" onclick="dot();">&#x2022;</button>
+				<button type="button" onclick="wedge();">&or;</button>
+				<button type="button" onclick="horseshoe();">&sup;</button>
+				<button type="button" onclick="triplebar();">&equiv;</button>
+				<button type="button" class="ca" onclick="checkanswer28();">Check
+				Answer</button>
+			</div>
+
+			<li>Chris won&rsquo;t take logic or psychology. (L, P)</li>
+				<input type="text" class="form31s" name="s329" id="s329"
+				onfocus="doItOnFocus(this)">
+				<img class="mark31c" id="s329c" src="mc.png">
+				<img class="mark31e" id="s329e" src="me.png">
+			<div class="operator31">
+				<button type="button" onclick="tilde();">&sim;</button>
+				<button type="button" onclick="dot();">&#x2022;</button>
+				<button type="button" onclick="wedge();">&or;</button>
+				<button type="button" onclick="horseshoe();">&sup;</button>
+				<button type="button" onclick="triplebar();">&equiv;</button>
+				<button type="button" class="ca" onclick="checkanswer29();">Check
+				Answer</button>
+			</div>
+
+			<li>Chris won&rsquo;t take logic and psychology. (L, P)</li>
+				<input type="text" class="form31s" name="s330" id="s330"
+				onfocus="doItOnFocus(this)">
+				<img class="mark31c" id="s330c" src="mc.png">
+				<img class="mark31e" id="s330e" src="me.png">
+			<div class="operator31">
+				<button type="button" onclick="tilde();">&sim;</button>
+				<button type="button" onclick="dot();">&#x2022;</button>
+				<button type="button" onclick="wedge();">&or;</button>
+				<button type="button" onclick="horseshoe();">&sup;</button>
+				<button type="button" onclick="triplebar();">&equiv;</button>
+				<button type="button" class="ca" onclick="checkanswer30();">Check
+				Answer</button>
+			</div>
+
+			<li>Thea will choose economics or sociology as her major. (E, S)</li>     				<input type="text" class="form31s" name="s331" id="s331"
+				onfocus="doItOnFocus(this)">
+				<img class="mark31c" id="s331c" src="mc.png">
+				<img class="mark31e" id="s331e" src="me.png">
+			<div class="operator31">
+				<button type="button" onclick="tilde();">&sim;</button>
+				<button type="button" onclick="dot();">&#x2022;</button>
+				<button type="button" onclick="wedge();">&or;</button>
+				<button type="button" onclick="horseshoe();">&sup;</button>
+				<button type="button" onclick="triplebar();">&equiv;</button>
+				<button type="button" class="ca" onclick="checkanswer31();">Check
+				Answer</button>
+			</div>
+
+			<li>Thea will choose economics as her major unless she picks sociology.
+			(E, S)</li>
+				<input type="text" class="form31s" name="s332" id="s332"
+				onfocus="doItOnFocus(this)">
+				<img class="mark31c" id="s332c" src="mc.png">
+				<img class="mark31e" id="s332e" src="me.png">
+			<div class="operator31">
+				<button type="button" onclick="tilde();">&sim;</button>
+				<button type="button" onclick="dot();">&#x2022;</button>
+				<button type="button" onclick="wedge();">&or;</button>
+				<button type="button" onclick="horseshoe();">&sup;</button>
+				<button type="button" onclick="triplebar();">&equiv;</button>
+				<button type="button" class="ca" onclick="checkanswer32();">Check
+				Answer</button>
+			</div>
+
+			<li>Rachel does not like Jazz and classical music. (J, C)</li>
+				<input type="text" class="form31s" name="s333" id="s333"
+				onfocus="doItOnFocus(this)">
+				<img class="mark31c" id="s333c" src="mc.png">
+				<img class="mark31e" id="s333e" src="me.png">
+			<div class="operator31">
+				<button type="button" onclick="tilde();">&sim;</button>
+				<button type="button" onclick="dot();">&#x2022;</button>
+				<button type="button" onclick="wedge();">&or;</button>
+				<button type="button" onclick="horseshoe();">&sup;</button>
+				<button type="button" onclick="triplebar();">&equiv;</button>
+				<button type="button" class="ca" onclick="checkanswer33();">Check
+				Answer</button>
+			</div>
+
+			<li>Rachel does not like Jazz or classical music. (J, C)</li>
+				<input type="text" class="form31s" name="s334" id="s334"
+				onfocus="doItOnFocus(this)">
+				<img class="mark31c" id="s334c" src="mc.png">
+				<img class="mark31e" id="s334e" src="me.png">
+			<div class="operator31">
+				<button type="button" onclick="tilde();">&sim;</button>
+				<button type="button" onclick="dot();">&#x2022;</button>
+				<button type="button" onclick="wedge();">&or;</button>
+				<button type="button" onclick="horseshoe();">&sup;</button>
+				<button type="button" onclick="triplebar();">&equiv;</button>
+				<button type="button" class="ca" onclick="checkanswer34();">Check
+				Answer</button>
+			</div>
+
+			<li>Mike can graduate from college if he completes all the GE
+			requirements. (G, R)</li>
+				<input type="text" class="form31s" name="s335" id="s335"
+				onfocus="doItOnFocus(this)">
+				<img class="mark31c" id="s335c" src="mc.png">
+				<img class="mark31e" id="s335e" src="me.png">
+			<div class="operator31">
+				<button type="button" onclick="tilde();">&sim;</button>
+				<button type="button" onclick="dot();">&#x2022;</button>
+				<button type="button" onclick="wedge();">&or;</button>
+				<button type="button" onclick="horseshoe();">&sup;</button>
+				<button type="button" onclick="triplebar();">&equiv;</button>
+				<button type="button" class="ca" onclick="checkanswer35();">Check
+				Answer</button>
+			</div>
+
+			<li>Mike can graduate from college only if he completes all the GE
+			requirements. (G, R)</li>
+				<input type="text" class="form31s" name="s336" id="s336"
+				onfocus="doItOnFocus(this)">
+				<img class="mark31c" id="s336c" src="mc.png">
+				<img class="mark31e" id="s336e" src="me.png">
+			<div class="operator31">
+				<button type="button" onclick="tilde();">&sim;</button>
+				<button type="button" onclick="dot();">&#x2022;</button>
+				<button type="button" onclick="wedge();">&or;</button>
+				<button type="button" onclick="horseshoe();">&sup;</button>
+				<button type="button" onclick="triplebar();">&equiv;</button>
+				<button type="button" class="ca" onclick="checkanswer36();">Check
+				Answer</button>
+			</div>
+
+			<li>Mike cannot graduate from college unless he completes all the GE
+			requirements. (G, R)</li>
+				<input type="text" class="form31s" name="s337" id="s337"
+				onfocus="doItOnFocus(this)">
+				<img class="mark31c" id="s337c" src="mc.png">
+				<img class="mark31e" id="s337e" src="me.png">
+			<div class="operator31">
+				<button type="button" onclick="tilde();">&sim;</button>
+				<button type="button" onclick="dot();">&#x2022;</button>
+				<button type="button" onclick="wedge();">&or;</button>
+				<button type="button" onclick="horseshoe();">&sup;</button>
+				<button type="button" onclick="triplebar();">&equiv;</button>
+				<button type="button" class="ca" onclick="checkanswer37();">Check
+				Answer</button>
+			</div>
+
+			<li>Mike can graduate from college unless he does not complete all the GE
+			requirements. (G, R)</li>
+				<input type="text" class="form31s" name="s338" id="s338"
+				onfocus="doItOnFocus(this)">
+				<img class="mark31c" id="s338c" src="mc.png">
+				<img class="mark31e" id="s338e" src="me.png">
+			<div class="operator31">
+				<button type="button" onclick="tilde();">&sim;</button>
+				<button type="button" onclick="dot();">&#x2022;</button>
+				<button type="button" onclick="wedge();">&or;</button>
+				<button type="button" onclick="horseshoe();">&sup;</button>
+				<button type="button" onclick="triplebar();">&equiv;</button>
+				<button type="button" class="ca" onclick="checkanswer38();">Check
+				Answer</button>
+			</div>
+
+			<li>José won&rsquo;t buy a Ford truck if he buys a Toyota. (F, T)</li>    				<input type="text" class="form31s" name="s339" id="s339"
+				onfocus="doItOnFocus(this)">
+				<img class="mark31c" id="s339c" src="mc.png">
+				<img class="mark31e" id="s339e" src="me.png">
+			<div class="operator31">
+				<button type="button" onclick="tilde();">&sim;</button>
+				<button type="button" onclick="dot();">&#x2022;</button>
+				<button type="button" onclick="wedge();">&or;</button>
+				<button type="button" onclick="horseshoe();">&sup;</button>
+				<button type="button" onclick="triplebar();">&equiv;</button>
+				<button type="button" class="ca" onclick="checkanswer39();">Check
+				Answer</button>
+			</div>
+
+			<li>José will buy a Ford truck only if he does not buy a Toyota. (F,
+			T)</li>
+				<input type="text" class="form31s" name="s340" id="s340"
+				onfocus="doItOnFocus(this)">
+				<img class="mark31c" id="s340c" src="mc.png">
+				<img class="mark31e" id="s340e" src="me.png">
+			<div class="operator31">
+				<button type="button" onclick="tilde();">&sim;</button>
+				<button type="button" onclick="dot();">&#x2022;</button>
+				<button type="button" onclick="wedge();">&or;</button>
+				<button type="button" onclick="horseshoe();">&sup;</button>
+				<button type="button" onclick="triplebar();">&equiv;</button>
+				<button type="button" class="ca" onclick="checkanswer40();">Check
+				Answer</button>
+			</div>
+
+			<li>José will buy a Ford truck unless he buys a Toyota. (F, T)</li>
+				<input type="text" class="form31s" name="s341" id="s341"
+				onfocus="doItOnFocus(this)">
+				<img class="mark31c" id="s341c" src="mc.png">
+				<img class="mark31e" id="s341e" src="me.png">
+			<div class="operator31">
+				<button type="button" onclick="tilde();">&sim;</button>
+				<button type="button" onclick="dot();">&#x2022;</button>
+				<button type="button" onclick="wedge();">&or;</button>
+				<button type="button" onclick="horseshoe();">&sup;</button>
+				<button type="button" onclick="triplebar();">&equiv;</button>
+				<button type="button" class="ca" onclick="checkanswer41();">Check
+				Answer</button>
+			</div>
+
+			<li>If it does not rain or snow, then the Taylors will go camping. (R, S,
+			C)</li>
+				<input type="text" class="form31s" name="s342" id="s342"
+				onfocus="doItOnFocus(this)">
+				<img class="mark31c" id="s342c" src="mc.png">
+				<img class="mark31e" id="s342e" src="me.png">
+			<div class="operator31">
+				<button type="button" onclick="tilde();">&sim;</button>
+				<button type="button" onclick="dot();">&#x2022;</button>
+				<button type="button" onclick="wedge();">&or;</button>
+				<button type="button" onclick="horseshoe();">&sup;</button>
+				<button type="button" onclick="triplebar();">&equiv;</button>
+				<button type="button" class="ca" onclick="checkanswer42();">Check
+				Answer</button>
+			</div>
+
+			<li>If it rains or snows, then the Taylors won&rsquo;t go camping. (R, S,
+			C)</li>
+				<input type="text" class="form31s" name="s343" id="s343"
+				onfocus="doItOnFocus(this)">
+				<img class="mark31c" id="s343c" src="mc.png">
+				<img class="mark31e" id="s343e" src="me.png">
+			<div class="operator31">
+				<button type="button" onclick="tilde();">&sim;</button>
+				<button type="button" onclick="dot();">&#x2022;</button>
+				<button type="button" onclick="wedge();">&or;</button>
+				<button type="button" onclick="horseshoe();">&sup;</button>
+				<button type="button" onclick="triplebar();">&equiv;</button>
+				<button type="button" class="ca" onclick="checkanswer43();">Check
+				Answer</button>
+			</div>
+
+			<li>The Taylors will go camping only if it does not rain or snow. (C, R,
+			S)</li>
+				<input type="text" class="form31s" name="s344" id="s344"
+				onfocus="doItOnFocus(this)">
+				<img class="mark31c" id="s344c" src="mc.png">
+				<img class="mark31e" id="s344e" src="me.png">
+			<div class="operator31">
+				<button type="button" onclick="tilde();">&sim;</button>
+				<button type="button" onclick="dot();">&#x2022;</button>
+				<button type="button" onclick="wedge();">&or;</button>
+				<button type="button" onclick="horseshoe();">&sup;</button>
+				<button type="button" onclick="triplebar();">&equiv;</button>
+				<button type="button" class="ca" onclick="checkanswer44();">Check
+				Answer</button>
+			</div>
+
+			<li>The Taylors will go camping unless it rains or snows. (C, R, S)</li>
+				<input type="text" class="form31s" name="s345" id="s345"
+				onfocus="doItOnFocus(this)">
+				<img class="mark31c" id="s345c" src="mc.png">
+				<img class="mark31e" id="s345e" src="me.png">
+			<div class="operator31">
+				<button type="button" onclick="tilde();">&sim;</button>
+				<button type="button" onclick="dot();">&#x2022;</button>
+				<button type="button" onclick="wedge();">&or;</button>
+				<button type="button" onclick="horseshoe();">&sup;</button>
+				<button type="button" onclick="triplebar();">&equiv;</button>
+				<button type="button" class="ca" onclick="checkanswer45();">Check
+				Answer</button>
+			</div>
+
+			<li>If inflation is under control and the economy is slowing down, then
+			interest rates will be lowered. (U, S, L)</li>
+				<input type="text" class="form31s" name="s346" id="s346"
+				onfocus="doItOnFocus(this)">
+				<img class="mark31c" id="s346c" src="mc.png">
+				<img class="mark31e" id="s346e" src="me.png">
+			<div class="operator31">
+				<button type="button" onclick="tilde();">&sim;</button>
+				<button type="button" onclick="dot();">&#x2022;</button>
+				<button type="button" onclick="wedge();">&or;</button>
+				<button type="button" onclick="horseshoe();">&sup;</button>
+				<button type="button" onclick="triplebar();">&equiv;</button>
+				<button type="button" class="ca" onclick="checkanswer46();">Check
+				Answer</button>
+			</div>
+
+			<li>The economy will slow down unless consumer confidence stays high and
+			inflation is under control. (S, H, U)</li>
+				<input type="text" class="form31s" name="s347" id="s347"
+				onfocus="doItOnFocus(this)">
+				<img class="mark31c" id="s347c" src="mc.png">
+				<img class="mark31e" id="s347e" src="me.png">
+			<div class="operator31">
+				<button type="button" onclick="tilde();">&sim;</button>
+				<button type="button" onclick="dot();">&#x2022;</button>
+				<button type="button" onclick="wedge();">&or;</button>
+				<button type="button" onclick="horseshoe();">&sup;</button>
+				<button type="button" onclick="triplebar();">&equiv;</button>
+				<button type="button" class="ca" onclick="checkanswer47();">Check
+				Answer</button>
+			</div>
+
+			<li>The economy will slow down unless interest rates are lowered, but if
+			interest rates are lowered, inflation will get worse. (S, L, W)</li>
+				<input type="text" class="form31s" name="s348" id="s348"
+				onfocus="doItOnFocus(this)">
+				<img class="mark31c" id="s348c" src="mc.png">
+				<img class="mark31e" id="s348e" src="me.png">
+			<div class="operator31">
+				<button type="button" onclick="tilde();">&sim;</button>
+				<button type="button" onclick="dot();">&#x2022;</button>
+				<button type="button" onclick="wedge();">&or;</button>
+				<button type="button" onclick="horseshoe();">&sup;</button>
+				<button type="button" onclick="triplebar();">&equiv;</button>
+				<button type="button" class="ca" onclick="checkanswer48();">Check
+				Answer</button>
+			</div>
+
+			<li>Without campaign finance reform people would not have equal access to
+			political power. (C, E)</li>
+				<input type="text" class="form31s" name="s349" id="s349"
+				onfocus="doItOnFocus(this)">
+				<img class="mark31c" id="s349c" src="mc.png">
+				<img class="mark31e" id="s349e" src="me.png">
+			<div class="operator31">
+				<button type="button" onclick="tilde();">&sim;</button>
+				<button type="button" onclick="dot();">&#x2022;</button>
+				<button type="button" onclick="wedge();">&or;</button>
+				<button type="button" onclick="horseshoe();">&sup;</button>
+				<button type="button" onclick="triplebar();">&equiv;</button>
+				<button type="button" class="ca" onclick="checkanswer49();">Check
+				Answer</button>
+			</div>
+
+			<li>Organic foods are neither safer nor more nutritious than non-organic
+			foods. (S, N)</li>
+				<input type="text" class="form31s" name="s350" id="s350"
+				onfocus="doItOnFocus(this)">
+				<img class="mark31c" id="s350c" src="mc.png">
+				<img class="mark31e" id="s350e" src="me.png">
+			<div class="operator31">
+				<button type="button" onclick="tilde();">&sim;</button>
+				<button type="button" onclick="dot();">&#x2022;</button>
+				<button type="button" onclick="wedge();">&or;</button>
+				<button type="button" onclick="horseshoe();">&sup;</button>
+				<button type="button" onclick="triplebar();">&equiv;</button>
+				<button type="button" class="ca" onclick="checkanswer50();">Check
+				Answer</button>
+			</div>
+
+			<li>Both solar power and wind power are not practical solutions to the
+			current energy crisis. (S, W)</li>
+				<input type="text" class="form31s" name="s351" id="s351"
+				onfocus="doItOnFocus(this)">
+				<img class="mark31c" id="s351c" src="mc.png">
+				<img class="mark31e" id="s351e" src="me.png">
+			<div class="operator31">
+				<button type="button" onclick="tilde();">&sim;</button>
+				<button type="button" onclick="dot();">&#x2022;</button>
+				<button type="button" onclick="wedge();">&or;</button>
+				<button type="button" onclick="horseshoe();">&sup;</button>
+				<button type="button" onclick="triplebar();">&equiv;</button>
+				<button type="button" class="ca" onclick="checkanswer51();">Check
+				Answer</button>
+			</div>
+
+			<li>Not both environmentalists and business developers are happy with the
+			new city plan. (E, B)</li>
+				<input type="text" class="form31s" name="s352" id="s352"
+				onfocus="doItOnFocus(this)">
+				<img class="mark31c" id="s352c" src="mc.png">
+				<img class="mark31e" id="s352e" src="me.png">
+			<div class="operator31">
+				<button type="button" onclick="tilde();">&sim;</button>
+				<button type="button" onclick="dot();">&#x2022;</button>
+				<button type="button" onclick="wedge();">&or;</button>
+				<button type="button" onclick="horseshoe();">&sup;</button>
+				<button type="button" onclick="triplebar();">&equiv;</button>
+				<button type="button" class="ca" onclick="checkanswer52();">Check
+				Answer</button>
+			</div>
+
+			<li>Genetic modification is morally acceptable only when it is used to
+			prevent genetic disorders. (M, P)</li>
+				<input type="text" class="form31s" name="s353" id="s353"
+				onfocus="doItOnFocus(this)">
+				<img class="mark31c" id="s353c" src="mc.png">
+				<img class="mark31e" id="s353e" src="me.png">
+			<div class="operator31">
+				<button type="button" onclick="tilde();">&sim;</button>
+				<button type="button" onclick="dot();">&#x2022;</button>
+				<button type="button" onclick="wedge();">&or;</button>
+				<button type="button" onclick="horseshoe();">&sup;</button>
+				<button type="button" onclick="triplebar();">&equiv;</button>
+				<button type="button" class="ca" onclick="checkanswer53();">Check
+				Answer</button>
+			</div>
+
+			<li>Parents would want designer babies provided that they are obsessed
+			with giving their kids head starts. (D, H)</li>
+				<input type="text" class="form31s" name="s354" id="s354"
+				onfocus="doItOnFocus(this)">
+				<img class="mark31c" id="s354c" src="mc.png">
+				<img class="mark31e" id="s354e" src="me.png">
+			<div class="operator31">
+				<button type="button" onclick="tilde();">&sim;</button>
+				<button type="button" onclick="dot();">&#x2022;</button>
+				<button type="button" onclick="wedge();">&or;</button>
+				<button type="button" onclick="horseshoe();">&sup;</button>
+				<button type="button" onclick="triplebar();">&equiv;</button>
+				<button type="button" class="ca" onclick="checkanswer54();">Check
+				Answer</button>
+			</div>
+
+			<li>Socioeconomic equality cannot be achieved as long as people are free
+			to accumulate wealth. (E, F)</li>
+				<input type="text" class="form31s" name="s355" id="s355"
+				onfocus="doItOnFocus(this)">
+				<img class="mark31c" id="s355c" src="mc.png">
+				<img class="mark31e" id="s355e" src="me.png">
+			<div class="operator31">
+				<button type="button" onclick="tilde();">&sim;</button>
+				<button type="button" onclick="dot();">&#x2022;</button>
+				<button type="button" onclick="wedge();">&or;</button>
+				<button type="button" onclick="horseshoe();">&sup;</button>
+				<button type="button" onclick="triplebar();">&equiv;</button>
+				<button type="button" class="ca" onclick="checkanswer55();">Check
+				Answer</button>
+			</div>
+
+			<li>We have to reduce the national debts or cut taxes to stimulate
+			further economic growth. (R, C, S)</li>
+				<input type="text" class="form31s" name="s356" id="s356"
+				onfocus="doItOnFocus(this)">
+				<img class="mark31c" id="s356c" src="mc.png">
+				<img class="mark31e" id="s356e" src="me.png">
+			<div class="operator31">
+				<button type="button" onclick="tilde();">&sim;</button>
+				<button type="button" onclick="dot();">&#x2022;</button>
+				<button type="button" onclick="wedge();">&or;</button>
+				<button type="button" onclick="horseshoe();">&sup;</button>
+				<button type="button" onclick="triplebar();">&equiv;</button>
+				<button type="button" class="ca" onclick="checkanswer56();">Check
+				Answer</button>
+			</div>
+
+			<li>The federal budget cannot be balanced unless taxes are raised and
+			government spending is cut. (B, R, C)</li>
+				<input type="text" class="form31s" name="s357" id="s357"
+				onfocus="doItOnFocus(this)">
+				<img class="mark31c" id="s357c" src="mc.png">
+				<img class="mark31e" id="s357e" src="me.png">
+			<div class="operator31">
+				<button type="button" onclick="tilde();">&sim;</button>
+				<button type="button" onclick="dot();">&#x2022;</button>
+				<button type="button" onclick="wedge();">&or;</button>
+				<button type="button" onclick="horseshoe();">&sup;</button>
+				<button type="button" onclick="triplebar();">&equiv;</button>
+				<button type="button" class="ca" onclick="checkanswer57();">Check
+				Answer</button>
+			</div>
+
+			<li>Workers would not have job security if more manufacturing relies on
+			robotic automation and the globalization of the labor market continues. (J,
+			R, G)</li>
+				<input type="text" class="form31s" name="s358" id="s358"
+				onfocus="doItOnFocus(this)">
+				<img class="mark31c" id="s358c" src="mc.png">
+				<img class="mark31e" id="s358e" src="me.png">
+			<div class="operator31">
+				<button type="button" onclick="tilde();">&sim;</button>
+				<button type="button" onclick="dot();">&#x2022;</button>
+				<button type="button" onclick="wedge();">&or;</button>
+				<button type="button" onclick="horseshoe();">&sup;</button>
+				<button type="button" onclick="triplebar();">&equiv;</button>
+				<button type="button" class="ca" onclick="checkanswer58();">Check
+				Answer</button>
+			</div>
+
+			<li>Nations won&rsquo;t fight over natural resources only if people cut
+			back consumption and new technologies provide alternative energy sources.
+			(F, C, T)</li>
+				<input type="text" class="form31s" name="s359" id="s359"
+				onfocus="doItOnFocus(this)">
+				<img class="mark31c" id="s359c" src="mc.png">
+				<img class="mark31e" id="s359e" src="me.png">
+			<div class="operator31">
+				<button type="button" onclick="tilde();">&sim;</button>
+				<button type="button" onclick="dot();">&#x2022;</button>
+				<button type="button" onclick="wedge();">&or;</button>
+				<button type="button" onclick="horseshoe();">&sup;</button>
+				<button type="button" onclick="triplebar();">&equiv;</button>
+				<button type="button" class="ca" onclick="checkanswer59();">Check
+				Answer</button>
+			</div>
+
+			<li>If we do not change the culture of bullying and prevent youngsters
+			from acquiring guns, then there will be more school shootings. (B, G, S)</li>
+				<input type="text" class="form31s" name="s360" id="s360"
+				onfocus="doItOnFocus(this)">
+				<img class="mark31c" id="s360c" src="mc.png">
+				<img class="mark31e" id="s360e" src="me.png">
+			<div class="operator31">
+				<button type="button" onclick="tilde();">&sim;</button>
+				<button type="button" onclick="dot();">&#x2022;</button>
+				<button type="button" onclick="wedge();">&or;</button>
+				<button type="button" onclick="horseshoe();">&sup;</button>
+				<button type="button" onclick="triplebar();">&equiv;</button>
+				<button type="button" class="ca" onclick="checkanswer60();">Check
+				Answer</button>
+			</div>
+		</ol>
+
+		<ol class="ex_sec" start="2">
+			<li>Use the concepts of the sufficient condition and the necessary
+			condition to decide whether the inferences are correct. </li>
+		</ol>
+
+		<ol class="ex_q">
+			<li>Suppose Nick&rsquo;s mother tells Nick that he can play video
+			games only after he finishes his homework. This means that Nick is
+			entitled to play video games after he finishes his homework.</li>
+			<li>Ryan needs to pass the exit examination to graduate from high
+			school. If we find out that Ryan has passed the test, then we know
+			that he can graduate.</li>
+			<li>Ashley will buy a new car if she is promoted to the manager
+			position. After learning that she gets the promotion we can infer
+			that she will buy a new car.</li>
+			<li>The Miller family will buy a house unless their offer is
+			rejected. The house owner accepts their offer. So they are going to
+			buy the house.</li>
+			<li>A reasonable person cannot be closed-minded. From the fact that
+			a person is open-minded it follows that she or he is
+			reasonable.</li>
+			<li>Lowering interest rates can boost the stock market. Upon
+			learning that the Federal Reserve just lowered the interest rates,
+			we can be confident that the stock market will go up.</li>
+			<li>We learn from Alzheimer&rsquo;s disease that memory requires a
+			healthy and functional brain. This means that without a brain, we
+			would not have memory.</li>
+			<li>A college degree has increasingly become a required
+			qualification for a good-pay job. So by making college education
+			affordable and accessible we can achieve economic equality.</li>
+			<li>Many moral philosophers maintain that we are morally
+			responsible for our actions because we have free will. So if our
+			free will is curtailed under certain circumstances, then we would
+			be less morally responsible in such situations.</li>
+			<li>Without stem cell researches, it would be much harder and take
+			longer time to find cures for many diseases. So if we want good
+			progress in finding cures, we need to permit and fund stem cell
+			researches.</li>
+			<li>Reducing the number of migrant workers would lead to labor
+			shortage or higher labor cost, which would in turn cause higher
+			consumer price index and weaken the economy. So to keep the economy
+			strong, we need to find a way to accommodate migrant workers.</li>
+			<li>There is no religious freedom if we have a state religion. This
+			is why the separation of church and state is essential for freedom
+			of religion.</li>
+		</ol>
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+      <p><a class="license" rel="license" href="https://creativecommons.org/licenses/by-nc-nd/3.0/us/"><img alt="Creative
+      Commons License" style="border-width: 0pt;" src="https://i.creativecommons.org/l/by-nc-nd/3.0/us/88x31.png"> </a> <br>
+      This work is licensed under a <a rel="license"
+      href="https://creativecommons.org/licenses/by-nc-nd/3.0/us/">Creative Commons
+      Attribution-Noncommercial-No Derivative Works 3.0 United States License</a>.</p>
+    </div>
+
+    <div id="sidebar">
+    </div>
+  </div>
+</div>
+
+<div id="fwrap">
+  <div id="fwrap2">
+    <div id="footer">
+      <p><a href="javascript:;" onclick="window.location.assign('../2.5/iLogic_2_5.html');">&larr;&nbsp;&nbsp;PREVIOUS</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="javascript:;" onclick="window.location.assign('../3.2/iLogic_3_2.html');">NEXT&nbsp;&nbsp;&rarr;</a></p>
+  </div>
+  </div>
+</div>
+
+
+</body>
+</html>
