@@ -1,0 +1,2477 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>Natural Deduction</title>
+<link href='https://fonts.googleapis.com/css?family=Noto+Sans:400,400italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+<link href="../iLogic.css" rel="stylesheet" type="text/css">
+    <style type = "text/css">
+      @font-face {
+      font-family: "Arial Unicode MS";
+      src: url("../Arial Unicode.ttf");
+      }
+      @font-face {
+      font-family: "Verdana";
+      src: url("../Verdana.ttf");
+      }
+      @font-face {
+      font-family: "Verdana Italic";
+      src: url("../Verdana Italic.ttf");
+      }
+    </style>
+<script type="text/javascript" src="nd.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+<div id="hwrap">
+  <div id="hwrap2">
+    <div id="header">
+      <h1>iLogic</h1>
+    </div>
+  </div>
+</div>
+
+<div id="nwrap">
+  <div id="nwrap2">
+    <div id="nav">
+      <ul>
+        <li><a href="javascript:;" onclick="window.location.assign('../../index.html');">HOME</a></li>
+        <li><a href="javascript:;" onclick="window.location.assign('../table-of-contents.html');">TABLE OF CONTENTS</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div id="mwrap">
+  <div id="mwrap2">
+    <div id="main">
+
+<h2>3.4 Natural Deduction</h2>
+
+<p>In the previous section, we symbolize the argument (3.3n)</p>
+
+  <table class="box">
+    <tbody>
+      <tr>
+        <td width="520px" valign="bottom">If we continue the acceleration of production and consumption, we will deplete natural resources within one hundred years. If natural resources are depleted within one hundred years, life on earth will not be sustainable. We continue to accelerate production and consumption. As a result, life on earth will not be sustainable.</td>
+        <td width="80px" valign="bottom" align="center"><span style="background-image: none; background-color: #E6ECFF; font-family: sans-serif; font-size: .8em">3.3n</span></td>
+      </tr>
+    </tbody>
+  </table>
+
+<p>as</p>
+
+  <table class="commonform2">
+    <tbody>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2">&nbsp;&nbsp;<span class="var">C <span class="symb">&sup;</span> D</span></td>
+        <td class="c1"><br></td>
+      </tr>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2">&nbsp;&nbsp;<span class="var">D <span class="symb">&sup;</span><span class="var2">&nbsp;</span><span class="symb">&sim;</span>S</span></td>
+        <td class="c1"><br></td>
+      </tr>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2">&nbsp;&nbsp;<span class="var">C</span></td>
+        <td class="c1"><br></td>
+      </tr>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2" style="border-top: 1px solid black;">&nbsp;&nbsp;<span class="symb">&sim;</span><span class="var">S</span></td> <td class="c1"><br></td>
+      </tr>
+    </tbody>
+  </table>
+
+<p>We then show that it is valid because it is formed by combining</p>
+
+  <table class="commonform2">
+    <tbody>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2">&nbsp;&nbsp;<span class="var">C <span class="symb">&sup;</span> D</span></td>
+        <td class="c1"><br></td>
+        <td class="c3" align="center">and</td>
+        <td class="c1"><br></td>
+        <td class="c2">&nbsp;&nbsp;<span class="var">C <span class="symb">&sup;</span> <span class="symb">&sim;</span>S</span></td>
+        <td class="c1"><br></td>
+      </tr>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2">&nbsp;&nbsp;<span class="var">D <span class="symb">&sup;</span> <span class="symb">&sim;</span>S</span></td>
+        <td class="c1"><br></td>
+        <td class="c3">&nbsp;</td>
+        <td class="c1"><br></td>
+        <td class="c2">&nbsp;&nbsp;<span class="var">C</span></td>
+        <td class="c1"><br></td>
+      </tr>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2" style="border-top: 1px solid black;">&nbsp;&nbsp;<span class="var">C <span class="symb">&sup;</span> <span class="symb">&sim;</span>S</span></td>
+        <td class="c1"><br></td>
+        <td class="c3">&nbsp;</td>
+        <td class="c1"><br></td>
+        <td class="c2" style="border-top: 1px solid black;">&nbsp;&nbsp;<span class="symb">&sim;</span><span class="var">S</span></td>
+        <td class="c1"><br></td>
+      </tr>
+      <tr>
+        <td class="c1">&nbsp;</td>
+        <td class="c2b" style="padding-top: 12px">Hypothetical Syllogism</td>
+        <td class="c1"><br></td>
+        <td class="c3">&nbsp;</td>
+        <td class="c1"><br></td>
+        <td class="c2b" style="padding-top: 12px">Modus Ponens</td>
+        <td class="c1"><br></td>
+      </tr>
+    </tbody>
+  </table>
+
+<p>The whole process of showing that the argument (3.3n) is valid can be
+simplified and written as a list of steps:</p>
+
+  <ol class="s34">
+    <li><span class="var">C</span><span class="var2">&nbsp;</span><span class="symb">&sup;</span><span class="var2">&nbsp;</span><span class="var">D</span></li>
+    <li><span class="var">D <span class="symb">&sup;</span> <span class="symb">&sim;</span>S</span></li>
+    <li><span class="nd"><span class="var">C</span></span><span class="var2">/ </span><span class="symb">&sim;</span><span class="var">S</span></li>
+    <li><span class="nd"><span class="var">C <span class="symb">&sup;</span> <span class="symb">&sim;</span>S</span></span>1, 2 HS</li>
+    <li><div class="nd"><span class="symb">&sim;</span><span class="var">S</span></div>3, 4 MP</li>
+  </ol>
+
+<p>Notice a forward slash &ldquo;/&rdquo; is used in line 3 to separate the third premise <span class="var">C </span>from the conclusion <span class="symb">&sim;</span><span class="var">S</span>. Step 4 shows that the conditional <span class="var">C <span class="symb">&sup;</span> <span class="symb">&sim;</span>S </span>is derived from the first and the second premise using the basic form hypothetic syllogism (HS). Step 5 shows that the conclusion <span class="symb">&sim;</span><span class="var">S </span>is derived from the third premise and the fourth statement using the basic form <em>modus ponens</em> (MP). This way of showing how the conclusion of an argument is derived step by step from its premises using rules of inference is called <strong>natural deduction</strong>. It is a formal way of proving that an argument form is valid. The rules of inference used in natural deduction include the basic valid forms as well as equivalence rules.</p>
+
+<h3 id="Additional_Valid_Forms">3.4.1 Additional Valid Forms</h3>
+
+<p>In addition to the six valid forms introduced in the previous section, there are three more basic forms that are commonly used in natural deduction:</p>
+
+  <ol class="display">
+    <li>Simplification (Simp.)</li>
+    <li>Addition (Add.)</li>
+    <li>Conjunction (Conj.)</li>
+  </ol>
+
+<h4>Simplification <span style="font-style: normal">(</span>Simp.<span style="font-style: normal">)</span></h4>
+
+<p>The basic form simplification encapsulates the reasoning that if a conjunction is true, then one of the conjunct must be true.</p>
+
+  <table class="commonform">
+    <tbody>
+      <tr>
+        <td class="c1">&nbsp;</td>
+        <td class="c2">&nbsp;&nbsp;<em>p</em> <span class="symb">&#x2022;</span> <em>q</em></td>
+        <td class="c1">&nbsp;</td>
+      </tr>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2" style="border-top: 1px solid black;">&nbsp;&nbsp;<em>p</em></td>
+        <td class="c1"><br></td>
+      </tr>
+    </tbody>
+  </table>
+
+<p>Some instances of simplification are:</p>
+
+<div style="float: left;">
+  <table class="commonform2">
+    <tbody>
+      <tr>
+        <td class="c2">&nbsp;&nbsp;<span class="var">S <span class="symb">&#x2022;</span> C</span></td>
+      </tr>
+      <tr>
+        <td class="c2" style="border-top: 1px solid black;">&nbsp;&nbsp;<span class="var">S</span></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div style="float: left;">
+  <table class="commonform2">
+    <tbody>
+      <tr>
+        <td class="c2">&nbsp;&nbsp;<span class="symb">&sim;</span><span class="var">B </span><span class="symb">&#x2022;</span><span class="var2">&nbsp;</span><span class="symb">&sim;</span><span class="var">H</span></td>
+      </tr>
+      <tr>
+        <td class="c2" style="border-top: 1px solid black;">&nbsp;&nbsp;<span class="symb">&sim;</span><span class="var">B</span></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div style="float: left;">
+  <table class="commonform2">
+    <tbody>
+      <tr>
+        <td class="c2">&nbsp;&nbsp;<span class="var2">(</span><span class="var">A </span><span class="symb">&or;</span><span class="var"> D</span><span class="var2">) </span><span class="symb">&#x2022;</span><span class="var2">&nbsp;</span><span class="symb">&sim;</span><span class="var">G</span></td>
+      </tr>
+      <tr>
+        <td class="c2" style="width: 140px; border-top: 1px solid black;">&nbsp;&nbsp;<span class="var">A </span><span class="symb">&or;</span><span class="var"> D</span></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div style="clear: both;"></div>
+
+<p>Here is an example that illustrates how simplification is used in natural deduction. By using simplification, we can get <span class="var">R </span>from the second premise <span class="var">R <span class="symb">&#x2022;</span> <span class="symb">&sim;</span>E</span>. Then from the first premise <span class="var">R <span class="symb">&sup;</span> M</span>, together with <span class="var">R</span>, we can draw the conclusion <span class="var">M </span>based on <em>modus ponens</em> (MP).</p>
+
+
+  <ol class="s34">
+    <li><span class="var">R <span class="symb">&sup;</span> M</span></li>
+    <li><span class="nd"><span class="var">R <span class="symb">&#x2022;</span><span class="var2">&nbsp;</span><span class="symb">&sim;</span>E</span></span><span class="var2">/ </span><span class="var">M</span></li>
+    <li><span class="nd"><span class="var">R</span></span>2 Simp.</li>
+    <li><span class="nd"><span class="var">M</span></span>1, 3 MP</li>
+  </ol>
+
+<h4>Addition <span style="font-style: normal">(</span>Add.<span style="font-style: normal">)</span></h4>
+
+<p>The form addition basically enables us to construct a disjunction out of any statement. If <em>p</em> is true, then the disjunction <em>p</em> <span class="symb">&or;</span> <em>q</em> must also be true.</p>
+
+  <table class="commonform">
+    <tbody>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2">&nbsp;&nbsp;<em>p</em></td>
+        <td class="c1"><br></td>
+      </tr>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2" style="border-top: 1px solid black;">&nbsp;&nbsp;<em>p</em> <span class="symb">&or;</span> <em>q</em></td> <td class="c1"><br></td>
+      </tr>
+    </tbody>
+  </table>
+
+<p>The following are all instances of addition:</p>
+
+<div style="float: left;">
+  <table class="commonform2">
+    <tbody>
+      <tr>
+        <td class="c2">&nbsp;&nbsp;<span class="var">G</span></td>
+      </tr>
+      <tr>
+        <td class="c2" style="border-top: 1px solid black;"> &nbsp;&nbsp;<span class="var">G <span class="symb">&or;</span> N</span></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div style="float: left;">
+  <table class="commonform2">
+    <tbody>
+      <tr>
+        <td class="c2">&nbsp;&nbsp;<span class="var">M</span></td>
+      </tr>
+      <tr>
+        <td class="c2" style="border-top: 1px solid black;">&nbsp;&nbsp;<span class="var">M <span class="symb">&or;</span><span class="var2">&nbsp;</span><span class="symb">&sim;</span>A</span></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div style="float: left;">
+  <table class="commonform2">
+    <tbody>
+      <tr>
+        <td class="c2">&nbsp;&nbsp;<span class="var"><span class="symb">&sim;</span>D</span></td>
+      </tr>
+      <tr>
+        <td class="c2" style="width: 140px; border-top: 1px solid black;">&nbsp;&nbsp;<span class="symb">&sim;</span><span class="var">D </span><span class="symb">&or;</span> <span class="var2"> (</span><span class="var">H </span><span class="symb">&sup;</span><span class="var"> S</span><span class="var2">)</span></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div style="clear: both;"></div>
+
+<p>In the next example, from the second premise <span class="var">B </span> addition is used to obtain <span class="var">B </span><span class="symb">&or;</span><span class="var"> A</span>, which is then used together with the first premise to derive the conclusion <span class="var">H </span>by <em>modus ponens</em> (MP).</p>
+
+  <ol class="s34">
+    <li><span class="var2">(</span><span class="var">B </span><span class="symb">&or;</span><span class="var"> A</span><span class="var2">) </span><span class="symb">&sup;</span><span class="var"> H</span></li>
+    <li><span class="nd"><span class="var">B</span></span><span class="var2">/ </span><span class="var">H</span></li>
+    <li><span class="nd"><span class="var">B </span><span class="symb">&or;</span><span class="var"> A</span></span>2 Add.</li>
+    <li><span class="nd"><span class="var">H</span></span>1, 3 MP</li>
+  </ol>
+
+<h4>Conjunction (Conj.)</h4>
+
+<p>The form conjunction simply captures the basic logic that if two statements are true, then their conjunction must also be true.</p>
+
+  <table class="commonform">
+    <tbody>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2">&nbsp;&nbsp;<em>p</em></td>
+        <td class="c1"><br></td>
+      </tr>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2">&nbsp;&nbsp;<em>q</em></td>
+        <td class="c1"><br></td>
+      </tr>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2" style="border-top: 1px solid black;">&nbsp;&nbsp;<em>p</em> <span class="symb">&#x2022;</span> <em>q</em></td>
+        <td class="c1"><br></td>
+      </tr>
+    </tbody>
+  </table>
+
+<p>Some examples of conjunction are:</p>
+
+<div style="float: left;">
+  <table class="commonform2">
+    <tbody>
+      <tr>
+        <td class="c2">&nbsp;&nbsp;<span class="var">B</span></td>
+      </tr>
+      <tr>
+        <td class="c2">&nbsp;&nbsp;<span class="var">E</span></td>
+      </tr>
+      <tr>
+        <td class="c2" style="border-top: 1px solid black;">&nbsp;&nbsp;<span class="var">B <span class="symb">&#x2022;</span> E</span></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div style="float: left;">
+  <table class="commonform2">
+    <tbody>
+      <tr>
+        <td class="c2">&nbsp;&nbsp;<span class="symb">&sim;</span><span class="var">R</span></td>
+      </tr>
+      <tr>
+        <td class="c2">&nbsp;&nbsp;<span class="var">A</span></td>
+      </tr>
+      <tr>
+        <td class="c2" style="border-top: 1px solid black;">&nbsp;&nbsp;<span class="symb">&sim;</span><span class="var">R </span><span class="symb">&#x2022;</span><span class="var"> A</span></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div style="float: left;">
+  <table class="commonform2">
+    <tbody>
+      <tr>
+        <td class="c2">&nbsp;&nbsp;<span class="var">C</span></td>
+      </tr>
+      <tr>
+      <td class="c2">&nbsp;&nbsp;<span class="var">N <span class="symb">&equiv;</span> L</span></td>
+      </tr>
+      <tr>
+        <td class="c2" style="width: 140px; border-top: 1px solid black;">&nbsp;&nbsp;<span class="var">C </span><span class="symb">&#x2022;</span><span class="var2"> (</span><span class="var">N </span><span class="symb">&equiv;</span><span class="var"> L</span><span class="var2">)</span></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div style="clear: both;"></div>
+
+<p>In the following proof, we use conjunction to derive <span class="var">S </span><span class="symb">&#x2022;</span><span class="var"> R </span>from the first two premises. Afterwards, addition is used to draw the conclusion <span class="var2">(</span><span class="var">S </span><span class="symb">&#x2022;</span><span class="var"> R</span><span class="var2">) </span><span class="symb">&or;</span><span class="var"> G </span>from <span class="var">S&nbsp;</span><span class="symb">&#x2022;</span><span class="var">&nbsp;R</span>.</p>
+
+  <ol class="s34">
+    <li><span class="var">S</span></li>
+    <li><span class="nd"><span class="var">R</span></span><span class="var2">/ </span><span class="var2">(</span><span class="var">S </span><span class="symb">&#x2022;</span><span class="var"> R</span><span class="var2">) </span><span class="symb">&or;<span class="var"> G</span></li>
+    <li><span class="nd"><span class="var">S </span><span class="symb">&#x2022;</span><span class="var"> R</span></span>1, 2 Conj.</li>
+    <li><span class="nd"><span class="var2">(</span><span class="var">S </span><span class="symb">&#x2022;</span><span class="var"> R</span><span class="var2">) </span><span class="symb">&or;</span><span class="var"> G</span></span>3 Add.</li>
+  </ol>
+
+<h3 id="Equivalence_Rules">3.4.2 Equivalence Rules</h3>
+
+<p>There are ten equivalence rules, also called rules of replacement, used in natural deduction. They allow us to substitute a statement or its component with a logically equivalent statement or component. In the following blue boxes, the symbol &ldquo;=&rdquo; is used to mean &ldquo;is logically equivalent to&rdquo;. As we learned in section 3.2, we can use truth tables to prove that the two formulas are logically equivalent.</p>
+
+<h4>Double Negation (DN)</h4>
+
+  <table class="bluebox" style="page-break-inside: avoid">
+    <tr>
+      <td width="180px" style="padding: 12px 24px;"><em>p</em>&nbsp;&nbsp;=&nbsp;&nbsp;<span class="symb">&sim;&sim;</span><em>p</em></td>
+    </tr>
+  </table>
+
+<p>We learned to use the rule of double negation in section 3.3 to identify the basic argument forms. This example shows how to use it to formally draw the conclusion <span class="symb">&sim;</span><span class="var">M </span>from <span class="var">M&nbsp;</span><span class="symb">&sup;</span><span class="symb">&nbsp;&sim;</span><span class="var2">(</span><span class="var">D&nbsp;</span><span class="symb">&or;</span><span class="var">&nbsp;L</span><span class="var2">)</span> and <span class="var">D&nbsp;</span><span class="symb">&or;</span><span class="var">&nbsp;L</span> using <em>modus tollens</em> (MT):</p>
+
+  <ol class="s34">
+    <li><span class="var">M </span><span class="symb">&sup;</span><span class="symb">&nbsp;&sim;</span><span class="var2">(</span><span class="var">D </span><span class="symb">&or;</span><span class="var"> L</span><span class="var2">)</span></li>
+    <li><span class="nd"><span class="var">D</span></span><span class="var2">/ </span><span class="symb">&sim;</span><span class="var">M</span></li>
+    <li><span class="nd"><span class="var">D </span><span class="symb">&or;</span><span class="var"> L</span></span>2 Add.</li>
+    <li><span class="nd"><span class="symb">&sim;&sim;</span><span class="var2">(</span><span class="var">D </span><span class="symb">&or;</span><span class="var"> L</span><span class="var2">)</span></span>3 DN</li>
+    <li><span class="nd"><span class="symb">&sim;</span><span class="var">M</span></span>1, 4 MT</li>
+  </ol>
+
+<h4>Tautology (Taut.)</h4>
+
+  <table class="bluebox" style="page-break-inside: avoid">
+    <tr>
+      <td width="180px" style="padding: 12px 24px;"><em>p</em>&nbsp;&nbsp;=&nbsp;&nbsp;<em>p</em>&nbsp;<span class="symb">&#x2022;</span> <em>p</em><br> <em>p</em>&nbsp;&nbsp;=&nbsp;&nbsp;<em>p</em>&nbsp;<span class="symb">&or;</span>&nbsp;<em>p</em></td>
+    </tr>
+  </table>
+
+<p>This rule is quite self-explanatory and is typically used to contract <em>p</em> <span class="symb">&#x2022;</span> <em>p</em> or <em>p</em> <span class="symb">&or;</span> <em>p</em> to <em>p</em>, as illustrated in this example:</p>
+
+  <ol class="s34">
+    <li><span class="var">G </span><span class="symb">&sup;</span><span class="var"> K</span></li>
+    <li><span class="var">N </span><span class="symb">&sup;</span><span class="var"> K</span></li>
+    <li><span class="nd"><span class="var">G </span><span class="symb">&or;</span><span class="var"> N</span></span><span class="var2">/ </span><span class="var">K</span></li>
+    <li><span class="nd"><span class="var">K </span><span class="symb">&or;</span><span class="var"> K</span></span>1, 2, 3 CD</li>
+    <li><span class="nd"><span class="var">K</span></span>4 Taut.</li>
+  </ol>
+
+<h4>Commutativity (Com.)</h4>
+
+  <table class="bluebox" style="page-break-inside: avoid">
+    <tr>
+      <td width="180px" style="padding: 12px 24px;"><em>p</em>&nbsp;<span class="symb">&#x2022;</span>&nbsp;<em>q</em>&nbsp;&nbsp;=&nbsp;&nbsp;<em>q </em> <span class="symb">&#x2022;</span>&nbsp;<em>p</em><br><em>p</em>&nbsp;<span class="symb">&or;</span>&nbsp;<em>q</em>&nbsp;&nbsp;=&nbsp;&nbsp;<em>q</em >&nbsp;<span class="symb">&or;</span>&nbsp;<em>p</em></td>
+    </tr>
+  </table>
+
+<p>Commutativity allows us to switch the order of two conjuncts or disjuncts. The first example below shows the application of commutativity to a conjunction:</p>
+
+  <ol class="s34">
+    <li><span class="var">J </span><span class="symb">&#x2022;</span><span class="var"> C</span></li>
+    <li><span class="nd"><span class="var">C </span><span class="symb">&sup;</span><span class="var"> E</span></span><span class="var2">/ </span><span class="var">E</span></li>
+    <li><span class="nd"><span class="var">C </span><span class="symb">&#x2022;</span><span class="var"> J</span></span>1 Com.</li>
+    <li><span class="nd"><span class="var">C</span></span>4 Simp.</li>
+    <li><span class="nd"><span class="var">E</span></span>2, 4 MP</li>
+  </ol>
+
+<p>In the second example, commutativity is applied to a disjunction that is part of a conditional:</p>
+
+  <ol class="s34">
+    <li><span class="var2">(</span><span class="var">W </span><span class="symb">&or;</span><span class="var2">&nbsp;</span><span class="symb">&sim;</span><span class="var">A</span><span class="var2">) </span><span class="symb">&sup;</span><span class="var"> D</span></li>
+    <li><span class="nd"><span class="var">D </span><span class="symb">&sup;</span><span class="var"> S</span></span><span class="var2">/ </span><span class="var2">(</span><span class="symb">&sim;</span><span class="var">A </span><span class="symb">&or;</span><span class="var"> W</span><span class="var2">) </span><span class="symb">&sup;</span><span class="var"> S</span></li>
+    <li><span class="nd"><span class="var2">(</span><span class="symb">&sim;</span><span class="var">A </span><span class="symb">&or;</span><span class="var"> W</span><span class="var2">) </span><span class="symb">&sup;</span><span class="var"> D</span></span>1 Com.</li>
+    <li><span class="nd"><span class="var2">(</span><span class="symb">&sim;</span><span class="var">A </span><span class="symb">&or;</span><span class="var"> W</span><span class="var2">) </span><span class="symb">&sup;</span><span class="var"> S</span></span>2, 3 HS</li>
+  </ol>
+
+<h4>Transportation (Trans.)</h4>
+
+  <table class="bluebox" style="page-break-inside: avoid">
+    <tr>
+      <td width="180px" style="padding: 12px 24px;"><em>p</em>&nbsp;<span class="symb">&sup;</span>&nbsp;<em>q</em>&nbsp;&nbsp;=&nbsp;&nbsp;<span class="symb">&sim;</span><em>q</em>&nbsp;<span class="symb">&sup;</span>&nbsp;<span class="symb">&sim;</span><em>p</em></td>
+    </tr>
+  </table>
+
+<p>In the conditional <em>p</em> <span class="symb">&sup;</span> <em>q</em>, <em>q</em> is a necessary condition for <em>p</em>. This means that if <em>q</em> is not true, then <em>p</em> cannot be true.</p>
+
+<p>In the next proof, in order to get the conclusion <span class="var">H&nbsp;</span><span class="symb">&sup;</span><span class="var"> J </span> using hypothetical syllogism (HS), we first apply transportation to get <span class="var">O </span><span class="symb">&sup;</span><span class="var"> J </span> from <span class="symb">&sim;</span><span class="var">J </span><span class="symb">&sup;<span class="var2">&nbsp;</span>&sim;</span><span class="var">O</span>:</p>
+
+  <ol class="s34">
+    <li><span class="var">H </span><span class="symb">&sup;</span><span class="var"> O</span></li>
+    <li><span class="nd"><span class="symb">&sim;</span><span class="var">J </span><span class="symb">&sup;</span><span class="var2">&nbsp;</span><span class="symb">&sim;</span><span class="var">O</span></span><span class="var2">/ </span><span class="var"><span class="var">H </span><span class="symb">&sup;</span><span class="var"> J</span></span></li>
+    <li><span class="nd"><span class="var">O </span><span class="symb">&sup;</span><span class="var"> J</span></span>2 Trans.</li>
+    <li><span class="nd"><span class="var">H&nbsp;</span><span class="symb">&sup;</span><span class="var"> J</span></span>1, 3 HS</li>
+  </ol>
+
+<h4>Material Implication (Impl.)</h4>
+
+  <table class="bluebox" style="page-break-inside: avoid">
+    <tr>
+      <td width="180px" style="padding: 12px 24px;"><em>p</em>&nbsp;<span class="symb">&sup;</span>&nbsp;<em>q</em>&nbsp;&nbsp;=&nbsp;&nbsp;<span class="symb">&sim;</span><em>p</em>&nbsp;<span class="symb">&or;</span>&nbsp;<em>q</em></td>
+    </tr>
+  </table>
+
+<p>Material implication allows us to replace a conditional with a disjunction, and <em>vice versa</em>. In the following example, to use hypothetical syllogism (HS) to derive <span class="var">I </span><span class="symb">&sup;</span><span class="var"> U</span>, we first use material implication to replace <span class="symb">&sim;</span><span class="var">R </span><span class="symb">&or;</span><span class="var"> U </span> with <span class="var">R </span><span class="symb">&sup;</span><span class="var"> U</span>:</p>
+
+  <ol class="s34">
+    <li><span class="var">I </span><span class="symb">&sup;</span><span class="var"> R</span></li>
+    <li><span class="nd"><span class="symb">&sim;</span><span class="var">R </span><span class="symb">&or;</span><span class="var"> U</span></span><span class="var2">/ </span><span class="var"><span class="var">I </span><span class="symb">&sup;</span><span class="var"> U</span></span></li>
+    <li><span class="nd"><span class="var">R </span><span class="symb">&sup;</span><span class="var"> U</span></span>2 Impl.</li>
+    <li><span class="nd"><span class="var">I&nbsp;</span><span class="symb">&sup;</span><span class="var"> U</span></span>1, 3 HS</li>
+  </ol>
+
+<p>In the example below, we apply material implication to the first conjunct of the conjunction in order to use constructive dilemma to derive the conclusion:</p>
+
+    <ol class="s34">
+      <li><span class="var2">(</span><span class="symb">&sim;</span><span class="var">M </span><span class="symb">&or;</span><span class="var"> L</span><span class="var2">) </span><span class="symb">&#x2022;</span><span class="var2"> (</span><span class="var">H </span><span class="symb">&sup;</span><span class="var"> G</span><span class="var2">)</span></li>
+      <li><span class="nd"><span class="var">M </span><span class="symb">&or;</span><span class="var2">&nbsp;</span><span class="var">H</span></span><span class="var2">/ </span><span class="var">L </span><span class="symb">&or;</span><span class="var"> G</span></li>
+      <li><span class="nd"><span class="var2">(</span><span class="var">M </span><span class="symb">&sup;</span><span class="var"> L</span><span class="var2">) </span><span class="symb">&#x2022;</span><span class="var2"> (</span><span class="var">H </span><span class="symb">&sup;</span><span class="var"> G</span><span class="var2">)</span></span>1 Impl.</li>
+      <li><span class="nd"><span class="var">L </span><span class="symb">&or;</span><span class="var"> G</span></span>2, 3 CD</li>
+    </ol>
+
+<h4>DeMorgan&rsquo;s Rule (DM)</h4>
+
+  <table class="bluebox" style="page-break-inside: avoid">
+    <tr>
+      <td width="180px" style="padding: 12px 24px;"><span class="symb">&sim;</span>(<em>p</em>&nbsp;<span class="symb">&#x2022;</span> <em>q</em>)&nbsp;&nbsp;=&nbsp;&nbsp;<span class="symb">&sim;</span><em>p</em>&nbsp;<span class="symb">&or;</span>&nbsp;<span class="symb">&sim;</span><em>q</em><br><span class="symb">&sim;</span>(<em>p</em>&nbsp;<span class="symb">&or;</span> <em>q</em>)&nbsp;&nbsp;=&nbsp;&nbsp;<span class="symb">&sim;</span><em>p</em>&nbsp;<span class="symb">&#x2022;</span>&nbsp;<span class="symb">&sim;</span><em>q</em></td>
+    </tr>
+  </table>
+
+<p>DeMorgan&rsquo;s rule was introduced at the end of section 3.1. The rule enables us to turn the negation of a conjunction into a disjunction of two negations, and turn the negation of a disjunction into a conjunction of two negations:</p>
+
+<p>In the following natural deduction, we apply DeMorgan&rsquo;s rule to <span class="symb">&sim;</span><span class="var2">(</span><span class="var">B </span><span class="symb">&or;</span><span class="var"> S</span><span class="var2">)</span> to get <span class="symb">&sim;</span><span class="var">B </span><span class="symb">&#x2022;</span><span class="var2">&nbsp;</span><span class="symb">&sim;</span><span class="var">S</span>. We then use simplification to get <span class="symb">&sim;</span><span class="var">B</span>, which, together with <span class="var">B </span><span class="symb">&or;</span><span class="var"> E</span>, allows us to derive the conclusion <span class="var">E </span> using disjunctive syllogism (DS):</p>
+
+  <ol class="s34">
+    <li><span class="symb">&sim;</span><span class="var2">(</span><span class="var">B </span><span class="symb">&or;</span><span class="var"> S</span><span class="var2">) </span></li>
+    <li><span class="nd"><span class="var">B </span><span class="symb">&or;</span><span class="var"> E</span></span><span class="var2">/ </span><span class="var"><span class="var">E</span></li>
+    <li><span class="nd"><span class="symb">&sim;</span><span class="var">B </span><span class="symb">&#x2022;</span><span class="var2">&nbsp;</span><span class="symb">&sim;</span><span class="var">S</span></span>1 DM</li>
+    <li><span class="nd"><span class="symb">&sim;</span><span class="var">B </span></span>3 Simp.</li>
+    <li><span class="nd"><span class="var">E</span></span>2, 4 DS</li>
+  </ol>
+
+<p>We can also apply DeMorgan’s rule to part of a statement:</p>
+
+  <ol class="s34">
+    <li><span class="var2">(</span><span class="symb">&sim;</span><span class="var">N </span><span class="symb">&or;</span><span class="var2">&nbsp;</span><span class="symb">&sim;</span><span class="var">A</span><span class="var2">) </span><span class="symb">&or;</span><span class="var"> K</span></li>
+    <li><span class="nd"><span class="var">K </span><span class="symb">&sup;</span><span class="var"> P</span></span><span class="var2">/ </span><span class="var2">(</span><span class="var">N </span><span class="symb">&#x2022;</span><span class="var"> A</span><span class="var2">) </span><span class="symb">&sup;</span><span class="var"> P</span></li>
+    <li><span class="nd"><span class="symb">&sim;</span><span class="var2">(</span><span class="var">N </span><span class="symb">&#x2022;</span><span class="var"> A</span><span class="var2">) </span><span class="symb">&or;</span><span class="var"> K</span></span>1 DM</li>
+    <li><span class="nd"><span class="var2">(</span><span class="var">N </span><span class="symb">&#x2022;</span><span class="var"> A</span><span class="var2">) </span><span class="symb">&sup;</span><span class="var"> K</span></span>3 Impl.</li>
+    <li><span class="nd"><span class="var2">(</span><span class="var">N </span><span class="symb">&#x2022;</span><span class="var"> A</span><span class="var2">) </span><span class="symb">&sup;</span><span class="var"> P</span></span>2, 4 HS</li>
+  </ol>
+
+<h4>Material Equivalence (Equiv.)</h4>
+
+  <table class="bluebox" style="page-break-inside: avoid">
+    <tr>
+      <td width="240px" style="padding: 12px 24px;"><em>p</em> <span class="symb">&equiv;</span> <em>q</em>&nbsp;&nbsp;=&nbsp;&nbsp;(<em>p </em> <span class="symb">&sup;</span> <em>q</em>) <span class="symb">&#x2022;</span> (<em>q</em> <span class="symb">&sup;</span> <em>p</em>)
+      <br>
+      <em>p</em> <span class="symb">&equiv;</span> <em>q</em>&nbsp;&nbsp;=&nbsp;&nbsp;(<em>p </em> <span class="symb">&#x2022;</span> <em>q</em>) <span class="symb">&or; </span> (<span class="symb">&sim;</span><em>p</em> <span class="symb">&#x2022;</span> <span class="symb">&sim;</span><em>q</em>)</td>
+    </tr>
+  </table>
+
+<p>In section 3.1, we learned that the biconditional <em>p</em> <span class="symb">&equiv;</span> <em>q</em> is an abbreviation of (<em>p</em>&nbsp;<span class="symb">&sup;</span>&nbsp;<em>q</em>)&nbsp;<span class="symb">&#x2022;</span>&nbsp;(<em>q</em>&nbsp;<span class="symb">&sup;</span>&nbsp;<em>p</em>). This understanding gives us the first material equivalence: <em>p</em> <span class="symb">&equiv;</span> <em>q</em> is logically equivalent to (<em>p</em>&nbsp;<span class="symb">&sup;</span>&nbsp;<em>q</em>)&nbsp;<span class="symb">&#x2022;</span>&nbsp;(<em>q</em>&nbsp;<span class="symb">&sup;</span>&nbsp;<em>p</em>).</p>
+
+<p>The second material equivalence can be derived from the first one. The first conditional <em>p</em>&nbsp;<span class="symb">&sup;</span>&nbsp;<em>q</em> says that <em>p</em> is a sufficient condition for <em>q</em>. This means that if <em>p</em> is true, then <em>q</em> must be true. The second conditional <em>q</em>&nbsp;<span class="symb">&sup;</span>&nbsp;<em>p</em> tells us that <em>p</em> is a necessary condition for <em>q</em>. This means that if <em>p</em> is false, then <em>q</em> must be false. So the two conditionals together amount to either both <em>p</em> and <em>q</em> are true or both <em>p</em> and <em>q</em> are false, <em>i.e.</em>, (<em>p&nbsp;</em>&nbsp;<span class="symb">&#x2022;</span>&nbsp;<em>q</em>)&nbsp;<span class="symb">&or;</span>&nbsp;(<span class="symb">&sim;</span><em>p</em>&nbsp;<span class="symb">&#x2022;</span>&nbsp;<span class="symb">&sim;</span><em>q</em>).</p>
+
+<p>The first material equivalence allows us replace a biconditional with a conjunction of two conditionals before we can use a basic argument form to derive other statements in natural deduction:</p>
+
+  <ol class="s34">
+    <li><span class="symb">&sim;</span><span class="var">O </span><span class="symb">&equiv;</span><span class="var"> M</span></li>
+    <li><span class="nd"><span class="symb">&sim;</span><span class="var">M</span></span><span class="var2">/ </span><span class="var">O</span></li>
+    <li><span class="nd"><span class="var2">(</span><span class="symb">&sim;</span><span class="var">O </span><span class="symb">&sup;</span><span class="var"> M</span><span class="var2">) </span><span class="symb">&#x2022;</span><span class="var2"> (</span><span class="var">M </span><span class="symb">&sup;</span><span class="var2">&nbsp;</span><span class="symb">&sim;</span><span class="var">O</span><span class="var2">)</span></span>1 Equiv.</li>
+    <li><span class="nd"><span class="symb">&sim;</span><span class="var">O </span><span class="symb">&sup;</span><span class="var"> M</span></span>3 Simp.</li>
+    <li><span class="nd"><span class="symb">&sim;</span><span class="symb">&sim;</span><span class="var">O</span></span>2, 4 MT</li>
+    <li><span class="nd"><span class="var">O</span></span>5 DN</li>
+  </ol>
+
+<p>In the next example, we use the second material equivalence to turn a biconditional into a disjunction of two conjuncts. This then enables us to use disjunctive syllogism in step 5:</p>
+
+  <ol class="s34">
+    <li><span class="var">G </span><span class="symb">&equiv;</span><span class="var"> H</span></li>
+    <li><span class="nd"><span class="symb">&sim;</span><span class="var">G </span><span class="symb">&or;</span><span class="var2">&nbsp;</span><span class="symb">&sim;</span><span class="var">H</span></span><span class="var2">/ </span><span class="symb">&sim;</span><span class="var">G</span></li>
+    <li><span class="nd"><span class="var2">(</span><span class="var">G </span><span class="symb">&#x2022;</span><span class="var"> H</span><span class="var2">) </span><span class="symb">&or;</span><span class="var2"> (</span><span class="symb">&sim;</span><span class="var">G </span><span class="symb">&#x2022;</span><span class="var2">&nbsp;</span><span class="symb">&sim;</span><span class="var">H</span><span class="var2">)</span></span>1 Equiv.</li>
+    <li><span class="nd"><span class="symb">&sim;</span><span class="var2">(</span><span class="var">G </span><span class="symb">&#x2022;</span><span class="var"> H</span><span class="var2">)</span></span>2 DM</li>
+    <li><span class="nd"><span class="symb">&sim;</span><span class="var">G </span><span class="symb">&#x2022;</span><span class="var2">&nbsp;</span><span class="symb">&sim;</span><span class="var">H</span></span>3, 4 DS</li>
+    <li><span class="nd"><span class="symb">&sim;</span><span class="var">G</span></span>5 Simp.</li>
+  </ol>
+
+<h4>Associativity (Assoc.)</h4>
+
+  <table class="bluebox" style="page-break-inside: avoid">
+    <tr>
+      <td width="240px" style="padding: 12px 24px;">(<em>p</em> <span class="symb">&#x2022;</span> <em>q</em>) <span class="symb">&#x2022;</span> <em>r</em>&nbsp;&nbsp;=&nbsp;&nbsp;<em>p</em> <span class="symb">&#x2022;</span> (<em>q</em> <span class="symb">&#x2022;</span> <em>r</em>)
+      <br>
+      (<em>p</em> <span class="symb">&or;</span> <em>q</em>) <span class="symb">&or;</span> <em>r</em>&nbsp;&nbsp;=&nbsp;&nbsp;<em>p</em> <span class="symb">&or;</span> (<em>q</em> <span class="symb">&or;</span> <em>r</em>)</td>
+    </tr>
+  </table>
+
+<p>The rule allows us to shift the position of parentheses. In the next proof, associativity is used with commutativity to get <span class="var2">(</span><span class="var">C </span><span class="symb">&or;</span><span class="var"> A</span><span class="var2">)</span> <span class="symb">&or;</span><span class="var"> P</span>, which enables us to use disjunctive syllogism (DS) to derive the conclusion <span class="var">P</span>:</p>
+
+  <ol class="s34">
+    <li><span class="var2">(</span><span class="var">P </span><span class="symb">&or;</span><span class="var"> C</span><span class="var2">)</span> <span class="symb">&or;</span><span class="var"> A</span></li>
+    <li><span class="nd"><span class="symb">&sim;</span><span class="var2">(</span><span class="var">C </span><span class="symb">&or;</span><span class="var"> A</span><span class="var2">)</span></span><span class="var2">/ </span><span class="var"><span class="var">P</span></li>
+    <li><span class="nd"><span class="var">P </span><span class="symb">&or;</span>&nbsp;<span class="var2">(</span><span class="var">C </span><span class="symb">&or;</span><span class="var"> A</span><span class="var2">)</span></span>1 Assoc.</li>
+    <li><span class="nd"><span class="var2">(</span><span class="var">C </span><span class="symb">&or;</span><span class="var"> A</span><span class="var2">)</span> <span class="symb">&or;</span><span class="var"> P</span></span>3 Com.</li>
+    <li><span class="nd"><span class="var">P</span></span>2, 4 DS</li>
+  </ol>
+
+<h4>Distribution (Dist.)</h4>
+
+  <table class="bluebox" style="page-break-inside: avoid">
+    <tr>
+      <td width="240px" style="padding: 12px 24px;"><em>p</em> <span class="symb">&#x2022;</span> (<em>q</em> <span class="symb">&or;</span> <em>r</em>)&nbsp;&nbsp;=&nbsp;&nbsp;(<em>p</em> <span class="symb">&#x2022;</span> <em>q</em>) &or; (<em>p</em> <span class="symb">&#x2022;</span> <em>r</em>)
+      <br>
+      <em>p</em> <span class="symb">&or;</span> (<em>q</em> <span class="symb">&#x2022;</span> <em>r</em>)&nbsp;&nbsp;=&nbsp;&nbsp;(<em>p</em> <span class="symb">&or;</span> <em>q</em>) <span class="symb">&#x2022;</span> (<em>p</em> <span class="symb">&or;</span> <em>r</em>)</td>
+    </tr>
+  </table>
+
+<p>If <em>p</em> <span class="symb">&#x2022;</span> (<em>q</em> <span class="symb">&or;</span> <em>r</em>) is true, then both <em>p</em> and <em>q</em> <span class="symb">&or;</span> <em>r</em> are true. If <em>q</em> <span class="symb">&or;</span> <em>r</em> is true, then either <em>q</em> is true or <em>r</em> is true. In the case that <em>q</em> is true, we would have both <em>p</em> and <em>q</em> true. On the other hand, in the case that <em>r</em> is true, we would have both <em>p</em> and <em>r</em> true. As a result, either <em>p</em> <span class="symb">&#x2022;</span> <em>q</em> is true or <em>p</em> <span class="symb">&#x2022;</span> <em>r</em> is true.</p>
+
+<p>If (<em>p</em> <span class="symb">&or;</span> <em>q</em>) <span class="symb">&#x2022;</span> (<em>p</em> <span class="symb">&or;</span> <em>r</em>) is true, then both <em>p</em> <span class="symb">&or;</span> <em>q</em> and <em>p</em> <span class="symb">&or;</span> <em>r</em> are true. Now suppose <em>p</em> is false, then based on disjunctive syllogism, we can conclude that <em>q</em> must be true and <em>r</em> must be true, and consequently <em>q</em>&nbsp;<span class="symb">&#x2022;</span>&nbsp;<em>r</em> must be true. We thus have <span class="symb">&sim;</span><em>p</em> <span class="symb">&sup;</span> (<em>q</em> <span class="symb">&#x2022;</span> <em>r</em>), which is logically equivalent to <em>p</em> <span class="symb">&or;</span> (<em>q</em> <span class="symb">&#x2022;</span> <em>r</em>) according to material implication.</p>
+
+<p>In the next example, distribution is used in step 3 to derive <span class="var2">(</span><span class="var">W </span><span class="symb">&or;</span><span class="var"> L</span><span class="var2">) </span><span class="symb">&#x2022;</span><span class="var2"> (</span><span class="var">W </span><span class="symb">&or;</span><span class="var"> R</span><span class="var2">)</span> from the first premise <span class="var">W </span><span class="symb">&or;</span><span class="var2"> (</span><span class="var">L </span><span class="symb">&#x2022;</span><span class="var"> R</span><span class="var2">)</span>:</p>
+
+  <ol class="s34">
+    <li><span class="var">W </span><span class="symb">&or;</span><span class="var2"> (</span><span class="var">L </span><span class="symb">&#x2022;</span><span class="var"> R</span><span class="var2">)</span></li>
+    <li><span class="nd"><span class="symb">&sim;</span><span class="var">L </span></span><span class="var2">/ </span><span class="var"><span class="var">W</span></li>
+    <li><span class="nd"><span class="var2">(</span><span class="var">W </span><span class="symb">&or;</span><span class="var"> L</span><span class="var2">) </span><span class="symb">&#x2022;</span><span class="var2"> (</span><span class="var">W </span><span class="symb">&or;</span><span class="var"> R</span><span class="var2">)</span></span>1 Dist.</li>
+    <li><span class="nd"><span class="var">W </span><span class="symb">&or;</span><span class="var"> L</span></span>3 Simp.</li>
+    <li><span class="nd"><span class="var">L </span><span class="symb">&or;</span><span class="var"> W</span></span>4 Com.</li>
+    <li><span class="nd"><span class="var">W</span></span>2, 5 DS</li>
+  </ol>
+
+<h4>Exportation (Exp.)</h4>
+
+  <table class="bluebox" style="page-break-inside: avoid">
+    <tr>
+      <td width="240px" style="padding: 12px 24px;">(<em>p</em> <span class="symb">&#x2022;</span> <em>q</em>) <span class="symb">&sup;</span> <em>r</em>&nbsp;&nbsp;=&nbsp;&nbsp;<em>p</em> <span class="symb">&sup;</span> (<em>q</em> <span class="symb">&sup;</span> <em>r</em>)</td>
+    </tr>
+  </table>
+
+<p>To see that (<em>p</em> <span class="symb">&#x2022;</span> <em>q</em>) <span class="symb">&sup;</span> <em>r</em> is logically equivalent to <em>p</em> <span class="symb">&sup;</span> (<em>q</em> <span class="symb">&sup;</span> <em>r</em>) without constructing truth tables, let us suppose that <em>p</em> <span class="symb">&#x2022;</span> <em>q</em> is true and try to infer that <em>r</em> is true from both of them. First, from (<em>p</em> <span class="symb">&#x2022;</span> <em>q</em>) <span class="symb">&sup;</span> <em>r</em> and <em>p</em> <span class="symb">&#x2022;</span> <em>q</em>, we can conclude that <em>r</em> is true according to <em>modus ponens</em>. Now applying simplification to the assumption that <em>p</em> <span class="symb">&#x2022;</span> <em>q</em> is true, we can infer that <em>p</em> is true and <em>q</em> is also true. From <em>p</em> <span class="symb">&sup;</span> (<em>q</em> <span class="symb">&sup;</span> <em>r</em>) and <em>p</em>, we can derive <em>q</em> <span class="symb">&sup;</span> <em>r</em> with <em>modus ponens</em>. Then again from <em>q</em> <span class="symb">&sup;</span> <em>r</em> and <em>q</em> we can infer that <em>r</em> is true with <em>modus ponens</em>.</p>
+
+<p>As illustrated below, the use of exportation greatly simplifies the deduction and enables us to derive the conclusion in just two steps.</p>
+
+  <ol class="s34">
+    <li><span class="var2">(</span><span class="var">G </span><span class="symb">&#x2022;</span><span class="var"> D</span><span class="var2">) </span><span class="symb">&sup;</span><span class="var"> M</span></li>
+    <li><span class="nd"><span class="symb">&sim;</span><span class="var2">(</span><span class="var">D </span><span class="symb">&sup;</span><span class="var"> M</span><span class="var2">)</span></span><span class="var2">/ </span><span class="symb">&sim;</span><span class="var"><span class="var">G</span></li>
+    <li><span class="nd"><span class="var">G </span><span class="symb">&sup;</span><span class="var2"> (</span><span class="var">D </span><span class="symb">&sup;</span><span class="var"> M</span><span class="var2">)</span></span>1 Exp.</li>
+    <li><span class="nd"><span class="symb">&sim;</span><span class="var">G</span></span>2, 3 MT</li>
+  </ol>
+
+<h3 id="Deriving_the_Conclusion_from_the_Premises">3.4.3 Deriving the Conclusion from the Premises</h3>
+
+<p>Natural deduction shows how the conclusion of a valid argument can be derived step by step from its premises. If we know that an argument is valid, then we can draw its conclusion from its premises using common argument forms and equivalence rules. However, if an argument is invalid to begin with, then we would not be able to do so. In practice, this means that if after a concerted effort you cannot complete the process of natural deduction, then you should use the truth table method to verify that the argument is indeed valid in the first place. This way we can avoid wasting time trying to complete natural deduction for an invalid argument. Despite the drawback that if we do not know the validity of an argument, then we cannot be sure whether we can complete its natural deduction, the process is more in line with our reasoning steps and far less tedious than the truth table method.</p>
+
+<p>There is no fixed way to construct natural deduction. Like playing chess, it takes a lot of practice to master how to apply the rules of inference to derive the conclusion from the premises. But the following guidelines or strategies can help you figure out how to go about it:</p>
+
+  <ol class="display">
+    <li>If possible, identify a common argument form from two or three premises and derive its conclusion;</li>
+    <li>If no common form can be found, apply an equivalence rule to a premise and then see if the resulting sentence together with one or two premises would constitute a common argument form;</li>
+    <li>See what additional sentence is needed to derive the conclusion from one of the premises, and then use equivalence rules to obtain the needed sentence from a premise or a sentence in a previous step.</li>
+  </ol>
+
+<p>Let’s see how these three guidelines may help. In the next example, we first go over the premises to see if we can find a common form.</p>
+
+  <ol class="s34">
+    <li><span class="var2">(</span><span class="var">M</span><span class="var2">&nbsp;</span><span class="symb">&or;</span><span class="var2">&nbsp;</span><span class="var">D</span><span class="var2">)</span><span class="var2">&nbsp;</span><span class="symb">&sup;</span><span class="var2">&nbsp;</span><span class="var">R</span></li>
+    <li><span class="var">D</span><span class="var2">&nbsp;</span><span class="symb">&or;</span><span class="var2">&nbsp;</span><span class="symb">&sim;</span><span class="var">A</span></li>
+    <li><span class="nd"><span class="symb">&sim;</span><span class="var">R</span></span><span class="var2">/ </span><span class="symb">&sim;</span><span class="var">A</span></li>
+  </ol>
+
+<p>We notice that we can have the common form <em>modus tollens</em> from the first and the third premise and draw the conclusion <span class="symb">&sim;</span><span class="var2">(</span><span class="var">M</span><span class="var2">&nbsp;</span><span class="symb">&or;</span><span class="var2">&nbsp;</span><span class="var">D</span><span class="var2">)</span>.</p>
+
+  <ol class="s34">
+    <li><span class="var2">(</span><span class="var">M</span><span class="var2">&nbsp;</span><span class="symb">&or;</span><span class="var2">&nbsp;</span><span class="var">D</span><span class="var2">)</span><span class="var2">&nbsp;</span><span class="symb">&sup;</span><span class="var2">&nbsp;</span><span class="var">R</span></li>
+    <li><span class="var">D</span><span class="var2">&nbsp;</span><span class="symb">&or;</span><span class="var2">&nbsp;</span><span class="symb">&sim;</span><span class="var">A</span></li>
+    <li><span class="nd"><span class="symb">&sim;</span><span class="var">R</span></span><span class="var2">/ </span><span class="symb">&sim;</span><span class="var">A</span></li>
+    <li><span class="nd"><span class="symb">&sim;</span><span class="var2">(</span><span class="var">M</span><span class="var2">&nbsp;</span><span class="symb">&or;</span><span class="var2">&nbsp;</span><span class="var">D</span><span class="var2">)</span></span>1, 3 MT</li>
+  </ol>
+
+<p>Next, we observe that <span class="symb">&sim;</span><span class="var">D </span> is needed to get the conclusion <span class="symb">&sim;</span><span class="var">A </span> from the second premise <span class="var">D</span><span class="var2">&nbsp;</span><span class="symb">&or;</span><span class="var2">&nbsp;</span><span class="symb">&sim;</span><span class="var">A</span> using disjunctive syllogism. This gives us a clue that we should try to get <span class="symb">&sim;</span><span class="var">D </span> from step 4. To do so, we apply DeMorgan’s rule to <span class="symb">&sim;</span><span class="var2">(</span><span class="var">M</span><span class="var2">&nbsp;</span><span class="symb">&or;</span><span class="var2">&nbsp;</span><span class="var">D</span><span class="var2">)</span> to get <span class="symb">&sim;</span><span class="var">M</span><span class="var2">&nbsp;</span><span class="symb">&#x2022;</span><span class="var2">&nbsp;</span><span class="symb">&sim;</span><span class="var">D</span>.</p>
+
+  <ol class="s34">
+    <li><span class="var2">(</span><span class="var">M</span><span class="var2">&nbsp;</span><span class="symb">&or;</span><span class="var2">&nbsp;</span><span class="var">D</span><span class="var2">)</span><span class="var2">&nbsp;</span><span class="symb">&sup;</span><span class="var2">&nbsp;</span><span class="var">R</span></li>
+    <li><span class="var">D</span><span class="var2">&nbsp;</span><span class="symb">&or;</span><span class="var2">&nbsp;</span><span class="symb">&sim;</span><span class="var">A</span></li>
+    <li><span class="nd"><span class="symb">&sim;</span><span class="var">R</span></span><span class="var2">/ </span><span class="symb">&sim;</span><span class="var">A</span></li>
+    <li><span class="nd"><span class="symb">&sim;</span><span class="var2">(</span><span class="var">M</span><span class="var2">&nbsp;</span><span class="symb">&or;</span><span class="var2">&nbsp;</span><span class="var">D</span><span class="var2">)</span></span>1, 3 MT</li>
+    <li><span class="nd"><span class="symb">&sim;</span><span class="var">M</span><span class="var2">&nbsp;</span><span class="symb">&#x2022;</span><span class="var2">&nbsp;</span><span class="symb">&sim;</span><span class="var">D</span></span>4 DM</li>
+  </ol>
+
+<p>We then apply commutativity to <span class="symb">&sim;</span><span class="var">M</span><span class="var2">&nbsp;</span><span class="symb">&#x2022;</span><span class="var2">&nbsp;</span><span class="symb">&sim;</span><span class="var">D </span> to get <span class="symb">&sim;</span><span class="var">D</span><span class="var2">&nbsp;</span><span class="symb">&#x2022;</span><span class="var2">&nbsp;</span><span class="symb">&sim;</span><span class="var">M</span>, and then use simplification to obtain <span class="symb">&sim;</span><span class="var">D</span> from <span class="symb">&sim;</span><span class="var">D</span><span class="var2">&nbsp;</span><span class="symb">&#x2022;</span><span class="var2">&nbsp;</span><span class="symb">&sim;</span><span class="var">M</span>. Finally we derive the conclusion <span class="symb">&sim;</span><span class="var">A </span> with disjunctive syllogism.</p>
+
+  <ol class="s34">
+    <li><span class="var2">(</span><span class="var">M</span><span class="var2">&nbsp;</span><span class="symb">&or;</span><span class="var2">&nbsp;</span><span class="var">D</span><span class="var2">)</span><span class="var2">&nbsp;</span><span class="symb">&sup;</span><span class="var2">&nbsp;</span><span class="var">R</span></li>
+    <li><span class="var">D</span><span class="var2">&nbsp;</span><span class="symb">&or;</span><span class="var2">&nbsp;</span><span class="symb">&sim;</span><span class="var">A</span></li>
+    <li><span class="nd"><span class="symb">&sim;</span><span class="var">R</span></span><span class="var2">/ </span><span class="symb">&sim;</span><span class="var">A</span></li>
+    <li><span class="nd"><span class="symb">&sim;</span><span class="var2">(</span><span class="var">M</span><span class="var2">&nbsp;</span><span class="symb">&or;</span><span class="var2">&nbsp;</span><span class="var">D</span><span class="var2">)</span></span>1, 3 MT</li>
+    <li><span class="nd"><span class="symb">&sim;</span><span class="var">M</span><span class="var2">&nbsp;</span><span class="symb">&#x2022;</span><span class="var2">&nbsp;</span><span class="symb">&sim;</span><span class="var">D</span></span>4 DM</li>
+    <li><span class="nd"><span class="symb">&sim;</span><span class="var">D</span><span class="var2">&nbsp;</span><span class="symb">&#x2022;</span><span class="var2">&nbsp;</span><span class="symb">&sim;</span><span class="var">M</span></span>5 Com.</li>
+    <li><span class="nd"><span class="symb">&sim;</span><span class="var">D</span></span>6 Simp.</li>
+    <li><span class="nd"><span class="symb">&sim;</span><span class="var">A</span></span>2, 7 DS</li>
+  </ol>
+
+<p>In cases where no common argument form is recognizable from the premises, it is a good idea to apply equivalence rules to one or more premises and see if this results in a common argument form. In the next example</p>
+
+  <ol class="s34">
+    <li><span class="symb">&sim;</span<span class="var2">(</span><span class="var">H</span><span class="var2">&nbsp;</span><span class="symb">&#x2022;</span><span class="var2">&nbsp;</span><span class="var">G</span><span class="var2">)</span></li>
+    <li><span class="nd"><span class="var">G</span></span><span class="var2">/ </span><span class="var">H</span><span class="var2">&nbsp;</span><span class="symb">&sup;</span><span class="var2">&nbsp;</span><span class="var">B</span></li>
+  </ol>
+
+<p>the two premises do not constitute a common form. To see if we can get a common form, we first apply DeMorgan’s rule to the first premise and get <span class="symb">&sim;</span><span class="var">H</span><span class="var2">&nbsp;</span><span class="symb">&or;</span><span class="var2">&nbsp;</span><span class="symb">&sim;</span><span class="var">G</span>.</p>
+
+  <ol class="s34">
+    <li><span class="symb">&sim;</span<span class="var2">(</span><span class="var">H</span><span class="var2">&nbsp;</span><span class="symb">&#x2022;</span><span class="var2">&nbsp;</span><span class="var">G</span><span class="var2">)</span></li>
+    <li><span class="nd"><span class="var">G</span></span><span class="var2">/ </span><span class="var">H</span><span class="var2">&nbsp;</span><span class="symb">&sup;</span><span class="var2">&nbsp;</span><span class="var">B</span></li>
+    <li><span class="nd"><span class="symb">&sim;</span><span class="var">H</span><span class="var2">&nbsp;</span><span class="symb">&or;</span><span class="var2">&nbsp;</span><span class="symb">&sim;</span><span class="var">G</span></span>1 DM</li>
+  </ol>
+
+<p>Then by applying commutativity to step 3 and double negation to step 2, we have the common form disjunctive syllogism with <span class="symb">&sim;</span><span class="var">H</span> as its conclusion.</p>
+
+  <ol class="s34">
+    <li><span class="symb">&sim;</span<span class="var2">(</span><span class="var">H</span><span class="var2">&nbsp;</span><span class="symb">&#x2022;</span><span class="var2">&nbsp;</span><span class="var">G</span><span class="var2">)</span></li>
+    <li><span class="nd"><span class="var">G</span></span><span class="var2">/ </span><span class="var">H</span><span class="var2">&nbsp;</span><span class="symb">&sup;</span><span class="var2">&nbsp;</span><span class="var">B</span></li>
+    <li><span class="nd"><span class="symb">&sim;</span><span class="var">H</span><span class="var2">&nbsp;</span><span class="symb">&or;</span><span class="var2">&nbsp;</span><span class="symb">&sim;</span><span class="var">G</span></span>1 DM</li>
+    <li><span class="nd"><span class="symb">&sim;</span><span class="var">G</span><span class="var2">&nbsp;</span><span class="symb">&or;</span><span class="var2">&nbsp;</span><span class="symb">&sim;</span><span class="var">H</span></span>3 Com.</li>
+    <li><span class="nd"><span class="symb">&sim;</span><span class="symb">&sim;</span><span class="var">G</span></span>2 DN</li>
+    <li><span class="nd"><span class="symb">&sim;</span><span class="var">H</span></span>4, 5 DS</li>
+  </ol>
+
+<p>To get the conclusion <span class="var">H</span><span class="var2">&nbsp;</span><span class="symb">&sup;</span><span class="var2">&nbsp;</span><span class="var">B</span>, we obtain <span class="symb">&sim;</span><span class="var">H</span><span class="var2">&nbsp;</span><span class="symb">&or;</span><span class="var2">&nbsp;</span><span class="var">B </span> from step 6 with the form addition. Then by material implication we arrived at the conclusion.</p>
+
+  <ol class="s34">
+    <li><span class="symb">&sim;</span<span class="var2">(</span><span class="var">H</span><span class="var2">&nbsp;</span><span class="symb">&#x2022;</span><span class="var2">&nbsp;</span><span class="var">G</span><span class="var2">)</span></li>
+    <li><span class="nd"><span class="var">G</span></span><span class="var2">/ </span><span class="var">H</span><span class="var2">&nbsp;</span><span class="symb">&sup;</span><span class="var2">&nbsp;</span><span class="var">B</span></li>
+    <li><span class="nd"><span class="symb">&sim;</span><span class="var">H</span><span class="var2">&nbsp;</span><span class="symb">&or;</span><span class="var2">&nbsp;</span><span class="symb">&sim;</span><span class="var">G</span></span>1 DM</li>
+    <li><span class="nd"><span class="symb">&sim;</span><span class="var">G</span><span class="var2">&nbsp;</span><span class="symb">&or;</span><span class="var2">&nbsp;</span><span class="symb">&sim;</span><span class="var">H</span></span>3 Com.</li>
+    <li><span class="nd"><span class="symb">&sim;</span><span class="symb">&sim;</span><span class="var">G</span></span>2 DN</li>
+    <li><span class="nd"><span class="symb">&sim;</span><span class="var">H</span></span>4, 5 DS</li>
+    <li><span class="nd"><span class="symb">&sim;</span><span class="var">H</span><span class="var2">&nbsp;</span><span class="symb">&or;</span><span class="var2">&nbsp;</span><span class="var">B</span></span>6 Add.</li>
+    <li><span class="nd"><span class="var">H</span><span class="var2">&nbsp;</span><span class="symb">&sup;</span><span class="var2">&nbsp;</span><span class="var">B</span></span>7 Impl.</li>
+  </ol>
+
+<p>Sometimes it can be hard to see which equivalence rules we should use to obtain a common argument form from the premises. As illustrated in the next example,</p>
+
+  <ol class="s34">
+    <li><span class="symb">&sim;</span><span class="var">C</span><span class="var2">&nbsp;</span><span class="symb">&sup;</span><span class="var2">&nbsp;</span><span class="var2">(</span><span class="var">E</span><span class="var2">&nbsp;</span><span class="symb">&#x2022;</span><span class="var2">&nbsp;</span><span class="var">P</span><span class="var2">)</span></li>
+    <li><span class="nd"><span class="var2">(</span><span class="var">C</span><span class="var2">&nbsp;</span><span class="symb">&or;</span><span class="var2">&nbsp;</span><span class="var">E</span><span class="var2">)</span><span class="var2">&nbsp;</span><span class="symb">&sup;</span><span class="var2">&nbsp;</span><span class="var">S</span></span><span class="var2">/ </span><span class="var">S</span></li>
+  </ol>
+
+<p>it is not obvious which equivalence rule we should apply to one of the two premises. However, we do notice that if we obtain <span class="var">C</span><span class="var2">&nbsp;</span><span class="symb">&or;</span><span class="var2">&nbsp;</span><span class="var">E</span>, then we can get the conclusion <span class="var">S </span> from the second premise <span class="var2">(</span><span class="var">C</span><span class="var2">&nbsp;</span><span class="symb">&or;</span><span class="var2">&nbsp;</span><span class="var">E</span><span class="var2">)</span><span class="var2">&nbsp;</span><span class="symb">&sup;</span><span class="var2">&nbsp;</span><span class="var">S </span> by <em>modus ponens</em>. This gives us an idea of how to proceed with natural deduction. To get <span class="var">C</span><span class="var2">&nbsp;</span><span class="symb">&or;</span><span class="var2">&nbsp;</span><span class="var">E</span>, we first apply material implication to the first premise and get <span class="var">C</span><span class="var2">&nbsp;</span><span class="symb">&or;</span><span class="var2">&nbsp;</span><span class="var2">(</span><span class="var">E</span><span class="var2">&nbsp;</span><span class="symb">&#x2022;</span><span class="var2">&nbsp;</span><span class="var">P</span><span class="var2">)</span>.</p>
+
+  <ol class="s34">
+    <li><span class="symb">&sim;</span><span class="var">C</span><span class="var2">&nbsp;</span><span class="symb">&sup;</span><span class="var2">&nbsp;</span><span class="var2">(</span><span class="var">E</span><span class="var2">&nbsp;</span><span class="symb">&#x2022;</span><span class="var2">&nbsp;</span><span class="var">P</span><span class="var2">)</span></li>
+    <li><span class="nd"><span class="var2">(</span><span class="var">C</span><span class="var2">&nbsp;</span><span class="symb">&or;</span><span class="var2">&nbsp;</span><span class="var">E</span><span class="var2">)</span><span class="var2">&nbsp;</span><span class="symb">&sup;</span><span class="var2">&nbsp;</span><span class="var">S</span></span><span class="var2">/ </span><span class="var">S</span></li>
+    <li><span class="nd"><span class="var">C</span><span class="var2">&nbsp;</span><span class="symb">&or;</span><span class="var2">&nbsp;</span><span class="var2">(</span><span class="var">E</span><span class="var2">&nbsp;</span><span class="symb">&#x2022;</span><span class="var2">&nbsp;</span><span class="var">P</span><span class="var2">)</span></span>1 Impl.</li>
+  </ol>
+
+<p>We then apply distribution to step 3 and get <span class="var2">(</span><span class="var">C</span><span class="var2">&nbsp;</span><span class="symb">&or;</span><span class="var2">&nbsp;</span><span class="var">E</span><span class="var2">)</span><span class="var2">&nbsp;</span><span class="symb">&#x2022;</span><span class="var2">&nbsp;</span><span class="var2">(</span><span class="var">C</span><span class="var2">&nbsp;</span><span class="symb">&or;</span><span class="var2">&nbsp;</span><span class="var">P</span><span class="var2">)</span>.</p>
+
+  <ol class="s34">
+    <li><span class="symb">&sim;</span><span class="var">C</span><span class="var2">&nbsp;</span><span class="symb">&sup;</span><span class="var2">&nbsp;</span><span class="var2">(</span><span class="var">E</span><span class="var2">&nbsp;</span><span class="symb">&#x2022;</span><span class="var2">&nbsp;</span><span class="var">P</span><span class="var2">)</span></li>
+    <li><span class="nd"><span class="var2">(</span><span class="var">C</span><span class="var2">&nbsp;</span><span class="symb">&or;</span><span class="var2">&nbsp;</span><span class="var">E</span><span class="var2">)</span><span class="var2">&nbsp;</span><span class="symb">&sup;</span><span class="var2">&nbsp;</span><span class="var">S</span></span><span class="var2">/ </span><span class="var">S</span></li>
+    <li><span class="nd"><span class="var">C</span><span class="var2">&nbsp;</span><span class="symb">&or;</span><span class="var2">&nbsp;</span><span class="var2">(</span><span class="var">E</span><span class="var2">&nbsp;</span><span class="symb">&#x2022;</span><span class="var2">&nbsp;</span><span class="var">P</span><span class="var2">)</span></span>1 Impl.</li>
+    <li><span class="nd"><span class="var2">(</span><span class="var">C</span><span class="var2">&nbsp;</span><span class="symb">&or;</span><span class="var2">&nbsp;</span><span class="var">E</span><span class="var2">)</span><span class="var2">&nbsp;</span><span class="symb">&#x2022;</span><span class="var2">&nbsp;</span><span class="var2">(</span><span class="var">C</span><span class="var2">&nbsp;</span><span class="symb">&or;</span><span class="var2">&nbsp;</span><span class="var">P</span><span class="var2">)</span></span>3 Dist.</li>
+  </ol>
+
+<p>Afterwards, from step 4 by simplification we get <span class="var">C</span><span class="var2">&nbsp;</span><span class="symb">&or;</span><span class="var2">&nbsp;</span><span class="var">E</span>, which together with the second premise lead to the conclusion by <em>modus ponens</em>.</p>
+
+  <ol class="s34">
+    <li><span class="symb">&sim;</span><span class="var">C</span><span class="var2">&nbsp;</span><span class="symb">&sup;</span><span class="var2">&nbsp;</span><span class="var2">(</span><span class="var">E</span><span class="var2">&nbsp;</span><span class="symb">&#x2022;</span><span class="var2">&nbsp;</span><span class="var">P</span><span class="var2">)</span></li>
+    <li><span class="nd"><span class="var2">(</span><span class="var">C</span><span class="var2">&nbsp;</span><span class="symb">&or;</span><span class="var2">&nbsp;</span><span class="var">E</span><span class="var2">)</span><span class="var2">&nbsp;</span><span class="symb">&sup;</span><span class="var2">&nbsp;</span><span class="var">S</span></span><span class="var2">/ </span><span class="var">S</span></li>
+    <li><span class="nd"><span class="var">C</span><span class="var2">&nbsp;</span><span class="symb">&or;</span><span class="var2">&nbsp;</span><span class="var2">(</span><span class="var">E</span><span class="var2">&nbsp;</span><span class="symb">&#x2022;</span><span class="var2">&nbsp;</span><span class="var">P</span><span class="var2">)</span></span>1 Impl.</li>
+    <li><span class="nd"><span class="var2">(</span><span class="var">C</span><span class="var2">&nbsp;</span><span class="symb">&or;</span><span class="var2">&nbsp;</span><span class="var">E</span><span class="var2">)</span><span class="var2">&nbsp;</span><span class="symb">&#x2022;</span><span class="var2">&nbsp;</span><span class="var2">(</span><span class="var">C</span><span class="var2">&nbsp;</span><span class="symb">&or;</span><span class="var2">&nbsp;</span><span class="var">P</span><span class="var2">)</span></span>3 Dist.</li>
+    <li><span class="nd"><span class="var">C</span><span class="var2">&nbsp;</span><span class="symb">&or;</span><span class="var2">&nbsp;</span><span class="var">E</span></span>4 Simp.</li>
+    <li><span class="nd"><span class="var">S</span></span>2, 5 MP</li>
+  </ol>
+
+<h3 id="ex34">Exercise 3.4</h3>
+
+  <ol class="ex_sec">
+    <li>Use common argument forms to prove that the following arguments are
+    valid.</li>
+  </ol>
+
+  <form name="ex341" method="post">
+
+  <ol class="ex34">
+    <!-- #1 -->
+    <li>&nbsp;</li>
+      <ol>
+        <li>
+          <span class="var">H</span><span class="var2">&nbsp;</span><span
+          class="symb">&sup;</span><span class="var2">&nbsp;</span><span
+          class="var">S</span>
+        </li>
+        <li>
+          <span class="var">H</span><span class="var2">&nbsp;</span><span
+          class="symb">&or;</span><span class="var2">&nbsp;</span><span
+          class="symb">&sim;</span><span class="var">I</span>
+        </li>
+        <li>
+          <span class="symb">&sim;</span><span class="var">I</span><span
+          class="var2">&nbsp;</span><span class="symb">&sup;</span><span
+          class="var2">&nbsp;</span><span class="var">R</span></li>
+        <li>
+          <span class="nd">
+            <span class="symb">&sim;</span><span class="var">S</span>
+          </span>
+          <span class="var2">/ </span><span class="var">R</span>
+        </li>
+        <li>
+          <span class="nd">
+            <span class="symb">&sim;</span><span class="var">H</span>
+          </span>
+          <input type="text" class="form34" id="341011" name="341011"><img
+          class="mark34c" id="s341011c" src="mc.png"><img class="mark34e"
+          id="s341011e" src="me.png">
+        </li>
+        <li>
+          <span class="nd">
+            <span class="symb">&sim;</span><span class="var">I</span>
+          </span>
+          <input type="text" class="form34" id="341012" name="341012"><img
+          class="mark34c" id="s341012c" src="mc.png"><img class="mark34e"
+          id="s341012e" src="me.png">
+        </li>
+        <li>
+          <span class="nd">
+            <span class="var">R</span>
+          </span>
+          <input type="text" class="form34" id="341013" name="341013"><img
+          class="mark34c" id="s341013c" src="mc.png"><img class="mark34e"
+          id="s341013e" src="me.png">
+        </li>
+      </ol>
+    <!-- #2 -->
+    <li>&nbsp;</li>
+      <ol>
+        <li>
+          <span class="var">B </span><span class="symb">&sup;</span><span
+          class="var2"> (</span><span class="var">S </span><span
+          class="symb">&equiv;</span><span class="var">&nbsp;G</span><span
+          class="var2">)</span>
+        </li>
+        <li>
+          <span class="var">B&nbsp;</span><span class="symb">&or;</span><span
+          class="var"> K</span>
+        </li>
+        <li>
+          <span class="nd">
+            <span class="symb">&sim;</span><span class="var2">(</span><span
+            class="var">S </span><span class="symb">&equiv;</span><span
+            class="var">&nbsp;G</span><span class="var2">)</span>
+          </span>
+            <span class="var2">/ </span>
+            <span class="var">K</span>
+        </li>
+        <li>
+          <span class="nd">
+            <span class="symb">&sim;</span><span class="var">B</span>
+          </span>
+          <input type="text" class="form34" id="341021" name="341021"><img
+          class="mark34c" id="s341021c" src="mc.png"><img class="mark34e"
+          id="s341021e" src="me.png">
+        </li>
+        <li>
+          <span class="nd">
+            <span class="var">K</span>
+          </span>
+          <input type="text" class="form34" id="341022" name="341022"><img
+          class="mark34c" id="s341022c" src="mc.png"><img class="mark34e"
+          id="s341022e" src="me.png">
+        </li>
+      </ol>
+    <!-- #3 -->
+    <li>&nbsp;</li>
+      <ol>
+        <li>
+          <span class="var2">(</span><span class="var">A&nbsp;</span><span
+          class="symb">&or;</span><span class="var2">&nbsp;</span><span
+          class="symb">&sim;</span><span class="var">C</span><span
+          class="var2">)&nbsp;</span><span class="symb">&sup;</span><span
+          class="var">&nbsp;E</span>
+        </li>
+        <li>
+          <span class="var">E&nbsp;</span><span class="symb">&sup;</span><span
+          class="var2">&nbsp;</span><span class="symb">&sim;</span><span
+          class="var">N</span>
+        </li>
+        <li>
+          <span class="nd">
+            <span class="var">A&nbsp;</span><span class="symb">&or;</span><span
+            class="var2">&nbsp;</span><span class="symb">&sim;</span><span
+            class="var">C</span>
+        </span>
+          <span class="var2">/ </span><span class="symb">&sim;</span><span
+          class="var">N</span>
+        </li>
+        <li>
+          <span class="nd">
+            <span class="var2">(</span><span class="var">A&nbsp;</span><span
+            class="symb">&or;</span><span class="var2">&nbsp;</span><span
+            class="symb">&sim;</span><span class="var">C</span><span
+            class="var2">)&nbsp;</span><span class="symb">&sup;</span><span
+            class="var2">&nbsp;</span><span class="symb">&sim;</span><span
+            class="var">N</span>
+          </span>
+            <input type="text" class="form34" id="341031" name="341031"><img
+            class="mark34c" id="s341031c" src="mc.png"><img class="mark34e"
+            id="s341031e" src="me.png">
+        </li>
+        <li>
+          <span class="nd">
+            <span class="symb">&sim;</span><span class="var">N</span>
+          </span>
+          <input type="text" class="form34" id="341032" name="341032"><img
+          class="mark34c" id="s341032c" src="mc.png"><img class="mark34e"
+          id="s341032e" src="me.png">
+        </li>
+      </ol>
+    <!-- #4 -->
+    <li>&nbsp;</li>
+      <ol>
+        <li>
+          <span class="var">G&nbsp;</span><span class="symb">&sup;</span><span
+          class="var"> P</span>
+        </li>
+        <li>
+          <span class="var">L&nbsp;</span><span class="symb">&sup;</span><span
+          class="var"> M</span>
+        </li>
+        <li>
+          <span class="var">G</span></li>
+        <li>
+          <span class="nd">
+            <span class="symb">&sim;</span><span class="var">P</span>
+          </span>
+          <span class="var2">/ </span><span class="var">M</span>
+        </li>
+        <li>
+          <span class="nd">
+            <span class="var">G </span><span class="symb">&or;</span><span
+            class="var"> L</span>
+          </span>
+          <input type="text" class="form34" id="341041" name="341041"><img
+          class="mark34c" id="s341041c" src="mc.png"><img class="mark34e"
+          id="s341041e" src="me.png">
+        </li>
+        <li>
+          <span class="nd">
+            <span class="var">P&nbsp;</span><span class="symb">&or;</span><span
+            class="var"> M</span>
+          </span>
+          <input type="text" class="form34" id="341042" name="341042"><img
+          class="mark34c" id="s341042c" src="mc.png"><img class="mark34e"
+          id="s341042e" src="me.png">
+        </li>
+        <li>
+          <span class="nd">
+            <span class="var">M</span>
+          </span>
+          <input type="text" class="form34" id="341043" name="341043"><img
+          class="mark34c" id="s341043c" src="mc.png"><img class="mark34e"
+          id="s341043e" src="me.png">
+        </li>
+      </ol>
+    <!-- #5 -->
+    <li>&nbsp;</li>
+      <ol>
+        <li>
+          <span class="var2">(</span><span class="var">D </span><span
+          class="symb">&sup;</span><span class="var">&nbsp;H</span><span
+          class="var2">)&nbsp;</span><span class="symb">&#x2022;</span><span
+          class="var"> J</span>
+        </li>
+        <li>
+          <span class="symb">&sim;</span><span class="var">H</span>
+        </li>
+          <li>
+          <span class="nd">
+            <span class="symb">&sim;</span><span
+            class="var">D&nbsp;</span><span class="symb">&sup;</span><span
+            class="var2">&nbsp;</span><span class="symb">&sim;</span><span
+            class="var">C</span>
+          </span>
+            <span class="var2">/ </span><span class="symb">&sim;</span><span
+            class="var">D </span><span class="symb">&#x2022;</span><span
+            class="var2">&nbsp;</span><span class="symb">&sim;</span><span
+            class="var">C</span>
+        </li>
+        <li>
+          <span class="nd">
+            <span class="var">D </span><span class="symb">&sup;</span><span
+            class="var">&nbsp;H</span>
+          </span>
+          <input type="text" class="form34" id="341051" name="341051"><img
+          class="mark34c" id="s341051c" src="mc.png"><img class="mark34e"
+          id="s341051e" src="me.png">
+        </li>
+        <li>
+          <span class="nd">
+            <span class="symb">&sim;</span><span class="var">D</span>
+          </span>
+          <input type="text" class="form34" id="341052" name="341052"><img
+          class="mark34c" id="s341052c" src="mc.png"><img class="mark34e"
+          id="s341052e" src="me.png">
+        </li>
+        <li>
+          <span class="nd">
+            <span class="symb">&sim;</span><span class="var">C</span>
+          </span>
+          <input type="text" class="form34" id="341053" name="341053"><img
+          class="mark34c" id="s341053c" src="mc.png"><img class="mark34e"
+          id="s341053e" src="me.png">
+        </li>
+        <li>
+          <span class="nd">
+            <span class="symb">&sim;</span><span class="var">D </span><span
+            class="symb">&#x2022;</span><span class="var2">&nbsp;</span><span
+            class="symb">&sim;</span><span class="var">C</span>
+          </span>
+          <input type="text" class="form34" id="341054" name="341054"><img
+          class="mark34c" id="s341054c" src="mc.png"><img class="mark34e"
+          id="s341054e" src="me.png">
+        </li>
+      </ol>
+    <!-- #6 -->
+    <li>&nbsp;</li>
+      <ol>
+        <li>
+          <span class="var2">(</span><span class="var">O&nbsp;</span><span
+          class="symb">&sup;</span><span class="var">&nbsp;S</span><span
+          class="var2">)&nbsp;</span><span class="symb">&#x2022;</span><span
+          class="var2"> (</span><span class="var">G </span><span
+          class="symb">&sup;</span><span class="var">&nbsp;A</span><span
+          class="var2">)</span>
+        </li>
+        <li>
+          <span class="nd">
+            <span class="symb">&sim;</span><span class="var">S</span>
+          </span>
+            <span class="var2">/&nbsp;</span><span
+            class="symb">&sim;</span><span class="var">O&nbsp;</span><span
+            class="symb">&or;</span><span class="var2">&nbsp;</span><span
+            class="symb">&sim;</span><span class="var">G</span>
+        </li>
+        <li>
+          <span class="nd">
+            <span class="symb">&sim;</span><span class="var">S </span><span
+            class="symb">&or;</span><span class="var2">&nbsp;</span><span
+            class="symb">&sim;</span><span class="var">A</span>
+          </span>
+          <input type="text" class="form34" id="341061" name="341061"><img
+          class="mark34c" id="s341061c" src="mc.png"><img class="mark34e"
+          id="s341061e" src="me.png">
+        </li>
+        <li>
+          <span class="nd">
+            <span class="symb">&sim;</span><span class="var">O </span><span
+            class="symb">&or;</span><span class="var2">&nbsp;</span><span
+            class="symb">&sim;</span><span class="var">G</span>
+          </span>
+          <input type="text" class="form34" id="341062" name="341062"><img
+          class="mark34c" id="s341062c" src="mc.png"><img class="mark34e"
+          id="s341062e" src="me.png">
+        </li>
+      </ol>
+    <!-- #7 -->
+    <li>&nbsp;</li>
+      <ol>
+        <li>
+          <span class="var2">(</span><span class="var">K </span><span
+          class="symb">&#x2022;</span><span class="var2">&nbsp;</span><span
+          class="symb">&sim;</span><span class="var">P</span><span
+          class="var2">)&nbsp;</span><span class="symb">&or;</span><span
+          class="var"> W</span>
+        </li>
+        <li>
+          <span class="var">W </span><span class="symb">&sup;</span><span
+          class="var2">&nbsp;</span><span class="symb">&sim;</span><span
+          class="var2">(</span><span class="var">X </span><span
+          class="symb">&equiv;</span><span class="var"> B</span><span
+          class="var2">)</span>
+        </li>
+        <li>
+          <span class="symb">&sim;</span><span class="var2">(</span><span
+          class="var">K </span><span class="symb">&#x2022;</span><span
+          class="var2">&nbsp;</span><span class="symb">&sim;</span><span
+          class="var">P</span><span class="var2">)</span>
+        </li>
+        <li>
+          <span class="nd">
+            <span class="var">R </span><span class="symb">&sup;</span><span
+            class="var2">&nbsp;</span><span class="var2">(</span><span
+            class="var">X&nbsp;</span><span class="symb">&equiv;</span><span
+            class="var">&nbsp;B</span><span class="var2">)</span>
+          </span>
+            <span class="var2">/ </span><span class="symb">&sim;</span><span
+            class="var">R</span>
+        </li>
+        <li>
+          <span class="nd">
+            <span class="var">W</span>
+          </span>
+          <input type="text" class="form34" id="341071" name="341071"><img
+          class="mark34c" id="s341071c" src="mc.png"><img class="mark34e"
+          id="s341071e" src="me.png">
+        </li>
+        <li>
+          <span class="nd">
+            <span class="symb">&sim;</span><span class="var2">(</span><span
+            class="var">X&nbsp;</span><span class="symb">&equiv;</span><span
+            class="var">&nbsp;B</span><span class="var2">)</span>
+          </span>
+          <input type="text" class="form34" id="341072" name="341072"><img
+          class="mark34c" id="s341072c" src="mc.png"><img class="mark34e"
+          id="s341072e" src="me.png">
+        </li>
+        <li>
+          <span class="nd">
+            <span class="symb">&sim;</span><span class="var">R</span>
+          </span>
+          <input type="text" class="form34" id="341073" name="341073"><img
+          class="mark34c" id="s341073c" src="mc.png"><img class="mark34e"
+          id="s341073e" src="me.png">
+        </li>
+      </ol>
+    <!-- #8 -->
+    <li>&nbsp;</li>
+      <ol>
+        <li>
+          <span class="var2">(</span><span class="symb">&sim;</span><span
+          class="var">M&nbsp;</span><span class="symb">&#x2022;</span><span
+          class="var">&nbsp;U</span><span class="var2">)&nbsp;</span><span
+          class="symb">&#x2022;</span><span class="var2">&nbsp;</span><span
+          class="var">C</span>
+        </li>
+        <li>
+          <span class="nd">
+          <span class="var2">(</span><span class="symb">&sim;</span><span
+          class="var">M&nbsp;</span><span class="symb">&or;</span><span
+          class="var">&nbsp;D</span><span class="var2">)&nbsp;</span><span
+          class="symb">&sup;</span><span class="var2">&nbsp;</span><span
+          class="var">L</span>
+          </span>
+            <span class="var2">/ </span> <span class="symb">&sim;</span><span
+            class="var">M&nbsp;</span><span class="symb">&#x2022;</span><span
+            class="var">&nbsp;L</span>
+        </li>
+        <li>
+          <span class="nd">
+            <span class="symb">&sim;</span><span
+            class="var">M&nbsp;</span><span class="symb">&#x2022;</span><span
+            class="var">&nbsp;U</span>
+          </span>
+          <input type="text" class="form34" id="341081" name="341081"><img
+          class="mark34c" id="s341081c" src="mc.png"><img class="mark34e"
+          id="s341081e" src="me.png">
+        </li>
+        <li>
+          <span class="nd">
+            <span class="symb">&sim;</span><span class="var">M</span>
+          </span>
+          <input type="text" class="form34" id="341082" name="341082"><img
+          class="mark34c" id="s341082c" src="mc.png"><img class="mark34e"
+          id="s341082e" src="me.png">
+        </li>
+        <li>
+          <span class="nd">
+            <span class="symb">&sim;</span><span
+            class="var">M&nbsp;</span><span class="symb">&or;</span><span
+            class="var">&nbsp;D</span>
+          </span>
+          <input type="text" class="form34" id="341083" name="341083"><img
+          class="mark34c" id="s341083c" src="mc.png"><img class="mark34e"
+          id="s341083e" src="me.png">
+        </li>
+        <li>
+          <span class="nd">
+            <span class="var">L</span>
+          </span>
+          <input type="text" class="form34" id="341084" name="341084"><img
+          class="mark34c" id="s341084c" src="mc.png"><img class="mark34e"
+          id="s341084e" src="me.png">
+        </li>
+        <li>
+          <span class="nd">
+            <span class="symb">&sim;</span><span
+            class="var">M&nbsp;</span><span class="symb">&#x2022;</span><span
+            class="var">&nbsp;L</span>
+          </span>
+          <input type="text" class="form34" id="341085" name="341085"><img
+          class="mark34c" id="s341085c" src="mc.png"><img class="mark34e"
+          id="s341085e" src="me.png">
+        </li>
+      </ol>
+  </ol>
+
+  <button type="button" class="ca34" id="chan1"
+onclick="checkanswers1();">Check Answers</button>
+
+  </form>
+
+<p id="ex342">&nbsp;</p>
+
+  <ol class="ex_sec" start="2">
+    <li>Derive the new sentence from the numbered sentence using the given
+    equivalence rule.</li>
+  </ol>
+
+  <form name="ex342" method="post">
+
+  <ol class="ex34">
+    <!-- #1 -->
+    <li>&nbsp;</li>
+      <ol>
+        <li>
+          <span class="var">N </span><span class="symb">&or;</span><span
+          class="var2">&nbsp;</span><span class="symb">&sim;</span><span
+          class="var">E</span>
+        </li>
+        <li>
+          <span class="var">E</span>
+        </li>
+        <li>
+          <span class="nd">
+            <span class="var">N </span><span class="symb">&sup;</span><span
+            class="var2">&nbsp;</span><span class="symb">&sim;</span><span
+            class="var">B</span>
+          </span>
+          <span class="var2">/ </span>
+          <span class="symb">&sim;</span><span class="var">B</span>
+        </li>
+        <li>
+          <span class="nd">
+            <input type="text" class="form34s" id="342011" name="342011"
+            onfocus="doItOnFocus(this)"><img class="mark34c" id="s342011c"
+            src="mc.png"><img class="mark34e" id="s342011e" src="me.png">
+          </span>
+          1 Com.
+        </li>
+        <li>
+          <span class="nd">
+            <input type="text" class="form34s" id="342012" name="342012"
+            onfocus="doItOnFocus(this)"><img class="mark34c" id="s342012c"
+            src="mc.png"><img class="mark34e" id="s342012e" src="me.png">
+          </span>
+          2 DN
+        </li>
+        <li>
+          <span class="nd"><span class="var">N</span>
+          </span>
+          4, 5 DS
+        </li>
+        <li>
+          <span class="nd">
+            <span class="symb">&sim;</span><span class="var">B</span>
+          </span>
+          3, 6 MP
+        </li>
+      </ol>
+      <div class="operator">
+        <button type="button" onclick="tilde();">&sim;</button>
+        <button type="button" onclick="dot();">&#x2022;</button>
+        <button type="button" onclick="wedge();">&or;</button>
+        <button type="button" onclick="horseshoe();">&sup;</button>
+        <button type="button" onclick="triplebar();">&equiv;</button>
+      </div>
+    <!-- #2 -->
+    <li>&nbsp;</li>
+      <ol>
+        <li>
+          <span class="var">V </span><span class="symb">&sup;</span><span
+          class="var2"> (</span><span class="var">Q </span><span
+          class="symb">&#x2022;</span><span class="var"> K</span><span
+          class="var2">)</span>
+        </li>
+        <li>
+          <span class="nd">
+            <span class="symb">&sim;</span><span class="var">K </span><span
+            class="symb">&or;</span><span class="var2">&nbsp;</span><span
+            class="symb">&sim;</span><span class="var">Q</span>
+          </span>
+            <span class="var2">/ </span>
+            <span class="symb">&sim;</span><span class="var">V</span>
+        </li>
+        <li>
+          <span class="nd">
+            <input type="text" class="form34s" id="342021" name="342021"
+            onfocus="doItOnFocus(this)"><img class="mark34c" id="s342021c"
+            src="mc.png"><img class="mark34e" id="s342021e" src="me.png">
+          </span>
+          1 Com.
+        </li>
+        <li>
+            <input type="text" class="form34s" id="342022" name="342022"
+            onfocus="doItOnFocus(this)"><img class="mark34c" id="s342022c"
+            src="mc.png"><img class="mark34e" id="s342022e" src="me.png">
+          </span>
+          2 DM
+        </li>
+        <li>
+          <span class="nd">
+            <span class="symb">&sim;</span><span class="var">V</span>
+          </span>
+          3, 4 MT
+        </li>
+      </ol>
+      <div class="operator">
+        <button type="button" onclick="tilde();">&sim;</button>
+        <button type="button" onclick="dot();">&#x2022;</button>
+        <button type="button" onclick="wedge();">&or;</button>
+        <button type="button" onclick="horseshoe();">&sup;</button>
+        <button type="button" onclick="triplebar();">&equiv;</button>
+      </div>
+    <!-- #3 -->
+    <li>&nbsp;</li>
+      <ol>
+        <li>
+          <span class="symb">&sim;</span><span class="var">S </span><span
+          class="symb">&sup;</span><span class="var2">&nbsp;</span><span
+          class="symb">&sim;</span><span class="var">R</span>
+        </li>
+        <li>
+          <span class="symb">&sim;</span><span class="var">P </span><span
+          class="symb">&or;</span><span class="var"> C</span>
+        </li>
+        <li>
+          <span class="nd">
+            <span class="symb">&sim;</span><span class="var">S </span><span
+            class="symb">&or;</span><span class="var2">&nbsp;</span><span
+            class="symb">&sim;</span><span class="var">C</span>
+          </span>
+            <span class="var2">/ </span>
+            <span class="var">R </span><span class="symb">&sup;</span><span
+            class="var2">&nbsp;</span><span class="symb">&sim;</span><span
+            class="var">P</span>
+        </li>
+        <li>
+          <span class="nd">
+            <input type="text" class="form34s" id="342031" name="342031"
+            onfocus="doItOnFocus(this)"><img class="mark34c" id="s342031c"
+            src="mc.png"><img class="mark34e" id="s342031e" src="me.png">
+          </span>
+          1 Trans.
+        </li>
+        <li>
+          <span class="nd">
+            <input type="text" class="form34s" id="342032" name="342032"
+            onfocus="doItOnFocus(this)"><img class="mark34c" id="s342032c"
+            src="mc.png"><img class="mark34e" id="s342032e" src="me.png">
+          </span>
+          2 Impl.
+        </li>
+        <li>
+          <span class="nd">
+            <span class="symb">&sim;</span><span class="var">R </span><span
+            class="symb">&or;</span><span class="var2">&nbsp;</span><span
+            class="symb">&sim;</span><span class="var">P</span>
+          </span>
+          3, 4, 5 DD
+        </li>
+        <li>
+          <span class="nd">
+            <input type="text" class="form34s" id="342033" name="342033"
+            onfocus="doItOnFocus(this)"><img class="mark34c" id="s342033c"
+            src="mc.png"><img class="mark34e" id="s342033e" src="me.png">
+          </span>
+          6 Impl.
+        </li>
+      </ol>
+      <div class="operator">
+        <button type="button" onclick="tilde();">&sim;</button>
+        <button type="button" onclick="dot();">&#x2022;</button>
+        <button type="button" onclick="wedge();">&or;</button>
+        <button type="button" onclick="horseshoe();">&sup;</button>
+        <button type="button" onclick="triplebar();">&equiv;</button>
+      </div>
+    <!-- #4 -->
+    <li>&nbsp;</li>
+      <ol>
+        <li>
+          <span class="symb">&sim;</span><span class="var2">(</span><span
+          class="var">A&nbsp;</span><span class="symb">&#x2022;</span><span
+          class="var">&nbsp;H</span><span class="var2">)</span>
+        </li>
+        <li>
+          <span class="nd">
+            <span class="symb">&sim;</span><span class="var">O&nbsp;</span><span
+            class="symb">&equiv;</span><span class="var2">&nbsp;</span><span
+            class="symb">&sim;</span><span class="var">H</span>
+          </span>
+            <span class="var2">/ </span>
+            <span class="var">A&nbsp;</span><span
+            class="symb">&sup;</span><span class="var2">&nbsp;</span><span
+            class="symb">&sim;</span><span class="var">O</span>
+        </li>
+        <li>
+          <span class="nd">
+            <input type="text" class="form34s" id="342041" name="342041"
+            onfocus="doItOnFocus(this)"><img class="mark34c" id="s342041c"
+            src="mc.png"><img class="mark34e" id="s342041e" src="me.png">
+          </span>
+          1 DM
+        </li>
+        <li>
+          <span class="nd">
+            <input type="text" class="form34s" id="342042" name="342042"
+            onfocus="doItOnFocus(this)"><img class="mark34c" id="s342042c"
+            src="mc.png"><img class="mark34e" id="s342042e" src="me.png">
+          </span>
+          3 Impl.
+        </li>
+        <li>
+          <span class="nd">
+            <input type="text" class="form34s" id="342043" name="342043"
+            onfocus="doItOnFocus(this)"><img class="mark34c" id="s342043c"
+            src="mc.png"><img class="mark34e" id="s342043e" src="me.png">
+          </span>
+          2 Equiv.
+        </li>
+        <li>
+          <span class="nd">
+            <input type="text" class="form34s" id="342044" name="342044"
+            onfocus="doItOnFocus(this)"><img class="mark34c" id="s342044c"
+            src="mc.png"><img class="mark34e" id="s342044e" src="me.png">
+          </span>
+          5 Com.
+        </li>
+        <li>
+          <span class="nd">
+            <span class="symb">&sim;</span><span class="var">H&nbsp;</span><span
+            class="symb">&sup;</span><span class="var2">&nbsp;</span><span
+            class="symb">&sim;</span><span class="var">O</span>
+          </span>
+          6 Simp.
+        </li>
+        <li>
+          <span class="nd">
+            <span class="var">A&nbsp;</span><span
+            class="symb">&sup;</span><span class="var2">&nbsp;</span><span
+            class="symb">&sim;</span><span class="var">O</span>
+          </span>
+          4, 7 HS
+        </li>
+      </ol>
+      <div class="operator">
+        <button type="button" onclick="tilde();">&sim;</button>
+        <button type="button" onclick="dot();">&#x2022;</button>
+        <button type="button" onclick="wedge();">&or;</button>
+        <button type="button" onclick="horseshoe();">&sup;</button>
+        <button type="button" onclick="triplebar();">&equiv;</button>
+      </div>
+    <!-- #5 -->
+    <li>&nbsp;</li>
+      <ol>
+        <li>
+          <span class="var2">(</span><span class="var">B&nbsp;</span><span
+          class="symb">&#x2022;</span><span class="var">&nbsp;D</span><span
+          class="var2">)</span><span class="var2">&nbsp;</span><span
+          class="symb">&sup;</span><span class="var2">&nbsp;</span><span
+          class="var">J</span>
+        </li>
+        <li>
+          <span class="var2">(</span><span class="var">D</span><span
+          class="var2">&nbsp;</span><span class="symb">&#x2022;</span><span
+          class="var2">&nbsp;</span><span class="symb">&sim;</span><span
+          class="var">J</span><span class="var2">)</span><span
+          class="var2">&nbsp;</span><span class="symb">&or;</span><span
+          class="var2">&nbsp;</span><span class="var">M</span>
+        </li>
+        <li>
+          <span class="nd">
+            <span class="var">B</span>
+          </span>
+            <span class="var2">/ </span>
+            <span class="var">M</span>
+        </li>
+        <li>
+          <span class="nd">
+            <input type="text" class="form34s" id="342051" name="342051"
+            onfocus="doItOnFocus(this)"><img class="mark34c" id="s342051c"
+            src="mc.png"><img class="mark34e" id="s342051e" src="me.png">
+          </span>
+          1 Exp.
+        </li>
+        <li>
+          <span class="nd">
+            <span class="var">D</span><span class="var2">&nbsp;</span><span
+            class="symb">&sup;</span><span class="var2">&nbsp;</span><span
+            class="var">J</span>
+          </span>
+          3, 4 MP
+        </li>
+        <li>
+          <span class="nd">
+            <input type="text" class="form34s" id="342052" name="342052"
+            onfocus="doItOnFocus(this)"><img class="mark34c" id="s342052c"
+            src="mc.png"><img class="mark34e" id="s342052e" src="me.png">
+          </span>
+          5 Impl.
+        </li>
+        <li>
+          <span class="nd">
+            <input type="text" class="form34s" id="342053" name="342053"
+            onfocus="doItOnFocus(this)"><img class="mark34c" id="s342053c"
+            src="mc.png"><img class="mark34e" id="s342053e" src="me.png">
+          </span>
+          6 DN
+        </li>
+        <li>
+          <span class="nd">
+            <input type="text" class="form34s" id="342054" name="342054"
+            onfocus="doItOnFocus(this)"><img class="mark34c" id="s342054c"
+            src="mc.png"><img class="mark34e" id="s342054e" src="me.png">
+          </span>
+          7 DM
+        </li>
+        <li>
+          <span class="nd">
+            <span class="var">M</span>
+          </span>
+          2, 8 DS
+        </li>
+      </ol>
+      <div class="operator">
+        <button type="button" onclick="tilde();">&sim;</button>
+        <button type="button" onclick="dot();">&#x2022;</button>
+        <button type="button" onclick="wedge();">&or;</button>
+        <button type="button" onclick="horseshoe();">&sup;</button>
+        <button type="button" onclick="triplebar();">&equiv;</button>
+      </div>
+
+    <!-- #6 -->
+    <li>&nbsp;</li>
+      <ol>
+        <li>
+          <span class="symb">&sim;</span><span class="var">G</span><span
+          class="var2">&nbsp;</span><span class="symb">&or;</span><span
+          class="var2">&nbsp;</span><span class="var2">(</span><span
+          class="var">E</span><span class="var2">&nbsp;</span><span
+          class="symb">&sup;</span><span class="var2">&nbsp;</span><span
+          class="var">L</span><span class="var2">)</span>
+        </li>
+        <li>
+          <span class="symb">&sim;</span><span class="var">L</span>
+        </li>
+        <li>
+          <span class="nd">
+            <span class="var">E</span>
+          </span>
+            <span class="var2">/ </span>
+            <span class="symb">&sim;</span><span class="var">G</span>
+        </li>
+        <li>
+          <span class="nd">
+            <input type="text" class="form34s" id="342061" name="342061"
+            onfocus="doItOnFocus(this)"><img class="mark34c" id="s342061c"
+            src="mc.png"><img class="mark34e" id="s342061e" src="me.png">
+          </span>
+          1 Impl.
+        </li>
+        <li>
+          <span class="nd">
+            <input type="text" class="form34s" id="342062" name="342062"
+            onfocus="doItOnFocus(this)"><img class="mark34c" id="s342062c"
+            src="mc.png"><img class="mark34e" id="s342062e" src="me.png">
+          </span>
+          4 Exp.
+        </li>
+        <li>
+          <span class="nd">
+            <span class="symb">&sim;</span><span class="var2">(</span><span
+            class="var">G</span><span class="var2">&nbsp;</span><span
+            class="symb">&#x2022;</span><span class="var2">&nbsp;</span><span
+            class="var">E</span><span class="var2">)</span>
+          </span>
+          2, 5 MT
+        </li>
+        <li>
+          <span class="nd">
+            <input type="text" class="form34s" id="342063" name="342063"
+            onfocus="doItOnFocus(this)"><img class="mark34c" id="s342063c"
+            src="mc.png"><img class="mark34e" id="s342063e" src="me.png">
+          </span>
+          6 DM
+        </li>
+        <li>
+          <span class="nd">
+            <input type="text" class="form34s" id="342064" name="342064"
+            onfocus="doItOnFocus(this)"><img class="mark34c" id="s342064c"
+            src="mc.png"><img class="mark34e" id="s342064e" src="me.png">
+          </span>
+          7 Com.
+        </li>
+        <li>
+          <span class="nd">
+            <input type="text" class="form34s" id="342065" name="342065"
+            onfocus="doItOnFocus(this)"><img class="mark34c" id="s342065c"
+            src="mc.png"><img class="mark34e" id="s342065e" src="me.png">
+          </span>
+          3 DN
+        </li>
+        <li>
+          <span class="nd">
+            <span class="symb">&sim;</span><span class="var">G</span>
+          </span>
+          8, 9 DS
+        </li>
+      </ol>
+      <div class="operator">
+        <button type="button" onclick="tilde();">&sim;</button>
+        <button type="button" onclick="dot();">&#x2022;</button>
+        <button type="button" onclick="wedge();">&or;</button>
+        <button type="button" onclick="horseshoe();">&sup;</button>
+        <button type="button" onclick="triplebar();">&equiv;</button>
+      </div>
+    <!-- #7 -->
+    <li>&nbsp;</li>
+      <ol>
+        <li>
+          <span class="var2">(</span><span class="var">C&nbsp;</span><span
+          class="symb">&#x2022;</span><span class="var">&nbsp;A</span><span
+          class="var2">)</span><span class="var2">&nbsp;</span><span
+          class="symb">&or;</span><span class="var2">&nbsp;</span><span
+          class="var">S</span>
+        </li>
+        <li>
+          <span class="nd">
+            <span class="var">C</span><span class="var2">&nbsp;</span><span
+            class="symb">&sup;</span><span class="var2">&nbsp;</span><span
+            class="var">N</span>
+          </span>
+            <span class="var2">/ </span>
+            <span class="symb">&sim;</span><span class="var">S</span><span
+            class="var2">&nbsp;</span><span class="symb">&sup;</span><span
+            class="var2">&nbsp;</span><span class="var">N</span>
+        </li>
+        <li>
+          <span class="nd">
+            <input type="text" class="form34s" id="342071" name="342071"
+            onfocus="doItOnFocus(this)"><img class="mark34c" id="s342071c"
+            src="mc.png"><img class="mark34e" id="s342071e" src="me.png">
+          </span>
+          1 Com.
+        </li>
+        <li>
+          <span class="nd">
+            <input type="text" class="form34s" id="342072" name="342072"
+            onfocus="doItOnFocus(this)"><img class="mark34c" id="s342072c"
+            src="mc.png"><img class="mark34e" id="s342072e" src="me.png">
+          </span>
+          3 Dist.
+        </li>
+        <li>
+          <span class="nd">
+            <span class="var">S</span><span class="var2">&nbsp;</span><span
+            class="symb">&or;</span><span class="var2">&nbsp;</span><span
+            class="var">C</span>
+          </span>
+          4 Simp.
+        </li>
+        <li>
+          <span class="nd">
+            <input type="text" class="form34s" id="342073" name="342073"
+            onfocus="doItOnFocus(this)"><img class="mark34c" id="s342073c"
+            src="mc.png"><img class="mark34e" id="s342073e" src="me.png">
+          </span>
+          5 DN
+        </li>
+        <li>
+          <span class="nd">
+            <input type="text" class="form34s" id="342074" name="342074"
+            onfocus="doItOnFocus(this)"><img class="mark34c" id="s342074c"
+            src="mc.png"><img class="mark34e" id="s342074e" src="me.png">
+          </span>
+          6 Impl.
+        </li>
+        <li>
+          <span class="nd">
+            <span class="symb">&sim;</span><span class="var">S</span><span
+            class="var2">&nbsp;</span><span class="symb">&sup;</span><span
+            class="var2">&nbsp;</span><span class="var">N</span>
+          </span>
+          2, 7 HS
+        </li>
+      </ol>
+      <div class="operator">
+        <button type="button" onclick="tilde();">&sim;</button>
+        <button type="button" onclick="dot();">&#x2022;</button>
+        <button type="button" onclick="wedge();">&or;</button>
+        <button type="button" onclick="horseshoe();">&sup;</button>
+        <button type="button" onclick="triplebar();">&equiv;</button>
+      </div>
+    <!-- #8 -->
+    <li>&nbsp;</li>
+      <ol>
+        <li>
+          <span class="var">H</span><span class="var2">&nbsp;</span><span
+          class="symb">&equiv;</span><span class="var2">&nbsp;</span><span
+          class="var">B</span><span class="var2">&nbsp;</span>
+        </li>
+        <li>
+          <span class="symb">&sim;</span><span class="var2">(</span><span
+          class="var">H</span><span class="var2">&nbsp;</span><span
+          class="symb">&#x2022;</span><span class="var2">&nbsp;</span><span
+          class="var">B</span><span class="var2">)</span>
+        </li>
+        <li>
+          <span class="nd">
+            <span class="var">R</span><span class="var2">&nbsp;</span><span
+            class="symb">&sup;</span><span class="var2">&nbsp;</span><span
+            class="var2">(</span><span class="var">D</span><span
+            class="var2">&nbsp;</span><span class="symb">&sup;</span><span
+            class="var2">&nbsp;</span><span class="var">H</span><span
+            class="var2">)</span>
+          </span>
+            <span class="var2">/ </span>
+            <span class="symb">&sim;</span><span class="var2">(</span><span
+            class="var">R</span><span class="var2">&nbsp;</span><span
+            class="symb">&#x2022;</span><span class="var2">&nbsp;</span><span
+            class="var">D</span><span class="var2">)</span>
+        </li>
+        <li>
+          <span class="nd">
+            <input type="text" class="form34s" id="342081" name="342081"
+            onfocus="doItOnFocus(this)"><img class="mark34c" id="s342081c"
+            src="mc.png"><img class="mark34e" id="s342081e" src="me.png">
+          </span>
+          1 Equiv.
+        </li>
+        <li>
+          <span class="nd">
+            <span class="symb">&sim;</span><span class="var">H</span><span
+            class="var2">&nbsp;</span><span class="symb">&#x2022;</span><span
+            class="var2">&nbsp;</span><span class="symb">&sim;</span><span
+            class="var">B</span>
+          </span>
+          2, 4 DS
+        </li>
+        <li>
+          <span class="nd">
+            <span class="symb">&sim;</span><span class="var">H</span>
+          </span>
+          5 Simp.
+        </li>
+        <li>
+          <span class="nd">
+            <input type="text" class="form34s" id="342082" name="342082"
+            onfocus="doItOnFocus(this)"><img class="mark34c" id="s342082c"
+            src="mc.png"><img class="mark34e" id="s342082e" src="me.png">
+          </span>
+          3 Exp.
+        </li>
+        <li>
+          <span class="nd">
+            <span class="symb">&sim;</span><span class="var2">(</span><span
+            class="var">R</span><span class="var2">&nbsp;</span><span
+            class="symb">&#x2022;</span><span class="var2">&nbsp;</span><span
+            class="var">D</span><span class="var2">)</span>
+          </span>
+          6, 7 MT
+        </li>
+      </ol>
+      <div class="operator">
+        <button type="button" onclick="tilde();">&sim;</button>
+        <button type="button" onclick="dot();">&#x2022;</button>
+        <button type="button" onclick="wedge();">&or;</button>
+        <button type="button" onclick="horseshoe();">&sup;</button>
+        <button type="button" onclick="triplebar();">&equiv;</button>
+      </div>
+  </ol>
+
+  <button type="button" class="ca34" id="chan2" onclick="checkanswers2();">Check Answers</button>
+
+</form>
+
+<p id="ex343">&nbsp;</p>
+
+  <ol class="ex_sec" start="3">
+    <li>Use common argument forms and equivalence rules to derive the conclusion
+    from the premises.</li>
+  </ol>
+
+  <form name="ex343" method="post">
+
+  <ol class="ex34">
+    <!-- #1 -->
+    <li>&nbsp;</li>
+      <ol>
+        <li>
+          <span class="var">A</span><span
+          class="var2">&nbsp;</span><span class="symb">&sup;</span><span
+          class="var2">&nbsp;</span><span class="symb">&sim;</span><span
+          class="var">M</span>
+        </li>
+        <li>
+          <span class="var">M</span><span class="var2">&nbsp;</span><span
+          class="symb">&or;</span><span class="var2">&nbsp;</span><span
+          class="var">G</span>
+        </li>
+        <li>
+          <span class="nd">
+            <span class="symb">&sim;</span><span class="var">G</span>
+          </span>
+          <span class="var2">/ </span>
+          <span class="symb">&sim;</span><span class="var">A</span>
+        </li>
+        <li>
+          <span class="nd">
+            <input type="text" class="form34s" id="343011" name="343011"
+            onfocus="doItOnFocus(this)"><img class="mark34c" id="s343011c"
+            src="mc.png"><img class="mark34e" id="s343011e" src="me.png">
+          </span>
+          2 Com.
+        </li>
+        <li>
+          <span class="nd">
+            <input type="text" class="form34s" id="343012" name="343012"
+            onfocus="doItOnFocus(this)"><img class="mark34c" id="s343012c"
+            src="mc.png"><img class="mark34e" id="s343012e" src="me.png">
+          </span>
+          <input type="text" class="form34" id="343013" name="343013"><img
+          class="mark34c" id="s343013c" src="mc.png"><img class="mark34e"
+          id="s343013e" src="me.png">
+        </li>
+        <li>
+          <span class="nd">
+            <input type="text" class="form34s" id="343014" name="343014"
+            onfocus="doItOnFocus(this)"><img class="mark34c" id="s343014c"
+            src="mc.png"><img class="mark34e" id="s343014e" src="me.png">
+          </span>
+          <input type="text" class="form34" id="343015" name="343015"><img
+          class="mark34c" id="s343015c" src="mc.png"><img class="mark34e"
+          id="s343015e" src="me.png">
+        </li>
+        <li>
+          <span class="nd">
+            <span class="symb">&sim;</span><span class="var">A</span>
+          </span>
+          <input type="text" class="form34" id="343016" name="343016"><img
+          class="mark34c" id="s343016c" src="mc.png"><img class="mark34e"
+          id="s343016e" src="me.png">
+        </li>
+      </ol>
+      <div class="operator">
+        <button type="button" onclick="tilde();">&sim;</button>
+        <button type="button" onclick="dot();">&#x2022;</button>
+        <button type="button" onclick="wedge();">&or;</button>
+        <button type="button" onclick="horseshoe();">&sup;</button>
+        <button type="button" onclick="triplebar();">&equiv;</button>
+      </div>
+    <!-- #2 -->
+    <li>&nbsp;</li>
+      <ol>
+        <li>
+          <span class="symb">&sim;</span><span class="var">H</span><span
+          class="var2">&nbsp;</span><span class="symb">&sup;</span><span
+          class="var2">&nbsp;</span><span class="symb">&sim;</span><span
+          class="var">P</span>
+        </li>
+        <li>
+          <span class="symb">&sim;</span><span class="var2">(</span><span
+          class="var">H</span><span class="var2">&nbsp;</span><span
+          class="symb">&or;</span><span class="var2">&nbsp;</span><span
+          class="var">B</span><span class="var2">)</span>
+        </li>
+        <li>
+          <span class="nd">
+            <span class="var">P</span><span class="var2">&nbsp;</span><span
+            class="symb">&or;</span><span class="var2">&nbsp;</span><span
+            class="symb">&sim;</span><span class="var">D</span>
+          </span>
+          <span class="var2">/ </span>
+          <span class="symb">&sim;</span><span class="var">D</span>
+        </li>
+        <li>
+          <span class="nd">
+            <input type="text" class="form34s" id="343021" name="343021"
+            onfocus="doItOnFocus(this)"><img class="mark34c" id="s343021c"
+            src="mc.png"><img class="mark34e" id="s343021e" src="me.png">
+          </span>
+          2 DM
+        </li>
+        <li>
+          <span class="nd">
+            <input type="text" class="form34s" id="343022" name="343022"
+            onfocus="doItOnFocus(this)"><img class="mark34c" id="s343022c"
+            src="mc.png"><img class="mark34e" id="s343022e" src="me.png">
+          </span>
+          <input type="text" class="form34" id="343023" name="343023"><img
+          class="mark34c" id="s343023c" src="mc.png"><img class="mark34e"
+          id="s343023e" src="me.png">
+        </li>
+        <li>
+          <span class="nd">
+            <input type="text" class="form34s" id="343024" name="343024"
+            onfocus="doItOnFocus(this)"><img class="mark34c" id="s343024c"
+            src="mc.png"><img class="mark34e" id="s343024e" src="me.png">
+          </span>
+          <input type="text" class="form34" id="343025" name="343025"><img
+          class="mark34c" id="s343025c" src="mc.png"><img class="mark34e"
+          id="s343025e" src="me.png">
+        </li>
+        <li>
+          <span class="nd">
+            <span class="symb">&sim;</span><span class="var">D</span>
+          </span>
+          <input type="text" class="form34" id="343026" name="343026"><img
+          class="mark34c" id="s343026c" src="mc.png"><img class="mark34e"
+          id="s343026e" src="me.png">
+        </li>
+      </ol>
+      <div class="operator">
+        <button type="button" onclick="tilde();">&sim;</button>
+        <button type="button" onclick="dot();">&#x2022;</button>
+        <button type="button" onclick="wedge();">&or;</button>
+        <button type="button" onclick="horseshoe();">&sup;</button>
+        <button type="button" onclick="triplebar();">&equiv;</button>
+      </div>
+    <!-- #3 -->
+    <li>&nbsp;</li>
+      <ol>
+        <li>
+          <span class="var">C</span><span class="var2">&nbsp;</span><span
+          class="symb">&sup;</span><span class="var2">&nbsp;</span><span
+          class="var">S</span>
+        </li>
+        <li>
+          <span class="var">O</span><span class="var2">&nbsp;</span><span
+          class="symb">&sup;</span><span class="var2">&nbsp;</span><span
+          class="var">R</span>
+        </li>
+        <li>
+          <span class="var">C</span><span class="var2">&nbsp;</span><span
+          class="symb">&or;</span><span class="var2">&nbsp;</span><span
+          class="var">O</span>
+        </li>
+        <li>
+          <span class="nd">
+            <span class="var">E</span><span class="var2">&nbsp;</span><span
+            class="symb">&sup;</span><span class="var2">&nbsp;</span><span
+            class="symb">&sim;</span><span class="var">R</span>
+          </span>
+          <span class="var2">/ </span>
+          <span class="symb">&sim;</span><span class="var">S</span><span
+          class="var2">&nbsp;</span><span class="symb">&sup;</span><span
+          class="var2">&nbsp;</span><span class="symb">&sim;</span><span
+          class="var">E</span>
+        </li>
+        <li>
+          <span class="nd">
+            <input type="text" class="form34s" id="343031" name="343031"
+            onfocus="doItOnFocus(this)"><img class="mark34c" id="s343031c"
+            src="mc.png"><img class="mark34e" id="s343031e" src="me.png">
+          </span>
+          1, 2, 3 CD
+        </li>
+        <li>
+          <span class="nd">
+            <input type="text" class="form34s" id="343032" name="343032"
+            onfocus="doItOnFocus(this)"><img class="mark34c" id="s343032c"
+            src="mc.png"><img class="mark34e" id="s343032e" src="me.png">
+          </span>
+          5 DN
+        <li>
+          <span class="nd">
+            <input type="text" class="form34s" id="343033" name="343033"
+            onfocus="doItOnFocus(this)"><img class="mark34c" id="s343033c"
+            src="mc.png"><img class="mark34e" id="s343033e" src="me.png">
+          </span>
+          <input type="text" class="form34" id="343034" name="343034"><img
+          class="mark34c" id="s343034c" src="mc.png"><img class="mark34e"
+          id="s343034e" src="me.png">
+        </li>
+        </li>
+        <li>
+          <span class="nd">
+            <input type="text" class="form34s" id="343035" name="343035"
+            onfocus="doItOnFocus(this)"><img class="mark34c" id="s343035c"
+            src="mc.png"><img class="mark34e" id="s343035e" src="me.png">
+          </span>
+          <input type="text" class="form34" id="343036" name="343036"><img
+          class="mark34c" id="s343036c" src="mc.png"><img class="mark34e"
+          id="s343036e" src="me.png">
+        </li>
+        <li>
+          <span class="nd">
+            <input type="text" class="form34s" id="343037" name="343037"
+            onfocus="doItOnFocus(this)"><img class="mark34c" id="s343037c"
+            src="mc.png"><img class="mark34e" id="s343037e" src="me.png">
+          </span>
+          <input type="text" class="form34" id="343038" name="343038"><img
+          class="mark34c" id="s343038c" src="mc.png"><img class="mark34e"
+          id="s343038e" src="me.png">
+        </li>
+        <li>
+          <span class="nd">
+            <span class="symb">&sim;</span><span class="var">S</span><span
+            class="var2">&nbsp;</span><span class="symb">&sup;</span><span
+            class="var2">&nbsp;</span><span class="symb">&sim;</span><span
+            class="var">E</span>
+          </span>
+          <input type="text" class="form34" id="343039" name="343039"><img
+          class="mark34c" id="s343039c" src="mc.png"><img class="mark34e"
+          id="s343039e" src="me.png">
+        </li>
+      </ol>
+      <div class="operator">
+        <button type="button" onclick="tilde();">&sim;</button>
+        <button type="button" onclick="dot();">&#x2022;</button>
+        <button type="button" onclick="wedge();">&or;</button>
+        <button type="button" onclick="horseshoe();">&sup;</button>
+        <button type="button" onclick="triplebar();">&equiv;</button>
+      </div>
+    <!-- #4 -->
+    <li>&nbsp;</li>
+      <ol>
+        <li>
+          <span class="var2">(</span><span class="var">J</span><span
+          class="var2">&nbsp;</span><span class="symb">&sup;</span><span
+          class="var2">&nbsp;</span><span class="var">K</span><span
+          class="var2">)</span><span class="var2">&nbsp;</span><span
+          class="symb">&or;</span><span class="var2">&nbsp;</span><span
+          class="var">N</span>
+        </li>
+        <li>
+          <span class="var">J</span>
+        </li>
+        <li>
+          <span class="nd">
+            <span class="symb">&sim;</span><span class="var">K</span>
+          </span>
+            <span class="var2">/ </span>
+            <span class="var">N</span>
+        </li>
+        <li>
+          <span class="nd">
+            <span class="var">J</span><span class="var2">&nbsp;</span><span
+            class="symb">&#x2022;</span><span class="var2">&nbsp;</span><span
+            class="symb">&sim;</span><span class="var">K</span>
+          </span>
+          <input type="text" class="form34" id="343041" name="343041"><img
+          class="mark34c" id="s343041c" src="mc.png"><img class="mark34e"
+          id="s343041e" src="me.png">
+        </li>
+        <li>
+          <span class="nd">
+            <input type="text" class="form34s" id="343042" name="343042"
+            onfocus="doItOnFocus(this)"><img class="mark34c" id="s343042c"
+            src="mc.png"><img class="mark34e" id="s343042e" src="me.png">
+          </span>
+          4 DN
+        </li>
+        <li>
+          <span class="nd">
+            <input type="text" class="form34s" id="343043" name="343043"
+            onfocus="doItOnFocus(this)"><img class="mark34c" id="s343043c"
+            src="mc.png"><img class="mark34e" id="s343043e" src="me.png">
+          </span>
+          <input type="text" class="form34" id="343044" name="343044"><img
+          class="mark34c" id="s343044c" src="mc.png"><img class="mark34e"
+          id="s343044e" src="me.png">
+        </li>
+        <li>
+          <span class="nd">
+            <input type="text" class="form34s" id="343045" name="343045"
+            onfocus="doItOnFocus(this)"><img class="mark34c" id="s343045c"
+            src="mc.png"><img class="mark34e" id="s343045e" src="me.png">
+          </span>
+          <input type="text" class="form34" id="343046" name="343046"><img
+          class="mark34c" id="s343046c" src="mc.png"><img class="mark34e"
+          id="s343046e" src="me.png">
+        </li>
+        <li>
+          <span class="nd">
+            <span class="var">N</span>
+          </span>
+          <input type="text" class="form34" id="343047" name="343047"><img
+          class="mark34c" id="s343047c" src="mc.png"><img class="mark34e"
+          id="s343047e" src="me.png">
+        </li>
+      </ol>
+      <div class="operator">
+        <button type="button" onclick="tilde();">&sim;</button>
+        <button type="button" onclick="dot();">&#x2022;</button>
+        <button type="button" onclick="wedge();">&or;</button>
+        <button type="button" onclick="horseshoe();">&sup;</button>
+        <button type="button" onclick="triplebar();">&equiv;</button>
+      </div>
+    <!-- #5 -->
+    <li>&nbsp;</li>
+      <ol>
+        <li>
+          <span class="var">B</span><span class="var2">&nbsp;</span><span
+          class="symb">&equiv;</span><span class="var2">&nbsp;</span><span
+          class="var">D</span>
+        </li>
+        <li>
+          <span class="var">D</span><span class="var2">&nbsp;</span><span
+          class="symb">&equiv;</span><span class="var2">&nbsp;</span><span
+          class="var">G</span>
+        </li>
+        <li>
+          <span class="nd">
+            <span class="symb">&sim;</span><span class="var">G</span>
+          </span>
+            <span class="var2">/ </span>
+            <span class="symb">&sim;</span><span class="var">B</span>
+        </li>
+        <li>
+          <span class="nd">
+            <input type="text" class="form34s" id="343051" name="343051"
+            onfocus="doItOnFocus(this)"><img class="mark34c" id="s343051c"
+            src="mc.png"><img class="mark34e" id="s343051e" src="me.png">
+          </span>
+          <input type="text" class="form34" id="343052" name="343052"><img
+          class="mark34c" id="s343052c" src="mc.png"><img class="mark34e"
+          id="s343052e" src="me.png">
+        </li>
+        <li>
+          <span class="nd">
+            <input type="text" class="form34s" id="343053" name="343053"
+            onfocus="doItOnFocus(this)"><img class="mark34c" id="s343053c"
+            src="mc.png"><img class="mark34e" id="s343053e" src="me.png">
+          </span>
+          4 Simp.
+        </li>
+        <li>
+          <span class="nd">
+            <input type="text" class="form34s" id="343054" name="343054"
+            onfocus="doItOnFocus(this)"><img class="mark34c" id="s343054c"
+            src="mc.png"><img class="mark34e" id="s343054e" src="me.png">
+          </span>
+          <input type="text" class="form34" id="343055" name="343055"><img
+          class="mark34c" id="s343055c" src="mc.png"><img class="mark34e"
+          id="s343055e" src="me.png">
+        </li>
+        <li>
+          <span class="nd">
+            <input type="text" class="form34s" id="343056" name="343056"
+            onfocus="doItOnFocus(this)"><img class="mark34c" id="s343056c"
+            src="mc.png"><img class="mark34e" id="s343056e" src="me.png">
+          </span>
+          <input type="text" class="form34" id="343057" name="343057"><img
+          class="mark34c" id="s343057c" src="mc.png"><img class="mark34e"
+          id="s343057e" src="me.png">
+        </li>
+        <li>
+          <span class="nd">
+            <input type="text" class="form34s" id="343058" name="343058"
+            onfocus="doItOnFocus(this)"><img class="mark34c" id="s343058c"
+            src="mc.png"><img class="mark34e" id="s343058e" src="me.png">
+          </span>
+          <input type="text" class="form34" id="343059" name="343059"><img
+          class="mark34c" id="s343059c" src="mc.png"><img class="mark34e"
+          id="s343059e" src="me.png">
+        </li>
+        <li>
+          <span class="nd">
+            <span class="symb">&sim;</span><span class="var">B</span>
+          </span>
+          <input type="text" class="form34" id="3430510" name="3430510"><img
+          class="mark34c" id="s3430510c" src="mc.png"><img class="mark34e"
+          id="s3430510e" src="me.png">
+        </li>
+      </ol>
+      <div class="operator">
+        <button type="button" onclick="tilde();">&sim;</button>
+        <button type="button" onclick="dot();">&#x2022;</button>
+        <button type="button" onclick="wedge();">&or;</button>
+        <button type="button" onclick="horseshoe();">&sup;</button>
+        <button type="button" onclick="triplebar();">&equiv;</button>
+      </div>
+    <!-- #6 -->
+    <li>&nbsp;</li>
+      <ol>
+        <li>
+          <span class="var2">(</span><span class="var">W</span><span
+          class="var2">&nbsp;</span><span class="symb">&#x2022;</span><span
+          class="var2">&nbsp;</span><span class="var">N</span><span
+          class="var2">)</span><span class="var2">&nbsp;</span><span
+          class="symb">&sup;</span><span class="var2">&nbsp;</span><span
+          class="var">S</span>
+        </li>
+        <li>
+          <span class="var">P</span><span class="var2">&nbsp;</span><span
+          class="symb">&or;</span><span class="var2">&nbsp;</span><span
+          class="symb">&sim;</span><span class="var">S</span>
+        </li>
+        <li>
+          <span class="nd">
+            <span class="var">W</span>
+          </span>
+            <span class="var2">/ </span>
+            <span class="var">N</span><span class="var2">&nbsp;</span><span
+            class="symb">&sup;</span><span class="var2">&nbsp;</span><span
+            class="var">P</span>
+        </li>
+        <li>
+          <span class="nd">
+            <input type="text" class="form34s" id="343061" name="343061"
+            onfocus="doItOnFocus(this)"><img class="mark34c" id="s343061c"
+            src="mc.png"><img class="mark34e" id="s343061e" src="me.png">
+          </span>
+          <input type="text" class="form34" id="343062" name="343062"><img
+          class="mark34c" id="s343062c" src="mc.png"><img class="mark34e"
+          id="s343062e" src="me.png">
+        </li>
+        <li>
+          <span class="nd">
+            <input type="text" class="form34s" id="343063" name="343063"
+            onfocus="doItOnFocus(this)"><img class="mark34c" id="s343063c"
+            src="mc.png"><img class="mark34e" id="s343063e" src="me.png">
+          </span>
+          <input type="text" class="form34" id="343064" name="343064"><img
+          class="mark34c" id="s343064c" src="mc.png"><img class="mark34e"
+          id="s343064e" src="me.png">
+        </li>
+        <li>
+          <span class="nd">
+            <span class="symb">&sim;</span><span class="var">S</span><span
+            class="var2">&nbsp;</span><span class="symb">&or;</span><span
+            class="var2">&nbsp;</span><span class="var">P</span>
+          </span>
+          2 Com.
+        </li>
+        <li>
+          <span class="nd">
+            <input type="text" class="form34s" id="343065" name="343065"
+            onfocus="doItOnFocus(this)"><img class="mark34c" id="s343065c"
+            src="mc.png"><img class="mark34e" id="s343065e" src="me.png">
+          </span>
+          <input type="text" class="form34" id="343066" name="343066"><img
+          class="mark34c" id="s343066c" src="mc.png"><img class="mark34e"
+          id="s343066e" src="me.png">
+        </li>
+        <li>
+          <span class="nd">
+            <span class="var">N</span><span class="var2">&nbsp;</span><span
+            class="symb">&sup;</span><span class="var2">&nbsp;</span><span
+            class="var">P</span>
+          </span>
+          <input type="text" class="form34" id="343067" name="343067"><img
+          class="mark34c" id="s343067c" src="mc.png"><img class="mark34e"
+          id="s343067e" src="me.png">
+        </li>
+      </ol>
+      <div class="operator">
+        <button type="button" onclick="tilde();">&sim;</button>
+        <button type="button" onclick="dot();">&#x2022;</button>
+        <button type="button" onclick="wedge();">&or;</button>
+        <button type="button" onclick="horseshoe();">&sup;</button>
+        <button type="button" onclick="triplebar();">&equiv;</button>
+      </div>
+    <!-- #7 -->
+    <li>&nbsp;</li>
+      <ol>
+        <li>
+          <span class="var">R</span><span class="var2">&nbsp;</span><span
+          class="symb">&or;</span><span class="var2">&nbsp;</span><span
+          class="var2">(</span><span class="var">H</span><span
+          class="var2">&nbsp;</span><span class="symb">&#x2022;</span><span
+          class="var2">&nbsp;</span><span class="var">M</span><span
+          class="var2">)</span>
+        </li>
+        <li>
+          <span class="symb">&sim;</span><span class="var">G</span><span
+          class="var2">&nbsp;</span><span class="symb">&sup;</span><span
+          class="var2">&nbsp;</span><span class="symb">&sim;</span><span
+          class="var">R</span>
+        </li>
+        <li>
+          <span class="nd">
+            <span class="symb">&sim;</span><span class="var">H</span>
+          </span>
+            <span class="var2">/ </span>
+            <span class="var">G</span>
+        </li>
+        <li>
+          <span class="nd">
+            <input type="text" class="form34s" id="343071" name="343071"
+            onfocus="doItOnFocus(this)"><img class="mark34c" id="s343071c"
+            src="mc.png"><img class="mark34e" id="s343071e" src="me.png">
+          </span>
+          <input type="text" class="form34" id="343072" name="343072"><img
+          class="mark34c" id="s343072c" src="mc.png"><img class="mark34e"
+          id="s343072e" src="me.png">
+        </li>
+        <li>
+          <span class="nd">
+            <input type="text" class="form34s" id="343073" name="343073"
+            onfocus="doItOnFocus(this)"><img class="mark34c" id="s343073c"
+            src="mc.png"><img class="mark34e" id="s343073e" src="me.png">
+          </span>
+          <input type="text" class="form34" id="343074" name="343074"><img
+          class="mark34c" id="s343074c" src="mc.png"><img class="mark34e"
+          id="s343074e" src="me.png">
+        </li>
+        <li>
+          <span class="nd">
+            <input type="text" class="form34s" id="343075" name="343075"
+            onfocus="doItOnFocus(this)"><img class="mark34c" id="s343075c"
+            src="mc.png"><img class="mark34e" id="s343075e" src="me.png">
+          </span>
+          <input type="text" class="form34" id="343076" name="343076"><img
+          class="mark34c" id="s343076c" src="mc.png"><img class="mark34e"
+          id="s343076e" src="me.png">
+        </li>
+        <li>
+          <span class="nd">
+            <input type="text" class="form34s" id="343077" name="343077"
+            onfocus="doItOnFocus(this)"><img class="mark34c" id="s343077c"
+            src="mc.png"><img class="mark34e" id="s343077e" src="me.png">
+          </span>
+          <input type="text" class="form34" id="343078" name="343078"><img
+          class="mark34c" id="s343078c" src="mc.png"><img class="mark34e"
+          id="s343078e" src="me.png">
+        </li>
+        <li>
+          <span class="nd">
+            <input type="text" class="form34s" id="343079" name="343079"
+            onfocus="doItOnFocus(this)"><img class="mark34c" id="s343079c"
+            src="mc.png"><img class="mark34e" id="s343079e" src="me.png">
+          </span>
+          <input type="text" class="form34" id="3430710" name="3430710"><img
+          class="mark34c" id="s3430710c" src="mc.png"><img class="mark34e"
+          id="s3430710e" src="me.png">
+        </li>
+        <li>
+          <span class="nd">
+            <span class="var">G</span>
+          </span>
+          <input type="text" class="form34" id="3430711" name="3430711"><img
+          class="mark34c" id="s3430711c" src="mc.png"><img class="mark34e"
+          id="s3430711e" src="me.png">
+        </li>
+      </ol>
+      <div class="operator">
+        <button type="button" onclick="tilde();">&sim;</button>
+        <button type="button" onclick="dot();">&#x2022;</button>
+        <button type="button" onclick="wedge();">&or;</button>
+        <button type="button" onclick="horseshoe();">&sup;</button>
+        <button type="button" onclick="triplebar();">&equiv;</button>
+      </div>
+    <!-- #8 -->
+    <li>&nbsp;</li>
+      <ol>
+        <li>
+          <span class="symb">&sim;</span><span class="var2">(</span><span
+          class="var">A</span><span class="var2">&nbsp;</span><span
+          class="symb">&#x2022;</span><span class="var2">&nbsp;</span><span
+          class="var">C</span><span class="var2">)</span><span
+          class="var2">&nbsp;</span><span class="symb">&or;</span><span
+          class="var2">&nbsp;</span><span class="var">L</span>
+        </li>
+        <li>
+          <span class="nd">
+            <span class="symb">&sim;</span><span class="var2">(</span><span
+            class="var">C</span><span class="var2">&nbsp;</span><span
+            class="symb">&sup;</span><span class="var2">&nbsp;</span><span
+            class="var">L</span><span class="var2">)</span>
+          </span>
+            <span class="var2">/ </span>
+            <span class="symb">&sim;</span><span class="var">A</span>
+        </li>
+        <li>
+          <span class="nd">
+            <input type="text" class="form34s" id="343081" name="343081"
+            onfocus="doItOnFocus(this)"><img class="mark34c" id="s343081c"
+            src="mc.png"><img class="mark34e" id="s343081e" src="me.png">
+          </span>
+          <input type="text" class="form34" id="343082" name="343082"><img
+          class="mark34c" id="s343082c" src="mc.png"><img class="mark34e"
+          id="s343082e" src="me.png">
+        </li>
+        <li>
+          <span class="nd">
+            <input type="text" class="form34s" id="343083" name="343083"
+            onfocus="doItOnFocus(this)"><img class="mark34c" id="s343083c"
+            src="mc.png"><img class="mark34e" id="s343083e" src="me.png">
+          </span>
+          <input type="text" class="form34" id="343084" name="343084"><img
+          class="mark34c" id="s343084c" src="mc.png"><img class="mark34e"
+          id="s343084e" src="me.png">
+        </li>
+        <li>
+          <span class="nd">
+            <span class="symb">&sim;</span><span class="var">A</span>
+          </span>
+          <input type="text" class="form34" id="343085" name="343085"><img
+          class="mark34c" id="s343085c" src="mc.png"><img class="mark34e"
+          id="s343085e" src="me.png">
+        </li>
+      </ol>
+      <div class="operator">
+        <button type="button" onclick="tilde();">&sim;</button>
+        <button type="button" onclick="dot();">&#x2022;</button>
+        <button type="button" onclick="wedge();">&or;</button>
+        <button type="button" onclick="horseshoe();">&sup;</button>
+        <button type="button" onclick="triplebar();">&equiv;</button>
+      </div>
+    <!-- #9 -->
+    <li>&nbsp;</li>
+      <ol>
+        <li>
+          <span class="symb">&sim;</span><span class="var2">(</span><span
+          class="var">A</span><span class="var2">&nbsp;</span><span
+          class="symb">&#x2022;</span><span class="var2">&nbsp;</span><span
+          class="var">C</span><span class="var2">)</span><span
+          class="var2">&nbsp;</span><span class="symb">&or;</span><span
+          class="var2">&nbsp;</span><span class="var">L</span>
+        </li>
+        <li>
+          <span class="nd">
+            <span class="symb">&sim;</span><span class="var2">(</span><span
+            class="var">C</span><span class="var2">&nbsp;</span><span
+            class="symb">&sup;</span><span class="var2">&nbsp;</span><span
+            class="var">L</span><span class="var2">)</span>
+          </span>
+            <span class="var2">/ </span>
+            <span class="symb">&sim;</span><span class="var">A</span>
+        </li>
+        <li>
+          <span class="nd">
+            <input type="text" class="form34s" id="343091" name="343091"
+            onfocus="doItOnFocus(this)"><img class="mark34c" id="s343091c"
+            src="mc.png"><img class="mark34e" id="s343091e" src="me.png">
+          </span>
+          <input type="text" class="form34" id="343092" name="343092"><img
+          class="mark34c" id="s343092c" src="mc.png"><img class="mark34e"
+          id="s343092e" src="me.png">
+        </li>
+        <li>
+          <span class="nd">
+            <input type="text" class="form34s" id="343093" name="343093"
+            onfocus="doItOnFocus(this)"><img class="mark34c" id="s343093c"
+            src="mc.png"><img class="mark34e" id="s343093e" src="me.png">
+          </span>
+          <input type="text" class="form34" id="343094" name="343094"><img
+          class="mark34c" id="s343094c" src="mc.png"><img class="mark34e"
+          id="s343094e" src="me.png">
+        </li>
+        <li>
+          <span class="nd">
+            <input type="text" class="form34s" id="343095" name="343095"
+            onfocus="doItOnFocus(this)"><img class="mark34c" id="s343095c"
+            src="mc.png"><img class="mark34e" id="s343095e" src="me.png">
+          </span>
+          <input type="text" class="form34" id="343096" name="343096"><img
+          class="mark34c" id="s343096c" src="mc.png"><img class="mark34e"
+          id="s343096e" src="me.png">
+        </li>
+        <li>
+          <span class="nd">
+            <input type="text" class="form34s" id="343097" name="343097"
+            onfocus="doItOnFocus(this)"><img class="mark34c" id="s343097c"
+            src="mc.png"><img class="mark34e" id="s343097e" src="me.png">
+          </span>
+          <input type="text" class="form34" id="343098" name="343098"><img
+          class="mark34c" id="s343098c" src="mc.png"><img class="mark34e"
+          id="s343098e" src="me.png">
+        </li>
+        <li>
+          <span class="nd">
+            <span class="symb">&sim;</span><span class="var">A</span>
+          </span>
+          <input type="text" class="form34" id="343099" name="343099"><img
+          class="mark34c" id="s343099c" src="mc.png"><img class="mark34e"
+          id="s343099e" src="me.png">
+        </li>
+      </ol>
+      <div class="operator">
+        <button type="button" onclick="tilde();">&sim;</button>
+        <button type="button" onclick="dot();">&#x2022;</button>
+        <button type="button" onclick="wedge();">&or;</button>
+        <button type="button" onclick="horseshoe();">&sup;</button>
+        <button type="button" onclick="triplebar();">&equiv;</button>
+      </div>
+  </ol>
+  <p style="margin-left: 36px">Question #8 and #9 illustrate that there can be more than one way to complete natural deduction.</p>
+  <button type="button" class="ca34" id="chan3" onclick="checkanswers3();">Check Answers</button>
+
+</form>
+
+<p>&nbsp;</p>
+
+<p><a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">This work</span> by <a xmlns:cc="https://creativecommons.org/ns#" href="https://www.butte.edu/~wmwu" property="cc:attributionName" rel="cc:attributionURL">Wu Wei-Ming</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.</p>
+
+    </div>
+  </div>
+</div>
+
+<div id="fwrap">
+  <div id="fwrap2">
+    <div id="footer">
+      <p><a href="javascript:;" onclick="window.location.assign('../3.3/iLogic_3_3.html');">&larr;&nbsp;&nbsp;PREVIOUS</a>&nbsp;</p>
+  </div>
+  </div>
+</div>
+
+</body>
+</html>

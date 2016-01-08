@@ -1,0 +1,3989 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>Common Argument Forms</title>
+<link rel="stylesheet" href="../iLogic.css" type="text/css">
+<script type="text/javascript" src="../Operators.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+<div id="hwrap">
+  <div id="hwrap2">
+    <div id="header">
+      <h1>iLogic</h1>
+    </div>
+  </div>
+</div>
+
+<div id="nwrap">
+  <div id="nwrap2">
+    <div id="nav">
+      <ul>
+        <li><a href="javascript:;" onclick="window.location.assign('../../index.html');">HOME</a></li>
+        <li><a href="javascript:;" onclick="window.location.assign('../Table of Contents.html');">TABLE OF CONTENTS</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div id="mwrap">
+  <div id="mwrap2">
+    <div id="main">
+      <span class="pdf"><a href="javascript:;"
+onclick="window.open('iLogic_3_3.pdf');return false;">PDF</a></span>
+
+<h2>3.3 Common Argument Forms</h2>
+
+<p>In the previous section we learned how to use truth tables to determine
+whether deductive arguments are valid. As arguments get longer, their truth
+tables would have more rows. Using truth tables to determine their validity can
+become quite time-consuming. For example, the truth table of the following
+argument has 16 rows, and can take quite a bit of time to construct.</p>
+      
+  <table class="box">
+    <tbody>
+      <tr>
+        <td width="520px">If interest rates are raised, the stock market will
+        be hurt. If the stock market is hurt, the economy will slow down. But
+        if interest rates are not raised, inflation will get worse. If
+        inflation gets worse, the economy will slow down. So the economy will
+        slow down. </td>
+        <td width="80px" valign="bottom" align="center"><span
+        style="background-image: none; background-color: #E6ECFF; font-family:
+        sans-serif; font-size: .8em">3.3a</span> </td>
+      </tr>
+    </tbody>
+  </table>
+      
+<p>So using truth tables to determine validity can be tedious, and there is an
+incentive to find a more efficient way.</p>
+      
+<p>Arguments such as (3.3a) are built by combining small and basic valid
+argument forms. This means that if we can recognize the small forms and see how
+they are put together to form longer arguments, then we can determine validity
+without constructing truth tables.</p>
+      
+<h3 id="Basic_Valid_Forms">3.3.1 Basic Valid Forms</h3>
+      
+<p>There are six basic forms that are commonly used:</p>
+
+  <ol class="display">
+    <li>Disjunctive Syllogism (DS)</li>
+    <li>Hypothetical Syllogism (HS)</li>
+    <li>Modus Ponens (MP)</li>
+    <li>Modus Tollens (MT)</li>
+    <li>Constructive Dilemma (CD)</li>
+    <li>Destructive Dilemma (DD)</li>
+  </ol>
+      
+<p style="margin-top: 0.2in; margin-bottom: 0in">We are going to study them and
+learn how to recognize them.</p>
+      
+<h4>Disjunctive Syllogism (DS)</h4>
+      
+<p>The basic form disjunctive syllogism gets its name from the feature that one
+of the two premises is a disjunction. The disjunction tells us that at least
+one of its disjuncts must be true in order for the disjunction to be true. Now
+since the other premise asserts that one of the disjuncts is false (that is,
+its negation is true). It follows that the other disjunct must be true.</p>
+      
+  <table class="commonform">
+    <tbody>
+      <tr>
+        <td class="c1">&nbsp;</td>
+        <td class="c2">&nbsp;&nbsp;<em>p</em> <span
+              class="symb">&or;</span> <em>q</em></td>
+        <td class="c1">&nbsp;</td>
+      </tr>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2">&nbsp;&nbsp;<span
+              class="symb">&sim;</span><em>p</em></td>
+        <td class="c1"><br></td>
+      </tr>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2" style="border-top: 1px solid
+        black;">&nbsp;&nbsp;<em>q</em></td>
+        <td class="c1"><br></td>
+      </tr>
+    </tbody>
+  </table>
+      
+<p>Notice that in Propositional Logic, the order of the premises does not
+matter. So the following two are treated as the same form.</p>
+      
+      <table class="commonform">
+        <tbody>
+          <tr>
+            <td class="c1"><br></td>
+            <td class="c2">&nbsp;&nbsp;<em>p</em> <span
+              class="symb">&or;</span> <em>q</em></td>
+            <td class="c1">&nbsp;</td>
+            <td class="c3"><br></td>
+            <td class="c1"><br></td>
+            <td class="c2"><span
+              class="symb">&nbsp;&nbsp;&sim;</span><em>p</em></td>
+            <td class="c1"><br></td>
+          </tr>
+          <tr>
+            <td class="c1"><br></td>
+            <td class="c2">&nbsp;&nbsp;<span
+              class="symb">&sim;</span><em>p</em></td>
+            <td class="c1"><br></td>
+            <td class="c3" align="center">=</td>
+            <td class="c1"><br></td>
+            <td class="c2">&nbsp;&nbsp;<em>p</em> <span
+              class="symb">&or;</span> <em>q</em></td>
+            <td class="c1"><br></td>
+          </tr>
+          <tr>
+            <td class="c1"><br></td>
+		        <td class="c2" style="border-top: 1px solid
+		        black;">&nbsp;&nbsp;<em>q</em></td>
+            <td class="c1"><br></td>
+            <td class="c3"><br></td>
+            <td class="c1"><br></td>
+		        <td class="c2" style="border-top: 1px solid
+		        black;">&nbsp;&nbsp;<em>q</em></td>
+            <td class="c1"><br></td>
+          </tr>
+        </tbody>
+      </table>
+      
+<p style="margin-bottom: 0in">We can prove that the form disjunctive syllogism
+is valid using the truth table. Use the <img width="36" height="20"
+style="vertical-align: -3px;" alt="play button" src="Button_Play.jpg"> button
+below to step through the proof.</p>
+
+  <div style="width: 400px; height: 210px; margin: 30px 0 0 60px;">
+  	<iframe id="sc70" src="TT_DS.html" style="width: 720px;
+  	height: 420px; border: none; overflow: hidden"></iframe>
+  </div>
+      
+<p>After we know what the form looks like, the next step is to identify it from
+a written argument. Here is an example of disjunctive syllogism:</p>
+
+  <table class="box">
+    <tbody>
+      <tr>
+        <td width="520px" valign="bottom">Either interest rates go up or
+          inflation gets worse. Since interest rates have not gone up, we can
+          be sure that inflation is getting worse. </td>
+        <td width="80px" valign="bottom" align="center"><span
+        style="background-image: none; background-color: #E6ECFF; font-family:
+        sans-serif; font-size: .8em">3.3b</span> </td>
+      </tr>
+    </tbody>
+  </table>
+      
+<p>After symbolizing the argument as</p>
+      
+  <table class="commonform2">
+    <tbody>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2">&nbsp;&nbsp;<span class="var">U
+          <span class="symb">&or;</span> W</span></td>
+        <td class="c1"><br></td>
+      </tr>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2"><span
+          class="symb">&nbsp;&nbsp;&sim;<span class="var">U</span></span></td>
+        <td class="c1"><br></td>
+      </tr>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2" style="border-top: 1px solid black;"><span
+          class="var">&nbsp;&nbsp;W</span></td>
+        <td class="c1"><br></td>
+      </tr>
+    </tbody>
+  </table>
+      
+<p>we can tell that it is an instance of disjunctive syllogism. In this way we
+can find out that it is valid without constructing its truth table.</p>
+      
+<h4>Hypothetical Syllogism <span style="font-style: normal">(</span>HS<span
+style="font-style: normal">)</span></h4>
+      
+<p>A hypothetical syllogism has a distinct feature that helps us recognize it.
+The argument consists of three conditionals. The first conditional says that
+<em>p</em> is a sufficient condition for <em>q</em>. The second one says that
+<em>q</em> in turn is a sufficient condition for <em>r</em>. It would then
+follow that <em>p</em> is a sufficient condition for <em>r</em>.</p>
+      
+  <table class="commonform">
+    <tbody>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2">&nbsp;&nbsp;<em>p</em> <span
+          class="symb">&sup;</span> <em>q</em></td>
+        <td class="c1"><br></td>
+      </tr>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2">&nbsp;&nbsp;<em>q</em> <span
+          class="symb">&sup;</span> <em>r</em></td>
+        <td class="c1"><br></td>
+      </tr>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2" style="border-top: 1px solid
+        black;">&nbsp;&nbsp;<em>p</em> <span class="symb">&sup;</span>
+        <em>r</em></td>
+        <td class="c1"><br></td>
+      </tr>
+    </tbody>
+  </table>
+      
+<p>The next argument</p>
+      
+  <table class="box">
+    <tbody>
+      <tr>
+        <td width="520px" valign="bottom">If more prisons are built, public
+        education will get worse due to lack of funding. If public education
+        gets worse due to lack of funding, there will be more criminals. As a
+        result, if more prisons are built, there will be more criminals. </td>
+        <td width="80px" valign="bottom" align="center"><span
+        style="background-image: none; background-color: #E6ECFF; font-family:
+        sans-serif; font-size: .8em">3.3c</span> </td>
+      </tr>
+    </tbody>
+  </table>
+      
+<p>has the form</p>
+      
+  <table class="commonform2">
+    <tbody>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2"><span class="var">&nbsp;&nbsp;B <span
+          class="symb">&sup;</span> W</span></td>
+        <td class="c1"><br></td>
+      </tr>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2"><span class="var">&nbsp;&nbsp;W <span
+        class="symb">&sup;</span> C</span></td>
+        <td class="c1"><br></td>
+      </tr>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2" style="border-top: 1px solid black;"><span
+        class="var">&nbsp;&nbsp;B <span class="symb">&sup;</span> C</span></td>
+        <td class="c1"><br></td>
+      </tr>
+    </tbody>
+  </table>
+      
+<p>and thus is an instance of hypothetical syllogism.</p>
+      
+<h4>Modus Ponens (MP)</h4>
+      
+<p>&ldquo;Modus ponens&rdquo; is the Latin term for &ldquo;affirmative
+mode.&rdquo; We can also call it &ldquo;affirming the antecedent&rdquo; because
+one of its premises affirms that the antecedent of the conditional is true. It
+is a valid form based on the concept of sufficient condition. If <em>p</em> is
+a sufficient condition of <em>q</em>, and <em>p</em> is true, then <em>q</em>
+must be true.</p>
+
+      
+  <table class="commonform">
+    <tbody>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2">&nbsp;&nbsp;<em>p</em> <span
+          class="symb">&sup;</span> <em>q</em></td>
+        <td class="c1"><br></td>
+      </tr>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2">&nbsp;&nbsp;<em>p</em></td>
+        <td class="c1"><br></td>
+      </tr>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2" style="border-top: 1px solid
+        black;">&nbsp;&nbsp;<em>q</em></td>
+        <td class="c1"><br></td>
+      </tr>
+    </tbody>
+  </table>
+      
+<p><em>Modus ponens</em> is one of the most commonly used valid forms. Here is
+an example:</p>
+      
+  <table class="box">
+    <tbody>
+      <tr>
+        <td width="520px" valign="bottom">If Republicans favor free market
+        economy, then they should oppose farm subsidies. Republicans favor free
+        market economy. So they should oppose farm subsidies.</td>
+        <td width="80px" valign="bottom" align="center"><span
+        style="background-image: none; background-color: #E6ECFF; font-family:
+        sans-serif; font-size: .8em">3.3d</span></td>
+      </tr>
+    </tbody>
+  </table>
+      
+<p>The argument is symbolized as</p>
+      
+  <table class="commonform2">
+    <tbody>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2"><span class="var">&nbsp;&nbsp;F
+          <span class="symb">&sup;</span> O</span></td>
+        <td class="c1"><br></td>
+      </tr>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2"><span
+          class="var">&nbsp;&nbsp;F</span></td>
+        <td class="c1"><br></td>
+      </tr>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2" style="border-top: 1px solid black;"><span
+          class="var">&nbsp;&nbsp;O</span></td>
+        <td class="c1"><br></td>
+      </tr>
+    </tbody>
+  </table>
+      
+<p>We can see that its form is <em>modus ponens</em> and thus is valid.</p>
+
+      
+<h4>Modus Tollens (MT)</h4>
+      
+<p>&ldquo;Modus tollens&rdquo; means &ldquo;denying mode&rdquo; in Latin. Its
+English name is &ldquo;denying the consequent&rdquo; because one of its
+premises denies that the consequent of the conditional is true. The validity of
+<em>modus tollens</em> can be easily explained using the concept of necessary
+condition. If <em>q</em> is a necessary condition of <em>p</em>, and <em>q</em>
+is false, then <em>p</em> must be false.</p>
+
+      
+  <table class="commonform">
+    <tbody>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2">&nbsp;&nbsp;<em>p</em> <span
+          class="symb">&sup;</span> <em>q</em></td>
+        <td class="c1"><br></td>
+      </tr>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2">&nbsp;&nbsp;<em><span
+          class="symb">&sim;</span>q</em></td>
+        <td class="c1"><br></td>
+      </tr>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2" style="border-top: 1px solid
+        black;">&nbsp;&nbsp;<em><span class="symb">&sim;</span>p</em></td>
+        <td class="c1"><br></td>
+      </tr>
+    </tbody>
+  </table>
+      
+<p>The next argument is an example of <em>modus tollens</em>:</p>
+      
+  <table class="box">
+    <tbody>
+      <tr>
+        <td width="520px" valign="bottom">We should be against big corporations
+        only if we are against their stock holders. We are not against the
+        stock holders. So we should not be against big corporations.</td>
+        <td width="80px" valign="bottom" align="center"><span
+        style="background-image: none; background-color: #E6ECFF; font-family:
+        sans-serif; font-size: .8em">3.3e</span></td>
+      </tr>
+    </tbody>
+  </table>
+      
+  <table class="commonform2" style="margin-top: 10px">
+    <tbody>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2">&nbsp;&nbsp;<span class="var">B
+          <span class="symb">&sup;</span> S</span></td>
+        <td class="c1"><br></td>
+      </tr>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2">&nbsp;&nbsp;<span
+          class="symb">&sim;</span><span class="var">S</span></td>
+        <td class="c1"><br></td>
+      </tr>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2" style="border-top: 1px solid black;">&nbsp;&nbsp;<span
+          class="symb">&sim;</span><span class="var">B</span></td>
+        <td class="c1"><br></td>
+      </tr>
+    </tbody>
+  </table>
+      
+<h4>Constructive Dilemma (CD)</h4>
+      
+<p>Constructive dilemma, like <em>modus ponens</em>, is built upon the concept
+of sufficient condition. The two conditionals <em>p</em> <span
+class="symb">&sup;</span> <em>q</em> and <em>r</em> <span
+class="symb">&sup;</span> <em>s</em> can be joined together as a conjunction or
+stated separately as two premises. They assert that <em>p</em> is a sufficient
+condition for <em>q</em> and <em>r</em> is a sufficient condition for
+<em>s</em>. Consequently, if at least one of the sufficient conditions is true,
+then at least one of the consequents must also be true.</p>
+      
+  <table class="commonform">
+    <tbody>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2a">&nbsp;&nbsp;(<em>p</em> <span
+          class="symb">&sup;</span> <em>q</em>) <span
+          class="symb">&#x2022;</span> (<em>r</em> <span
+          class="symb">&sup;</span> <em>s</em>)</td>
+        <td class="c1"><br></td>
+        <td class="c3" align="center">or</td>
+        <td class="c1"><br></td>
+        <td class="c2">&nbsp;&nbsp;<em>p</em> <span
+          class="symb">&sup;</span> <em>q</em></td>
+        <td class="c1"><br></td>
+      </tr>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2a">&nbsp;&nbsp;<em>p</em> <span
+          class="symb">&or;</span> <em>r</em></td>
+        <td class="c1"><br></td>
+        <td class="c3"><br></td>
+        <td class="c1"><br></td>
+        <td class="c2">&nbsp;&nbsp;<em>r</em> <span
+          class="symb">&sup;</span> <em>s</em></td>
+        <td class="c1"><br></td>
+      </tr>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2a" style="border-top: 1px solid
+        black;">&nbsp;&nbsp;<em>q</em> <span class="symb">&or;</span>
+        <em>s</em></td>
+        <td class="c1"><br></td>
+        <td class="c3"><br></td>
+        <td class="c1"><br></td>
+        <td class="c2">&nbsp;&nbsp;<em>p</em> <span class="symb">&or;</span>
+        <em>r</em></td>
+        <td class="c1"><br></td>
+      </tr>
+      <tr>
+        <td class="c1w"><br></td>
+        <td class="c2aw"><br></td>
+        <td class="c1w"><br></td>
+        <td class="c3"><br></td>
+        <td class="c1"><br></td>
+        <td class="c2" style="border-top: 1px solid
+        black;">&nbsp;&nbsp;<em>q</em> <span class="symb">&or;</span>
+        <em>s</em></td>
+        <td class="c1"><br></td>
+      </tr>
+    </tbody>
+  </table>
+      
+<p>After symbolizing the argument</p>
+      
+  <table class="box">
+    <tbody>
+      <tr>
+        <td width="520px" valign="bottom">If consumers increase spending,
+        then inflation will get worse. If consumers cut back on spending,
+        then there will be a recession. Consumers either increase or cut
+        back on spending. It follows that the inflation will get worse or
+        there will be a recession. </td>
+        <td width="80px" valign="bottom" align="center"><span
+        style="background-image: none; background-color: #E6ECFF; font-family:
+        sans-serif; font-size: .8em">3.3f&nbsp;</span></td>
+      </tr>
+    </tbody>
+  </table>
+      
+<p>as</p>
+      
+  <table class="commonform2">
+    <tbody>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2a">&nbsp;&nbsp;<span class="var2">(</span><span
+        class="var">I <span class="symb">&sup;</span>&nbsp;W<span
+        class="var2">)</span> <span class="symb">&#x2022;</span> <span
+        class="var2">(</span>C <span class="symb">&sup;</span> R<span
+        class="var2">)</span></span></td>
+        <td class="c1"><br></td>
+      </tr>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2a">&nbsp;&nbsp;<span
+          class="var">I <span class="symb">&or;</span> C</span></td>
+        <td class="c1"><br></td>
+      </tr>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2a" style="border-top: 1px solid black;">&nbsp;&nbsp;<span
+        class="var">W <span class="symb">&or;</span> R</span></td>
+        <td class="c1"><br></td>
+      </tr>
+    </tbody>
+  </table>
+      
+<p>We can see that it is a constructive dilemma, and thus is valid.</p>
+      
+<p>A version of constructive dilemma has <em>p</em> <span
+class="symb">&or;</span> <span class="symb">&sim;</span><em>p</em> as one of
+the premises.</p>
+      
+  <table class="commonform">
+    <tbody>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2a">&nbsp;&nbsp;(<em>p</em> <span
+          class="symb">&sup;</span> <em>q</em>) <span
+          class="symb">&#x2022;</span> (<span
+          class="symb">&sim;</span><em>p</em> <span
+          class="symb">&sup;</span> <em>s</em>)</td>
+        <td class="c1">&nbsp;</td>
+      </tr>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2a">&nbsp;&nbsp;<em>p</em> <span
+          class="symb">&or;</span> <span
+          class="symb">&sim;</span><em>p</em></td>
+        <td class="c1"><br></td>
+      </tr>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2a" style="border-top: 1px solid
+        black;">&nbsp;&nbsp;<em>q</em> <span class="symb">&or;</span>
+        <em>s</em></td>
+        <td class="c1"><br></td>
+      </tr>
+    </tbody>
+  </table>
+      
+<p>Since <em>p</em>&nbsp;<span class="symb">&or;&nbsp;&sim;</span><em>p</em> is
+a tautology, the argument is sound if the premise (<em>p</em>&nbsp;<span
+class="symb">&sup;</span>&nbsp;<em>q</em>)&nbsp;<span
+class="symb">&#x2022;</span>&nbsp;(<span
+class="symb">&sim;</span><em>p</em>&nbsp;<span
+class="symb">&sup;</span>&nbsp;<em>s</em>) is true. Here is an example of this
+commonly seen version of constructive dilemma:</p>
+      
+  <table class="box">
+    <tbody>
+      <tr>
+        <td width="520px" valign="bottom">With protectionism, prices for
+        consumer goods would become higher. Without protectionism, jobs would
+        be lost. Since we either adopt protectionism or reject it, prices for
+        consumer goods would become higher or jobs would be lost.</td>
+        <td width="80px" valign="bottom" align="center"><span
+        style="background-image: none; background-color: #E6ECFF; font-family:
+        sans-serif; font-size: .8em">3.3g</span></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <table class="commonform2" style="margin-top: 10px">
+    <tbody>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2a">&nbsp;&nbsp;<span class="var2">(</span><span
+        class="var">P <span class="symb">&sup;</span> H<span
+        class="var2">)</span> <span class="symb">&#x2022;</span> <span
+        class="var2">(</span><span class="symb">&sim;</span>P <span
+        class="symb">&sup;</span> J<span class="var2">)</span></span></td>
+        <td class="c1"><br></td>
+      </tr>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2a">&nbsp;&nbsp;<span class="var">P <span class="symb">&or;
+        &sim;</span>P</span></td>
+        <td class="c1"><br></td>
+      </tr>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2a" style="border-top: 1px solid black;">&nbsp;&nbsp;<span
+        class="var">H <span class="symb">&or;</span> J</span></td>
+        <td class="c1"><br></td>
+      </tr>
+    </tbody>
+  </table>
+      
+<h4>Destructive Dilemma (DD)</h4>
+      
+<p>Destructive dilemma is another common form based on the concept of necessary
+condition. The two conditionals assert that <em>q</em> is a necessary condition
+for <em>p</em> and <em>s</em> is a necessary condition for <em>r</em>. So if
+<em>q</em> is false or <em>s</em> is false, then it must be the case that
+<em>p</em> is false or <em>r</em> is false.</p>
+      
+  <table class="commonform">
+    <tbody>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2a">&nbsp;&nbsp;(<em>p</em> <span
+          class="symb">&sup;</span> <em>q</em>) <span
+          class="symb">&#x2022;</span> (<em>r</em> <span
+          class="symb">&sup;</span> <em>s</em>)</td>
+        <td class="c1"><br></td>
+        <td class="c3" align="center">or</td>
+        <td class="c1"><br></td>
+        <td class="c2">&nbsp;&nbsp;<em>p</em> <span
+          class="symb">&sup;</span> <em>q</em></td>
+        <td class="c1"><br></td>
+      </tr>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2">&nbsp;&nbsp;<span
+          class="symb">&sim;</span><em>q</em> <span
+          class="symb">&or;</span> <span
+          class="symb">&sim;</span><em>s</em></td>
+        <td class="c1"><br></td>
+        <td class="c3"><br></td>
+        <td class="c1"><br></td>
+        <td class="c2">&nbsp;&nbsp;<em>r</em> <span
+          class="symb">&sup;</span> <em>s</em></td>
+        <td class="c1"><br></td>
+      </tr>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2a" style="border-top: 1px solid black;">&nbsp;&nbsp;<span
+          class="symb">&sim;</span><em>p</em> <span
+          class="symb">&or;</span> <span
+          class="symb">&sim;</span><em>r</em></td>
+        <td class="c1"><br></td>
+        <td class="c3"><br></td>
+        <td class="c1"><br></td>
+        <td class="c2b">&nbsp;&nbsp;<span
+          class="symb">&sim;</span><em>q</em> <span
+          class="symb">&or;</span> <span
+          class="symb">&sim;</span><em>s</em></td>
+        <td class="c1"><br></td>
+      </tr>
+      <tr>
+        <td class="c1w"><br></td>
+        <td class="c2aw"><br></td>
+        <td class="c1w"><br></td>
+        <td class="c3"><br></td>
+        <td class="c1"><br></td>
+        <td class="c2c" style="border-top: 1px solid black;">&nbsp;&nbsp;<span
+          class="symb">&sim;</span><em>p</em> <span
+          class="symb">&or;</span> <span
+          class="symb">&sim;</span><em>r</em></td>
+        <td class="c1"><br></td>
+      </tr>
+    </tbody>
+  </table>
+      
+<p>Here is an example of destructive dilemma:</p>
+      
+  <table class="box">
+    <tbody>
+      <tr>
+        <td width="520px" valign="bottom">Global warming can be slowed down only
+          if we switch to cleaner energy sources. But the current level of
+          industrial production can be sustained only if we continue to use
+          fossil fuels. We won&rsquo;t switch to cleaner energy sources or we
+          won&rsquo;t continue to use fossil fuels. As a result, global warming
+          cannot be slowed down or the current level of industrial production
+          cannot be sustained.</td>
+        <td width="80px" valign="bottom" align="center"><span
+        style="background-image: none; background-color: #E6ECFF; font-family:
+        sans-serif; font-size: .8em">3.3h</span></td>
+      </tr>
+    </tbody>
+  </table>
+      
+  <table class="commonform2" style="margin-top: 10px">
+    <tbody>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2a">&nbsp;&nbsp;<span class="var2">(</span><span
+        class="var">G <span class="symb">&sup;</span> S<span
+        class="var2">)</span> <span class="symb">&#x2022;</span> <span
+        class="var2">(</span>P <span class="symb">&sup;</span> F<span
+        class="var2">)</span></span></td>
+        <td class="c1"><br></td>
+      </tr>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2a">&nbsp;&nbsp;<span class="symb">&sim;</span><span
+        class="var">S <span class="symb">&or;</span> <span
+        class="symb">&sim;</span>F</span></td>
+        <td class="c1"><br></td>
+      </tr>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2a" style="border-top: 1px solid black;">&nbsp;&nbsp;<span
+        class="symb">&sim;</span><span class="var">G <span
+        class="symb">&or;</span> <span class="symb">&sim;</span>P</span></td>
+        <td class="c1"><br></td>
+      </tr>
+    </tbody>
+  </table>
+      
+<p>It is also common to see a destructive dilemma with a tautologous
+disjunction as one of its premises:</p>
+      
+  <table class="commonform">
+    <tbody>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2a">&nbsp;&nbsp;(<em>p</em> <span
+          class="symb">&sup;</span> <em>q</em>) <span
+          class="symb">&#x2022;</span> (<em>r</em> <span
+          class="symb">&sup;</span> <span
+          class="symb">&sim;</span><em>q</em>)</td>
+        <td class="c1"><br></td>
+      </tr>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2a">&nbsp;&nbsp;<em>q</em> <span
+          class="symb">&or;</span> <span
+          class="symb">&sim;</span><em>q</em></td>
+        <td class="c1"><br></td>
+      </tr>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2a" style="border-top: 1px solid black;">&nbsp;&nbsp;<span
+          class="symb">&sim;</span><em>p</em> <span
+          class="symb">&or;</span> <span
+          class="symb">&sim;</span><em>r</em></td>
+        <td class="c1"><br></td>
+      </tr>
+    </tbody>
+  </table>
+      
+<p>The first conditional asserts that <em>q</em> is a necessary condition for
+<em>p</em>. This means that if <span class="symb">&sim;</span><em>q</em> is
+true, then <span class="symb">&sim;</span><em>p</em> must be true. The second
+conditional says that <span class="symb">&sim;</span><em>q</em> is a necessary
+condition for <em>r</em>. This means that if <span
+class="symb">&sim;&sim;</span><em>q</em> (which is logically equivalent to
+<em>q</em>) is true, then <span class="symb">&sim;</span><em>r</em> must be
+true. Since <em>q</em>&nbsp;<span class="symb">&or;</span>&nbsp;<span
+class="symb">&sim;</span><em>q</em> is a logical truth, <span
+class="symb">&sim;</span><em>p</em>&nbsp;<span
+class="symb">&or;</span>&nbsp;<span class="symb">&sim;</span><em>r</em> must
+follow from (<em>p</em>&nbsp;<span
+class="symb">&sup;</span>&nbsp;<em>q</em>)&nbsp;<span
+class="symb">&#x2022;</span>&nbsp;(<em>r</em>&nbsp;<span
+class="symb">&sup;</span>&nbsp;<span class="symb">&sim;</span><em>q</em>). The
+following argument is an instance of such a form:</p>
+      
+  <table class="box">
+    <tbody>
+      <tr>
+        <td width="520px" valign="bottom">GM can be competitive only if it
+        increases outsourcing. UAW workers can have job security only if GM
+        does not increase outsourcing. GM either increases or does not increase
+        outsourcing. Therefore, either GM cannot be more competitive or UAW
+        workers cannot have job security.</td>
+        <td width="80px" valign="bottom" align="center"><span
+        style="background-color: #E6ECFF; font-family: sans-serif; font-size:
+        .8em">3.3i&nbsp;</span></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <table class="commonform2" style="margin-top: 10px">
+    <tbody>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2a">&nbsp;&nbsp;<span class="var2">(</span><span class="var">C <span
+          class="symb">&sup;</span> I<span class="var2">)</span> <span
+          class="symb">&#x2022;</span> <span class="var2">(</span>J <span
+          class="symb">&sup;</span> <span
+          class="symb">&sim;</span>I<span class="var2">)</span></span></td>
+        <td class="c1"><br></td>
+      </tr>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2a">&nbsp;&nbsp;<span
+          class="var">I <span class="symb">&or;</span> <span class="symb">&sim;</span>I</span></td>
+        <td class="c1"><br></td>
+      </tr>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2a" style="border-top: 1px solid black;">&nbsp;&nbsp;<span
+          class="symb">&sim;</span><span class="var">C <span
+          class="symb">&or;</span> <span class="symb">&sim;</span>J</span></td>
+        <td class="c1"><br></td>
+      </tr>
+    </tbody>
+  </table>
+      
+<h4>The Problem of Evil &mdash; a Destructive Dilemma</h4>
+      
+<p>There is a well-known philosophical problem called the <a
+href="http://en.wikipedia.org/wiki/Problem_of_evil" target="_blank"> <b>problem
+of evil</b></a> in western philosophy and religions. It argues that God is
+either not all-powerful or not all-good. The argument can be constructed as a
+destructive dilemma:</p>
+
+  <ol class="display">
+    <li>If God is all-powerful, He would be able to eliminate evil.</li>
+    <li>If God is all-good, He would want to eliminate evil.</li>
+    <li>Evil exists. (This means that God is not able to eliminate evil, or God
+      does not want to eliminate evil.)</li>
+    <li>Therefore, God is either not all-powerful or not all-good.</li>
+  </ol>
+      
+<p>After it is symbolized as</p>
+      
+  <table class="commonform2">
+    <tbody>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2a"><span class="var2">&nbsp;&nbsp;(</span><span
+        class="var">P <span class="symb">&sup;</span> A<span
+        class="var2">)</span> <span class="symb">&#x2022;</span> <span
+        class="var2">(</span>G <span class="symb">&sup;</span> W<span
+        class="var2">)</span></span></td> <td class="c1"><br></td>
+      </tr>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2a">&nbsp;&nbsp;<span
+          class="symb">&sim;</span><span class="var">A <span
+          class="symb">&or;</span> <span class="symb">&sim;</span>W</span></td>
+        <td class="c1"><br></td>
+      </tr>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2a" style="border-top: 1px solid black;">&nbsp;&nbsp;<span
+          class="symb">&sim;</span><span class="var">P <span
+          class="symb">&or;</span> <span class="symb">&sim;</span>G</span></td>
+        <td class="c1"><br></td>
+      </tr>
+    </tbody>
+  </table>
+      
+<p>it is clear that the argument indeed is an instance of destructive dilemma.
+This helps us see that many attempted solutions to the problem of evil (called
+<a href="http://en.wikipedia.org/wiki/Theodicy"
+target="_blank"><b>theodicies</b></a>) are efforts to refute one of its
+premises.</p>
+      
+<h3 id="Two_Formal_Fallacies">3.3.2 Two Formal Fallacies</h3>
+      
+<p>The mix-up of the sufficient condition and the necessary condition produces
+two common invalid forms. They are affirming the consequent and denying the
+antecedent. It is important not to confuse them with Modus Ponens and Modus
+Tollens.</p>
+      
+<h4>Affirming the Consequent (AC)</h4>
+      
+<p>Affirming the consequent mistakes a necessary condition for a sufficient
+condition. If <em>q</em> is a necessary condition of <em>p</em>, then even if
+<em>q</em> is true, <em>p</em> may still be false. This is why affirming the
+consequent is invalid.</p>
+      
+  <table class="commonform">
+    <tbody>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2">&nbsp;&nbsp;<em>p</em> <span
+          class="symb">&sup;</span> <em>q</em></td>
+        <td class="c1"><br></td>
+      </tr>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2">&nbsp;&nbsp;<em>q</em></td>
+        <td class="c1"><br></td>
+      </tr>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2" style="border-top: 1px solid
+        black;">&nbsp;&nbsp;<em>p</em></td>
+        <td class="c1"><br></td>
+      </tr>
+    </tbody>
+  </table>
+      
+<p>The next argument has two true premises, but its conclusion is false. It is
+a counterexample that illustrates the invalidity of affirming the
+consequent.</p>
+      
+  <table class="box">
+    <tbody>
+      <tr>
+        <td width="520px" valign="bottom">If Isaac Newton is a biologist, then
+        he is a scientist. Isaac Newton is a scientist. Therefore, he is a
+        biologist.</td>
+        <td width="80px" valign="bottom" align="center"><span
+        style="background-image: none; background-color: #E6ECFF; font-family:
+        sans-serif; font-size: .8em">3.3j&nbsp;</span></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <table class="commonform2" style="margin-top: 10px">
+    <tbody>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2">&nbsp;&nbsp;<span class="var">B
+          <span class="symb">&sup;</span> S</span></td>
+        <td class="c1"><br></td>
+      </tr>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2">&nbsp;&nbsp;<span
+          class="var">S</span></td>
+        <td class="c1"><br></td>
+      </tr>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2" style="border-top: 1px solid black;">&nbsp;&nbsp;<span
+          class="var">B</span></td>
+        <td class="c1"><br></td>
+      </tr>
+    </tbody>
+  </table>
+      
+<h4>Denying the Antecedent (DA)</h4>
+      
+<p>Denying the antecedent concludes that <em>q</em> must be false on the basis
+that a sufficient condition <em>p</em> is not true. The correct conclusion to
+draw from <em>p</em> being false should be that <em>q</em> can be true or
+false.</p>
+      
+  <table class="commonform">
+    <tbody>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2">&nbsp;&nbsp;<em>p</em> <span
+          class="symb">&sup;</span> <em>q</em></td>
+        <td class="c1"><br></td>
+      </tr>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2">&nbsp;&nbsp;<span
+          class="symb">&sim;</span><em>p</em></td>
+        <td class="c1"><br></td>
+      </tr>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2" style="border-top: 1px solid black;">&nbsp;&nbsp;<span
+          class="symb">&sim;</span><em>q</em></td>
+        <td class="c1"><br></td>
+      </tr>
+    </tbody>
+  </table>
+      
+<p>Here is another counterexample that shows the form is invalid.</p>
+      
+  <table class="box">
+    <tbody>
+      <tr>
+        <td width="520px" valign="bottom">If Bill Gates owns Exxon Mobil,
+        then he is a billionaire. Bill Gates does not own Exxon Mobil.
+        Therefore, he is not a billionaire.</td>
+        <td width="80px" valign="bottom" align="center"><span
+        style="background-image: none; background-color: #E6ECFF; font-family:
+        sans-serif; font-size: .8em">3.3k</span></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <table class="commonform2" style="margin-top: 10px">
+    <tbody>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2">&nbsp;&nbsp;<span class="var">O
+          <span class="symb">&sup;</span> B</span></td>
+        <td class="c1"><br></td>
+      </tr>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2">&nbsp;&nbsp;<span
+          class="symb">&sim;</span><span
+          class="var">O</span></td>
+        <td class="c1"><br></td>
+      </tr>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2" style="border-top: 1px solid black;">&nbsp;&nbsp;<span
+          class="symb">&sim;</span><span
+          class="var">B</span></td>
+        <td class="c1"><br></td>
+      </tr>
+    </tbody>
+  </table>
+      
+<h3 id="Recognizing_Common_Forms">3.3.3 Recognizing Common Forms</h3>
+      
+<p>In learning the basic argument forms, we use &ldquo;<em>p</em>&rdquo;,
+&ldquo;<em>q</em>&rdquo;, &ldquo;<em>r</em>&rdquo; and &ldquo;<em>s</em>&rdquo;
+as variables. They serve as place holders in argument forms. If we replace each
+variable in a basic form with a capital letter, we would of course end up with
+an instance of the form. But we can also replace a variable with a compound
+sentence. The resulting argument would also be an instance of the form. Such
+substitutions give us more flexibility in constructing instances of the basic
+forms. For instance, if we take the form <em>modus ponens</em> and replace
+<em>p</em> with <span class="var">H</span> and
+<em>q</em> with <span class="var">R </span><span class="symb">&or;</span><span
+class="var"> B</span>, the resulting argument</p>
+
+  <table class="commonform2">
+    <tbody>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2" style="width: 120px;">&nbsp;&nbsp;<span class="var">H </span><span
+        class="symb">&sup;</span><span class="var2"> (</span><span
+        class="var">R </span><span class="symb">&or;</span><span class="var">
+        B</span><span class="var2">)</span></td>
+		<td class="c1"><br></td>
+      </tr>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2">&nbsp;&nbsp;<span class="var">H</span></td>
+        <td class="c1"><br></td>
+      </tr>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2" style="border-top: 1px solid black;">&nbsp;&nbsp;<span
+        class="var">R </span><span class="symb">&or;</span><span class="var">
+        B</span></td>
+        <td class="c1"><br></td>
+      </tr>
+    </tbody>
+  </table>
+
+<p>would be an instance of <em>modus ponens</em>. The substitution can also go the other direction, that is, we can also replace a compound sentence with a variable. Such substitutions can help us identify basic forms. Take a look at the next argument.</p>
+      
+  <table class="box">
+    <tbody>
+      <tr>
+        <td width="520px" valign="bottom">The current economic growth
+        cannot be sustained unless inflation is under control. Inflation is
+        not under control. Therefore, the current economic growth cannot be
+        sustained.</td>
+        <td width="80px" valign="bottom" align="center"><span
+        style="background-image: none; background-color: #E6ECFF; font-family:
+        sans-serif; font-size: .8em">3.3l&nbsp;</span></td>
+      </tr>
+    </tbody>
+  </table>
+      
+<p>The argument can be symbolized as</p>
+      
+  <table class="commonform2">
+    <tbody>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2">&nbsp;&nbsp;<span class="symb">&sim;</span><span
+        class="var">S <span class="symb">&or;</span> U</span></td>
+        <td class="c1"><br></td>
+      </tr>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2">&nbsp;&nbsp;<span
+          class="symb">&sim;</span><span
+          class="var">U</span></td>
+        <td class="c1"><br></td>
+      </tr>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2" style="border-top: 1px solid black;">&nbsp;&nbsp;<span
+          class="symb">&sim;</span><span
+          class="var">S</span></td>
+        <td class="c1"><br></td>
+      </tr>
+    </tbody>
+  </table>
+      
+<p>Since <span class="symb">&sim;</span><span class="var">S <span
+class="symb">&or;</span> U</span> is logically equivalent to <span
+class="var">U </span><span class="symb">&or;</span><span
+class="var2">&nbsp;</span><span class="symb">&sim;</span><span
+class="var">S</span> (as we will see in the next section, this is called the rule of <strong>commutativity</strong>). We can rewrite the argument as:</p>
+
+  <table class="commonform2">
+    <tbody>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2">&nbsp;&nbsp;<span class="var">U </span><span
+        class="symb">&or;</span><span class="var2">&nbsp;</span><span
+        class="symb">&sim;</span><span class="var">S</span></td>
+		<td class="c1"><br></td>
+      </tr>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2">&nbsp;&nbsp;<span class="symb">&sim;</span><span
+        class="var">U</span></td>
+        <td class="c1"><br></td>
+      </tr>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2" style="border-top: 1px solid black;">&nbsp;&nbsp;<span
+        class="symb">&sim;</span><span class="var">S</span></td>
+        <td class="c1"><br></td>
+      </tr>
+    </tbody>
+  </table>
+
+<p>Now by the following substitutions:</p>
+      
+<p style="margin-left: 64px"><em>p</em> = <span class="var">U</span></p>
+      
+<p style="margin-left: 64px"><em>q</em> = <span class="symb">&sim;</span><span
+class="var">S</span></p>
+      
+<p>we would then have</p>
+
+  <table class="commonform">
+    <tbody>
+      <tr>
+        <td class="c1w"><br></td>
+        <td class="c2w">&nbsp;&nbsp;<em>p</em> <span
+          class="symb">&or;</span> <em>q</em></td>
+        <td class="c1w"><br></td>
+      </tr>
+      <tr>
+        <td class="c1w"><br></td>
+        <td class="c2w">&nbsp;&nbsp;<span
+        class="symb">&sim;</span><em>p</em></td>
+        <td class="c1w"><br></td>
+      </tr>
+      <tr>
+        <td class="c1w"><br></td>
+        <td class="c2w" style="border-top: 1px solid
+        black;">&nbsp;&nbsp;<em>q</em></td>
+        <td class="c1w"><br></td>
+      </tr>
+    </tbody>
+  </table>
+
+<p>This helps us see that argument (3.3l) is an instance of disjunctive
+syllogism. In the next example, we should recognize <span class="var">A <span
+class="symb">&#x2022;</span> K</span> as the antecedent <em>p</em> and <span
+class="symb">&sim;</span><span class="var">D</span> as the consequent
+<em>q</em>. As a result, it is a <em>modus ponens</em>. Use the <img
+width="36" height="20" style="vertical-align: -3px;" alt="play button"
+src="Button_Play.jpg"> button below to step through the illustration.</p>
+
+  <div style="width: 400px; height: 180px; margin: 12px 0 0 48px;">
+  	<iframe id="sc65" src="Common_Form_1" style="width: 600px;
+  	height: 400px; border: none; overflow: hidden"></iframe>
+  </div>
+      
+<p>To properly identify the next form as an instance of disjunctive syllogism,
+we need to apply the rule of <strong>double negation</strong>, which says that
+<em>p</em> is logically equivalent to <span
+class="symb">&sim;&sim;</span><em>p</em>. Afterwards, we substitute <em>p</em>
+for <span class="var">G&nbsp;<span class="symb">&sup;</span>&nbsp;M</span> and
+<em>q</em> for <span class="symb">&sim;</span><span class="var">D</span>.</p>
+
+  <div style="width: 400px; height: 180px; margin: 12px 0 0 48px;">
+  	<iframe id="sc65" src="Common_Form_2" style="width: 720px;
+  	height: 400px; border: none; overflow: hidden"></iframe>
+  </div>
+      
+<h3 id="Combining_Basic_Forms">3.3.4 Combining Basic Forms</h3>
+      
+<p>We can combine basic argument forms to construct longer and more complex
+arguments. The argument (3.3a)</p>
+      
+  <table class="box">
+    <tbody>
+      <tr>
+        <td width="520px" valign="bottom">If interest rates are raised, the
+        stock market will be hurt. If the stock market is hurt, the economy
+        will slow down. But if interest rates are not raised, inflation will
+        get worse. If inflation gets worse, the economy will slow down. So the
+        economy will slow down.</td>
+        <td width="80px" valign="bottom" align="center"><span
+        style="background-image: none; background-color: #E6ECFF; font-family:
+        sans-serif; font-size: .8em">3.3a</span></td>
+      </tr>
+    </tbody>
+  </table>
+      
+<p>is built by combining two hypothetical syllogisms with a constructive
+dilemma. It is easier to see the logical structure from the symbolization.</p>
+      
+  <table class="commonform2">
+    <tbody>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2">&nbsp;&nbsp;<span class="var">R <span class="symb">&sup;</span>
+          S</span></td>
+        <td class="c1"><br></td>
+      </tr>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2">&nbsp;&nbsp;<span class="var">S <span class="symb">&sup;</span>
+          E</span></td>
+        <td class="c1"><br></td>
+      </tr>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2">&nbsp;&nbsp;<span class="symb">&sim;</span><span class="var">R
+          <span class="symb">&sup;</span> W</span></td>
+        <td class="c1"><br></td>
+      </tr>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2">&nbsp;&nbsp;<span class="var">W <span class="symb">&sup;</span>
+          E</span></td>
+        <td class="c1"><br></td>
+      </tr>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2c">&nbsp;&nbsp;<span
+          class="var2">(</span><span class="var">R <span class="symb">&or;</span>
+          <span class="symb">&sim;</span>R<span class="var2">)</span></span></td>
+        <td class="c1"><br></td>
+      </tr>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2" style="border-top: 1px solid black;">&nbsp;&nbsp;<span
+        class="var">E</span></td>
+        <td class="c1"><br></td>
+      </tr>
+    </tbody>
+  </table>
+      
+<p>Notice that we include the tautology <span class="var">R</span>&nbsp;<span
+class="symb">&or;</span>&nbsp;<span class="symb">&sim;</span><span
+class="var">R</span> as the last premise. The tautology goes unstated in the
+original argument because it is trivial that it is true. Now from the first two
+premises, we can derive <span class="var">R&nbsp;<span
+class="symb">&sup;</span>&nbsp;E</span> as a conclusion based on hypothetical
+syllogism.</p>
+      
+  <table class="commonform2">
+    <tbody>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2">&nbsp;&nbsp;<span class="var">R <span
+          class="symb">&sup;</span> S</span></td>
+        <td class="c1"><br></td>
+      </tr>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2">&nbsp;&nbsp;<span
+          class="var">S <span class="symb">&sup;</span> E</span></td>
+        <td class="c1"><br></td>
+      </tr>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2" style="border-top: 1px solid black;">&nbsp;&nbsp;<span class="var">R <span
+          class="symb">&sup;</span> E</span></td>
+        <td class="c1"><br></td>
+      </tr>
+    </tbody>
+  </table>
+      
+<p>Using hypothetical syllogism one more time, we can draw the conclusion <span
+class="symb">&sim;<span class="var">R</span>&nbsp;&sup;&nbsp;<span
+class="var">E</span></span> from the third and the fourth premises.</p>
+      
+  <table class="commonform2">
+    <tbody>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2">&nbsp;&nbsp;<span
+          class="symb">&sim;</span><span class="var">R <span
+          class="symb">&sup;</span> W</span></td>
+        <td class="c1"><br></td>
+      </tr>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2">&nbsp;&nbsp;<span
+          class="var">W <span class="symb">&sup;</span> E</span></td>
+        <td class="c1"><br></td>
+      </tr>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2" style="border-top: 1px solid black;">&nbsp;&nbsp;<span
+          class="symb">&sim;</span><span class="var">R <span
+          class="symb">&sup;</span> E</span></td>
+        <td class="c1"><br></td>
+      </tr>
+    </tbody>
+  </table>
+      
+<p>Next, using the two conditionals <span class="var">R&nbsp;<span
+class="symb">&sup;</span>&nbsp;E</span> and <span class="symb">&sim;<span
+class="var">R</span>&nbsp;&sup;&nbsp;<span class="var">E</span></span>, and the
+tautology <span class="var">R&nbsp;<span
+class="symb">&or;&nbsp;&sim;</span>R</span>, we arrive at the conclusion <span
+style="font-family: sans-serif"><em>E</em></span> according to constructive
+dilemma.</p>
+      
+  <table class="commonform2">
+    <tbody>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2">&nbsp;&nbsp;<span class="var">R <span class="symb">&sup;</span>
+          E</span></td>
+        <td class="c1"><br></td>
+      </tr>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2">&nbsp;&nbsp;<span class="symb">&sim;</span><span class="var">R
+          <span class="symb">&sup;</span> E</span></td>
+        <td class="c1"><br></td>
+      </tr>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2">&nbsp;&nbsp;<span class="var">R <span class="symb">&or;</span>
+          <span class="symb">&sim;</span>R</span></td>
+        <td class="c1"><br></td>
+      </tr>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2" style="border-top: 1px solid black;">&nbsp;&nbsp;<span
+        class="var">E</span></td>
+        <td class="c1"><br></td>
+      </tr>
+    </tbody>
+  </table>
+      
+<h4>Using Basic Forms to Determine Validity</h4>
+      
+<p>As we saw above, the argument (3.3a) is constructed by combining three basic
+forms. Since each of them is valid, we can determine that (3.3a) is valid
+without constructing a long truth table with 16 rows.</p>
+      
+<p>Since long arguments are often constructed out of basic forms, we can
+determine their validity by identifying the basic forms. If all of the basic
+forms are valid, then the long argument is valid. But if one of the basic forms
+is invalid, then the long argument is invalid. This is not a rigorous formal
+process like the truth table method. But it does enable us to determine
+validity without constructing truth tables. When we try to break up a long
+argument into basic forms, we need to, when possible, identify valid forms
+first. To decide the validity of the argument,</p>
+      
+  <table class="box">
+    <tbody>
+      <tr>
+        <td width="520px" valign="bottom">A new game console is in high demand
+        only if there are a lot of exciting games available for it. However,
+        many game developing companies won&rsquo;t design new games for a new
+        console unless it is in high demand. Since there are not a lot of
+        exciting games available for a new console, it follows that many game
+        developing companies won&rsquo;t design new games for it.</td>
+        <td width="80px" valign="bottom" align="center"><span
+        style="background-image: none; background-color: #E6ECFF; font-family:
+        sans-serif; font-size: .8em">3.3m</span></td>
+      </tr>
+    </tbody>
+  </table>
+      
+<p>we first symbolize it as</p>
+      
+  <table class="commonform2">
+    <tbody>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2">&nbsp;&nbsp;<span class="var">H <span class="symb">&sup;</span>
+          E</span></td>
+        <td class="c1"><br></td>
+      </tr>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2">&nbsp;&nbsp;<span class="symb">&sim;</span><span class="var">D
+          <span class="symb">&or;</span> H</span></td>
+        <td class="c1"><br></td>
+      </tr>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2">&nbsp;&nbsp;<span class="symb">&sim;</span><span class="var">E</span></td>
+        <td class="c1"><br></td>
+      </tr>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2" style="border-top: 1px solid black;">&nbsp;&nbsp;<span
+          class="symb">&sim;</span><span
+        class="var">D</span></td>
+        <td class="c1"><br></td>
+      </tr>
+    </tbody>
+  </table>
+      
+<p>Then we break it apart into the following two forms:</p>
+      
+  <table class="commonform2">
+    <tbody>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2">&nbsp;&nbsp;<span class="var">H <span class="symb">&sup;</span> E</span></td>
+        <td class="c1"><br></td>
+        <td class="c3" align="center">and</td>
+        <td class="c1"><br></td>
+        <td class="c2">&nbsp;&nbsp;<span class="symb">&sim;</span><span class="var">D <span
+          class="symb">&or;</span> H</span></td>
+        <td class="c1"><br></td>
+      </tr>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2">&nbsp;&nbsp;<span class="symb">&sim;<span class="var">E</span></span></td>
+        <td class="c1"><br></td>
+        <td class="c3">&nbsp;</td>
+        <td class="c1"><br></td>
+        <td class="c2">&nbsp;&nbsp;<span class="symb">&sim;</span><span class="var">H</span></td>
+        <td class="c1"><br></td>
+      </tr>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2" style="border-top: 1px solid black;">&nbsp;&nbsp;<span
+          class="symb">&sim;</span><span class="var">H</span></td>
+        <td class="c1"><br></td>
+        <td class="c3">&nbsp;</td>
+        <td class="c1"><br></td>
+        <td class="c2" style="border-top: 1px solid black;">&nbsp;&nbsp;<span
+          class="symb">&sim;</span><span
+        class="var">D</span></td>
+        <td class="c1"><br></td>
+      </tr>
+      <tr>
+        <td class="c1">&nbsp;</td>
+        <td class="c2b" style="padding-top: 12px">Modus Tollens</td>
+        <td class="c1"><br></td>
+        <td class="c3">&nbsp;</td>
+        <td class="c1"><br></td>
+        <td class="c2b">Disjunctive Syllogism</td>
+        <td class="c1"><br></td>
+      </tr>
+    </tbody>
+  </table>
+      
+<p>The second form is an instance of disjunctive syllogism because <span
+class="symb">&sim;</span><span class="var">D</span><span
+class="var2">&nbsp;</span><span class="symb">&or;</span><span
+class="var2">&nbsp;</span><span class="var">H</span> is logically equivalent to
+<span class="var">H</span><span class="var2">&nbsp;</span><span
+class="symb">&or;</span><span class="var2">&nbsp;</span><span
+class="symb">&sim;</span><span class="var">D</span>. Since argument (3.3m) is
+formed by combining a modus tollens with a disjunctive syllogism, it is hence
+valid. The diagram below shows how the conclusion is derived from the
+premises&mdash;the logical flow of the argument.</p>
+
+<object type="image/svg+xml" data="MTDS.svg" style="width: 294px; height: 84px; margin: 12px 0 12px 120px;">Your browser does not support SVG</object>
+      
+<p>In the next example,</p>
+      
+  <table class="box">
+    <tbody>
+      <tr>
+        <td width="520px" valign="bottom">If we continue the acceleration of
+        production and consumption, we will deplete natural resources within
+        one hundred years. If natural resources are depleted within one hundred
+        years, life on earth will not be sustainable. We continue to accelerate
+        production and consumption. As a result, life on earth will not be
+        sustainable.</td>
+        <td width="80px" valign="bottom" align="center"><span
+        style="background-image: none; background-color: #E6ECFF; font-family:
+        sans-serif; font-size: .8em">3.3n</span></td>
+      </tr>
+    </tbody>
+  </table>
+      
+<p>the argument is symbolized as</p>
+      
+  <table class="commonform2">
+    <tbody>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2">&nbsp;&nbsp;<span class="var">C <span
+        class="symb">&sup;</span> D</span></td>
+        <td class="c1"><br></td>
+      </tr>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2">&nbsp;&nbsp;<span class="var">D <span
+        class="symb">&sup;</span> <span class="symb">&sim;</span>S</span></td>
+        <td class="c1"><br></td>
+      </tr>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2">&nbsp;&nbsp;<span class="var">C</span></td>
+        <td class="c1"><br></td>
+      </tr>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2" style="border-top: 1px solid black;">&nbsp;&nbsp;<span
+          class="symb">&sim;</span><span
+        class="var">S</span></td>
+        <td class="c1"><br></td>
+      </tr>
+    </tbody>
+  </table>
+      
+<p>We can see that it is constructed from the following two valid forms, and
+thus is valid.</p>
+      
+  <table class="commonform2">
+    <tbody>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2">&nbsp;&nbsp;<span class="var">C <span
+        class="symb">&sup;</span> D</span></td>
+        <td class="c1"><br></td>
+        <td class="c3" align="center">and</td>
+        <td class="c1"><br></td>
+        <td class="c2">&nbsp;&nbsp;<span class="var">C <span
+        class="symb">&sup;</span> <span class="symb">&sim;</span>S</span></td>
+        <td class="c1"><br></td>
+      </tr>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2">&nbsp;&nbsp;<span class="var">D <span
+        class="symb">&sup;</span> <span class="symb">&sim;</span>S</span></td>
+        <td class="c1"><br></td>
+        <td class="c3">&nbsp;</td>
+        <td class="c1"><br></td>
+        <td class="c2">&nbsp;&nbsp;<span class="var">C</span></td>
+        <td class="c1"><br></td>
+      </tr>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2" style="border-top: 1px solid black;">&nbsp;&nbsp;<span
+        class="var">C <span class="symb">&sup;</span> <span
+        class="symb">&sim;</span>S</span></td>
+        <td class="c1"><br></td>
+        <td class="c3">&nbsp;</td>
+        <td class="c1"><br></td>
+        <td class="c2" style="border-top: 1px solid black;">&nbsp;&nbsp;<span
+          class="symb">&sim;</span><span
+        class="var">S</span></td>
+        <td class="c1"><br></td>
+      </tr>
+      <tr>
+        <td class="c1">&nbsp;</td>
+        <td class="c2b" style="padding-top: 12px">Hypothetical Syllogism</td>
+        <td class="c1"><br></td>
+        <td class="c3">&nbsp;</td>
+        <td class="c1"><br></td>
+        <td class="c2b">Modus Ponens</td>
+        <td class="c1"><br></td>
+      </tr>
+    </tbody>
+  </table>
+
+<p>The logical flow of the argument is illustrated below.</p>
+
+<object type="image/svg+xml" data="HSMP.svg" style="width: 360px; height: 90px; margin: 12px 0 12px 120px;">Your browser does not support SVG</object>
+      
+<p>The next argument</p>
+      
+  <table class="box">
+    <tbody>
+      <tr>
+        <td width="520px" valign="bottom">If one is a fiscal conservative, then
+        one would be against big government spending. But if one is against big
+        government spending, then one would support budget cut on military
+        spending. President Bush supports budget cut on military spending.
+        Therefore, he is a fiscal conservative. </td> <td width="80px"
+        valign="bottom" align="center"><span style="background-image: none;
+        background-color: #E6ECFF; font-family: sans-serif; font-size:
+        .8em">3.3o</span> </td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <table class="commonform2" style="margin-top: 10px">
+    <tbody>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2">&nbsp;&nbsp;<span class="var">F <span
+        class="symb">&sup;</span> A</span></td>
+        <td class="c1"><br></td>
+      </tr>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2">&nbsp;&nbsp;<span class="var">A
+          <span class="symb">&sup; 
+          </span>S</span></td>
+        <td class="c1"><br></td>
+      </tr>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2">&nbsp;&nbsp;<span class="var">S</span></td>
+        <td class="c1"><br></td>
+      </tr>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2" style="border-top: 1px solid black;">&nbsp;&nbsp;<span
+        class="var">F</span></td>
+        <td class="c1"><br></td>
+      </tr>
+    </tbody>
+  </table>
+      
+<p>is invalid because after we separate it into two forms:</p>
+      
+  <table class="commonform2">
+    <tbody>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2">&nbsp;&nbsp;<span class="var">F <span
+        class="symb">&sup;</span> A</span></td>
+        <td class="c1"><br></td>
+        <td class="c3" align="center">and</td>
+        <td class="c1"><br></td>
+        <td class="c2">&nbsp;&nbsp;<span class="var">F <span
+        class="symb">&sup;&nbsp;</span>S</span></td>
+        <td class="c1"><br></td>
+      </tr>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2">&nbsp;&nbsp;<span class="var">A <span class="symb">&sup;
+        </span>S</span></td>
+        <td class="c1"><br></td>
+        <td class="c3">&nbsp;</td>
+        <td class="c1"><br></td>
+        <td class="c2">&nbsp;&nbsp;<span class="var">S</span></td>
+        <td class="c1"><br></td>
+      </tr>
+      <tr>
+        <td class="c1"><br></td>
+        <td class="c2" style="border-top: 1px solid black;">&nbsp;&nbsp;<span
+        class="var">F <span class="symb">&sup; </span>S</span></td>
+        <td class="c1"><br></td>
+        <td class="c3">&nbsp;</td>
+        <td class="c1"><br></td>
+        <td class="c2" style="border-top: 1px solid black;">&nbsp;&nbsp;<span
+        class="var">F</span></td>
+        <td class="c1"><br></td>
+      </tr>
+      <tr>
+        <td class="c1">&nbsp;</td>
+        <td class="c2b" style="padding-top: 12px">Hypothetical Syllogism</td>
+        <td class="c1"><br></td>
+        <td class="c3">&nbsp;</td>
+        <td class="c1"><br></td>
+        <td class="c2c">Affirming the Consequent</td>
+        <td class="c1"><br></td>
+      </tr>
+    </tbody>
+  </table>
+
+<p>we find that the second form is invalid.</p>
+      
+<h3 id="Ex33">Exercise 3.3</h3>
+      
+  <ol class="ex_sec">
+    <li>Decide whether each of the arguments is one of the common forms. If it
+    is, identify the name of the form and decide its validity. If it is not a
+    common form, label it as &ldquo;No Form&rdquo; and use the truth table to
+    determine its validity.</li>
+  </ol>
+
+<form name="ex331" action="Exercise331.php" method="post">
+
+  <table class="ex" border="0">
+    <tbody>
+      <tr>
+        <td class="c1">1.</td>
+        <td class="c2" width="60px"><span
+          class="var">A <span class="symb">&sup;</span> C</span><br>
+          <span class="var">A</span></td>
+        <td>&nbsp;</td>
+        <td width="80px">&nbsp;</td>
+        <td class="c1">2.</td>
+        <td class="c2" width="60px"><span
+          class="var">H <span class="symb">&sup;</span> K<br>
+          <span class="symb">&sim;</span>H</span></td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td class="c1">&nbsp;</td>
+        <td class="c2" style="border-top: 1px solid black;"><span class="var">C</span></td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="c2" style="border-top: 1px solid black;"><span class="symb">&sim;</span><span class="var">K</span></td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td colspan="2" style="padding: 6px 2px"><input type="text" class="form" name="bf1" placeholder="Form Name/No Form"></td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td colspan="2" style="padding: 2px"><input type="text" class="form" name="bf2" placeholder="Form Name/No Form"></td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="c3" colspan="2"><input type="radio" name="v1" value="Valid">Valid<br>
+        <input type="radio" name="v1" value="Invalid">Invalid</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="c3" colspan="2"><input type="radio" name="v2" value="Valid">Valid<br>
+        <input type="radio" name="v2" value="Invalid">Invalid</td>
+        <td>&nbsp;</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <table class="ex">
+    <tbody>
+      <tr>
+        <td class="c1">3.</td>
+        <td class="c2" width="60px"><span
+          class="var">E <span class="symb">&sup;</span> G</span><br>
+          <span class="symb">&sim;</span><span class="var">G</span></td>
+        <td>&nbsp;</td>
+        <td width="80px">&nbsp;</td>
+        <td class="c1">4.</td>
+        <td class="c2" width="70px"><span class="symb">&sim;</span><span
+          class="var">S <span class="symb">&sup;</span> M<br>
+          <span class="symb">&sim;</span>M</span></td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td class="c1">&nbsp;</td>
+        <td class="c2" style="border-top: 1px solid black;"><span class="symb">&sim;</span><span class="var">E</span></td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="c2" style="border-top: 1px solid black;"><span class="var">S</span></td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td colspan="2" style="padding: 6px 2px"><input type="text" class="form" name="bf3" placeholder="Form Name/No Form"></td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td colspan="2" style="padding: 6px 2px"><input type="text" class="form" name="bf4" placeholder="Form Name/No Form"></td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="c3" colspan="2"><input type="radio" name="v3" value="Valid">Valid<br>
+        <input type="radio" name="v3" value="Invalid">Invalid</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="c3" colspan="2"><input type="radio" name="v4" value="Valid">Valid<br>
+        <input type="radio" name="v4" value="Invalid">Invalid</td>
+        <td>&nbsp;</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <table class="ex">
+    <tbody>
+      <tr>
+        <td class="c1">5.</td>
+        <td class="c2" width="70px"><span
+          class="var">R <span class="symb">&sup;</span> <span class="symb">&sim;</span>D</span><br>
+          <span class="var">R</span></td>
+        <td>&nbsp;</td>
+        <td width="80px">&nbsp;</td>
+        <td class="c1">6.</td>
+        <td class="c2" width="80px"><span class="symb">&sim;</span><span
+          class="var">F <span class="symb">&sup;</span> <span class="symb">&sim;</span>P</span><br>
+          <span class="var">P</span></td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td class="c1">&nbsp;</td>
+        <td class="c2" style="border-top: 1px solid black;"><span class="symb">&sim;</span><span class="var">D</span></td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="c2" style="border-top: 1px solid black;"><span class="var">F</span></td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td colspan="2" style="padding: 6px 2px"><input type="text" class="form" name="bf5" placeholder="Form Name/No Form"></td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td colspan="2" style="padding: 6px 2px"><input type="text" class="form" name="bf6" placeholder="Form Name/No Form"></td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="c3" colspan="2"><input type="radio" name="v5" value="Valid">Valid<br>
+        <input type="radio" name="v5" value="Invalid">Invalid</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="c3" colspan="2"><input type="radio" name="v6" value="Valid">Valid<br>
+        <input type="radio" name="v6" value="Invalid">Invalid</td>
+        <td>&nbsp;</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <table class="ex">
+    <tbody>
+      <tr>
+        <td class="c1">7.</td>
+        <td class="c2" width="70px"><span
+          class="var">B <span class="symb">&or;</span> C</span><br>
+          <span class="symb">&sim;</span><span class="var">C</span></td>
+        <td>&nbsp;</td>
+        <td width="80px">&nbsp;</td>
+        <td class="c1">8.</td>
+        <td class="c2" width="70px"><span
+          class="var">A <span class="symb">&sup;</span> <span class="symb">&sim;</span>L</span><br>
+          <span class="symb">&sim;</span><span class="var">L</span></td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td class="c1">&nbsp;</td>
+        <td class="c2" style="border-top: 1px solid black;"><span class="var">B</span></td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="c2" style="border-top: 1px solid black;"><span class="var">A</span></td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td colspan="2" style="padding: 6px 2px"><input type="text" class="form" name="bf7" placeholder="Form Name/No Form"></td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td colspan="2" style="padding: 6px 2px"><input type="text" class="form" name="bf8" placeholder="Form Name/No Form"></td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="c3" colspan="2"><input type="radio" name="v7" value="Valid">Valid<br>
+        <input type="radio" name="v7" value="Invalid">Invalid</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="c3" colspan="2"><input type="radio" name="v8" value="Valid">Valid<br>
+        <input type="radio" name="v8" value="Invalid">Invalid</td>
+        <td>&nbsp;</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <table class="ex">
+    <tbody>
+      <tr>
+        <td class="c1">9.</td>
+        <td class="c2" width="70px"><span class="symb">&sim;</span><span
+        class="var">N</span><span class="var2">&nbsp;</span><span
+        class="symb">&or;</span><span class="var2">&nbsp;</span><span
+        class="var">G</span>
+				<br>
+        <span class="var">N</span></td>
+        <td>&nbsp;</td>
+        <td width="80px">&nbsp;</td>
+        <td class="c1">10.</td>
+        <td class="c2" width="70px"><span
+          class="var">K <span class="symb">&sup;</span> M</span><br>
+          <span class="symb">&sim;</span><span class="var">M <span class="symb">&sup;</span> E</span></td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td class="c1">&nbsp;</td>
+        <td class="c2" style="border-top: 1px solid black;"><span class="symb">&sim;</span><span class="var">G</span></td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="c2" style="border-top: 1px solid black;"><span class="var">K <span
+          class="symb">&sup;</span> E</span></td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td colspan="2" style="padding: 6px 2px"><input type="text" class="form" name="bf9" placeholder="Form Name/No Form"></td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td colspan="2" style="padding: 6px 2px"><input type="text" class="form" name="bf10" placeholder="Form Name/No Form"></td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="c3" colspan="2"><input type="radio" name="v9" value="Valid">Valid<br>
+        <input type="radio" name="v9" value="Invalid">Invalid</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="c3" colspan="2"><input type="radio" name="v10" value="Valid">Valid<br>
+        <input type="radio" name="v10" value="Invalid">Invalid</td>
+        <td>&nbsp;</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <table class="ex">
+    <tbody>
+      <tr>
+        <td class="c1">11.</td>
+        <td class="c2" width="70px"><span class="symb">&sim;</span><span
+          class="var">D <span class="symb">&sup;</span> E</span><br>
+          <span class="var">P <span class="symb">&sup;</span> <span class="symb">&sim;</span>D</span></td>
+        <td>&nbsp;</td>
+        <td width="80px">&nbsp;</td>
+        <td class="c1">12.</td>
+        <td class="c2" width="170px"><span class="var2">(</span><span
+          class="var">S <span class="symb">&sup;</span> <span class="symb">&sim;</span>V<span
+          class="var2">)</span> <span
+          class="symb">&#x2022;</span> <span class="var2">(</span><span class="symb">&sim;</span>A <span
+          class="symb">&sup;</span> U<span class="var2">)</span></span><br>
+          <span class="var">V <span class="symb">&or;</span> <span class="symb">&sim;</span>U</span></td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td class="c1">&nbsp;</td>
+        <td class="c2" style="border-top: 1px solid black;"><span class="var">P <span
+        class="symb">&sup;</span> E</span></td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="c2" style="border-top: 1px solid black;"><span
+          class="symb">&sim;</span><span class="var">S <span
+          class="symb">&or;</span> A</span></td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td colspan="2" style="padding: 6px 2px"><input type="text" class="form" name="bf11" placeholder="Form Name/No Form"></td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td colspan="2" style="padding: 6px 2px"><input type="text" class="form" name="bf12" placeholder="Form Name/No Form"></td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="c3" colspan="2"><input type="radio" name="v11" value="Valid">Valid<br>
+        <input type="radio" name="v11" value="Invalid">Invalid</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="c3" colspan="2"><input type="radio" name="v12" value="Valid">Valid<br>
+        <input type="radio" name="v12" value="Invalid">Invalid</td>
+        <td>&nbsp;</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <table class="ex">
+    <tbody>
+      <tr>
+        <td class="c1">13.</td>
+        <td class="c2" width="70px"><span
+          class="var">C <span class="symb">&sup;</span> <span class="symb">&sim;</span>F</span><br>
+          <span class="symb">&sim;</span><span class="var">F</span></td>
+        <td>&nbsp;</td>
+        <td width="80px">&nbsp;</td>
+        <td class="c1">14.</td>
+        <td class="c2" width="160px"><span class="var2">(</span><span
+          class="var">R <span class="symb">&sup;</span> L<span
+          class="var2">)</span> <span
+          class="symb">&#x2022;</span> </span><span class="var2">(</span><span class="symb">&sim;</span><span
+          class="var">R <span class="symb">&sup;</span> E</span><span class="var2">)</span><br>
+          <span class="var">R <span class="symb">&or;</span> <span class="symb">&sim;</span>R</span></td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td class="c1">&nbsp;</td>
+        <td class="c2" style="border-top: 1px solid black;"><span class="var">C</span></td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="c2" style="border-top: 1px solid black;"><span class="var">L <span
+          class="symb">&or;</span> E</span></td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td colspan="2" style="padding: 6px 2px"><input type="text" class="form" name="bf13" placeholder="Form Name/No Form"></td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td colspan="2" style="padding: 6px 2px"><input type="text" class="form" name="bf14" placeholder="Form Name/No Form"></td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="c3" colspan="2"><input type="radio" name="v13" value="Valid">Valid<br>
+        <input type="radio" name="v13" value="Invalid">Invalid</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="c3" colspan="2"><input type="radio" name="v14" value="Valid">Valid<br>
+        <input type="radio" name="v14" value="Invalid">Invalid</td>
+        <td>&nbsp;</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <table class="ex">
+    <tbody>
+      <tr>
+        <td class="c1">15.</td>
+        <td class="c2" width="120px"><span
+          class="var">S <span class="symb">&or;</span> <span class="symb">&sim;</span><span
+          class="var2">(</span>H <span
+          class="symb">&equiv;</span> N<span class="var2">)</span></span><br>
+          <span class="var">H <span class="symb">&equiv;</span> N</span></td>
+        <td>&nbsp;</td>
+        <td width="80px">&nbsp;</td>
+        <td class="c1">16.</td>
+        <td class="c2" width="110px"><span class="var2">(</span><span
+          class="var">A <span class="symb">&#x2022;</span> <span class="symb">&sim;</span>B<span
+          class="var2">)</span> <span class="symb">&sup;</span> K</span><br>
+          <span class="symb">&sim;</span><span class="var2">(</span><span
+          class="var">A <span class="symb">&#x2022;</span> <span class="symb">&sim;</span>B</span><span
+          class="var2">)</span></td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td class="c1">&nbsp;</td>
+        <td class="c2" style="border-top: 1px solid black;"><span
+        class="var">S</span></td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="c2" style="border-top: 1px solid black;"><span
+          class="symb">&sim;</span><span class="var">K</span></td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td colspan="2" style="padding: 6px 2px"><input type="text" class="form" name="bf15" placeholder="Form Name/No Form"></td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td colspan="2" style="padding: 6px 2px"><input type="text" class="form" name="bf16" placeholder="Form Name/No Form"></td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="c3" colspan="2"><input type="radio" name="v15" value="Valid">Valid<br>
+        <input type="radio" name="v15" value="Invalid">Invalid</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="c3" colspan="2"><input type="radio" name="v16" value="Valid">Valid<br>
+        <input type="radio" name="v16" value="Invalid">Invalid</td>
+        <td>&nbsp;</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <table class="ex">
+    <tbody>
+      <tr>
+        <td class="c1">17.</td>
+        <td class="c2" width="160px"><span class="var2">(</span><span
+          class="var">J <span class="symb">&sup;</span> M<span
+          class="var2">)</span> </span><span
+          class="symb">&#x2022;</span><span class="var"> </span><span class="var2">(</span><span
+          class="var">P <span class="symb">&sup;</span> <span class="symb">&sim;</span>D</span><span class="var2">)</span><br>
+          <span class="symb">&sim;</span><span class="var">J <span
+          class="symb">&or; &sim;</span>P</span></td>
+        <td>&nbsp;</td>
+        <td width="80px">&nbsp;</td>
+        <td class="c1">18.</td>
+        <td class="c2" width="110px"><span
+          class="var">F <span class="symb">&sup;</span> <span
+          class="var2">(</span><span class="symb">&sim;</span>D <span
+          class="symb">&or;</span> E<span class="var2">)</span></span><br>
+          <span class="symb">&sim;</span><span
+          class="var2">(</span><span class="symb">&sim;</span><span class="var">D </span><span
+          class="symb">&or;</span><span class="var"> E</span><span class="var2">)</span></td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td class="c1">&nbsp;</td>
+        <td class="c2" style="border-top: 1px solid black;"><span
+          class="symb">&sim;</span><span class="var">M <span
+          class="symb">&or;</span> D</span></td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="c2" style="border-top: 1px solid black;"><span
+          class="symb">&sim;</span><span class="var">F</span></td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td colspan="2" style="padding: 6px 2px"><input type="text" class="form" name="bf17" placeholder="Form Name/No Form"></td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td colspan="2" style="padding: 6px 2px"><input type="text" class="form" name="bf18" placeholder="Form Name/No Form"></td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="c3" colspan="2"><input type="radio" name="v17" value="Valid">Valid<br>
+        <input type="radio" name="v17" value="Invalid">Invalid</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="c3" colspan="2"><input type="radio" name="v18" value="Valid">Valid<br>
+        <input type="radio" name="v18" value="Invalid">Invalid</td>
+        <td>&nbsp;</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <table class="ex">
+    <tbody>
+      <tr>
+        <td class="c1">19.</td>
+        <td class="c2" width="70px"><span
+          class="var">C </span><span class="symb">&or;</span> <span class="symb">&sim;</span><span class="var">A</span><br>
+          <span class="symb">&sim;</span><span class="var">A </span><span
+          class="symb">&or;</span><span class="var"> N</span></td>
+        <td>&nbsp;</td>
+        <td width="80px">&nbsp;</td>
+        <td class="c1">20.</td>
+        <td class="c2" width="120px"><span class="symb">&sim;</span><span class="var2">(</span><span
+          class="var">R <span class="symb">&#x2022;</span> C<span
+          class="var2">) </span><span class="symb">&sup;</span> <span class="symb">&sim;</span><span class="var">S</span></span><br>
+          <span class="symb">&sim;</span><span class="var">S <span class="symb">&sup;</span> T</span></td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td class="c1">&nbsp;</td>
+        <td class="c2" style="border-top: 1px solid black;"><span
+          class="var">C </span><span class="symb">&or;</span><span class="var"> N</span></td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="c2" style="border-top: 1px solid black;"><span class="symb">&sim;</span><span class="var2">(</span><span
+          class="var">R <span class="symb">&#x2022;</span> C<span
+          class="var2">)</span> <span class="symb">&sup;</span> T</span></td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td colspan="2" style="padding: 6px 2px"><input type="text" class="form" name="bf19" placeholder="Form Name/No Form"></td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td colspan="2" style="padding: 6px 2px"><input type="text" class="form" name="bf20" placeholder="Form Name/No Form"></td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="c3" colspan="2"><input type="radio" name="v19" value="Valid">Valid<br>
+        <input type="radio" name="v19" value="Invalid">Invalid</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="c3" colspan="2"><input type="radio" name="v20" value="Valid">Valid<br>
+        <input type="radio" name="v20" value="Invalid">Invalid</td>
+        <td>&nbsp;</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <input type="submit" value="Check Answers" style="font-size:16px; margin: 20px 0 0 80px; cursor: pointer;">
+  </form>
+
+<p id="Ex332">&nbsp;</p>
+      
+  <ol class="ex_sec" start="2">
+    <li>Use the common argument forms to derive the conclusion from the
+          premises. Give the name of the argument form used.</li>
+  </ol>
+      
+  <form name="ex332" action="Exercise332.php" method="post">
+
+  <table class="ex">
+    <tbody>
+      <tr>
+        <td class="c1">1.</td>
+        <td class="c2" width="60px" style="padding-bottom: 2px; border-bottom: 1px solid black">
+          <span class="symb">&sim;</span><span class="var">A </span><span
+          class="symb">&sup;</span><span class="var"> E</span><br><span
+          class="symb">&sim;</span><span class="var">E</span>
+        </td>
+        <td>&nbsp;</td>
+        <td width="80px">&nbsp;</td>
+        <td class="c1">2.</td>
+        <td class="c2" width="60px" style="padding-bottom: 2px; border-bottom: 1px solid black">
+          <span class="var">D </span><span class="symb">&sup;</span><span
+          class="var"> H</span><br><span class="symb">&sim;</span><span
+          class="var">D</span>
+        </td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td colspan="2" style="padding-top: 4px">
+        <input type="text" id="c1" name="c1"  class="symb" placeholder="Conclusion" onfocus="doItOnFocus(this)"></td>
+        <td>&nbsp;</td>
+        <td class="c1">&nbsp;</td>
+        <td colspan="2" style="padding-top: 4px">
+        <input type="text" id="c2" name="c2" class="symb" placeholder="Conclusion" onfocus="doItOnFocus(this)"></td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td colspan="2" class="operator">
+          <button type="button" onclick="tilde();">&sim;</button>
+		  <button type="button" onclick="dot();">&#x2022;</button>
+		  <button type="button" onclick="wedge();">&or;</button>
+		  <button type="button" onclick="horseshoe();">&sup;</button>
+		  <button type="button" onclick="triplebar();">&equiv;</button>
+        </td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td colspan="2" class="operator">
+          <button type="button" onclick="tilde();">&sim;</button>
+		  <button type="button" onclick="dot();">&#x2022;</button>
+		  <button type="button" onclick="wedge();">&or;</button>
+		  <button type="button" onclick="horseshoe();">&sup;</button>
+		  <button type="button" onclick="triplebar();">&equiv;</button>
+        </td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td colspan="2" style="padding-top: 6px"><input type="text" name="f1" class="form" placeholder="Form Name"></td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td colspan="2" style="padding-top: 6px"><input type="text" name="f2" class="form" placeholder="Form Name"></td>
+        <td>&nbsp;</td>
+      </tr>
+    </tbody>
+  </table>
+      
+  <table class="ex">
+    <tbody>
+      <tr>
+        <td class="c1">3.</td>
+        <td class="c2" width="60px" style="padding-bottom: 2px; border-bottom: 1px solid black">
+          <span class="var">C </span><span class="symb">&sup;</span><span
+          class="var"> R</span><br><span class="var">R</span>
+        </td>
+        <td>&nbsp;</td>
+        <td width="80px">&nbsp;</td>
+        <td class="c1">4.</td>
+        <td class="c2" width="60px" style="padding-bottom: 2px; border-bottom: 1px solid black">
+          <span class="var">K </span><span class="symb">&sup;</span><span
+          class="var"> B</span><br><span class="var">B </span><span
+          class="symb">&sup;</span><span class="var"> R</span>
+        </td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td colspan="2" style="padding-top: 4px">
+        <input type="text" id="c3" name="c3" class="symb" placeholder="Conclusion" onfocus="doItOnFocus(this)"></td>
+        <td>&nbsp;</td>
+        <td class="c1">&nbsp;</td>
+        <td colspan="2" style="padding-top: 4px">
+        <input type="text" id="c4" name="c4" class="symb" placeholder="Conclusion" onfocus="doItOnFocus(this)"></td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td colspan="2" class="operator">
+          <button type="button" onclick="tilde();">&sim;</button>
+		  <button type="button" onclick="dot();">&#x2022;</button>
+		  <button type="button" onclick="wedge();">&or;</button>
+		  <button type="button" onclick="horseshoe();">&sup;</button>
+		  <button type="button" onclick="triplebar();">&equiv;</button>
+        </td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td colspan="2" class="operator">
+          <button type="button" onclick="tilde();">&sim;</button>
+		  <button type="button" onclick="dot();">&#x2022;</button>
+		  <button type="button" onclick="wedge();">&or;</button>
+		  <button type="button" onclick="horseshoe();">&sup;</button>
+		  <button type="button" onclick="triplebar();">&equiv;</button>
+        </td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td colspan="2" style="padding-top: 6px"><input type="text" name="f3" class="form" placeholder="Form Name"></td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td colspan="2" style="padding-top: 6px"><input type="text" name="f4" class="form" placeholder="Form Name"></td>
+        <td>&nbsp;</td>
+      </tr>
+    </tbody>
+  </table>
+      
+  <table class="ex">
+    <tbody>
+      <tr>
+        <td class="c1">5.</td>
+        <td class="c2" width="80px" style="padding-bottom: 2px; border-bottom: 1px solid black">
+          <span class="symb">&sim;</span><span class="var">G </span><span
+          class="symb">&sup;</span><span class="var">&nbsp;</span><span
+          class="symb">&sim;</span><span class="var">N</span><br><span
+          class="symb">&sim;</span><span class="var">G</span>
+        </td>
+        <td>&nbsp;</td>
+        <td width="80px">&nbsp;</td>
+        <td class="c1">6.</td>
+        <td class="c2" width="110px" style="padding-bottom: 2px; border-bottom: 1px solid black">
+          <span class="var2">(</span><span class="var">K </span><span
+          class="symb">&#x2022;</span><span class="var"> A</span><span
+          class="var2">)</span><span class="var">&nbsp;</span><span
+          class="symb">&sup;</span><span class="var"> M</span><br><span
+          class="var">M</span>
+        </td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td colspan="2" style="padding-top: 4px">
+        <input type="text" id="c5" name="c5" class="symb" placeholder="Conclusion" onfocus="doItOnFocus(this)"></td>
+        <td>&nbsp;</td>
+        <td class="c1">&nbsp;</td>
+        <td colspan="2" style="padding-top: 4px">
+        <input type="text" id="c6" name="c6" class="symb" placeholder="Conclusion" onfocus="doItOnFocus(this)"></td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td colspan="2" class="operator">
+          <button type="button" onclick="tilde();">&sim;</button>
+		  <button type="button" onclick="dot();">&#x2022;</button>
+		  <button type="button" onclick="wedge();">&or;</button>
+		  <button type="button" onclick="horseshoe();">&sup;</button>
+		  <button type="button" onclick="triplebar();">&equiv;</button>
+        </td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td colspan="2" class="operator">
+          <button type="button" onclick="tilde();">&sim;</button>
+		  <button type="button" onclick="dot();">&#x2022;</button>
+		  <button type="button" onclick="wedge();">&or;</button>
+		  <button type="button" onclick="horseshoe();">&sup;</button>
+		  <button type="button" onclick="triplebar();">&equiv;</button>
+        </td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td colspan="2" style="padding-top: 6px"><input type="text" name="f5" class="form" placeholder="Form Name"></td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td colspan="2" style="padding-top: 6px"><input type="text" name="f6" class="form" placeholder="Form Name"></td>
+        <td>&nbsp;</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <table class="ex" border="0">
+    <tbody>
+      <tr>
+        <td class="c1">7.</td>
+        <td class="c2" width="80px" style="padding-bottom: 2px; border-bottom: 1px solid black">
+          <span class="symb">&sim;</span><span class="var">S </span><span
+          class="symb">&or;</span><span class="var">&nbsp;</span><span
+          class="symb">&sim;</span><span class="var">L</span><br> <span
+          class="var">S</span>
+        </td>
+        <td>&nbsp;</td>
+        <td width="80px">&nbsp;</td>
+        <td class="c1">8.</td>
+        <td rowspan="2" class="c2" width="70px" style="padding-bottom: 2px; border-bottom: 1px solid black">
+          <span class="symb">&sim;</span><span class="var">B </span><span
+          class="symb">&sup;</span><span class="var"> R</span><br><span
+          class="var">D </span><span class="symb">&sup;</span><span
+          class="var">&nbsp;</span><span class="symb">&sim;</span><span
+          class="var">S</span><br><span class="symb">&sim;</span><span
+          class="var">B </span><span class="symb">&or;</span> <span
+          class="var"> D</span>
+        </td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td colspan="2" style="padding-top: 4px">
+          <input type="text" id="c7" name="c7" class="symb" placeholder="Conclusion" onfocus="doItOnFocus(this)">
+        </td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td colspan="2" class="operator">
+          <button type="button" onclick="tilde();">&sim;</button>
+		  <button type="button" onclick="dot();">&#x2022;</button>
+		  <button type="button" onclick="wedge();">&or;</button>
+		  <button type="button" onclick="horseshoe();">&sup;</button>
+		  <button type="button" onclick="triplebar();">&equiv;</button>
+        </td>
+        <td>&nbsp;</td>
+        <td class="c1">&nbsp;</td>
+        <td colspan="2" style="padding-top: 2px">
+          <input type="text" id="c8" name="c8" class="symb" placeholder="Conclusion" onfocus="doItOnFocus(this)">
+        </td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td colspan="2" style="padding-top: 6px"><input type="text" name="f7" class="form" placeholder="Form Name"></td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td colspan="2" class="operator">
+          <button type="button" onclick="tilde();">&sim;</button>
+		  <button type="button" onclick="dot();">&#x2022;</button>
+		  <button type="button" onclick="wedge();">&or;</button>
+		  <button type="button" onclick="horseshoe();">&sup;</button>
+		  <button type="button" onclick="triplebar();">&equiv;</button>
+        </td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td colspan="2">&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td colspan="2" style="padding-top: 6px"><input type="text" name="f8" class="form" placeholder="Form Name"></td>
+        <td>&nbsp;</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <table class="ex">
+    <tbody>
+      <tr>
+        <td class="c1">9.</td>
+        <td class="c2" width="80px" style="padding-bottom: 2px; border-bottom: 1px solid black">
+          <span class="var">C </span><span class="symb">&sup;</span><span
+          class="var">&nbsp;</span><span class="symb">&sim;</span><span
+          class="var">D</span><br><span class="var">D</span>
+        </td>
+        <td>&nbsp;</td>
+        <td width="80px">&nbsp;</td>
+        <td class="c1">10.</td>
+        <td class="c2" width="110px" style="padding-bottom: 2px; border-bottom: 1px solid black">
+          <span class="var">A </span><span class="symb">&or;</span><span
+          class="var">&nbsp;</span><span class="var2">(</span><span
+          class="var">C </span><span class="symb">&sup;</span><span
+          class="var"> U</span><span class="var2">)</span><br> <span
+          class="symb">&sim;</span><span class="var2">(</span><span
+          class="var">C </span><span class="symb">&sup;</span><span
+          class="var"> U</span><span class="var2">)</span>
+        </td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td colspan="2" style="padding-top: 4px">
+          <input type="text" id="c9" name="c9" class="symb" placeholder="Conclusion" onfocus="doItOnFocus(this)">
+        </td>
+        <td>&nbsp;</td>
+        <td class="c1">&nbsp;</td>
+        <td colspan="2" style="padding-top: 4px">
+          <input type="text" id="c10" name="c10" class="symb" placeholder="Conclusion" onfocus="doItOnFocus(this)">
+        </td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td colspan="2" class="operator">
+          <button type="button" onclick="tilde();">&sim;</button>
+		  <button type="button" onclick="dot();">&#x2022;</button>
+		  <button type="button" onclick="wedge();">&or;</button>
+		  <button type="button" onclick="horseshoe();">&sup;</button>
+		  <button type="button" onclick="triplebar();">&equiv;</button>
+        </td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td colspan="2" class="operator">
+          <button type="button" onclick="tilde();">&sim;</button>
+		  <button type="button" onclick="dot();">&#x2022;</button>
+		  <button type="button" onclick="wedge();">&or;</button>
+		  <button type="button" onclick="horseshoe();">&sup;</button>
+		  <button type="button" onclick="triplebar();">&equiv;</button>
+        </td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td colspan="2" style="padding-top: 6px"><input type="text" name="f9" class="form" placeholder="Form Name"></td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td colspan="2" style="padding-top: 6px"><input type="text" name="f10" class="form" placeholder="Form Name"></td>
+        <td>&nbsp;</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <table class="ex">
+    <tbody>
+      <tr>
+        <td class="c1">11.</td>
+        <td class="c2" width="130px" style="padding-bottom: 2px; border-bottom: 1px solid black">
+          <span class="symb">&sim;</span><span class="var2">(</span><span
+          class="var">P </span><span class="symb">&sup;</span><span
+          class="var">&nbsp;</span><span class="symb">&sim;</span><span
+          class="var">H</span><span class="var2">)</span><span
+          class="var">&nbsp;</span><span class="symb">&sup;</span><span
+          class="var"> N</span><br><span class="var">P </span><span
+          class="symb">&sup;</span><span class="var">&nbsp;</span><span
+          class="symb">&sim;</span><span class="var">H</span>
+        </td>
+        <td>&nbsp;</td>
+        <td width="80px">&nbsp;</td>
+        <td class="c1">12.</td>
+        <td class="c2" width="170px" style="padding-bottom: 2px; border-bottom: 1px solid black">
+          <span class="var2">(</span><span class="var">G </span><span
+          class="symb">&sup;</span><span class="var">&nbsp;</span><span
+          class="symb">&sim;</span><span class="var">A</span><span
+          class="var2">)</span><span class="var">&nbsp;</span><span
+          class="symb">&#x2022;</span><span class="var">&nbsp;</span><span
+          class="var2">(</span><span class="var">B </span><span
+          class="symb">&sup;</span><span class="var">&nbsp;</span><span
+          class="symb">&sim;</span><span class="var">R</span><span
+          class="var2">)</span><br><span class="var">A </span><span
+          class="symb">&or;</span><span class="var"> R</span>
+        </td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td colspan="2" style="padding-top: 4px">
+        <input type="text" id="c11" name="c11" class="symb" placeholder="Conclusion" onfocus="doItOnFocus(this)"></td>
+        <td>&nbsp;</td>
+        <td class="c1">&nbsp;</td>
+        <td colspan="2" style="padding-top: 4px">
+        <input type="text" id="c12" name="c12" class="symb" placeholder="Conclusion" onfocus="doItOnFocus(this)"></td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td colspan="2" class="operator">
+          <button type="button" onclick="tilde();">&sim;</button>
+		  <button type="button" onclick="dot();">&#x2022;</button>
+		  <button type="button" onclick="wedge();">&or;</button>
+		  <button type="button" onclick="horseshoe();">&sup;</button>
+		  <button type="button" onclick="triplebar();">&equiv;</button>
+        </td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td colspan="2" class="operator">
+          <button type="button" onclick="tilde();">&sim;</button>
+		  <button type="button" onclick="dot();">&#x2022;</button>
+		  <button type="button" onclick="wedge();">&or;</button>
+		  <button type="button" onclick="horseshoe();">&sup;</button>
+		  <button type="button" onclick="triplebar();">&equiv;</button>
+        </td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td colspan="2" style="padding-top: 6px"><input type="text" name="f11" class="form" placeholder="Form Name"></td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td colspan="2" style="padding-top: 6px"><input type="text" name="f12" class="form" placeholder="Form Name"></td>
+        <td>&nbsp;</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <table class="ex">
+    <tbody>
+      <tr>
+        <td class="c1">13.</td>
+        <td class="c2" width="80px" style="padding-bottom: 2px; border-bottom: 1px solid black">
+          <span class="var">S </span><span class="symb">&sup;</span><span
+          class="var">&nbsp;</span><span class="symb">&sim;</span><span
+          class="var">E</span><br><span class="symb">&sim;</span><span
+          class="var">E </span><span class="symb">&sup;</span><span
+          class="var">&nbsp;</span><span class="symb">&sim;</span><span
+          class="var">P</span>
+        </td>
+        <td>&nbsp;</td>
+        <td width="80px">&nbsp;</td>
+        <td class="c1">14.</td>
+        <td class="c2" width="110px" style="padding-bottom: 2px; border-bottom: 1px solid black">
+          <span class="var2">(</span><span class="var">J </span><span
+          class="symb">&or;</span><span class="var"> D</span><span
+          class="var2">)</span><span class="var">&nbsp;</span><span
+          class="symb">&sup;</span><span class="var"> Q</span><br><span
+          class="var">J </span><span class="symb">&or;</span><span
+          class="var"> D</span>
+        </td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td colspan="2" style="padding-top: 4px">
+        <input type="text" id="c13" name="c13" class="symb" placeholder="Conclusion" onfocus="doItOnFocus(this)"></td>
+        <td>&nbsp;</td>
+        <td class="c1">&nbsp;</td>
+        <td colspan="2" style="padding-top: 4px">
+        <input type="text" id="c14" name="c14" class="symb" placeholder="Conclusion" onfocus="doItOnFocus(this)"></td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td colspan="2" class="operator">
+          <button type="button" onclick="tilde();">&sim;</button>
+		  <button type="button" onclick="dot();">&#x2022;</button>
+		  <button type="button" onclick="wedge();">&or;</button>
+		  <button type="button" onclick="horseshoe();">&sup;</button>
+		  <button type="button" onclick="triplebar();">&equiv;</button>
+        </td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td colspan="2" class="operator">
+          <button type="button" onclick="tilde();">&sim;</button>
+		  <button type="button" onclick="dot();">&#x2022;</button>
+		  <button type="button" onclick="wedge();">&or;</button>
+		  <button type="button" onclick="horseshoe();">&sup;</button>
+		  <button type="button" onclick="triplebar();">&equiv;</button>
+        </td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td colspan="2" style="padding-top: 6px"><input type="text" name="f13" class="form" placeholder="Form Name"></td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td colspan="2" style="padding-top: 6px"><input type="text" name="f14" class="form" placeholder="Form Name"></td>
+        <td>&nbsp;</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <table class="ex" border="0">
+    <tbody>
+      <tr>
+        <td class="c1">15.</td>
+        <td class="c2" width="130px" style="padding-bottom: 2px; border-bottom: 1px solid black">
+          <span class="symb">&sim;</span><span class="var">K <span
+          class="symb">&sup;</span><span class="var">&nbsp;</span><span
+          class="var2">(</span>G <span class="symb">&equiv;</span> <span
+          class="symb">&sim;</span>N<span class="var2">)</span></span><br>
+          <span class="symb">&sim;</span><span class="var">K</span>
+        </td>
+        <td>&nbsp;</td>
+        <td width="80px">&nbsp;</td>
+        <td class="c1">16.</td>
+        <td rowspan="2" class="c2" width="140px" style="padding-bottom: 2px; border-bottom: 1px solid black">
+          <span class="symb">&sim;</span><span class="var">B </span><span
+          class="symb">&sup;</span><span class="var"> F</span><br><span
+          class="var">C </span><span class="symb">&sup;</span><span
+          class="var">&nbsp;</span><span class="var2">(</span><span
+          class="var">N </span><span class="symb">&or;</span><span
+          class="var">&nbsp;</span><span class="symb">&sim;</span><span
+          class="var">L</span><span class="var2">)</span><br> <span
+          class="symb">&sim;</span><span class="var">F </span><span
+          class="symb">&or;</span><span class="var">&nbsp;</span><span
+          class="symb">&sim;</span><span class="var2">(</span><span
+          class="var">N </span><span class="symb">&or;</span><span
+          class="var">&nbsp;</span><span class="symb">&sim;</span><span
+          class="var">L</span><span class="var2">)</span>
+        </td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td colspan="2" style="padding-top: 4px">
+          <input type="text" id="c15" name="c15" class="symb" placeholder="Conclusion" onfocus="doItOnFocus(this)">
+        </td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td colspan="2" class="operator">
+          <button type="button" onclick="tilde();">&sim;</button>
+		  <button type="button" onclick="dot();">&#x2022;</button>
+		  <button type="button" onclick="wedge();">&or;</button>
+		  <button type="button" onclick="horseshoe();">&sup;</button>
+		  <button type="button" onclick="triplebar();">&equiv;</button>
+        </td>
+        <td>&nbsp;</td>
+        <td class="c1">&nbsp;</td>
+        <td colspan="2" style="padding-top: 2px">
+          <input type="text" id="c16" name="c16" class="symb" placeholder="Conclusion" onfocus="doItOnFocus(this)"></td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td colspan="2" style="padding-top: 6px"><input type="text" name="f15" class="form" placeholder="Form Name"></td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td colspan="2" class="operator">
+          <button type="button" onclick="tilde();">&sim;</button>
+		  <button type="button" onclick="dot();">&#x2022;</button>
+		  <button type="button" onclick="wedge();">&or;</button>
+		  <button type="button" onclick="horseshoe();">&sup;</button>
+		  <button type="button" onclick="triplebar();">&equiv;</button>
+        </td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td colspan="2">&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td colspan="2" style="padding-top: 6px"><input type="text" name="f16" class="form" placeholder="Form Name"></td>
+        <td>&nbsp;</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <input type="submit" value="Check Answers" style="font-size: 16px; margin:
+  20px 0 0 80px; cursor: pointer;">
+
+</form>
+
+<p id="Ex333">&nbsp;</p>
+      
+  <ol class="ex_sec" start="3">
+    <li>Decide whether each of the following arguments is valid by
+        showing how it is constructed out of the common forms. Identify each
+        common form with its abbreviated form name.
+    </li>
+  </ol>
+
+<form name="ex333" action="Exercise333.php" method="post">
+
+  <table class="ex" border="0">
+    <tbody>
+      <tr>
+        <td class="c1"  style="padding: 0px 6px 4px 6px">1.</td>
+        <td class="c2a" width="70px">
+          <span class="var">H </span><span
+          class="symb">&sup;</span><span class="var"> G</span>
+        </td>
+        <td width="80px">&nbsp;</td>
+        <td class="c2a" width="80px">
+          <span class="var">D </span><span class="symb">&or;</span><span
+          class="var"> H</span>
+        </td>
+        <td width="40px">&nbsp;</td>
+        <td class="c2a" width="80px">
+          <span class="var">H </span><span
+          class="symb">&sup;</span><span class="var"> G</span>
+        </td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="c2a">
+          <span class="var">D </span><span class="symb">&or;</span><span class="var"> H</span>
+        </td>
+        <td>&nbsp;</td>
+        <td class="c2a" style="border-bottom: 1px solid black">
+          <span class="symb">&sim;</span><span class="var">D</span>
+        </td>
+        <td>&nbsp;</td>
+        <td style="padding: 4px 0 4px 4px; border-bottom: 1px solid black">
+          <input type="text" id="s1b" name="s1b" style="width: 80px" class="symb" onfocus="doItOnFocus(this)">
+        </td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="c2a" style="border-bottom: 1px solid black">
+          <span class="symb">&sim;</span><span class="var">D</span>
+        </td>
+        <td>&nbsp;</td>
+        <td style="padding: 4px 0 4px 4px">
+          <input type="text" id="s1a" name="s1a" style="width: 80px" class="symb" onfocus="doItOnFocus(this)">
+        </td>
+        <td>&nbsp;</td>
+        <td class="c2a">
+          <span class="var">G</span>
+        </td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="c2a">
+          <span class="var">G</span>
+        </td>
+        <td>&nbsp;</td>
+        <td style="padding: 4px 0 4px 4px"><input type="text" style="width: 80px" class="form" name="bf1a" placeholder="Abbr. FN"></td>
+        <td>&nbsp;</td>
+        <td style="padding: 4px 0 4px 4px"><input type="text" style="width: 80px" class="form" name="bf1b" placeholder="Abbr. FN"></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="c3" colspan="2"><input type="radio" name="lv1" value="Valid">Valid<br>
+        <input type="radio" name="lv1" value="Invalid">Invalid</td>
+        <td colspan="4" class="operator">
+          <button type="button" onclick="tilde();">&sim;</button>
+		  <button type="button" onclick="dot();">&#x2022;</button>
+		  <button type="button" onclick="wedge();">&or;</button>
+		  <button type="button" onclick="horseshoe();">&sup;</button>
+		  <button type="button" onclick="triplebar();">&equiv;</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <table class="ex" border="0">
+    <tbody>
+      <tr>
+        <td class="c1" style="padding: 0px 6px 4px 6px">2.</td>
+        <td class="c2a" width="70px">
+          <span class="var">M </span><span class="symb">&sup;</span><span
+          class="var"> B</span>
+        </td>
+        <td width="80px">&nbsp;</td>
+        <td class="c2a" width="80px">
+          <span class="var">M </span><span class="symb">&sup;</span><span
+          class="var"> B</span>
+        </td>
+        <td width="40px">&nbsp;</td>
+        <td class="c2a" width="80px">
+          <span class="var">B </span><span class="symb">&sup;</span><span
+          class="var">&nbsp;</span><span class="symb">&sim;</span><span
+          class="var">C</span>
+        </td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="c2a" width="70px">
+          <span class="var">B </span><span class="symb">&sup;</span><span
+          class="var">&nbsp;</span><span class="symb">&sim;</span><span
+          class="var">C</span>
+        </td>
+        <td>&nbsp;</td>
+        <td class="c2a" style="border-bottom: 1px solid black">
+          <span class="var">M</span>
+        </td>
+        <td>&nbsp;</td>
+        <td style="padding: 4px 0 4px 4px; border-bottom: 1px solid black">
+          <input type="text" id="s2b" name="s2b" style="width: 80px" class="symb" onfocus="doItOnFocus(this)">
+        </td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="c2a" style="border-bottom: 1px solid black">
+          <span class="var">M</span>
+        </td>
+        <td>&nbsp;</td>
+        <td style="padding: 4px 0 4px 4px">
+          <input type="text" id="s2a" name="s2a" style="width: 80px" class="symb" onfocus="doItOnFocus(this)">
+        </td>
+        <td>&nbsp;</td>
+        <td class="c2a">
+          <span class="symb">&sim;</span><span class="var">C</span>
+        </td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="c2a">
+          <span class="symb">&sim;</span><span class="var">C</span>
+        </td>
+        <td>&nbsp;</td>
+        <td colspan="2" style="padding: 4px 0 4px 4px"><input type="text" style="width: 80px" class="form" name="bf2a" placeholder="Abbr. FN"></td>
+        <td colspan="2" style="padding: 4px 0 4px 4px"><input type="text" style="width: 80px" class="form" name="bf2b" placeholder="Abbr. FN"></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="c3" colspan="2"><input type="radio" name="lv2" value="Valid">Valid<br>
+        <input type="radio" name="lv2" value="Invalid">Invalid</td>
+        <td colspan="4" class="operator">
+          <button type="button" onclick="tilde();">&sim;</button>
+		  <button type="button" onclick="dot();">&#x2022;</button>
+		  <button type="button" onclick="wedge();">&or;</button>
+		  <button type="button" onclick="horseshoe();">&sup;</button>
+		  <button type="button" onclick="triplebar();">&equiv;</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <table class="ex" border="0">
+    <tbody>
+      <tr>
+        <td class="c1" style="padding: 0px 6px 4px 6px">3.</td>
+        <td class="c2a" width="70px">
+          <span class="var">A </span><span class="symb">&sup;</span><span
+          class="var"> E</span>
+        </td>
+        <td width="80px">&nbsp;</td>
+        <td class="c2a" width="80px">
+          <span class="var">A </span><span class="symb">&sup;</span><span
+          class="var"> E</span>
+        </td>
+        <td width="40px">&nbsp;</td>
+        <td class="c2a" width="80px">
+          <span class="symb">&sim;</span><span class="var">A </span><span class="symb">&sup;</span><span
+          class="var">&nbsp;</span><span class="symb">&sim;</span><span
+          class="var">S</span>
+        </td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="c2a" width="70px">
+          <span class="symb">&sim;</span><span class="var">A </span><span class="symb">&sup;</span><span
+          class="var">&nbsp;</span><span class="symb">&sim;</span><span
+          class="var">S</span>
+        </td>
+        <td>&nbsp;</td>
+        <td class="c2a" style="border-bottom: 1px solid black">
+          <span class="symb">&sim;</span><span class="var">E</span>
+        </td>
+        <td>&nbsp;</td>
+        <td style="padding: 4px 0 4px 4px; border-bottom: 1px solid black">
+          <input type="text" id="s3b" name="s3b" style="width: 80px" class="symb" onfocus="doItOnFocus(this)">
+        </td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="c2a" style="border-bottom: 1px solid black">
+          <span class="symb">&sim;</span><span class="var">E</span>
+        </td>
+        <td>&nbsp;</td>
+        <td style="padding: 4px 0 4px 4px">
+          <input type="text" id="s3a" name="s3a" style="width: 80px" class="symb" onfocus="doItOnFocus(this)">
+        </td>
+        <td>&nbsp;</td>
+        <td class="c2a">
+          <span class="symb">&sim;</span><span class="var">S</span>
+        </td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="c2a">
+          <span class="symb">&sim;</span><span class="var">S</span>
+        </td>
+        <td>&nbsp;</td>
+        <td colspan="2" style="padding: 4px 0 4px 4px"><input type="text" style="width: 80px" class="form" name="bf3a" placeholder="Abbr. FN"></td>
+        <td colspan="2" style="padding: 4px 0 4px 4px"><input type="text" style="width: 80px" class="form" name="bf3b" placeholder="Abbr. FN"></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="c3" colspan="2"><input type="radio" name="lv3" value="Valid">Valid<br>
+        <input type="radio" name="lv3" value="Invalid">Invalid</td>
+        <td colspan="4" class="operator">
+      <button type="button" onclick="tilde();">&sim;</button>
+		  <button type="button" onclick="dot();">&#x2022;</button>
+		  <button type="button" onclick="wedge();">&or;</button>
+		  <button type="button" onclick="horseshoe();">&sup;</button>
+		  <button type="button" onclick="triplebar();">&equiv;</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <table class="ex" border="0">
+    <tbody>
+      <tr>
+        <td class="c1" style="padding: 0px 6px 4px 6px">4.</td>
+        <td class="c2a" width="70px">
+          <span class="var">K </span><span
+          class="symb">&sup;</span><span class="var"> R</span>
+        </td>
+        <td width="80px">&nbsp;</td>
+        <td class="c2a" width="80px">
+          <span class="var">K </span><span
+          class="symb">&sup;</span><span class="var"> R</span>
+        </td>
+        <td width="40px">&nbsp;</td>
+        <td class="c2a" width="80px">
+          <span class="var">K </span><span class="symb">&sup;</span><span
+          class="var"> N</span>
+        </td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="c2a" width="70px">
+          <span class="symb">&sim;</span><span class="var">R </span>
+        </td>
+        <td>&nbsp;</td>
+        <td class="c2a" style="border-bottom: 1px solid black">
+          <span class="symb">&sim;</span><span class="var">R</span>
+        </td>
+        <td>&nbsp;</td>
+        <td style="padding: 4px 0 4px 4px; border-bottom: 1px solid black">
+          <input type="text" id="s4b" name="s4b" style="width: 80px" class="symb" onfocus="doItOnFocus(this)">
+        </td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="c2a" style="border-bottom: 1px solid black">
+          <span class="var">K </span><span class="symb">&sup;</span><span
+          class="var"> N</span>
+        </td>
+        <td>&nbsp;</td>
+        <td style="padding: 4px 0 4px 4px">
+          <input type="text" id="s4a" name="s4a" style="width: 80px" class="symb" onfocus="doItOnFocus(this)">
+        </td>
+        <td>&nbsp;</td>
+        <td class="c2a">
+          <span class="symb">&sim;</span><span class="var">N</span>
+        </td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="c2a">
+          <span class="symb">&sim;</span><span class="var">N</span>
+        </td>
+        <td>&nbsp;</td>
+        <td colspan="2" style="padding: 4px 0 4px 4px"><input type="text" style="width: 80px" class="form" name="bf4a" placeholder="Abbr. FN"></td>
+        <td colspan="2" style="padding: 4px 0 4px 4px"><input type="text" style="width: 80px" class="form" name="bf4b" placeholder="Abbr. FN"></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="c3" colspan="2"><input type="radio" name="lv4" value="Valid">Valid<br>
+        <input type="radio" name="lv4" value="Invalid">Invalid</td>
+        <td colspan="4" class="operator">
+          <button type="button" onclick="tilde();">&sim;</button>
+		  <button type="button" onclick="dot();">&#x2022;</button>
+		  <button type="button" onclick="wedge();">&or;</button>
+		  <button type="button" onclick="horseshoe();">&sup;</button>
+		  <button type="button" onclick="triplebar();">&equiv;</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <table class="ex" border="0">
+    <tbody>
+      <tr>
+        <td class="c1" style="padding: 0px 6px 4px 6px">5.</td>
+        <td class="c2a" width="70px">
+          <span class="var">D </span><span class="symb">&or;</span><span
+          class="var"> C</span>
+        </td>
+        <td width="80px">&nbsp;</td>
+        <td class="c2a" width="80px">
+          <span class="symb">&sim;</span><span class="var">D </span><span
+          class="symb">&or;</span><span class="var"> </span><span
+          class="symb">&sim;</span><span class="var">B</span>
+        </td>
+        <td width="40px">&nbsp;</td>
+        <td class="c2a" width="80px">
+          <span class="var">D </span><span class="symb">&or;</span><span
+          class="var"> C</span>
+        </td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="c2a" width="70px">
+          <span class="symb">&sim;</span><span class="var">D </span><span
+          class="symb">&or;</span><span class="var"> </span><span
+          class="symb">&sim;</span><span class="var">B</span>
+        </td>
+        <td>&nbsp;</td>
+        <td class="c2a" style="border-bottom: 1px solid black">
+          <span class="var">B</span>
+        </td>
+        <td>&nbsp;</td>
+        <td style="padding: 4px 0 4px 4px; border-bottom: 1px solid black">
+          <input type="text" id="s5b" name="s5b" style="width: 80px" class="symb" onfocus="doItOnFocus(this)">
+        </td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="c2a" style="border-bottom: 1px solid black">
+          <span class="var">B</span>
+        </td>
+        <td>&nbsp;</td>
+        <td style="padding: 4px 0 4px 4px">
+          <input type="text" id="s5a" name="s5a" style="width: 80px" class="symb" onfocus="doItOnFocus(this)">
+        </td>
+        <td>&nbsp;</td>
+        <td class="c2a">
+          <span class="var">C</span>
+        </td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="c2a">
+          <span class="var">C</span>
+        </td>
+        <td>&nbsp;</td>
+        <td colspan="2" style="padding: 4px 0 4px 4px"><input type="text" style="width: 80px" class="form" name="bf5a" placeholder="Abbr. FN"></td>
+        <td colspan="2" style="padding: 4px 0 4px 4px"><input type="text" style="width: 80px" class="form" name="bf5b" placeholder="Abbr. FN"></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="c3" colspan="2"><input type="radio" name="lv5" value="Valid">Valid<br>
+        <input type="radio" name="lv5" value="Invalid">Invalid</td>
+        <td colspan="4" class="operator">
+          <button type="button" onclick="tilde();">&sim;</button>
+		  <button type="button" onclick="dot();">&#x2022;</button>
+		  <button type="button" onclick="wedge();">&or;</button>
+		  <button type="button" onclick="horseshoe();">&sup;</button>
+		  <button type="button" onclick="triplebar();">&equiv;</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <table class="ex" border="0">
+    <tbody>
+      <tr>
+        <td class="c1"  style="padding: 0px 6px 4px 6px">6.</td>
+        <td class="c2a" width="110px">
+          <span class="symb">&sim;</span><span class="var">H </span><span
+          class="symb">&sup;</span><span class="var">&nbsp;</span><span
+          class="var2">(</span><span class="var">G </span><span
+          class="symb">&equiv;</span><span class="var"> E</span><span
+          class="var2">)</span>
+        </td>
+        <td width="40px">&nbsp;</td>
+        <td class="c2a" width="110px">
+          <span class="symb">&sim;</span><span class="var">H </span><span
+          class="symb">&sup;</span><span class="var">&nbsp;</span><span
+          class="var2">(</span><span class="var">G </span><span
+          class="symb">&equiv;</span><span class="var"> E</span><span
+          class="var2">)</span>
+        </td>
+        <td width="40px">&nbsp;</td>
+        <td class="c2a" width="80px">
+          <span class="var">P </span><span
+          class="symb">&sup;</span><span class="var"> H</span>
+        </td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="c2a" width="70px">
+          <span class="var">P </span><span
+          class="symb">&sup;</span><span class="var"> H</span>
+        </td>
+        <td>&nbsp;</td>
+        <td class="c2a" style="border-bottom: 1px solid black">
+          <span class="symb">&sim;</span><span class="var2">(</span><span
+          class="var">G </span><span class="symb">&equiv;</span><span
+          class="var"> E</span><span class="var2">)</span>
+        </td>
+        <td>&nbsp;</td>
+        <td style="padding: 4px 0 4px 4px; border-bottom: 1px solid black">
+          <input type="text" id="s6b" name="s6b" style="width: 80px" class="symb" onfocus="doItOnFocus(this)">
+        </td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="c2a" style="border-bottom: 1px solid black">
+          <span class="symb">&sim;</span><span class="var2">(</span><span
+          class="var">G </span><span class="symb">&equiv;</span><span
+          class="var"> E</span><span class="var2">)</span>
+        </td>
+        <td>&nbsp;</td>
+        <td style="padding: 4px 0 4px 4px">
+          <input type="text" id="s6a" name="s6a" style="width: 80px" class="symb" onfocus="doItOnFocus(this)">
+        </td>
+        <td>&nbsp;</td>
+        <td class="c2a">
+          <span class="var">P</span>
+        </td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="c2a">
+          <span class="var">P</span>
+        </td>
+        <td>&nbsp;</td>
+        <td colspan="2" style="padding: 4px 0 4px 4px"><input type="text" style="width: 80px" class="form" name="bf6a" placeholder="Abbr. FN"></td>
+        <td colspan="2" style="padding: 4px 0 4px 4px"><input type="text" style="width: 80px" class="form" name="bf6b" placeholder="Abbr. FN"></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="c3" colspan="2"><input type="radio" name="lv6" value="Valid">Valid<br>
+        <input type="radio" name="lv6" value="Invalid">Invalid</td>
+        <td colspan="4" class="operator">
+          <button type="button" onclick="tilde();">&sim;</button>
+		  <button type="button" onclick="dot();">&#x2022;</button>
+		  <button type="button" onclick="wedge();">&or;</button>
+		  <button type="button" onclick="horseshoe();">&sup;</button>
+		  <button type="button" onclick="triplebar();">&equiv;</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <table class="ex" border="0">
+    <tbody>
+      <tr>
+        <td class="c1" style="padding: 4px 6px 4px 6px">7.</td>
+        <td class="c2a" width="70px">
+          <span class="var">A </span><span class="symb">&sup;</span><span
+          class="var"> L</span>
+        </td>
+        <td width="80px">&nbsp;</td>
+        <td class="c2a" width="80px">
+          <span class="var">A </span><span class="symb">&sup;</span><span
+          class="var"> L</span>
+        </td>
+        <td width="40px">&nbsp;</td>
+        <td width="80px" style="padding: 2px 0 4px 4px">
+          <input type="text" id="s7b" name="s7b" style="width: 80px" class="symb" onfocus="doItOnFocus(this)">
+        </td>
+        <td width="40px">&nbsp;</td>
+        <td class="c2a" width="80px">
+          <span class="var">A </span><span
+          class="symb">&or;</span><span class="var"> </span><span
+          class="symb">&sim;</span><span class="var">M</span>
+        </td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="c2a" width="70px">
+          <span class="var">A </span><span
+          class="symb">&or;</span><span class="var"> </span><span
+          class="symb">&sim;</span><span class="var">M</span>
+        </td>
+        <td>&nbsp;</td>
+        <td class="c2a" style="border-bottom: 1px solid black">
+          <span class="var">L </span><span class="symb">&sup;</span><span
+          class="var"> S</span>
+        </td>
+        <td>&nbsp;</td>
+        <td class="c2a" width="80px" style="border-bottom: 1px solid black">
+          <span class="symb">&sim;</span><span class="var">S</span>
+        </td>
+        <td>&nbsp;</td>
+        <td style="padding: 4px 0 4px 4px; border-bottom: 1px solid black">
+          <input type="text" id="s7d" name="s7d" style="width: 80px" class="symb" onfocus="doItOnFocus(this)">
+        </td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="c2a">
+          <span class="var">L </span><span class="symb">&sup;</span><span
+          class="var"> S</span>
+        </td>
+        <td>&nbsp;</td>
+        <td style="padding: 4px 0 4px 4px">
+          <input type="text" id="s7a" name="s7a" style="width: 80px" class="symb" onfocus="doItOnFocus(this)">
+        </td>
+        <td>&nbsp;</td>
+        <td style="padding: 4px 0 4px 4px">
+          <input type="text" id="s7c" name="s7c" style="width: 80px" class="symb" onfocus="doItOnFocus(this)">
+        </td>
+        <td>&nbsp;</td>
+        <td class="c2a" width="70px">
+          <span class="symb">&sim;</span><span class="var">M</span>
+        </td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="c2a" style="border-bottom: 1px solid black">
+          <span class="symb">&sim;</span><span class="var">S</span>
+        </td>
+        <td>&nbsp;</td>
+        <td colspan="2" style="padding: 4px 0 4px 4px"><input type="text" style="width: 80px" class="form" name="bf7a" placeholder="Abbr. FN"></td>
+        <td colspan="2" style="padding: 4px 0 4px 4px"><input type="text" style="width: 80px" class="form" name="bf7b" placeholder="Abbr. FN"></td>
+        <td colspan="2" style="padding: 4px 0 4px 4px"><input type="text" style="width: 80px" class="form" name="bf7c" placeholder="Abbr. FN"></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="c2a">
+          <span class="symb">&sim;</span><span class="var">M</span>
+        </td>
+        <td>&nbsp;</td>
+        <td colspan="4" class="operator">
+          <button type="button" onclick="tilde();">&sim;</button>
+		  <button type="button" onclick="dot();">&#x2022;</button>
+		  <button type="button" onclick="wedge();">&or;</button>
+		  <button type="button" onclick="horseshoe();">&sup;</button>
+		  <button type="button" onclick="triplebar();">&equiv;</button>
+        </td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="c3" colspan="2"><input type="radio" name="lv7" value="Valid">Valid<br>
+        <input type="radio" name="lv7" value="Invalid">Invalid</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <table class="ex" border="0">
+    <tbody>
+      <tr>
+        <td class="c1" style="padding: 0px 6px 4px 6px">8.</td>
+        <td class="c2a" width="70px">
+          <span class="symb">&sim;</span><span class="var">N </span><span
+          class="symb">&sup;</span><span class="var">&nbsp;</span><span
+          class="symb">&sim;</span><span class="var">K</span>
+        </td>
+        <td width="80px">&nbsp;</td>
+        <td class="c2a" width="80px">
+          <span class="var">R </span><span class="symb">&sup;</span><span
+          class="var">&nbsp;</span><span class="symb">&sim;</span><span
+          class="var">O</span>
+        </td>
+        <td width="40px">&nbsp;</td>
+        <td class="c2a" width="80px">
+          <span class="symb">&sim;</span><span class="var">N </span><span
+          class="symb">&or;</span><span class="var"> </span><span class="var">R</span>
+        </td>
+        <td width="40px">&nbsp;</td>
+        <td class="c2a" width="80px">
+          <span class="symb">&sim;</span><span class="var">N </span><span
+          class="symb">&sup;</span><span class="var">&nbsp;</span><span
+          class="symb">&sim;</span><span class="var">K</span>
+        </td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="c2a" width="70px">
+          <span class="symb">&sim;</span><span class="var">N </span><span
+          class="symb">&or;</span><span class="var">&nbsp;</span><span
+          class="var">R</span>
+        </td>
+        <td>&nbsp;</td>
+        <td style="padding: 4px 0 4px 4px; border-bottom: 1px solid black">
+          <input type="text" id="s8a" name="s8a" style="width: 80px" class="symb" onfocus="doItOnFocus(this)">
+        </td>
+        <td>&nbsp;</td>
+        <td style="padding: 4px 0 4px 4px; border-bottom: 1px solid black">
+          <input type="text" id="s8c" name="s8c" style="width: 80px" class="symb" onfocus="doItOnFocus(this)">
+        </td>
+        <td>&nbsp;</td>
+        <td style="padding: 4px 0 4px 4px; border-bottom: 1px solid black">
+          <input type="text" id="s8e" name="s8e" style="width: 80px" class="symb" onfocus="doItOnFocus(this)">
+        </td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="c2a">
+          <span class="var">R </span><span class="symb">&sup;</span><span
+          class="var">&nbsp;</span><span class="symb">&sim;</span><span
+          class="var">O</span>
+        </td>
+        <td>&nbsp;</td>
+        <td style="padding: 4px 0 4px 4px">
+          <input type="text" id="s8b" name="s8b" style="width: 80px" class="symb" onfocus="doItOnFocus(this)">
+        </td>
+        <td>&nbsp;</td>
+        <td style="padding: 4px 0 4px 4px">
+          <input type="text" id="s8d" name="s8d" style="width: 80px" class="symb" onfocus="doItOnFocus(this)">
+        </td>
+        <td>&nbsp;</td>
+        <td class="c2a" width="70px">
+          <span class="symb">&sim;</span><span class="var">K</span>
+        </td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="c2a" style="border-bottom: 1px solid black">
+          <span class="var">O</span>
+        </td>
+        <td>&nbsp;</td>
+        <td colspan="2" style="padding: 4px 0 2px 4px"><input type="text" style="width: 80px" class="form" name="bf8a" placeholder="Abbr. FN"></td>
+        <td colspan="2" style="padding: 4px 0 4px 4px"><input type="text" style="width: 80px" class="form" name="bf8b" placeholder="Abbr. FN"></td>
+        <td colspan="2" style="padding: 4px 0 4px 4px"><input type="text" style="width: 80px" class="form" name="bf8c" placeholder="Abbr. FN"></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="c2a">
+          <span class="symb">&sim;</span><span class="var">K</span>
+        </td>
+        <td>&nbsp;</td>
+        <td colspan="4" class="operator">
+          <button type="button" onclick="tilde();">&sim;</button>
+		  <button type="button" onclick="dot();">&#x2022;</button>
+		  <button type="button" onclick="wedge();">&or;</button>
+		  <button type="button" onclick="horseshoe();">&sup;</button>
+		  <button type="button" onclick="triplebar();">&equiv;</button>
+        </td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="c3" colspan="2"><input type="radio" name="lv8" value="Valid">Valid<br>
+        <input type="radio" name="lv8" value="Invalid">Invalid</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <table class="ex" border="0">
+    <tbody>
+      <tr>
+        <td class="c1" style="padding: 4px 6px 4px 6px">9.</td>
+        <td class="c2a" width="70px">
+          <span class="var">C </span><span class="symb">&or;</span><span
+          class="var">&nbsp;</span><span class="var">E</span>
+        </td>
+        <td width="80px">&nbsp;</td>
+        <td class="c2a" width="80px">
+          <span class="var">C </span><span class="symb">&sup;</span><span
+          class="var">&nbsp;</span><span class="symb">&sim;</span><span
+          class="var">B</span>
+        </td>
+        <td width="40px">&nbsp;</td>
+        <td width="90px" style="padding: 4px 0 4px 4px">
+          <input type="text" id="s9d" name="s9d" style="width: 80px" class="symb" onfocus="doItOnFocus(this)">
+        </td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="c2a" width="70px">
+          <span class="var">C </span><span class="symb">&sup;</span><span
+          class="var">&nbsp;</span><span class="symb">&sim;</span><span
+          class="var">B</span>
+        </td>
+        <td>&nbsp;</td>
+        <td style="padding: 4px 0 4px 4px">
+          <input type="text" id="s9a" name="s9a" style="width: 80px" class="symb" onfocus="doItOnFocus(this)">
+        </td>
+        <td>&nbsp;</td>
+        <td style="padding: 4px 0 4px 4px; border-bottom: 1px solid black">
+          <input type="text" id="s9e" name="s9e" style="width: 80px" class="symb" onfocus="doItOnFocus(this)">
+        </td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="c2a">
+          <span class="var">E </span><span class="symb">&sup;</span><span
+          class="var"> M</span>
+        </td>
+        <td>&nbsp;</td>
+        <td style="padding: 4px 0 4px 4px; border-bottom: 1px solid black">
+          <input type="text" id="s9b" name="s9b" style="width: 80px" class="symb" onfocus="doItOnFocus(this)">
+        </td>
+        <td>&nbsp;</td>
+        <td style="padding: 4px 0 4px 4px">
+          <span class="symb">&sim;</span><span class="var">B</span>
+        </td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="c2a" style="border-bottom: 1px solid black">
+          <span class="symb">&sim;</span><span class="var">M</span>
+        </td>
+        <td>&nbsp;</td>
+        <td style="padding: 4px 0 4px 4px">
+          <input type="text" id="s9c" name="s9c" style="width: 80px" class="symb" onfocus="doItOnFocus(this)">
+        </td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="c2a">
+          <span class="symb">&sim;</span><span class="var">B</span>
+        </td>
+        <td>&nbsp;</td>
+        <td colspan="2" style="padding: 4px 0 2px 4px"><input type="text" style="width: 80px" class="form" name="bf9a" placeholder="Abbr. FN"></td>
+        <td colspan="2" style="padding: 4px 0 4px 4px"><input type="text" style="width: 80px" class="form" name="bf9b" placeholder="Abbr. FN"></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="c3" colspan="2"><input type="radio" name="lv9" value="Valid">Valid<br>
+        <input type="radio" name="lv9" value="Invalid">Invalid</td>
+        <td colspan="4" class="operator">
+          <button type="button" onclick="tilde();">&sim;</button>
+		  <button type="button" onclick="dot();">&#x2022;</button>
+		  <button type="button" onclick="wedge();">&or;</button>
+		  <button type="button" onclick="horseshoe();">&sup;</button>
+		  <button type="button" onclick="triplebar();">&equiv;</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <table class="ex" border="0">
+    <tbody>
+      <tr>
+        <td class="c1" style="padding: 4px 6px 4px 6px">10.</td>
+        <td class="c2a" width="110px">
+          <span class="var">W </span><span class="symb">&sup;</span><span
+          class="var">&nbsp;</span><span class="var2">(</span><span
+          class="symb">&sim;</span><span class="var">G </span><span
+          class="symb">&sup;</span><span class="var"> H</span><span
+          class="var2">)</span>
+        </td>
+        <td width="40px">&nbsp;</td>
+        <td class="c2a" width="110px">
+          <span class="var">W </span><span class="symb">&sup;</span><span
+          class="var">&nbsp;</span><span class="var2">(</span><span
+          class="symb">&sim;</span><span class="var">G </span><span
+          class="symb">&sup;</span><span class="var"> H</span><span
+          class="var2">)</span>
+        </td>
+        <td width="40px">&nbsp;</td>
+        <td style="padding: 2px 0 4px 4px">
+          <input type="text" id="s10c" name="s10c" style="width: 80px" class="symb" onfocus="doItOnFocus(this)">
+        </td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="c2a">
+          <span class="var">W</span>
+        </td>
+        <td>&nbsp;</td>
+        <td style="padding: 4px 0 4px 4px; border-bottom: 1px solid black">
+          <input type="text" id="s10a" name="s10a" style="width: 80px" class="symb" onfocus="doItOnFocus(this)">
+        </td>
+        <td>&nbsp;</td>
+        <td style="padding: 4px 0 4px 4px; border-bottom: 1px solid black">
+          <input type="text" id="s10d" name="s10d" style="width: 80px" class="symb" onfocus="doItOnFocus(this)">
+        </td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="c2a" style="border-bottom: 1px solid black">
+          <span class="symb">&sim;</span><span class="var">H</span>
+        </td>
+        <td>&nbsp;</td>
+        <td style="padding: 4px 0 4px 4px">
+          <input type="text" id="s10b" name="s10b" style="width: 80px" class="symb" onfocus="doItOnFocus(this)">
+        </td>
+        <td>&nbsp;</td>
+        <td class="c2a" width="80px">
+          <span class="var">G</span>
+        </td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="c2a">
+          <span class="var">G</span>
+        </td>
+        <td>&nbsp;</td>
+        <td colspan="2" style="padding: 4px 0 4px 4px"><input type="text" style="width: 80px" class="form" name="bf10a" placeholder="Abbr. FN"></td>
+        <td colspan="2" style="padding: 4px 0 4px 4px"><input type="text" style="width: 80px" class="form" name="bf10b" placeholder="Abbr. FN"></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="c3" colspan="2"><input type="radio" name="lv10" value="Valid">Valid<br>
+        <input type="radio" name="lv10" value="Invalid">Invalid</td>
+        <td colspan="4" class="operator">
+          <button type="button" onclick="tilde();">&sim;</button>
+		  <button type="button" onclick="dot();">&#x2022;</button>
+		  <button type="button" onclick="wedge();">&or;</button>
+		  <button type="button" onclick="horseshoe();">&sup;</button>
+		  <button type="button" onclick="triplebar();">&equiv;</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+      
+  <table class="ex" border="0">
+    <tbody>
+      <tr>
+        <td class="c1" style="padding: 4px 6px 4px 6px">11.</td>
+        <td class="c2a" width="110px">
+          <span class="var2">(</span><span class="var">A </span><span
+          class="symb">&sup;</span><span class="var"> </span><span
+          class="var">D</span><span class="var2">)</span><span class="var">
+          </span><span class="symb">&sup;</span><span class="var"> B</span>
+        </td>
+        <td width="40px">&nbsp;</td>
+        <td class="c2a">
+          <span class="var">D </span><span class="symb">&or;</span><span
+          class="var"> </span><span class="var2">(</span><span class="var">B
+          </span><span class="symb">&sup;</span><span class="var">
+          H</span><span class="var2">)</span>
+        </td>
+        <td width="40px">&nbsp;</td>
+        <td width="130px" style="padding: 4px 0 4px 4px">
+          <input type="text" id="s11c" name="s11c" style="width: 110px" class="symb" onfocus="doItOnFocus(this)">
+        </td>
+        <td width="40px">&nbsp;</td>
+        <td width="130px" style="padding: 4px 0 4px 4px">
+          <input type="text" id="s11f" name="s11f" style="width: 110px" class="symb" onfocus="doItOnFocus(this)">
+        </td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="c2a">
+          <span class="var">D </span><span class="symb">&or;</span><span
+          class="var"> </span><span class="var2">(</span><span class="var">B
+          </span><span class="symb">&sup;</span><span class="var">
+          H</span><span class="var2">)</span>
+        </td>
+        <td>&nbsp;</td>
+        <td  width="130px" style="padding: 4px 0 4px 4px; border-bottom: 1px solid black">
+          <input type="text" id="s11a" name="s11a" style="width: 110px" class="symb" onfocus="doItOnFocus(this)">
+        </td>
+        <td>&nbsp;</td>
+        <td style="padding: 4px 0 4px 4px; border-bottom: 1px solid black">
+          <input type="text" id="s11d" name="s11d" style="width: 110px" class="symb" onfocus="doItOnFocus(this)">
+        </td> 
+        <td>&nbsp;</td>
+        <td style="padding: 4px 0 4px 4px; border-bottom: 1px solid black">
+          <input type="text" id="s11g" name="s11g" style="width: 110px" class="symb" onfocus="doItOnFocus(this)">
+        </td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="c2a">
+          <span class="symb">&sim;</span><span
+          class="var">H</span>
+        </td>
+        <td>&nbsp;</td>
+        <td style="padding: 4px 0 4px 4px">
+          <input type="text" id="s11b" name="s11b" style="width: 110px" class="symb" onfocus="doItOnFocus(this)">
+        </td>
+        <td>&nbsp;</td>
+        <td style="padding: 4px 0 4px 4px">
+          <input type="text" id="s11e" name="s11e" style="width: 110px" class="symb" onfocus="doItOnFocus(this)">
+        </td>
+        <td>&nbsp;</td>
+        <td class="c2a">
+          <span class="symb">&sim;</span><span class="var2">(</span><span class="var">A </span><span
+          class="symb">&sup;</span><span class="var"> </span><span
+          class="var">D</span><span class="var2">)</span>
+        </td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="c2a" style="border-bottom: 1px solid black">
+          <span class="symb">&sim;</span><span
+          class="var">D</span>
+        </td>
+        <td>&nbsp;</td>
+        <td colspan="2" style="padding: 4px 0 2px 4px"><input type="text" style="width: 110px" class="form" name="bf11a" placeholder="Abbr. FN"></td>
+        <td colspan="2" style="padding: 4px 0 4px 4px"><input type="text" style="width: 110px" class="form" name="bf11b" placeholder="Abbr. FN"></td>
+        <td colspan="2" style="padding: 4px 0 4px 4px"><input type="text" style="width: 110px" class="form" name="bf11c" placeholder="Abbr. FN"></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="c2a">
+          <span class="symb">&sim;</span><span class="var2">(</span><span class="var">A </span><span
+          class="symb">&sup;</span><span class="var"> </span><span
+          class="var">D</span><span class="var2">)</span>
+        </td>
+        <td>&nbsp;</td>
+        <td colspan="4" class="operator">
+          <button type="button" onclick="tilde();">&sim;</button>
+		  <button type="button" onclick="dot();">&#x2022;</button>
+		  <button type="button" onclick="wedge();">&or;</button>
+		  <button type="button" onclick="horseshoe();">&sup;</button>
+		  <button type="button" onclick="triplebar();">&equiv;</button>
+        </td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="c3" colspan="2"><input type="radio" name="lv11" value="Valid">Valid<br>
+        <input type="radio" name="lv11" value="Invalid">Invalid</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <table class="ex" border="0">
+    <tbody>
+      <tr>
+        <td class="c1" style="padding: 4px 6px 4px 6px">12.</td>
+        <td class="c2a" width="110px">
+          <span class="symb">&sim;</span><span class="var2">(</span><span
+          class="var">R </span><span class="symb">&sup;</span><span
+          class="var">&nbsp;</span><span class="symb">&sim;</span><span
+          class="var">L</span><span class="var2">)</span><span
+          class="var">&nbsp;</span><span class="symb">&sup;</span><span
+          class="var"> P</span>
+        </td>
+        <td width="40px">&nbsp;</td>
+        <td width="130px" style="padding: 4px 0 4px 4px">
+          <input type="text" id="s12a" name="s12a" style="width: 110px" class="symb" onfocus="doItOnFocus(this)">
+        </td>
+        <td width="40px">&nbsp;</td>
+        <td width="130px" style="padding: 4px 0 4px 4px">
+          <input type="text" id="s12c" name="s12c" style="width: 110px" class="symb" onfocus="doItOnFocus(this)">
+        </td>
+        <td width="40px">&nbsp;</td>
+        <td width="130px" style="padding: 4px 0 4px 4px">
+          <input type="text" id="s12e" name="s12e" style="width: 110px" class="symb" onfocus="doItOnFocus(this)">
+        </td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="c2a">
+          <span class="symb">&sim;</span><span class="var">L </span><span
+          class="symb">&or;</span><span class="var"> P</span>
+        </td>
+        <td>&nbsp;</td>
+        <td class="c2a" style="border-bottom: 1px solid black">
+          <span class="symb">&sim;</span><span class="var">P</span>
+        </td>
+        <td>&nbsp;</td>
+        <td class="c2a" style="border-bottom: 1px solid black">
+          <span class="symb">&sim;</span><span class="var">P</span>
+        </td> 
+        <td>&nbsp;</td>
+        <td style="padding: 4px 0 4px 4px; border-bottom: 1px solid black">
+          <input type="text" id="s12f" name="s12f" style="width: 110px" class="symb" onfocus="doItOnFocus(this)">
+        </td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="c2a" style="border-bottom: 1px solid black">
+          <span class="symb">&sim;</span><span class="var">P</span>
+        </td>
+        <td>&nbsp;</td>
+        <td style="padding: 4px 0 4px 4px">
+          <input type="text" id="s12b" name="s12b" style="width: 110px" class="symb" onfocus="doItOnFocus(this)">
+        </td>
+        <td>&nbsp;</td>
+        <td style="padding: 4px 0 4px 4px">
+          <input type="text" id="s12d" name="s12d" style="width: 110px" class="symb" onfocus="doItOnFocus(this)">
+        </td>
+        <td>&nbsp;</td>
+        <td class="c2a">
+          <span class="var">R</span>
+        </td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="c2a">
+          <span class="var">R</span>
+        </td>
+        <td>&nbsp;</td>
+        <td colspan="2" style="padding: 4px 0 2px 4px"><input type="text" style="width: 110px" class="form" name="bf12a" placeholder="Abbr. FN"></td>
+        <td colspan="2" style="padding: 4px 0 4px 4px"><input type="text" style="width: 110px" class="form" name="bf12b" placeholder="Abbr. FN"></td>
+        <td colspan="2" style="padding: 4px 0 4px 4px"><input type="text" style="width: 110px" class="form" name="bf12c" placeholder="Abbr. FN"></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="c3" colspan="2">
+          <input type="radio" name="lv12" value="Valid">Valid<br>
+          <input type="radio" name="lv12" value="Invalid">Invalid
+        </td>
+        <td colspan="4" class="operator">
+          <button type="button" onclick="tilde();">&sim;</button>
+		  <button type="button" onclick="dot();">&#x2022;</button>
+		  <button type="button" onclick="wedge();">&or;</button>
+		  <button type="button" onclick="horseshoe();">&sup;</button>
+		  <button type="button" onclick="triplebar();">&equiv;</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <table class="ex" border="0">
+    <tbody>
+      <tr>
+        <td class="c1" style="padding: 4px 6px 4px 6px">13.</td>
+        <td class="c2a" width="120px">
+          <span class="var">S </span><span class="symb">&sup;</span><span
+          class="var">&nbsp;</span><span class="var">G</span>
+        </td>
+        <td width="30px">&nbsp;</td>
+        <td class="c2a" width="120px">
+          <span class="var">S </span><span class="symb">&sup;</span><span
+          class="var"> G</span>
+        </td>
+        <td width="40px">&nbsp;</td>
+        <td width="130px" style="padding: 4px 0 4px 4px">
+          <input type="text" id="s13d" name="s13d" style="width: 110px" class="symb" onfocus="doItOnFocus(this)">
+        </td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="c2a" width="70px">
+          <span class="var">N </span><span class="symb">&sup;</span><span
+          class="var">&nbsp;</span><span class="var">D</span>
+        </td>
+        <td>&nbsp;</td>
+        <td style="padding: 4px 0 4px 4px">
+          <input type="text" id="s13a" name="s13a" style="width: 110px" class="symb" onfocus="doItOnFocus(this)">
+        </td>
+        <td>&nbsp;</td>
+        <td style="padding: 4px 0 4px 4px; border-bottom: 1px solid black">
+          <input type="text" id="s13e" name="s13e" style="width: 110px" class="symb" onfocus="doItOnFocus(this)">
+        </td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="c2a">
+          <span class="symb">&sim;</span><span class="var">G </span><span
+          class="symb">&or;</span><span class="var">&nbsp;</span><span
+          class="symb">&sim;</span><span class="var">D</span>
+        </td>
+        <td>&nbsp;</td>
+        <td style="padding: 4px 0 4px 4px; border-bottom: 1px solid black">
+          <input type="text" id="s13b" name="s13b" style="width: 110px" class="symb" onfocus="doItOnFocus(this)">
+        </td>
+        <td>&nbsp;</td>
+        <td style="padding: 4px 0 4px 4px">
+          <span class="var">K</span>
+        </td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="c2a" style="border-bottom: 1px solid black">
+          <span class="var2">(</span><span class="symb">&sim;</span><span
+          class="var">S </span><span class="symb">&or;</span><span
+          class="var">&nbsp;</span><span class="symb">&sim;</span><span
+          class="var">N</span><span class="var2">)</span><span
+          class="var">&nbsp;</span><span class="symb">&sup;</span><span
+          class="var"> K</span>
+        </td>
+        <td>&nbsp;</td>
+        <td style="padding: 4px 0 4px 4px">
+          <input type="text" id="s13c" name="s13c" style="width: 110px" class="symb" onfocus="doItOnFocus(this)">
+        </td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="c2a">
+          <span class="var">K</span>
+        </td>
+        <td>&nbsp;</td>
+        <td colspan="2" style="padding: 4px 0 2px 4px"><input type="text" style="width:110px" class="form" name="bf13a" placeholder="Abbr. FN"></td>
+        <td colspan="2" style="padding: 4px 0 4px 4px"><input type="text" style="width: 110px" class="form" name="bf13b" placeholder="Abbr. FN"></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="c3" colspan="2"><input type="radio" name="lv13" value="Valid">Valid<br>
+        <input type="radio" name="lv13" value="Invalid">Invalid</td>
+        <td colspan="4" class="operator">
+          <button type="button" onclick="tilde();">&sim;</button>
+		  <button type="button" onclick="dot();">&#x2022;</button>
+		  <button type="button" onclick="wedge();">&or;</button>
+		  <button type="button" onclick="horseshoe();">&sup;</button>
+		  <button type="button" onclick="triplebar();">&equiv;</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <table class="ex" border="0">
+    <tbody>
+      <tr>
+        <td class="c1" style="padding: 4px 6px 4px 6px">14.</td>
+        <td class="c2a" width="120px">
+          <span class="var2">(</span><span class="var">G </span><span
+          class="symb">&#x2022;</span><span class="var"> </span><span
+          class="var">M</span><span class="var2">)</span><span class="var">
+          </span><span class="symb">&sup;</span><span class="var"> A</span>
+        </td>
+        <td width="30px">&nbsp;</td>
+        <td width="130px" style="padding: 4px 0 4px 4px">
+          <input type="text" id="s14a" name="s14a" style="width: 110px" class="symb" onfocus="doItOnFocus(this)">
+        </td>
+        <td width="40px">&nbsp;</td>
+        <td width="130px" style="padding: 4px 0 4px 4px">
+          <input type="text" id="s14d" name="s14d" style="width: 110px" class="symb" onfocus="doItOnFocus(this)">
+        </td>
+        <td width="40px">&nbsp;</td>
+        <td width="130px" style="padding: 4px 0 4px 4px">
+          <input type="text" id="s14g" name="s14g" style="width: 110px" class="symb" onfocus="doItOnFocus(this)">
+        </td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="c2a" width="70px">
+          <span class="symb">&sim;</span><span class="var">A </span><span
+          class="symb">&or;</span><span class="var">&nbsp;</span><span
+          class="var2">(</span><span class="symb">&sim;</span><span
+          class="var">E </span><span class="symb">&sup;</span><span
+          class="var">&nbsp;</span><span class="var">O</span><span
+          class="var2">)</span>
+        </td>
+        <td>&nbsp;</td>
+        <td style="padding: 4px 0 4px 4px; border-bottom: 1px solid black">
+          <input type="text" id="s14b" name="s14b" style="width: 110px" class="symb" onfocus="doItOnFocus(this)">
+        </td>
+        <td>&nbsp;</td>
+        <td style="padding: 4px 0 4px 4px; border-bottom: 1px solid black">
+          <input type="text" id="s14e" name="s14e" style="width: 110px" class="symb" onfocus="doItOnFocus(this)">
+        </td>
+        <td>&nbsp;</td>
+        <td style="padding: 4px 0 4px 4px; border-bottom: 1px solid black">
+          <input type="text" id="s14h" name="s14h" style="width: 110px" class="symb" onfocus="doItOnFocus(this)">
+        </td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="c2a">
+          <span class="var">G </span><span
+          class="symb">&#x2022;</span><span class="var"> </span><span
+          class="var">M</span>
+        </td>
+        <td>&nbsp;</td>
+        <td style="padding: 4px 0 4px 4px">
+          <input type="text" id="s14c" name="s14c" style="width: 110px" class="symb" onfocus="doItOnFocus(this)">
+        </td>
+        <td>&nbsp;</td>
+        <td style="padding: 4px 0 4px 4px">
+          <input type="text" id="s14f" name="s14f" style="width: 110px" class="symb" onfocus="doItOnFocus(this)">
+        </td>
+        <td>&nbsp;</td>
+        <td class="c2a">
+          <span class="symb">&sim;</span><span class="var">B </span><span
+          class="symb">&sup;</span><span class="var">&nbsp;</span><span
+          class="var">O</span>
+        </td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="c2a" style="border-bottom: 1px solid black">
+          <span class="symb">&sim;</span><span
+          class="var">B </span><span class="symb">&sup;</span><span
+          class="var">&nbsp;</span><span class="symb">&sim;</span><span
+          class="var">E</span>
+        </td>
+        <td>&nbsp;</td>
+        <td colspan="2" style="padding: 4px 0 2px 4px"><input type="text" style="width: 110px" class="form" name="bf14a" placeholder="Abbr. FN"></td>
+        <td colspan="2" style="padding: 4px 0 2px 4px"><input type="text" style="width: 110px" class="form" name="bf14b" placeholder="Abbr. FN"></td>
+        <td colspan="2" style="padding: 4px 0 2px 4px"><input type="text" style="width: 110px" class="form" name="bf14c" placeholder="Abbr. FN"></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="c2a">
+          <span class="symb">&sim;</span><span class="var">B </span><span
+          class="symb">&sup;</span><span class="var">&nbsp;</span><span
+          class="var">O</span>
+        </td>
+        <td>&nbsp;</td>
+        <td colspan="4" class="operator">
+          <button type="button" onclick="tilde();">&sim;</button>
+		  <button type="button" onclick="dot();">&#x2022;</button>
+		  <button type="button" onclick="wedge();">&or;</button>
+		  <button type="button" onclick="horseshoe();">&sup;</button>
+		  <button type="button" onclick="triplebar();">&equiv;</button>
+		</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="c3" colspan="2"><input type="radio" name="lv14"
+        value="Valid">Valid<br> <input type="radio" name="lv14"
+        value="Invalid">Invalid</td>
+      </tr>
+    </tbody>
+  </table>
+      
+      <input type="submit" value="Check Answers" style="font-size:16px; margin: 20px 0 0 80px; cursor: pointer;">
+      </form>
+  
+      <p>&nbsp;</p>
+      
+      <p><a class="license" rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/us/"><img alt="Creative
+      Commons License" style="border-width: 0pt;" src="http://i.creativecommons.org/l/by-nc-nd/3.0/us/88x31.png"> </a> <br>
+      This work is licensed under a <a rel="license"
+      href="http://creativecommons.org/licenses/by-nc-nd/3.0/us/">Creative Commons
+      Attribution-Noncommercial-No Derivative Works 3.0 United States License</a>.</p>
+    </div>
+  
+    <div id="sidebar">
+    </div>
+  </div>
+</div>
+
+<div id="fwrap">
+  <div id="fwrap2">
+    <div id="footer">
+      <p><a href="javascript:;" onclick="window.location.assign('../3.2/iLogic_3_2.html');">&larr;&nbsp;&nbsp;PREVIOUS</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="javascript:;" onclick="window.location.assign('../3.4/iLogic_3_4.html');">NEXT&nbsp;&nbsp;&rarr;</a></p>
+  </div>
+  </div>
+</div>
+
+
+</body>
+</html>
