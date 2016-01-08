@@ -1,0 +1,1437 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>Truth Tables</title>
+<link rel="stylesheet" href="../iLogic.css" type="text/css">
+<script type="text/javascript" src="../Operators.js"></script>
+    <style type = "text/css">
+      @font-face {
+      font-family: "Arial Unicode MS";
+      src: url("../Arial Unicode.ttf");
+      }
+      @font-face {
+      font-family: "Verdana";
+      src: url("../Verdana.ttf");
+      }
+      @font-face {
+      font-family: "Verdana Italic";
+      src: url("../Verdana Italic.ttf");
+      }
+    </style>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="../../Scripts/AC_RunActiveContent.js" type="text/javascript"></script>
+</head>
+
+<body>
+
+<div id="hwrap">
+  <div id="hwrap2">
+    <div id="header">
+      <h1>iLogic</h1>
+    </div>
+  </div>
+</div>
+
+<div id="nwrap">
+  <div id="nwrap2">
+    <div id="nav">
+      <ul>
+        <li><a href="javascript:;" onclick="window.location.assign('../../index.html');">HOME</a></li>
+        <li><a href="javascript:;" onclick="window.location.assign('../Table of Contents.html');">TABLE OF CONTENTS</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div id="mwrap">
+  <div id="mwrap2">
+    <div id="main">
+<!--      <span class="pdf"><a href="javascript:;" onclick="window.open('iLogic_3_2.pdf');return false;">PDF</a></span>
+//-->
+
+	<h2>3.2 Truth Tables</h2>
+
+	<p>A truth table lists all possible combinations of truth values. In a
+two-valued logic system, a single statement <em>p</em> has two possible truth
+values: truth (<span class="var2">T</span>) and falsehood (<span
+class="var2">F</span>). Given two statements <em>p</em> and <em>q</em>, there
+are four possible truth value combinations, that is, <span
+class="var2">TT</span>, <span class="var2">TF</span>, <span
+class="var2">FT</span>, <span class="var2">FF</span>. As a result, there are
+four rows in the truth table. With three statements, there are eight truth
+value combinations, ranging from <span class="var2">TTT</span> to <span
+class="var2">FFF</span>. In general, given <em>n</em> statements, there are
+2<em><sup>n</sup></em> rows (or cases) in the truth table.</p>
+
+  <table class="box" style="margin-left: 62px">
+    <tbody>
+      <tr valign="bottom">
+        <td width="50px" bgcolor="#e6ecff" style="border-bottom: 1px solid black;"><p align="center"
+          style="margin-top: 0.02in; margin-bottom: 0.06in; padding: 0in"><em>p</em></p>      </td>
+        <td width="100px"><p align="center"
+          style="margin-top: 0.02in; border: none; padding: 0in"> </p>      </td>
+        <td width="50px" bgcolor="#e6ecff" style="border-bottom: 1px solid black;"><p align="center"
+          style="margin-top: 0.02in; margin-bottom: 0.06in; padding: 0in"><em>p</em></p>      </td>
+        <td width="50px" bgcolor="#e6ecff" style="border-bottom: 1px solid black;"><p align="center"
+          style="margin-top: 0.02in; margin-bottom: 0.06in; padding: 0in"><em>q</em></p>      </td>
+        <td width="100px"><p align="center"
+          style="margin-top: 0.02in; border: none; padding: 0in"> </p>      </td>
+        <td width="50px" bgcolor="#e6ecff" style="border-bottom: 1px solid black;"><p align="center"
+          style="margin-top: 0.02in; margin-bottom: 0.06in; padding: 0in"><em>p</em></p>      </td>
+        <td width="50px" bgcolor="#e6ecff" style="border-bottom: 1px solid black;"><p align="center"
+          style="margin-top: 0.02in; margin-bottom: 0.06in; padding: 0in"><em>q</em></p>      </td>
+        <td width="50px" bgcolor="#e6ecff" style="border-bottom: 1px solid black;"><p align="center"
+          style="margin-top: 0.02in; margin-bottom: 0.06in; padding: 0in"><em>r</em></p>      </td>
+      </tr>
+      <tr>
+        <td bgcolor="#e6ecff"><p align="center"
+          style="margin-top: 0.04in; margin-bottom: 0.04in; border: none; padding: 0in"><span
+          class="var2">T</span></p>      </td>
+        <td><p align="center"
+          style="margin-top: 0.04in; margin-bottom: 0.04in; border: none; padding: 0in"> </p>      </td>
+        <td bgcolor="#e6ecff"><p align="center"
+          style="margin-top: 0.04in; margin-bottom: 0.04in; border: none; padding: 0in"><span
+          class="var2">T</span></p>      </td>
+        <td bgcolor="#e6ecff"><p align="center"
+          style="margin-top: 0.04in; margin-bottom: 0.04in; border: none; padding: 0in"><span
+          class="var2">T</span></p>      </td>
+        <td><p align="center"
+          style="margin-top: 0.04in; margin-bottom: 0.04in; border: none; padding: 0in"> </p>      </td>
+        <td bgcolor="#e6ecff"><p align="center"
+          style="margin-top: 0.04in; margin-bottom: 0.04in; border: none; padding: 0in"><span
+          class="var2">T</span></p>      </td>
+        <td bgcolor="#e6ecff"><p align="center"
+          style="margin-top: 0.04in; margin-bottom: 0.04in; border: none; padding: 0in"><span
+          class="var2">T</span></p>      </td>
+        <td bgcolor="#e6ecff"><p align="center"
+          style="margin-top: 0.04in; margin-bottom: 0.04in; border: none; padding: 0in"><span
+          class="var2">T</span></p>      </td>
+      </tr>
+      <tr>
+        <td bgcolor="#e6ecff"><p align="center"
+          style="margin-top: 0.04in; margin-bottom: 0.04in; border: none; padding: 0in"><span
+          class="var2"><span
+          class="var2">F</span></span></p>      </td>
+        <td><p align="center"
+          style="margin-top: 0.04in; margin-bottom: 0.04in; border: none; padding: 0in"> </p>      </td>
+        <td bgcolor="#e6ecff"><p align="center"
+          style="margin-top: 0.04in; margin-bottom: 0.04in; border: none; padding: 0in"><span
+          class="var2">T</span></p>      </td>
+        <td bgcolor="#e6ecff"><p align="center"
+          style="margin-top: 0.04in; margin-bottom: 0.04in; border: none; padding: 0in"><span
+          class="var2">F</span></p>      </td>
+        <td><p align="center"
+          style="margin-top: 0.04in; margin-bottom: 0.04in; border: none; padding: 0in"> </p>      </td>
+        <td bgcolor="#e6ecff"><p align="center"
+          style="margin-top: 0.04in; margin-bottom: 0.04in; border: none; padding: 0in"><span
+          class="var2">T</span></p>      </td>
+        <td bgcolor="#e6ecff"><p align="center"
+          style="margin-top: 0.04in; margin-bottom: 0.04in; border: none; padding: 0in"><span
+          class="var2">T</span></p>      </td>
+        <td bgcolor="#e6ecff"><p align="center"
+          style="margin-top: 0.04in; margin-bottom: 0.04in; border: none; padding: 0in"><span
+          class="var2">F</span></p>      </td>
+      </tr>
+      <tr>
+        <td><p align="center"
+          style="margin-top: 0.04in; margin-bottom: 0.04in; border: none; padding: 0in"> </p>      </td>
+        <td><p align="center"
+          style="margin-top: 0.04in; margin-bottom: 0.04in; border: none; padding: 0in"> </p>      </td>
+        <td bgcolor="#e6ecff"><p align="center"
+          style="margin-top: 0.04in; margin-bottom: 0.04in; border: none; padding: 0in"><span
+          class="var2">F</span></p>      </td>
+        <td bgcolor="#e6ecff"><p align="center"
+          style="margin-top: 0.04in; margin-bottom: 0.04in; border: none; padding: 0in"><span
+          class="var2">T</span></p>      </td>
+        <td><p align="center"
+          style="margin-top: 0.04in; margin-bottom: 0.04in; border: none; padding: 0in"> </p>      </td>
+        <td bgcolor="#e6ecff"><p align="center"
+          style="margin-top: 0.04in; margin-bottom: 0.04in; border: none; padding: 0in"><span
+          class="var2">T</span></p>      </td>
+        <td bgcolor="#e6ecff"><p align="center"
+          style="margin-top: 0.04in; margin-bottom: 0.04in; border: none; padding: 0in"><span
+          class="var2">F</span></p>      </td>
+        <td bgcolor="#e6ecff"><p align="center"
+          style="margin-top: 0.04in; margin-bottom: 0.04in; border: none; padding: 0in"><span
+          class="var2">T</span></p>      </td>
+      </tr>
+      <tr>
+        <td><p align="center"
+          style="margin-top: 0.04in; margin-bottom: 0.04in; border: none; padding: 0in"> </p>      </td>
+        <td><p align="center"
+          style="margin-top: 0.04in; margin-bottom: 0.04in; border: none; padding: 0in"> </p>      </td>
+        <td bgcolor="#e6ecff"><p align="center"
+          style="margin-top: 0.04in; margin-bottom: 0.04in; border: none; padding: 0in"><span
+          class="var2">F</span></p>      </td>
+        <td bgcolor="#e6ecff"><p align="center"
+          style="margin-top: 0.04in; margin-bottom: 0.04in; border: none; padding: 0in"><span
+          class="var2">F</span></p>      </td>
+        <td><p align="center"
+          style="margin-top: 0.04in; margin-bottom: 0.04in; border: none; padding: 0in"> </p>      </td>
+        <td bgcolor="#e6ecff"><p align="center"
+          style="margin-top: 0.04in; margin-bottom: 0.04in; border: none; padding: 0in"><span
+          class="var2">T</span></p>      </td>
+        <td bgcolor="#e6ecff"><p align="center"
+          style="margin-top: 0.04in; margin-bottom: 0.04in; border: none; padding: 0in"><span
+          class="var2">F</span></p>      </td>
+        <td bgcolor="#e6ecff"><p align="center"
+          style="margin-top: 0.04in; margin-bottom: 0.04in; border: none; padding: 0in"><span
+          class="var2">F</span></p>      </td>
+      </tr>
+      <tr>
+        <td><p align="center"
+          style="margin-top: 0.04in; margin-bottom: 0.04in; border: none; padding: 0in"> </p>      </td>
+        <td><p align="center"
+          style="margin-top: 0.04in; margin-bottom: 0.04in; border: none; padding: 0in"> </p>      </td>
+        <td><p align="center"
+          style="margin-top: 0.04in; margin-bottom: 0.04in; border: none; padding: 0in"> </p>      </td>
+        <td><p align="center"
+          style="margin-top: 0.04in; margin-bottom: 0.04in; border: none; padding: 0in"> </p>      </td>
+        <td><p align="center"
+          style="margin-top: 0.04in; margin-bottom: 0.04in; border: none; padding: 0in"> </p>      </td>
+        <td bgcolor="#e6ecff"><p align="center"
+          style="margin-top: 0.04in; margin-bottom: 0.04in; border: none; padding: 0in"><span
+          class="var2">F</span></p>      </td>
+        <td bgcolor="#e6ecff"><p align="center"
+          style="margin-top: 0.04in; margin-bottom: 0.04in; border: none; padding: 0in"><span
+          class="var2">T</span></p>      </td>
+        <td bgcolor="#e6ecff"><p align="center"
+          style="margin-top: 0.04in; margin-bottom: 0.04in; border: none; padding: 0in"><span
+          class="var2">T</span></p>      </td>
+      </tr>
+      <tr>
+        <td><p align="center"
+          style="margin-top: 0.04in; margin-bottom: 0.04in; border: none; padding: 0in"> </p>      </td>
+        <td><p align="center"
+          style="margin-top: 0.04in; margin-bottom: 0.04in; border: none; padding: 0in"> </p>      </td>
+        <td><p align="center"
+          style="margin-top: 0.04in; margin-bottom: 0.04in; border: none; padding: 0in"> </p>      </td>
+        <td><p align="center"
+          style="margin-top: 0.04in; margin-bottom: 0.04in; border: none; padding: 0in"> </p>      </td>
+        <td><p align="center"
+          style="margin-top: 0.04in; margin-bottom: 0.04in; border: none; padding: 0in"> </p>      </td>
+        <td bgcolor="#e6ecff"><p align="center"
+          style="margin-top: 0.04in; margin-bottom: 0.04in; border: none; padding: 0in"><span
+          class="var2">F</span></p>      </td>
+        <td bgcolor="#e6ecff"><p align="center"
+          style="margin-top: 0.04in; margin-bottom: 0.04in; border: none; padding: 0in"><span
+          class="var2">T</span></p>      </td>
+        <td bgcolor="#e6ecff"><p align="center"
+          style="margin-top: 0.04in; margin-bottom: 0.04in; border: none; padding: 0in"><span
+          class="var2">F</span></p>      </td>
+      </tr>
+      <tr>
+        <td><p align="center"
+          style="margin-top: 0.04in; margin-bottom: 0.04in; border: none; padding: 0in"> </p>      </td>
+        <td><p align="center"
+          style="margin-top: 0.04in; margin-bottom: 0.04in; border: none; padding: 0in"> </p>      </td>
+        <td><p align="center"
+          style="margin-top: 0.04in; margin-bottom: 0.04in; border: none; padding: 0in"> </p>      </td>
+        <td><p align="center"
+          style="margin-top: 0.04in; margin-bottom: 0.04in; border: none; padding: 0in"> </p>      </td>
+        <td><p align="center"
+          style="margin-top: 0.04in; margin-bottom: 0.04in; border: none; padding: 0in"> </p>      </td>
+        <td bgcolor="#e6ecff"><p align="center"
+          style="margin-top: 0.04in; margin-bottom: 0.04in; border: none; padding: 0in"><span
+          class="var2">F</span></p>      </td>
+        <td bgcolor="#e6ecff"><p align="center"
+          style="margin-top: 0.04in; margin-bottom: 0.04in; border: none; padding: 0in"><span
+          class="var2">F</span></p>      </td>
+        <td bgcolor="#e6ecff"><p align="center"
+          style="margin-top: 0.04in; margin-bottom: 0.04in; border: none; padding: 0in"><span
+          class="var2">T</span></p>      </td>
+      </tr>
+      <tr>
+        <td><p align="center"
+          style="margin-top: 0.04in; margin-bottom: 0.04in; border: none; padding: 0in"> </p>      </td>
+        <td><p align="center"
+          style="margin-top: 0.04in; margin-bottom: 0.04in; border: none; padding: 0in"> </p>      </td>
+        <td><p align="center"
+          style="margin-top: 0.04in; margin-bottom: 0.04in; border: none; padding: 0in"> </p>      </td>
+        <td><p align="center"
+          style="margin-top: 0.04in; margin-bottom: 0.04in; border: none; padding: 0in"> </p>      </td>
+        <td><p align="center"
+          style="margin-top: 0.04in; margin-bottom: 0.04in; border: none; padding: 0in"> </p>      </td>
+        <td bgcolor="#e6ecff"><p align="center"
+          style="margin-top: 0.04in; margin-bottom: 0.04in; border: none; padding: 0in"><span
+          class="var2">F</span></p>      </td>
+        <td bgcolor="#e6ecff"><p align="center"
+          style="margin-top: 0.04in; margin-bottom: 0.04in; border: none; padding: 0in"><span
+          class="var2">F</span></p>      </td>
+        <td bgcolor="#e6ecff"><p align="center"
+          style="margin-top: 0.04in; margin-bottom: 0.04in; border: none; padding: 0in"><span
+          class="var2">F</span></p>      </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3 id="Basic_Truth_Tables_of_Five_Connectives">3.2.1 Basic Truth Tables of
+  the Five Connectives</h3>
+
+  <p>Formally, the following five basic truth tables define the five
+  connectives.</p>
+
+  <h4>The Truth Table of Negation</h4>
+
+  <p>The possible truth values of a negation are opposite to the possible truth
+  values of the statement it negates. If <em>p</em> is true, then <span
+  class="symb">&sim;</span><em>p</em> is
+  false. If <em>p</em> is false, then <span
+  class="symb">&sim;</span><em>p</em> is
+  true.</p>
+
+  <table class="box" style="margin-left: 62px">
+    <tbody>
+      <tr>
+        <td width="60px" bgcolor="#e6ecff" style="border-bottom: 1px solid black;"><p align="center"
+          style="margin-top: 0.02in; margin-bottom: 0.06in"><em>p</em></p>      </td>
+        <td width="80px" bgcolor="#e6ecff" style="border-bottom: 1px solid black;"><p align="center"
+          style="margin-top: 0.02in; margin-bottom: 0.06in"><span
+          class="symb">&sim;</span><em>p</em></p>      </td>
+      </tr>
+    </tbody>
+    <tbody>
+      <tr>
+        <td bgcolor="#e6ecff"><p align="center"
+          style="margin-top: 0.04in; margin-bottom: 0.04in; border: none; padding: 0in"><span
+          class="var2">T</span></p>      </td>
+        <td bgcolor="#e6ecff"><p align="center"
+          style="margin-top: 0.04in; margin-bottom: 0.04in; border: none; padding: 0in"><span
+          class="var2">F</span></p>      </td>
+      </tr>
+      <tr>
+        <td bgcolor="#e6ecff"><p align="center"
+          style="margin-top: 0.04in; margin-bottom: 0.04in; border: none; padding: 0in"><span
+          class="var2">F</span></p>      </td>
+        <td bgcolor="#e6ecff"><p align="center"
+          style="margin-top: 0.04in; margin-bottom: 0.04in; border: none; padding: 0in"><span
+          class="var2">T</span></p>      </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h4>The Truth Table of Conjunction</h4>
+
+  <p>A conjunction <em>p</em> <span class="symb">&#x2022;</span> <em>q</em> is
+  true only when both of its conjuncts are true. It is false in all other three
+  cases.</p>
+
+  <table class="box" style="margin-left: 62px">
+    <tbody>
+      <tr>
+        <td width="60px" bgcolor="#e6ecff" style="border-bottom: 1px solid black;"><p align="center"
+          style="margin-top: 0.02in; margin-bottom: 0.06in"><em>p</em></p>      </td>
+        <td width="60px" bgcolor="#e6ecff" style="border-bottom: 1px solid black;"><p align="center"
+          style="margin-top: 0.02in; margin-bottom: 0.06in"><em>q</em></p>      </td>
+        <td width="100px" bgcolor="#e6ecff" style="border-bottom: 1px solid black;"><p align="center"
+          style="margin-top: 0.02in; margin-bottom: 0.06in"><em>p</em> <span
+          class="symb">&#x2022;</span> <em>q</em></p>      </td>
+      </tr>
+    </tbody>
+    <tbody>
+      <tr>
+        <td bgcolor="#e6ecff"><p align="center"
+          style="margin-top: 0.04in; margin-bottom: 0.04in; border: none; padding: 0in"><span
+          class="var2">T</span></p>      </td>
+        <td bgcolor="#e6ecff"><p align="center"
+          style="margin-top: 0.04in; margin-bottom: 0.04in; border: none; padding: 0in"><span
+          class="var2">T</span></p>      </td>
+        <td bgcolor="#e6ecff"><p align="center"
+          style="margin-top: 0.04in; margin-bottom: 0.04in; border: none; padding: 0in"><span
+          class="var2">T</span></p>      </td>
+      </tr>
+      <tr>
+        <td bgcolor="#e6ecff"><p align="center"
+          style="margin-top: 0.04in; margin-bottom: 0.04in; border: none; padding: 0in"><span
+          class="var2">T</span></p>      </td>
+        <td bgcolor="#e6ecff"><p align="center"
+          style="margin-top: 0.04in; margin-bottom: 0.04in; border: none; padding: 0in"><span
+          class="var2">F</span></p>      </td>
+        <td bgcolor="#e6ecff"><p align="center"
+          style="margin-top: 0.04in; margin-bottom: 0.04in; border: none; padding: 0in"><span
+          class="var2">F</span></p>      </td>
+      </tr>
+      <tr>
+        <td bgcolor="#e6ecff"><p align="center"
+          style="margin-top: 0.04in; margin-bottom: 0.04in; border: none; padding: 0in"><span
+          class="var2">F</span></p>      </td>
+        <td bgcolor="#e6ecff"><p align="center"
+          style="margin-top: 0.04in; margin-bottom: 0.04in; border: none; padding: 0in"><span
+          class="var2">T</span></p>      </td>
+        <td bgcolor="#e6ecff"><p align="center"
+          style="margin-top: 0.04in; margin-bottom: 0.04in; border: none; padding: 0in"><span
+          class="var2">F</span></p>      </td>
+      </tr>
+      <tr>
+        <td bgcolor="#e6ecff"><p align="center"
+          style="margin-top: 0.04in; margin-bottom: 0.04in; border: none; padding: 0in"><span
+          class="var2">F</span></p>      </td>
+        <td bgcolor="#e6ecff"><p align="center"
+          style="margin-top: 0.04in; margin-bottom: 0.04in; border: none; padding: 0in"><span
+          class="var2">F</span></p>      </td>
+        <td bgcolor="#e6ecff"><p align="center"
+          style="margin-top: 0.04in; margin-bottom: 0.04in; border: none; padding: 0in"><span
+          class="var2">F</span></p>      </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h4>The Truth Table of Disjunction</h4>
+
+  <p>A disjunction <em>p</em> <span class="symb">&or;</span> <em>q</em> is
+  false only when both of its disjuncts are false. In the other three cases,
+  the disjunction is true.</p>
+
+  <table class="box" style="margin-left: 62px">
+    <tbody>
+      <tr>
+        <td width="60px" bgcolor="#e6ecff" style="border-bottom: 1px solid black;"><p align="center"
+          style="margin-top: 0.02in; margin-bottom: 0.06in"><em>p</em></p>      </td>
+        <td width="60px" bgcolor="#e6ecff" style="border-bottom: 1px solid black;"><p align="center"
+          style="margin-top: 0.02in; margin-bottom: 0.06in"><em>q</em></p>      </td>
+        <td width="100px" bgcolor="#e6ecff" style="border-bottom: 1px solid black;"><p align="center"
+          style="margin-top: 0.02in; margin-bottom: 0.06in"><em>p</em> <span
+          class="symb">&or;</span> <em>q</em></p>      </td>
+      </tr>
+    </tbody>
+    <tbody>
+      <tr>
+        <td bgcolor="#e6ecff"><p align="center"
+          style="margin-top: 0.04in; margin-bottom: 0.04in; border: none; padding: 0in"><span
+          class="var2">T</span></p>      </td>
+        <td bgcolor="#e6ecff"><p align="center"
+          style="margin-top: 0.04in; margin-bottom: 0.04in; border: none; padding: 0in"><span
+          class="var2">T</span></p>      </td>
+        <td bgcolor="#e6ecff"><p align="center"
+          style="margin-top: 0.04in; margin-bottom: 0.04in; border: none; padding: 0in"><span
+          class="var2">T</span></p>      </td>
+      </tr>
+      <tr>
+        <td bgcolor="#e6ecff"><p align="center"
+          style="margin-top: 0.04in; margin-bottom: 0.04in; border: none; padding: 0in"><span
+          class="var2">T</span></p>      </td>
+        <td bgcolor="#e6ecff"><p align="center"
+          style="margin-top: 0.04in; margin-bottom: 0.04in; border: none; padding: 0in"><span
+          class="var2">F</span></p>      </td>
+        <td bgcolor="#e6ecff"><p align="center"
+          style="margin-top: 0.04in; margin-bottom: 0.04in; border: none; padding: 0in"><span
+          class="var2">T</span></p>      </td>
+      </tr>
+      <tr>
+        <td bgcolor="#e6ecff"><p align="center"
+          style="margin-top: 0.04in; margin-bottom: 0.04in; border: none; padding: 0in"><span
+          class="var2">F</span></p>      </td>
+        <td bgcolor="#e6ecff"><p align="center"
+          style="margin-top: 0.04in; margin-bottom: 0.04in; border: none; padding: 0in"><span
+          class="var2">T</span></p>      </td>
+        <td bgcolor="#e6ecff"><p align="center"
+          style="margin-top: 0.04in; margin-bottom: 0.04in; border: none; padding: 0in"><span
+          class="var2">T</span></p>      </td>
+      </tr>
+      <tr>
+        <td bgcolor="#e6ecff"><p align="center"
+          style="margin-top: 0.04in; margin-bottom: 0.04in; border: none; padding: 0in"><span
+          class="var2">F</span></p>      </td>
+        <td bgcolor="#e6ecff"><p align="center"
+          style="margin-top: 0.04in; margin-bottom: 0.04in; border: none; padding: 0in"><span
+          class="var2">F</span></p>      </td>
+        <td bgcolor="#e6ecff"><p align="center"
+          style="margin-top: 0.04in; margin-bottom: 0.04in; border: none; padding: 0in"><span
+          class="var2">F</span></p>      </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h4>The Truth Table of Conditional</h4>
+
+  <p>A conditional is false only when its antecedent is true but its consequent
+  is false. This is so because <em>p</em> <span
+  class="symb">&sup;</span> <em>q</em> says that <em>p</em>
+  is a sufficient condition of <em>q</em>. Now if <em>p</em> is true but
+  <em>q</em> is false, then <em>p</em> cannot be a sufficient condition for
+  <em>q</em>. Consequently, the conditional <em>p</em>&nbsp;<span
+  class="symb">&sup;</span>&nbsp;<em>q</em> would be false.</p>
+
+  <table class="box" style="margin-left: 62px">
+    <tbody>
+      <tr>
+        <td width="60px" bgcolor="#e6ecff" style="border-bottom: 1px solid black;"><p align="center"
+          style="margin-top: 0.02in; margin-bottom: 0.06in"><em>p</em></p>      </td>
+        <td width="60px" bgcolor="#e6ecff" style="border-bottom: 1px solid black;"><p align="center"
+          style="margin-top: 0.02in; margin-bottom: 0.06in"><em>q</em></p>      </td>
+        <td width="100px" bgcolor="#e6ecff" style="border-bottom: 1px solid black;"><p align="center"
+          style="margin-top: 0.02in; margin-bottom: 0.06in"><em>p</em> <span
+          class="symb">&sup;</span> <em>q</em></p>      </td>
+      </tr>
+    </tbody>
+    <tbody>
+      <tr>
+        <td bgcolor="#e6ecff"><p align="center"
+          style="margin-top: 0.04in; margin-bottom: 0.04in; border: none; padding: 0in"><span
+          class="var2">T</span></p>      </td>
+        <td bgcolor="#e6ecff"><p align="center"
+          style="margin-top: 0.04in; margin-bottom: 0.04in; border: none; padding: 0in"><span
+          class="var2">T</span></p>      </td>
+        <td bgcolor="#e6ecff"><p align="center"
+          style="margin-top: 0.04in; margin-bottom: 0.04in; border: none; padding: 0in"><span
+          class="var2">T</span></p>      </td>
+      </tr>
+      <tr>
+        <td bgcolor="#e6ecff"><p align="center"
+          style="margin-top: 0.04in; margin-bottom: 0.04in; border: none; padding: 0in"><span
+          class="var2">T</span></p>      </td>
+        <td bgcolor="#e6ecff"><p align="center"
+          style="margin-top: 0.04in; margin-bottom: 0.04in; border: none; padding: 0in"><span
+          class="var2">F</span></p>      </td>
+        <td bgcolor="#e6ecff"><p align="center"
+          style="margin-top: 0.04in; margin-bottom: 0.04in; border: none; padding: 0in"><span
+          class="var2">F</span></p>      </td>
+      </tr>
+      <tr>
+        <td bgcolor="#e6ecff"><p align="center"
+          style="margin-top: 0.04in; margin-bottom: 0.04in; border: none; padding: 0in"><span
+          class="var2">F</span></p>      </td>
+        <td bgcolor="#e6ecff"><p align="center"
+          style="margin-top: 0.04in; margin-bottom: 0.04in; border: none; padding: 0in"><span
+          class="var2">T</span></p>      </td>
+        <td bgcolor="#e6ecff"><p align="center"
+          style="margin-top: 0.04in; margin-bottom: 0.04in; border: none; padding: 0in"><span
+          class="var2">T</span></p>      </td>
+      </tr>
+      <tr>
+        <td bgcolor="#e6ecff"><p align="center"
+          style="margin-top: 0.04in; margin-bottom: 0.04in; border: none; padding: 0in"><span
+          class="var2">F</span></p>      </td>
+        <td bgcolor="#e6ecff"><p align="center"
+          style="margin-top: 0.04in; margin-bottom: 0.04in; border: none; padding: 0in"><span
+          class="var2">F</span></p>      </td>
+        <td bgcolor="#e6ecff"><p align="center"
+          style="margin-top: 0.04in; margin-bottom: 0.04in; border: none; padding: 0in"><span
+          class="var2">T</span></p>      </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h4>The Truth Table of Biconditional</h4>
+
+  <p>A biconditional <em>p</em> <span
+  class="symb">&equiv;</span> <em>q</em> is true only when
+  both <em>p</em> and <em>q</em> share the same truth value. If <em>p</em> and
+  <em>q</em> have opposite truth values, then the biconditional is false.</p>
+
+  <table class="box" style="margin-left: 62px">
+    <tbody>
+      <tr>
+        <td width="60px" bgcolor="#e6ecff" style="border-bottom: 1px solid black;"><p align="center"
+          style="margin-top: 0.02in; margin-bottom: 0.06in"><em>p</em></p>      </td>
+        <td width="60px" bgcolor="#e6ecff" style="border-bottom: 1px solid black;"><p align="center"
+          style="margin-top: 0.02in; margin-bottom: 0.06in"><em>q</em></p>      </td>
+        <td width="100px" bgcolor="#e6ecff" style="border-bottom: 1px solid black;"><p align="center"
+          style="margin-top: 0.02in; margin-bottom: 0.06in"><em>p</em> <span
+          class="symb">&equiv;</span> <em>q</em></p>      </td>
+      </tr>
+    </tbody>
+    <tbody>
+      <tr>
+        <td bgcolor="#e6ecff"><p align="center"
+          style="margin-top: 0.04in; margin-bottom: 0.04in; border: none; padding: 0in"><span
+          class="var2">T</span></p>      </td>
+        <td bgcolor="#e6ecff"><p align="center"
+          style="margin-top: 0.04in; margin-bottom: 0.04in; border: none; padding: 0in"><span
+          class="var2">T</span></p>      </td>
+        <td bgcolor="#e6ecff"><p align="center"
+          style="margin-top: 0.04in; margin-bottom: 0.04in; border: none; padding: 0in"><span
+          class="var2">T</span></p>      </td>
+      </tr>
+      <tr>
+        <td bgcolor="#e6ecff"><p align="center"
+          style="margin-top: 0.04in; margin-bottom: 0.04in; border: none; padding: 0in"><span
+          class="var2">T</span></p>      </td>
+        <td bgcolor="#e6ecff"><p align="center"
+          style="margin-top: 0.04in; margin-bottom: 0.04in; border: none; padding: 0in"><span
+          class="var2">F</span></p>      </td>
+        <td bgcolor="#e6ecff"><p align="center"
+          style="margin-top: 0.04in; margin-bottom: 0.04in; border: none; padding: 0in"><span
+          class="var2">F</span></p>      </td>
+      </tr>
+      <tr>
+        <td bgcolor="#e6ecff"><p align="center"
+          style="margin-top: 0.04in; margin-bottom: 0.04in; border: none; padding: 0in"><span
+          class="var2">F</span></p>      </td>
+        <td bgcolor="#e6ecff"><p align="center"
+          style="margin-top: 0.04in; margin-bottom: 0.04in; border: none; padding: 0in"><span
+          class="var2">T</span></p>      </td>
+        <td bgcolor="#e6ecff"><p align="center"
+          style="margin-top: 0.04in; margin-bottom: 0.04in; border: none; padding: 0in"><span
+          class="var2">F</span></p>      </td>
+      </tr>
+      <tr>
+        <td bgcolor="#e6ecff"><p align="center"
+          style="margin-top: 0.04in; margin-bottom: 0.04in; border: none; padding: 0in"><span
+          class="var2">F</span></p>      </td>
+        <td bgcolor="#e6ecff"><p align="center"
+          style="margin-top: 0.04in; margin-bottom: 0.04in; border: none; padding: 0in"><span
+          class="var2">F</span></p>      </td>
+        <td bgcolor="#e6ecff"><p align="center"
+          style="margin-top: 0.04in; margin-bottom: 0.04in; border: none; padding: 0in"><span
+          class="var2">T</span></p>      </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3 id="Determining_Truth_Value_of_a_Compound_Statement">3.2.2 Determining
+  the Truth Value of a Compound Statement</h3>
+
+  <p>The truth value of a compound statement is
+  determined by the truth values of the simple statements it contains and the
+  basic truth tables of the five connectives. In the following example,</p>
+
+    <div style="width: 240px; height: 200px; border: none; margin: 0 0 0
+    54px"> <iframe class="sc65" src="TV_CS_1.html" style="width:
+    540px; height: 460px; border: none; overflow: hidden"></iframe>
+    </div>
+
+  <p>the statements <span class="var">C</span> and
+  <span class="var">D</span> are given as true,
+  but <span class="var">E</span> is given as
+  false. To determine the truth value of the conditional, we first write down
+  the given truth value under each letter. Afterwards, using the truth table of
+  conjunction, we can determine the truth value of the antecedent <span style="white-space: nowrap"><span
+  class="var">C <span class="symb">&#x2022;</span> D</span></span>. Because
+  both <span class="var">C</span> and <span
+  class="var">D</span> are true, <span style="white-space: nowrap"><span
+  class="var">C <span class="symb">&#x2022;</span> D</span></span> is true.
+  We then write down &ldquo;<span
+  class="var2">T</span>&rdquo; under the dot &ldquo;<span class="symb">&#x2022;</span>&rdquo; to
+  indicate that <span style="white-space: nowrap"><span
+  class="var">C <span class="symb">&#x2022;</span> D</span></span> is true.
+  Finally, since the antecedent <span style="white-space: nowrap"><span
+  class="var">C <span class="symb">&#x2022;</span> D</span></span> is true,
+  but the consequent <span class="var">E</span> is
+  false, the conditional is false. The final truth value is written under the
+  horseshoe &ldquo;<span
+  class="symb">&sup;</span>&rdquo;.</p>
+
+  <p>In the next example, the compound statement is a disjunction.</p>
+
+    <div style="width: 240px; height: 200px; border: none; margin: 0 0 0
+    54px"> <iframe class="sc65" src="TV_CS_2.html" style="width:
+    540px; height: 460px; border: none; overflow: hidden"></iframe>
+    </div>
+
+  <p style="margin-bottom: 0in">The statement <span
+  class="var">H</span> is given as true, but <span
+  class="var">G</span> and <span
+  class="var">K</span> false. To figure out the
+  truth value of the disjunction, we need to first determine the truth value of
+  the second disjunct <span class="symb">&sim;<span class="var">H</span>
+  &sup; <span class="var">K</span></span>. Since <span
+  class="var">H</span> is true, <span
+  class="symb">&sim;<span class="var">H</span></span> is false. We write
+  down &ldquo;<span class="var2">F</span>&rdquo; under the
+  tilde &ldquo;<span class="symb">&sim;</span>&rdquo;. Next,
+  since the antecedent <span
+  class="symb">&sim;<span class="var">H</span></span> is false and the
+  consequent <span class="var">K</span> is false,
+  the conditional <span class="symb">&sim;<span class="var">H</span> &sup;
+  <span class="var">K</span></span> is true. So we write down &ldquo;<span
+  class="var2">T</span>&rdquo; under the horseshoe
+  &ldquo;<span class="symb">&sup;</span>&rdquo;. In the last
+  step, we figure out that the disjunction is true because the first disjunct
+  <span class="var">G</span> is
+  false but the second disjunct <span
+  class="symb">&sim;<span class="var">H</span> &sup; <span class="var">K</span></span> is
+  true.</p>
+
+  <p>In the third example, we try to determine the
+  truth value of a biconditional statement from the given truth values that
+  <span class="var">A</span> and <span
+  class="var">D</span> are true, but <span
+  class="var">M</span> and <span
+  class="var">B</span> are false.</p>
+
+    <div style="width: 240px; height: 200px; border: none; margin: 0 0 0
+    54px"> <iframe class="sc65" src="TV_CS_3.html" style="width:
+    540px; height: 460px; border: none; overflow: hidden"></iframe>
+    </div>
+
+  <p>Since <span style="white-space: nowrap"><span class="var">M</span></span> is false, but
+  <span class="var">A</span> is true, from the third row in the truth table of biconditional, we know that
+  <span style="white-space: nowrap"><span class="var">M <span class="symb">&equiv;</span> A</span></span> is
+  false, and write down &ldquo;<span
+  class="var2">F</span>&rdquo; under the triple bar
+  &ldquo;<span class="symb">&equiv;</span>&rdquo;. We then
+  decide that <span style="white-space: nowrap"><span
+  class="var">D <span class="symb">&sup;</span> B</span></span> is false
+  because <span class="var">D</span> is true but
+  <span class="var">B</span> is false. Next we
+  write down &ldquo;<span class="var2">T</span>&rdquo; under
+  the tilde &ldquo;<span class="symb">&sim;</span>&rdquo; to
+  indicate that <span style="white-space: nowrap"><span
+  class="symb">&sim;</span><span class="var2">(</span><span class="var">M <span
+  class="symb">&equiv;</span> A<span class="var2">)</span></span></span>
+  is true. Finally, we can see that the whole conjunction is false because the
+  second conjunct is false.</p>
+
+  <h3 id="Three_Properties_of_Statement">3.2.3 Three Properties of Statement</h3>
+
+  <p>In Propositional Logic, a statement is tautologous, <span
+  style="font-variant: normal">s</span>elf-contradictory or contingent. Which
+  property it has is determined by its possible truth values.</p>
+
+  <h4>Tautology</h4>
+
+  <p>A statement is <strong>tautologous</strong> if it is logically true, that
+  is, if it is <em>logically impossible</em> for the statement to be false. If
+  we look at the truth table of a tautology, we would see that all its possible
+  truth values are <span class="var2">T</span><em>s</em>.
+  One of the simplest tautology is a disjunction such as <span style="white-space: nowrap"><span
+  class="var">D <span class="symb">&or;</span> <span class="symb">&sim;</span>D</span></span>.</p>
+
+    <div style="width: 240px; height: 150px; border: none; margin: 0 0 0
+    54px"> <iframe class="sc65" src="Tautology_1.html" style="width:
+    540px; height: 340px; border: none; overflow: hidden"></iframe>
+    </div>
+
+  <p>To see all the possible truth values of <span
+  class="var">D <span class="symb">&or;</span> <span class="symb">&sim;</span>D</span>, we
+  construct its truth table by first listing all the possible truth values of
+  the statement <span
+  class="var">D</span> under the
+  letter &ldquo;<span class="var">D</span>&rdquo;.
+  Next, we derive the truth values in the green column under the tilde
+  &ldquo;<span class="symb">&sim;</span>&rdquo; from the
+  column under the second &ldquo;<span
+  class="var">D</span>&rdquo;. The tilde column
+  highlighted in green lists all the possible truth values of <span
+  class="symb">&sim;</span><span class="var">D</span>. Finally, from the
+  column under the first &ldquo;<span
+  class="var">D</span>&rdquo; and the tilde
+  column, we can come up with all the possible truth values of <span
+  class="var">D <span class="symb">&or;</span> <span class="symb">&sim;</span>D</span>. They
+  are highlighted in red color, and since the red column under the wedge
+  &ldquo;<span class="symb">&or;</span>&rdquo; lists all the possible truth values of <span
+  class="var">D <span class="symb">&or;</span> <span class="symb">&sim;</span>D</span>, we
+  put a border around it to indicate that it is the final (or main) column in
+  the truth table. Notice that the two possible truth values in this column are
+  Ts. Since the truth table lists all the possible truth values, it shows that
+  it is logically impossible for <span
+  class="var">D <span class="symb">&or;</span> <span class="symb">&sim;</span>D</span> to be
+  false. Accordingly, it is a tautology.</p>
+
+  <p>The next tautology <span style="white-space: nowrap"><span
+  class="var">K <span class="symb">&sup;</span> <span class="var2">(</span>N <span
+  class="symb">&sup;</span> K<span class="var2">)</span></span></span> has two different letters: &ldquo;<span
+  class="var">K</span><span
+  style="font-variant: normal">&rdquo;</span> and &ldquo;<span
+  class="var">N</span><span
+  style="font-variant: normal">&rdquo;</span>. So its truth table has four
+  (2<sup>2</sup> = 4) rows.</p>
+
+    <div style="width: 240px; height: 196px; border: none; margin: 0 0 0
+    54px"> <iframe class="sc65" src="Tautology_2.html" style="width:
+    540px; height: 450px; border: none; overflow: hidden"></iframe>
+    </div>
+
+  <p>To construct the table, we put down the letter &ldquo;<span
+  class="var2">T</span>&rdquo; twice and then the letter
+  &ldquo;<span class="var2">F</span>&rdquo; twice under the
+  first letter from the left, the letter &ldquo;<span
+  class="var">K</span>&rdquo;. As a result, we
+  have &ldquo;<span class="var2">TTFF</span>&rdquo; under
+  the first &ldquo;<span
+  class="var">K</span>&rdquo; from the left. We
+  then repeat the column for the second &ldquo;<span
+  class="var">K</span>&rdquo;. Under &ldquo;<span
+  class="var">N</span>&rdquo;, the second letter
+  from the left, we write down one &ldquo;<span
+  class="var2">T</span>&rdquo; and then one &ldquo;<span
+  class="var2">F</span>&rdquo; in turn until the column is
+  completed. This results in having &ldquo;<span
+  class="var2">TFTF</span>&rdquo; under &ldquo;<span
+  class="var">N</span>&rdquo;. Next, we come up
+  with the possible truth values for <span
+  class="var">N&nbsp;<span class="symb">&sup;</span>&nbsp;K</span> since it
+  is inside the parentheses. The column is highlighted in green. Afterwards, we
+  derive the truth values for the first horseshoe (here highlighted in red)
+  based on the truth values in the first <span
+  class="var">K</span> column and the second
+  horseshoe column (i.e., the green column). Finally we put a border around the
+  first horseshoe column to show it is the final column. We see that all the
+  truth values in that column are all <span
+  class="var2">T</span><em>s</em>. So <span style="white-space: nowrap"><span
+  class="var">K <span class="symb">&sup;</span> <span class="var2">(</span>N <span
+  class="symb">&sup;</span> K<span class="var2">)</span></span></span>
+  is a tautology.</p>
+
+  <h4>Self-contradiction</h4>
+
+  <p>A statement is <strong>self-contradictory</strong> if it is logically
+  false, that is, if it is logically impossible for the statement to be true.
+  After completing the truth table of the conjunction <span style="white-space: nowrap"><span
+  class="var">D&nbsp;<span class="symb">&#x2022;</span>&nbsp;<span class="symb">&sim;</span>D</span></span>, we
+  see that all the truth values in the main column under the dot are <span
+  style="font-family: sans-serif">F</span><em>s</em>. The truth table
+  illustrates clearly that it is logically impossible for <span style="white-space: nowrap"><span
+  class="var">D&nbsp;<span class="symb">&#x2022;</span>&nbsp;<span class="symb">&sim;</span>D</span></span> to
+  be true.</p>
+
+    <div style="width: 240px; height: 150px; border: none; margin: 0 0 0
+    54px"> <iframe class="sc65" src="Self_Contradiction_1.html" style="width:
+    540px; height: 340px; border: none; overflow: hidden"></iframe>
+    </div>
+
+  <p>The conjunction <span
+  class="var">G <span class="symb">&#x2022;</span> <span class="symb">&sim;</span><span class="var2">(</span>H
+  <span class="symb">&sup;</span> G<span class="var2">)</span></span> has two distinct letters &ldquo;<span
+  class="var">G</span>&rdquo; and &ldquo;<span
+  class="var">H</span>&rdquo;, so its truth table
+  has four rows.</p>
+
+    <div style="width: 240px; height: 196px; border: none; margin: 0 0 0
+    54px"> <iframe class="sc65" src="Self_Contradiction_2.html" style="width:
+    540px; height: 450px; border: none; overflow: hidden"></iframe>
+    </div>
+
+  <p>We write down &ldquo;<span
+  class="var2">TTFF</span>&rdquo; under the first
+  &ldquo;<span class="var">G</span>&rdquo; from
+  the left, and then repeat the values under the second &ldquo;<span
+  class="var">G</span>&rdquo;. Under &ldquo;<span
+  class="var">H</span>&rdquo;, we put down
+  &ldquo;<span class="var2">TFTF</span>&rdquo;. We then
+  derive the truth values under the horseshoe from the <span
+  class="var">H</span> column and the second <span
+  class="var">G</span> column. Next, all the
+  possible truth values for <span style="white-space: nowrap"><span
+  class="symb">&sim;</span><span class="var2">(</span><span class="var">H&nbsp;<span
+  class="symb">&sup;</span>&nbsp;G<span class="var2">)</span></span></span> are
+  listed under the tilde (highlighted in blue). Notice they are opposite to the
+  truth values in the horseshoe column. Afterwards, we use the first <span
+  class="var">G</span> column and the tilde column
+  to come up with the truth values listed under the dot. Since they are all
+  <span class="var2">F</span><em>s</em>, <span style="white-space: nowrap"><span
+  class="var">G <span class="symb">&#x2022;</span>&nbsp;<span class="symb">&sim;</span><span class="var2">(</span>H&nbsp;<span
+  class="symb">&sup;</span>&nbsp;G<span class="var2">)</span></span></span>
+  is a self-contradiction.</p>
+
+  <h4>Contingent Statements</h4>
+
+  <p>A statement is <strong>contingent</strong> if it is neither tautologous
+  nor self-contradictory. In other words, it is logically possible for the
+  statement to be true and it is also logically possible for it to be false.
+  The conditional <span style="white-space: nowrap"><span
+  class="var">D&nbsp;<span class="symb">&sup;</span>&nbsp;<span class="symb">&sim;</span>D</span></span> is
+  contingent because its final column contains both a <span
+  class="var2">T</span> and a <span
+  class="var2">F</span>. Since each row in the truth table
+  represents one logical possibility, this shows that it is logically possible
+  for <span style="white-space: nowrap"><span
+  class="var">D&nbsp;<span class="symb">&sup;</span>&nbsp;<span class="symb">&sim;</span>D</span></span> to be
+  true, as well as for it to be false.</p>
+
+    <div style="width: 240px; height: 150px; border: none; margin: 0 0 0
+    54px"> <iframe class="sc65" src="Contingent_1.html" style="width:
+    540px; height: 340px; border: none; overflow: hidden"></iframe>
+    </div>
+
+  <p>In constructing the truth table for <span
+  class="var">B <span class="symb">&equiv;</span> <span class="var2">(</span><span class="symb">&sim;</span>E <span
+  class="symb">&sup;</span> B<span class="var2">)</span></span>, we need to first come up with the truth values for <span
+  class="symb">&sim;</span><span class="var">E</span> because it is the
+  antecedent of the conditional <span style="white-space: nowrap"><span
+  class="symb">&sim;</span><span class="var">E <span class="symb">&sup;</span> B</span></span>
+  inside the parentheses. We then use the truth values under the tilde and the
+  second &ldquo;<span class="var">B</span>&rdquo;
+  to derive the truth values for the horseshoe column. Next we come up with the
+  column under the triple bar from the first <span
+  class="var">B</span> column and the horseshoe
+  column. The final column has three <span
+  class="var2">T</span><em>s</em>, representing the logical
+  possibility of being true, and one <span
+  class="var2">F</span>, representing the logical
+  possibility of being false. Since its main column contains both <span
+  class="var2">T</span> and <span
+  class="var2">F</span>, <span style="white-space: nowrap"><span
+  class="var">B <span class="symb">&equiv;</span> <span class="var2">(</span><span
+  class="symb">&sim;</span>E <span
+  class="symb">&sup;</span> B<span class="var2">)</span></span></span>
+  is contingent.</p>
+
+    <div style="width: 240px; height: 196px; border: none; margin: 0 0 0
+    54px"> <iframe class="sc65" src="Contingent_2.html" style="width:
+    540px; height: 450px; border: none; overflow: hidden"></iframe>
+    </div>
+
+  <h3 id="Relations_between_Statements">3.2.4 Relations between Two Statements</h3>
+
+  <p>By comparing all the possible truth values of two statements, we can
+  determine which of the following logical relations exists between them:
+  logical equivalence, contradiction, consistency and inconsistency.</p>
+
+  <h4>Logical Equivalence</h4>
+
+  <p>Two statements are <strong>logically equivalent</strong> if they
+  <em>necessarily</em> have the same truth value. This means that their
+  possible truth values listed in the two final columns are the same in each
+  row.</p>
+
+  <p>To see whether the pair of statements <span
+  class="var">K <span class="symb">&sup;</span> H</span> and <span
+  class="symb">&sim;</span><span class="var">H <span class="symb">&sup;</span> <span
+  class="symb">&sim;</span>K</span>
+  are logically equivalent to each other, we construct a truth table for each
+  statement.</p>
+
+    <div style="width: 360px; height: 196px; border: none; margin: 0 0 0
+    54px"> <iframe class="sc65" src="Equivalence_1.html" style="width:
+    720px; height: 450px; border: none; overflow: hidden"></iframe>
+    </div>
+
+  <p></p>
+
+  <p>Notice in both truth tables, the statement <span
+  class="var">K</span> has the truth value
+  distribution <span class="var2">TTFF</span>, and <span
+  class="var">H</span> has the truth value
+  distribution <span class="var2">TFTF</span>. This is
+  crucial because we need to make sure that we are dealing with the same truth
+  value distributions in each row. For instance, in the third row, <span
+  class="var">K</span> is false but <span
+  class="var">H</span> is true in both truth
+  tables. After we complete both truth tables, we see that the two main (or
+  final) columns are identical to each other. This shows that the two
+  statements are logically equivalent.</p>
+
+  <p>It is important to be able to tell whether two English sentences are
+  logically equivalent. To see whether these two statements</p>
+  <ol class="display">
+    <li>The stock market will fall if interest rates are raised.</li>
+    <li>The stock market won&rsquo;t fall only if interest rates are not
+      raised. </li>
+  </ol>
+
+  <p>are logically equivalent, we first symbolize them as <span
+  class="var">R <span class="symb">&sup;</span> F</span> and <span style="white-space: nowrap"><span
+  class="symb">&sim;</span><span class="var">F <span class="symb">&sup;</span> <span
+  class="symb">&sim;</span>R</span></span>.
+  We then construct their truth tables.</p>
+
+    <div style="width: 360px; height: 196px; border: none; margin: 0 0 0
+    54px"> <iframe class="sc65" src="Equivalence_2.html" style="width:
+    720px; height: 450px; border: none; overflow: hidden"></iframe>
+    </div>
+
+  <p>Since the final two columns are identical, indeed they are logically
+  equivalent.</p>
+
+  <h4>Contradiction</h4>
+
+  <p>Two statements are <strong>contradictory</strong> to each other if they
+  <em>necessarily</em> have the opposite truth values. This means that their
+  truth values in the final columns are opposite in every row of the truth
+  tables. After completing the truth tables for <span
+  class="var">D <span class="symb">&sup;</span> B</span> and <span
+  class="var">D <span class="symb">&#x2022;</span> <span class="symb">&sim;</span>B</span>, we
+  can see clearly from the two final columns that they are contradictory to
+  each other.</p>
+
+    <div style="width: 360px; height: 196px; border: none; margin: 0 0 0
+    54px"> <iframe class="sc65" src="Contradiction_1.html" style="width:
+    720px; height: 450px; border: none; overflow: hidden"></iframe>
+    </div>
+
+  <h4>Consistency</h4>
+
+  <p>Two statements are <strong>consistent</strong> if it is <em>logically
+  possible</em> for both of them to be true. This means that there is at least
+  one row in which the truth values in both the final columns are true.</p>
+
+  <p>To find out whether <span class="symb">&sim;</span><span class="var">A
+  <span class="symb">&#x2022;</span> <span class="symb">&sim;</span>R</span> and <span
+  class="symb">&sim;</span><span class="var2">(</span><span class="var">R <span
+  class="symb">&#x2022;</span> A<span class="var2">)</span></span>
+  are consistent with each other, we construct their truth tables below.</p>
+
+    <div style="width: 360px; height: 196px; border: none; margin: 0 0 0
+    54px"> <iframe class="sc65" src="Consistency_1.html" style="width:
+    720px; height: 450px; border: none; overflow: hidden"></iframe>
+    </div>
+
+  <p>Notice again that we have to write down &ldquo;<span
+  class="var2">TTFF</span>&rdquo; under both &ldquo;<span
+  class="var">A</span>&rdquo;, and then
+  &ldquo;<span class="var2">TFTF</span>&rdquo; under both
+  &ldquo;<span class="var">R</span>&rdquo;. After
+  both truth tables are completed, we can see that in the fourth row of the
+  final column each statement has <span
+  class="var2">T</span> as its truth value. Since each row
+  stands for a logical possibility, this means that it is logically possible
+  for both of them to be true. So they are consistent with each other.</p>
+
+  <p>If we cannot find at least one row in which the truth values in both the
+  final columns are true, then the two statements are
+  <strong>inconsistent</strong>. That is, it is not logically possible for both
+  of them to be true. In other words, at least one of them <em>must</em> be
+  false. Therefore, if it comes to our attention that two statements are
+  inconsistent, then we must reject at least one of them as false. Failure to
+  do so would mean being illogical.</p>
+
+  <p>In the final columns of the truth tables of <span
+  class="var">M <span class="symb">&#x2022;</span> S</span> and <span
+  class="symb">&sim;</span><span class="var2">(</span><span class="var">M <span
+  class="symb">&equiv;</span> S<span class="var2">)</span></span>,
+  we do not find a row in which both statements are true. This shows that they
+  are inconsistent with each other, and at least one of them must be false.</p>
+
+    <div style="width: 360px; height: 196px; border: none; margin: 0 0 0
+    54px"> <iframe class="sc65" src="Inconsistency_1.html" style="width:
+    720px; height: 450px; border: none; overflow: hidden"></iframe>
+    </div>
+
+  <p>There can be more than one logical relation between two statements. If two
+  statements are contradictory to each other, then they would have opposite
+  truth values in every row of the main columns. As a result, there cannot be a
+  row in which both statements are true. This means that they must also be
+  inconsistent to each other. However, if two statements are inconsistent, it
+  does not follow that they must be contradictory to each other. The above
+  pair, <span style="white-space: nowrap"><span
+  class="var">M <span class="symb">&#x2022;</span> S</span></span> and <span
+  style="white-space: nowrap"><span class="symb">&sim;</span><span
+  class="var2">(</span><span class="var">M <span
+  class="symb">&equiv;</span> S<span class="var2">)</span></span></span>
+  are inconsistent, but not contradictory to each other. The last row of the
+  two final columns shows that it is logically possible for both statements to
+  be false.</p>
+
+  <p>For logically equivalent statements to be consistent with one another,
+  they have to meet the condition that none of them is a self-contradictory
+  statement. The final column of a self-contradictory statement contains no
+  <span class="var2">T</span>. So it is not logically
+  possible for a pair of self-contradictory statements to be consistent with
+  each other.</p>
+
+  <h3 id="Truth_Tables_for_Arguments">3.2.5 Truth Tables for Arguments</h3>
+
+  <p>A deductive argument is valid if its conclusion <em>necessarily</em>
+  follows from its premises. That is, if the premises are true, then the
+  conclusion <em>must</em> be true. This means that if it is <em>logically
+  possible</em> for the premises to be true but the conclusion false, then the
+  argument is invalid. Since a truth table lists all logical possibilities, we
+  can use it to determine whether a deductive argument is valid. The whole
+  process has three steps:</p>
+  <ol class="display">
+    <li>Symbolize the deductive argument;</li>
+    <li>Construct the truth table for the argument;</li>
+    <li>Determine the validity&mdash;look to see if there is at least one row
+      in the truth table in which the premises are true but the conclusion
+      false. If such a row is found, this would mean that it is logically
+      possible for the premises to be true but the conclusion false.
+      Accordingly, the argument is invalid. If such a row is not found, this
+      would mean that it is not logically possible to have true premises with a
+      false conclusion. Therefore, the argument is valid.</li>
+  </ol>
+
+  <p>To decide whether the argument</p>
+
+  <table class="box">
+    <tbody>
+      <tr valign="top">
+        <td width="520px">If young people don&rsquo;t have good economic
+          opportunities, there would be more gang violence. Since there is more
+          gang violence, young people don&rsquo;t have good economic
+          opportunities.</td>
+        <td width="80px" valign="bottom" align="center"><span
+          style="font-family: sans-serif; font-size: .8em"><span
+          style="background: #e6ecff">3.2a</span></span> </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p>is valid, we first symbolize each statement to come up with the argument
+  form. Next, we line up the three statements horizontally, separating the two
+  premises with a single vertical line, and the premises and the conclusion
+  with a double vertical line.</p>
+
+    <div style="width: 400px; height: 210px; border: none; margin: 0 0 0
+    54px"> <iframe class="sc70" src="TT_Argument_A.html" style="width:
+    800px; height: 420px; border: none; overflow: hidden"></iframe>
+    </div>
+
+  <p>Afterwards, we write down &ldquo;<span
+  class="var2">TTFF</span>&rdquo; under &ldquo;<span
+  class="var">O</span>&rdquo; and &ldquo;<span
+  class="var2">TFTF</span>&rdquo; under &ldquo;<span
+  class="var">V</span>&rdquo;. We then derive the
+  truth values for <span
+  class="symb">&sim;</span><span class="var">O</span>. Next, we complete the
+  column under the horseshoe and put a border around it. We then complete the
+  column for the second premise <em
+  class="var">V</em> and the conclusion
+  <span
+  class="symb">&sim;</span><span class="var">O</span>.
+  The three columns with borders list all the possible truth values for the
+  three statements. To determine the validity of (3.2a), we go over the three
+  main columns row by row to see whether there is a row in which the premises
+  are true, but the conclusion false. We find such a case in the first row.
+  This means that it is logically possible for the premises to be true, but the
+  conclusion false. So (3.2a) is invalid.</p>
+
+  <p>To determine whether Argument (3.2b) is valid, we check the three final
+  columns row by row to see if there is a row in which the premises are true
+  but the conclusion false. We do not find such a row. So (3.2b) is valid.</p>
+
+  <table class="box">
+    <thead>
+      <tr valign="bottom">
+        <td width="520px">Psychics can foretell the future only if the future
+        has been determined. But the future has not been determined. It follows
+        that psychics cannot foretell the future. </td>
+        <td width="80px" valign="bottom" align="center"><span
+          style="font-family: sans-serif; font-size: .8em"><span
+          style="background: #e6ecff">3.2b</span></span> </td>
+      </tr>
+    </thead>
+  </table>
+
+    <div style="width: 400px; height: 210px; border: none; margin: 12px 0 0
+    54px"> <iframe class="sc70" src="TT_Argument_B.html" style="width:
+    800px; height: 420px; border: none; overflow: hidden"></iframe>
+    </div>
+
+  <p align="left">In the next example, there are three different letters in the
+  argument form of (3.2c). So its truth table has eight (2<sup>3</sup> = 8)
+  rows. To exhaust all possible truth value combinations, we write down
+  &ldquo;<span class="var2">TTTTFFFF</span>&rdquo; under the
+  first letter from the left, &ldquo;<span
+  class="var">E</span>&rdquo;. For the second
+  letter from the left, &ldquo;<span
+  class="var">F</span>&rdquo;, we put down
+  &ldquo;<span class="var2">TTFFTTFF</span>&rdquo;, and for
+  the third, &ldquo;<span
+  class="var">P</span>&rdquo;, &ldquo;<span
+  class="var2">TFTFTFTF</span>&rdquo;. For the first
+  premise, we first come up with the truth value for <span
+  class="var">F <span class="symb">&#x2022;</span>
+  P</span> and write down the truth values under the dot. We then
+  derive the truth values under the horseshoe using the first <span
+  class="var">E</span> column and the dot column.
+  Next, we fill out the columns for <span
+  class="symb">&sim;</span><span class="var">E</span> and
+  <span class="symb">&sim;</span><span class="var">P</span>.
+  After the truth table is completed, we go over the three main columns to see
+  if there is at least one row with true premises but a false conclusion. We
+  find such a case in the fifth and the seventh rows. So the argument is
+  invalid.</p>
+
+  <table class="box">
+    <thead>
+      <tr valign="bottom">
+        <td width="520px">Public education will improve only if funding for
+          education is increased and parents are more involved in the education
+          process. Since public education is not improving, we can conclude
+          that there is not enough parental involvement in the education
+          process. </td>
+        <td width="80px" valign="bottom" align="center"><span
+          style="font-family: sans-serif; font-size: .8em"><span
+          style="background: #e6ecff">3.2c</span></span> </td>
+      </tr>
+    </thead>
+  </table>
+
+    <div style="width: 420px; height: 280px; border: none; margin: 12px 0 0
+    54px"> <iframe class="sc70" src="TT_Argument_C.html" style="width:
+    840px; height: 560px; border: none; overflow: hidden"></iframe>
+    </div>
+
+  <p>Notice the next argument (3.2d) has three premises. After symbolization,
+  its argument form contains three different letters. So its truth table has
+  eight rows. After completing the truth table, we check each row of the four
+  final columns, looking for rows with true premises but a false conclusion. We
+  do not find any. So (3.2d) is valid.</p>
+
+  <table class="box">
+    <thead>
+      <tr valign="top">
+        <td width="520px">If more money is spent on building prisons, then less
+          money would go to education. But kids would not be well-educated if
+          less money goes to education. We have spent more money building
+          prisons. As a result, kids would not be well-educated. </td>
+        <td width="80px" valign="bottom" align="center"><span
+          style="font-family: sans-serif; font-size: .8em"><span
+          style="background: #e6ecff">3.2d</span></span> </td>
+      </tr>
+    </thead>
+  </table>
+
+    <div style="width: 450px; height: 280px; border: none; margin: 12px 0 0
+    54px"> <iframe class="sc70" src="TT_Argument_D.html" style="width:
+    900px; height: 560px; border: none; overflow: hidden"></iframe>
+    </div>
+
+
+  <h3 id="Ex32">Exercise 3.2</h3>
+
+  <ol class="ex_sec">
+    <li>Determine the truth-values of the following symbolized statements. Let
+      <span class="var">A</span>,
+      <span class="var">B</span>,
+      and <span
+      class="var">C</span> be true;
+      <span class="var">G</span>,
+      <span class="var">H</span>,
+      and <span
+      class="var">K</span>, false;
+      <span class="var">M</span>
+      and <span
+      class="var">N</span>, unknown
+      truth-value. You need to show how you determine the truth-value step by
+      step.</li>
+  </ol>
+  <ol class="ex_q">
+    <li><span class="var">A <span
+      class="symb">&#x2022;</span> <span class="symb">&sim;</span>G</span></li>
+    <li><span class="symb">&sim;</span><span class="var">A <span class="symb">&or;</span> G</span></li>
+    <li><span class="symb">&sim;</span><span class="var2">(</span><span class="var">A <span
+      class="symb">&sup;</span> G<span class="var2">)</span></span></li>
+    <li><span class="symb">&sim;</span><span class="var">G <span
+      class="symb">&equiv;</span> <span class="var2">(</span>B <span
+      class="symb">&sup;</span> K<span class="var2">)</span></span></li>
+    <li><span class="var2">(</span><span class="var">A <span class="symb">&sup;</span> <span
+      class="symb">&sim;</span>C<span class="var2">)</span> <span class="symb">&or;</span> C</span></li>
+    <li><span class="var">B <span
+      class="symb">&#x2022;</span> <span class="var2">(</span><span
+      class="symb">&sim;</span>H <span class="symb">&sup;</span> A<span
+      class="var2">)</span></span></li>
+    <li><span class="var">M <span class="symb">&sup;</span> <span class="symb">&sim;</span>G</span></li>
+    <li><span class="var2">(</span><span class="var">M <span class="symb">&or;</span> <span
+      class="symb">&sim;</span>A<span class="var2">)</span> <span
+      class="symb">&or;</span> H</span></li>
+    <li><span class="var2">(</span><span class="var">N <span
+      class="symb">&#x2022;</span> <span class="symb">&sim;</span>N<span class="var2">)</span> <span
+      class="symb">&equiv;</span> <span class="symb">&sim;</span>K</span></li>
+    <li><span class="symb">&sim;</span><span class="var2">(</span><span class="var">M
+      <span class="symb">&or;</span> <span class="symb">&sim;</span>M<span
+      class="var2">)</span> <span class="symb">&sup;</span> N</span></li>
+  </ol>
+  <ol class="ex_sec" start="2">
+    <li>Use the truth table to decide whether each of the following symbolized
+      statements is tautologous, self-contradictory or contingent.</li>
+  </ol>
+  <ol class="ex_q">
+    <li><span class="symb">&sim;</span><span class="var">G <span class="symb">&sup;</span> G</span></li>
+      <script type="text/javascript">
+      AC_FL_RunContent( 'type','application/x-shockwave-flash','data','TT_Property_01.swf','width','500','height','300','movie',     'TT_Property_01' ); //end AC code
+      </script><noscript><object type="application/x-shockwave-flash" data="TT_Property_01.swf" width="500" height="300">
+      <param name="movie" value="TT_Property_01.swf">
+      </object></noscript>
+    <li><span class="var">D <span class="symb">&sup;</span> <span
+      class="var2">(</span>B <span class="symb">&or;</span> <span class="symb">&sim;</span>B<span
+      class="var2">)</span></span></li>
+      <script type="text/javascript">
+      AC_FL_RunContent( 'type','application/x-shockwave-flash','data','TT_Property_02.swf','width','500','height','300','movie',     'TT_Property_02' ); //end AC code
+      </script><noscript><object type="application/x-shockwave-flash" data="TT_Property_02.swf" width="500" height="300">
+      <param name="movie" value="TT_Property_02.swf">
+      </object></noscript>
+    <li><span class="var">K <span
+      class="symb">&#x2022; <span class="var2">(</span>&sim;</span>M <span
+      class="symb">&or;</span> <span class="symb">&sim;</span>K<span class="var2">)</span></span></li>
+      <script type="text/javascript">
+      AC_FL_RunContent( 'type','application/x-shockwave-flash','data','TT_Property_03.swf','width','500','height','300','movie',     'TT_Property_03' ); //end AC code
+      </script><noscript><object type="application/x-shockwave-flash" data="TT_Property_03.swf" width="500" height="300">
+      <param name="movie" value="TT_Property_03.swf">
+      </object></noscript>
+    <li><span class="var2">(</span><span class="var">S <span class="symb">&sup;</span>
+      H<span class="var2">)</span> <span class="symb">&equiv;</span> <span
+      class="var2">(</span><span class="symb">&sim;</span>H <span class="symb">&#x2022;</span> S<span
+      class="var2">)</span></span></li>
+      <script type="text/javascript">
+      AC_FL_RunContent( 'type','application/x-shockwave-flash','data','TT_Property_04.swf','width','500','height','300','movie',     'TT_Property_04' ); //end AC code
+      </script><noscript><object type="application/x-shockwave-flash" data="TT_Property_04.swf" width="500" height="300">
+      <param name="movie" value="TT_Property_04.swf">
+      </object></noscript>
+    <li><span class="var2">(</span><span class="var">R <span class="symb">&sup;</span>
+        E<span class="var2">)</span> <span class="symb">&or;</span> <span class="symb">&sim;</span>H</span></li>
+      <script type="text/javascript">
+      AC_FL_RunContent( 'type','application/x-shockwave-flash','data','TT_Property_05.swf','width','500','height','300','movie',     'TT_Property_05' ); //end AC code
+      </script><noscript><object type="application/x-shockwave-flash" data="TT_Property_05.swf" width="500" height="300">
+      <param name="movie" value="TT_Property_05.swf">
+      </object></noscript>
+    <li><span class="var2">(</span><span class="var">N <span
+      class="symb">&#x2022;</span> <span class="symb">&sim;</span><span class="var2">(</span>D <span
+      class="symb">&or;</span> <span class="symb">&sim;</span>E<span class="var2">))</span> <span
+      class="symb">&equiv;</span> D</span></li>
+      <script type="text/javascript">
+      AC_FL_RunContent( 'type','application/x-shockwave-flash','data','TT_Property_06.swf','width','500','height','300','movie',     'TT_Property_06' ); //end AC code
+      </script><noscript><object type="application/x-shockwave-flash" data="TT_Property_06.swf" width="500" height="300">
+      <param name="movie" value="TT_Property_06.swf">
+      </object></noscript>
+  </ol>
+  <ol class="ex_sec" start="3">
+    <li>Use truth tables to determine whether each pair of statements are
+      logically equivalent, contradictory, consistent or inconsistent. If
+      necessary, symbolize the statements. <strong>Identify all the relations
+      between the statements</strong>.</li>
+  </ol>
+  <ol class="ex_q">
+    <li><span class="var">G <span class="symb">&#x2022;</span> <span
+      class="symb">&sim;</span>D</span><br><span class="var">D <span
+      class="symb">&or;</span> <span class="symb">&sim;</span>G</span></li>
+      <script type="text/javascript">
+      AC_FL_RunContent( 'type','application/x-shockwave-flash','data','TT_Relation_01.swf','width','600','height','300','movie',     'TT_Relation_01' ); //end AC code
+      </script><noscript><object type="application/x-shockwave-flash" data="TT_Relation_01.swf" width="600" height="300">
+      <param name="movie" value="TT_Relation_01.swf">
+      </object></noscript>
+    <li><span class="symb">&sim;</span><span class="var2">(</span><span
+      class="var">M <span class="symb">&sup;</span> B<span
+      class="var2">)</span></span><br><span class="symb">&sim;</span><span
+      class="var">B <span class="symb">&#x2022;</span> <span
+      class="symb">&sim;</span>M</span></li>
+      <script type="text/javascript">
+      AC_FL_RunContent( 'type','application/x-shockwave-flash','data','TT_Relation_02.swf','width','660','height','300','movie',     'TT_Relation_02' ); //end AC code
+      </script><noscript><object type="application/x-shockwave-flash" data="TT_Relation_02.swf" width="660" height="300">
+      <param name="movie" value="TT_Relation_02.swf">
+      </object></noscript>
+    <li><span class="symb">&sim;</span><span class="var">A <span
+      class="symb">&equiv;</span> C</span><br>
+      <span class="var2">(</span><span class="var">A <span
+      class="symb">&#x2022;</span> <span class="symb">&sim;</span>C<span
+      class="var2">)</span> <span class="symb">&or;</span> <span
+      class="var2">(</span>C <span class="symb">&#x2022;</span> <span
+      class="symb">&sim;</span>A<span class="var2">)</span></span></li>
+      <script type="text/javascript">
+      AC_FL_RunContent( 'type','application/x-shockwave-flash','data','TT_Relation_03.swf','width','660','height','300','movie',     'TT_Relation_03' ); //end AC code
+      </script><noscript><object type="application/x-shockwave-flash" data="TT_Relation_03.swf" width="660" height="300">
+      <param name="movie" value="TT_Relation_03.swf">
+      </object></noscript>
+    <li><span class="var">J <span class="symb">&sup;</span> <span class="symb">&sim;</span><span
+      class="var2">(</span>L <span class="symb">&or;</span> N<span
+      class="var2">)</span></span><br>
+      <span class="var2">(</span><span class="symb">&sim;</span><span class="var">L <span
+      class="symb">&sup;</span> N<span class="var2">)</span> <span class="symb">&#x2022;</span> J</span></li>
+      <script type="text/javascript">
+      AC_FL_RunContent( 'type','application/x-shockwave-flash','data','TT_Relation_04.swf','width','660','height','300','movie',     'TT_Relation_04' ); //end AC code
+      </script><noscript><object type="application/x-shockwave-flash" data="TT_Relation_04.swf" width="660" height="300">
+      <param name="movie" value="TT_Relation_04.swf">
+      </object></noscript>
+    <li><span class="symb">&sim;</span><span class="var2">((</span><span class="var">E
+      <span class="symb">&sup;</span> K<span class="var2">)</span> <span
+      class="symb">&#x2022;</span> <span class="symb">&sim;</span>O<span class="var2">)</span></span><br>
+      <span class="var">O <span class="symb">&or;</span> <span class="var2">(</span>E <span
+      class="symb">&#x2022;</span> <span class="symb">&sim;</span>K<span class="var2">)</span></span></li>
+      <script type="text/javascript">
+      AC_FL_RunContent( 'type','application/x-shockwave-flash','data','TT_Relation_05.swf','width','660','height','300','movie',     'TT_Relation_05' ); //end AC code
+      </script><noscript><object type="application/x-shockwave-flash" data="TT_Relation_05.swf" width="660" height="300">
+      <param name="movie" value="TT_Relation_05.swf">
+      </object></noscript>
+    <li><span class="symb">&sim;</span><span class="var2">(</span><span class="var">H <span
+      class="symb">&or;</span> <span class="symb">&sim;</span><span
+      class="var2">(</span>R <span class="symb">&#x2022;</span> S<span class="var2">))</span></span><br>
+      <span class="var2">(</span><span class="symb">&sim;</span><span
+      class="var">S <span class="symb">&#x2022;</span> R<span class="var2">)</span> <span
+      class="symb">&sup;</span> <span class="symb">&sim;</span>H</span></li>
+      <script type="text/javascript">
+      AC_FL_RunContent( 'type','application/x-shockwave-flash','data','TT_Relation_06.swf','width','660','height','300','movie',     'TT_Relation_06' ); //end AC code
+      </script><noscript><object type="application/x-shockwave-flash" data="TT_Relation_06.swf" width="660" height="300">
+      <param name="movie" value="TT_Relation_06.swf">
+      </object></noscript>
+    <li>If Steve does not support you, then he is not your friend. (S, F) <br>
+      If Steve supports you, then he is your friend. (S, F)</li>
+    <li>If someone loves you, then she or he is nice to you. (L, N)<br>
+      If someone is nice to you, then she or he loves you. (N, L)</li>
+    <li>Without campaign finance reform people would not have equal access to
+      political power. (C, E)<br>
+      With campaign finance reform people would have equal access to political
+      power. (C, E)</li>
+    <li>The economy will slow down unless consumer confidence stays high and
+      inflation is under control. (S, H, U)<br>
+      The economy will slow down if consumer confidence does not stay high and
+      inflation is not under control. (S, H, U)</li>
+  </ol>
+  <ol class="ex_sec" start="4">
+    <li>Symbolize the arguments and then use the truth table to decide whether
+      they are valid.</li>
+  </ol>
+  <ol class="ex_q">
+    <li>&nbsp;</li>
+      <script type="text/javascript">
+      AC_FL_RunContent( 'type','application/x-shockwave-flash','data','TT_Argument_01.swf','width','660','height','400','movie',     'TT_Argument_01' ); //end AC code
+      </script><noscript><object type="application/x-shockwave-flash" data="TT_Argument_01.swf" width="660" height="400">
+      <param name="movie" value="TT_Argument_01.swf">
+      </object></noscript>
+    <li>&nbsp;</li>
+      <script type="text/javascript">
+      AC_FL_RunContent( 'type','application/x-shockwave-flash','data','TT_Argument_02.swf','width','660','height','400','movie',     'TT_Argument_02' ); //end AC code
+      </script><noscript><object type="application/x-shockwave-flash" data="TT_Argument_02.swf" width="660" height="400">
+      <param name="movie" value="TT_Argument_02.swf">
+      </object></noscript>
+    <li>&nbsp;</li>
+      <script type="text/javascript">
+      AC_FL_RunContent( 'type','application/x-shockwave-flash','data','TT_Argument_03.swf','width','660','height','400','movie',     'TT_Argument_03' ); //end AC code
+      </script><noscript><object type="application/x-shockwave-flash" data="TT_Argument_03.swf" width="660" height="400">
+      <param name="movie" value="TT_Argument_03.swf">
+      </object></noscript>
+    <li>&nbsp;</li>
+      <script type="text/javascript">
+      AC_FL_RunContent( 'type','application/x-shockwave-flash','data','TT_Argument_04.swf','width','660','height','400','movie',     'TT_Argument_04' ); //end AC code
+      </script><noscript><object type="application/x-shockwave-flash" data="TT_Argument_04.swf" width="660" height="400">
+      <param name="movie" value="TT_Argument_04.swf">
+      </object></noscript>
+    <li>Not both the music program and the art curriculum will be cut. So if
+      the music program is not cut, then the art curriculum will. (M, A)</li>
+    <li>Retailers cannot have a good holiday season unless the consumer
+      confidence in the economy is high. Currently the consumer confidence in
+      the economy is high. We can predict that retailers can have a good
+      holiday season. (R, C)</li>
+    <li>If nations do not cut back the use of fossil fuel, then worldwide
+      pollution will get worse. Nations are cutting back the use of fossil
+      fuel. Therefore, worldwide pollution will not get worse. (C, W)</li>
+    <li>People would not demand cultural assimilation if they embrace
+      diversity. However, people do demand cultural assimilation. Consequently,
+      they do not embrace diversity. (A, D)</li>
+    <li>We can have world peace only if people are compassionate and not
+      prejudiced. Since people are prejudiced; therefore, we cannot have world
+      peace. (W, C, P)</li>
+    <li>Germ-line genetic engineering should be banned if we do not want to
+      have designer babies. If we want to have designer babies, there would be
+      greater social inequality. So either germ-line genetic engineering should
+      be banned or there would be greater social inequality. (G, D, I)</li>
+    <li>The economy will suffer if we fall behind other nations in science,
+      technology and innovation. If we do not improve mathematics education, we
+      will fall behind other nations in science, technology and innovation.
+      Therefore, the economy will suffer unless we improve mathematics
+      education. (S, F, I)</li>
+    <li>If we continue the acceleration of production and consumption, nations
+      will fight over natural resources unless alternative technologies are
+      developed. Since we are developing alternative technologies, nations
+      won&rsquo;t fight over natural resources. (C, F, D)</li>
+  </ol>
+
+  <p>&nbsp;</p>
+
+  <p><a class="license" rel="license" href="https://creativecommons.org/licenses/by-nc-nd/3.0/us/"><img alt="Creative
+      Commons License" style="border-width: 0pt;" src="https://i.creativecommons.org/l/by-nc-nd/3.0/us/88x31.png"> </a> <br>
+      This work is licensed under a <a rel="license"
+      href="https://creativecommons.org/licenses/by-nc-nd/3.0/us/">Creative Commons
+      Attribution-Noncommercial-No Derivative Works 3.0 United States License</a>.</p>
+  </div>
+
+	<div id="sidebar">
+    </div>
+  </div>
+</div>
+
+<div id="fwrap">
+  <div id="fwrap2">
+    <div id="footer">
+      <p><a href="javascript:;" onclick="window.location.assign('../3.1/iLogic_3.html');">&larr;&nbsp;&nbsp;PREVIOUS</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="javascript:;" onclick="window.location.assign('../3.3/iLogic_3_3.html');">NEXT&nbsp;&nbsp;&rarr;</a></p>
+  </div>
+  </div>
+</div>
+
+
+</body>
+</html>
