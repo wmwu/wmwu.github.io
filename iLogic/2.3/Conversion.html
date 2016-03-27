@@ -1,20 +1,45 @@
+<!--
+	NOTES:
+	1. All tokens are represented by '$' sign in the template.
+	2. You can write your code only wherever mentioned.
+	3. All occurrences of existing tokens will be replaced by their appropriate values.
+-->
+
 <!DOCTYPE html>
 <html>
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
-	<title>Conversion</title>
-<!--Adobe Edge Runtime-->
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <script type="text/javascript" charset="utf-8" src="Conversion_edgePreload.js"></script>
-    <style>
-        .edgeLoad-EDGE-130569957 { visibility:hidden; }
-    </style>
-<!--Adobe Edge Runtime End-->
+<meta charset="UTF-8">
+<title>Conversion 2016_Canvas x85</title>
+<!-- write your code here -->
+
+
+<script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
+<script src="Conversion.js?1459034879487"></script>
+<script>
+var canvas, stage, exportRoot;
+function init() {
+	// --- write your JS code here ---
+
+	createjs.MotionGuidePlugin.install();
+
+	canvas = document.getElementById("canvas");
+	exportRoot = new lib.Conversion2016_Canvasx85();
+
+	stage = new createjs.Stage(canvas);
+	stage.addChild(exportRoot);
+	stage.update();
+	stage.enableMouseOver();
+
+	createjs.Ticker.setFPS(lib.properties.fps);
+	createjs.Ticker.addEventListener("tick", stage);
+}
+
+</script>
+
+<!-- write your code here -->
 
 </head>
-<body style="margin:0;padding:0;">
-	<div id="Stage" class="EDGE-130569957">
-	</div>
+<body onload="init();" style="background-color:#fff;margin:0px;">
+	<canvas id="canvas" width="480" height="380" style="background-color:#FFFFFF"></canvas>
 </body>
 </html>
