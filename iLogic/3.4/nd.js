@@ -139,7 +139,7 @@ function checkanswers1()
 
 /*  var fn = [];
   for( var i = 1; i < 21; i++ ) {
-    fn[i] = document.getElementById("fn" + i); 
+    fn[i] = document.getElementById("fn" + i);
   } no longer needed if use $('input[id="fn1"]').val()*/
 
 //#1
@@ -1021,27 +1021,33 @@ function checkanswers3()
   $("#s343057c").css({ opacity: .0 });
   $("#s343057e").css({ opacity: .7, "z-index": "2" });
   }
-  if ($('input[id="343058"]').val() == "B ⊃ G")
+  if ($('input[id="343058"]').val() == "B ⊃ G" && $('input[id="343059"]').val() == "5, 7 HS")
   {
   $("#s343058c").css({ opacity: .7, "z-index": "2" });
   $("#s343058e").css({ opacity: .0 });
+  $("#s343059c").css({ opacity: .7, "z-index": "2" });
+  $("#s343059e").css({ opacity: .0 });
   }
-  else
+  else if ($('input[id="343058"]').val() == "∼D" && $('input[id="343059"]').val() == "3, 7 MT")
   {
-  $("#s343058c").css({ opacity: .0 });
-  $("#s343058e").css({ opacity: .7, "z-index": "2" });
-  }
-  if ($('input[id="343059"]').val() == "5, 7 HS")
-  {
+  $("#s343058c").css({ opacity: .7, "z-index": "2" });
+  $("#s343058e").css({ opacity: .0 });
   $("#s343059c").css({ opacity: .7, "z-index": "2" });
   $("#s343059e").css({ opacity: .0 });
   }
   else
   {
+  $("#s343058c").css({ opacity: .0 });
+  $("#s343058e").css({ opacity: .7, "z-index": "2" });
   $("#s343059c").css({ opacity: .0 });
   $("#s343059e").css({ opacity: .7, "z-index": "2" });
   }
-  if ($('input[id="3430510"]').val() == "3, 8 MT")
+  if ($('input[id="343059"]').val() == "5, 7 HS" && $('input[id="3430510"]').val() == "3, 8 MT")
+  {
+  $("#s3430510c").css({ opacity: .7, "z-index": "2" });
+  $("#s3430510e").css({ opacity: .0 });
+  }
+  else if ($('input[id="343059"]').val() == "3, 7 MT" && $('input[id="3430510"]').val() == "5, 8 MT")
   {
   $("#s3430510c").css({ opacity: .7, "z-index": "2" });
   $("#s3430510e").css({ opacity: .0 });
