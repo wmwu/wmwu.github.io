@@ -1,5 +1,5 @@
 body {
-  font-family: Georgia;
+  font-family: "Lucida Grande"; Arial; sans-serif;
 }
 div a {
   color: #706b5b;
@@ -14,5 +14,6 @@ div a:hover {
   width: 782px; margin: 24px 0 24px 0;
   padding: 14px 0 14px 18px;
   font-size: large;
-  letter-spacing: 2px;
+  font-weight: 600;
+  letter-spacing: 1px;
 }
