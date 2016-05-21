@@ -1,0 +1,18 @@
+body {
+  font-family: Georgia;
+}
+div a {
+  color: #706b5b;
+  text-decoration: none;
+}
+div a:hover {
+  border-bottom: 1px solid #706b5b;
+}
+.item {
+  color: #fff;
+  background-color: #706b5b;
+  width: 782px; margin: 24px 0 24px 0;
+  padding: 14px 0 14px 18px;
+  font-size: large;
+  letter-spacing: 2px;
+}
