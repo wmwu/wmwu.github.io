@@ -1,11 +1,16 @@
-function doItOnFocus(element)
-{
-    var textBoxId = element.id;
-    window.textBoxId = textBoxId;
-}
+$('.tv').autotab('tv');
 
-$('.c1v').autotab({ maxlength: 1 });
-$('.c1tv').autotab({ maxlength: 1 });
+function autotab(event, current,to)
+{
+    event = event || window.event;
+    if(event.keyCode < 65  ||  event.keyCode > 90){
+      return ;
+    }
+    if (current.getAttribute && current.value.length==current.getAttribute("maxlength"))
+    {
+      to.focus()
+    }
+}
 
 function checkanswers1()
 {
