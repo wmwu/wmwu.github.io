@@ -419,7 +419,7 @@ font-style: normal;
   color: #333333;
 }
 #main table.ex32 td.c1 {
-  border: 1px solid #DEDEDE;
+  border: 0px solid #DEDEDE;
   border-bottom: 1px solid black;
   border-spacing: 0px;
   padding: 0px 6px 0px 6px;
@@ -430,7 +430,7 @@ font-style: normal;
   color: #333333;
 }
 #main table.ex32 input.c1v {
-  border: 1px solid #DEDEDE;
+  border: 0px solid #DEDEDE;
   border-spacing: 0px;
   width: 16px;
   display: block;
@@ -444,7 +444,7 @@ font-style: normal;
   color: #333333;
 }
 #main table.ex32 td.c1t {
-  border: 1px solid #DEDEDE;
+  border: 0px solid #DEDEDE;
   border-bottom: 1px solid black;
   border-spacing: 0px;
   padding: 0px 3px 0px 9px;
@@ -454,14 +454,27 @@ font-style: normal;
   font-family: Georgia, Crimson, serif;
   color: #333333;
 }
-#main table.ex32 input.c1tv {
-  border: 1px solid #DEDEDE;
-  border-spacing: 0px;
+#main p.myText {
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  word-wrap: break-word;
+  font-family: Verdana, "Arial Unicode MS", "Open Sans", sans-serif;
   width: 16px;
+}
+#main table.ex32 input.c1tv {
+  border: 0px solid #DEDEDE;
+  border-spacing: 0px;
+  width: 14px;
+  height: 96px;
   padding: 6px 3px 6px 9px;
   vertical-align: top;
   text-align: left;
   text-transform: uppercase;
+  -ms-writing-mode: tb-lr; /* for IE */
+  -webkit-writing-mode: vertical-lr; /* for Safari */
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  word-wrap: break-word;
   font-family: Verdana, "Arial Unicode MS", "Open Sans", sans-serif;
   font-size: 16px;
   letter-spacing: 6px;
