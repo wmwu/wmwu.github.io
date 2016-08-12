@@ -23,7 +23,7 @@ text-decoration: underline;
 }
 
 body {
-width: 90%;
+width:800px;
 background-color: #fefefc;
 margin: 20px auto;
 padding: 10px 60px;
@@ -52,7 +52,6 @@ font-size: 22px;
 h4 {
 margin-top: 25px;
 font-size: 20px;
-font-style: italic;
 }
 
 p {
