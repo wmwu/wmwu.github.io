@@ -268,7 +268,7 @@ function get_radio_value()
 	//document.write("<input type=\"button\" onmouseover=\"this.style.color='#990000';\" onmouseout=\"this.style.color='#333333';\" onclick=\"window.location.replace('iLogic_1_submit_answers_a.html#Ex11')\" value=\"Do the exercise again with a different set of questions\" style=\"font-size:13px; cursor: pointer;\" />");
 	document.write("<\/label>");
 	document.write("<label style=\"margin-top: 20px; margin-left: 20px; font: 16px georgia; color:#333333;\">");  //Creates a button for "Return to 1.1"
-	document.write("<input type=\"button\" onclick=\"window.location.replace('iLogic_1.html#Ex11')\" value=\"Return to Ex. 1.1\" style=\"font-size:16px; cursor: pointer;\" \/>");
+	document.write("<input type=\"button\" onclick=\"window.location.replace('iLogic_1.html\#Ex11')\" value=\"Return to Ex. 1.1\" style=\"font-size:16px; cursor: pointer;\" \/>");
 	//document.write("<input type=\"button\" onmouseover=\"this.style.color='#990000';\" onmouseout=\"this.style.color='#333333';\" onclick=\"window.location.replace('iLogic_1_submit_answers.html')\" value=\"Return to 1.1\" style=\"font-size:16px; cursor: pointer;\" />");
 	document.write("<\/label> <br \/><br \/><br \/>");
 	document.write("<\/div>");
