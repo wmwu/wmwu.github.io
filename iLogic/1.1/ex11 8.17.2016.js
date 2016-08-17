@@ -73,11 +73,11 @@ function write_questions()
 {
 	var N = new Array();  //Creates an array of number from 1 to 60
 	for (i = 1; i < Q.length; i++)
-	{ 
+	{
 		N[i-1] = i;
 	}
 	N.sort(function (a,b){return a - b;}); //Sort 1 to 30 in ascending order N[0]=1, N[1]=2 ...
-	
+
 	document.write("<ol class=\"ex_sec\">");
 	document.write("<li>Decide whether each of the following sentences is a statement or an evaluative sentence.<\/li>");
 	document.write("</ol>");
@@ -99,7 +99,7 @@ function write_questions()
 			var button1 = "<input type=\"radio\" name=\"" + "A" + [i] + "\" " + "value=\"S\" " + "id=\"" + "A" + [i] + "_0" + "\" " + "/>" + " Statement" + "<br" + " />"
 			var button2 = "<input type=\"radio\" name=\"" + "A" + [i] + "\" " + "value=\"E\" " + "id=\"" + "A" + [i] + "_1" + "\" " + "/>" + " Evaluative Sentence" + "<br" + " />"
 		}
-		
+
 	}
 	document.write("</ol>");
 	document.write("<input type=\"hidden\" id=\"storeN\" value=\"" + N + "\" \/>"); //Store N array as a string in html file to be used in get_radio_value()
@@ -113,7 +113,7 @@ function write_random_questions()
 {
 	var N = new Array();  //Creates an array of number from 1 to 60
 	for (i = 1; i < Q.length; i++)
-	{ 
+	{
 		N[i-1] = i;
 	}
 	document.write("<script type=\"text\/javascript\" src=\"ex11.js\"><\/script>");  //load js file so onclick can call a function note: Firefox and Opera load the js file before executing the function called by onclick. The solution is to move the code for N array inside each of the write question functions. But then N needs to be stored in html file to be used in get_radio_value.
@@ -156,7 +156,7 @@ function write_random_questions()
 			var button1 = "<input type=\"radio\" name=\"" + "A" + [i] + "\" " + "value=\"S\" " + "id=\"" + "A" + [i] + "_0" + "\" " + "/>" + " Statement" + "<br" + " />"
 			var button2 = "<input type=\"radio\" name=\"" + "A" + [i] + "\" " + "value=\"E\" " + "id=\"" + "A" + [i] + "_1" + "\" " + "/>" + " Evaluative Sentence" + "<br" + " />"
 		}
-		
+
 	}
 	document.write("<\/li>");
         document.write("<\/ol>");
@@ -202,7 +202,7 @@ function get_radio_value()
 		if (k <= Nq) //Do not getElementById for unwritten questions
 		{
 			var SC = document.getElementById(S).checked;
-			//alert(document.getElementById(S).checked);		
+			//alert(document.getElementById(S).checked);
 			var EC = document.getElementById(E).checked;
 			//alert(document.getElementById(E).checked);
 			if (SC==true)
@@ -224,7 +224,7 @@ function get_radio_value()
 			{
 				s = s + 1;  //Counter for the number of correct answers
 				//alert(s);
-			}	
+			}
 		}
 	}
 	//alert(V);
@@ -263,14 +263,18 @@ function get_radio_value()
 	document.write("<\/li>");
 	document.write("<\/ol>");
 	document.write("<script type=\"text\/javascript\" src=\"ex11.js\"><\/script>");
-	document.write("<label style=\"margin-top: 20px; margin-left: 60px; font: 16px georgia; color:#333333;\">");  //Create a button for "Redo the Exercise"
-	document.write("<input type=\"button\" onclick=\"write_random_questions();\" value=\"Do the exercise again with a different set of questions\" style=\"font-size:16px; cursor: pointer;\" \/>");
+	document.write("<label style=\"margin-top: 20px; margin-left: 20px; font: 16px georgia; color:#333333;\">");  //Creates a button for "Return to Ex. 1.1"
+	document.write("<form action=\"https:\/\/wmwu.github.io\/iLogic\/1.1\/iLogic_1.html#Ex11\">");
+	document.write("<input type=\"submit\" value=\"Redo the exercise with the original set of questions\" style=\"margin-top: 20px; margin-left: 80px; font-size:16px; cursor: pointer;\" \/>");
+	document.write("<\/form>");
+	// document.write("<input type=\"button\" onclick=\"goToEx11();\" value=\"Return to Ex. 1.1\" style=\"font-size:16px; cursor: pointer;\" \/>");
+	//document.write("<input type=\"button\" onmouseover=\"this.style.color='#990000';\" onmouseout=\"this.style.color='#333333';\" onclick=\"window.location.replace('iLogic_1_submit_answers.html')\" value=\"Return to 1.1\" style=\"font-size:16px; cursor: pointer;\" />");
+	// document.write("<p style=\"margin-left: 120px;\">or<\/p>");
+	document.write("<\/label>");
+	document.write("<label style=\"margin-top: 20px; margin-left: 20px; font: 16px georgia; color:#333333;\">");  //Create a button for "Redo the Exercise"
+	document.write("<input type=\"button\" onclick=\"write_random_questions();\" value=\"Do the exercise again with a different set of questions\" style=\"margin: 20px 0 60px 60px; font-size:16px; cursor: pointer;\" \/>");
 	//document.write("<input type=\"button\" onmouseover=\"this.style.color='#990000';\" onmouseout=\"this.style.color='#333333';\" onclick=\"window.location.replace('iLogic_1_submit_answers_a.html#Ex11')\" value=\"Do the exercise again with a different set of questions\" style=\"font-size:13px; cursor: pointer;\" />");
 	document.write("<\/label>");
-	document.write("<label style=\"margin-top: 20px; margin-left: 20px; font: 16px georgia; color:#333333;\">");  //Creates a button for "Return to 1.1"
-	document.write("<input type=\"button\" onclick=\"window.location.replace('iLogic_1.html')\" value=\"Return to 1.1\" style=\"font-size:16px; cursor: pointer;\" \/>");
-	//document.write("<input type=\"button\" onmouseover=\"this.style.color='#990000';\" onmouseout=\"this.style.color='#333333';\" onclick=\"window.location.replace('iLogic_1_submit_answers.html')\" value=\"Return to 1.1\" style=\"font-size:16px; cursor: pointer;\" />");
-	document.write("<\/label> <br \/><br \/><br \/>");
 	document.write("<\/div>");
 	document.write("<div id=\"sidebar\">");
 	document.write("<\/div>");
@@ -291,3 +295,9 @@ function MM_goToURL()
   var i, args=MM_goToURL.arguments; document.MM_returnValue = false;
   for (i=0; i<(args.length-1); i+=2) eval(args[i]+".location='"+args[i+1]+"'");
 }
+
+// function goToEx11()
+// {
+// 	window.location.replace('iLogic_1.html#Ex11');
+// 	location.reload();
+// }
