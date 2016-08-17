@@ -263,13 +263,17 @@ function get_radio_value()
 	document.write("<\/li>");
 	document.write("<\/ol>");
 	document.write("<script type=\"text\/javascript\" src=\"ex11.js\"><\/script>");
-	document.write("<label style=\"margin-top: 20px; margin-left: 60px; font: 16px georgia; color:#333333;\">");  //Create a button for "Redo the Exercise"
-	document.write("<input type=\"button\" onclick=\"write_random_questions();\" value=\"Do the exercise again with a different set of questions\" style=\"font-size:16px; cursor: pointer;\" \/>");
+	document.write("<label style=\"margin-top: 20px; margin-left: 20px; font: 16px georgia; color:#333333;\">");  //Creates a button for "Return to Ex. 1.1"
+	document.write("<form action=\"https:\/\/wmwu.github.io\/iLogic\/1.1\/iLogic_1.html#Ex11\">");
+	document.write("<input type=\"submit\" value=\"Redo the exercise with the original set of questions\" style=\"margin-top: 20px; margin-left: 60px; font-size:16px; cursor: pointer;\" \/>");
+	document.write("<\/form>");
+	// document.write("<input type=\"button\" onclick=\"goToEx11();\" value=\"Return to Ex. 1.1\" style=\"font-size:16px; cursor: pointer;\" \/>");
+	//document.write("<input type=\"button\" onmouseover=\"this.style.color='#990000';\" onmouseout=\"this.style.color='#333333';\" onclick=\"window.location.replace('iLogic_1_submit_answers.html')\" value=\"Return to 1.1\" style=\"font-size:16px; cursor: pointer;\" />");
+	// document.write("<p style=\"margin-left: 120px;\">or<\/p>");
+	document.write("<label style=\"margin-top: 20px; margin-left: 20px; font: 16px georgia; color:#333333;\">");  //Create a button for "Redo the Exercise"
+	document.write("<input type=\"button\" onclick=\"write_random_questions();\" value=\"Do the exercise again with a different set of questions\" style=\"margin-top: 20px; font-size:16px; cursor: pointer;\" \/>");
 	//document.write("<input type=\"button\" onmouseover=\"this.style.color='#990000';\" onmouseout=\"this.style.color='#333333';\" onclick=\"window.location.replace('iLogic_1_submit_answers_a.html#Ex11')\" value=\"Do the exercise again with a different set of questions\" style=\"font-size:13px; cursor: pointer;\" />");
 	document.write("<\/label>");
-	document.write("<label style=\"margin-top: 20px; margin-left: 20px; font: 16px georgia; color:#333333;\">");  //Creates a button for "Return to 1.1"
-	document.write("<input type=\"button\" onclick=\"window.location.replace('iLogic_1.html\#Ex11')\" value=\"Return to Ex. 1.1\" style=\"font-size:16px; cursor: pointer;\" \/>");
-	//document.write("<input type=\"button\" onmouseover=\"this.style.color='#990000';\" onmouseout=\"this.style.color='#333333';\" onclick=\"window.location.replace('iLogic_1_submit_answers.html')\" value=\"Return to 1.1\" style=\"font-size:16px; cursor: pointer;\" />");
 	document.write("<\/label> <br \/><br \/><br \/>");
 	document.write("<\/div>");
 	document.write("<div id=\"sidebar\">");
@@ -291,3 +295,9 @@ function MM_goToURL()
   var i, args=MM_goToURL.arguments; document.MM_returnValue = false;
   for (i=0; i<(args.length-1); i+=2) eval(args[i]+".location='"+args[i+1]+"'");
 }
+
+// function goToEx11()
+// {
+// 	window.location.replace('iLogic_1.html#Ex11');
+// 	location.reload();
+// }
