@@ -7,7 +7,8 @@ div a {
   text-decoration: none;
 }
 div a:hover {
-  border-bottom: 1px solid #706b5b;
+  color: #9C825B;
+  border-bottom: 1px solid #9C825B;
 }
 .item {
   color: #fff;

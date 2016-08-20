@@ -3,18 +3,20 @@ body {
   font-size: 90%;
 }
 div a {
-  color: #706b5b;
+  color: #6d6d6d;
   text-decoration: none;
 }
 div a:hover {
-  border-bottom: 1px solid #706b5b;
+  color: #808080;
+  border-bottom: 1px solid #808080;
 }
 .item {
   color: #fff;
-  background-color: #706b5b;
+  background-color: #6d6d6d;
   width: 782px; margin: 24px 0 24px 0;
   padding: 14px 0 14px 18px;
   font-size: large;
   font-weight: 600;
   letter-spacing: 1px;
+  text-transform: uppercase;
 }
