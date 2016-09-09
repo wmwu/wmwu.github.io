@@ -11,6 +11,7 @@ div a:hover {
 }
 p {
   color: #666666;
+  font-weight: 300;
 }
 .item {
   color: #fff;
