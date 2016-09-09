@@ -4,11 +4,16 @@ body {
 }
 div a {
   color: #706b5b;
+  font-weight: 500;
   text-decoration: none;
 }
 div a:hover {
   color: #9C825B;
   border-bottom: 1px solid #9C825B;
+}
+p {
+  color: #666666;
+  font-weight: 300;
 }
 .item {
   color: #fff;
