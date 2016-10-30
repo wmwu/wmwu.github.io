@@ -3,7 +3,6 @@ body {
 }
 div a {
   color: #706b5b;
-  font-size: 140%;
   font-weight: 500;
   text-decoration: none;
 }
@@ -16,7 +15,11 @@ p {
   font-weight: 300;
 }
 .item {
-  color: #706b5b;
-  width: 782px; margin: 24px 0 12px 0;
+  color: #fff;
+  background-color: #706b5b;
+  width: 782px; margin: 24px 0 24px 0;
+  padding: 14px 0 14px 18px;
+  font-size: large;
+  font-weight: 500;
   letter-spacing: 1px;
 }
