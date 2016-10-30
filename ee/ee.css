@@ -2,24 +2,21 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 div a {
-  color: #455e52;
+  color: #488E52;
+  font-size: 140%;
   font-weight: 500;
   text-decoration: none;
 }
 div a:hover {
-  color: #549b43;
-  border-bottom: 1px solid #549b43;
+  color: #4caf50;
+  border-bottom: 1px solid #4caf50;
 }
 p {
-  color: #666666;
+  color: #455E52;
   font-weight: 300;
 }
 .item {
-  color: #fff;
-  background-color: #4caf50;
+  color: #4caf50;
   width: 782px; margin: 24px 0 24px 0;
-  padding: 14px 0 14px 18px;
-  font-size: large;
-  font-weight: 500;
   letter-spacing: 1px;
 }
