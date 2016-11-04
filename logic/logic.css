@@ -20,7 +20,7 @@ p {
   border-top: 1px solid #BBC2C7;
 }
 .item {
-  background-color: #6d6d6d;
+  color: #808080;
   width: 782px; margin: 24px 0 24px 0;
   letter-spacing: 1px;
   text-transform: uppercase;
