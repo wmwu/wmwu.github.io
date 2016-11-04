@@ -15,6 +15,10 @@ p {
   color: #455E52;
   font-weight: 300;
 }
+.frame {
+  width: 800px;
+  border-top: 1px solid #BBC2C7;
+}
 .item {
   color: #4caf50;
   width: 782px; margin: 24px 0 24px 0;
