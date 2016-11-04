@@ -15,6 +15,9 @@ p {
   color: #666666;
   font-weight: 300;
 }
+li {
+  font-weight: 300;
+}
 .frame {
   width: 800px;
   border-top: 1px solid #BBC2C7;
