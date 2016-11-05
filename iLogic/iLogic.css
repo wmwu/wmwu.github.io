@@ -81,7 +81,7 @@ body {
 #header p {
   overflow: hidden;
   line-height: 28px;
-  font-family: 'Crimson Text', Georgia, serif;
+  font-family: Georgia, 'Crimson Text', serif;
   font-size: 18px;
   /*font-weight: bold;*/
   color: #333333;
@@ -120,7 +120,7 @@ body {
   float: left;
 }
 #main {
-  font-family: 'Crimson Text', Georgia, serif;
+  font-family: Georgia, 'Crimson Text', serif;
   overflow: hidden;
   float: left;
 }
