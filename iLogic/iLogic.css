@@ -747,7 +747,6 @@ font-style: normal;
   vertical-align: 40%;
 }
 .form {
-  font-family: Verdana, "Arial Unicode MS", "Noto Sans", "Open Sans", sans-serif;
   font-size: 15px;
 	line-height: 20px;
   font-style: normal;
@@ -770,7 +769,6 @@ font-style: normal;
 	padding: 2px 6px;
 }
 .bform {
-  font-family: Verdana, "Arial Unicode MS", "Noto Sans", "Open Sans", sans-serif;
   font-size: 15px;
 	line-height: 20px;
   font-style: normal;
