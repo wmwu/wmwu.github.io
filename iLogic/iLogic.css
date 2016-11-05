@@ -1,3 +1,11 @@
+@font-face {font-family: "Bitstream Iowan Old Style";
+    src: url("//db.onlinewebfonts.com/t/bc28028bf5fff883c167bfe77545594d.eot");
+    src: url("//db.onlinewebfonts.com/t/bc28028bf5fff883c167bfe77545594d.eot?#iefix") format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/bc28028bf5fff883c167bfe77545594d.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/bc28028bf5fff883c167bfe77545594d.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/bc28028bf5fff883c167bfe77545594d.ttf") format("truetype"),
+    url("//db.onlinewebfonts.com/t/bc28028bf5fff883c167bfe77545594d.svg#Bitstream Iowan Old Style") format("svg");
+}
 body {
   margin: 0;
   padding: 0;
@@ -70,7 +78,7 @@ body {
 #header p {
   overflow: hidden;
   line-height: 28px;
-  font-family: "Nato serif", Crimson, Georgia, serif;
+  font-family: "Bitstream Iowan Old Style", Crimson, Georgia, serif;
   font-size: 18px;
   font-weight: bold;
   color: #333333;
@@ -109,7 +117,7 @@ body {
   float: left;
 }
 #main {
-  font-family: "Nato serif", Crimson, Georgia, serif;
+  font-family: "Bitstream Iowan Old Style", Crimson, Georgia, serif;
   overflow: hidden;
   float: left;
 }
