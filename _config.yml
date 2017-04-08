@@ -2,7 +2,7 @@
 name: Wu Wei-Ming's web pages
 
 # Short description (goes below the title; it will also be used in the RSS feed)
-description: This is a Jekyll site.
+description: Butte College, iLogic, Karma, Yinyang and Dao, The Way or Ren
 
 # Your name, as you want it to appear underneath each post and in the footer
 author: Wu Wei-Ming (吳維明)
@@ -25,6 +25,7 @@ url: https://wmwu.github.io/
 
 gems:
   - jekyll-seo-tag
+  - jekyll-sitemap
 
 #### Under the Hood Stuff #####
 
