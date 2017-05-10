@@ -1369,7 +1369,8 @@ function checkanswers3()
   $("#s343094e").css({ opacity: .7, "z-index": "2" });
   }
   if ($('input[id="343095"]').val() == "∼A ∨ (C ⊃ L)" ||
-      $('input[id="343095"]').val() == "A ⊃ (∼C ∨ L)")
+      $('input[id="343095"]').val() == "A ⊃ (∼C ∨ L)" ||
+      $('input[id="343095"]').val() == "(∼C ∨ L) ∨ ∼A")
   {
   $("#s343095c").css({ opacity: .7, "z-index": "2" });
   $("#s343095e").css({ opacity: .0 });
@@ -1379,7 +1380,13 @@ function checkanswers3()
   $("#s343095c").css({ opacity: .0 });
   $("#s343095e").css({ opacity: .7, "z-index": "2" });
   }
-  if ($('input[id="343096"]').val() == "4 Impl.")
+  if ($('input[id="343095"]').val() == "(∼C ∨ L) ∨ ∼A" &&
+      $('input[id="343096"]').val() == "4 Com.")
+  {
+  $("#s343096c").css({ opacity: .7, "z-index": "2" });
+  $("#s343096e").css({ opacity: .0 });
+  }
+  else if ($('input[id="343096"]').val() == "4 Impl.")
   {
   $("#s343096c").css({ opacity: .7, "z-index": "2" });
   $("#s343096e").css({ opacity: .0 });
@@ -1407,7 +1414,8 @@ function checkanswers3()
   $("#s343098e").css({ opacity: .0 });
   }
   else if ($('input[id="343097"]').val() == "(C ⊃ L) ∨ ∼A" &&
-      $('input[id="343098"]').val() == "5 Com.")
+      ($('input[id="343098"]').val() == "5 Com." ||
+       $('input[id="343098"]').val() == "5 Impl."))
   {
   $("#s343098c").css({ opacity: .7, "z-index": "2" });
   $("#s343098e").css({ opacity: .0 });
@@ -1417,13 +1425,13 @@ function checkanswers3()
   $("#s343098c").css({ opacity: .0 });
   $("#s343098e").css({ opacity: .7, "z-index": "2" });
   }
-  if ($('input[id="343098"]').val() == "5 Impl." &&
+  if ($('input[id="343097"]').val() == "A ⊃ (C ⊃ L)" &&
       $('input[id="343099"]').val() == "2, 6 MT")
   {
   $("#s343099c").css({ opacity: .7, "z-index": "2" });
   $("#s343099e").css({ opacity: .0 });
   }
-  else if ($('input[id="343098"]').val() == "5 Com." &&
+  else if ($('input[id="343097"]').val() == "(C ⊃ L) ∨ ∼A" &&
            $('input[id="343099"]').val() == "2, 6 DS")
   {
   $("#s343099c").css({ opacity: .7, "z-index": "2" });
