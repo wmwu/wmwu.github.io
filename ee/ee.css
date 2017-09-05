@@ -15,7 +15,16 @@ p {
   color: #455E52;
   font-weight: 300;
 }
-.frame {
+p a {
+  color: #488E52;
+  font-size: 100%;
+  font-weight: 400;
+  text-decoration: none;
+}
+p a:hover {
+  color: #4caf50;
+  border-bottom: 1px solid #4caf50;
+}.frame {
   width: 800px;
   border-top: 1px solid #BBC2C7;
 }
