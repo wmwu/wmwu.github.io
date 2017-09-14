@@ -25,7 +25,7 @@ p a:hover {
   color: #4caf50;
   border-bottom: 1px solid #4caf50;
 }
-li {
+ol li {
   color: #455E52;
   font-weight: 300;
 }
