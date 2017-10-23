@@ -14,9 +14,11 @@ div a:hover {
 p {
   color: #666666;
   font-weight: 300;
+  font-size: 105%;
 }
 ul li {
   font-weight: 300;
+  font-size: 105%;
 }
 .frame {
   width: 800px;
