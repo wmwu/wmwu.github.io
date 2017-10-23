@@ -15,6 +15,16 @@ p {
   color: #666666;
   font-weight: 300;
 }
+p a {
+  color: #6d6d6d;
+  font-size: 100%;
+  font-weight: 500;
+  text-decoration: none;
+}
+p a:hover {
+  color: #808080;
+  border-bottom: 1px solid #808080;
+}
 ol li {
   color: #666666;
   font-weight: 300;
