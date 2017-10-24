@@ -30,6 +30,7 @@ p a:hover {
 }
 ol li {
   color: #666666;
+  font-size: 105%;
   font-weight: 300;
 }
 .frame {
