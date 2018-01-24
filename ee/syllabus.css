@@ -7,18 +7,18 @@ CONTENT STYLE
 a:link
 {
 text-decoration: none;
-color: #276093
+color: #1176b8;
 }
 
 a:visited
 {
 text-decoration: none;
-color: #276093
+color: #9c530b;
 }
 
 a:hover
 {
-color: #663300;
+color: #1176b8;
 text-decoration: underline;
 }
 
