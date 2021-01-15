@@ -1,6 +1,6 @@
 function mail()
 {
-var name = "wuwe";
-var domain = "butte.edu";
-document.write("Write to <a href=\"mailto:" + name + "@" + domain + "\">Wu Wei-Ming</a>");
+var name = "wmwu";
+var domain = "outlook.com";
+document.write("Email to <a href=\"mailto:" + name + "@" + domain + "\">Wu Weiming</a>");
 }
