@@ -39,9 +39,9 @@ body {
   text-decoration: none;
 }
 #nav a:hover {
-  color: #CC3300;
-  background-color: #E6E6E6;
-  border-bottom: 1px solid #CC3300;
+  color: #0a2c02;
+  background-color: #F7F8EE;
+  border-bottom: 1px solid #0a2c02;
 }
 #nav ul {
   list-style: none;
