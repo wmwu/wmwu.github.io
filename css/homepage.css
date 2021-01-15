@@ -3,12 +3,8 @@ body {
   padding: 0;
   background-color: #F7F8EE;
 }
-#wrap {
-  margin: 0 auto;
-  width: 750px;
-  background-color: transparent;
-}
 #header {
+  width: 900px;
   background-color: transparent;
 }
 #header h1 {
@@ -19,25 +15,12 @@ body {
   letter-spacing: 6px;
   font-weight: lighter;
   color: #0a2c02;
-  margin: 0 auto;
-  padding: 72px 0 24px 48px;
+  margin: 12px 0 12px 240px;
+  padding: 72px 0 24px 36px;
 }
 #header h1::first-letter {
   font-size: 400%;
   font-weight: lighter;
-}
-#header h2 {
-  overflow: hidden;
-  line-height: 28px;
-  font-family: Arial, Helvetica, 'Open Sans', sans-serif;
-  font-size: 20px;
-  letter-spacing: 6px;
-  font-variant: small-caps;
-  font-weight: lighter;
-  color: #333333;
-  margin: 0 auto;
-  padding: 0 0 24px 16px;
-  width: 720px;
 }
 #nav {
   overflow: hidden;
@@ -72,7 +55,7 @@ body {
 }
 #main {
   overflow: hidden;
-  width: 700px;
+  width: 900px;
   background-color: transparent;
 }
 #main h2 {
@@ -86,8 +69,8 @@ body {
   letter-spacing: 2px;
 }
 #main p {
-  padding: 0 12px 0 180px;
-  margin: 12px auto;
+  padding: 0 12px 0 36px;
+  margin: 12px 12px 12px 360px;
   font-family: 'Crimson Pro', serif;
   font-size: 18px;
   letter-spacing: 0;
