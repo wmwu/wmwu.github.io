@@ -6,21 +6,25 @@ body {
 #wrap {
   margin: 0 auto;
   width: 750px;
-  background-color: #FFFFFF;
+  background-color: transparent;
 }
 #header {
-  background-color: #F7F8EE;
+  background-color: transparent;
 }
 #header h1 {
   overflow: hidden;
   line-height: 36px;
-  font-family: Georgia, Crimson, serif;
-  font-size: 24px;
-  letter-spacing: 8px;
+  font-family: 'Crimson Pro', serif;
+  font-size: 36px;
+  letter-spacing: 6px;
   font-weight: lighter;
-  color: #333333;
+  color: #0a2c02;
   margin: 0 auto;
-  padding: 60px 0 24px 20px;
+  padding: 72px 0 24px 48px;
+}
+#header h1::first-letter {
+  font-size: 400%;
+  font-weight: lighter;
 }
 #header h2 {
   overflow: hidden;
@@ -68,28 +72,27 @@ body {
 }
 #main {
   overflow: hidden;
-  background-color: #FFFFFF;
-  width: 510px;
-  float: right;
+  width: 700px;
+  background-color: transparent;
 }
 #main h2 {
   margin: 42px 0 24px 60px;
   text-align: left;
-  color: #CC3300;
+  color: #0a2c02;
   line-height: 100%;
-  font-family: Georgia, Crimson, serif;
+  font-family: 'Crimson Pro', serif;
   font-size: 22px;
   font-weight: 100;
   letter-spacing: 2px;
 }
 #main p {
-  padding: 0 60px 0 60px;
+  padding: 0 12px 0 180px;
   margin: 12px auto;
-  font-family: Arial, Helvetica, "Open Sans", sans-serif;
-  font-size: 15px;
+  font-family: 'Crimson Pro', serif;
+  font-size: 18px;
   letter-spacing: 0;
   line-height: 180%;
-  color: #333333;
+  color: #0a2c02;
 }
 #sidebar {
   border-bottom: 1px solid white;
@@ -99,7 +102,7 @@ body {
   float: left;
 }
 #sidebar p {
-  font-family: Georgia, Crimson, serif;
+  font-family: 'Crimson Pro', serif;
   font-size: 15px;
   letter-spacing: 0;
   line-height: 24px;
@@ -114,6 +117,11 @@ body {
   height: 0px;
 }
 #main p.quote {
-  width: 200px;
-  margin: 0 60px 0 auto;
+  margin: 0 10px 0 auto;
+}
+img {
+  position: absolute;
+  left: 12px;
+  top: 0px;
+  z-index: -1;
 }
