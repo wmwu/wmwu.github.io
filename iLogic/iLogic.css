@@ -1,3 +1,14 @@
+/*// Bitstream Iowan Old Style
+//------------------------------------
+@font-face {font-family: "Bitstream Iowan Old Style";
+    src: url("//db.onlinewebfonts.com/t/bc28028bf5fff883c167bfe77545594d.eot");
+    src: url("//db.onlinewebfonts.com/t/bc28028bf5fff883c167bfe77545594d.eot?#iefix") format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/bc28028bf5fff883c167bfe77545594d.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/bc28028bf5fff883c167bfe77545594d.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/bc28028bf5fff883c167bfe77545594d.ttf") format("truetype"),
+    url("//db.onlinewebfonts.com/t/bc28028bf5fff883c167bfe77545594d.svg#Bitstream Iowan Old Style") format("svg");
+}
+//-------------------------------------*/
 body {
   margin: 0;
   padding: 0;
@@ -44,11 +55,11 @@ body {
 }
 #header {
   background-color: #F7F8EE;
+  font-family: 'Nato Sans', Arial, sans-serif;
 }
 #header h1 {
   overflow: hidden;
   line-height: 36px;
-  font-family: Arial, 'Open Sans', sans-serif;
   font-size: 24px;
   font-variant: small-caps;
   letter-spacing: 8px;
@@ -60,7 +71,6 @@ body {
 #header h2 {
   overflow: hidden;
   line-height: 36px;
-  font-family: Arial, 'Open Sans', sans-serif;
   font-size: 24px;
   letter-spacing: 6px;
   font-weight: lighter;
@@ -71,9 +81,9 @@ body {
 #header p {
   overflow: hidden;
   line-height: 28px;
-  font-family: Georgia, Crimson, serif;
+  font-family: Georgia, 'Crimson Text', serif;
   font-size: 18px;
-  font-weight: bold;
+  /*font-weight: bold;*/
   color: #333333;
   margin: 0 auto;
   padding: 30px 0 10px 20px;
@@ -85,7 +95,7 @@ body {
 }
 #nav a {
   display: block;
-  font-family: Arial, 'Open Sans', sans-serif;
+  font-family: Arial, 'Nato Sans', sans-serif;
   font-size: 14px;
   color: #336666;
   line-height: 28px;
@@ -110,12 +120,12 @@ body {
   float: left;
 }
 #main {
+  font-family: Georgia, 'Crimson Text', serif;
   overflow: hidden;
   float: left;
 }
 #main h1 {
   padding: 24px 24px 12px 24px;
-  font-family: Georgia, Crimson, serif;
   font-size: 24px;
   color: #CC3300;
   font-weight: normal;
@@ -127,7 +137,6 @@ body {
 }
 #main h2 {
   padding: 24px 24px 12px 24px;
-  font-family: Georgia, Crimson, serif;
   font-size: 22px;
   color: #CC3300;
   font-weight: normal;
@@ -139,7 +148,6 @@ body {
 }
 #main h3 {
   padding: 24px 24px 0 24px;
-  font-family: Georgia, Crimson, serif;
   font-size: 18px;
   color: #333333;
   font-weight: normal;
@@ -151,7 +159,6 @@ font-style: normal;
 }
 #main h4 {
   padding: 24px 24px 0 24px;
-  font-family: Georgia, Crimson, serif;
   font-size: 16px;
   color: #333333;
   font-style: normal;
@@ -175,12 +182,10 @@ font-style: normal;
   border-bottom: none;
 }
 #main ol li {
-  font-family: Georgia, Crimson, serif;
   font-size: 16px;
   color: #333333;
 }
 #main ol.display {
-  font-family: Georgia, Crimson, serif;
   font-size: 16px;
   color: #333333;
   padding: 0 24px 0 48px;
@@ -193,7 +198,6 @@ font-style: normal;
   list-style: upper-roman;
 }
 #main ol.ex li {
-  font-family: Georgia, Crimson, serif;
   font-size: 16px;
   color: #333333;
   padding: 0 24px 0 0;
@@ -208,26 +212,22 @@ font-style: normal;
 #main ol.s34 li {
   line-height: 24px;
   margin: 0 0 0 40px;
-  font-family: Georgia, Crimson, serif;
   font-size: 16px;
   color: #333333;
 }
 #main ol.ex34 li {
   line-height: 28px;
   margin: 12px 0 0 40px;
-  font-family: Georgia, Crimson, serif;
   font-size: 16px;
   color: #333333;
 }
 #main ol.ex34 ol li{
   line-height: 28px;
   margin: 0 0 0 40px;
-  font-family: Georgia, Crimson, serif;
   font-size: 16px;
   color: #333333;
 }
 #main ol.ex_sec {
-  font-family: Georgia, Crimson, serif;
   font-size: 16px;
   color: #333333;
   line-height: 24px;
@@ -240,7 +240,6 @@ font-style: normal;
   margin: 20px 0 0 40px;
 }
 #main ol.ex_q li {
-  font-family: Georgia, Crimson, serif;
   font-size: 16px;
   color: #333333;
   line-height: 24px;
@@ -248,7 +247,6 @@ font-style: normal;
   margin: 20px 0 0 40px;
 }
 #main ol.ex_q1 li {
-  font-family: Georgia, Crimson, serif;
   font-size: 16px;
   color: #333333;
   line-height: 24px;
@@ -256,20 +254,17 @@ font-style: normal;
   margin: 20px 0 0 40px;
 }
 #main ol.ex_q1 span {
-  font-family: Georgia, Crimson, serif;
   font-size: 16px;
   color: #333333;
   display: block;
 }
 #main p {
   padding: 0px 24px 0 24px;
-  font-family: Georgia, Crimson, serif;
   font-size: 16px;
   line-height: 24px;
   color: #333333;
 }
 #main blockquote {
-	font-family: Georgia, Crimson, serif;
 	margin: 0 36px 0 36px;
 	padding: 0 48px 0 24px;
 	font-size: 14px;
@@ -289,7 +284,6 @@ font-style: normal;
 }
 #main td {
   padding: 0px 2px 0 2px;
-  font-family: Georgia, Crimson, serif;
   font-size: 16px;
   line-height: 24px;
   color: #333333;
@@ -302,7 +296,6 @@ font-style: normal;
 }
 #main table.box td {
   padding: 6px 4px 0 8px;
-  font-family: Georgia, Crimson, serif;
   font-size: 16px;
   line-height: 24px;
   color: #333333;
@@ -322,14 +315,12 @@ font-style: normal;
   border: none;
   border-spacing: 0px;
   margin: 24px 0 0 40px;
-  font-family: Georgia, Crimson, serif;
   font-size: 16px;
   line-height: 24px;
   color: #333333;
 }
 #main table.ex td {
   line-height: 24px;
-  font-family: Georgia, Crimson, serif;
   font-size: 16px;
   color: #333333;
 	border: none;
@@ -340,7 +331,6 @@ font-style: normal;
   vertical-align: top;
   text-align: right;
   line-height: 24px;
-  font-family: Georgia, Crimson, serif;
   font-size: 16px;
   color: #333333;
 }
@@ -349,7 +339,6 @@ font-style: normal;
   vertical-align: top;
   text-align: left;
   line-height: 24px;
-  font-family: Georgia, Crimson, serif;
   font-size: 16px;
   color: #333333;
 }
@@ -358,7 +347,6 @@ font-style: normal;
   vertical-align: middle;
   text-align: left;
   line-height: 24px;
-  font-family: Georgia, serif;
   font-size: 16px;
   color: #333333;
 }
@@ -367,7 +355,6 @@ font-style: normal;
   vertical-align: top;
   text-align: left;
   line-height: 24px;
-  font-family: Georgia, Crimson, serif;
   font-size: 16px;
   color: #333333;
 }
@@ -404,68 +391,29 @@ font-style: normal;
 }
 #main table.ex25 td.cs {
   line-height: 24px;
-  font-family: Georgia, Crimson, serif;
   font-size: 16px;
   color: #333333;
   padding: 2px 6px 2px 8px;
 }
-#main table.ex32 {
-  border: 0px solid #DEDEDE;
-  border-spacing: 0px;
-  margin: 24px 0 0 40px;
-  font-family: Verdana, "Arial Unicode MS", "Open Sans", sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  color: #333333;
+.mark32b2l {
+  position: relative;
+  z-index: -3;
+  /*display: none;*/
+  visibility: hidden;
+  opacity: 0.0;
+  float: left;
+	margin: -66px 3px 0px -6px;
+	border: 1px solid orange;
 }
-#main table.ex32 td.c1 {
-  border: 1px solid #DEDEDE;
-  border-bottom: 1px solid black;
-  border-spacing: 0px;
-  padding: 0px 6px 0px 6px;
-  vertical-align: top;
-  text-align: center;
-  line-height: inherit;
-  font-family: Verdana, "Arial Unicode MS", "Open Sans", sans-serif;
-  color: #333333;
-}
-#main table.ex32 input.tv {
-  border: 1px solid #DEDEDE;
-  border-spacing: 0px;
-  width: 16px;
-  display: block;
-  padding: 6px 6px 6px 6px;
-  vertical-align: top;
-  text-align: center;
-  text-transform: uppercase;
-  word-wrap: break-word;
-  font-family: Verdana, "Arial Unicode MS", "Open Sans", sans-serif;
-  font-size: 16px;
-  color: #333333;
-}
-#main table.ex32 td.c1t {
-  border: 1px solid #DEDEDE;
-  border-bottom: 1px solid black;
-  border-spacing: 0px;
-  padding: 0px 3px 0px 9px;
-  vertical-align: top;
-  text-align: right;
-  line-height: inherit;
-  font-family: Georgia, Crimson, serif;
-  color: #333333;
-}
-#main table.ex32 input.c1tv {
-  border: 1px solid #DEDEDE;
-  border-spacing: 0px;
-  width: 16px;
-  padding: 6px 3px 6px 9px;
-  vertical-align: top;
-  text-align: left;
-  text-transform: uppercase;
-  font-family: Verdana, "Arial Unicode MS", "Open Sans", sans-serif;
-  font-size: 16px;
-  letter-spacing: 6px;
-  color: #333333;
+.mark32b2r {
+  position: relative;
+  z-index: -3;
+  /*display: none;*/
+  visibility: hidden;
+  opacity: 0.0;
+  float: left;
+	margin: -66px -6px 0px 3px;
+	border: 1px solid orange;
 }
 #sidebar {
   background-color: #FFFFFF;
@@ -606,7 +554,6 @@ font-style: normal;
   border-spacing: 0px;
 }
 .bluebox td {
-  font-family: Georgia, Crimson, serif;
   font-size: 16px;
   color: #333333;
   line-height: 24px;
@@ -618,7 +565,6 @@ font-style: normal;
   page-break-inside: avoid;
 }
 .box td {
-  font-family: Georgia, Crimson, serif;
   font-size: 16px;
   color: #333333;
   padding: 0 4px 6px 8px;
@@ -804,7 +750,7 @@ font-style: normal;
   vertical-align: 40%;
 }
 .form {
-  font-family: Verdana, "Arial Unicode MS", "Noto Sans", "Open Sans", sans-serif;
+  font-family: Crimson, Georgia, serif;
   font-size: 15px;
 	line-height: 20px;
   font-style: normal;
@@ -827,7 +773,7 @@ font-style: normal;
 	padding: 2px 6px;
 }
 .bform {
-  font-family: Verdana, "Arial Unicode MS", "Noto Sans", "Open Sans", sans-serif;
+  font-family: Crimson, Georgia, serif;
   font-size: 15px;
 	line-height: 20px;
   font-style: normal;
@@ -897,7 +843,6 @@ font-style: normal;
 }
 /* Section2.3 */
 #main ol.ex_q23 li {
-  font-family: Georgia, Crimson, serif;
   font-size: 16px;
   color: #333333;
   line-height: 24px;
@@ -905,18 +850,15 @@ font-style: normal;
   margin: 0 0 0 40px;
 }
 .header {
-  font-family: Georgia, Crimson, serif;
   font-size: 16px;
 	font-weight: bold;
 }
 .form231 {
-  font-family: Georgia, Crimson, serif;
   font-size: 16px;
   font-style: normal;
   width: 218px;
 }
 .form231o {
-  font-family: Georgia, Crimson, serif;
   font-size: 16px;
   font-style: normal;
   width: 112px;
@@ -964,7 +906,6 @@ font-style: normal;
 }
 /* Seciton 2.4 */
 #main ol.ex_q24 li {
-  font-family: Georgia, Crimson, serif;
   font-size: 16px;
   color: #333333;
   line-height: 24px;
@@ -972,7 +913,6 @@ font-style: normal;
   margin: 24px 0 0 32px;
 }
 .form241 {
-  font-family: Georgia, Crimson, serif;
   font-size: 16px;
   font-style: normal;
   width: 400px;
@@ -990,21 +930,18 @@ font-style: normal;
 	margin: 0 0 0 -30px;
 }
 .form242f {
-  font-family: Georgia, Crimson, serif;
   font-size: 16px;
   font-style: normal;
 	text-align: left;
   width: 50px;
 }
 .form242o {
-  font-family: Georgia, Crimson, serif;
   font-size: 16px;
   font-style: normal;
 	text-align: center;
   width: 100px;
 }
 .form242s {
-  font-family: Georgia, Crimson, serif;
   font-size: 16px;
   font-style: normal;
 	text-align: left;
@@ -1095,7 +1032,7 @@ font-style: normal;
 }
 /* Seciton 3.4 */
 .form34 {
-  font-family: Georgia, Crimson, serif;
+  font-family: Crimson, Georgia, serif;
   font-size: 16px;
   font-style: normal;
   width: 120px;
@@ -1185,6 +1122,19 @@ td.operator button {
 	background: #EFEFEF;
 	border: solid #969696 1px;
 }
+button.ca32 {
+  font-family: "Arial Unicode MS", "Noto Sans", "Open Sans", sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  vertical align: middle;
+  width: 130px;
+  height: 28px;
+  margin: 24px 2px 24px 36px;
+	border-radius: 3px;
+	background: #EFEFEF;
+	border: solid #969696 1px;
+	cursor: pointer;
+}
 button.ca33 {
   font-family: "Arial Unicode MS", "Noto Sans", "Open Sans", sans-serif;
   font-size: 15px;
@@ -1223,4 +1173,825 @@ button.ca34 {
 	background: #EFEFEF;
 	border: solid #969696 1px;
 	cursor: pointer;
+}
+/* Seciton 3.2 */
+#main table.ex32 {
+  border: 0px solid #DEDEDE;
+  border-spacing: 0px;
+  float: left;
+  margin: 24px 0 12px 40px;
+  font-family: Verdana, "Arial Unicode MS", "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #333333;
+}
+#main table.ex32 td.sll {
+  width: 24px;
+  border: 0px solid #DEDEDE;
+  border-spacing: 0px;
+  padding: 3px 2px 3px 2px;
+  /*vertical-align: middle;*/
+  text-align: left;
+  line-height: 24px;
+  font-family: "Arial Unicode MS", "Open Sans", sans-serif;
+  color: #333333;
+}
+#main table.ex32 td.sll button {
+  margin: 0 0 0 -4px;
+  text-align: left;
+  line-height: 26px;
+  font-family: "Arial Unicode MS", "Open Sans", sans-serif;
+  font-size: 16px;
+  color: #333333;
+  background-color: transparent;
+  border: 0px solid red;
+}
+#main table.ex32 td.sll button:focus {
+  outline: none;
+}
+#main table.ex32 td.sll input.tv {
+  border: 0px solid green;
+  border-spacing: 0px;
+  width: 18px;
+  line-height: 24px;
+  margin: 0px 0px 0px -4px;
+  padding: 3px 2px 3px 2px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Verdana, "Arial Unicode MS", "Open Sans", sans-serif;
+  font-size: 16px;
+  color: #333333;
+  background-color: transparent;
+}
+#main table.ex32 td.sll input.tv:focus {
+  outline: none;
+}
+#main table.ex32 td.sll span.tv {
+  display: inline-table;
+  border: 0px solid blue;
+  border-spacing: 0px;
+  width: 18px;
+  line-height: 24px;
+  margin: 0px 0px 0px -4px;
+  padding: 3px 2px 3px 2px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Verdana, "Arial Unicode MS", "Open Sans", sans-serif;
+  font-size: 16px;
+  color: #333333;
+}
+#main table.ex32 td.sll .mark32e {
+  position: relative;
+  z-index: -2;
+  visibility: hidden;
+  opacity: 0.0;
+  float: left;
+	margin: -30px 0px 0px -4px;
+	border: 0px solid red;
+}
+#main table.ex32 td.psll {
+  width: 28px;
+  border: 0px solid #DEDEDE;
+  border-spacing: 0px;
+  padding: 3px 2px 3px 2px;
+  /*vertical-align: middle;*/
+  text-align: left;
+  line-height: 24px;
+  font-family: "Arial Unicode MS", "Open Sans", sans-serif;
+  color: #333333;
+}
+#main table.ex32 td.psll span.tv {
+  display: inline-table;
+  border: 0px solid blue;
+  border-spacing: 0px;
+  width: 18px;
+  line-height: 24px;
+  margin: 0px 0px 0px 4px;
+  padding: 3px 2px 3px 2px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Verdana, "Arial Unicode MS", "Open Sans", sans-serif;
+  font-size: 16px;
+  color: #333333;
+}
+#main table.ex32 td.ppsll {
+  width: 36px;
+  border: 0px solid #DEDEDE;
+  border-spacing: 0px;
+  padding: 3px 2px 3px 2px;
+  /*vertical-align: middle;*/
+  text-align: left;
+  line-height: 24px;
+  font-family: "Arial Unicode MS", "Open Sans", sans-serif;
+  color: #333333;
+}
+#main table.ex32 td.ppsll span.tv {
+  display: inline-table;
+  border: 0px solid blue;
+  border-spacing: 0px;
+  width: 18px;
+  line-height: 24px;
+  margin: 0px 0px 0px 8px;
+  padding: 3px 2px 3px 2px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Verdana, "Arial Unicode MS", "Open Sans", sans-serif;
+  font-size: 16px;
+  color: #333333;
+}
+#main table.ex32 td.slsll {
+  width: 42px;
+  border: 0px solid #DEDEDE;
+  border-spacing: 0px;
+  padding: 3px 2px 3px 2px;
+  text-align: left;
+  line-height: 24px;
+  font-family: "Arial Unicode MS", "Open Sans", sans-serif;
+  color: #333333;
+}
+#main table.ex32 td.slsll button {
+  margin: 0 0 0 -4px;
+  text-align: left;
+  line-height: 24px;
+  font-family: "Arial Unicode MS", "Open Sans", sans-serif;
+  font-size: 16px;
+  color: #333333;
+  background-color: transparent;
+  border: 0px solid red;
+}
+#main table.ex32 td.slsll button:focus {
+  outline: none;
+}
+#main table.ex32 td.slsll input.tv {
+  border: 0px solid green;
+  border-spacing: 0px;
+  width: 18px;
+  line-height: 24px;
+  margin: 0px 12px 0px -24px;
+  padding: 3px 2px 3px 2px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Verdana, "Arial Unicode MS", "Open Sans", sans-serif;
+  font-size: 16px;
+  color: #333333;
+  background-color: transparent;
+}
+#main table.ex32 td.slsll input.tv:focus {
+  outline: none;
+}
+#main table.ex32 td.slsll span.tv {
+  display: inline;
+  border: 0px solid blue;
+  border-spacing: 0px;
+  width: 18px;
+  line-height: 24px;
+  margin: 0px 0px 0px -12px;
+  padding: 3px 2px 3px 2px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Verdana, "Arial Unicode MS", "Open Sans", sans-serif;
+  font-size: 16px;
+  color: #333333;
+}
+#main table.ex32 td.slsll .mark32e {
+  position: relative;
+  z-index: -2;
+  visibility: hidden;
+  opacity: 0.0;
+  float: left;
+	margin: 0px 0px 0px -4px;
+	border: 0
+}
+#main table.ex32 td.slpsll {
+  width: 46px;
+  border: 0px solid #DEDEDE;
+  border-spacing: 0px;
+  padding: 3px 2px 3px 2px;
+  text-align: left;
+  line-height: 24px;
+  font-family: "Arial Unicode MS", "Open Sans", sans-serif;
+  color: #333333;
+}
+#main table.ex32 td.slpsll button {
+  margin: 0 0 0 -4px;
+  text-align: left;
+  line-height: 24px;
+  font-family: "Arial Unicode MS", "Open Sans", sans-serif;
+  font-size: 16px;
+  color: #333333;
+  background-color: transparent;
+  border: 0px solid red;
+}
+#main table.ex32 td.slpsll button:focus {
+  outline: none;
+}
+#main table.ex32 td.slpsll input.tv {
+  border: 0px solid green;
+  border-spacing: 0px;
+  width: 18px;
+  line-height: 24px;
+  margin: 0px 12px 0px -24px;
+  padding: 3px 2px 3px 2px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Verdana, "Arial Unicode MS", "Open Sans", sans-serif;
+  font-size: 16px;
+  color: #333333;
+  background-color: transparent;
+}
+#main table.ex32 td.slpsll input.tv:focus {
+  outline: none;
+}
+#main table.ex32 td.slpsll span.tv {
+  display: inline;
+  border: 0px solid blue;
+  border-spacing: 0px;
+  width: 18px;
+  line-height: 24px;
+  margin: 0px 0px 0px -6px;
+  padding: 3px 2px 3px 2px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Verdana, "Arial Unicode MS", "Open Sans", sans-serif;
+  font-size: 16px;
+  color: #333333;
+}
+#main table.ex32 td.slpsll .mark32e {
+  position: relative;
+  z-index: -2;
+  visibility: hidden;
+  opacity: 0.0;
+  float: left;
+	margin: 0px 0px 0px -4px;
+	border: 0
+}
+#main table.ex32 td.slpl {
+  width: 28px;
+  border: 0px solid #DEDEDE;
+  border-spacing: 0px;
+  padding: 3px 2px 3px 2px;
+  text-align: left;
+  line-height: 24px;
+  font-family: "Arial Unicode MS", "Open Sans", sans-serif;
+  color: #333333;
+}
+#main table.ex32 td.slpl span.tv {
+  display: inline-table;
+  border: 0px solid blue;
+  border-spacing: 0px;
+  width: 18px;
+  line-height: 24px;
+  margin: 0px 0px 0px -4px;
+  padding: 3px 2px 3px 2px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Verdana, "Arial Unicode MS", "Open Sans", sans-serif;
+  font-size: 16px;
+  color: #333333;
+}
+#main table.ex32 td.slpl .mark32e {
+  position: relative;
+  z-index: -2;
+  visibility: visible;
+  opacity: 0.5;
+  float: right;
+	margin: -30px -5px 0px 0px;
+	border: 1px solid red;
+}
+#main table.ex32 td.slslpl {
+  width: 46px;
+  border: 0px solid #DEDEDE;
+  border-spacing: 0px;
+  padding: 3px 2px 3px 2px;
+  text-align: left;
+  line-height: 24px;
+  font-family: "Arial Unicode MS", "Open Sans", sans-serif;
+  color: #333333;
+}
+#main table.ex32 td.slslpl button {
+  margin: 0 0 0 -4px;
+  text-align: left;
+  line-height: 24px;
+  font-family: "Arial Unicode MS", "Open Sans", sans-serif;
+  font-size: 16px;
+  color: #333333;
+  background-color: transparent;
+  border: 0px solid red;
+}
+#main table.ex32 td.slslpl button:focus {
+  outline: none;
+}
+#main table.ex32 td.slslpl input.tv {
+  border: 0px solid green;
+  border-spacing: 0px;
+  width: 18px;
+  line-height: 24px;
+  margin: 0px 12px 0px -24px;
+  padding: 3px 2px 3px 2px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Verdana, "Arial Unicode MS", "Open Sans", sans-serif;
+  font-size: 16px;
+  color: #333333;
+  background-color: transparent;
+}
+#main table.ex32 td.slslpl input.tv:focus {
+  outline: none;
+}
+#main table.ex32 td.slslpl span.tv {
+  display: inline;
+  border: 0px solid blue;
+  border-spacing: 0px;
+  width: 18px;
+  line-height: 24px;
+  margin: 0px 0px 0px -12px;
+  padding: 3px 2px 3px 2px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Verdana, "Arial Unicode MS", "Open Sans", sans-serif;
+  font-size: 16px;
+  color: #333333;
+}
+#main table.ex32 td.slslpl .mark32e {
+  position: relative;
+  z-index: -2;
+  visibility: hidden;
+  opacity: 0.0;
+  float: left;
+	margin: 0px 0px 0px -4px;
+	border: 0px solid red;
+}
+#main table.ex32 td.slr {
+  width: 24px;
+  border: 0px solid #DEDEDE;
+  border-spacing: 0px;
+  padding: 3px 2px 3px 2px;
+  text-align: right;
+  line-height: 24px;
+  font-family: "Arial Unicode MS", "Open Sans", sans-serif;
+  color: #333333;
+}
+#main table.ex32 td.slr button {
+  margin: 0 -4px 0 0px;
+  text-align: right;
+  line-height: 26px;
+  font-family: "Arial Unicode MS", "Open Sans", sans-serif;
+  font-size: 16px;
+  color: #333333;
+  background-color: transparent;
+  border: 0px solid red;
+}
+#main table.ex32 td.slr button:focus {
+  outline: none;
+}
+#main table.ex32 td.slr input.tv {
+  border: 0px solid green;
+  border-spacing: 0px;
+  width: 18px;
+  line-height: 24px;
+  margin: 0px -4px 0px 0px;
+  padding: 3px 2px 3px 2px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Verdana, "Arial Unicode MS", "Open Sans", sans-serif;
+  font-size: 16px;
+  color: #333333;
+  background-color: transparent;
+}
+#main table.ex32 td.slr input.tv:focus {
+  outline: none;
+}
+#main table.ex32 td.slr span.tv {
+  display: inline-table;
+  border: 0px solid blue;
+  border-spacing: 0px;
+  width: 18px;
+  line-height: 24px;
+  margin: 0px -6px 0px 0px;
+  padding: 3px 2px 3px 2px;
+  /*vertical-align: 0px;*/
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Verdana, "Arial Unicode MS", "Open Sans", sans-serif;
+  font-size: 16px;
+  color: #333333;
+}
+#main table.ex32 td.slr .mark32e {
+  position: relative;
+  z-index: -2;
+  visibility: hidden;
+  opacity: 0.0;
+  float: right;
+	margin: -30px -5px 0px 0px;
+	border: 0px solid red;
+}
+#main table.ex32 td.pslr {
+  width: 28px;
+  border: 0px solid #DEDEDE;
+  border-spacing: 0px;
+  padding: 3px 2px 3px 2px;
+  text-align: right;
+  line-height: 24px;
+  font-family: "Arial Unicode MS", "Open Sans", sans-serif;
+  color: #333333;
+}
+#main table.ex32 td.pslr button {
+  margin: 0 -4px 0 0px;
+  text-align: right;
+  line-height: 24px;
+  font-family: "Arial Unicode MS", "Open Sans", sans-serif;
+  font-size: 16px;
+  color: #333333;
+  background-color: transparent;
+  border: 0px solid red;
+}
+#main table.ex32 td.pslr button:focus {
+  outline: none;
+}
+#main table.ex32 td.pslr input.tv {
+  border: 0px solid green;
+  border-spacing: 0px;
+  width: 18px;
+  line-height: 24px;
+  margin: 0px -4px 0px 0px;
+  padding: 3px 2px 3px 2px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Verdana, "Arial Unicode MS", "Open Sans", sans-serif;
+  font-size: 16px;
+  color: #333333;
+  background-color: transparent;
+}
+#main table.ex32 td.pslr input.tv:focus {
+  outline: none;
+}
+#main table.ex32 td.pslr span.tv {
+  display: inline-table;
+  border: 0px solid blue;
+  border-spacing: 0px;
+  width: 18px;
+  line-height: 24px;
+  margin: 0px -6px 0px 0px;
+  padding: 3px 2px 3px 2px;
+  /*vertical-align: 0px;*/
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Verdana, "Arial Unicode MS", "Open Sans", sans-serif;
+  font-size: 16px;
+  color: #333333;
+}
+#main table.ex32 td.pslr .mark32e {
+  position: relative;
+  z-index: -2;
+  visibility: hidden;
+  opacity: 0.0;
+  float: right;
+	margin: -30px -5px 0px 0px;
+	border: 0px solid red;
+}
+#main table.ex32 td.slpr {
+  width: 28px;
+  border: 0px solid #DEDEDE;
+  border-spacing: 0px;
+  padding: 3px 2px 3px 2px;
+  text-align: right;
+  line-height: 24px;
+  font-family: "Arial Unicode MS", "Open Sans", sans-serif;
+  color: #333333;
+}
+#main table.ex32 td.slpr span.tv {
+  display: inline-table;
+  border: 0px solid blue;
+  border-spacing: 0px;
+  width: 18px;
+  line-height: 24px;
+  margin: 0px 0px 0px -6px;
+  padding: 3px 2px 3px 2px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Verdana, "Arial Unicode MS", "Open Sans", sans-serif;
+  font-size: 16px;
+  color: #333333;
+}
+#main table.ex32 td.slslpr {
+  width: 46px;
+  border: 0px solid #DEDEDE;
+  border-spacing: 0px;
+  padding: 3px 2px 3px 2px;
+  text-align: right;
+  line-height: 24px;
+  font-family: "Arial Unicode MS", "Open Sans", sans-serif;
+  color: #333333;
+}
+#main table.ex32 td.slslpr button {
+  margin: 0 -4px 0 0px;
+  text-align: right;
+  line-height: 24px;
+  font-family: "Arial Unicode MS", "Open Sans", sans-serif;
+  font-size: 16px;
+  color: #333333;
+  background-color: transparent;
+  border: 0px solid red;
+}
+#main table.ex32 td.slslpr button:focus {
+  outline: none;
+}
+#main table.ex32 td.slslpr input.tv {
+  border: 0px solid green;
+  border-spacing: 0px;
+  width: 18px;
+  line-height: 24px;
+  margin: 0px -4px 0px 0px;
+  padding: 3px 2px 3px 2px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Verdana, "Arial Unicode MS", "Open Sans", sans-serif;
+  font-size: 16px;
+  color: #333333;
+  background-color: transparent;
+}
+#main table.ex32 td.slslpr input.tv:focus {
+  outline: none;
+}
+#main table.ex32 td.slslpr span.tv {
+  display: inline;
+  border: 0px solid blue;
+  border-spacing: 0px;
+  width: 18px;
+  line-height: 24px;
+  margin: 0px 0px 0px -6px;
+  padding: 3px 2px 3px 2px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Verdana, "Arial Unicode MS", "Open Sans", sans-serif;
+  font-size: 16px;
+  color: #333333;
+}
+#main table.ex32 td.slslpr .mark32e {
+  position: relative;
+  z-index: -2;
+  visibility: hidden;
+  opacity: 0.0;
+  float: left;
+	margin: 0px -4px 0px 0px;
+	border: 0px solid red;
+}
+#main table.ex32 td.spl {
+  width: 8px;
+  border: 0px solid #DEDEDE;
+  border-spacing: 0px;
+  padding: 3px 2px 3px 2px;
+  text-align: left;
+  line-height: 24px;
+  font-family: "Arial Unicode MS", "Open Sans", sans-serif;
+  color: #333333;
+}
+#main table.ex324 {
+  border: 0px solid #DEDEDE;
+  border-spacing: 0px;
+  float: left;
+  margin: 0px 0 12px 40px;
+  font-family: Verdana, "Arial Unicode MS", "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #333333;
+}
+#main div.arg {
+  padding-left: 12px;
+}
+#main div.udl {
+  padding-left: 12px;
+  border-bottom: 1px solid #333333;
+}
+#main form.prv {
+  clear: both;
+  margin: 0px 0 0 12px;
+  padding: 6px 0px 0px 0px;
+  vertical-align: middle;
+  font-size: 16px;
+  color: #333333;
+}
+#main form div.rad {
+  margin: 0 0 0 36px;
+  padding: 6px 0px 0px 0px;
+  vertical-align: middle;
+  font-size: 16px;
+  color: #333333;
+}
+#main form div.rad input:focus {
+  outline: none;
+}
+#main form div.chb {
+  margin: 0 0 0 36px;
+  padding: 6px 0px 0px 0px;
+  vertical-align: middle;
+  font-size: 16px;
+  color: #333333;
+}
+#main form div.chb input:focus {
+  outline: none;
+}
+#main form button.ca32:focus {
+  outline: none;
+}
+.mark32b2l {
+  position: relative;
+  z-index: -4;
+  visibility: hidden;
+  opacity: 0.0;
+  float: left;
+	margin: -64px 0px 0px -5px;
+	border: 0px solid orange;
+}
+.mark32b2r {
+  position: relative;
+  z-index: -4;
+  visibility: hidden;
+  opacity: 0.0;
+  float: left;
+	margin: -64px -4px 0px 4px;
+	border: 0px solid orange;
+}
+.mark32b4l {
+  position: relative;
+  z-index: -4;
+  visibility: hidden;
+  opacity: 0.0;
+  float: left;
+	margin: -123px 0px 0px -6px;
+	border: 0px solid red;
+}
+.mark32b4r {
+  position: relative;
+  z-index: -4;
+  visibility: hidden;
+  opacity: 0.0;
+  float: left;
+	margin: -123px -6px 0px 5px;
+	border: 0px solid red;
+}
+td.pslr .mark32b4r {
+  position: relative;
+  z-index: -4;
+  visibility: hidden;
+  opacity: 0.0;
+  float: left;
+	margin: -123px -6px 0px 9px;
+	border: 0px solid red;
+}
+.mark32b8l {
+  position: relative;
+  z-index: -4;
+  /*display: none;*/
+  visibility: hidden;
+  opacity: 0.0;
+  float: left;
+	margin: -243px 0px 0px -6px;
+	border: 0px solid red;
+}
+.mark32b8r {
+  position: relative;
+  z-index: -4;
+  /*display: none;*/
+  visibility: hidden;
+  opacity: 0.0;
+  float: left;
+	margin: -243px -12px 0px 5px;
+	border: 0px solid red;
+}
+td.pslr .mark32b8r {
+  position: relative;
+  z-index: -4;
+  /*display: none;*/
+  visibility: hidden;
+  opacity: 0.0;
+  float: left;
+	margin: -243px -12px 0px 9px;
+	border: 0px solid red;
+}
+.mark32c {
+  position: relative;
+  z-index: -1;
+  visibility: hidden;
+  opacity: 0.0;
+  float: left;
+	margin: 0px -24px 0px 0px;
+	border: 0px solid orange;
+}
+.mark32e {
+  position: relative;
+  z-index: -2;
+  visibility: hidden;
+  opacity: 0.0;
+  float: left;
+	margin: 0px -20px 0px 0px;
+	border: 0px solid orange;
+}
+.mark32cl {
+  position: relative;
+  z-index: -3;
+  visibility: hidden;
+  opacity: 0.0;
+  float: left;
+	margin: -27px 0px 0px -5px;
+	border: 0px solid orange;
+}
+.mark32cr {
+  position: relative;
+  z-index: -3;
+  visibility: hidden;
+  opacity: 0.0;
+  float: left;
+	margin: -27px -4px 0px 6px;
+	border: 0px solid orange;
+}
+.mark32ct {
+  position: relative;
+  z-index: -3;
+  visibility: hidden;
+  opacity: 0.0;
+  float: left;
+  margin: 60px 0px 0px 36px;
+	border: 0px solid orange;
+}
+.mark32mb {
+  position: relative;
+  z-index: -4;
+  visibility: hidden;
+  opacity: 0.0;
+  float: left;
+	margin: 60px 0px 0px -150px;
+	border: 0px solid yellos;
+}
+.mark32wb {
+  position: relative;
+  z-index: -5;
+  visibility: hidden;
+  opacity: 0.0;
+  float: left;
+	margin: 60px 0px 0px -124px;
+	border: 0px solid red;
+}
+.mark32wp {
+  position: relative;
+  z-index: -2;
+  visibility: hidden;
+  opacity: 0.0;
+  float: none;
+	margin: 0px 0px -36px 100px;
+	border: 0px solid red;
+}
+.mark32wv {
+  position: relative;
+  z-index: -2;
+  visibility: hidden;
+  opacity: 0.0;
+  float: none;
+	margin: 0px 0px -24px 100px;
+	border: 0px solid red;
+}
+.mark32wrs {
+  position: relative;
+  z-index: -2;
+  visibility: hidden;
+  opacity: 0.0;
+  float: none;
+	margin: 0px 0px -36px 66px;
+	border: 0px solid blue;
+}
+.mark32omr {
+  position: relative;
+  z-index: -2;
+  visibility: hidden;
+  opacity: 0.0;
+  float: none;
+	margin: 0px 0px -8px 110px;
+	border: 0px solid red;
+}
+.mark32ers {
+  position: relative;
+  z-index: -2;
+  visibility: hidden;
+  opacity: 0.0;
+  float: none;
+	margin: -48px 0px 22px 132px;
+	border: 0px solid green;
+}
+.mark32crs {
+  position: relative;
+  z-index: -2;
+  visibility: hidden;
+  opacity: 0.0;
+  float: none;
+	margin: -72px 0px 54px 120px;
+	border: 0px solid gray;
+}
+.mark32wrv {
+  position: relative;
+  z-index: -2;
+  visibility: hidden;
+  opacity: 0.0;
+  float: none;
+	margin: 0px 0px 0px 34px;
+	border: 0px solid blue;
 }

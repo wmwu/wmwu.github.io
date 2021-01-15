@@ -1,0 +1,45 @@
+body {
+  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+div a {
+  color: #6d6d6d;
+  font-size: 140%;
+  font-weight: 500;
+  text-decoration: none;
+}
+div a:hover {
+  color: #808080;
+  border-bottom: 1px solid #808080;
+}
+p {
+  color: #666666;
+  font-size: 105%;
+  font-weight: 300;
+}
+p a {
+  color: #6d6d6d;
+  font-size: 105%;
+  font-weight: 500;
+  text-decoration: none;
+}
+p a:hover {
+  color: #808080;
+  font-size: 105%;
+  font-weight: 500;
+  border-bottom: 1px solid #808080;
+}
+ol li {
+  color: #666666;
+  font-size: 105%;
+  font-weight: 300;
+}
+.frame {
+  width: 800px;
+  border-top: 1px solid #BBC2C7;
+}
+.item {
+  color: #808080;
+  width: 782px; margin: 24px 0 24px 0;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}

@@ -1,19 +1,43 @@
 body {
-  font-family: "Lucida Grande"; Arial; sans-serif;
+  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 div a {
   color: #706b5b;
+  font-size: 140%;
+  font-weight: 500;
   text-decoration: none;
 }
 div a:hover {
-  border-bottom: 1px solid #706b5b;
+  color: #9C825B;
+  border-bottom: 1px solid #9C825B;
+}
+p {
+  color: #666666;
+  font-weight: 300;
+  font-size: 105%;
+}
+p a {
+  color: #706b5b;
+  font-size: 105%;
+  font-weight: 500;
+  text-decoration: none;
+}
+p a:hover {
+  color: #9C825B;
+  font-size: 105%;
+  font-weight: 500;
+  border-bottom: 1px solid #4caf50;
+}
+ul li {
+  font-weight: 300;
+  font-size: 105%;
+}
+.frame {
+  width: 800px;
+  border-top: 1px solid #BBC2C7;
 }
 .item {
-  color: #fff;
-  background-color: #706b5b;
-  width: 782px; margin: 24px 0 24px 0;
-  padding: 14px 0 14px 18px;
-  font-size: large;
-  font-weight: 600;
+  color: #706b5b;
+  width: 782px; margin: 24px 0 12px 0;
   letter-spacing: 1px;
 }
