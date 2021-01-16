@@ -77,6 +77,9 @@ body {
   line-height: 180%;
   color: #0a2c02;
 }
+#main p.quote {
+  margin: 0 10px 0 auto;
+}
 #sidebar {
   border-bottom: 1px solid white;
   background-color: #E6E6E6;
@@ -95,12 +98,23 @@ body {
   margin: 18px auto;
 }
 #footer {
-  background-color: #FFFFFF;
-  clear: both;
-  height: 0px;
+  overflow: hidden;
+  line-height: 36px;
+  font-family: 'Crimson Pro', serif;
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-weight: lighter;
+  color: #0a2c02;
+  margin: 12px 0 12px 240px;
+  padding: 72px 0 24px 36px;
 }
-#main p.quote {
-  margin: 0 10px 0 auto;
+#footer a {
+  color: #0a2c02;
+  text-decoration: none;
+}
+#footer a:hover {
+  color: #0a2c02;
+  border-bottom: 1px solid #0a2c02;
 }
 img {
   position: absolute;
