@@ -55,11 +55,27 @@ body {
 }
 #main {
   overflow: hidden;
-  width: 800px;
+  width: 75%;
   background-color: transparent;
 }
+#main h1 {
+  margin: 72px 12px 12px 60px;
+  padding: 12px 0 12px 12px;
+  overflow: hidden;
+  line-height: 36px;
+  font-family: 'Crimson Pro', serif;
+  font-size: 36px;
+  letter-spacing: 4px;
+  font-weight: lighter;
+  color: #0a2c02;
+}
+#main h1::first-letter {
+  font-size: 200%;
+  font-weight: lighter;
+}
 #main h2 {
-  margin: 42px 0 24px 60px;
+  margin: 24px 0 12px 60px;
+  padding: 12px 0 12px 12px;
   text-align: left;
   color: #0a2c02;
   line-height: 100%;
@@ -69,8 +85,8 @@ body {
   letter-spacing: 2px;
 }
 #main p {
-  padding: 0 12px 0 36px;
   margin: 12px 12px 24px 60px;
+  padding: 0 12px 0 12px;
   font-family: 'Crimson Pro', serif;
   font-size: 18px;
   letter-spacing: 0;
@@ -81,6 +97,9 @@ body {
   font-size: 200%;
   font-weight: lighter;
 }
+#main p.quote {
+  margin: 0 10px 0 auto;
+}
 #main a {
   color: #0a2c02;
   text-decoration: none;
@@ -90,24 +109,30 @@ body {
   border-bottom: 1px solid #0a2c02;
 }
 #sidebar {
-  border-bottom: 1px solid white;
-  background-color: #E6E6E6;
-  height: 420px;
-  width: 240px;
-  float: left;
+  background-color: transparent;
+  position: absolute;
+  top: 120px;
+  right: 0px;
+  width: 22%;
+  float: right;
 }
 #sidebar p {
+  margin: 12px 0 12px 12px;
+  padding: 0 24px 0 0;
   font-family: 'Crimson Pro', serif;
-  font-size: 15px;
+  font-size: 18px;
   letter-spacing: 0;
   line-height: 24px;
-  color: #333333;
-  text-align: left;
-  padding: 0 24px 0 24px;
-  margin: 18px auto;
+  color: #0a2c02;
+  text-align: right;
 }
-#main p.quote {
-  margin: 0 10px 0 auto;
+#sidebar a {
+  color: #0a2c02;
+  text-decoration: none;
+}
+#sidebar a:hover {
+  color: #0a2c02;
+  border-bottom: 1px solid #0a2c02;
 }
 img {
   position: absolute;
@@ -116,10 +141,11 @@ img {
   z-index: -1;
 }
 hr {
+  width: 70%;
   margin: 24px 72px 0 72px;
 }
 #footnotes {
-  width: 780px;
+  width: 75%;
   margin: 0 0 36px 0;
   padding: 12 0 12px 24px;
 }
