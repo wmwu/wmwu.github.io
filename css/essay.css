@@ -55,7 +55,7 @@ body {
 }
 #main {
   overflow: hidden;
-  width: 75%;
+  width: 70%;
   background-color: transparent;
 }
 #main h1 {
@@ -109,12 +109,13 @@ body {
   border-bottom: 1px solid #0a2c02;
 }
 #sidebar {
-  background-color: transparent;
-  position: absolute;
+  position: -webkit-sticky;
+  position: sticky;
   top: 120px;
-  right: 0px;
-  width: 22%;
+  right: 0;
+  width: 25%;
   float: right;
+  background-color: transparent;
 }
 #sidebar p {
   margin: 12px 0 12px 12px;
@@ -126,7 +127,11 @@ body {
   color: #0a2c02;
   text-align: right;
 }
+#sidebar p.tc {
+  font-family: 'Noto Serif TC', 'Crimson Pro', serif;
+}
 #sidebar a {
+  letter-spacing: 2px;
   color: #0a2c02;
   text-decoration: none;
 }
@@ -141,11 +146,11 @@ img {
   z-index: -1;
 }
 hr {
-  width: 70%;
+  width: 65%;
   margin: 24px 72px 0 72px;
 }
 #footnotes {
-  width: 75%;
+  width: 70%;
   margin: 0 0 36px 0;
   padding: 12 0 12px 24px;
 }
@@ -169,7 +174,7 @@ hr {
   color: #0a2c02;
   border-bottom: 1px solid #0a2c02;
 }
-#footer {
+#footer p {
   overflow: hidden;
   line-height: 36px;
   font-family: 'Crimson Pro', serif;
