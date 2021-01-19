@@ -77,6 +77,10 @@ body {
   line-height: 180%;
   color: #0a2c02;
 }
+#main p.tc {
+  font-family: 'Noto Serif TC', 'Crimson Pro', serif;
+  letter-spacing: 2px;
+}
 #main p.quote {
   margin: 0 10px 0 auto;
 }
@@ -98,6 +102,9 @@ body {
   margin: 18px auto;
 }
 #footer {
+  width: 900px;
+}
+#footer p {
   overflow: hidden;
   line-height: 36px;
   font-family: 'Crimson Pro', serif;
@@ -105,8 +112,8 @@ body {
   letter-spacing: 2px;
   font-weight: lighter;
   color: #0a2c02;
-  margin: 12px 0 12px 240px;
-  padding: 72px 0 24px 36px;
+  margin: 12px 12px 12px 240px;
+  padding: 72px 12px 24px 36px;
 }
 #footer a {
   color: #0a2c02;
