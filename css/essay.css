@@ -129,6 +129,7 @@ body {
 }
 #sidebar p.tc {
   font-family: 'Noto Serif TC', 'Crimson Pro', serif;
+  letter-spacing: 2px;
 }
 #sidebar a {
   letter-spacing: 2px;
@@ -173,6 +174,9 @@ hr {
 #footnotes a:hover {
   color: #0a2c02;
   border-bottom: 1px solid #0a2c02;
+}
+#footer {
+  padding: 0 0 36px 0;
 }
 #footer p {
   overflow: hidden;
