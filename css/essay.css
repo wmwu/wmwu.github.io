@@ -147,18 +147,18 @@ img {
   z-index: -1;
 }
 hr {
-  width: 65%;
+  width: 35%;
   margin: 24px 72px 0 72px;
 }
-#footnotes {
+.footnotes {
   width: 70%;
   margin: 0 0 36px 0;
   padding: 12 0 12px 24px;
 }
-#footnotes ol li {
+.footnotes ol li {
   margin-left: 72px;
 }
-#footnotes p {
+.footnotes p {
   padding: 0 12px 0 12px;
   margin: 12px 12px 12px 0;
   font-family: 'Crimson Pro', Georgia, serif;
@@ -167,11 +167,11 @@ hr {
   line-height: 140%;
   color: #0a2c02;
 }
-#footnotes a {
+.footnotes a {
   color: #0a2c02;
   text-decoration: none;
 }
-#footnotes a:hover {
+.footnotes a:hover {
   color: #0a2c02;
   border-bottom: 1px solid #0a2c02;
 }
