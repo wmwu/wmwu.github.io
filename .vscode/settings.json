@@ -1,0 +1,15 @@
+{
+    "remote.portsAttributes": {
+        "markdown.styles": ["markdown.css"]
+    },
+    "[json]": {
+    
+        "editor.quickSuggestions": {
+            "strings": true
+        },
+        "editor.suggest.insertMode": "replace"
+    },
+    "markdown.styles": [
+        "markdown.css"
+    ]
+}
