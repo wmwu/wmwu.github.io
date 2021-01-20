@@ -1,0 +1,199 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #F7F8EE;
+}
+#header {
+  width: 800px;
+  background-color: transparent;
+}
+#header h1 {
+  overflow: hidden;
+  line-height: 36px;
+  font-family: 'Crimson Pro', Georgia, serif;
+  font-size: 36px;
+  letter-spacing: 4px;
+  font-weight: lighter;
+  color: #0a2c02;
+  margin: 12px 0 12px 24px;
+  padding: 72px 0 24px 36px;
+}
+#header h1::first-letter {
+  font-size: 200%;
+  font-weight: lighter;
+}
+#nav {
+  overflow: hidden;
+  background-color: #E6E6E6;
+  height: 48px;
+}
+#nav a {
+  display: block;
+  font-family: Arial, Helvetica, 'Open Sans', sans-serif;
+  font-size: 14px;
+  color: #336666;
+  line-height: 28px;
+  letter-spacing: 1px;
+  text-align: left;
+  margin: 10px 0px 0 20px;
+  text-decoration: none;
+}
+#nav a:hover {
+  color: #0a2c02;
+  background-color: #F7F8EE;
+  border-bottom: 1px solid #0a2c02;
+}
+#nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+#nav li {
+  display: block;
+  float: left;
+}
+#main {
+  overflow: hidden;
+  width: 70%;
+  background-color: transparent;
+}
+#main h1 {
+  margin: 72px 12px 12px 60px;
+  padding: 12px 0 12px 12px;
+  overflow: hidden;
+  line-height: 36px;
+  font-family: 'Crimson Pro', Georgia, serif;
+  font-size: 36px;
+  letter-spacing: 4px;
+  font-weight: lighter;
+  color: #0a2c02;
+}
+#main h1::first-letter {
+  font-size: 200%;
+  font-weight: lighter;
+}
+#main h2 {
+  margin: 24px 0 12px 60px;
+  padding: 12px 0 12px 12px;
+  text-align: left;
+  color: #0a2c02;
+  line-height: 100%;
+  font-family: 'Crimson Pro', serif;
+  font-size: 22px;
+  font-weight: 100;
+  letter-spacing: 2px;
+}
+#main p {
+  margin: 12px 12px 24px 60px;
+  padding: 0 12px 0 12px;
+  font-family: 'Crimson Pro', Georgia, serif;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: 140%;
+  color: #0a2c02;
+}
+#main p.first::first-letter {
+  font-size: 200%;
+  font-weight: lighter;
+}
+#main p.quote {
+  margin: 0 10px 0 auto;
+}
+#main a {
+  color: #0a2c02;
+  text-decoration: none;
+}
+#main a:hover {
+  color: #0a2c02;
+  border-bottom: 1px solid #0a2c02;
+}
+#sidebar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 120px;
+  right: 0;
+  width: 25%;
+  float: right;
+  background-color: transparent;
+}
+#sidebar p {
+  margin: 12px 0 12px 12px;
+  padding: 0 24px 0 0;
+  font-family: 'Crimson Pro', Georgia, serif;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: 24px;
+  color: #0a2c02;
+  text-align: right;
+}
+#sidebar p.tc {
+  font-family: 'Noto Serif TC', 'Crimson Pro', serif;
+  letter-spacing: 2px;
+}
+#sidebar a {
+  letter-spacing: 2px;
+  color: #0a2c02;
+  text-decoration: none;
+}
+#sidebar a:hover {
+  color: #0a2c02;
+  border-bottom: 1px solid #0a2c02;
+}
+img {
+  position: absolute;
+  left: 12px;
+  top: 0px;
+  z-index: -1;
+}
+hr {
+  width: 35%;
+  margin: 24px 72px 0 72px;
+}
+.footnotes {
+  width: 70%;
+  margin: 0 0 36px 0;
+  padding: 12 0 12px 24px;
+}
+.footnotes ol li {
+  margin-left: 72px;
+}
+.footnotes p {
+  padding: 0 12px 0 12px;
+  margin: 12px 12px 12px 0;
+  font-family: 'Crimson Pro', Georgia, serif;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: 140%;
+  color: #0a2c02;
+}
+.footnotes a {
+  color: #0a2c02;
+  text-decoration: none;
+}
+.footnotes a:hover {
+  color: #0a2c02;
+  border-bottom: 1px solid #0a2c02;
+}
+#footer {
+  padding: 0 0 36px 0;
+}
+#footer p {
+  overflow: hidden;
+  line-height: 36px;
+  font-family: 'Crimson Pro', Georgia, serif;
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-weight: lighter;
+  color: #0a2c02;
+  margin: 12px 0 12px 24px;
+  padding: 12px 0 24px 36px;
+}
+#footer a {
+  color: #0a2c02;
+  text-decoration: none;
+}
+#footer a:hover {
+  color: #0a2c02;
+  border-bottom: 1px solid #0a2c02;
+}
