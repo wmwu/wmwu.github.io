@@ -100,13 +100,24 @@ body {
 #main p.quote {
   margin: 0 10px 0 auto;
 }
-#main a {
+/*#main a {
   color: #0a2c02;
   text-decoration: none;
 }
 #main a:hover {
   color: #0a2c02;
   border-bottom: 1px solid #0a2c02;
+}*/
+#main a {
+  color: #0a2c02;
+  /* Distance from text */
+  padding-bottom: 1px;
+  text-decoration: none;
+  box-shadow: none;
+  transition: box-shadow .33s ease-out;
+}
+#main a:hover {
+   box-shadow: 0 1px 0 0 #0a2c02;
 }
 #sidebar {
   position: -webkit-sticky;
@@ -134,11 +145,14 @@ body {
 #sidebar a {
   letter-spacing: 2px;
   color: #0a2c02;
+  /* Distance from text */
+  padding-bottom: 1px;
   text-decoration: none;
+  box-shadow: none;
+  transition: box-shadow .33s ease-out;
 }
 #sidebar a:hover {
-  color: #0a2c02;
-  border-bottom: 1px solid #0a2c02;
+  box-shadow: 0 1px 0 0 #0a2c02;
 }
 img {
   position: absolute;
@@ -169,11 +183,14 @@ hr {
 }
 .footnotes a {
   color: #0a2c02;
+  /* Distance from text */
+  padding-bottom: 1px;
   text-decoration: none;
+  box-shadow: none;
+  transition: box-shadow .33s ease-out;
 }
 .footnotes a:hover {
-  color: #0a2c02;
-  border-bottom: 1px solid #0a2c02;
+  box-shadow: 0 1px 0 0 #0a2c02;
 }
 #footer {
   padding: 0 0 36px 0;
