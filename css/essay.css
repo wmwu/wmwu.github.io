@@ -10,7 +10,7 @@ body {
 #header h1 {
   overflow: hidden;
   line-height: 36px;
-  font-family: 'Crimson Pro', serif;
+  font-family: 'Crimson Pro', Georgia, serif;
   font-size: 36px;
   letter-spacing: 4px;
   font-weight: lighter;
@@ -63,7 +63,7 @@ body {
   padding: 12px 0 12px 12px;
   overflow: hidden;
   line-height: 36px;
-  font-family: 'Crimson Pro', serif;
+  font-family: 'Crimson Pro', Georgia, serif;
   font-size: 36px;
   letter-spacing: 4px;
   font-weight: lighter;
@@ -87,7 +87,7 @@ body {
 #main p {
   margin: 12px 12px 24px 60px;
   padding: 0 12px 0 12px;
-  font-family: 'Crimson Pro', serif;
+  font-family: 'Crimson Pro', Georgia, serif;
   font-size: 18px;
   letter-spacing: 0;
   line-height: 140%;
@@ -120,7 +120,7 @@ body {
 #sidebar p {
   margin: 12px 0 12px 12px;
   padding: 0 24px 0 0;
-  font-family: 'Crimson Pro', serif;
+  font-family: 'Crimson Pro', Georgia, serif;
   font-size: 18px;
   letter-spacing: 0;
   line-height: 24px;
@@ -161,7 +161,7 @@ hr {
 #footnotes p {
   padding: 0 12px 0 12px;
   margin: 12px 12px 12px 0;
-  font-family: 'Crimson Pro', serif;
+  font-family: 'Crimson Pro', Georgia, serif;
   font-size: 18px;
   letter-spacing: 0;
   line-height: 140%;
@@ -181,7 +181,7 @@ hr {
 #footer p {
   overflow: hidden;
   line-height: 36px;
-  font-family: 'Crimson Pro', serif;
+  font-family: 'Crimson Pro', Georgia, serif;
   font-size: 18px;
   letter-spacing: 2px;
   font-weight: lighter;
