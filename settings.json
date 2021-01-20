@@ -1,0 +1,22 @@
+{
+    "telemetry.enableTelemetry": false,
+    "telemetry.enableCrashReporter": false,
+    "[json]": {
+
+        "editor.quickSuggestions": {
+            "strings": true
+        },
+        "editor.suggest.insertMode": "replace"
+    },
+    "markdown.styles": [
+        "markdown.css"
+    ],
+    "workbench.colorTheme": "Visual Studio Dark",
+    "editor.accessibilitySupport": "off",
+    "json.schemas": [
+    
+    ],
+    "emmet.preferences": {
+    
+    }
+}
