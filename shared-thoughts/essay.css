@@ -90,7 +90,18 @@ header p {
   line-height: 100%;
   font-family: 'Crimson Pro', serif;
   font-size: 22px;
-  font-weight: 100;
+  font-weight: lighter;
+  letter-spacing: 2px;
+}
+#main h3 {
+  margin: 24px 0 12px 60px;
+  padding: 12px 0 12px 12px;
+  text-align: left;
+  color: #0a2c02;
+  line-height: 100%;
+  font-family: 'Crimson Pro', serif;
+  font-size: 20px;
+  font-weight: lighter;
   letter-spacing: 2px;
 }
 #main p {
@@ -98,6 +109,7 @@ header p {
   padding: 0 12px 0 12px;
   font-family: 'Crimson Pro', Georgia, serif;
   font-size: 18px;
+  font-weight: 300;
   letter-spacing: 0;
   line-height: 140%;
   color: #0a2c02;
@@ -200,6 +212,9 @@ hr {
 }
 .footnotes a:hover {
   box-shadow: 0 1px 0 0 #0a2c02;
+}
+.tc {
+  font-family: 'Noto Serif TC', 'Crimson Pro', serif;
 }
 #footer {
   padding: 0 0 36px 0;
