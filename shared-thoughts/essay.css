@@ -13,14 +13,14 @@ header h1 {
   font-family: 'Crimson Pro', Georgia, serif;
   font-size: 36px;
   letter-spacing: 4px;
-  font-weight: lighter;
+  font-weight: 300;
   color: #0a2c02;
   margin: 12px 0 12px 24px;
   padding: 72px 0 24px 36px;
 }
 header h1::first-letter {
   font-size: 200%;
-  font-weight: lighter;
+  font-weight: 300;
 }
 header p {
   margin: 12px 12px 24px 60px;
@@ -75,12 +75,12 @@ header p {
   font-family: 'Crimson Pro', Georgia, serif;
   font-size: 36px;
   letter-spacing: 4px;
-  font-weight: lighter;
+  font-weight: 300;
   color: #0a2c02;
 }
 #main h1::first-letter {
   font-size: 200%;
-  font-weight: lighter;
+  font-weight: 300;
 }
 #main h2 {
   margin: 24px 0 12px 60px;
@@ -90,7 +90,7 @@ header p {
   line-height: 100%;
   font-family: 'Crimson Pro', serif;
   font-size: 22px;
-  font-weight: lighter;
+  font-weight: 300;
   letter-spacing: 2px;
 }
 #main h3 {
@@ -101,7 +101,7 @@ header p {
   line-height: 100%;
   font-family: 'Crimson Pro', serif;
   font-size: 20px;
-  font-weight: lighter;
+  font-weight: 300;
   letter-spacing: 2px;
 }
 #main p {
