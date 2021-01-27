@@ -31,37 +31,6 @@ header p {
   line-height: 140%;
   color: #0a2c02;
 }
-#nav {
-  overflow: hidden;
-  background-color: #E6E6E6;
-  height: 48px;
-}
-#nav a {
-  display: block;
-  font-family: Arial, Helvetica, 'Open Sans', sans-serif;
-  font-size: 14px;
-  color: #336666;
-  line-height: 28px;
-  letter-spacing: 1px;
-  text-align: left;
-  margin: 10px 0px 0 20px;
-  text-decoration: none;
-}
-#nav a:hover {
-  color: #0a2c02;
-  background-color: #F7F8EE;
-  border-bottom: 1px solid #0a2c02;
-}
-#nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-#nav li {
-  display: block;
-  float: left;
-}
 #main {
   overflow: hidden;
   width: 70%;
