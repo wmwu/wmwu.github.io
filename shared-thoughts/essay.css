@@ -15,15 +15,15 @@ header h1 {
   letter-spacing: 4px;
   font-weight: 300;
   color: #0a2c02;
-  margin: 12px 0 12px 24px;
-  padding: 72px 0 24px 36px;
+  margin: 60px 12px 60px 60px;
+  padding: 36px 12px 36px 8px;
 }
 header h1::first-letter {
   font-size: 200%;
   font-weight: 300;
 }
 header p {
-  margin: 12px 12px 24px 60px;
+  margin: 12px 12px 12px 60px;
   padding: 0 12px 0 12px;
   font-family: 'Crimson Pro', Georgia, serif;
   font-size: 18px;
@@ -36,21 +36,6 @@ header p {
   width: 70%;
   background-color: transparent;
 }
-#main h1 {
-  margin: 72px 12px 12px 60px;
-  padding: 12px 0 12px 12px;
-  overflow: hidden;
-  line-height: 36px;
-  font-family: 'Crimson Pro', Georgia, serif;
-  font-size: 36px;
-  letter-spacing: 4px;
-  font-weight: 300;
-  color: #0a2c02;
-}
-#main h1::first-letter {
-  font-size: 200%;
-  font-weight: 300;
-}
 #main h2 {
   margin: 24px 0 12px 60px;
   padding: 12px 0 12px 12px;
@@ -58,9 +43,9 @@ header p {
   color: #0a2c02;
   line-height: 100%;
   font-family: 'Crimson Pro', serif;
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 300;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 #main h3 {
   margin: 24px 0 12px 60px;
@@ -69,9 +54,8 @@ header p {
   color: #0a2c02;
   line-height: 100%;
   font-family: 'Crimson Pro', serif;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 300;
-  letter-spacing: 2px;
 }
 #main p {
   margin: 12px 12px 24px 60px;
@@ -82,6 +66,9 @@ header p {
   letter-spacing: 0;
   line-height: 140%;
   color: #0a2c02;
+}
+#main p.first {
+  margin-top: 72px;
 }
 #main p.first::first-letter {
   font-size: 200%;
@@ -119,7 +106,7 @@ header p {
   background-color: transparent;
 }
 #sidebar p {
-  margin: 12px 0 12px 12px;
+  margin: 12px 0 24px 12px;
   padding: 0 24px 0 0;
   font-family: 'Crimson Pro', Georgia, serif;
   font-size: 18px;
@@ -131,6 +118,7 @@ header p {
 #sidebar p.tc {
   font-family: 'Noto Serif TC', 'Crimson Pro', serif;
   letter-spacing: 2px;
+  font-size: 16px;
 }
 #sidebar a {
   letter-spacing: 2px;
@@ -146,8 +134,8 @@ header p {
 }
 img {
   position: absolute;
-  left: 12px;
-  top: 0px;
+  left: 24px;
+  top: 24px;
   z-index: -1;
 }
 hr {
@@ -182,8 +170,16 @@ hr {
 .footnotes a:hover {
   box-shadow: 0 1px 0 0 #0a2c02;
 }
+.sc {
+  font-family: 'Noto Serif SC', 'Crimson Pro', serif;
+  font-size: 16px;
+}
 .tc {
   font-family: 'Noto Serif TC', 'Crimson Pro', serif;
+  font-size: 16px;
+}
+.yy {
+  font-family: 'Arial Unicode MS', sans-serif;
 }
 #footer {
   padding: 0 0 36px 0;
