@@ -13,14 +13,14 @@ body {
   font-family: 'Crimson Pro', serif;
   font-size: 36px;
   letter-spacing: 6px;
-  font-weight: lighter;
+  font-weight: 300;
   color: #0a2c02;
   margin: 12px 0 12px 240px;
   padding: 72px 0 24px 36px;
 }
 #header h1::first-letter {
   font-size: 400%;
-  font-weight: lighter;
+  font-weight: 300;
 }
 #nav {
   overflow: hidden;
@@ -65,7 +65,7 @@ body {
   line-height: 100%;
   font-family: 'Crimson Pro', serif;
   font-size: 22px;
-  font-weight: 100;
+  font-weight: 300;
   letter-spacing: 2px;
 }
 #main p {
@@ -73,6 +73,7 @@ body {
   margin: 12px 12px 12px 360px;
   font-family: 'Crimson Pro', serif;
   font-size: 18px;
+  font-weight: 300;
   letter-spacing: 0;
   line-height: 180%;
   color: #0a2c02;
@@ -103,6 +104,8 @@ body {
 }
 #footer {
   width: 900px;
+  margin-top: 12px;
+  padding-top: 60px;
 }
 #footer p {
   overflow: hidden;
@@ -110,10 +113,10 @@ body {
   font-family: 'Crimson Pro', serif;
   font-size: 18px;
   letter-spacing: 2px;
-  font-weight: lighter;
+  font-weight: 300;
   color: #0a2c02;
-  margin: 12px 12px 12px 240px;
-  padding: 72px 12px 24px 36px;
+  margin: 0 12px 0 240px;
+  padding: 0 12px 12px 36px;
 }
 #footer a {
   color: #0a2c02;
