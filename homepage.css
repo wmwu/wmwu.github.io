@@ -109,13 +109,13 @@ body {
 }
 #footer p {
   overflow: hidden;
-  line-height: 36px;
+  line-height: 24px;
   font-family: 'Crimson Pro', serif;
   font-size: 18px;
   letter-spacing: 2px;
   font-weight: 300;
   color: #0a2c02;
-  margin: 0 12px 0 240px;
+  margin: 0 12px 12px 240px;
   padding: 0 12px 12px 36px;
 }
 #footer a {
