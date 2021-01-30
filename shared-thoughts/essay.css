@@ -155,6 +155,7 @@ hr {
   margin: 12px 12px 12px 0;
   font-family: 'Crimson Pro', Georgia, serif;
   font-size: 18px;
+  font-weight: 300;
   letter-spacing: 0;
   line-height: 140%;
   color: #0a2c02;
@@ -190,7 +191,7 @@ hr {
   font-family: 'Crimson Pro', Georgia, serif;
   font-size: 18px;
   letter-spacing: 2px;
-  font-weight: lighter;
+  font-weight: 300;
   color: #0a2c02;
   margin: 12px 0 12px 24px;
   padding: 12px 0 24px 36px;
