@@ -48,13 +48,13 @@ header p {
   letter-spacing: 1px;
 }
 #main h3 {
-  margin: 24px 0 12px 60px;
+  margin: 12px 0 12px 60px;
   padding: 12px 0 12px 12px;
   text-align: left;
   color: #0a2c02;
   line-height: 100%;
   font-family: 'Crimson Pro', serif;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 300;
 }
 #main p {
