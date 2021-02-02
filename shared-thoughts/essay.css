@@ -33,7 +33,7 @@ header p {
 }
 #main {
   overflow: hidden;
-  width: 70%;
+  width: 65%;
   background-color: transparent;
 }
 #main h2 {
@@ -77,61 +77,48 @@ header p {
 #main p.quote {
   margin: 0 10px 0 auto;
 }
-/*#main a {
-  color: #0a2c02;
-  text-decoration: none;
-}
-#main a:hover {
-  color: #0a2c02;
-  border-bottom: 1px solid #0a2c02;
-}*/
-#main a {
+a {
   color: #0a2c02;
   /* Distance from text */
-  padding-bottom: 1px;
+  padding-bottom: 2px;
   text-decoration: none;
   box-shadow: none;
   transition: box-shadow .33s ease-out;
 }
-#main a:hover {
+a:hover {
    box-shadow: 0 1px 0 0 #0a2c02;
 }
 #sidebar {
   position: -webkit-sticky;
   position: sticky;
   top: 120px;
-  right: 0;
+  right: 36px;
   width: 25%;
   float: right;
   background-color: transparent;
 }
 #sidebar p {
-  margin: 12px 0 24px 12px;
-  padding: 0 24px 0 0;
-  font-family: 'Crimson Pro', Georgia, serif;
+  overflow: hidden;
+  line-height: 28px;
+  font-family: 'Crimson Pro', serif;
   font-size: 18px;
+  letter-spacing: 1px;
   font-weight: 300;
-  letter-spacing: 0;
-  line-height: 24px;
   color: #0a2c02;
-  text-align: right;
+  margin: 0 12px 12px 12px;
+  padding: 0 12px 0 12px;
+}
+#sidebar p.sectionlink {
+  margin: 0 0 8px 30px;
+  line-height: 24px;
+  font-size: 16px;
+  letter-spacing: 0;
+  text-align: left;
 }
 #sidebar p.tc {
   font-family: 'Noto Serif TC', 'Crimson Pro', serif;
   letter-spacing: 2px;
   font-size: 16px;
-}
-#sidebar a {
-  letter-spacing: 2px;
-  color: #0a2c02;
-  /* Distance from text */
-  padding-bottom: 1px;
-  text-decoration: none;
-  box-shadow: none;
-  transition: box-shadow .33s ease-out;
-}
-#sidebar a:hover {
-  box-shadow: 0 1px 0 0 #0a2c02;
 }
 img {
   position: absolute;
@@ -161,17 +148,6 @@ hr {
   line-height: 140%;
   color: #0a2c02;
 }
-.footnotes a {
-  color: #0a2c02;
-  /* Distance from text */
-  padding-bottom: 1px;
-  text-decoration: none;
-  box-shadow: none;
-  transition: box-shadow .33s ease-out;
-}
-.footnotes a:hover {
-  box-shadow: 0 1px 0 0 #0a2c02;
-}
 .sc {
   font-family: 'Noto Serif SC', 'Crimson Pro', serif;
   font-size: 16px;
@@ -183,25 +159,14 @@ hr {
 /*.yy {
   font-family: 'Arial Unicode MS', sans-serif;
 }*/
-#footer {
-  padding: 0 0 36px 0;
-}
 #footer p {
   overflow: hidden;
-  line-height: 36px;
-  font-family: 'Crimson Pro', Georgia, serif;
+  line-height: 24px;
+  font-family: 'Crimson Pro', serif;
   font-size: 18px;
   letter-spacing: 2px;
   font-weight: 300;
   color: #0a2c02;
-  margin: 12px 0 12px 24px;
-  padding: 12px 0 24px 36px;
-}
-#footer a {
-  color: #0a2c02;
-  text-decoration: none;
-}
-#footer a:hover {
-  color: #0a2c02;
-  border-bottom: 1px solid #0a2c02;
+  margin: 12px 12px 12px 240px;
+  padding: 12px 12px 12px 36px;
 }
