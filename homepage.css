@@ -1,10 +1,10 @@
 body {
-  margin: 0;
+  margin: 60px;
   padding: 0;
   background-color: #F7F8EE;
 }
 #header {
-  width: 900px;
+  width: 960px;
   background-color: transparent;
 }
 #header h1 {
@@ -16,7 +16,7 @@ body {
   font-weight: 300;
   color: #0a2c02;
   margin: 12px 0 12px 240px;
-  padding: 72px 0 24px 36px;
+  padding: 24px 0 24px 36px;
 }
 #header h1::first-letter {
   font-size: 400%;
@@ -117,11 +117,12 @@ body {
   color: #0a2c02;
   margin: 0 12px 12px 240px;
   padding: 0 12px 12px 36px;
+  float: right;
 }
 #footer a {
   color: #0a2c02;
   /* Distance from text */
-  padding-bottom: 1px;
+  padding-bottom: 2px;
   text-decoration: none;
   box-shadow: none;
   transition: box-shadow .33s ease-out;
@@ -131,7 +132,7 @@ body {
 }
 img {
   position: absolute;
-  left: 12px;
+  left: 60px;
   top: 0px;
   z-index: -1;
 }
