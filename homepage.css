@@ -112,10 +112,9 @@ body {
   line-height: 24px;
   font-family: 'Crimson Pro', serif;
   font-size: 18px;
-  letter-spacing: 2px;
   font-weight: 300;
   color: #0a2c02;
-  margin: 0 12px 12px 240px;
+  margin: 0 12px 12px 420px;
   padding: 0 12px 12px 36px;
   float: right;
 }
@@ -126,6 +125,7 @@ body {
   text-decoration: none;
   box-shadow: none;
   transition: box-shadow .33s ease-out;
+  letter-spacing: 2px;
 }
 #footer a:hover {
   box-shadow: 0 1px 0 0 #0a2c02;
