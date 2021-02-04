@@ -122,8 +122,8 @@ a:hover {
 }
 img {
   position: absolute;
-  left: 24px;
-  top: 24px;
+  left: 120px;
+  top: 0;
   z-index: -1;
 }
 hr {
