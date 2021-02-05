@@ -34,6 +34,8 @@ header p {
 #main {
   overflow: hidden;
   width: 65%;
+  min-width: 500px;
+  max-width: 800px;
   background-color: transparent;
 }
 #main h2 {
@@ -68,7 +70,7 @@ header p {
   color: #0a2c02;
 }
 #main p.first {
-  margin-top: 72px;
+  margin-top: 60px;
 }
 #main p.first::first-letter {
   font-size: 200%;
@@ -94,6 +96,8 @@ a:hover {
   top: 120px;
   right: 36px;
   width: 25%;
+  min-width: 200px;
+  max-width: 300px;
   float: right;
   background-color: transparent;
 }
@@ -122,7 +126,6 @@ a:hover {
 }
 img {
   position: absolute;
-  left: 120px;
   top: 0;
   z-index: -1;
 }
