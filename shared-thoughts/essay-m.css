@@ -33,7 +33,7 @@ header p {
 }
 #main {
   overflow: hidden;
-  width: 100%;
+  width: 95%;
   min-width: 800px;
   max-width: 1080px;
   background-color: transparent;
@@ -60,7 +60,7 @@ header p {
   font-weight: 300;
 }
 #main p {
-  margin: 12px 12px 24px 60px;
+  margin: 12px 60px 24px 60px;
   padding: 0 12px 0 12px;
   font-family: 'Crimson Pro', Georgia, serif;
   font-size: 18px;
@@ -93,9 +93,9 @@ a:hover {
 #sidebar {
   top: 60px;
   right: 12px;
-  width: 90%;
-  min-width: 600px;
-  max-width: 800px;
+  width: 25%;
+  min-width: 200px;
+  max-width: 300px;
   float: right;
   background-color: transparent;
 }
