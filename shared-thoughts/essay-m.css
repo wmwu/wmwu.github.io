@@ -93,7 +93,7 @@ a:hover {
 #sidebar {
 /*  position: -webkit-sticky;
   position: sticky; */
-  top: 120px;
+  top: 360px;
   right: 36px;
   width: 25%;
   min-width: 200px;
