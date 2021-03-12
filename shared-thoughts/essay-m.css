@@ -33,9 +33,9 @@ header p {
 }
 #main {
   overflow: hidden;
-  width: 65%;
-  min-width: 500px;
-  max-width: 800px;
+  width: 100%;
+  min-width: 800px;
+  max-width: 1080px;
   background-color: transparent;
 }
 #main h2 {
@@ -93,10 +93,10 @@ a:hover {
 #sidebar {
   top: 60px;
   right: 12px;
-  width: 60%;
-  min-width: 200px;
-  max-width: 600px;
-  float: right;
+  width: 90%;
+  min-width: 600px;
+  max-width: 800px;
+  float: left;
   background-color: transparent;
 }
 #sidebar p {
