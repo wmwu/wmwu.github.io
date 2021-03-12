@@ -33,9 +33,9 @@ header p {
 }
 #main {
   overflow: hidden;
-  width: 95%;
-  min-width: 800px;
-  max-width: 1080px;
+  width: 65%;
+  min-width: 500px;
+  max-width: 800px;
   background-color: transparent;
 }
 #main h2 {
@@ -60,7 +60,7 @@ header p {
   font-weight: 300;
 }
 #main p {
-  margin: 12px 60px 24px 60px;
+  margin: 12px 12px 24px 60px;
   padding: 0 12px 0 12px;
   font-family: 'Crimson Pro', Georgia, serif;
   font-size: 18px;
@@ -91,8 +91,10 @@ a:hover {
    box-shadow: 0 1px 0 0 #0a2c02;
 }
 #sidebar {
-  top: 60px;
-  right: 12px;
+/*  position: -webkit-sticky;
+  position: sticky; */
+  top: 120px;
+  right: 36px;
   width: 25%;
   min-width: 200px;
   max-width: 300px;
