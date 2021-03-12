@@ -95,9 +95,9 @@ a:hover {
   position: sticky;
   top: 60px;
   right: 12px;
-  width: 30%;
-  min-width: 120px;
-  max-width: 200px;
+  width: 0%;
+  min-width: 0px;
+  max-width: 0px;
   float: right;
   background-color: transparent;
 }
