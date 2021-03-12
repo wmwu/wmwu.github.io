@@ -91,15 +91,12 @@ a:hover {
    box-shadow: 0 1px 0 0 #0a2c02;
 }
 #sidebar {
-  position: -webkit-sticky;
-  position: sticky;
   top: 60px;
   right: 12px;
-  width: 0%;
-  min-width: 0px;
-  max-width: 0px;
+  width: 60%;
+  min-width: 200px;
+  max-width: 600px;
   float: right;
-  color: transparent;
   background-color: transparent;
 }
 #sidebar p {
@@ -109,7 +106,7 @@ a:hover {
   font-size: 18px;
   letter-spacing: 1px;
   font-weight: 300;
-  color: transparent;
+  color: #0a2c02;
   margin: 0 12px 12px 12px;
   padding: 0 12px 0 12px;
 }
