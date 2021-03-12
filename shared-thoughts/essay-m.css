@@ -96,7 +96,7 @@ a:hover {
   width: 90%;
   min-width: 600px;
   max-width: 800px;
-  float: left;
+  float: right;
   background-color: transparent;
 }
 #sidebar p {
