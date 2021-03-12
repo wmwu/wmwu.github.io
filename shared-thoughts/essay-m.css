@@ -99,6 +99,7 @@ a:hover {
   min-width: 0px;
   max-width: 0px;
   float: right;
+  color: transparent;
   background-color: transparent;
 }
 #sidebar p {
