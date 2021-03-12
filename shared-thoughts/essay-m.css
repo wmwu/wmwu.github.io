@@ -1,0 +1,175 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #F7F8EE;
+}
+#header {
+  width: 800px;
+  background-color: transparent;
+}
+header h1 {
+  overflow: hidden;
+  line-height: 36px;
+  font-family: 'Crimson Pro', Georgia, serif;
+  font-size: 36px;
+  letter-spacing: 4px;
+  font-weight: 300;
+  color: #0a2c02;
+  margin: 60px 12px 60px 60px;
+  padding: 36px 12px 36px 8px;
+}
+header h1::first-letter {
+  font-size: 200%;
+  font-weight: 300;
+}
+header p {
+  margin: 12px 12px 12px 60px;
+  padding: 0 12px 0 12px;
+  font-family: 'Crimson Pro', Georgia, serif;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: 140%;
+  color: #0a2c02;
+}
+#main {
+  overflow: hidden;
+  width: 65%;
+  min-width: 500px;
+  max-width: 800px;
+  background-color: transparent;
+}
+#main h2 {
+  margin: 24px 0 12px 60px;
+  padding: 12px 0 12px 12px;
+  text-align: left;
+  color: #0a2c02;
+  line-height: 100%;
+  font-family: 'Crimson Pro', serif;
+  font-size: 24px;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+#main h3 {
+  margin: 12px 0 12px 60px;
+  padding: 12px 0 12px 12px;
+  text-align: left;
+  color: #0a2c02;
+  line-height: 100%;
+  font-family: 'Crimson Pro', serif;
+  font-size: 20px;
+  font-weight: 300;
+}
+#main p {
+  margin: 12px 12px 24px 60px;
+  padding: 0 12px 0 12px;
+  font-family: 'Crimson Pro', Georgia, serif;
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 0;
+  line-height: 140%;
+  color: #0a2c02;
+}
+#main p.first {
+  margin-top: 60px;
+}
+#main p.first::first-letter {
+  font-size: 200%;
+  font-weight: lighter;
+}
+#main p.quote {
+  margin: 0 10px 0 auto;
+}
+a {
+  color: #0a2c02;
+  /* Distance from text */
+  padding-bottom: 2px;
+  text-decoration: none;
+  box-shadow: none;
+  transition: box-shadow .33s ease-out;
+}
+a:hover {
+   box-shadow: 0 1px 0 0 #0a2c02;
+}
+#sidebar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 60px;
+  right: 12px;
+  width: 30%;
+  min-width: 120px;
+  max-width: 200px;
+  float: right;
+  background-color: transparent;
+}
+#sidebar p {
+  overflow: hidden;
+  line-height: 28px;
+  font-family: 'Crimson Pro', serif;
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 300;
+  color: #0a2c02;
+  margin: 0 12px 12px 12px;
+  padding: 0 12px 0 12px;
+}
+#sidebar p.sectionlink {
+  margin: 0 0 8px 30px;
+  line-height: 24px;
+  font-size: 16px;
+  letter-spacing: 0;
+  text-align: left;
+}
+#sidebar p.tc {
+  font-family: 'Noto Serif TC', 'Crimson Pro', serif;
+  letter-spacing: 2px;
+  font-size: 16px;
+}
+img {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+hr {
+  width: 35%;
+  margin: 24px 72px 0 72px;
+}
+.footnotes {
+  width: 70%;
+  margin: 0 0 36px 0;
+  padding: 12 0 12px 24px;
+}
+.footnotes ol li {
+  margin-left: 72px;
+}
+.footnotes p {
+  padding: 0 12px 0 12px;
+  margin: 12px 12px 12px 0;
+  font-family: 'Crimson Pro', Georgia, serif;
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 0;
+  line-height: 140%;
+  color: #0a2c02;
+}
+.sc {
+  font-family: 'Noto Serif SC', 'Crimson Pro', serif;
+  font-size: 16px;
+}
+.tc {
+  font-family: 'Noto Serif TC', 'Crimson Pro', serif;
+  font-size: 16px;
+}
+/*.yy {
+  font-family: 'Arial Unicode MS', sans-serif;
+}*/
+#footer p {
+  overflow: hidden;
+  line-height: 24px;
+  font-family: 'Crimson Pro', serif;
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-weight: 300;
+  color: #0a2c02;
+  margin: 12px 12px 12px 240px;
+  padding: 12px 12px 12px 36px;
+}
