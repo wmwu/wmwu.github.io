@@ -159,9 +159,9 @@ hr {
   font-family: 'Noto Serif TC', 'Crimson Pro', serif;
   font-size: 16px;
 }
-/*.yy {
-  font-family: 'Arial Unicode MS', sans-serif;
-}*/
+.yy {
+  font-family: 'Noto Sans', 'Open Sans', sans-serif;
+}
 #footer p {
   overflow: hidden;
   line-height: 24px;
