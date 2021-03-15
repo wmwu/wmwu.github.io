@@ -283,9 +283,12 @@ body {
 #main blockquote {
 	margin: 0 36px 0 36px;
 	padding: 0 48px 0 24px;
-	font-size: 14px;
-	line-height: 20px;
+	font-size: 15px;
+	line-height: 22px;
 	color: #0a2c02;
+}
+#main sup a {
+  font-size: 14px;
 }
 #main .footnotes li {
 	margin-left: 6px;
@@ -721,7 +724,7 @@ body {
 }
 .label {
   background-color: #e6ecff;
-  font-family: 'Noto Sans', 'Open Sans', sans-serif;
+  font-family: 'Noto Mono', 'Open Sans', sans-serif;
   font-size: 14px;
   width: 80px
 }
