@@ -782,8 +782,8 @@ font-style: normal;
   font-family: 'DejaVu Sans', 'Open Sans', sans-serif;
   font-size: 16px;
   font-style: normal;
-	width: 120px;
-	padding: 2px 6px;
+	width: 116px;
+	padding: 2px 2px;
 }
 .bform {
   font-family: 'Crimson Pro', Georgia, serif;
@@ -1007,7 +1007,7 @@ font-style: normal;
   z-index: -1;
   opacity: 0.0;
 	vertical-align: -12px;
-	margin: 0 0 0 -6px;
+	margin: 0 0 0 -12px;
 	border: none;
 }
 .mark33e {
