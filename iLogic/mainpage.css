@@ -71,7 +71,7 @@ body {
 #header p {
   overflow: hidden;
   line-height: 28px;
-  font-family: 'Crimson Pro', serif;
+  font-family: 'Noto Serif', serif;
   font-size: 18px;
   font-weight: bold;
   color: #333333;
@@ -85,7 +85,7 @@ body {
 }
 #nav a {
   font-family: 'Nato Sans', sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   color: #0a2c02;
   /* Distance from text */
   padding-bottom: 2px;
@@ -117,7 +117,7 @@ body {
 }
 #main h1 {
   padding: 24px 24px 12px 24px;
-  font-family: 'Crimson Pro', serif;
+  font-family: 'Noto Serif', serif;
   font-size: 22px;
   color: #0a2c02;
   font-weight: normal;
@@ -129,7 +129,7 @@ body {
  }
 #main h2 {
   padding: 12px 24px 8px 24px;
-  font-family: 'Crimson Pro', serif;
+  font-family: 'Noto Serif', serif;
   font-variant: normal;
   font-size: 20px;
   letter-spacing: normal;
@@ -141,7 +141,7 @@ body {
 }
 #main h3 {
   padding: 24px 24px 0 24px;
-  font-family: 'Crimson Pro', serif;
+  font-family: 'Noto Serif', serif;
   font-style: normal;
   font-variant: normal;
   font-weight: bold;
@@ -153,7 +153,7 @@ body {
 }
 #main h4 {
   padding: 24px 24px 0 24px;
-  font-family: 'Crimson Pro', serif;
+  font-family: 'Noto Serif', serif;
   font-style: normal;
   font-variant: normal;
   font-weight: bold;
@@ -164,7 +164,7 @@ body {
   color: #333333;
 }
 #main p {
-  font-family: 'Crimson Pro', serif;
+  font-family: 'Noto Serif', serif;
   font-size: 15px;
   color: #333333;
   line-height: 24px;
@@ -181,7 +181,7 @@ body {
 }
 #main a {
   font-family: 'Nato Sans', sans-serif;
-  font-size: 14px;
+  font-size: 15px;
   color: #0a2c02;
   /* Distance from text */
   padding-bottom: 2px;
