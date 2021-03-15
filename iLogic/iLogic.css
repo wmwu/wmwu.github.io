@@ -389,7 +389,7 @@ font-style: normal;
   color: #0a2c02;
 }
 #main table.ex td.operator button {
-  font-family: 'Cambria Math', 'Open Sans', sans-serif;
+  font-family: 'DejaVu Sans', 'Open Sans', sans-serif;
   font-size: 16px;
   font-style: normal;
   vertical align: middle;
@@ -749,7 +749,7 @@ font-style: normal;
   color: #444444;
 }
 .symb {
-  font-family: 'Cambria Math', 'Open Sans', sans-serif;
+  font-family: 'DejaVu Sans', 'Open Sans', sans-serif;
   font-size: 16px;
   font-style: normal;
 }
@@ -1090,7 +1090,7 @@ div.operator {
   margin: 6px 0 0 78px;
 }
 div.operator button {
-  font-family: 'Cambria Math', 'Open Sans', sans-serif;
+  font-family: 'DejaVu Sans', 'Open Sans', sans-serif;
   font-size: 16px;
   font-style: normal;
   vertical align: middle;
@@ -1105,7 +1105,7 @@ div.operator31 {
   margin: 2px 0 36px 42px;
 }
 div.operator31 button {
-  font-family: 'Cambria Math', 'Open Sans', sans-serif;
+  font-family: 'DejaVu Sans', 'Open Sans', sans-serif;
   font-size: 16px;
   font-style: normal;
   vertical align: middle;
@@ -1117,7 +1117,7 @@ div.operator31 button {
 	border: solid #969696 1px;
 }
 div.operator31 button.ca {
-  font-family: 'Cambria Math', 'Open Sans', sans-serif;
+  font-family: 'Noto Sans', 'Open Sans', sans-serif;
   font-size: 14px;
   font-style: normal;
   vertical align: middle;
@@ -1130,7 +1130,7 @@ div.operator31 button.ca {
 	cursor: pointer;
 }
 td.operator button {
-  font-family: 'Cambria Math', 'Open Sans', sans-serif;
+  font-family: 'DejaVu Sans', 'Open Sans', sans-serif;
   font-size: 16px;
   font-style: normal;
   vertical align: middle;
@@ -1142,7 +1142,7 @@ td.operator button {
 	border: solid #969696 1px;
 }
 button.ca32 {
-  font-family: 'Cambria Math', 'Open Sans', sans-serif;
+  font-family: 'Noto Sans', 'Open Sans', sans-serif;
   font-size: 15px;
   font-style: normal;
   vertical align: middle;
@@ -1155,7 +1155,7 @@ button.ca32 {
 	cursor: pointer;
 }
 button.ca33 {
-  font-family: 'Cambria Math', 'Open Sans', sans-serif;
+  font-family: 'Noto Sans', 'Open Sans', sans-serif;
   font-size: 15px;
   font-style: normal;
   vertical align: middle;
@@ -1168,7 +1168,7 @@ button.ca33 {
 	cursor: pointer;
 }
 input.ca33 {
-  font-family: 'Cambria Math', 'Open Sans', sans-serif;
+  font-family: 'DejaVu Sans', 'Open Sans', sans-serif;
   font-size: 15px;
   font-style: normal;
   vertical align: middle;
@@ -1181,7 +1181,7 @@ input.ca33 {
 	cursor: pointer;
 }
 button.ca34 {
-  font-family: 'Cambria Math', 'Open Sans', sans-serif;
+  font-family: 'Noto Sans', 'Open Sans', sans-serif;
   font-size: 15px;
   font-style: normal;
   vertical align: middle;
