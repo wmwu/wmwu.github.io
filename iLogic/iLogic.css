@@ -444,26 +444,31 @@ font-style: normal;
   clear: both;
 }
 #footer a {
-  font-family: 'Noto Sans', 'Open Sans', sans-serif;
+  font-family: 'Nato Sans', sans-serif;
   font-size: 14px;
-  font-weight: lighter;
-  color: #3F7070;
+  color: #0a2c02;
+  /* Distance from text */
+  padding-bottom: 2px;
   text-decoration: none;
-  padding-bottom: 4px;
+  box-shadow: none;
+  transition: box-shadow .5s ease-out;
+  line-height: 48px;
+  letter-spacing: 2px;
+  text-align: left;
+  margin-left: 20px;
 }
 #footer a:hover {
-  color: #CC3300;
-  text-decoration: none;
-  border-bottom: 1px solid #CC3300;
+  color: #0a2c02;
+  box-shadow: 0 1px 0 0 #0a2c02;
 }
 #footer p {
   font-family: 'Noto Sans', 'Open Sans', sans-serif;
   font-size: 14px;
-  font-weight: lighter;
-  color: #3F7070;
+  font-weight: normal;
+  color: #0a2c02;
   text-decoration: none;
   text-align: center;
-  padding: 20px 0 0 0;
+  padding: 6px 0 0 0;
   margin: 0;
 }
 #toc {
@@ -766,7 +771,7 @@ font-style: normal;
 	margin: 12px 0 0 0;
 }
 .form31s {
-  font-family: 'Noto Sans', 'Open Sans', sans-serif;
+  font-family: 'DejaVu Sans', 'Open Sans', sans-serif;
   font-size: 16px;
   font-style: normal;
   width: 300px;
@@ -1046,10 +1051,10 @@ font-style: normal;
   width: 120px;
 }
 .form34s {
-  font-family: 'Noto Sans', 'Open Sans', sans-serif;
+  font-family: 'DejaVu Sans', 'Open Sans', sans-serif;
   font-size: 16px;
   font-style: normal;
-  width: 210px;
+  width: 200px;
 }
 .mark34c {
   z-index: -1;
@@ -1094,7 +1099,7 @@ div.operator31 {
   margin: 2px 0 36px 42px;
 }
 div.operator31 button {
-  font-family: 'Noto Sans', 'Open Sans', sans-serif;
+  font-family: 'Cambria Math', 'Open Sans', sans-serif;
   font-size: 16px;
   font-style: normal;
   vertical align: middle;
@@ -1106,7 +1111,7 @@ div.operator31 button {
 	border: solid #969696 1px;
 }
 div.operator31 button.ca {
-  font-family: 'Noto Sans', 'Open Sans', sans-serif;
+  font-family: 'Cambria Math', 'Open Sans', sans-serif;
   font-size: 14px;
   font-style: normal;
   vertical align: middle;
@@ -1119,7 +1124,7 @@ div.operator31 button.ca {
 	cursor: pointer;
 }
 td.operator button {
-  font-family: 'Noto Sans', 'Open Sans', sans-serif;
+  font-family: 'Cambria Math', 'Open Sans', sans-serif;
   font-size: 16px;
   font-style: normal;
   vertical align: middle;
@@ -1131,7 +1136,7 @@ td.operator button {
 	border: solid #969696 1px;
 }
 button.ca32 {
-  font-family: 'Noto Sans', 'Open Sans', sans-serif;
+  font-family: 'Cambria Math', 'Open Sans', sans-serif;
   font-size: 15px;
   font-style: normal;
   vertical align: middle;
@@ -1144,7 +1149,7 @@ button.ca32 {
 	cursor: pointer;
 }
 button.ca33 {
-  font-family: 'Noto Sans', 'Open Sans', sans-serif;
+  font-family: 'Cambria Math', 'Open Sans', sans-serif;
   font-size: 15px;
   font-style: normal;
   vertical align: middle;
@@ -1157,7 +1162,7 @@ button.ca33 {
 	cursor: pointer;
 }
 input.ca33 {
-  font-family: 'Noto Sans', 'Open Sans', sans-serif;
+  font-family: 'Cambria Math', 'Open Sans', sans-serif;
   font-size: 15px;
   font-style: normal;
   vertical align: middle;
@@ -1170,7 +1175,7 @@ input.ca33 {
 	cursor: pointer;
 }
 button.ca34 {
-  font-family: 'Noto Sans', 'Open Sans', sans-serif;
+  font-family: 'Cambria Math', 'Open Sans', sans-serif;
   font-size: 15px;
   font-style: normal;
   vertical align: middle;
