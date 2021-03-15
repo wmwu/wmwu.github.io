@@ -10,10 +10,8 @@
 }
 //-------------------------------------*/
 @font-face {
-  font-family: 'Noto Serif Math';
-  src: url(Noto Serif_Math.ttf);
-  font-family: 'Noto Sans';
-  src: url(DejaVuSans.ttf)
+  font-family: 'Noto Mono';
+  src: url(NotoMono-Regular.ttf);
 }
 body {
   margin: 0;
