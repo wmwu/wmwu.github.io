@@ -100,7 +100,7 @@ body {
   height: 48px;
 }
 #nav a {
-  font-family: 'Nato Sans', sans-serif;
+  font-family: 'Noto Sans', sans-serif;
   font-size: 16px;
   color: #0a2c02;
   /* Distance from text */
@@ -176,18 +176,26 @@ font-style: normal;
   line-height: 100%;
 }
 #main a {
-  text-decoration: none;
+  font-family: 'Noto Serif', serif;
+  font-size: 16px;
   color: #0862a7;
-  font-weight: normal;
+  /* Distance from text */
   padding-bottom: 2px;
+  text-decoration: none;
+  box-shadow: none;
+  transition: box-shadow .5s ease-out;
+  line-height: 28px;
+  letter-spacing: 0px;
+  text-align: left;
+  margin-left: 0px;
 }
 #main a:hover {
   color: #0862a7;
-  text-decoration: none;
-  border-bottom: 1px solid #0862a7;
+  box-shadow: 0 1px 0 0 #0862a7;
 }
 #main a.license:hover {
-  border-bottom: none;
+  color: transparent;
+  box-shadow: 0 1px 0 0 transparent;
 }
 #main ol li {
   font-size: 16px;
