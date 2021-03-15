@@ -10,9 +10,9 @@
 }
 //-------------------------------------*/
 @font-face {
-  font-family: 'Cambria Math';
-  src: url(Cambria_Math.ttf);
-  font-family: 'DejaVu Sans';
+  font-family: 'Noto Serif Math';
+  src: url(Noto Serif_Math.ttf);
+  font-family: 'Noto Sans';
   src: url(DejaVuSans.ttf)
 }
 body {
@@ -61,7 +61,7 @@ body {
 }
 #header {
   background-color: #F7F8EE;
-  font-family: 'Nato Sans', Arial, sans-serif;
+  font-family: 'Nato Sans', 'Open Sans', sans-serif;
 }
 #header h1 {
   overflow: hidden;
@@ -87,7 +87,7 @@ body {
 #header p {
   overflow: hidden;
   line-height: 28px;
-  font-family: 'Crimson Pro', Georgia, serif;
+  font-family: 'Noto Serif', Georgia, serif;
   font-size: 18px;
   /*font-weight: bold;*/
   color: #0a2c02;
@@ -101,7 +101,7 @@ body {
 }
 #nav a {
   font-family: 'Nato Sans', sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   color: #0a2c02;
   /* Distance from text */
   padding-bottom: 2px;
@@ -128,7 +128,7 @@ body {
   float: left;
 }
 #main {
-  font-family: 'Crimson Pro', Georgia, serif;
+  font-family: 'Noto Serif', Georgia, serif;
   overflow: hidden;
   float: left;
 }
@@ -389,7 +389,7 @@ font-style: normal;
   color: #0a2c02;
 }
 #main table.ex td.operator button {
-  font-family: 'DejaVu Sans', 'Open Sans', sans-serif;
+  font-family: 'Noto Sans', 'Open Sans', sans-serif;
   font-size: 16px;
   font-style: normal;
   vertical align: middle;
@@ -713,8 +713,8 @@ font-style: normal;
 }
 .label {
   background-color: #e6ecff;
-  font-family: 'Noto Sans'; sans-serif;
-  font-size: 0.8em;
+  font-family: 'Noto Sans', 'Open Sans', sans-serif;
+  font-size: 14px;
   width: 80px
 }
 .labelBackground {
@@ -749,7 +749,7 @@ font-style: normal;
   color: #444444;
 }
 .symb {
-  font-family: 'DejaVu Sans', 'Open Sans', sans-serif;
+  font-family: 'Noto Sans', 'Open Sans', sans-serif;
   font-size: 16px;
   font-style: normal;
 }
@@ -769,7 +769,7 @@ font-style: normal;
   vertical-align: 40%;
 }
 .form {
-  font-family: 'Crimson Pro', Georgia, serif;
+  font-family: 'Noto Serif', Georgia, serif;
   font-size: 15px;
 	line-height: 20px;
   font-style: normal;
@@ -777,7 +777,7 @@ font-style: normal;
 	margin: 12px 0 0 0;
 }
 .form31s {
-  font-family: 'DejaVu Sans', 'Open Sans', sans-serif;
+  font-family: 'Noto Sans', 'Open Sans', sans-serif;
   font-size: 16px;
   font-style: normal;
   width: 300px;
@@ -785,14 +785,14 @@ font-style: normal;
 	padding: 3px 6px;
 }
 .form33s {
-  font-family: 'DejaVu Sans', 'Open Sans', sans-serif;
+  font-family: 'Noto Sans', 'Open Sans', sans-serif;
   font-size: 16px;
   font-style: normal;
-	width: 116px;
+	width: 120px;
 	padding: 2px 2px;
 }
 .bform {
-  font-family: 'Crimson Pro', Georgia, serif;
+  font-family: 'Noto Serif', Georgia, serif;
   font-size: 15px;
 	line-height: 20px;
   font-style: normal;
@@ -1051,13 +1051,13 @@ font-style: normal;
 }
 /* Seciton 3.4 */
 .form34 {
-  font-family: 'Crimson Pro', Georgia, serif;
+  font-family: 'Noto Serif', Georgia, serif;
   font-size: 16px;
   font-style: normal;
   width: 120px;
 }
 .form34s {
-  font-family: 'DejaVu Sans', 'Open Sans', sans-serif;
+  font-family: 'Noto Sans', 'Open Sans', sans-serif;
   font-size: 16px;
   font-style: normal;
   width: 200px;
@@ -1090,7 +1090,7 @@ div.operator {
   margin: 6px 0 0 78px;
 }
 div.operator button {
-  font-family: 'DejaVu Sans', 'Open Sans', sans-serif;
+  font-family: 'Noto Sans', 'Open Sans', sans-serif;
   font-size: 16px;
   font-style: normal;
   vertical align: middle;
@@ -1105,7 +1105,7 @@ div.operator31 {
   margin: 2px 0 36px 42px;
 }
 div.operator31 button {
-  font-family: 'DejaVu Sans', 'Open Sans', sans-serif;
+  font-family: 'Noto Sans', 'Open Sans', sans-serif;
   font-size: 16px;
   font-style: normal;
   vertical align: middle;
@@ -1130,7 +1130,7 @@ div.operator31 button.ca {
 	cursor: pointer;
 }
 td.operator button {
-  font-family: 'DejaVu Sans', 'Open Sans', sans-serif;
+  font-family: 'Noto Sans', 'Open Sans', sans-serif;
   font-size: 16px;
   font-style: normal;
   vertical align: middle;
@@ -1168,7 +1168,7 @@ button.ca33 {
 	cursor: pointer;
 }
 input.ca33 {
-  font-family: 'DejaVu Sans', 'Open Sans', sans-serif;
+  font-family: 'Noto Sans', 'Open Sans', sans-serif;
   font-size: 15px;
   font-style: normal;
   vertical align: middle;
