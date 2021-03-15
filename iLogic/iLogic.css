@@ -1,12 +1,12 @@
 /*// Bitstream Iowan Old Style
 //------------------------------------
-@font-face {font-family: "Bitstream Iowan Old Style";
-    src: url("//db.onlinewebfonts.com/t/bc28028bf5fff883c167bfe77545594d.eot");
-    src: url("//db.onlinewebfonts.com/t/bc28028bf5fff883c167bfe77545594d.eot?#iefix") format("embedded-opentype"),
-    url("//db.onlinewebfonts.com/t/bc28028bf5fff883c167bfe77545594d.woff2") format("woff2"),
-    url("//db.onlinewebfonts.com/t/bc28028bf5fff883c167bfe77545594d.woff") format("woff"),
-    url("//db.onlinewebfonts.com/t/bc28028bf5fff883c167bfe77545594d.ttf") format("truetype"),
-    url("//db.onlinewebfonts.com/t/bc28028bf5fff883c167bfe77545594d.svg#Bitstream Iowan Old Style") format("svg");
+@font-face {font-family: 'Bitstream Iowan Old Style';
+    src: url('//db.onlinewebfonts.com/t/bc28028bf5fff883c167bfe77545594d.eot');
+    src: url('//db.onlinewebfonts.com/t/bc28028bf5fff883c167bfe77545594d.eot?#iefix') format('embedded-opentype'),
+    url('//db.onlinewebfonts.com/t/bc28028bf5fff883c167bfe77545594d.woff2') format('woff2'),
+    url('//db.onlinewebfonts.com/t/bc28028bf5fff883c167bfe77545594d.woff') format('woff'),
+    url('//db.onlinewebfonts.com/t/bc28028bf5fff883c167bfe77545594d.ttf') format('truetype'),
+    url('//db.onlinewebfonts.com/t/bc28028bf5fff883c167bfe77545594d.svg#Bitstream Iowan Old Style') format('svg');
 }
 //-------------------------------------*/
 body {
@@ -369,7 +369,7 @@ font-style: normal;
 	width: 250px;
 }
 #main table.ex td.c3a {
-  font-family: 'Noto Sans', "Open Sans", sans-serif;
+  font-family: 'Noto Sans', 'Open Sans', sans-serif;
   color: #A3512C;
 }
 #main table.ex td.operator {
@@ -378,12 +378,12 @@ font-style: normal;
   text-align: left;
   vertical-align: top;
   line-height: 32px;
-  font-family: 'Noto Sans', "Open Sans", sans-serif;;
+  font-family: 'Noto Sans', 'Open Sans', sans-serif;;
   font-size: 16px;
   color: #0a2c02;
 }
 #main table.ex td.operator button {
-  font-family: 'Cambria Math', "Open Sans", sans-serif;
+  font-family: 'Cambria Math', 'Open Sans', sans-serif;
   font-size: 16px;
   font-style: normal;
   vertical align: middle;
@@ -444,7 +444,7 @@ font-style: normal;
   clear: both;
 }
 #footer a {
-  font-family: 'Noto Sans', "Open Sans", sans-serif;
+  font-family: 'Noto Sans', 'Open Sans', sans-serif;
   font-size: 14px;
   font-weight: lighter;
   color: #3F7070;
@@ -457,7 +457,7 @@ font-style: normal;
   border-bottom: 1px solid #CC3300;
 }
 #footer p {
-  font-family: 'Noto Sans', "Open Sans", sans-serif;
+  font-family: 'Noto Sans', 'Open Sans', sans-serif;
   font-size: 14px;
   font-weight: lighter;
   color: #3F7070;
@@ -711,7 +711,7 @@ font-style: normal;
   background-color: #e6ecff;
 }
 .pdf a {
-  font-family: 'Noto Sans', "Open Sans", sans-serif;
+  font-family: 'Noto Sans', 'Open Sans', sans-serif;
   font-size: 10px;
   text-decoration: none;
   color: #5391BF;
@@ -743,22 +743,22 @@ font-style: normal;
   font-style: normal;
 }
 .var {
-  font-family: "Noto Sans", "Open Sans", sans-serif;
+  font-family: 'Noto Sans', 'Open Sans', sans-serif;
   font-size: 16px;
   font-style: italic;
 }
 .var2 {
-  font-family: "Noto Sans", "Open Sans", sans-serif;
+  font-family: 'Noto Sans', 'Open Sans', sans-serif;
   font-size: 16px;
   font-style: normal;
 }
 .var3 {
-  font-family: "Noto Sans", "Open Sans", sans-serif;
+  font-family: 'Noto Sans', 'Open Sans', sans-serif;
   font-size: 10px;
   vertical-align: 40%;
 }
 .form {
-  font-family: "Crimson Pro", Georgia, serif;
+  font-family: 'Crimson Pro', Georgia, serif;
   font-size: 15px;
 	line-height: 20px;
   font-style: normal;
@@ -766,7 +766,7 @@ font-style: normal;
 	margin: 12px 0 0 0;
 }
 .form31s {
-  font-family: "Noto Sans", "Open Sans", sans-serif;
+  font-family: 'Noto Sans', 'Open Sans', sans-serif;
   font-size: 16px;
   font-style: normal;
   width: 300px;
@@ -774,14 +774,14 @@ font-style: normal;
 	padding: 3px 6px;
 }
 .form33s {
-  font-family: "Noto Sans", "Open Sans", sans-serif;
+  font-family: 'DejaVu Sans', 'Open Sans', sans-serif;
   font-size: 16px;
   font-style: normal;
 	width: 120px;
 	padding: 2px 6px;
 }
 .bform {
-  font-family: "Crimson Pro", Georgia, serif;
+  font-family: 'Crimson Pro', Georgia, serif;
   font-size: 15px;
 	line-height: 20px;
   font-style: normal;
@@ -801,22 +801,22 @@ font-style: normal;
   font-weight: 400;
 }
 .cs {
-  font-family: "Noto Sans", "Open Sans", sans-serif;
+  font-family: 'Noto Sans', 'Open Sans', sans-serif;
   font-weight: bold;
 }
 .term {
-  font-family: "Noto Sans", "Open Sans", sans-serif;
+  font-family: 'Noto Sans', 'Open Sans', sans-serif;
   font-style: italic;
 }
 .form22 {
-  font-family: "Noto Sans", "Open Sans", sans-serif;
+  font-family: 'Noto Sans', 'Open Sans', sans-serif;
   font-size: 16px;
   font-style: normal;
 	text-align: center;
   width: 20px;
 }
 .form22a {
-  font-family: "Noto Sans", "Open Sans", sans-serif;
+  font-family: 'Noto Sans', 'Open Sans', sans-serif;
   font-size: 16px;
   font-style: normal;
 	text-align: center;
@@ -872,14 +872,14 @@ font-style: normal;
   width: 112px;
 }
 .form232 {
-  font-family: "Noto Sans", "Open Sans", sans-serif;
+  font-family: 'Noto Sans', 'Open Sans', sans-serif;
   font-size: 16px;
   font-style: normal;
 	text-align: center;
   width: 20px;
 }
 .form23a {
-  font-family: "Noto Sans", "Open Sans", sans-serif;
+  font-family: 'Noto Sans', 'Open Sans', sans-serif;
   font-size: 16px;
   font-style: normal;
 	text-align: center;
@@ -1046,7 +1046,7 @@ font-style: normal;
   width: 120px;
 }
 .form34s {
-  font-family: "Noto Sans", "Open Sans", sans-serif;
+  font-family: 'Noto Sans', 'Open Sans', sans-serif;
   font-size: 16px;
   font-style: normal;
   width: 210px;
@@ -1072,14 +1072,14 @@ font-style: normal;
 .nds {
 	display: inline-block;
   width: 240px;
-	font-family: "Noto Sans", "Open Sans", sans-serif;
+	font-family: 'Noto Sans', 'Open Sans', sans-serif;
 	color: #A3512C;
 }
 div.operator {
   margin: 6px 0 0 78px;
 }
 div.operator button {
-  font-family: "Cambria Math", "Open Sans", sans-serif;
+  font-family: 'Cambria Math', 'Open Sans', sans-serif;
   font-size: 16px;
   font-style: normal;
   vertical align: middle;
@@ -1094,7 +1094,7 @@ div.operator31 {
   margin: 2px 0 36px 42px;
 }
 div.operator31 button {
-  font-family: "Noto Sans", "Open Sans", sans-serif;
+  font-family: 'Noto Sans', 'Open Sans', sans-serif;
   font-size: 16px;
   font-style: normal;
   vertical align: middle;
@@ -1106,7 +1106,7 @@ div.operator31 button {
 	border: solid #969696 1px;
 }
 div.operator31 button.ca {
-  font-family: "Noto Sans", "Open Sans", sans-serif;
+  font-family: 'Noto Sans', 'Open Sans', sans-serif;
   font-size: 14px;
   font-style: normal;
   vertical align: middle;
@@ -1119,7 +1119,7 @@ div.operator31 button.ca {
 	cursor: pointer;
 }
 td.operator button {
-  font-family: "Noto Sans", "Open Sans", sans-serif;
+  font-family: 'Noto Sans', 'Open Sans', sans-serif;
   font-size: 16px;
   font-style: normal;
   vertical align: middle;
@@ -1131,7 +1131,7 @@ td.operator button {
 	border: solid #969696 1px;
 }
 button.ca32 {
-  font-family: "Noto Sans", "Open Sans", sans-serif;
+  font-family: 'Noto Sans', 'Open Sans', sans-serif;
   font-size: 15px;
   font-style: normal;
   vertical align: middle;
@@ -1144,7 +1144,7 @@ button.ca32 {
 	cursor: pointer;
 }
 button.ca33 {
-  font-family: "Noto Sans", "Open Sans", sans-serif;
+  font-family: 'Noto Sans', 'Open Sans', sans-serif;
   font-size: 15px;
   font-style: normal;
   vertical align: middle;
@@ -1157,7 +1157,7 @@ button.ca33 {
 	cursor: pointer;
 }
 input.ca33 {
-  font-family: "Noto Sans", "Open Sans", sans-serif;
+  font-family: 'Noto Sans', 'Open Sans', sans-serif;
   font-size: 15px;
   font-style: normal;
   vertical align: middle;
@@ -1170,7 +1170,7 @@ input.ca33 {
 	cursor: pointer;
 }
 button.ca34 {
-  font-family: "Noto Sans", "Open Sans", sans-serif;
+  font-family: 'Noto Sans', 'Open Sans', sans-serif;
   font-size: 15px;
   font-style: normal;
   vertical align: middle;
@@ -1188,7 +1188,7 @@ button.ca34 {
   border-spacing: 0px;
   float: left;
   margin: 24px 0 12px 40px;
-  font-family: "Noto Sans", "Open Sans", sans-serif;
+  font-family: 'Noto Sans', 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 24px;
   color: #0a2c02;
@@ -1201,14 +1201,14 @@ button.ca34 {
   /*vertical-align: middle;*/
   text-align: left;
   line-height: 24px;
-  font-family: "Noto Sans", "Open Sans", sans-serif;
+  font-family: 'Noto Sans', 'Open Sans', sans-serif;
   color: #0a2c02;
 }
 #main table.ex32 td.sll button {
   margin: 0 0 0 -4px;
   text-align: left;
   line-height: 26px;
-  font-family: "Noto Sans", "Open Sans", sans-serif;
+  font-family: 'Noto Sans', 'Open Sans', sans-serif;
   font-size: 16px;
   color: #0a2c02;
   background-color: transparent;
@@ -1226,7 +1226,7 @@ button.ca34 {
   padding: 3px 2px 3px 2px;
   text-align: center;
   text-transform: uppercase;
-  font-family: "Noto Sans", "Open Sans", sans-serif;
+  font-family: 'Noto Sans', 'Open Sans', sans-serif;
   font-size: 16px;
   color: #0a2c02;
   background-color: transparent;
@@ -1244,7 +1244,7 @@ button.ca34 {
   padding: 3px 2px 3px 2px;
   text-align: center;
   text-transform: uppercase;
-  font-family: "Noto Sans", "Open Sans", sans-serif;
+  font-family: 'Noto Sans', 'Open Sans', sans-serif;
   font-size: 16px;
   color: #0a2c02;
 }
@@ -1265,7 +1265,7 @@ button.ca34 {
   /*vertical-align: middle;*/
   text-align: left;
   line-height: 24px;
-  font-family: "Noto Sans", "Open Sans", sans-serif;
+  font-family: 'Noto Sans', 'Open Sans', sans-serif;
   color: #0a2c02;
 }
 #main table.ex32 td.psll span.tv {
@@ -1278,7 +1278,7 @@ button.ca34 {
   padding: 3px 2px 3px 2px;
   text-align: center;
   text-transform: uppercase;
-  font-family: "Noto Sans", "Open Sans", sans-serif;
+  font-family: 'Noto Sans', 'Open Sans', sans-serif;
   font-size: 16px;
   color: #0a2c02;
 }
@@ -1290,7 +1290,7 @@ button.ca34 {
   /*vertical-align: middle;*/
   text-align: left;
   line-height: 24px;
-  font-family: "Noto Sans", "Open Sans", sans-serif;
+  font-family: 'Noto Sans', 'Open Sans', sans-serif;
   color: #0a2c02;
 }
 #main table.ex32 td.ppsll span.tv {
@@ -1303,7 +1303,7 @@ button.ca34 {
   padding: 3px 2px 3px 2px;
   text-align: center;
   text-transform: uppercase;
-  font-family: "Noto Sans", "Open Sans", sans-serif;
+  font-family: 'Noto Sans', 'Open Sans', sans-serif;
   font-size: 16px;
   color: #0a2c02;
 }
@@ -1314,14 +1314,14 @@ button.ca34 {
   padding: 3px 2px 3px 2px;
   text-align: left;
   line-height: 24px;
-  font-family: "Noto Sans", "Open Sans", sans-serif;
+  font-family: 'Noto Sans', 'Open Sans', sans-serif;
   color: #0a2c02;
 }
 #main table.ex32 td.slsll button {
   margin: 0 0 0 -4px;
   text-align: left;
   line-height: 24px;
-  font-family: "Noto Sans", "Open Sans", sans-serif;
+  font-family: 'Noto Sans', 'Open Sans', sans-serif;
   font-size: 16px;
   color: #0a2c02;
   background-color: transparent;
@@ -1339,7 +1339,7 @@ button.ca34 {
   padding: 3px 2px 3px 2px;
   text-align: center;
   text-transform: uppercase;
-  font-family: "Noto Sans", "Open Sans", sans-serif;
+  font-family: 'Noto Sans', 'Open Sans', sans-serif;
   font-size: 16px;
   color: #0a2c02;
   background-color: transparent;
@@ -1357,7 +1357,7 @@ button.ca34 {
   padding: 3px 2px 3px 2px;
   text-align: center;
   text-transform: uppercase;
-  font-family: "Noto Sans", "Open Sans", sans-serif;
+  font-family: 'Noto Sans', 'Open Sans', sans-serif;
   font-size: 16px;
   color: #0a2c02;
 }
@@ -1377,14 +1377,14 @@ button.ca34 {
   padding: 3px 2px 3px 2px;
   text-align: left;
   line-height: 24px;
-  font-family: "Noto Sans", "Open Sans", sans-serif;
+  font-family: 'Noto Sans', 'Open Sans', sans-serif;
   color: #0a2c02;
 }
 #main table.ex32 td.slpsll button {
   margin: 0 0 0 -4px;
   text-align: left;
   line-height: 24px;
-  font-family: "Noto Sans", "Open Sans", sans-serif;
+  font-family: 'Noto Sans', 'Open Sans', sans-serif;
   font-size: 16px;
   color: #0a2c02;
   background-color: transparent;
@@ -1402,7 +1402,7 @@ button.ca34 {
   padding: 3px 2px 3px 2px;
   text-align: center;
   text-transform: uppercase;
-  font-family: "Noto Sans", "Open Sans", sans-serif;
+  font-family: 'Noto Sans', 'Open Sans', sans-serif;
   font-size: 16px;
   color: #0a2c02;
   background-color: transparent;
@@ -1420,7 +1420,7 @@ button.ca34 {
   padding: 3px 2px 3px 2px;
   text-align: center;
   text-transform: uppercase;
-  font-family: "Noto Sans", "Open Sans", sans-serif;
+  font-family: 'Noto Sans', 'Open Sans', sans-serif;
   font-size: 16px;
   color: #0a2c02;
 }
@@ -1440,7 +1440,7 @@ button.ca34 {
   padding: 3px 2px 3px 2px;
   text-align: left;
   line-height: 24px;
-  font-family: "Noto Sans", "Open Sans", sans-serif;
+  font-family: 'Noto Sans', 'Open Sans', sans-serif;
   color: #0a2c02;
 }
 #main table.ex32 td.slpl span.tv {
@@ -1453,7 +1453,7 @@ button.ca34 {
   padding: 3px 2px 3px 2px;
   text-align: center;
   text-transform: uppercase;
-  font-family: "Noto Sans", "Open Sans", sans-serif;
+  font-family: 'Noto Sans', 'Open Sans', sans-serif;
   font-size: 16px;
   color: #0a2c02;
 }
@@ -1473,14 +1473,14 @@ button.ca34 {
   padding: 3px 2px 3px 2px;
   text-align: left;
   line-height: 24px;
-  font-family: "Noto Sans", "Open Sans", sans-serif;
+  font-family: 'Noto Sans', 'Open Sans', sans-serif;
   color: #0a2c02;
 }
 #main table.ex32 td.slslpl button {
   margin: 0 0 0 -4px;
   text-align: left;
   line-height: 24px;
-  font-family: "Noto Sans", "Open Sans", sans-serif;
+  font-family: 'Noto Sans', 'Open Sans', sans-serif;
   font-size: 16px;
   color: #0a2c02;
   background-color: transparent;
@@ -1498,7 +1498,7 @@ button.ca34 {
   padding: 3px 2px 3px 2px;
   text-align: center;
   text-transform: uppercase;
-  font-family: "Noto Sans", "Open Sans", sans-serif;
+  font-family: 'Noto Sans', 'Open Sans', sans-serif;
   font-size: 16px;
   color: #0a2c02;
   background-color: transparent;
@@ -1516,7 +1516,7 @@ button.ca34 {
   padding: 3px 2px 3px 2px;
   text-align: center;
   text-transform: uppercase;
-  font-family: "Noto Sans", "Open Sans", sans-serif;
+  font-family: 'Noto Sans', 'Open Sans', sans-serif;
   font-size: 16px;
   color: #0a2c02;
 }
@@ -1536,14 +1536,14 @@ button.ca34 {
   padding: 3px 2px 3px 2px;
   text-align: right;
   line-height: 24px;
-  font-family: "Noto Sans", "Open Sans", sans-serif;
+  font-family: 'Noto Sans', 'Open Sans', sans-serif;
   color: #0a2c02;
 }
 #main table.ex32 td.slr button {
   margin: 0 -4px 0 0px;
   text-align: right;
   line-height: 26px;
-  font-family: "Noto Sans", "Open Sans", sans-serif;
+  font-family: 'Noto Sans', 'Open Sans', sans-serif;
   font-size: 16px;
   color: #0a2c02;
   background-color: transparent;
@@ -1561,7 +1561,7 @@ button.ca34 {
   padding: 3px 2px 3px 2px;
   text-align: center;
   text-transform: uppercase;
-  font-family: "Noto Sans", "Open Sans", sans-serif;
+  font-family: 'Noto Sans', 'Open Sans', sans-serif;
   font-size: 16px;
   color: #0a2c02;
   background-color: transparent;
@@ -1580,7 +1580,7 @@ button.ca34 {
   /*vertical-align: 0px;*/
   text-align: center;
   text-transform: uppercase;
-  font-family: "Noto Sans", "Open Sans", sans-serif;
+  font-family: 'Noto Sans', 'Open Sans', sans-serif;
   font-size: 16px;
   color: #0a2c02;
 }
@@ -1600,14 +1600,14 @@ button.ca34 {
   padding: 3px 2px 3px 2px;
   text-align: right;
   line-height: 24px;
-  font-family: "Noto Sans", "Open Sans", sans-serif;
+  font-family: 'Noto Sans', 'Open Sans', sans-serif;
   color: #0a2c02;
 }
 #main table.ex32 td.pslr button {
   margin: 0 -4px 0 0px;
   text-align: right;
   line-height: 24px;
-  font-family: "Noto Sans", "Open Sans", sans-serif;
+  font-family: 'Noto Sans', 'Open Sans', sans-serif;
   font-size: 16px;
   color: #0a2c02;
   background-color: transparent;
@@ -1625,7 +1625,7 @@ button.ca34 {
   padding: 3px 2px 3px 2px;
   text-align: center;
   text-transform: uppercase;
-  font-family: "Noto Sans", "Open Sans", sans-serif;
+  font-family: 'Noto Sans', 'Open Sans', sans-serif;
   font-size: 16px;
   color: #0a2c02;
   background-color: transparent;
@@ -1644,7 +1644,7 @@ button.ca34 {
   /*vertical-align: 0px;*/
   text-align: center;
   text-transform: uppercase;
-  font-family: "Noto Sans", "Open Sans", sans-serif;
+  font-family: 'Noto Sans', 'Open Sans', sans-serif;
   font-size: 16px;
   color: #0a2c02;
 }
@@ -1664,7 +1664,7 @@ button.ca34 {
   padding: 3px 2px 3px 2px;
   text-align: right;
   line-height: 24px;
-  font-family: "Noto Sans", "Open Sans", sans-serif;
+  font-family: 'Noto Sans', 'Open Sans', sans-serif;
   color: #0a2c02;
 }
 #main table.ex32 td.slpr span.tv {
@@ -1677,7 +1677,7 @@ button.ca34 {
   padding: 3px 2px 3px 2px;
   text-align: center;
   text-transform: uppercase;
-  font-family: "Noto Sans", "Open Sans", sans-serif;
+  font-family: 'Noto Sans', 'Open Sans', sans-serif;
   font-size: 16px;
   color: #0a2c02;
 }
@@ -1688,14 +1688,14 @@ button.ca34 {
   padding: 3px 2px 3px 2px;
   text-align: right;
   line-height: 24px;
-  font-family: "Noto Sans", "Open Sans", sans-serif;
+  font-family: 'Noto Sans', 'Open Sans', sans-serif;
   color: #0a2c02;
 }
 #main table.ex32 td.slslpr button {
   margin: 0 -4px 0 0px;
   text-align: right;
   line-height: 24px;
-  font-family: "Noto Sans", "Open Sans", sans-serif;
+  font-family: 'Noto Sans', 'Open Sans', sans-serif;
   font-size: 16px;
   color: #0a2c02;
   background-color: transparent;
@@ -1713,7 +1713,7 @@ button.ca34 {
   padding: 3px 2px 3px 2px;
   text-align: center;
   text-transform: uppercase;
-  font-family: "Noto Sans", "Open Sans", sans-serif;
+  font-family: 'Noto Sans', 'Open Sans', sans-serif;
   font-size: 16px;
   color: #0a2c02;
   background-color: transparent;
@@ -1731,7 +1731,7 @@ button.ca34 {
   padding: 3px 2px 3px 2px;
   text-align: center;
   text-transform: uppercase;
-  font-family: "Noto Sans", "Open Sans", sans-serif;
+  font-family: 'Noto Sans', 'Open Sans', sans-serif;
   font-size: 16px;
   color: #0a2c02;
 }
@@ -1751,7 +1751,7 @@ button.ca34 {
   padding: 3px 2px 3px 2px;
   text-align: left;
   line-height: 24px;
-  font-family: "Noto Sans", "Open Sans", sans-serif;
+  font-family: 'Noto Sans', 'Open Sans', sans-serif;
   color: #0a2c02;
 }
 #main table.ex324 {
@@ -1759,7 +1759,7 @@ button.ca34 {
   border-spacing: 0px;
   float: left;
   margin: 0px 0 12px 40px;
-  font-family: "Noto Sans", "Open Sans", sans-serif;
+  font-family: 'Noto Sans', 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 24px;
   color: #0a2c02;
