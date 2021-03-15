@@ -64,7 +64,7 @@ body {
   font-variant: small-caps;
   letter-spacing: 8px;
   font-weight: lighter;
-  color: #333333;
+  color: #0a2c02;
   margin: 0 auto;
   padding: 30px 0 10px 20px;
 }
@@ -74,17 +74,17 @@ body {
   font-size: 24px;
   letter-spacing: 6px;
   font-weight: lighter;
-  color: #333333;
+  color: #0a2c02;
   margin: 0 auto;
   padding: 30px 0 10px 20px;
 }
 #header p {
   overflow: hidden;
   line-height: 28px;
-  font-family: Georgia, 'Crimson Text', serif;
+  font-family: 'Crimson Pro', Georgia, serif;
   font-size: 18px;
   /*font-weight: bold;*/
-  color: #333333;
+  color: #0a2c02;
   margin: 0 auto;
   padding: 30px 0 10px 20px;
 }
@@ -94,20 +94,22 @@ body {
   height: 48px;
 }
 #nav a {
-  display: block;
-  font-family: Arial, 'Nato Sans', sans-serif;
+  font-family: 'Nato Sans', sans-serif;
   font-size: 14px;
-  color: #336666;
-  line-height: 28px;
-  letter-spacing: 1px;
-  text-align: left;
-  margin: 10px 0px 0 20px;
+  color: #0a2c02;
+  /* Distance from text */
+  padding-bottom: 2px;
   text-decoration: none;
+  box-shadow: none;
+  transition: box-shadow .5s ease-out;
+  line-height: 48px;
+  letter-spacing: 2px;
+  text-align: left;
+  margin-left: 20px;
 }
 #nav a:hover {
-  color: #CC3300;
-  background-color: #E6E6E6;
-  border-bottom: 1px solid #CC3300;
+  color: #0a2c02;
+  box-shadow: 0 1px 0 0 #0a2c02;
 }
 #nav ul {
   list-style: none;
@@ -120,14 +122,14 @@ body {
   float: left;
 }
 #main {
-  font-family: Georgia, 'Crimson Text', serif;
+  font-family: 'Crimson Pro', Georgia, serif;
   overflow: hidden;
   float: left;
 }
 #main h1 {
   padding: 24px 24px 12px 24px;
   font-size: 24px;
-  color: #CC3300;
+  color: #0a2c02;
   font-weight: normal;
   font-stretch: normal;
   font-variant: normal;
@@ -138,7 +140,7 @@ body {
 #main h2 {
   padding: 24px 24px 12px 24px;
   font-size: 22px;
-  color: #CC3300;
+  color: #0a2c02;
   font-weight: normal;
   font-stretch: normal;
   font-variant: normal;
@@ -149,7 +151,7 @@ body {
 #main h3 {
   padding: 24px 24px 0 24px;
   font-size: 18px;
-  color: #333333;
+  color: #0a2c02;
   font-weight: normal;
   font-stretch: normal;
   font-variant: normal;
@@ -160,7 +162,7 @@ font-style: normal;
 #main h4 {
   padding: 24px 24px 0 24px;
   font-size: 16px;
-  color: #333333;
+  color: #0a2c02;
   font-style: normal;
   font-variant: normal;
   font-weight: bold;
@@ -169,25 +171,25 @@ font-style: normal;
 }
 #main a {
   text-decoration: none;
-  color: #5391BF;
+  color: #0862a7;
   font-weight: normal;
   padding-bottom: 2px;
 }
 #main a:hover {
-  color: #CC3300;
+  color: #0a2c02;
   text-decoration: none;
-  border-bottom: 1px solid #CC3300;
+  border-bottom: 1px solid #0a2c02;
 }
 #main a.license:hover {
   border-bottom: none;
 }
 #main ol li {
   font-size: 16px;
-  color: #333333;
+  color: #0a2c02;
 }
 #main ol.display {
   font-size: 16px;
-  color: #333333;
+  color: #0a2c02;
   padding: 0 24px 0 48px;
   margin-left: 36px;
   line-height: 24px;
@@ -199,7 +201,7 @@ font-style: normal;
 }
 #main ol.ex li {
   font-size: 16px;
-  color: #333333;
+  color: #0a2c02;
   padding: 0 24px 0 0;
   margin: 20px 0 0 24px;
   line-height: 24px;
@@ -213,23 +215,23 @@ font-style: normal;
   line-height: 24px;
   margin: 0 0 0 40px;
   font-size: 16px;
-  color: #333333;
+  color: #0a2c02;
 }
 #main ol.ex34 li {
   line-height: 28px;
   margin: 12px 0 0 40px;
   font-size: 16px;
-  color: #333333;
+  color: #0a2c02;
 }
 #main ol.ex34 ol li{
   line-height: 28px;
   margin: 0 0 0 40px;
   font-size: 16px;
-  color: #333333;
+  color: #0a2c02;
 }
 #main ol.ex_sec {
   font-size: 16px;
-  color: #333333;
+  color: #0a2c02;
   line-height: 24px;
   margin: 20px 20px 0 20px;
   list-style: upper-roman;
@@ -241,35 +243,35 @@ font-style: normal;
 }
 #main ol.ex_q li {
   font-size: 16px;
-  color: #333333;
+  color: #0a2c02;
   line-height: 24px;
   padding: 0 0 0 0;
   margin: 20px 0 0 40px;
 }
 #main ol.ex_q1 li {
   font-size: 16px;
-  color: #333333;
+  color: #0a2c02;
   line-height: 24px;
   padding: 0 24px 0 0;
   margin: 20px 0 0 40px;
 }
 #main ol.ex_q1 span {
   font-size: 16px;
-  color: #333333;
+  color: #0a2c02;
   display: block;
 }
 #main p {
   padding: 0px 24px 0 24px;
   font-size: 16px;
   line-height: 24px;
-  color: #333333;
+  color: #0a2c02;
 }
 #main blockquote {
 	margin: 0 36px 0 36px;
 	padding: 0 48px 0 24px;
 	font-size: 14px;
 	line-height: 20px;
-	color: #333333;
+	color: #0a2c02;
 }
 #main .footnotes li {
 	margin-left: 6px;
@@ -286,7 +288,7 @@ font-style: normal;
   padding: 0px 2px 0 2px;
   font-size: 16px;
   line-height: 24px;
-  color: #333333;
+  color: #0a2c02;
 }
 #main table.box {
   border: none;
@@ -298,7 +300,7 @@ font-style: normal;
   padding: 6px 4px 0 8px;
   font-size: 16px;
   line-height: 24px;
-  color: #333333;
+  color: #0a2c02;
 }
 #main table.box td.bottom {
   padding: 6px 4px 6px 8px;
@@ -307,7 +309,7 @@ font-style: normal;
 #main table.box td.label {
   padding: 6px 4px 0 8px;
   line-height: 24px;
-  color: #333333;
+  color: #0a2c023;
   text-align: center;
   vertical-align: baseline;
 }
@@ -317,12 +319,12 @@ font-style: normal;
   margin: 24px 0 0 40px;
   font-size: 16px;
   line-height: 24px;
-  color: #333333;
+  color: #0a2c02;
 }
 #main table.ex td {
   line-height: 24px;
   font-size: 16px;
-  color: #333333;
+  color: #0a2c02;
 	border: none;
 }
 #main table.ex td.c1 {
@@ -332,7 +334,7 @@ font-style: normal;
   text-align: right;
   line-height: 24px;
   font-size: 16px;
-  color: #333333;
+  color: #0a2c02;
 }
 #main table.ex td.c2 {
   padding: 0px 6px 0px 6px;
@@ -340,7 +342,7 @@ font-style: normal;
   text-align: left;
   line-height: 24px;
   font-size: 16px;
-  color: #333333;
+  color: #0a2c02;
 }
 #main table.ex td.c2a {
   padding: 0px 6px 0px 6px;
@@ -348,7 +350,7 @@ font-style: normal;
   text-align: left;
   line-height: 24px;
   font-size: 16px;
-  color: #333333;
+  color: #0a2c02;
 }
 #main table.ex td.c3 {
   padding: 6px;
@@ -356,7 +358,7 @@ font-style: normal;
   text-align: left;
   line-height: 24px;
   font-size: 16px;
-  color: #333333;
+  color: #0a2c02;
 }
 #main table.ex td.cm {
   padding: 2 0 0 2px;
@@ -367,7 +369,7 @@ font-style: normal;
 	width: 250px;
 }
 #main table.ex td.c3a {
-  font-family: Verdana, "Arial Unicode MS", "Open Sans", sans-serif;
+  font-family: 'Noto Sans', "Open Sans", sans-serif;
   color: #A3512C;
 }
 #main table.ex td.operator {
@@ -376,12 +378,12 @@ font-style: normal;
   text-align: left;
   vertical-align: top;
   line-height: 32px;
-  font-family: Verdana, "Arial Unicode MS", "Open Sans", sans-serif;
+  font-family: 'Noto Sans', "Open Sans", sans-serif;;
   font-size: 16px;
-  color: #333333;
+  color: #0a2c02;
 }
 #main table.ex td.operator button {
-  font-family: Verdana, "Arial Unicode MS", "Open Sans", sans-serif;
+  font-family: 'Cambria Math', "Open Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   vertical align: middle;
@@ -392,7 +394,7 @@ font-style: normal;
 #main table.ex25 td.cs {
   line-height: 24px;
   font-size: 16px;
-  color: #333333;
+  color: #0a2c02;
   padding: 2px 6px 2px 8px;
 }
 .mark32b2l {
@@ -442,7 +444,7 @@ font-style: normal;
   clear: both;
 }
 #footer a {
-  font-family: Arial, 'Open Sans', sans-serif;
+  font-family: 'Noto Sans', "Open Sans", sans-serif;
   font-size: 14px;
   font-weight: lighter;
   color: #3F7070;
@@ -455,7 +457,7 @@ font-style: normal;
   border-bottom: 1px solid #CC3300;
 }
 #footer p {
-  font-family: Arial, 'Open Sans', sans-serif;
+  font-family: 'Noto Sans', "Open Sans", sans-serif;
   font-size: 14px;
   font-weight: lighter;
   color: #3F7070;
@@ -555,7 +557,7 @@ font-style: normal;
 }
 .bluebox td {
   font-size: 16px;
-  color: #333333;
+  color: #0a2c02;
   line-height: 24px;
 }
 .box {
@@ -566,7 +568,7 @@ font-style: normal;
 }
 .box td {
   font-size: 16px;
-  color: #333333;
+  color: #0a2c02;
   padding: 0 4px 6px 8px;
   line-height: 24px;
 }
@@ -577,7 +579,7 @@ font-style: normal;
 .box td.label {
   padding: 6px 4px 0 8px;
   line-height: 24px;
-  color: #333333;
+  color: #0a2c02;
   text-align: center;
   vertical-align: baseline;
 }
@@ -698,12 +700,18 @@ font-style: normal;
   padding: 0 4px 4px 8px;
   line-height: 24px;
 }
+.label {
+  background-color: #e6ecff;
+  font-family: 'Noto Sans'; sans-serif;
+  font-size: 0.8em;
+  width: 80px
+}
 .labelBackground {
   font-size: 90%;
-  background-color: #E6ECFF;
+  background-color: #e6ecff;
 }
 .pdf a {
-  font-family: Arial, 'Open Sans', sans-serif;
+  font-family: 'Noto Sans', "Open Sans", sans-serif;
   font-size: 10px;
   text-decoration: none;
   color: #5391BF;
@@ -730,27 +738,27 @@ font-style: normal;
   color: #444444;
 }
 .symb {
-  font-family: Verdana, "Arial Unicode MS", "Noto Sans", "Open Sans", sans-serif;
+  font-family: 'Cambria Math', 'Open Sans', sans-serif;
   font-size: 16px;
   font-style: normal;
 }
 .var {
-  font-family: Verdana, "Arial Unicode MS", "Noto Sans", "Open Sans", sans-serif;
+  font-family: "Noto Sans", "Open Sans", sans-serif;
   font-size: 16px;
   font-style: italic;
 }
 .var2 {
-  font-family: Verdana, "Arial Unicode MS", "Noto Sans", "Open Sans", sans-serif;
+  font-family: "Noto Sans", "Open Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
 }
 .var3 {
-  font-family: Verdana, Arial, Helvetica, "Open Sans", sans-serif;
+  font-family: "Noto Sans", "Open Sans", sans-serif;
   font-size: 10px;
   vertical-align: 40%;
 }
 .form {
-  font-family: Crimson, Georgia, serif;
+  font-family: "Crimson Pro", Georgia, serif;
   font-size: 15px;
 	line-height: 20px;
   font-style: normal;
@@ -758,7 +766,7 @@ font-style: normal;
 	margin: 12px 0 0 0;
 }
 .form31s {
-  font-family: Verdana, "Arial Unicode MS", "Noto Sans", "Open Sans", sans-serif;
+  font-family: "Noto Sans", "Open Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   width: 300px;
@@ -766,14 +774,14 @@ font-style: normal;
 	padding: 3px 6px;
 }
 .form33s {
-  font-family: Verdana, "Arial Unicode MS", "Noto Sans", "Open Sans", sans-serif;
+  font-family: "Noto Sans", "Open Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
 	width: 120px;
 	padding: 2px 6px;
 }
 .bform {
-  font-family: Crimson, Georgia, serif;
+  font-family: "Crimson Pro", Georgia, serif;
   font-size: 15px;
 	line-height: 20px;
   font-style: normal;
@@ -793,22 +801,22 @@ font-style: normal;
   font-weight: 400;
 }
 .cs {
-  font-family: verdana, sans-serif;
+  font-family: "Noto Sans", "Open Sans", sans-serif;
   font-weight: bold;
 }
 .term {
-  font-family: verdana, sans-serif;
+  font-family: "Noto Sans", "Open Sans", sans-serif;
   font-style: italic;
 }
 .form22 {
-  font-family: Verdana, "Arial Unicode MS", "Noto Sans", "Open Sans";
+  font-family: "Noto Sans", "Open Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
 	text-align: center;
   width: 20px;
 }
 .form22a {
-  font-family: Verdana, "Arial Unicode MS", "Noto Sans", "Open Sans";
+  font-family: "Noto Sans", "Open Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
 	text-align: center;
@@ -844,7 +852,7 @@ font-style: normal;
 /* Section2.3 */
 #main ol.ex_q23 li {
   font-size: 16px;
-  color: #333333;
+  color: #0a2c02;
   line-height: 24px;
   padding: 0 0 0 0;
   margin: 0 0 0 40px;
@@ -864,14 +872,14 @@ font-style: normal;
   width: 112px;
 }
 .form232 {
-  font-family: Verdana, "Arial Unicode MS", "Noto Sans", "Open Sans";
+  font-family: "Noto Sans", "Open Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
 	text-align: center;
   width: 20px;
 }
 .form23a {
-  font-family: Verdana, "Arial Unicode MS", "Noto Sans", "Open Sans";
+  font-family: "Noto Sans", "Open Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
 	text-align: center;
@@ -907,7 +915,7 @@ font-style: normal;
 /* Seciton 2.4 */
 #main ol.ex_q24 li {
   font-size: 16px;
-  color: #333333;
+  color: #0a2c02;
   line-height: 24px;
   padding: 0 0 0 0;
   margin: 24px 0 0 32px;
@@ -1032,13 +1040,13 @@ font-style: normal;
 }
 /* Seciton 3.4 */
 .form34 {
-  font-family: Crimson, Georgia, serif;
+  font-family: 'Crimson Pro', Georgia, serif;
   font-size: 16px;
   font-style: normal;
   width: 120px;
 }
 .form34s {
-  font-family: Verdana, "Arial Unicode MS", "Noto Sans", "Open Sans", sans-serif;
+  font-family: "Noto Sans", "Open Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   width: 210px;
@@ -1064,14 +1072,14 @@ font-style: normal;
 .nds {
 	display: inline-block;
   width: 240px;
-	font-family: Verdana, "Arial Unicode MS", "Noto Sans", "Open Sans", sans-serif;
+	font-family: "Noto Sans", "Open Sans", sans-serif;
 	color: #A3512C;
 }
 div.operator {
   margin: 6px 0 0 78px;
 }
 div.operator button {
-  font-family: Verdana, "Arial Unicode MS", "Noto Sans", "Open Sans", sans-serif;
+  font-family: "Cambria Math", "Open Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   vertical align: middle;
@@ -1086,7 +1094,7 @@ div.operator31 {
   margin: 2px 0 36px 42px;
 }
 div.operator31 button {
-  font-family: Verdana, "Arial Unicode MS", "Noto Sans", "Open Sans", sans-serif;
+  font-family: "Noto Sans", "Open Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   vertical align: middle;
@@ -1098,7 +1106,7 @@ div.operator31 button {
 	border: solid #969696 1px;
 }
 div.operator31 button.ca {
-  font-family: "Arial Unicode MS", "Noto Sans", "Open Sans", sans-serif;
+  font-family: "Noto Sans", "Open Sans", sans-serif;
   font-size: 14px;
   font-style: normal;
   vertical align: middle;
@@ -1111,7 +1119,7 @@ div.operator31 button.ca {
 	cursor: pointer;
 }
 td.operator button {
-  font-family: Verdana, "Arial Unicode MS", "Noto Sans", "Open Sans", sans-serif;
+  font-family: "Noto Sans", "Open Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   vertical align: middle;
@@ -1123,7 +1131,7 @@ td.operator button {
 	border: solid #969696 1px;
 }
 button.ca32 {
-  font-family: "Arial Unicode MS", "Noto Sans", "Open Sans", sans-serif;
+  font-family: "Noto Sans", "Open Sans", sans-serif;
   font-size: 15px;
   font-style: normal;
   vertical align: middle;
@@ -1136,7 +1144,7 @@ button.ca32 {
 	cursor: pointer;
 }
 button.ca33 {
-  font-family: "Arial Unicode MS", "Noto Sans", "Open Sans", sans-serif;
+  font-family: "Noto Sans", "Open Sans", sans-serif;
   font-size: 15px;
   font-style: normal;
   vertical align: middle;
@@ -1149,7 +1157,7 @@ button.ca33 {
 	cursor: pointer;
 }
 input.ca33 {
-  font-family: "Arial Unicode MS", "Noto Sans", "Open Sans", sans-serif;
+  font-family: "Noto Sans", "Open Sans", sans-serif;
   font-size: 15px;
   font-style: normal;
   vertical align: middle;
@@ -1162,7 +1170,7 @@ input.ca33 {
 	cursor: pointer;
 }
 button.ca34 {
-  font-family: "Arial Unicode MS", "Noto Sans", "Open Sans", sans-serif;
+  font-family: "Noto Sans", "Open Sans", sans-serif;
   font-size: 15px;
   font-style: normal;
   vertical align: middle;
@@ -1180,10 +1188,10 @@ button.ca34 {
   border-spacing: 0px;
   float: left;
   margin: 24px 0 12px 40px;
-  font-family: Verdana, "Arial Unicode MS", "Open Sans", sans-serif;
+  font-family: "Noto Sans", "Open Sans", sans-serif;
   font-size: 16px;
   line-height: 24px;
-  color: #333333;
+  color: #0a2c02;
 }
 #main table.ex32 td.sll {
   width: 24px;
@@ -1193,16 +1201,16 @@ button.ca34 {
   /*vertical-align: middle;*/
   text-align: left;
   line-height: 24px;
-  font-family: "Arial Unicode MS", "Open Sans", sans-serif;
-  color: #333333;
+  font-family: "Noto Sans", "Open Sans", sans-serif;
+  color: #0a2c02;
 }
 #main table.ex32 td.sll button {
   margin: 0 0 0 -4px;
   text-align: left;
   line-height: 26px;
-  font-family: "Arial Unicode MS", "Open Sans", sans-serif;
+  font-family: "Noto Sans", "Open Sans", sans-serif;
   font-size: 16px;
-  color: #333333;
+  color: #0a2c02;
   background-color: transparent;
   border: 0px solid red;
 }
@@ -1218,9 +1226,9 @@ button.ca34 {
   padding: 3px 2px 3px 2px;
   text-align: center;
   text-transform: uppercase;
-  font-family: Verdana, "Arial Unicode MS", "Open Sans", sans-serif;
+  font-family: "Noto Sans", "Open Sans", sans-serif;
   font-size: 16px;
-  color: #333333;
+  color: #0a2c02;
   background-color: transparent;
 }
 #main table.ex32 td.sll input.tv:focus {
@@ -1236,9 +1244,9 @@ button.ca34 {
   padding: 3px 2px 3px 2px;
   text-align: center;
   text-transform: uppercase;
-  font-family: Verdana, "Arial Unicode MS", "Open Sans", sans-serif;
+  font-family: "Noto Sans", "Open Sans", sans-serif;
   font-size: 16px;
-  color: #333333;
+  color: #0a2c02;
 }
 #main table.ex32 td.sll .mark32e {
   position: relative;
@@ -1257,8 +1265,8 @@ button.ca34 {
   /*vertical-align: middle;*/
   text-align: left;
   line-height: 24px;
-  font-family: "Arial Unicode MS", "Open Sans", sans-serif;
-  color: #333333;
+  font-family: "Noto Sans", "Open Sans", sans-serif;
+  color: #0a2c02;
 }
 #main table.ex32 td.psll span.tv {
   display: inline-table;
@@ -1270,9 +1278,9 @@ button.ca34 {
   padding: 3px 2px 3px 2px;
   text-align: center;
   text-transform: uppercase;
-  font-family: Verdana, "Arial Unicode MS", "Open Sans", sans-serif;
+  font-family: "Noto Sans", "Open Sans", sans-serif;
   font-size: 16px;
-  color: #333333;
+  color: #0a2c02;
 }
 #main table.ex32 td.ppsll {
   width: 36px;
@@ -1282,8 +1290,8 @@ button.ca34 {
   /*vertical-align: middle;*/
   text-align: left;
   line-height: 24px;
-  font-family: "Arial Unicode MS", "Open Sans", sans-serif;
-  color: #333333;
+  font-family: "Noto Sans", "Open Sans", sans-serif;
+  color: #0a2c02;
 }
 #main table.ex32 td.ppsll span.tv {
   display: inline-table;
@@ -1295,9 +1303,9 @@ button.ca34 {
   padding: 3px 2px 3px 2px;
   text-align: center;
   text-transform: uppercase;
-  font-family: Verdana, "Arial Unicode MS", "Open Sans", sans-serif;
+  font-family: "Noto Sans", "Open Sans", sans-serif;
   font-size: 16px;
-  color: #333333;
+  color: #0a2c02;
 }
 #main table.ex32 td.slsll {
   width: 42px;
@@ -1306,16 +1314,16 @@ button.ca34 {
   padding: 3px 2px 3px 2px;
   text-align: left;
   line-height: 24px;
-  font-family: "Arial Unicode MS", "Open Sans", sans-serif;
-  color: #333333;
+  font-family: "Noto Sans", "Open Sans", sans-serif;
+  color: #0a2c02;
 }
 #main table.ex32 td.slsll button {
   margin: 0 0 0 -4px;
   text-align: left;
   line-height: 24px;
-  font-family: "Arial Unicode MS", "Open Sans", sans-serif;
+  font-family: "Noto Sans", "Open Sans", sans-serif;
   font-size: 16px;
-  color: #333333;
+  color: #0a2c02;
   background-color: transparent;
   border: 0px solid red;
 }
@@ -1331,9 +1339,9 @@ button.ca34 {
   padding: 3px 2px 3px 2px;
   text-align: center;
   text-transform: uppercase;
-  font-family: Verdana, "Arial Unicode MS", "Open Sans", sans-serif;
+  font-family: "Noto Sans", "Open Sans", sans-serif;
   font-size: 16px;
-  color: #333333;
+  color: #0a2c02;
   background-color: transparent;
 }
 #main table.ex32 td.slsll input.tv:focus {
@@ -1349,9 +1357,9 @@ button.ca34 {
   padding: 3px 2px 3px 2px;
   text-align: center;
   text-transform: uppercase;
-  font-family: Verdana, "Arial Unicode MS", "Open Sans", sans-serif;
+  font-family: "Noto Sans", "Open Sans", sans-serif;
   font-size: 16px;
-  color: #333333;
+  color: #0a2c02;
 }
 #main table.ex32 td.slsll .mark32e {
   position: relative;
@@ -1369,16 +1377,16 @@ button.ca34 {
   padding: 3px 2px 3px 2px;
   text-align: left;
   line-height: 24px;
-  font-family: "Arial Unicode MS", "Open Sans", sans-serif;
-  color: #333333;
+  font-family: "Noto Sans", "Open Sans", sans-serif;
+  color: #0a2c02;
 }
 #main table.ex32 td.slpsll button {
   margin: 0 0 0 -4px;
   text-align: left;
   line-height: 24px;
-  font-family: "Arial Unicode MS", "Open Sans", sans-serif;
+  font-family: "Noto Sans", "Open Sans", sans-serif;
   font-size: 16px;
-  color: #333333;
+  color: #0a2c02;
   background-color: transparent;
   border: 0px solid red;
 }
@@ -1394,9 +1402,9 @@ button.ca34 {
   padding: 3px 2px 3px 2px;
   text-align: center;
   text-transform: uppercase;
-  font-family: Verdana, "Arial Unicode MS", "Open Sans", sans-serif;
+  font-family: "Noto Sans", "Open Sans", sans-serif;
   font-size: 16px;
-  color: #333333;
+  color: #0a2c02;
   background-color: transparent;
 }
 #main table.ex32 td.slpsll input.tv:focus {
@@ -1412,9 +1420,9 @@ button.ca34 {
   padding: 3px 2px 3px 2px;
   text-align: center;
   text-transform: uppercase;
-  font-family: Verdana, "Arial Unicode MS", "Open Sans", sans-serif;
+  font-family: "Noto Sans", "Open Sans", sans-serif;
   font-size: 16px;
-  color: #333333;
+  color: #0a2c02;
 }
 #main table.ex32 td.slpsll .mark32e {
   position: relative;
@@ -1432,8 +1440,8 @@ button.ca34 {
   padding: 3px 2px 3px 2px;
   text-align: left;
   line-height: 24px;
-  font-family: "Arial Unicode MS", "Open Sans", sans-serif;
-  color: #333333;
+  font-family: "Noto Sans", "Open Sans", sans-serif;
+  color: #0a2c02;
 }
 #main table.ex32 td.slpl span.tv {
   display: inline-table;
@@ -1445,9 +1453,9 @@ button.ca34 {
   padding: 3px 2px 3px 2px;
   text-align: center;
   text-transform: uppercase;
-  font-family: Verdana, "Arial Unicode MS", "Open Sans", sans-serif;
+  font-family: "Noto Sans", "Open Sans", sans-serif;
   font-size: 16px;
-  color: #333333;
+  color: #0a2c02;
 }
 #main table.ex32 td.slpl .mark32e {
   position: relative;
@@ -1465,16 +1473,16 @@ button.ca34 {
   padding: 3px 2px 3px 2px;
   text-align: left;
   line-height: 24px;
-  font-family: "Arial Unicode MS", "Open Sans", sans-serif;
-  color: #333333;
+  font-family: "Noto Sans", "Open Sans", sans-serif;
+  color: #0a2c02;
 }
 #main table.ex32 td.slslpl button {
   margin: 0 0 0 -4px;
   text-align: left;
   line-height: 24px;
-  font-family: "Arial Unicode MS", "Open Sans", sans-serif;
+  font-family: "Noto Sans", "Open Sans", sans-serif;
   font-size: 16px;
-  color: #333333;
+  color: #0a2c02;
   background-color: transparent;
   border: 0px solid red;
 }
@@ -1490,9 +1498,9 @@ button.ca34 {
   padding: 3px 2px 3px 2px;
   text-align: center;
   text-transform: uppercase;
-  font-family: Verdana, "Arial Unicode MS", "Open Sans", sans-serif;
+  font-family: "Noto Sans", "Open Sans", sans-serif;
   font-size: 16px;
-  color: #333333;
+  color: #0a2c02;
   background-color: transparent;
 }
 #main table.ex32 td.slslpl input.tv:focus {
@@ -1508,9 +1516,9 @@ button.ca34 {
   padding: 3px 2px 3px 2px;
   text-align: center;
   text-transform: uppercase;
-  font-family: Verdana, "Arial Unicode MS", "Open Sans", sans-serif;
+  font-family: "Noto Sans", "Open Sans", sans-serif;
   font-size: 16px;
-  color: #333333;
+  color: #0a2c02;
 }
 #main table.ex32 td.slslpl .mark32e {
   position: relative;
@@ -1528,16 +1536,16 @@ button.ca34 {
   padding: 3px 2px 3px 2px;
   text-align: right;
   line-height: 24px;
-  font-family: "Arial Unicode MS", "Open Sans", sans-serif;
-  color: #333333;
+  font-family: "Noto Sans", "Open Sans", sans-serif;
+  color: #0a2c02;
 }
 #main table.ex32 td.slr button {
   margin: 0 -4px 0 0px;
   text-align: right;
   line-height: 26px;
-  font-family: "Arial Unicode MS", "Open Sans", sans-serif;
+  font-family: "Noto Sans", "Open Sans", sans-serif;
   font-size: 16px;
-  color: #333333;
+  color: #0a2c02;
   background-color: transparent;
   border: 0px solid red;
 }
@@ -1553,9 +1561,9 @@ button.ca34 {
   padding: 3px 2px 3px 2px;
   text-align: center;
   text-transform: uppercase;
-  font-family: Verdana, "Arial Unicode MS", "Open Sans", sans-serif;
+  font-family: "Noto Sans", "Open Sans", sans-serif;
   font-size: 16px;
-  color: #333333;
+  color: #0a2c02;
   background-color: transparent;
 }
 #main table.ex32 td.slr input.tv:focus {
@@ -1572,9 +1580,9 @@ button.ca34 {
   /*vertical-align: 0px;*/
   text-align: center;
   text-transform: uppercase;
-  font-family: Verdana, "Arial Unicode MS", "Open Sans", sans-serif;
+  font-family: "Noto Sans", "Open Sans", sans-serif;
   font-size: 16px;
-  color: #333333;
+  color: #0a2c02;
 }
 #main table.ex32 td.slr .mark32e {
   position: relative;
@@ -1592,16 +1600,16 @@ button.ca34 {
   padding: 3px 2px 3px 2px;
   text-align: right;
   line-height: 24px;
-  font-family: "Arial Unicode MS", "Open Sans", sans-serif;
-  color: #333333;
+  font-family: "Noto Sans", "Open Sans", sans-serif;
+  color: #0a2c02;
 }
 #main table.ex32 td.pslr button {
   margin: 0 -4px 0 0px;
   text-align: right;
   line-height: 24px;
-  font-family: "Arial Unicode MS", "Open Sans", sans-serif;
+  font-family: "Noto Sans", "Open Sans", sans-serif;
   font-size: 16px;
-  color: #333333;
+  color: #0a2c02;
   background-color: transparent;
   border: 0px solid red;
 }
@@ -1617,9 +1625,9 @@ button.ca34 {
   padding: 3px 2px 3px 2px;
   text-align: center;
   text-transform: uppercase;
-  font-family: Verdana, "Arial Unicode MS", "Open Sans", sans-serif;
+  font-family: "Noto Sans", "Open Sans", sans-serif;
   font-size: 16px;
-  color: #333333;
+  color: #0a2c02;
   background-color: transparent;
 }
 #main table.ex32 td.pslr input.tv:focus {
@@ -1636,9 +1644,9 @@ button.ca34 {
   /*vertical-align: 0px;*/
   text-align: center;
   text-transform: uppercase;
-  font-family: Verdana, "Arial Unicode MS", "Open Sans", sans-serif;
+  font-family: "Noto Sans", "Open Sans", sans-serif;
   font-size: 16px;
-  color: #333333;
+  color: #0a2c02;
 }
 #main table.ex32 td.pslr .mark32e {
   position: relative;
@@ -1656,8 +1664,8 @@ button.ca34 {
   padding: 3px 2px 3px 2px;
   text-align: right;
   line-height: 24px;
-  font-family: "Arial Unicode MS", "Open Sans", sans-serif;
-  color: #333333;
+  font-family: "Noto Sans", "Open Sans", sans-serif;
+  color: #0a2c02;
 }
 #main table.ex32 td.slpr span.tv {
   display: inline-table;
@@ -1669,9 +1677,9 @@ button.ca34 {
   padding: 3px 2px 3px 2px;
   text-align: center;
   text-transform: uppercase;
-  font-family: Verdana, "Arial Unicode MS", "Open Sans", sans-serif;
+  font-family: "Noto Sans", "Open Sans", sans-serif;
   font-size: 16px;
-  color: #333333;
+  color: #0a2c02;
 }
 #main table.ex32 td.slslpr {
   width: 46px;
@@ -1680,16 +1688,16 @@ button.ca34 {
   padding: 3px 2px 3px 2px;
   text-align: right;
   line-height: 24px;
-  font-family: "Arial Unicode MS", "Open Sans", sans-serif;
-  color: #333333;
+  font-family: "Noto Sans", "Open Sans", sans-serif;
+  color: #0a2c02;
 }
 #main table.ex32 td.slslpr button {
   margin: 0 -4px 0 0px;
   text-align: right;
   line-height: 24px;
-  font-family: "Arial Unicode MS", "Open Sans", sans-serif;
+  font-family: "Noto Sans", "Open Sans", sans-serif;
   font-size: 16px;
-  color: #333333;
+  color: #0a2c02;
   background-color: transparent;
   border: 0px solid red;
 }
@@ -1705,9 +1713,9 @@ button.ca34 {
   padding: 3px 2px 3px 2px;
   text-align: center;
   text-transform: uppercase;
-  font-family: Verdana, "Arial Unicode MS", "Open Sans", sans-serif;
+  font-family: "Noto Sans", "Open Sans", sans-serif;
   font-size: 16px;
-  color: #333333;
+  color: #0a2c02;
   background-color: transparent;
 }
 #main table.ex32 td.slslpr input.tv:focus {
@@ -1723,9 +1731,9 @@ button.ca34 {
   padding: 3px 2px 3px 2px;
   text-align: center;
   text-transform: uppercase;
-  font-family: Verdana, "Arial Unicode MS", "Open Sans", sans-serif;
+  font-family: "Noto Sans", "Open Sans", sans-serif;
   font-size: 16px;
-  color: #333333;
+  color: #0a2c02;
 }
 #main table.ex32 td.slslpr .mark32e {
   position: relative;
@@ -1743,25 +1751,25 @@ button.ca34 {
   padding: 3px 2px 3px 2px;
   text-align: left;
   line-height: 24px;
-  font-family: "Arial Unicode MS", "Open Sans", sans-serif;
-  color: #333333;
+  font-family: "Noto Sans", "Open Sans", sans-serif;
+  color: #0a2c02;
 }
 #main table.ex324 {
   border: 0px solid #DEDEDE;
   border-spacing: 0px;
   float: left;
   margin: 0px 0 12px 40px;
-  font-family: Verdana, "Arial Unicode MS", "Open Sans", sans-serif;
+  font-family: "Noto Sans", "Open Sans", sans-serif;
   font-size: 16px;
   line-height: 24px;
-  color: #333333;
+  color: #0a2c02;
 }
 #main div.arg {
   padding-left: 12px;
 }
 #main div.udl {
   padding-left: 12px;
-  border-bottom: 1px solid #333333;
+  border-bottom: 1px solid #0a2c02;
 }
 #main form.prv {
   clear: both;
@@ -1769,14 +1777,14 @@ button.ca34 {
   padding: 6px 0px 0px 0px;
   vertical-align: middle;
   font-size: 16px;
-  color: #333333;
+  color: #0a2c02;
 }
 #main form div.rad {
   margin: 0 0 0 36px;
   padding: 6px 0px 0px 0px;
   vertical-align: middle;
   font-size: 16px;
-  color: #333333;
+  color: #0a2c02;
 }
 #main form div.rad input:focus {
   outline: none;
@@ -1786,7 +1794,7 @@ button.ca34 {
   padding: 6px 0px 0px 0px;
   vertical-align: middle;
   font-size: 16px;
-  color: #333333;
+  color: #0a2c02;
 }
 #main form div.chb input:focus {
   outline: none;
