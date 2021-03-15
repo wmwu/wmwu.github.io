@@ -239,35 +239,35 @@ function get_radio_value()
 	document.write("<div id=\"mwrap\">");
 	document.write("<div id=\"mwrap2\">");
 	document.write("<div id=\"main\">");
-	document.write("<p style=\"margin: 50px 0 0 20px; font: 18px georgia, serif; font-weight:bold; color:#333333;\">Exercise 1.1 Results<\/p>");
+	document.write("<p style=\"margin: 50px 0 0 20px; font: 18px 'Noto Serif', Georgia, serif; font-weight:bold; color:#333333;\">Exercise 1.1 Results<\/p>");
 	document.write("<p style=\"margin-top: 20px; margin-left: 30px; font-size: 20px\">You got " + "<span style=\"font-family: Arial, Helvetica, sans-serif; font-weight: bold;\">" + s + "<\/span>" + " out of " + "<span style=\"font-family: Arial,Helvetica,sans-serif\">" + "30<\/span>" + " correct.<\/p>");
-	document.write("<p style=\"margin-top: 20px; margin-left: 30px; font: 16px georgia, serif; color:#333333;\">Here are the answers you submitted:");
+	document.write("<p style=\"margin-top: 20px; margin-left: 30px; font: 16px 'Noto Serif', Georgia, serif; color:#333333;\">Here are the answers you submitted:");
 	document.write("<ol>");
 	for (k = 1; k <= 30; k++)  //Loop that writes a set of 30 questions
 	{
 		i=N[k-1];
-		document.write("<li style=\"margin-top: 10px; margin-left: 50px; font: 16px georgia; color:#333333;\">" + Q[i].question + "<br \/>");
+		document.write("<li style=\"margin-top: 10px; margin-left: 50px; font: 16px 'Noto Serif'; color:#333333;\">" + Q[i].question + "<br \/>");
 		if (V[k]=="S")
 		{
-			document.write("<p style=\"margin-left: -24px; font: 16px georgia, serif; color:#333333;\">Your answer: <span style=\"color:#663300;\">Statement<\/span> <\/p>");
+			document.write("<p style=\"margin-left: -24px; font: 16px 'Noto Serif', serif; color:#333333;\">Your answer: <span style=\"color:#663300;\">Statement<\/span> <\/p>");
 		}
 		else if (V[k]=="E")
 		{
-			document.write("<p style=\"margin-left: -24px; font: 16px georgia, serif; color:#333333;\">Your answer: <span style=\"color:#663300;\">Evaluative Sentence<\/span> <\/p>");
+			document.write("<p style=\"margin-left: -24px; font: 16px 'Noto Serif', serif; color:#333333;\">Your answer: <span style=\"color:#663300;\">Evaluative Sentence<\/span> <\/p>");
 		}
 		else
 		{
-			document.write("<p style=\"margin-left: -24px; font: 16px georgia, serif; color:#333333;\">Your answer: <span style=\"color:#663300;\"><\/span> <\/p>");
+			document.write("<p style=\"margin-left: -24px; font: 16px 'Noto Serif', serif; color:#333333;\">Your answer: <span style=\"color:#663300;\"><\/span> <\/p>");
 		}
 	}
 	document.write("<\/li>");
 	document.write("<\/ol>");
 	document.write("<script type=\"text\/javascript\" src=\"ex11.js\"><\/script>");
-	document.write("<label style=\"margin-top: 20px; margin-left: 60px; font: 16px georgia; color:#333333;\">");  //Create a button for "Redo the Exercise"
+	document.write("<label style=\"margin-top: 20px; margin-left: 60px; font: 16px 'Noto Serif'; color:#333333;\">");  //Create a button for "Redo the Exercise"
 	document.write("<input type=\"button\" onclick=\"write_random_questions();\" value=\"Do the exercise again with a different set of questions\" style=\"font-size:16px; cursor: pointer;\" \/>");
 	//document.write("<input type=\"button\" onmouseover=\"this.style.color='#990000';\" onmouseout=\"this.style.color='#333333';\" onclick=\"window.location.replace('iLogic_1_submit_answers_a.html#Ex11')\" value=\"Do the exercise again with a different set of questions\" style=\"font-size:13px; cursor: pointer;\" />");
 	document.write("<\/label>");
-	document.write("<label style=\"margin-top: 20px; margin-left: 20px; font: 16px georgia; color:#333333;\">");  //Creates a button for "Return to 1.1"
+	document.write("<label style=\"margin-top: 20px; margin-left: 20px; font: 16px 'Noto Serif'; color:#333333;\">");  //Creates a button for "Return to 1.1"
 	document.write("<input type=\"button\" onclick=\"window.location.replace('iLogic_1.html')\" value=\"Return to 1.1\" style=\"font-size:16px; cursor: pointer;\" \/>");
 	//document.write("<input type=\"button\" onmouseover=\"this.style.color='#990000';\" onmouseout=\"this.style.color='#333333';\" onclick=\"window.location.replace('iLogic_1_submit_answers.html')\" value=\"Return to 1.1\" style=\"font-size:16px; cursor: pointer;\" />");
 	document.write("<\/label> <br \/><br \/><br \/>");
