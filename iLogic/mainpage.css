@@ -164,15 +164,15 @@ body {
   color: #333333;
 }
 #main p {
-  font-family: 'Noto Serif', serif;
-  font-size: 15px;
+  font-family: 'Noto Serif', Georgia, serif;
+  font-size: 16px;
   color: #333333;
-  line-height: 24px;
+  line-height: 28px;
   padding: 0 24px 0 0;
 }
 #main li {
-  font-family: 'Nato Sans', sans-serif;
-  font-size: 15px;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 16px;
   color: #333333;
   line-height: 30px;
   letter-spacing: 1px;
@@ -180,22 +180,27 @@ body {
   list-style: none;
 }
 #main a {
-  font-family: 'Nato Sans', sans-serif;
-  font-size: 15px;
-  color: #0a2c02;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 16px;
+  color: #0862a7;
   /* Distance from text */
   padding-bottom: 2px;
   text-decoration: none;
   box-shadow: none;
   transition: box-shadow .5s ease-out;
-  line-height: 24px;
-  letter-spacing: 2px;
+  line-height: 36px;
+  letter-spacing: 1px;
   text-align: left;
-  margin-left: 20px;
+  margin-left: 0px;
 }
 #main a:hover {
-  color: #0a2c02;
-  box-shadow: 0 1px 0 0 #0a2c02;
+  color: #0862a7;
+  box-shadow: 0 1px 0 0 #0862a7;
+}
+#main a.license {
+  font-family: 'Noto Serif', Georgia, serif;
+  line-height: 28px;
+  letter-spacing: 0px;
 }
 #sidebar {
   background-color: #FFFFFF;
