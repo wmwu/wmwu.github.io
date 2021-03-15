@@ -166,10 +166,10 @@ body {
   line-height: 100%;
 }
 #main h4 {
-  padding: 24px 24px 0 24px;
+  padding: 6px 24px 0 24px;
   font-size: 18px;
   color: #0a2c02;
-  font-style: normal;
+  font-style: italic;
   font-variant: normal;
   font-weight: normal;
   font-stretch: normal;
