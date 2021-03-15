@@ -9,6 +9,12 @@
     url('//db.onlinewebfonts.com/t/bc28028bf5fff883c167bfe77545594d.svg#Bitstream Iowan Old Style') format('svg');
 }
 //-------------------------------------*/
+@font-face {
+  font-family: 'Cambria Math';
+  src: url(Cambria_Math.ttf);
+  font-family: 'DejaVu Sans';
+  src: url(DejaVuSans.ttf)
+}
 body {
   margin: 0;
   padding: 0;
