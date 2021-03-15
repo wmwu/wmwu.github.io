@@ -156,22 +156,22 @@ body {
 }
 #main h3 {
   padding: 24px 24px 0 24px;
-  font-size: 18px;
+  font-size: 20px;
   color: #0a2c02;
   font-weight: normal;
   font-stretch: normal;
   font-variant: normal;
-font-style: normal;
-  font-weight: bold;
+  font-style: normal;
+  font-weight: normal;
   line-height: 100%;
 }
 #main h4 {
   padding: 24px 24px 0 24px;
-  font-size: 16px;
+  font-size: 18px;
   color: #0a2c02;
   font-style: normal;
   font-variant: normal;
-  font-weight: bold;
+  font-weight: normal;
   font-stretch: normal;
   line-height: 100%;
 }
