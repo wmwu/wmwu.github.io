@@ -48,19 +48,19 @@ body {
 #header h1 {
   overflow: hidden;
   line-height: 36px;
-  font-family: Arial, Helvetica, 'Open Sans', sans-serif;
-  font-size: 24px;
+  font-family: 'Noto Sans', 'Open Sans', sans-serif;
+  font-size: 28px;
   font-variant: small-caps;
-  letter-spacing: 8px;
-  font-weight: lighter;
-  color: #333333;
+  letter-spacing: 3px;
+  font-weight: normal;
+  color: #0a2c02;
   margin: 0 auto;
   padding: 30px 0 10px 20px;
 }
 #header h2 {
   overflow: hidden;
   line-height: 36px;
-  font-family: 'Noto San', 'Open Sans', sans-serif;
+  font-family: 'Noto Sans', 'Open Sans', sans-serif;
   font-size: 24px;
   letter-spacing: 6px;
   font-weight: lighter;
@@ -84,7 +84,7 @@ body {
   height: 48px;
 }
 #nav a {
-  font-family: 'Nato Sans', sans-serif;
+  font-family: 'Noto Sans', sans-serif;
   font-size: 16px;
   color: #0a2c02;
   /* Distance from text */
@@ -179,6 +179,12 @@ body {
   padding: 0 24px 0 0;
   list-style: none;
 }
+#main li.revision {
+  font-family: 'Noto Serif', Georgia, serif;
+  letter-spacing: 0px;
+  list-style-type: circle;
+  margin-left: 24px;
+  }  
 #main a {
   font-family: 'Noto Sans', sans-serif;
   font-size: 16px;
@@ -207,7 +213,7 @@ body {
   width: 0px;
 }
 #sidebar a {
-  font-family: Arial, Helvetica, 'Open Sans', sans-serif;
+  font-family: 'Noto Sans', 'Open Sans', sans-serif;
   font-size: 10px;
   text-decoration: none;
   color: #3F7070;
@@ -227,7 +233,7 @@ body {
   background-color: #F7F8EE;
 }
 #footer a {
-  font-family: Arial, Helvetica, 'Open Sans', sans-serif;
+  font-family: 'Noto Sans', 'Open Sans', sans-serif;
   font-size: 14px;
   font-weight: lighter;
   color: #3F7070;
@@ -246,7 +252,7 @@ body {
 }
 .dropcap {
   float: left;
-  font: normal 40pt/0.8em Georgia, Crimson, serif;
+  font: normal 40pt/0.8em 'Noto Serif', Georgia, serif;
   color: #999999;
   margin-right: 3px;
 }
