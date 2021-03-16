@@ -240,7 +240,7 @@ function get_radio_value()
 	document.write("<div id=\"mwrap2\">");
 	document.write("<div id=\"main\">");
 	document.write("<p style=\"margin: 50px 0 0 20px; font: 18px 'Noto Serif', Georgia, serif; font-weight:bold; color:#0a2c02;\">Exercise 1.1 Results<\/p>");
-	document.write("<p style=\"margin-top: 20px; margin-left: 30px; font-size: 20px\">You got " + "<span style=\"font-family: Arial, Helvetica, sans-serif; font-weight: bold;\">" + s + "<\/span>" + " out of " + "<span style=\"font-family: Arial,Helvetica,sans-serif\">" + "30<\/span>" + " correct.<\/p>");
+	document.write("<p style=\"margin-top: 20px; margin-left: 30px; font-size: 20px\">You got " + "<span style=\"font-family: Arial, Helvetica, sans-serif; font-weight: bold;\">" + s + "<\/span>" + " out of " + "<span style=\"font-family: 'Noto Sans', sans-serif\">" + "30<\/span>" + " correct.<\/p>");
 	document.write("<p style=\"margin-top: 20px; margin-left: 30px; font: 16px 'Noto Serif', Georgia, serif; color:#0a2c02;\">Here are the answers you submitted:");
 	document.write("<ol>");
 	for (k = 1; k <= 30; k++)  //Loop that writes a set of 30 questions
