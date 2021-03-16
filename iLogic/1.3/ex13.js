@@ -99,14 +99,14 @@ function write_random_questions()
 	document.write("<div id=\"mwrap\">");
 	document.write("<div id=\"mwrap2\">");
 	document.write("<div id=\"main\">");
-	document.write("<p style=\"margin-top: 50px; margin-left: 20px; font: 18px georgia; font-weight:bold; color:#333333;\">Exercise 1.3</p>");
+	document.write("<p style=\"margin-top: 50px; margin-left: 20px; font: 18px 'Noto Serif'; font-weight:bold; color:#0a2c02;\">Exercise 1.3</p>");
 	for (i = 1; i <=10; i++)
 	{
 	    N.sort(function (){return (Math.round(Math.random())-0.5);}); //Sort numbers between 1 and Q.length randomly
 	}
 	//alert(N);
 	document.write("<ol style=\"list-style-type: upper-roman;\">");
-	document.write("<li style=\"margin-top: 10px; margin-left: 30px; font: 16px georgia; color:#333333;\">True or False</li>");
+	document.write("<li style=\"margin-top: 10px; margin-left: 30px; font: 16px 'Noto Serif'; color:#0a2c02;\">True or False</li>");
 	document.write("</ol>");
 	document.write("<ol>");
 	for (k = 1; k < Q.length; k++)  //Loop that writes a set of 30 questions
@@ -115,20 +115,20 @@ function write_random_questions()
 		if (k <= Nq)
 		{
 //	does not work well in IE
-//			document.write("<li style=\"margin-top:10px; font:16px georgia; color:#333333;\">" + Q[i].question + "</li>");
-//			document.write("<label style=\"margin-top:10px; font:16px georgia; color:#333333;\">");  //Create a radio button for "True"
+//			document.write("<li style=\"margin-top:10px; font:16px 'Noto Serif'; color:#0a2c02;\">" + Q[i].question + "</li>");
+//			document.write("<label style=\"margin-top:10px; font:16px 'Noto Serif'; color:#0a2c02;\">");  //Create a radio button for "True"
 //			var button1 = "<input style=\"margin-top:10px;\" type=\"radio\" name=\"" + "A" + [i] + "\" " + "value=\"T\" " + "id=\"" + "A" + [i] + "_0" + "\" " + "/>" + " True" + "<br" + " />";
 //			document.write(button1);
 //			document.write("</label>");
-//			document.write("<label style=\"margin-top:10px; font:16px georgia; color:#333333;\">");  //Creates a radio button for "False"
+//			document.write("<label style=\"margin-top:10px; font:16px 'Noto Serif'; color:#0a2c02;\">");  //Creates a radio button for "False"
 //			var button2 = "<input style=\"margin-top:10px;\" type=\"radio\" name=\"" + "A" + [i] + "\" " + "value=\"F\" " + "id=\"" + "A" + [i] + "_1" + "\" " + "/>" + " False" + "<br" + " />";
 //			document.write(button2);
 //			document.write("</label>");
-			var question = "<li style=\"margin: 20px 0 0 50px; font: 16px georgia; color:#333333;\">" + Q[i].question + "<br />";
+			var question = "<li style=\"margin: 20px 0 0 50px; font: 16px 'Noto Serif'; color:#0a2c02;\">" + Q[i].question + "<br />";
 			document.write(question);
-			var button1 = "<span style=\"display: block; margin: 10px 0 0 0; font:16px georgia; color:#333333;\" ><input type=\"radio\" name=\"" + "A" + [i] + "\" " + "value=\"T\" " + "id=\"" + "A" + [i] + "_0" + "\" " + "/>" + " True" + "</span>";
+			var button1 = "<span style=\"display: block; margin: 10px 0 0 0; font:16px 'Noto Serif'; color:#0a2c02;\" ><input type=\"radio\" name=\"" + "A" + [i] + "\" " + "value=\"T\" " + "id=\"" + "A" + [i] + "_0" + "\" " + "/>" + " True" + "</span>";
 			document.write(button1);
-			var button2 = "<span style=\"display: block; margin: 10px 0 0 0; font:16px georgia; color:#333333;\" ><input type=\"radio\" name=\"" + "A" + [i] + "\" " + "value=\"F\" " + "id=\"" + "A" + [i] + "_1" + "\" " + "/>" + " False" + "</span>";
+			var button2 = "<span style=\"display: block; margin: 10px 0 0 0; font:16px 'Noto Serif'; color:#0a2c02;\" ><input type=\"radio\" name=\"" + "A" + [i] + "\" " + "value=\"F\" " + "id=\"" + "A" + [i] + "_1" + "\" " + "/>" + " False" + "</span>";
 			document.write(button2);
 		}
 		else
@@ -219,37 +219,37 @@ function get_radio_value()
 	document.write("<div id=\"mwrap\">");
 	document.write("<div id=\"mwrap2\">");
 	document.write("<div id=\"main\">");
-	document.write("<p style=\"margin: 50px 0 0 20px; font: 18px georgia, serif; font-weight:bold; color:#333333;\">Exercise 1.3 section I Results<\/p>");
-	document.write("<p style=\"margin-top: 20px; margin-left: 30px; font-size: 20px\">You got " + "<span style=\"font-family: Arial, Helvetica, sans-serif; font-weight: bold;\">" + s + "<\/span>" + " out of " + "<span style=\"font-family: Arial,Helvetica,sans-serif\">" + "15<\/span>" + " correct.<\/span><br \/><\/p>");
-	document.write("<p style=\"margin-top: 20px; margin-left: 30px; font: 16px georgia, serif; color:#333333;\">Here are the answers you submitted:");
+	document.write("<p style=\"margin: 50px 0 0 20px; font: 18px georgia, serif; font-weight:bold; color:#0a2c02;\">Exercise 1.3 section I Results<\/p>");
+	document.write("<p style=\"margin-top: 20px; margin-left: 30px; font-size: 20px\">You got " + "<span style=\"font-family: 'Noto Sans', sans-serif; font-weight: bold;\">" + s + "<\/span>" + " out of " + "<span style=\"font-family: 'Noto Sans', sans-serif\">" + "15<\/span>" + " correct.<\/span><br \/><\/p>");
+	document.write("<p style=\"margin-top: 20px; margin-left: 30px; font: 16px 'Noto Serif', serif; color:#0a2c02;\">Here are the answers you submitted:");
 	document.write("<ol>");
 	for (k = 1; k <= Nq; k++)  //Loop that writes a set of 30 questions
 	{
 		i=N[k-1];
-		document.write("<li style=\"margin-top: 10px; margin-left: 50px; font: 16px georgia; color:#333333;\">" + Q[i].question + "<br />");
+		document.write("<li style=\"margin-top: 10px; margin-left: 50px; font: 16px 'Noto Serif'; color:#0a2c02;\">" + Q[i].question + "<br />");
 		if (V[k]=="T")
 		{
-			document.write("<p style=\"margin-left: -24px; font: 16px georgia, serif; color:#333333;\">Your answer: <span style=\"color:#663300;\">True</span> <\/p>");
+			document.write("<p style=\"margin-left: -24px; font: 16px 'Noto Serif', serif; color:#0a2c02;\">Your answer: <span style=\"color:#2a9660;\">True</span> <\/p>");
 		}
 		else if (V[k]=="F")
 		{
-			document.write("<p style=\"margin-left: -24px; font: 16px georgia, serif; color:#333333;\">Your answer: <span style=\"color:#663300;\">False</span> <\/p>");
+			document.write("<p style=\"margin-left: -24px; font: 16px 'Noto Serif', serif; color:#0a2c02;\">Your answer: <span style=\"color:#2a9660;\">False</span> <\/p>");
 		}
 		else
 		{
-			document.write("<p style=\"margin-left: -24px; font: 16px georgia, serif; color:#333333;\">Your answer: <span style=\"color:#663300;\"></span> <\/p>");
+			document.write("<p style=\"margin-left: -24px; font: 16px 'Noto Serif', serif; color:#0a2c02;\">Your answer: <span style=\"color:#2a9660;\"></span> <\/p>");
 		}
 	}
 	document.write("</li>");
 	document.write("</ol>");
 	document.write("<script type=\"text\/javascript\" src=\"ex13.js\"><\/script>");
-	document.write("<label style=\"margin-top: 20px; margin-left: 60px; font: 16px georgia; color:#333333;\">");  //Create a button for "Redo the Exercise"
+	document.write("<label style=\"margin-top: 20px; margin-left: 60px; font: 16px 'Noto Serif'; color:#0a2c02;\">");  //Create a button for "Redo the Exercise"
 	document.write("<input type=\"button\" onclick=\"write_random_questions();\" value=\"Do Ex 1.3 sec I again with a different set of questions\" style=\"font-size:16px; cursor: pointer;\" />");
-	//document.write("<input type=\"button\" onmouseover=\"this.style.color='#990000';\" onmouseout=\"this.style.color='#333333';\" onclick=\"window.location.replace('iLogic_1_submit_answers_a.html#Ex13')\" value=\"Do the exercise again with a different set of questions\" style=\"font-size:13px; cursor: pointer;\" />");
+	//document.write("<input type=\"button\" onmouseover=\"this.style.color='#990000';\" onmouseout=\"this.style.color='#0a2c02';\" onclick=\"window.location.replace('iLogic_1_submit_answers_a.html#Ex13')\" value=\"Do the exercise again with a different set of questions\" style=\"font-size:13px; cursor: pointer;\" />");
 	document.write("</label>");
-	document.write("<label style=\"margin-top: 20px; margin-left: 20px; font: 16px georgia; color:#333333;\">");  //Creates a button for "Return to 1.3"
+	document.write("<label style=\"margin-top: 20px; margin-left: 20px; font: 16px 'Noto Serif'; color:#0a2c02;\">");  //Creates a button for "Return to 1.3"
 	document.write("<input type=\"button\" onclick=\"window.location.replace('iLogic_1_3.html');\" value=\"Return to 1.3\" style=\"font-size:16px; cursor: pointer;\" />");
-	//document.write("<input type=\"button\" onmouseover=\"this.style.color='#990000';\" onmouseout=\"this.style.color='#333333';\" onclick=\"window.location.replace('iLogic_1_submit_answers.html')\" value=\"Return to 1.3\" style=\"font-size:13px; cursor: pointer;\" />");
+	//document.write("<input type=\"button\" onmouseover=\"this.style.color='#990000';\" onmouseout=\"this.style.color='#0a2c02';\" onclick=\"window.location.replace('iLogic_1_submit_answers.html')\" value=\"Return to 1.3\" style=\"font-size:13px; cursor: pointer;\" />");
 	document.write("</label> <br \/><br \/><br \/>");
 	document.write("</div>");
 	document.write("<div id=\"sidebar\">");
