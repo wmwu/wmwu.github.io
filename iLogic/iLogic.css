@@ -739,7 +739,7 @@ body {
 }
 .label {
   background-color: #e6ecff;
-  font-family: 'Noto Mono', 'Open Sans', sans-serif;
+  font-family: 'Noto Mono', monospace;
   font-size: 14px;
   width: 80px
 }
