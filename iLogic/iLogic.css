@@ -12,10 +12,10 @@
 @font-face {
   font-family: 'Noto Mono';
   src: url(NotoMono-Regular.ttf);
-/*  font-family: 'DejaVu Sans';
-  src: url(DejaVuSans.ttf) */
+  font-family: 'DejaVu Sans';
+  src: url(DejaVuSans.ttf);
   font-family: 'Cambria Math';
-  src: url(Cambria_Math.ttf)
+  src: url(Cambria_Math.ttf);
 }
 body {
   margin: 0;
