@@ -732,6 +732,13 @@ body {
 .figure {
   margin-left: 10px;
 }
+.inst-button {
+  border: 1px solid #969696;
+  background-color: #efefef;
+  border-radius: 3px;
+  padding: 0px 6px;
+  font-family: 'Noto Sans', 'Open Sans', sans-serif;
+}
 .line {
   border-bottom: 1px solid black;
   padding: 0 4px 4px 8px;
@@ -967,6 +974,7 @@ body {
 .form241 {
   font-size: 16px;
   font-style: normal;
+  line-height: 20px;
   width: 400px;
 }
 .mark241c {
@@ -984,18 +992,21 @@ body {
 .form242f {
   font-size: 16px;
   font-style: normal;
+  line-height: 20px;
 	text-align: left;
-  width: 50px;
+  width: 56px;
 }
 .form242o {
   font-size: 16px;
   font-style: normal;
+  line-height: 20px;
 	text-align: center;
   width: 100px;
 }
 .form242s {
   font-size: 16px;
   font-style: normal;
+  line-height: 20px;
 	text-align: left;
   width: 200px;
 }
@@ -1153,11 +1164,11 @@ div.operator31 button {
 }
 div.operator31 button.ca {
   font-family: 'Noto Sans', 'DejaVu Sans', sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   font-style: normal;
   vertical align: middle;
   width: 120px;
-  height: 24px;
+  height: 28px;
   margin: 1px 2px 1px 6px;
 	border-radius: 4px;
 	background: #EFEFEF;
