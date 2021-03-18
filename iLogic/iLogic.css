@@ -1173,7 +1173,7 @@ div.operator31 button.ca {
 	border-radius: 4px;
 	background: #EFEFEF;
 	border: solid #969696 1px;
-	cursor: pointer;
+	cursor: :default;
 }
 td.operator button {
   font-family: 'Cambria Math Regular', 'DejaVu Sans', sans-serif;
@@ -1198,7 +1198,7 @@ button.ca32 {
 	border-radius: 3px;
 	background: #EFEFEF;
 	border: solid #969696 1px;
-	cursor: pointer;
+	cursor: default;
 }
 button.ca33 {
   font-family: 'Noto Sans', 'DejaVu Sans', sans-serif;
@@ -1211,7 +1211,7 @@ button.ca33 {
 	border-radius: 3px;
 	background: #EFEFEF;
 	border: solid #969696 1px;
-	cursor: pointer;
+	cursor: default;
 }
 input.ca33 {
   font-family: 'Noto Sans', 'Open Sans', sans-serif;
@@ -1224,7 +1224,7 @@ input.ca33 {
 	border-radius: 3px;
 	background: #EFEFEF;
 	border: solid #969696 1px;
-	cursor: pointer;
+	cursor: :default;
 }
 button.ca34 {
   font-family: 'Noto Sans', 'DejaVu Sans', sans-serif;
@@ -1237,7 +1237,7 @@ button.ca34 {
 	border-radius: 3px;
 	background: #EFEFEF;
 	border: solid #969696 1px;
-	cursor: pointer;
+	cursor: default;
 }
 /* Seciton 3.2 */
 #main table.ex32 {
