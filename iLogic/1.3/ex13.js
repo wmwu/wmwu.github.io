@@ -74,7 +74,7 @@ function write_questions()
 	document.write("</ol>");
 	document.write("<input type=\"hidden\" id=\"storeN\" value=\"" + N + "\" />"); //Store N array as a string in html file to be used in get_radio_value()
 	//alert(N);
-	document.write("<input type=\"button\" onclick=\"get_radio_value();\" value=\"Check Answers\" style=\"font:16px 'Noto Sans'; margin: 10px 0 0 90px; cursor: default;\" />");
+	document.write("<input type=\"button\" onclick=\"get_radio_value();\" value=\"Check Answers\" style=\"font:16px 'Noto Sans'; margin: 10px 0 0 90px; border-radius: 3px; border-width: 1px; height: 28px; cursor: default;\" />");
 	window.scrollTo(0,0);
 }
 
@@ -141,7 +141,7 @@ function write_random_questions()
 	document.write("</li>");
 	document.write("</ol>");
 	document.write("<input type=\"hidden\" id=\"storeN\" value=\"" + N + "\" \/>");
-	document.write("<input type=\"button\" onclick=\"get_radio_value();\" value=\"Check Answers\" style=\"font:16px 'Noto Sans'; margin-left: 60px; cursor: default;\" />");
+	document.write("<input type=\"button\" onclick=\"get_radio_value();\" value=\"Check Answers\" style=\"font:16px 'Noto Sans'; margin-left: 60px; border-radius: 3px; border-width: 1px; height: 28px; cursor: default;\" />");
 	document.write("</label> <br \/><br \/><br \/>");
 	document.write("</div>");
 	document.write("<div id=\"sidebar\">");
@@ -244,11 +244,11 @@ function get_radio_value()
 	document.write("</ol>");
 	document.write("<script type=\"text\/javascript\" src=\"ex13.js\"><\/script>");
 	document.write("<label style=\"margin-top: 20px; margin-left: 60px; font: 16px 'Noto Serif'; color:#0a2c02;\">");  //Create a button for "Redo the Exercise"
-	document.write("<input type=\"button\" onclick=\"write_random_questions();\" value=\"Do Ex 1.3 sec I again with a different set of questions\" style=\"font-family: 'Noto Sans', sans-serif; font-size:16px; cursor: default;\" />");
+	document.write("<input type=\"button\" onclick=\"write_random_questions();\" value=\"Do Ex 1.3 sec I again with a different set of questions\" style=\"font-family: 'Noto Sans', sans-serif; font-size:16px; border-radius: 3px; border-width: 1px; height: 28px; cursor: default;\" />");
 	//document.write("<input type=\"button\" onmouseover=\"this.style.color='#990000';\" onmouseout=\"this.style.color='#0a2c02';\" onclick=\"window.location.replace('iLogic_1_submit_answers_a.html#Ex13')\" value=\"Do the exercise again with a different set of questions\" style=\"font-size:13px; cursor: default;\" />");
 	document.write("</label>");
 	document.write("<label style=\"margin-top: 20px; margin-left: 20px; font: 16px 'Noto Serif'; color:#0a2c02;\">");  //Creates a button for "Return to 1.3"
-	document.write("<input type=\"button\" onclick=\"window.location.replace('iLogic_1_3.html');\" value=\"Return to 1.3\" style=\"font-family: 'Noto Sans', sans-serif; font-size:16px; cursor: default;\" />");
+	document.write("<input type=\"button\" onclick=\"window.location.replace('iLogic_1_3.html');\" value=\"Return to 1.3\" style=\"font-family: 'Noto Sans', sans-serif; font-size:16px; border-radius: 3px; border-width: 1px; height: 28px; cursor: default;\" />");
 	//document.write("<input type=\"button\" onmouseover=\"this.style.color='#990000';\" onmouseout=\"this.style.color='#0a2c02';\" onclick=\"window.location.replace('iLogic_1_submit_answers.html')\" value=\"Return to 1.3\" style=\"font-size:13px; cursor: default;\" />");
 	document.write("</label> <br \/><br \/><br \/>");
 	document.write("</div>");
