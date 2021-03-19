@@ -264,11 +264,11 @@ function get_radio_value()
 	document.write("<\/ol>");
 	document.write("<script type=\"text\/javascript\" src=\"ex11.js\"><\/script>");
 	document.write("<label style=\"margin-top: 20px; margin-left: 60px; font: 16px 'Noto Serif'; color:#0a2c02;\">");  //Create a button for "Redo the Exercise"
-	document.write("<input type=\"button\" onclick=\"write_random_questions();\" value=\"Do the exercise again with a different set of questions\" style=\"font: 16px 'Noto Sans', sans-serif; border-radius: 3px; border-width: 1px; height: 28px; cursor: default;\" \/>");
+	document.write("<input type=\"button\" onclick=\"write_random_questions();\" value=\"Do the exercise again with a different set of questions\" style=\"font: 16px 'Noto Sans', sans-serif; border-radius: 3px; border-width: 1px; margin-top: 20px; height: 28px; cursor: default;\" \/>");
 	//document.write("<input type=\"button\" onmouseover=\"this.style.color='#990000';\" onmouseout=\"this.style.color='#0a2c02';\" onclick=\"window.location.replace('iLogic_1_submit_answers_a.html#Ex11')\" value=\"Do the exercise again with a different set of questions\" style=\"font-size:13px; cursor: default;\" />");
 	document.write("<\/label>");
 	document.write("<label style=\"margin-top: 20px; margin-left: 20px; font: 16px 'Noto Serif'; color:#0a2c02;\">");  //Creates a button for "Return to 1.1"
-	document.write("<input type=\"button\" onclick=\"window.location.replace('iLogic_1.html')\" value=\"Return to 1.1\" style=\"font: 16px 'Noto Sans', sans-serif; border-radius: 3px; border-width: 1px; height: 28px; cursor: default;\" \/>");
+	document.write("<input type=\"button\" onclick=\"window.location.replace('iLogic_1.html')\" value=\"Return to 1.1\" style=\"font: 16px 'Noto Sans', sans-serif; border-radius: 3px; border-width: 1px; margin-top: 20px; height: 28px; cursor: default;\" \/>");
 	//document.write("<input type=\"button\" onmouseover=\"this.style.color='#990000';\" onmouseout=\"this.style.color='#0a2c02';\" onclick=\"window.location.replace('iLogic_1_submit_answers.html')\" value=\"Return to 1.1\" style=\"font-size:16px; cursor: default;\" />");
 	document.write("<\/label> <br \/><br \/><br \/>");
 	document.write("<\/div>");
