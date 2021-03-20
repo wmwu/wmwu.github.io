@@ -103,9 +103,6 @@ function write_questions()
 	}
 	document.write("</ol>");
 	document.write("<input type=\"hidden\" id=\"storeN\" value=\"" + N + "\" \/>"); //Store N array as a string in html file to be used in get_radio_value()
-	//alert(N);
-	document.write("<input type=\"button\" onclick=\"get_radio_value();\" value=\"Check Answers\" style=\"font: 16px 'Noto Sans', sans-serif; margin: 20px 0 0 80px; border-radius: 3px; border-width: 1px; height: 28px; cursor: default;\" />");
-	window.scrollTo(0,0);
 }
 
 //Writes 30 random questions to the webpage
@@ -116,39 +113,25 @@ function write_random_questions()
 	{ 
 		N[i-1] = i;
 	}
-	document.write("<script type=\"text\/javascript\" src=\"ex11.js\"><\/script>");  //load js file so onclick can call a function note: Firefox and Opera load the js file before executing the function called by onclick. The solution is to move the code for N array inside each of the write question functions. But then N needs to be stored in html file to be used in get_radio_value.
-	//alert(N);
-	document.write("<link rel=\"stylesheet\" href=\"..\/iLogic.css\" type=\"text\/css\" \/>");
-	document.write("<div id=\"hwrap\">");
-	document.write("<div id=\"hwrap2\">");
-	document.write("<div id=\"header\">");
-	document.write("<h1>iLogic<\/h1>");
-	document.write("<\/div>");
-	document.write("<\/div>");
-	document.write("<\/div>");
-	document.write("<div id=\"mwrap\">");
-	document.write("<div id=\"mwrap2\">");
-	document.write("<div id=\"main\">");
-	document.write("<p style=\"margin-top: 50px; margin-left: 20px; font: 18px 'Noto Serif', serif; font-weight:bold; color:#0a2c02;\">Exercise 1.1<\/p>");
 	for (i = 1; i <=10; i++)
 	{
 	    N.sort(function (){return (Math.round(Math.random())-0.5);}); //Sort numbers between 1 and Q.length randomly
 	}
 	//alert(N);
-	document.write("<ol style=\"list-style-type: upper-roman;\">");
-	document.write("<li style=\"margin-top: 10px; margin-left: 30px; font: 16px 'Noto Serif', serif; color:#0a2c02;\">Decide whether each of the following sentences is a statement or an evaluative sentence.<\/li>");
-	document.write("<\/ol>");
-	document.write("<ol>");
+	document.write("<ol class=\"ex_sec\">");
+	document.write("<li>Decide whether each of the following sentences is a statement or an evaluative sentence.<\/li>");
+	document.write("</ol>");
+	document.write("<ol class=\"ex_q1\">");
 	for (k = 1; k < Q.length; k++)  //Loop that writes a set of 30 questions
 	{
 		i=N[k-1];
 		if (k <= Nq)
 		{
-			var question = "<li style=\"margin: 20px 0 0 50px; font: font: 16px 'Noto Serif', serif; color:#0a2c02;\">" + Q[i].question + "<br />";
+			var question = "<li>" + Q[i].question + "</li>";
 			document.write(question);
-			var button1 = "<span style=\"display: block; margin: 10px 0 0 0; font: 16px 'Noto Serif', serif; color:#0a2c02;\" ><input type=\"radio\" name=\"" + "A" + [i] + "\" " + "value=\"S\" " + "id=\"" + "A" + [i] + "_0" + "\" " + "/>" + " Statement" + "</span>";
+			var button1 = "<span style=\"margin: 10px 0 0 36px;\"><input type=\"radio\" name=\"" + "A" + [i] + "\" " + "value=\"S\" " + "id=\"" + "A" + [i] + "_0" + "\" " + "/>" + " Statement" + "</span>";
 			document.write(button1);
-			var button2 = "<span style=\"display: block; margin: 10px 0 0 0; font: 16px 'Noto Serif', serif; color:#0a2c02;\" ><input type=\"radio\" name=\"" + "A" + [i] + "\" " + "value=\"E\" " + "id=\"" + "A" + [i] + "_1" + "\" " + "/>" + " Evaluative Sentence" + "</span>";
+			var button2 = "<span style=\"margin: 10px 0 0 36px;\"><input type=\"radio\" name=\"" + "A" + [i] + "\" " + "value=\"E\" " + "id=\"" + "A" + [i] + "_1" + "\" " + "/>" + " Evaluative Sentence" + "</span>";
 			document.write(button2);
 		}
 		else
@@ -158,31 +141,15 @@ function write_random_questions()
 		}
 		
 	}
-	document.write("<\/li>");
-        document.write("<\/ol>");
-	document.write("<input type=\"hidden\" id=\"storeN\" value=\"" + N + "\" \/>");
-	document.write("<input type=\"button\" onclick=\"get_radio_value();\" value=\"Check Answers\" style=\"font: 16px 'Noto Sans', sans-serif; margin: 20px 0 0 100px; border-radius: 3px; border-width: 1px; height: 28px; cursor: default;\" \/>");
-	document.write("<\/label> <br \/><br \/><br \/>");
-	document.write("<\/div>");
-	document.write("<div id=\"sidebar\">");
-	document.write("<\/div>");
-	document.write("<\/div>");
-	document.write("<\/div>");
-	document.write("<div id=\"fwrap\">");
-	document.write("<div id=\"fwrap2\">");
-	document.write("<div id=\"footer\">");
-	document.write("<\/div>");
-	document.write("<\/div>");
-	document.write("<\/div>");
-	window.scrollTo(0,0);
-	document.close();
+	document.write("</ol>");
+	document.write("<input type=\"hidden\" id=\"storeN\" value=\"" + N + "\" \/>"); //Store N array as a string in html file to be used in get_radio_value()
 }
 
 //Function to check the answers
 function get_radio_value()
 {
 	var N = document.getElementById("storeN");  //get N from html file; N is a string array
-//	X = new Array();
+	//	X = new Array();
 //	alert(N.value);
 	N = N.value.split(',');  //split N with ',' as separator; effectively turn N into a number array
 //	for (i = 0; i < N.length; i++)
@@ -224,70 +191,8 @@ function get_radio_value()
 			{
 				s = s + 1;  //Counter for the number of correct answers
 				//alert(s);
+				document.getElementById("number-of-correct-answers").innerHTML = s;
 			}	
 		}
 	}
-	//alert(V);
-	document.write("<link rel=\"stylesheet\" href=\"..\/iLogic.css\" type=\"text\/css\" \/>");
-	document.write("<div id=\"hwrap\">");
-	document.write("<div id=\"hwrap2\">");
-	document.write("<div id=\"header\">");
-	document.write("<h1>iLogic<\/h1>");
-	document.write("<\/div>");
-	document.write("<\/div>");
-	document.write("<\/div>");
-	document.write("<div id=\"mwrap\">");
-	document.write("<div id=\"mwrap2\">");
-	document.write("<div id=\"main\">");
-	document.write("<p style=\"margin: 50px 0 0 20px; font: 18px 'Noto Serif', Georgia, serif; font-weight:bold; color:#0a2c02;\">Exercise 1.1 Results<\/p>");
-	document.write("<p style=\"margin-top: 20px; margin-left: 30px; font-size: 20px\">You got " + "<span style=\"font-family: 'Noto Sans', sans-serif; font-weight: bold;\">" + s + "<\/span>" + " out of " + "<span style=\"font-family: 'Noto Sans', sans-serif\">" + "30<\/span>" + " correct.<\/p>");
-	document.write("<p style=\"margin-top: 20px; margin-left: 30px; font: 16px 'Noto Serif', Georgia, serif; color:#0a2c02;\">Here are the answers you submitted:");
-	document.write("<ol>");
-	for (k = 1; k <= 30; k++)  //Loop that writes a set of 30 questions
-	{
-		i=N[k-1];
-		document.write("<li style=\"margin-top: 10px; margin-left: 50px; font: 16px 'Noto Serif'; color:#0a2c02;\">" + Q[i].question + "<br \/>");
-		if (V[k]=="S")
-		{
-			document.write("<p style=\"margin-left: -24px; font: 16px 'Noto Serif', serif; color:#0a2c02;\">Your answer: <span style=\"color:#2a9660;\">Statement<\/span> <\/p>");
-		}
-		else if (V[k]=="E")
-		{
-			document.write("<p style=\"margin-left: -24px; font: 16px 'Noto Serif', serif; color:#0a2c02;\">Your answer: <span style=\"color:#2a9660;\">Evaluative Sentence<\/span> <\/p>");
-		}
-		else
-		{
-			document.write("<p style=\"margin-left: -24px; font: 16px 'Noto Serif', serif; color:#0a2c02;\">Your answer: <span style=\"color:#2a9660;\"><\/span> <\/p>");
-		}
-	}
-	document.write("<\/li>");
-	document.write("<\/ol>");
-	document.write("<script type=\"text\/javascript\" src=\"ex11.js\"><\/script>");
-	document.write("<label style=\"margin-top: 20px; margin-left: 60px; font: 16px 'Noto Serif'; color:#0a2c02;\">");  //Create a button for "Redo the Exercise"
-	document.write("<input type=\"button\" onclick=\"write_random_questions();\" value=\"Do the exercise again with a different set of questions\" style=\"font: 16px 'Noto Sans', sans-serif; border-radius: 3px; border-width: 1px; margin-top: 20px; height: 28px; cursor: default;\" \/>");
-	//document.write("<input type=\"button\" onmouseover=\"this.style.color='#990000';\" onmouseout=\"this.style.color='#0a2c02';\" onclick=\"window.location.replace('iLogic_1_submit_answers_a.html#Ex11')\" value=\"Do the exercise again with a different set of questions\" style=\"font-size:13px; cursor: default;\" />");
-	document.write("<\/label>");
-	document.write("<label style=\"margin-top: 20px; margin-left: 20px; font: 16px 'Noto Serif'; color:#0a2c02;\">");  //Creates a button for "Return to 1.1"
-	document.write("<input type=\"button\" onclick=\"window.location.replace('iLogic_1.html')\" value=\"Return to 1.1\" style=\"font: 16px 'Noto Sans', sans-serif; border-radius: 3px; border-width: 1px; margin-top: 20px; height: 28px; cursor: default;\" \/>");
-	//document.write("<input type=\"button\" onmouseover=\"this.style.color='#990000';\" onmouseout=\"this.style.color='#0a2c02';\" onclick=\"window.location.replace('iLogic_1_submit_answers.html')\" value=\"Return to 1.1\" style=\"font-size:16px; cursor: default;\" />");
-	document.write("<\/label> <br \/><br \/><br \/>");
-	document.write("<\/div>");
-	document.write("<div id=\"sidebar\">");
-	document.write("<\/div>");
-	document.write("<\/div>");
-	document.write("<\/div>");
-	document.write("<div id=\"fwrap\">");
-	document.write("<div id=\"fwrap2\">");
-	document.write("<div id=\"footer\">");
-	document.write("<\/div>");
-	document.write("<\/div>");
-	document.write("<\/div>");
-	window.scrollTo(0,0);
-	document.close();
-}
-
-function MM_goToURL()
-{ //v3.0
-  var i, args=MM_goToURL.arguments; document.MM_returnValue = false;
-  for (i=0; i<(args.length-1); i+=2) eval(args[i]+".location='"+args[i+1]+"'");
 }
