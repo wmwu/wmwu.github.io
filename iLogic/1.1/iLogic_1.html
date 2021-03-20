@@ -16,7 +16,9 @@
 </head>
 
 <body>
-
+  <script>
+  var NQ = sessionStorage.getItem('btnNQ');
+  </script>
 <div id="hwrap">
   <div id="hwrap2">
     <div id="header">
@@ -340,16 +342,81 @@
 	    </ol>
 	  </div>
 
-      <h3 id="Ex11">Exercise 1.1</a></h3>
+      <h3 id="Ex11">Exercise 1.1</h3>
 
       <form name="exercise" action="">
       <script type="text/javascript">
-      <!--
-      write_questions();
-      -->
+      if (NQ !== null) {
+        write_random_questions();
+        sessionStorage.clear();
+      }
+      else {
+        write_questions();
+      }
       </script>
       </form>
+    <!-- Trigger/Open The Modal -->
+    <div><button id="chkAns" class="exbutton">Check Answers</button></div>
 
+    <!-- The Modal -->
+    <div id="Ex11Modal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <p style="font-size: 18px;">Exercise 1.1</p>
+        </div>
+        <div class="modal-body">
+          <p><span id="number-of-correct-answers"></span> of your answers are correct.</p>
+          <p>You can change your answers and check again to see if you get more questions right.</p>
+          <p style="margin: 16px 0 16px 0;">You can redo the exercise with a
+          different set of questions by clicking on this button: <button id="newQues" class="modalbutton" style="margin-left: 12px;">New Questions</button></p>
+            <script type="text/javascript">
+              // Get the button that load a different set of questions
+              var btnNQ = document.getElementById("newQues");
+              // When the user clicks the button, reload the page with a new set of questions
+              btnNQ.onclick = function() {
+                sessionStorage.setItem('btnNQ', 'clicked');
+                location.replace("iLogic_1.html#Ex11");
+                location.reload();
+              }
+            </script>
+        </div>
+        <div class="modal-footer">
+          <p>&nbsp;</p>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+    // Get the modal
+    var modal = document.getElementById("Ex11Modal");
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("chkAns");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks the button, open the modal 
+    btn.onclick = function() {
+      get_radio_value();
+      modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+    </script>
       <p>&nbsp;</p>
 
       <p xmlns:cc="http://creativecommons.org/ns#" >This work is licensed under <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-ND 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1"></a></p>    </div>
