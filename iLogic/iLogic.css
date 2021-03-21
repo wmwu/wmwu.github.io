@@ -315,6 +315,7 @@ body {
 #main hr {
 	width: 350px;
 	float: left;
+  color: #0a2c02;
 }
 #main td {
   padding: 0px 2px 0 2px;
@@ -740,7 +741,7 @@ body {
   font-family: 'Noto Sans', 'Open Sans', sans-serif;
 }
 .line {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #0a2c02;
   padding: 0 4px 4px 8px;
   line-height: 24px;
 }
