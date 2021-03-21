@@ -315,7 +315,6 @@ body {
 #main hr {
 	width: 350px;
 	float: left;
-  color: #0a2c02;
 }
 #main td {
   padding: 0px 2px 0 2px;
@@ -718,6 +717,8 @@ body {
 }
 .conclusion {
   border-top: 1px solid;
+  border-color: #0a2c02;
+  ;
 }
 .display {
   margin: 10px 36px 10px 36px;
