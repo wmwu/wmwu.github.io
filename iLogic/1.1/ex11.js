@@ -68,7 +68,7 @@ Q[60]=new MultipleChoice("Plants and animals exist for humans to use them.","E")
 
 var Nq = 30;  //set number of questions to be written to 30
 
-//Writes 30 questions to the webpage
+//Writes Nq questions to the webpage
 function write_questions()
 {
 	var N = new Array();  //Creates an array of number from 1 to 60
@@ -105,7 +105,7 @@ function write_questions()
 	document.write("<input type=\"hidden\" id=\"storeN\" value=\"" + N + "\" \/>"); //Store N array as a string in html file to be used in get_radio_value()
 }
 
-//Writes 30 random questions to the webpage
+//Writes Nq random questions to the webpage
 function write_random_questions()
 {
 	var N = new Array();  //Creates an array of number from 1 to 60
