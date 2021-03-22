@@ -179,12 +179,15 @@ body {
   padding: 0 24px 0 0;
   list-style: none;
 }
-#main li.revision {
+#main ul.revision li {
   font-family: 'Noto Serif', Georgia, serif;
   letter-spacing: 0px;
   list-style-type: circle;
   margin-left: 24px;
-  }  
+  }
+#main ul.revision ul li {
+  list-style-type: '–  ';
+}
 #main a {
   font-family: 'Noto Sans', sans-serif;
   font-size: 16px;
