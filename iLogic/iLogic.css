@@ -32,7 +32,7 @@ src: url('Cambria Math.ttf') format("truetype");
 body {
   margin: 0;
   padding: 0;
-  background-color: #FFFFFF;
+  background-color: transparent;
 }
 #hwrap {
   margin: 0 auto;
@@ -55,12 +55,12 @@ body {
 }
 #mwrap {
   margin: 0 auto;
-  background-color: #FFFFFF;
+  background-color: transparent;
 }
 #mwrap2 {
   margin: 0 auto;
   width: 750px;
-  background-color: #FFFFFF;
+  background-color: transparent;
 }
 #fwrap {
   margin: 0 auto;
@@ -456,47 +456,47 @@ body {
 #main table.commonform td.c1 {
   width: 20px;
   padding: 6px 6px 6px 6px;
-  background-color: #E6ECFF;
+  background-color: #e6ecff;
 }
 #main table.commonform td.c1w {
   width: 20px;
   padding: 6px 6px 6px 6px;
-  background-color: #FFFFFF;
+  background-color: transparent;
 }
 #main table.commonform td.c2 {
   width: 80px;
   padding: 6px 6px 6px 16px;
-  background-color: #E6ECFF;
+  background-color: #e6ecff;
   line-height: 16px;
 }
 #main table.commonform td.c2a {
   width: 160px;
   padding: 6px 6px 6px 16px;
-  background-color: #E6ECFF;
+  background-color: #e6ecff;
   line-height: 16px;
 }
 #main table.commonform td.c2aw {
   width: 160px;
   padding: 6px 6px 6px 16px;
-  background-color: #FFFFFF;
+  background-color: transparent;
   line-height: 16px;
 }
 #main table.commonform td.c2b {
   width: 100px;
   padding: 6px 6px 6px 16px;
-  background-color: #E6ECFF;
+  background-color: #e6ecff;
   line-height: 16px;
 }
 #main table.commonform td.c2c {
   width: 80px;
   padding: 6px 6px 6px 16px;
-  background-color: #E6ECFF;
+  background-color: #e6ecff;
   line-height: 16px;
 }
 #main table.commonform td.c2w {
   width: 60px;
   padding: 6px 6px 6px 16px;
-  background-color: #FFFFFF;
+  background-color: transparent;
   line-height: 16px;
 }
 #main table.commonform td.c3 {
@@ -511,31 +511,31 @@ body {
 }
 #main table.commonform2 td.c1 {
   width: 20px;
-  padding: 6px 6px 6px 16px;
-  background-color: #FFFFFF;
+  padding: 6px 6px 6px 6px;
+  background-color: transparent;
 }
 #main table.commonform2 td.c2 {
   width: 80px;
   padding: 6px 6px 6px 16px;
-  background-color: #FFFFFF;
+  background-color: transparent;
   line-height: 16px;
 }
 #main table.commonform2 td.c2a {
-  width: 180px;
+  width: 160px;
   padding: 6px 6px 6px 16px;
-  background-color: #FFFFFF;
+  background-color: transparent;
   line-height: 16px;
 }
 #main table.commonform2 td.c2b {
   width: 80px;
   padding: 6px 6px 0px 16px;
-  background-color: #FFFFFF;
+  background-color: transparent;
   line-height: 20px;
 }
 #main table.commonform2 td.c2c {
   width: 100px;
   padding: 6px 6px 6px 16px;
-  background-color: #FFFFFF;
+  background-color: transparent;
   line-height: 16px;
 }
 #main table.commonform2 td.c3 {
@@ -564,7 +564,7 @@ body {
 	border: 1px solid orange;
 }
 #sidebar {
-  background-color: #FFFFFF;
+  background-color: transparent;
   width: 0px;
   float: right;
 }
@@ -703,7 +703,7 @@ body {
   margin-left: 60px;
   margin-top: 10px;
   margin-bottom: 10px;
-  background-color: #E6ECFF;
+  background-color: #e6ecff;
   border-spacing: 0px;
 }
 .bluebox td {
