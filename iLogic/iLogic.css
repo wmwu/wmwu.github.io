@@ -448,6 +448,101 @@ body {
   color: #0a2c02;
   padding: 2px 6px 2px 8px;
 }
+#main table.commonform {
+  margin: 0 0 0 60px;
+  border: none;
+  border-spacing: 0px;
+}
+#main table.commonform td.c1 {
+  width: 20px;
+  padding: 6px 6px 6px 6px;
+  background-color: #E6ECFF;
+}
+#main table.commonform td.c1w {
+  width: 20px;
+  padding: 6px 6px 6px 6px;
+  background-color: #FFFFFF;
+}
+#main table.commonform td.c2 {
+  width: 80px;
+  padding: 6px 6px 6px 16px;
+  background-color: #E6ECFF;
+  line-height: 16px;
+}
+#main table.commonform td.c2a {
+  width: 160px;
+  padding: 6px 6px 6px 16px;
+  background-color: #E6ECFF;
+  line-height: 16px;
+}
+#main table.commonform td.c2aw {
+  width: 160px;
+  padding: 6px 6px 6px 16px;
+  background-color: #FFFFFF;
+  line-height: 16px;
+}
+#main table.commonform td.c2b {
+  width: 100px;
+  padding: 6px 6px 6px 16px;
+  background-color: #E6ECFF;
+  line-height: 16px;
+}
+#main table.commonform td.c2c {
+  width: 80px;
+  padding: 6px 6px 6px 16px;
+  background-color: #E6ECFF;
+  line-height: 16px;
+}
+#main table.commonform td.c2w {
+  width: 60px;
+  padding: 6px 6px 6px 16px;
+  background-color: #FFFFFF;
+  line-height: 16px;
+}
+#main table.commonform td.c3 {
+  width: 60px;
+  padding: 6px;
+  line-height: 16px;
+}
+#main table.commonform2 {
+  margin: 0 0 0 60px;
+  border: none;
+  border-spacing: 0px;
+}
+#main table.commonform2 td.c1 {
+  width: 20px;
+  padding: 6px 6px 6px 16px;
+  background-color: #FFFFFF;
+}
+#main table.commonform2 td.c2 {
+  width: 80px;
+  padding: 6px 6px 6px 16px;
+  background-color: #FFFFFF;
+  line-height: 16px;
+}
+#main table.commonform2 td.c2a {
+  width: 180px;
+  padding: 6px 6px 6px 16px;
+  background-color: #FFFFFF;
+  line-height: 16px;
+}
+#main table.commonform2 td.c2b {
+  width: 80px;
+  padding: 6px 6px 0px 16px;
+  background-color: #FFFFFF;
+  line-height: 20px;
+}
+#main table.commonform2 td.c2c {
+  width: 100px;
+  padding: 6px 6px 6px 16px;
+  background-color: #FFFFFF;
+  line-height: 16px;
+}
+#main table.commonform2 td.c3 {
+  width: 60px;
+  padding: 6px;
+  line-height: 16px;
+}
 .mark32b2l {
   position: relative;
   z-index: -3;
@@ -616,105 +711,9 @@ body {
   color: #0a2c02;
   line-height: 24px;
 }
-.commonform {
-  margin: 0 0 0 60px;
-  border: none;
-  border-spacing: 0px;
-}
-.commonform td.c1 {
-  width: 20px;
-  padding: 6px;
-  background-color: #E6ECFF;
-}
-.commonform td.c1w {
-  width: 20px;
-  padding: 6px;
-  background-color: #FFFFFF;
-}
-.commonform td.c2 {
-  width: 80px;
-  padding: 6px 6px 6px 16px;
-  background-color: #E6ECFF;
-  line-height: 16px;
-}
-.commonform td.c2a {
-  width: 160px;
-  padding: 6px 6px 6px 16px;
-  background-color: #E6ECFF;
-  line-height: 16px;
-}
-.commonform td.c2aw {
-  width: 160px;
-  padding: 6px 6px 6px 16px;
-  background-color: #FFFFFF;
-  line-height: 16px;
-}
-.commonform td.c2b {
-  width: 100px;
-  padding: 6px 6px 6px 16px;
-  background-color: #E6ECFF;
-  line-height: 16px;
-}
-.commonform td.c2c {
-  width: 80px;
-  padding: 6px 6px 6px 16px;
-  background-color: #E6ECFF;
-  line-height: 16px;
-}
-.commonform td.c2w {
-  width: 60px;
-  padding: 6px 6px 6px 16px;
-  background-color: #FFFFFF;
-  line-height: 16px;
-}
-.commonform td.c3 {
-  width: 60px;
-  padding: 6px;
-  line-height: 16px;
-}
-.commonform2 {
-  margin: 0 0 0 60px;
-  border: none;
-  border-spacing: 0px;
-}
-.commonform2 td.c1 {
-  width: 20px;
-  padding: 6px;
-  background-color: #FFFFFF;
-}
-.commonform2 td.c2 {
-  width: 80px;
-  padding: 6px 6px 6px 16px;
-  background-color: #FFFFFF;
-  line-height: 16px;
-}
-.commonform2 td.c2a {
-  width: 180px;
-  padding: 6px 6px 6px 16px;
-  background-color: #FFFFFF;
-  line-height: 16px;
-}
-.commonform2 td.c2b {
-  width: 80px;
-  padding: 6px 6px 0px 16px;
-  background-color: #FFFFFF;
-  line-height: 20px;
-}
-.commonform2 td.c2c {
-  width: 100px;
-  padding: 6px 6px 6px 16px;
-  background-color: #FFFFFF;
-  line-height: 16px;
-}
-.commonform2 td.c3 {
-  width: 60px;
-  padding: 6px;
-  line-height: 16px;
-}
 .conclusion {
   border-top: 1px solid;
   border-color: #0a2c02;
-  ;
 }
 .display {
   margin: 10px 36px 10px 36px;
