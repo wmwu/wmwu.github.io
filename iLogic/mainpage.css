@@ -182,12 +182,9 @@ body {
 #main ul.revision li {
   font-family: 'Noto Serif', Georgia, serif;
   letter-spacing: 0px;
-  list-style-type: circle;
+  list-style-type: '–  ';
   margin-left: 24px;
   }
-#main ul.revision ul li {
-  list-style-type: '–  ';
-}
 #main a {
   font-family: 'Noto Sans', sans-serif;
   font-size: 16px;
