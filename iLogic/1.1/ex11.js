@@ -158,6 +158,7 @@ function get_radio_value()
 //	}
 //	alert(X[5]);
 	s = 0;
+	u = 0;
 	var V = new Array();
 	for (k = 1; k < Q.length; k++)  //Check_Answer -- Loop to check all Q[i]s
 	{
@@ -183,6 +184,8 @@ function get_radio_value()
 			else
 			{
 				V[k] = "";
+				u = u + 1; //Counter for the number of unanswered questions
+				document.getElementById("number-of-answered").innerHTML = 30 - u;
 			}
 			//alert(V);
 			Vc = Q[i].answer;
@@ -192,7 +195,7 @@ function get_radio_value()
 				s = s + 1;  //Counter for the number of correct answers
 				//alert(s);
 				document.getElementById("number-of-correct-answers").innerHTML = s;
-			}	
+			}
 		}
 	}
 }
