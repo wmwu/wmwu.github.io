@@ -130,26 +130,28 @@ function get_radio_value()
 //	}
 //	alert(X[5]);
 	s = 0;
+	document.getElementById("number-of-answered").innerHTML = 0;
+	document.getElementById("number-of-correct-answers").innerHTML = s;
 	u = 0;
 	var V = new Array();
 	for (k = 1; k < Q.length; k++)  //Check_Answer -- Loop to check all Q[i]s
 	{
 		i = N[k-1];
-		var S = "A" + i + "_0";  //Find out which radio button was checked
-		//alert(S);
-		var E = "A" + i + "_1";
-		//alert(E);
+		var T = "A" + i + "_0";  //Find out which radio button was checked
+		//alert(T);
+		var F = "A" + i + "_1";
+		//alert(F);
 		if (k <= Nq) //Do not getElementById for unwritten questions
 		{
-			var SC = document.getElementById(S).checked;
-			//alert(document.getElementById(S).checked);		
-			var EC = document.getElementById(E).checked;
-			//alert(document.getElementById(E).checked);
-			if (SC==true)
+			var TC = document.getElementById(T).checked;
+			//alert(document.getElementById(T).checked);		
+			var FC = document.getElementById(F).checked;
+			//alert(document.getElementById(F).checked);
+			if (TC==true)
 			{
 				V[k] = "T";
 			}
-			else if (EC==true)
+			else if (FC==true)
 			{
 				V[k] = "F";
 			}
