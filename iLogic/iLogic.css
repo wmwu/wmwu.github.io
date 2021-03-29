@@ -1158,6 +1158,7 @@ div.operator button:hover {
 }
 div.operator31 {
   margin: 2px 0 36px 42px;
+  cursor: default;
 }
 div.operator31 button {
   font-family: 'Cambria Math Regular', 'DejaVu Sans', sans-serif;
