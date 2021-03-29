@@ -158,6 +158,8 @@ function get_radio_value()
 //	}
 //	alert(X[5]);
 	s = 0;
+	document.getElementById("number-of-answered").innerHTML = 0;
+	document.getElementById("number-of-correct-answers").innerHTML = s;
 	u = 0;
 	var V = new Array();
 	for (k = 1; k < Q.length; k++)  //Check_Answer -- Loop to check all Q[i]s
