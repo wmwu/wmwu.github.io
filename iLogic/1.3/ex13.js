@@ -130,9 +130,9 @@ function get_radio_value()
 //	}
 //	alert(X[5]);
 	s = 0;
-	document.getElementById("number-of-answered").innerHTML = 0;
-	document.getElementById("number-of-correct-answers").innerHTML = s;
 	u = 0;
+	document.getElementById("number-of-answered").innerHTML = u;
+	document.getElementById("number-of-correct-answers").innerHTML = s;
 	var V = new Array();
 	for (k = 1; k < Q.length; k++)  //Check_Answer -- Loop to check all Q[i]s
 	{
@@ -169,8 +169,12 @@ function get_radio_value()
 				s = s + 1;  //Counter for the number of correct answers
 				//alert(s);
 				document.getElementById("number-of-correct-answers").innerHTML = s;
-			}	
+			}
 		}
+	}
+	if (u == 0)
+	{
+		document.getElementById("number-of-answered").innerHTML = 15;
 	}
 	//alert(V);
 }
