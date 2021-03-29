@@ -1135,13 +1135,16 @@ div.operator button {
   font-family: 'Cambria Math Regular', 'DejaVu Sans', sans-serif;
   font-size: 16px;
   font-style: normal;
-  vertical align: middle;
+  vertical-align: middle;
   width: 30px;
   height: 28px;
   margin: 1px 2px 1px 2px;
 	border-radius: 3px;
 	background: #EFEFEF;
 	border: solid #969696 1px;
+}
+div.operator button:hover {
+  background-color: lightgray;
 }
 div.operator31 {
   margin: 2px 0 36px 42px;
@@ -1150,7 +1153,7 @@ div.operator31 button {
   font-family: 'Cambria Math Regular', 'DejaVu Sans', sans-serif;
   font-size: 16px;
   font-style: normal;
-  vertical align: middle;
+  vertical-align: middle;
   width: 30px;
   height: 28px;
   margin: 1px 2px 1px 2px;
@@ -1158,24 +1161,30 @@ div.operator31 button {
 	background: #EFEFEF;
 	border: solid #969696 1px;
 }
+div.operator31 button:hover {
+  background-color: lightgray;
+}
 div.operator31 button.ca {
   font-family: 'Noto Sans', 'DejaVu Sans', sans-serif;
   font-size: 16px;
   font-style: normal;
-  vertical align: middle;
+  vertical-align: middle;
   width: 120px;
   height: 28px;
   margin: 1px 2px 1px 6px;
 	border-radius: 4px;
 	background: #EFEFEF;
 	border: solid #969696 1px;
-	cursor: :default;
+	cursor: default;
+}
+div.operator31 button.ca:hover {
+  background-color: lightgray;
 }
 td.operator button {
   font-family: 'Cambria Math Regular', 'DejaVu Sans', sans-serif;
   font-size: 16px;
   font-style: normal;
-  vertical align: middle;
+  vertical-align: middle;
   width: 30px;
   height: 28px;
   margin: 1px 2px 1px 2px;
@@ -1183,12 +1192,15 @@ td.operator button {
 	background: #EFEFEF;
 	border: solid #969696 1px;
 }
+td.operator button:hover {
+  background-color: lightgray;
+}
 button.ca32 {
   font-family: 'Noto Sans', 'DejaVu Sans', sans-serif;
   font-size: 16px;
   font-style: normal;
-  vertical align: middle;
-  width: 140px;
+  vertical-align: middle;
+  width: 136px;
   height: 28px;
   margin: 24px 2px 24px 36px;
 	border-radius: 3px;
@@ -1196,12 +1208,15 @@ button.ca32 {
 	border: solid #969696 1px;
 	cursor: default;
 }
+button.ca32:hover {
+  background-color: lightgray;
+}
 button.ca33 {
   font-family: 'Noto Sans', 'DejaVu Sans', sans-serif;
   font-size: 16px;
   font-style: normal;
-  vertical align: middle;
-  width: 140px;
+  vertical-align: middle;
+  width: 136px;
   height: 28px;
   margin: 24px 2px 1px 72px;
 	border-radius: 3px;
@@ -1209,11 +1224,14 @@ button.ca33 {
 	border: solid #969696 1px;
 	cursor: default;
 }
+button.ca33:hover {
+  background-color: lightgray;
+}
 input.ca33 {
   font-family: 'Noto Sans', 'Open Sans', sans-serif;
   font-size: 16px;
   font-style: normal;
-  vertical align: middle;
+  vertical-align: middle;
   width: 120px;
   height: 28px;
   margin: 24px 2px 1px 72px;
@@ -1226,14 +1244,17 @@ button.ca34 {
   font-family: 'Noto Sans', 'DejaVu Sans', sans-serif;
   font-size: 16px;
   font-style: normal;
-  vertical align: middle;
-  width: 140px;
+  vertical-align: middle;
+  width: 136px;
   height: 28px;
   margin: 24px 2px 1px 72px;
 	border-radius: 3px;
 	background: #EFEFEF;
 	border: solid #969696 1px;
 	cursor: default;
+}
+button.ca34:hover {
+  background-color: lightgray;
 }
 /* Seciton 3.2 */
 #main table.ex32 {
@@ -2092,20 +2113,27 @@ td.pslr .mark32b8r {
   font-family: 'Noto Sans', sans-serif;
   font-size: 16px;
   border-radius: 3px;
-  border-width: 1px;
+	border: solid #969696 1px;
   margin: 12px 0 0 72px;
+  width: 136px;
   height: 28px;
   cursor: default;
 }
-
+.exbutton:hover {
+  background-color: lightgray;
+}
 /* Redo Exercise Button */
 .modalbutton {
   font-family: 'Noto Sans', sans-serif;
   font-size: 16px;
   border-radius: 3px;
-  border-width: 1px;
+	border: solid #969696 1px;
+  width: 136px;
   height: 28px;
   cursor: default;
+}
+.modalbutton:hover {
+  background-color: lightgray;
 }
 
 /* The Close Button */
@@ -2129,7 +2157,9 @@ td.pslr .mark32b8r {
   color: white;
 }
 
-.modal-body {padding: 2px 16px;}
+.modal-body {
+  padding: 2px 16px;
+}
 
 .modal-footer {
   padding: 2px 16px;
