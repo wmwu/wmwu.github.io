@@ -441,6 +441,7 @@ body {
   font-family: 'Noto Sans', 'Open Sans', sans-serif;;
   font-size: 16px;
   color: #0a2c02;
+  cursor: default;
 }
 #main table.ex td.operator button {
   font-family: 'Cambria Math Regular', 'DejaVu Sans', sans-serif;
