@@ -1140,6 +1140,7 @@ body {
 }
 div.operator {
   margin: 6px 0 0 78px;
+  cursor: default;
 }
 div.operator button {
   font-family: 'Cambria Math Regular', 'DejaVu Sans', sans-serif;
@@ -1190,6 +1191,9 @@ div.operator31 button.ca {
 }
 div.operator31 button.ca:hover {
   background-color: lightgray;
+}
+td.operator {
+  cursor: default;
 }
 td.operator button {
   font-family: 'Cambria Math Regular', 'DejaVu Sans', sans-serif;
