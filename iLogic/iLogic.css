@@ -363,6 +363,16 @@ body {
 #main table.truthtable td.hidden {
   background-color: transparent;
 }
+#five-connectives {
+  border: 1px solid #0a2c02;
+  border-collapse: collapse;
+  page-break-inside: avoid;
+}
+#five-connectives td {
+  border: 1px solid #0a2c02;
+  text-align: center;
+  height: 36px;
+}
 #main table.ex {
   border: none;
   border-spacing: 0px;
