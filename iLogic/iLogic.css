@@ -2128,6 +2128,7 @@ td.pslr .mark32b8r {
 .exbutton {
   font-family: 'Noto Sans', sans-serif;
   font-size: 16px;
+  vertical-align: middle;
   border-radius: 3px;
 	border: solid #969696 1px;
   margin: 12px 0 0 72px;
