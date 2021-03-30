@@ -34,6 +34,12 @@ body {
   padding: 0;
   background-color: transparent;
 }
+button:focus {
+  outline: none;
+}
+button:active {
+  transform: translateY(2px);
+}
 #hwrap {
   margin: 0 auto;
   background-color: #F7F8EE;
@@ -1153,7 +1159,7 @@ div.operator button {
   margin: 1px 2px 1px 2px;
 	border-radius: 3px;
 	background: #EFEFEF;
-	border: solid #969696 1px;
+	border: 1px solid #969696;
 }
 div.operator button:hover {
   background-color: lightgray;
@@ -1172,7 +1178,7 @@ div.operator31 button {
   margin: 1px 2px 1px 2px;
 	border-radius: 4px;
 	background: #EFEFEF;
-	border: solid #969696 1px;
+	border: 1px solid #969696;
 }
 div.operator31 button:hover {
   background-color: lightgray;
@@ -1187,7 +1193,7 @@ div.operator31 button.ca {
   margin: 1px 2px 1px 6px;
 	border-radius: 4px;
 	background: #EFEFEF;
-	border: solid #969696 1px;
+	border: 1px solid #969696;
 	cursor: default;
 }
 div.operator31 button.ca:hover {
@@ -1206,7 +1212,7 @@ td.operator button {
   margin: 1px 2px 1px 2px;
 	border-radius: 3px;
 	background: #EFEFEF;
-	border: solid #969696 1px;
+	border: 1px solid #969696;
 }
 td.operator button:hover {
   background-color: lightgray;
@@ -1221,7 +1227,7 @@ button.ca32 {
   margin: 24px 2px 24px 36px;
 	border-radius: 3px;
 	background: #EFEFEF;
-	border: solid #969696 1px;
+	border: 1px solid #969696;
 	cursor: default;
 }
 button.ca32:hover {
@@ -1237,7 +1243,7 @@ button.ca33 {
   margin: 24px 2px 1px 72px;
 	border-radius: 3px;
 	background: #EFEFEF;
-	border: solid #969696 1px;
+	border: 1px solid #969696;
 	cursor: default;
 }
 button.ca33:hover {
@@ -1253,8 +1259,8 @@ input.ca33 {
   margin: 24px 2px 1px 72px;
 	border-radius: 3px;
 	background: #EFEFEF;
-	border: solid #969696 1px;
-	cursor: :default;
+	border: 1px solid #969696;
+	cursor: default;
 }
 button.ca34 {
   font-family: 'Noto Sans', 'DejaVu Sans', sans-serif;
@@ -1266,7 +1272,7 @@ button.ca34 {
   margin: 24px 2px 1px 72px;
 	border-radius: 3px;
 	background: #EFEFEF;
-	border: solid #969696 1px;
+	border: 1px solid #969696;
 	cursor: default;
 }
 button.ca34:hover {
@@ -2130,7 +2136,7 @@ td.pslr .mark32b8r {
   font-size: 16px;
   vertical-align: middle;
   border-radius: 3px;
-	border: solid #969696 1px;
+	border: 1px solid #969696;
   margin: 12px 0 0 72px;
   width: 136px;
   height: 28px;
@@ -2144,7 +2150,7 @@ td.pslr .mark32b8r {
   font-family: 'Noto Sans', sans-serif;
   font-size: 16px;
   border-radius: 3px;
-	border: solid #969696 1px;
+	border: 1px solid #969696;
   width: 136px;
   height: 28px;
   cursor: default;
