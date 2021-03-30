@@ -42,22 +42,22 @@ button:active {
 }
 #hwrap {
   margin: 0 auto;
-  background-color: #F7F8EE;
+  background-color: #f7f8ee;
 }
 #hwrap2 {
   margin: 0 auto;
   height: 80px;
   width: 750px;
-  background-color: #F7F8EE;
+  background-color: #f7f8ee;
 }
 #nwrap {
   margin: 0 auto;
-  background-color: #E6E6E6;
+  background-color: #e6e6e6;
 }
 #nwrap2 {
   margin: 0 auto;
   width: 750px;
-  background-color: #E6E6E6;
+  background-color: #e6e6e6;
 }
 #mwrap {
   margin: 0 auto;
@@ -70,17 +70,17 @@ button:active {
 }
 #fwrap {
   margin: 0 auto;
-  background-color: #F7F8EE;
+  background-color: #f7f8ee;
   clear: both;
 }
 #fwrap2 {
   margin: 0 auto;
   height: 60px;
   width: 750px;
-  background-color: #F7F8EE;
+  background-color: #f7f8ee;
 }
 #header {
-  background-color: #F7F8EE;
+  background-color: #f7f8ee;
   font-family: 'Noto Sans', 'Open Sans', sans-serif;
 }
 #header h1 {
@@ -116,7 +116,7 @@ button:active {
 }
 #nav {
   overflow: hidden;
-  background-color: #E6E6E6;
+  background-color: #e6e6e6;
   height: 48px;
 }
 #nav a {
@@ -601,29 +601,31 @@ button:active {
   margin-top: 12px;
   text-align: left;
 }
-#footer {
-  background-color: #F7F8EE;
-  clear: both;
+.footer {
+  height: 60px;
+  background-color: #f7f8ee;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
-#footer a {
+.footer > div {
+  height: 24px;
+  padding: 6px;
+}
+.footer > div > button {
   font-family: 'Nato Sans', sans-serif;
   font-size: 14px;
   color: #0a2c02;
-  /* Distance from text */
-  padding-bottom: 2px;
-  text-decoration: none;
-  box-shadow: none;
-  transition: box-shadow .5s ease-out;
-  line-height: 48px;
-  letter-spacing: 2px;
-  text-align: left;
-  margin-left: 20px;
+  height: 24px;
+  width: 120px;
+  border: 0px solid #969696;
+  background-color: #f7f8ee;
+  border-radius: 3px;
 }
-#footer a:hover {
-  color: #0a2c02;
-  box-shadow: 0 1px 0 0 #0a2c02;
+.footer > div > button:hover {
+  background-color: lightgray;
 }
-#footer p {
+.footer p {
   font-family: 'Noto Sans', 'Open Sans', sans-serif;
   font-size: 14px;
   font-weight: normal;
