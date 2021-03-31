@@ -37,6 +37,9 @@ body {
 button:focus {
   outline: none;
 }
+button:active {
+  transform: translateY(1px);
+}
 #hwrap {
   margin: 0 auto;
   background-color: #f7f8ee;
@@ -2125,16 +2128,9 @@ td.pslr .mark32b8r {
 	background: #efefef;
 	border: 1px solid #969696;
 	cursor: default;
-  background-position: center;
-  transition: background 0.6s;
 }
 .ripple:hover {
-  background: lightgray radial-gradient(circle, transparent 1%, lightgray 1%) center/15000%;
-}
-.ripple:active {
-  background-color: #efefef;
-  background-size: 100%;
-  transition: background 0s;
+  background: lightgray;
 }
 /* Redo Exercise Button */
 .modalbutton {
