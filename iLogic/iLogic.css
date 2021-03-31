@@ -34,12 +34,9 @@ body {
   padding: 0;
   background-color: transparent;
 }
-/*button:focus {
+button:focus {
   outline: none;
 }
-button:active {
-  transform: translateY(2px);
-}*/
 #hwrap {
   margin: 0 auto;
   background-color: #f7f8ee;
@@ -1264,22 +1261,6 @@ input.ca33 {
 	border: 1px solid #969696;
 	cursor: default;
 }
-button.ca34 {
-  font-family: 'Noto Sans', 'DejaVu Sans', sans-serif;
-  font-size: 16px;
-  font-style: normal;
-  vertical-align: middle;
-  width: 136px;
-  height: 28px;
-  margin: 24px 2px 1px 72px;
-	border-radius: 3px;
-	background: #EFEFEF;
-	border: 1px solid #969696;
-	cursor: default;
-}
-button.ca34:hover {
-  background-color: lightgray;
-}
 /* Seciton 3.2 */
 #main table.ex32 {
   border: 0px solid #DEDEDE;
@@ -2133,19 +2114,27 @@ td.pslr .mark32b8r {
 }
 
 /* Check Answers Button */
-.exbutton {
-  font-family: 'Noto Sans', sans-serif;
+.ripple {
+  font-family: 'Noto Sans', 'DejaVu Sans', sans-serif;
   font-size: 16px;
+  font-style: normal;
   vertical-align: middle;
-  border-radius: 3px;
-	border: 1px solid #969696;
-  margin: 12px 0 0 72px;
   width: 136px;
   height: 28px;
-  cursor: default;
+	border-radius: 3px;
+	background: #efefef;
+	border: 1px solid #969696;
+	cursor: default;
+  background-position: center;
+  transition: background 0.8s;
 }
-.exbutton:hover {
-  background-color: lightgray;
+.ripple:hover {
+  background: lightgray radial-gradient(circle, transparent 1%, lightgray 1%) center/15000%;
+}
+.ripple:active {
+  background-color: #efefef;
+  background-size: 100%;
+  transition: background 0s;
 }
 /* Redo Exercise Button */
 .modalbutton {
