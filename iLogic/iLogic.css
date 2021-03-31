@@ -34,12 +34,12 @@ body {
   padding: 0;
   background-color: transparent;
 }
-button:focus {
+/*button:focus {
   outline: none;
 }
 button:active {
   transform: translateY(2px);
-}
+}*/
 #hwrap {
   margin: 0 auto;
   background-color: #f7f8ee;
