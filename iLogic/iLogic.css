@@ -2126,7 +2126,7 @@ td.pslr .mark32b8r {
 	border: 1px solid #969696;
 	cursor: default;
   background-position: center;
-  transition: background 0.8s;
+  transition: background 0.6s;
 }
 .ripple:hover {
   background: lightgray radial-gradient(circle, transparent 1%, lightgray 1%) center/15000%;
