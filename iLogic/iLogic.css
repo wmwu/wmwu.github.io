@@ -2117,7 +2117,7 @@ td.pslr .mark32b8r {
 }
 
 /* Check Answers Button */
-.ripple {
+.ChkAns {
   font-family: 'Noto Sans', 'DejaVu Sans', sans-serif;
   font-size: 16px;
   font-style: normal;
@@ -2129,7 +2129,7 @@ td.pslr .mark32b8r {
 	border: 1px solid #969696;
 	cursor: default;
 }
-.ripple:hover {
+.ChkAns:hover {
   background: lightgray;
 }
 /* Redo Exercise Button */
