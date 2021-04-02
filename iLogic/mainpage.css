@@ -64,7 +64,7 @@ body {
   font-size: 24px;
   letter-spacing: 6px;
   font-weight: lighter;
-  color: #333333;
+  color: #0a2c02;
   margin: 0 auto;
   padding: 30px 0 10px 16px;
 }
@@ -74,7 +74,7 @@ body {
   font-family: 'Noto Serif', serif;
   font-size: 18px;
   font-weight: bold;
-  color: #333333;
+  color: #0a2c02;
   margin: 0 auto;
   padding: 30px 0 10px 20px;
 }
@@ -112,7 +112,7 @@ body {
   float: left;
 }
 #main {
-  background-color: #FFFFFF;
+  background-color: #fefefe;
   overflow: hidden;
 }
 #main h1 {
@@ -133,7 +133,7 @@ body {
   font-variant: normal;
   font-size: 20px;
   letter-spacing: normal;
-  color: #333333;
+  color: #0a2c02;
   font-style: normal;
   font-weight: bold;
   line-height: 100%;
@@ -149,7 +149,7 @@ body {
   line-height: 100%;
   font-size-adjust: none;
   font-stretch: normal;
-  color: #333333;
+  color: #0a2c02;
 }
 #main h4 {
   padding: 24px 24px 0 24px;
@@ -161,19 +161,18 @@ body {
   line-height: 100%;
   font-size-adjust: none;
   font-stretch: normal;
-  color: #333333;
+  color: #0a2c02;
 }
-#main p {
+#main p, div {
   font-family: 'Noto Serif', Georgia, serif;
   font-size: 16px;
-  color: #333333;
+  color: #0a2c02;
   line-height: 28px;
-  padding: 0 24px 0 0;
 }
 #main li {
   font-family: 'Noto Sans', sans-serif;
   font-size: 16px;
-  color: #333333;
+  color: #0a2c02;
   line-height: 30px;
   letter-spacing: 1px;
   padding: 0 24px 0 0;
@@ -208,8 +207,34 @@ body {
   line-height: 28px;
   letter-spacing: 0px;
 }
+.flexbox {
+  position: relative;
+  float: right;
+  margin: 12px 0 12px 0;
+  display: flex;
+  width: 300px;
+  border: 0px solid lightsalmon;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+}
+.item1 {
+  width: 60%;
+  padding: 6px 6px;
+}
+.item1:hover + .item2 {
+  display: block;
+}
+.item2 {
+  width: 60%;
+  margin: 6px 0;
+  padding: 6px 6px;
+  border-top: 2px solid #c7cea2;
+  border-bottom: 2px solid #c7cea2;
+  font-size: smaller;
+  display: none;
+}
 #sidebar {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   width: 0px;
 }
 #sidebar a {
@@ -255,4 +280,143 @@ body {
   font: normal 40pt/0.8em 'Noto Serif', Georgia, serif;
   color: #999999;
   margin-right: 3px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  -webkit-animation-name: fadeIn; /* Fade in the background */
+  -webkit-animation-duration: 0.4s;
+  animation-name: fadeIn;
+  animation-duration: 0.4s
+}
+
+/* Modal Content */
+.modal-content {
+  position: fixed;
+  bottom: 12px;
+  right: 12px;
+  background-color: #fefefe;
+  width: 350px;
+  height: 136px;
+  border: 2px solid #f7f8ee;
+  border-radius: 6px;
+  -webkit-animation-name: slideIn;
+  -webkit-animation-duration: 1s;
+  animation-name: slideIn;
+  animation-duration: 1s;
+}
+
+/* Modal Button */
+button:focus {
+  outline: none;
+}
+.modalbtn {
+  font-family: 'Noto Sans', 'DejaVu Sans', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  vertical-align: baseline;
+  width: 28px;
+  height: 28px;
+  color: #c7caae;
+	background: transparent;
+	border: 0px solid #969696;
+  border-radius: 3px;
+	cursor: pointer;
+}
+.modalbtn:hover {
+  color: #8c8f77;
+  background: transparent;
+}
+/* Content Button */
+.contentbtn {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 16px;
+  border-radius: 3px;
+	border: 1px solid #969696;
+  width: 136px;
+  height: 28px;
+  cursor: default;
+}
+.contentbtn:hover {
+  background-color: lightgray;
+}
+
+/* The Close Button */
+.close {
+  color: #0a2c02;
+  float: right;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 24px;
+}
+
+.close:hover,
+.close:focus {
+  color: #0a2c02;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  height: 25px;
+  padding: 2px 16px;
+  background-color: #f7f8ee;
+}
+
+.modal-body {
+  padding: 2px 16px;
+  margin-bottom: 12px;
+  line-height: 24px;
+  font-size: 14px;
+}
+.modal-body a {
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #0862a7;
+  /* Distance from text */
+  padding-bottom: 2px;
+  text-decoration: none;
+  box-shadow: none;
+  transition: box-shadow .33s ease-out;
+}
+.modal-body a:hover {
+  box-shadow: 0 1px 0 0 #0862a7;
+}
+
+.modal-footer {
+  height: 25px;
+  padding: 2px 16px;
+  background-color: #f7f8ee;
+  font-size: 14px;
+}
+
+/* Add Animation */
+@-webkit-keyframes slideIn {
+  from {bottom: -300px; opacity: 0} 
+  to {bottom: 12px; opacity: 1}
+}
+
+@keyframes slideIn {
+  from {bottom: -300px; opacity: 0}
+  to {bottom: 12px; opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+  from {opacity: 0} 
+  to {opacity: 1}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0} 
+  to {opacity: 1}
 }
