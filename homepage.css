@@ -130,6 +130,8 @@ body {
 #footer a:hover {
   box-shadow: 0 1px 0 0 #0a2c02;
 }
+
+/* Animated links */
 #footer p.link a {
   height: 24px;
   position: relative;
