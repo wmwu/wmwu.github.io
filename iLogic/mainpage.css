@@ -82,34 +82,29 @@ body {
   overflow: hidden;
   background-color: #E6E6E6;
   height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
 }
-#nav a {
+#nav button {
   font-family: 'Noto Sans', sans-serif;
   font-size: 16px;
   color: #0a2c02;
+  background-color: transparent;
   /* Distance from text */
-  padding-bottom: 2px;
   text-decoration: none;
   box-shadow: none;
-  transition: box-shadow .5s ease-out;
-  line-height: 48px;
+  transition: box-shadow .6s ease-out;
+  height: 28px;
   letter-spacing: 2px;
   text-align: left;
   margin-left: 20px;
-}
-#nav a:hover {
-  color: #0a2c02;
-  box-shadow: 0 1px 0 0 #0a2c02;
-}
-#nav ul {
-  list-style: none;
-  margin: 0;
   padding: 0;
-  overflow: hidden;
+  border: none;
 }
-#nav li {
-  display: block;
-  float: left;
+#nav button:hover {
+  box-shadow: 0 1px 0 0 #0a2c02;
+  cursor: pointer;
 }
 #main {
   background-color: #fefefe;
