@@ -137,6 +137,7 @@ button:active {
   margin-left: 20px;
   padding: 0;
   border: none;
+  transform: translateY(0px);
 }
 #nav button:hover {
   box-shadow: 0 1px 0 0 #0a2c02;
@@ -611,14 +612,21 @@ button:active {
   font-family: 'Noto Sans', sans-serif;
   font-size: 14px;
   color: #0a2c02;
-  height: 24px;
-  width: 120px;
-  border: 0px solid #969696;
-  background-color: #f7f8ee;
-  border-radius: 3px;
+  background-color: transparent;
+  /* Distance from text */
+  text-decoration: none;
+  box-shadow: none;
+  transition: box-shadow .6s ease-out;
+  height: 28px;
+  letter-spacing: 2px;
+  text-align: left;
+  padding: 0;
+  border: none;
+  transform: translateY(0px);
 }
 .footer > div > button:hover {
-  background-color: lightgray;
+  box-shadow: 0 1px 0 0 #0a2c02;
+  cursor: pointer;
 }
 .footer p {
   font-family: 'Noto Sans', 'Open Sans', sans-serif;
