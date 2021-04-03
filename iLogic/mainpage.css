@@ -302,9 +302,10 @@ body {
 
 /* Modal Content */
 .modal-content {
-  position: absolute;
-  bottom: 3%;
-  right: 3%;
+  position: fixed;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%, -5%);
   background-color: #fefefe;
   width: 350px;
   height: 136px;
