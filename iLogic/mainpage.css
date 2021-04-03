@@ -303,12 +303,12 @@ body {
 /* Modal Content */
 .modal-content {
   position: fixed;
-  bottom: 5%;
+  bottom: 6%;
   left: 50%;
   transform: translate(-50%, -5%);
   background-color: #fefefe;
-  width: 350px;
-  height: 136px;
+  width: 380px;
+  height: 138px;
   border: 2px solid #f7f8ee;
   border-radius: 6px;
   -webkit-animation-name: fadeIn;
@@ -344,7 +344,7 @@ button:focus {
   font-size: 16px;
   border-radius: 3px;
 	border: 1px solid #969696;
-  width: 136px;
+  width: 120px;
   height: 28px;
   cursor: default;
 }
@@ -374,15 +374,15 @@ button:focus {
   background-color: #f7f8ee;
 }
 
-.modal-body {
-  padding: 2px 16px;
-  margin-bottom: 12px;
-  line-height: 24px;
-  font-size: 14px;
+.modal-body p {
+font-size: 14px;
+line-height: 24px;
+text-align: center;
 }
 .modal-body a {
   font-size: 14px;
   letter-spacing: 1px;
+  line-height: 24px;
   color: #0862a7;
   /* Distance from text */
   padding-bottom: 2px;
