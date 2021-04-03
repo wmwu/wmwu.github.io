@@ -302,17 +302,17 @@ body {
 
 /* Modal Content */
 .modal-content {
-  position: fixed;
-  bottom: 12px;
-  right: 12px;
+  position: absolute;
+  bottom: 3%;
+  right: 3%;
   background-color: #fefefe;
   width: 350px;
   height: 136px;
   border: 2px solid #f7f8ee;
   border-radius: 6px;
-  -webkit-animation-name: slideIn;
+  -webkit-animation-name: fadeIn;
   -webkit-animation-duration: 1s;
-  animation-name: slideIn;
+  animation-name: fadeIn;
   animation-duration: 1s;
 }
 
