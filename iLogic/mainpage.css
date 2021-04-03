@@ -308,7 +308,7 @@ body {
   transform: translate(-50%, -5%);
   background-color: #fefefe;
   width: 380px;
-  height: 138px;
+  height: 140px;
   border: 2px solid #f7f8ee;
   border-radius: 6px;
   -webkit-animation-name: fadeIn;
@@ -374,7 +374,7 @@ button:focus {
   background-color: #f7f8ee;
 }
 
-.modal-body p {
+.modal-body p, div {
 font-size: 14px;
 line-height: 24px;
 text-align: center;
