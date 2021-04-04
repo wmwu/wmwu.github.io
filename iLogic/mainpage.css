@@ -290,6 +290,7 @@ body {
   visibility: hidden;
   position: absolute;
   left: -36px;
+  top: 20px;
   transform: translate(0, 10px);
   background-color: #f7f8ee;
   padding: 6px 12px;
