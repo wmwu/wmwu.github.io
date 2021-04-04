@@ -281,7 +281,7 @@ body {
 
 #main .popoverWrapper {
   position: relative;
-  margin: 24px 36px 0 0;
+  margin: 24px 24px 0 0;
   display: inline-block;
   font-size: 16px;
 }
@@ -289,7 +289,7 @@ body {
   opacity: 0;
   visibility: hidden;
   position: absolute;
-  left: -72px;
+  left: -36px;
   transform: translate(0, 10px);
   background-color: #f7f8ee;
   padding: 6px 12px;
