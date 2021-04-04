@@ -302,7 +302,7 @@ body {
   position: absolute;
   z-index: -1;
   content: "";
-  right: calc(20% - 10px);
+  right: calc(20% - 11px);
   top: -8px;
   border-style: solid;
   border-width: 0 10px 10px 10px;
