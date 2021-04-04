@@ -73,39 +73,6 @@
 </div>
 </div>
 
-  <!-- The Popover-->
-  <div id="writtenworks" class="popover">
-
-  </div>
-
-  <script type="text/javascript">
-    // Get the popover
-    var popover = document.getElementById("writtenworks");
-
-    // Get the button that opens the popover
-    var btn = document.getElementById("showworks");
-
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
-
-    // When the user clicks the button, open the modal 
-    btn.hover = function() {
-      popover.style.display = "block";
-    }
-
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function() {
-      popover.style.display = "none";
-    }
-
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function(event) {
-      if (event.target == popover) {
-        popover.style.display = "none";
-      }
-    }
-    </script>
-
 <div id="fwrap">
   <div id="fwrap2">
     <div id="footer">
