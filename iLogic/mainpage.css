@@ -229,7 +229,7 @@ body {
   display: none;
 }
 #sidebar {
-  background-color: #ffffff;
+  background-color: #fefefe;
   width: 0px;
 }
 #sidebar a {
@@ -250,7 +250,7 @@ body {
   text-align: center;
 }
 #footer {
-  background-color: #F7F8EE;
+  background-color: #f7f8ee;
 }
 #footer a {
   font-family: 'Noto Sans', 'Open Sans', sans-serif;
@@ -275,6 +275,79 @@ body {
   font: normal 40pt/0.8em 'Noto Serif', Georgia, serif;
   color: #999999;
   margin-right: 3px;
+}
+
+/* Popover styling */
+
+#main .popoverWrapper {
+  position: relative;
+  margin: 24px 36px 0 0;
+  display: inline-block;
+  font-size: 16px;
+}
+#main .popoverContent {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  left: -72px;
+  transform: translate(0, 10px);
+  background-color: #f7f8ee;
+  padding: 6px 12px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  width: 220px;
+  border: 1px solid #f7f8ee;
+  border-radius: 6px;
+}
+#main .popoverContent:before {
+  position: absolute;
+  z-index: -1;
+  content: "";
+  right: calc(20% - 10px);
+  top: -8px;
+  border-style: solid;
+  border-width: 0 10px 10px 10px;
+  border-color: transparent transparent #f7f8ee transparent;
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+#main .popoverWrapper:hover .popoverContent {
+  z-index: 10;
+  opacity: 1;
+  visibility: visible;
+/*  transform: translate(84px, 3px); */
+  transition: all 0.5s cubic-bezier(0.75, -0.02, 0.2, 0.97);
+}
+#main .popoverHeader {
+  height: 24px;
+  padding: 2px 16px;
+  background-color: #f7f8ee;
+}
+#main .popoverBody p {
+font-size: 14px;
+line-height: 24px;
+margin: 6px 0px;
+text-align: left;
+}
+#main .popoverBody a {
+  font-family: 'Noto Serif', Georgia, serif;
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 24px;
+  color: #0862a7;
+  /* Distance from text */
+  padding-bottom: 2px;
+  text-decoration: none;
+  box-shadow: none;
+  transition: box-shadow .33s ease-out;
+}
+#main .popoverBody a:hover {
+  box-shadow: 0 1px 0 0 #0862a7;
+}
+#main .popoverFooter {
+  height: 25px;
+  padding: 2px 16px;
+  background-color: #f7f8ee;
+  font-size: 14px;
 }
 
 /* The Modal (background) */
