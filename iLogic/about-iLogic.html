@@ -55,8 +55,15 @@
         webpages should now look the same on phones, tablets and computers.</li>
       </ul>
   </ul>
-    <!-- Trigger/Open The Modal -->
-    <div style="margin: 24px 12px 0 0; float: right;">Wu Weiming <button id="showworks" class="modalbtn">🛈</button></div>
+  <div class="popoverWrapper" style="padding: 0 24px 24px 0; float: right;">Wu Weiming <span style="margin-left: 12px; color: #ebeed5;">🛈</span>
+      <div class="popoverContent">
+        <div class="popoverBody">
+          <p>Other works by Wu Weiming can be accessed from <div><a
+          href="../index.html" target="_blank">Sitting under a bodhi tree
+          ...</a></div></p>
+        </div>
+      </div>  
+  </div>
   
   <p style="margin: 120px 0 24px 24px;" xmlns:cc="http://creativecommons.org/ns#" >This work is licensed under <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-ND 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1"></a></p>
 </div>
@@ -66,54 +73,38 @@
 </div>
 </div>
 
-  <!-- The Modal -->
-      <div id="writtenworks" class="modal">
-  
-        <!-- Modal content -->
-        <div class="modal-content">
-          <div class="modal-header">
-            <span class="close">&times;</span>
-            <p>&nbsp;</p>
-          </div>
-          <div class="modal-body">
-            <p style="margin-bottom: 6px; text-align: center;">Other works by Wu
-            Weiming can be accessed from <div style="text-align: center;"><a
-            href="../index.html" target="_blank">Sitting under a bodhi tree
-            ...</a></div></p>
-            </div>
-          <div class="modal-footer">
-            <p>&nbsp;</p>
-          </div>
-        </div>
-      </div>
-  
-      <script type="text/javascript">
-      // Get the modal
-      var modal = document.getElementById("writtenworks");
-  
-      // Get the button that opens the modal
-      var btn = document.getElementById("showworks");
-  
-      // Get the <span> element that closes the modal
-      var span = document.getElementsByClassName("close")[0];
-  
-      // When the user clicks the button, open the modal 
-      btn.onclick = function() {
-        modal.style.display = "block";
+  <!-- The Popover-->
+  <div id="writtenworks" class="popover">
+
+  </div>
+
+  <script type="text/javascript">
+    // Get the popover
+    var popover = document.getElementById("writtenworks");
+
+    // Get the button that opens the popover
+    var btn = document.getElementById("showworks");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks the button, open the modal 
+    btn.hover = function() {
+      popover.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+      popover.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == popover) {
+        popover.style.display = "none";
       }
-  
-      // When the user clicks on <span> (x), close the modal
-      span.onclick = function() {
-        modal.style.display = "none";
-      }
-  
-      // When the user clicks anywhere outside of the modal, close it
-      window.onclick = function(event) {
-        if (event.target == modal) {
-          modal.style.display = "none";
-        }
-      }
-      </script>
+    }
+    </script>
 
 <div id="fwrap">
   <div id="fwrap2">
