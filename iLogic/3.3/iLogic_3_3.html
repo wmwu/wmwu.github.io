@@ -768,6 +768,7 @@ onclick="window.open('iLogic_3_3.pdf');return false;">PDF</a></span>
     </tbody>
   </table>
 
+<div class="second-half">
 <h3 id="Recognizing_Common_Forms">3.3.3 Recognizing Common Forms</h3>
 
 <p>In learning the basic argument forms, we use &ldquo;<em>p</em>&rdquo;, &ldquo;<em>q</em>&rdquo;, &ldquo;<em>r</em>&rdquo; and &ldquo;<em>s</em>&rdquo; as variables. They serve as place holders in argument forms. If we replace each variable in a basic form with a capital letter, we would of course end up with an instance of the form. But we can also replace a variable with a compound sentence. The resulting argument would also be an instance of the form. Such substitutions give us more flexibility in constructing instances of the basic forms. For instance, if we take the form <em>modus ponens</em> and replace <em>p</em> with <span class="var">H</span> and <em>q</em> with <span class="var">R </span><span class="symb">&or;</span><span class="var"> B</span>, the resulting argument</p>
@@ -3834,34 +3835,43 @@ dilemma. It is easier to see the logical structure from the symbolization.</p>
 
     <div id="sidebar">
     </div>
-    <button id="scrollToTopBtn" class="scrollToTopBtn">🡱</button>
+    <button class="scrollToTopBtn">🡱</button>
     <script>
+      // We select the element we want to target
+      var target = document.querySelector(".second-half");
+
       var scrollToTopBtn = document.querySelector(".scrollToTopBtn")
       var rootElement = document.documentElement
-  
-      function handleScroll() {
-        // Do something on scroll
-        var scrollTotal = rootElement.scrollHeight - rootElement.clientHeight
-        if ((rootElement.scrollTop / scrollTotal ) > 0.35) {
-          // Show button
-          scrollToTopBtn.classList.add("showBtn")
-        } else {
-          // Hide button
-          scrollToTopBtn.classList.remove("showBtn")
-        }
+
+      // Next we want to create a function that will be called when that element is intersected
+      function callback(entries, observer) {
+        // The callback will return an array of entries, even if you are only observing a single item
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            // Show button
+            scrollToTopBtn.classList.add("showBtn")
+          } else {
+            // Hide button
+            scrollToTopBtn.classList.remove("showBtn")
+          }
+        });
       }
-  
+
       function scrollToTop() {
-        // Scroll to top logic
         rootElement.scrollTo({
           top: 0,
           behavior: "smooth"
         })
       }
-      scrollToTopBtn.addEventListener("click", scrollToTop)
-      document.addEventListener("scroll", handleScroll)
+      scrollToTopBtn.addEventListener("click", scrollToTop);
+          
+      // Next we instantiate the observer with the function we created above. This takes an optional configuration
+      // object that we will use in the other examples.
+      let observer = new IntersectionObserver(callback);
+      // Finally start observing the target element
+      observer.observe(target);
     </script>
-
+    </div>
   </div>
 </div>
 
