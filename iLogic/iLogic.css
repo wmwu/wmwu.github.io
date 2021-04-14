@@ -29,6 +29,9 @@
 font-family: 'Cambria Math Regular';
 src: url('Cambria Math.ttf') format("truetype");
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   margin: 0;
   padding: 0;
@@ -2199,4 +2202,33 @@ td.pslr .mark32b8r {
 @keyframes fadeIn {
   from {opacity: 0} 
   to {opacity: 1}
+}
+
+.scrollToTopBtn {
+  background-color: #e6e6e6;
+  border: none;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 45px;
+  width: 48px;
+  /* place it at the bottom-right corner */
+  position: fixed;
+  bottom: 60px;
+  right: 30px;
+  /* keep it at the top of everything else */
+  z-index: 100;
+  /* hide with opacity */
+  opacity: 0;
+  /* also add a translate effect */
+  transform: translateY(100px);
+  /* and a transition */
+  transition: all .5s ease
+}
+
+.showBtn {
+  opacity: 1;
+  transform: translateY(0)
 }
