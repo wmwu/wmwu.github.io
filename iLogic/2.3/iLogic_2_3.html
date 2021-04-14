@@ -159,7 +159,7 @@
     <p>is not logically equivalent to</p>
 
     <p class="display"> Some whales are not mammals.</p>
-
+  <div class="second-half">
     <h3 id="Contraposition">2.3.2 Contraposition</h3>
 
     <p>The operation contraposition has two steps:</p>
@@ -671,34 +671,43 @@
 
     <div id="sidebar">
     </div>
-    <button id="scrollToTopBtn" class="scrollToTopBtn">🡱</button>
+    <button class="scrollToTopBtn">🡱</button>
     <script>
+      // We select the element we want to target
+      var target = document.querySelector(".second-half");
+
       var scrollToTopBtn = document.querySelector(".scrollToTopBtn")
       var rootElement = document.documentElement
-  
-      function handleScroll() {
-        // Do something on scroll
-        var scrollTotal = rootElement.scrollHeight - rootElement.clientHeight
-        if ((rootElement.scrollTop / scrollTotal ) > 0.35) {
-          // Show button
-          scrollToTopBtn.classList.add("showBtn")
-        } else {
-          // Hide button
-          scrollToTopBtn.classList.remove("showBtn")
-        }
+
+      // Next we want to create a function that will be called when that element is intersected
+      function callback(entries, observer) {
+        // The callback will return an array of entries, even if you are only observing a single item
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            // Show button
+            scrollToTopBtn.classList.add("showBtn")
+          } else {
+            // Hide button
+            scrollToTopBtn.classList.remove("showBtn")
+          }
+        });
       }
-  
+
       function scrollToTop() {
-        // Scroll to top logic
         rootElement.scrollTo({
           top: 0,
           behavior: "smooth"
         })
       }
-      scrollToTopBtn.addEventListener("click", scrollToTop)
-      document.addEventListener("scroll", handleScroll)
+      scrollToTopBtn.addEventListener("click", scrollToTop);
+          
+      // Next we instantiate the observer with the function we created above. This takes an optional configuration
+      // object that we will use in the other examples.
+      let observer = new IntersectionObserver(callback);
+      // Finally start observing the target element
+      observer.observe(target);
     </script>
-
+    </div>
   </div>
 </div>
 
