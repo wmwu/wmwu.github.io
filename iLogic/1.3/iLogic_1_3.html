@@ -612,10 +612,13 @@ the wide scope of evidence that confirms and supports it.<sup id="fnref:2"><a hr
 <form name="exercise" action="">
   <script type="text/javascript">
   var elmnt = document.getElementById("Ex13");
+  function gotoEx(){
+  elmnt.scrollIntoView();
+  }
   if (NQ !== null) {
     write_random_questions();
     sessionStorage.clear();
-    setTimeout(elmnt.scrollIntoView(), 3000);
+    setTimeout(gotoEx, 1000);
   }
   else {
     write_questions();
