@@ -344,10 +344,13 @@
       <form name="exercise" action="">
       <script type="text/javascript">
       var elmnt = document.getElementById("Ex11");
-      if (NQ !== null) {
+      function gotoEx(){
+      elmnt.scrollIntoView();
+      }
+if (NQ !== null) {
         write_random_questions();
         sessionStorage.clear();
-        setTimeout(elmnt.scrollIntoView(), 3000);
+        setTimeout(gotoEx, 1000);
       }
       else {
         write_questions();
