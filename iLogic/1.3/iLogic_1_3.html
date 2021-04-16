@@ -611,9 +611,11 @@ the wide scope of evidence that confirms and supports it.<sup id="fnref:2"><a hr
 
 <form name="exercise" action="">
   <script type="text/javascript">
+  var elmnt = document.getElementById("Ex13");
   if (NQ !== null) {
     write_random_questions();
     sessionStorage.clear();
+    setTimeout(elmnt.scrollIntoView(), 20000);
   }
   else {
     write_questions();
@@ -644,7 +646,6 @@ the wide scope of evidence that confirms and supports it.<sup id="fnref:2"><a hr
               btnNQ.onclick = function() {
                 sessionStorage.setItem('btnNQ', 'clicked');
                 scrollToTopBtn.style.display = "none";
-                  location.replace("iLogic_1_3.html#Ex13");
                 location.reload();
               }
             </script>
