@@ -29,9 +29,9 @@
 font-family: 'Cambria Math Regular';
 src: url('Cambria Math.ttf') format("truetype");
 }
-html {
+/*html {
   scroll-behavior: smooth;
-}
+}*/
 body {
   margin: 0;
   padding: 0;
@@ -2212,8 +2212,8 @@ td.pslr .mark32b8r {
   cursor: pointer;
   font-size: 28px;
   font-weight: 700;
-  line-height: 45px;
   width: 48px;
+  height: 48px;
   /* place it at the bottom-right corner */
   position: fixed;
   bottom: 60px;
