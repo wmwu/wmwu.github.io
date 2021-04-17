@@ -2,9 +2,10 @@ body {
   margin: 60px;
   padding: 0;
   background-color: #F7F8EE;
+  min-width: 800px;
 }
 #header {
-  width: 960px;
+  width: 100%;
   background-color: transparent;
 }
 #header h1 {
@@ -55,7 +56,7 @@ body {
 }
 #main {
   overflow: hidden;
-  width: 900px;
+  width: 100%;
   background-color: transparent;
 }
 #main h2 {
@@ -103,7 +104,7 @@ body {
   margin: 18px auto;
 }
 #footer {
-  width: 900px;
+  width: 100%;
   margin-top: 12px;
   padding-top: 36px;
 }
