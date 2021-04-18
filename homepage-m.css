@@ -1,0 +1,120 @@
+body {
+  margin: 60px;
+  padding: 0;
+  background-color: #F7F8EE;
+  min-width: 480px;
+  max-width: 960px;
+}
+img {
+  position: absolute;
+  left: 24px;
+  top: 0px;
+  opacity: .5;
+  z-index: -1;
+}
+#header {
+  width: 100%;
+  background-color: transparent;
+}
+#header h1 {
+  overflow: hidden;
+  line-height: 36px;
+  font-family: 'Crimson Pro', serif;
+  font-size: 36px;
+  letter-spacing: 6px;
+  font-weight: 300;
+  color: #0a2c02;
+  margin: 24px 0 12px 12px;
+  padding: 36px 0 24px 24px;
+}
+#header h1::first-letter {
+  font-size: 400%;
+  font-weight: 300;
+}
+#main {
+  overflow: hidden;
+  max-width: 900px;
+  background-color: transparent;
+}
+#main h2 {
+  margin: 42px 0 24px 60px;
+  text-align: left;
+  color: #0a2c02;
+  line-height: 100%;
+  font-family: 'Crimson Pro', serif;
+  font-size: 22px;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+#main p {
+  padding: 0 12px 0 36px;
+  margin: 12px 12px 12px 12px;
+  font-family: 'Crimson Pro', serif;
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 0;
+  line-height: 180%;
+  color: #0a2c02;
+}
+#main .tc {
+  font-family: 'Noto Serif TC', 'Crimson Pro', serif;
+  letter-spacing: 2px;
+}
+#footer {
+  width: 100%;
+  max-width: 900px;
+  margin-top: 12px;
+  padding-top: 36px;
+}
+#footer .container {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: flex-end;
+}
+#footer p {
+  overflow: hidden;
+  line-height: 24px;
+  font-family: 'Crimson Pro', serif;
+  font-size: 18px;
+  font-weight: 300;
+  color: #0a2c02;
+  margin: 0 12px 12px 160px;
+  padding: 0 12px 12px 36px;
+  float: right;
+}
+#footer a {
+  color: #0a2c02;
+  /* Distance from text */
+  padding-bottom: 2px;
+  text-decoration: none;
+  box-shadow: none;
+  transition: box-shadow .33s ease-out;
+  letter-spacing: 2px;
+}
+#footer a:hover {
+  box-shadow: 0 1px 0 0 #0a2c02;
+}
+
+/* Animated links */
+#footer p.link a {
+  height: 24px;
+  position: relative;
+  line-height: 1;
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-decoration: none;
+  color: #0a2c02;
+}
+.link a::after {
+  display: block;
+  width: 0;
+  height: 1px;
+  background-color: #0a2c02;
+  content: '';
+}
+.link a:hover::after {
+  width: 100%;
+  height: 1px;
+  transition: width .5s ease;
+}
