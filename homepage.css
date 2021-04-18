@@ -2,7 +2,8 @@ body {
   margin: 60px;
   padding: 0;
   background-color: #F7F8EE;
-  min-width: 800px;
+  min-width: 900px;
+  max-width: 960px;
 }
 #header {
   width: 100%;
@@ -56,7 +57,7 @@ body {
 }
 #main {
   overflow: hidden;
-  width: 100%;
+  max-width: 900px;
   background-color: transparent;
 }
 #main h2 {
@@ -105,6 +106,7 @@ body {
 }
 #footer {
   width: 100%;
+  max-width: 900px;
   margin-top: 12px;
   padding-top: 36px;
 }
