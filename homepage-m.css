@@ -7,7 +7,7 @@ body {
 }
 img {
   position: absolute;
-  left: 12px;
+  left: 0px;
   top: 0px;
   opacity: .5;
   z-index: -1;
