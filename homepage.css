@@ -80,7 +80,7 @@ body {
   line-height: 180%;
   color: #0a2c02;
 }
-#main p.tc {
+#main .tc {
   font-family: 'Noto Serif TC', 'Crimson Pro', serif;
   letter-spacing: 2px;
 }
