@@ -33,9 +33,7 @@ header p {
 }
 #main {
   overflow: hidden;
-  width: 65%;
-  min-width: 500px;
-  max-width: 800px;
+  width: 750px;
   background-color: transparent;
 }
 #main h2 {
@@ -93,15 +91,22 @@ a:hover {
 #sidebar {
 /*  position: -webkit-sticky;
   position: sticky; */
-  top: 360px;
-  right: 36px;
-  width: 25%;
-  min-width: 200px;
-  max-width: 300px;
-  float: right;
-  background-color: transparent;
+  width: 100%;
+  height: 240px;
+  border-radius: 10px;
+  background-color: #e2e2e2;
+  box-shadow: 0 -2px 6px 0 lightgray;
+  position: fixed;
+  bottom: 0;
 }
-#sidebar p {
+#sidebar .flex-container {
+  display: flex;
+  flex-flow: column wrap;
+  width: 720px;
+  height: 240px;
+  padding: 12px;
+}
+#sidebar .flex-container p {
   overflow: hidden;
   line-height: 28px;
   font-family: 'Crimson Pro', serif;
@@ -111,9 +116,13 @@ a:hover {
   color: #0a2c02;
   margin: 0 12px 12px 12px;
   padding: 0 12px 0 12px;
+  width: 280px;
+}
+#sidebar p.previousarticle {
+  margin-bottom: 96px;
 }
 #sidebar p.sectionlink {
-  margin: 0 0 8px 30px;
+  margin: 0 0 6px 30px;
   line-height: 24px;
   font-size: 16px;
   letter-spacing: 0;
@@ -134,7 +143,7 @@ hr {
   margin: 24px 72px 0 72px;
 }
 .footnotes {
-  width: 65%;
+  width: 750px;
   min-width: 500px;
   max-width: 800px;
   margin: 0 0 36px 0;
@@ -164,14 +173,6 @@ hr {
 .yy {
   font-family: 'Symbola', 'Noto Sans', sans-serif;
 }
-#footer p {
-  overflow: hidden;
-  line-height: 24px;
-  font-family: 'Crimson Pro', serif;
-  font-size: 18px;
-  letter-spacing: 2px;
-  font-weight: 300;
-  color: #0a2c02;
-  margin: 12px 12px 12px 240px;
-  padding: 12px 12px 12px 36px;
+#footer {
+  margin-bottom: 280px;
 }
