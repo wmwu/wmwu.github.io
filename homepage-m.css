@@ -1,13 +1,13 @@
 body {
-  margin: 60px;
+  margin: 0;
   padding: 0;
   background-color: #F7F8EE;
-  min-width: 480px;
+  min-width: 450px;
   max-width: 960px;
 }
 img {
   position: absolute;
-  left: 24px;
+  left: 12px;
   top: 0px;
   opacity: .5;
   z-index: -1;
@@ -24,7 +24,7 @@ img {
   letter-spacing: 6px;
   font-weight: 300;
   color: #0a2c02;
-  margin: 24px 0 12px 12px;
+  margin: 60px 0 12px 24px;
   padding: 36px 0 24px 24px;
 }
 #header h1::first-letter {
@@ -48,7 +48,7 @@ img {
 }
 #main p {
   padding: 0 12px 0 36px;
-  margin: 12px 12px 12px 12px;
+  margin: 12px 24px 12px 12px;
   font-family: 'Crimson Pro', serif;
   font-size: 18px;
   font-weight: 300;
@@ -78,7 +78,7 @@ img {
   font-size: 18px;
   font-weight: 300;
   color: #0a2c02;
-  margin: 0 12px 12px 160px;
+  margin: 0 24px 12px 120px;
   padding: 0 12px 12px 36px;
   float: right;
 }
