@@ -3,8 +3,16 @@ body {
   padding: 0;
   background-color: #F7F8EE;
 }
+img {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  width: 700px;
+  height: 504px;
+  margin-left: 36px;
+}
 #header {
-  width: 800px;
+  width: 700px;
   background-color: transparent;
 }
 header h1 {
@@ -33,10 +41,9 @@ header p {
 }
 #main {
   overflow: hidden;
-  width: 65%;
-  min-width: 500px;
-  max-width: 800px;
+  width: 760px;
   background-color: transparent;
+  left: 24px;
 }
 #main h2 {
   margin: 24px 0 12px 60px;
@@ -90,18 +97,16 @@ a {
 a:hover {
    box-shadow: 0 1px 0 0 #0a2c02;
 }
-#sidebar {
+#nav {
   position: -webkit-sticky;
   position: sticky;
   top: 120px;
-  right: 36px;
-  width: 25%;
-  min-width: 200px;
-  max-width: 300px;
+  right: calc(24px + (100% - 1084px));
+  width: 300px;
   float: right;
   background-color: transparent;
 }
-#sidebar p {
+#nav p {
   overflow: hidden;
   line-height: 28px;
   font-family: 'Crimson Pro', serif;
@@ -112,44 +117,37 @@ a:hover {
   margin: 0 12px 12px 12px;
   padding: 0 12px 0 12px;
 }
-#sidebar p.currentarticle::before {
+#nav p.currentarticle::before {
   content: "*   *   *";
   display: block;
   padding: 36px 0 36px 0;
   text-align: center;
 }
-#sidebar p.sectionlink {
+#nav p.sectionlink {
   margin: 0 0 8px 30px;
   line-height: 24px;
   font-size: 16px;
   letter-spacing: 0;
   text-align: left;
 }
-#sidebar p.tc {
+#nav p.tc {
   font-family: 'Noto Serif TC', 'Crimson Pro', serif;
   letter-spacing: 2px;
   font-size: 16px;
-}
-img {
-  position: absolute;
-  top: 0;
-  z-index: -1;
 }
 hr {
   width: 35%;
   margin: 24px 72px 0 72px;
 }
-.footnotes {
-  width: 65%;
-  min-width: 500px;
-  max-width: 800px;
+#main .footnotes {
+  width: 700px;
   margin: 0 0 36px 0;
   padding: 12 0 12px 24px;
 }
-.footnotes ol li {
+#main .footnotes ol li {
   margin-left: 72px;
 }
-.footnotes p {
+#main .footnotes p {
   padding: 0 12px 0 12px;
   margin: 12px 12px 12px 0;
   font-family: 'Crimson Pro', Georgia, serif;
