@@ -97,7 +97,7 @@ a {
 a:hover {
    box-shadow: 0 1px 0 0 #0a2c02;
 }
-#nav {
+.nav {
   position: -webkit-sticky;
   position: sticky;
   top: 120px;
@@ -106,7 +106,7 @@ a:hover {
   float: right;
   background-color: transparent;
 }
-#nav p {
+.navmenu p {
   overflow: hidden;
   line-height: 28px;
   font-family: 'Crimson Pro', serif;
@@ -117,23 +117,29 @@ a:hover {
   margin: 0 12px 12px 12px;
   padding: 0 12px 0 12px;
 }
-#nav p.currentarticle::before {
+.navmenu p.currentarticle::before {
   content: "*   *   *";
   display: block;
   padding: 36px 0 36px 0;
   text-align: center;
 }
-#nav p.sectionlink {
+.navmenu p.sectionlink {
   margin: 0 0 8px 30px;
   line-height: 24px;
   font-size: 16px;
   letter-spacing: 0;
   text-align: left;
 }
-#nav p.tc {
+.navmenu p.tc {
   font-family: 'Noto Serif TC', 'Crimson Pro', serif;
   letter-spacing: 2px;
   font-size: 16px;
+}
+.navmenu .close {
+  display: none;
+}
+#navmenubtn {
+  display: none;
 }
 hr {
   width: 35%;
