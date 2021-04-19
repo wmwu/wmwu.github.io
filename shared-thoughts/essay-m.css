@@ -26,8 +26,8 @@ header h1 {
   letter-spacing: 4px;
   font-weight: 300;
   color: #0a2c02;
-  margin: 60px 12px 60px 28px;
-  padding: 36px 12px 36px 8px;
+  margin: 60px 12px 60px 12px;
+  padding: 36px 12px 36px 12px;
 }
 header h1::first-letter {
   font-size: 200%;
