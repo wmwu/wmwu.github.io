@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;300;400;500;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" media="screen and (min-width: 1080px)" href="essay.css" type="text/css" />
     <link rel="stylesheet" media="screen and (max-width: 1079px)" href="essay-m.css" type="text/css" />
   </head>
@@ -21,19 +22,71 @@
       <p class="date" style="padding: 0 0 0 36px;">January 18, 2021</p>
       <img src="zen-stone-on-the-sand.png">
     </header>
-    <div id="nav">
-      <div class="flex-container">
+    <button id="navmenubtn"><i class="fa fa-chevron-left"></i></button>
+    <div id="karmamenu" class="nav">
+      <div class="navmenu">
+      <div><span class="close">&times;</span></div>
       <p><a href="../index.html">Sitting under a bodhi tree ...</a></p>
       <p><a href="yinyang-and-dao.html"><em>Yinyang</em> and <em>Dao</em></a></p>
-      <p class="previousarticle"><a href="the-way-of-ren.html"><em>Rendao</em>: The Way of <em>Ren</em></a></p>
+      <p><a href="the-way-of-ren.html"><em>Rendao</em>: The Way of <em>Ren</em></a></p>
       <p class="currentarticle"><a href="karma.html">Karma: We Are What We Do</a></p>
-      <p class="sectionlink"><a href="karma.html#karma-rebirth-and-the-caste-system">Karma, Rebirth and the Caste System</a></p>
-      <p class="sectionlink"><a href="karma.html#atman-anatta-and-rebirth">Atman, Anatta and Rebirth</a></p>
-      <p class="sectionlink"><a href="karma.html#transcending-reward-and-punishment">Transcending Reward and Punishment</a></p>
-      <p class="sectionlink"><a href="karma.html#karma-and-fairness-in-life">Karma and Fairness in Life</a></p>
-      <p class="sectionlink"><a href="karma.html#the-spiritual-teaching-of-karma">The Spiritual Teaching of Karma</a></p>
-      </div>
+      <p class="sectionlink"><a href="#karma-rebirth-and-the-caste-system" onclick="nav.style.display = 'none';">Karma, Rebirth and the Caste System</a></p>
+      <p class="sectionlink"><a href="#atman-anatta-and-rebirth" onclick="nav.style.display = 'none';">Atman, Anatta and Rebirth</a></p>
+      <p class="sectionlink"><a href="#transcending-reward-and-punishment" onclick="nav.style.display = 'none';">Transcending Reward and Punishment</a></p>
+      <p class="sectionlink"><a href="#karma-and-fairness-in-life" onclick="nav.style.display = 'none';">Karma and Fairness in Life</a></p>
+      <p class="sectionlink"><a href="#the-spiritual-teaching-of-karma" onclick="nav.style.display = 'none';">The Spiritual Teaching of Karma</a></p>
     </div>
+    </div>
+    <script type="text/javascript">
+      // Get the nav menu
+      var nav = document.getElementById("karmamenu");
+
+      // Get the button that opens the nav menu
+      var btn = document.getElementById("navmenubtn");
+
+      // Get the <span> element that closes the nav menu
+      var span = document.getElementsByClassName("close")[0];
+
+      // When the user clicks the button, open the nav menu 
+      btn.onclick = function() {
+        nav.style.display = "block";
+        navmenubtn.style.display = "none";
+      }
+
+      // When the user clicks on <span> (x), close the nav menu
+      span.onclick = function() {
+        nav.style.display = "none";
+        navmenubtn.style.display = "block";
+      }
+
+      // When the user clicks anywhere outside of the nav menu, close it
+      window.onclick = function(event) {
+        if (event.target == nav) {
+          nav.style.display = "none";
+          navmenubtn.style.display = "block";
+        }
+      }
+      // Show the button when scroll down
+      window.onscroll = function() {scrollFunction()};
+
+      function scrollFunction() {
+      if (document.body.scrollTop > 510 || document.documentElement.scrollTop > 510) {
+        if (nav.style.display === "block") {
+          navmenubtn.style.display = "none";
+        }
+        else {
+          navmenubtn.style.display = "block";
+        }
+      } else {
+        navmenubtn.style.display = "none";
+      }
+      }
+      function closenav() {
+        alert(Ya);
+        nav.style.display = "none";
+      }
+    </script>
+
     <div id="main">
       <p style="margin: 24px 0 0 120px"><em>According as one acts,</em></p>
       <p style="margin: 0 0 0 120px"><em>according as one conducts himself,</em></p>
