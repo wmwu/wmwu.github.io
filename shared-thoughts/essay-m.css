@@ -1,10 +1,21 @@
 body {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   background-color: #F7F8EE;
+  min-width: 450px;
+  max-width: 960px;
+}
+img {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  width: 100%;
+  max-width: 700px;
+  margin-left: 12px;
 }
 #header {
-  width: 800px;
+  width: 100%;
   background-color: transparent;
 }
 header h1 {
@@ -33,7 +44,8 @@ header p {
 }
 #main {
   overflow: hidden;
-  width: 750px;
+  width: 100%;
+  max-width: 700px;
   background-color: transparent;
 }
 #main h2 {
@@ -88,71 +100,60 @@ a {
 a:hover {
    box-shadow: 0 1px 0 0 #0a2c02;
 }
-#sidebar {
-/*  position: -webkit-sticky;
-  position: sticky; */
+#nav {
   width: 100%;
-  height: 240px;
-  border-radius: 10px;
+  height: 100px;
   background-color: #e2e2e2;
   box-shadow: 0 -2px 6px 0 lightgray;
   position: fixed;
   bottom: 0;
+  overflow: hidden;
 }
-#sidebar .flex-container {
+#nav .flex-container {
   display: flex;
   flex-flow: column wrap;
-  width: 720px;
-  height: 240px;
-  padding: 12px;
+  align-content: space-around;
+  height: 100px;
+  max-width: 760px;
+  padding: 0;
 }
-#sidebar .flex-container p {
-  overflow: hidden;
+#nav .flex-container p {
   line-height: 28px;
   font-family: 'Crimson Pro', serif;
   font-size: 18px;
   letter-spacing: 1px;
   font-weight: 300;
   color: #0a2c02;
-  margin: 0 12px 12px 12px;
-  padding: 0 12px 0 12px;
-  width: 280px;
+  margin: 0 12px 6px 12px;
+  padding: 0;
+  width: 228px;
 }
-#sidebar p.previousarticle {
-  margin-bottom: 96px;
-}
-#sidebar p.sectionlink {
+#nav p.sectionlink {
   margin: 0 0 6px 30px;
   line-height: 24px;
   font-size: 16px;
   letter-spacing: 0;
   text-align: left;
+  display: none;
 }
-#sidebar p.tc {
+#nav p.tc {
   font-family: 'Noto Serif TC', 'Crimson Pro', serif;
   letter-spacing: 2px;
   font-size: 16px;
-}
-img {
-  position: absolute;
-  top: 0;
-  z-index: -1;
 }
 hr {
   width: 35%;
   margin: 24px 72px 0 72px;
 }
-.footnotes {
-  width: 750px;
-  min-width: 500px;
-  max-width: 800px;
+#main .footnotes {
+  width: 100%;
   margin: 0 0 36px 0;
   padding: 12 0 12px 24px;
 }
-.footnotes ol li {
+#main .footnotes ol li {
   margin-left: 72px;
 }
-.footnotes p {
+#main .footnotes p {
   padding: 0 12px 0 12px;
   margin: 12px 12px 12px 0;
   font-family: 'Crimson Pro', Georgia, serif;
@@ -174,5 +175,6 @@ hr {
   font-family: 'Symbola', 'Noto Sans', sans-serif;
 }
 #footer {
-  margin-bottom: 280px;
+  margin-bottom: 160px;
+  width: 100%;
 }
