@@ -106,7 +106,7 @@ a:hover {
   float: right;
   background-color: transparent;
 }
-.navmenu p {
+.menucontent p {
   overflow: hidden;
   line-height: 28px;
   font-family: 'Crimson Pro', serif;
@@ -117,25 +117,25 @@ a:hover {
   margin: 0 12px 12px 12px;
   padding: 0 12px 0 12px;
 }
-.navmenu p.currentarticle::before {
+.menucontent p.currentarticle::before {
   content: "*   *   *";
   display: block;
   padding: 36px 0 36px 0;
   text-align: center;
 }
-.navmenu p.sectionlink {
+.menucontent p.sectionlink {
   margin: 0 0 8px 30px;
   line-height: 24px;
   font-size: 16px;
   letter-spacing: 0;
   text-align: left;
 }
-.navmenu p.tc {
+.menucontent p.tc {
   font-family: 'Noto Serif TC', 'Crimson Pro', serif;
   letter-spacing: 2px;
   font-size: 16px;
 }
-.navmenu .close {
+.menucontent .close {
   display: none;
 }
 #navmenubtn {
