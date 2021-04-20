@@ -129,6 +129,7 @@ a:hover {
   font-size: 16px;
   letter-spacing: 0;
   text-align: left;
+  cursor: pointer;
 }
 .menucontent p.tc {
   font-family: 'Noto Serif TC', 'Crimson Pro', serif;
