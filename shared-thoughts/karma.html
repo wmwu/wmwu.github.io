@@ -30,11 +30,11 @@
       <p><a href="yinyang-and-dao.html"><em>Yinyang</em> and <em>Dao</em></a></p>
       <p><a href="the-way-of-ren.html"><em>Rendao</em>: The Way of <em>Ren</em></a></p>
       <p class="currentarticle"><a href="karma.html">Karma: We Are What We Do</a></p>
-      <p class="sectionlink"><a href="#karma-rebirth-and-the-caste-system">Karma, Rebirth and the Caste System</a></p>
-      <p class="sectionlink"><a href="#atman-anatta-and-rebirth">Atman, Anatta and Rebirth</a></p>
-      <p class="sectionlink"><a href="#transcending-reward-and-punishment">Transcending Reward and Punishment</a></p>
-      <p class="sectionlink"><a href="#karma-and-fairness-in-life">Karma and Fairness in Life</a></p>
-      <p class="sectionlink"><a href="#the-spiritual-teaching-of-karma">The Spiritual Teaching of Karma</a></p>
+      <p class="sectionlink"><a onclick="scrollToSecOne()">Karma, Rebirth and the Caste System</a></p>
+      <p class="sectionlink"><a onclick="scrollToSecTwo()">Atman, Anatta and Rebirth</a></p>
+      <p class="sectionlink"><a onclick="scrollToSecThree()">Transcending Reward and Punishment</a></p>
+      <p class="sectionlink"><a onclick="scrollToSecFour()">Karma and Fairness in Life</a></p>
+      <p class="sectionlink"><a onclick="scrollToSecFive()">The Spiritual Teaching of Karma</a></p>
     </div>
     </div>
     <script type="text/javascript">
@@ -81,9 +81,36 @@
         navmenubtn.style.display = "none";
       }
       }
-      function closenav() {
-        alert(Ya);
-        nav.style.display = "none";
+      // Go to Sections
+      function scrollToSecOne() {
+        var elmnt = document.getElementById("karma-rebirth-and-the-caste-system");
+        elmnt.scrollIntoView({
+          behavior: "smooth"
+        });
+      }
+      function scrollToSecTwo() {
+        var elmnt = document.getElementById("atman-anatta-and-rebirth");
+        elmnt.scrollIntoView({
+          behavior: "smooth"
+        });
+      }
+        function scrollToSecThree() {
+        var elmnt = document.getElementById("transcending-reward-and-punishment");
+        elmnt.scrollIntoView({
+          behavior: "smooth"
+        });
+      }
+        function scrollToSecFour() {
+        var elmnt = document.getElementById("karma-and-fairness-in-life");
+        elmnt.scrollIntoView({
+          behavior: "smooth"
+        });
+      }
+        function scrollToSecFive() {
+        var elmnt = document.getElementById("the-spiritual-teaching-of-karma");
+        elmnt.scrollIntoView({
+          behavior: "smooth"
+        });
       }
     </script>
 
