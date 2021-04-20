@@ -29,7 +29,7 @@
       <p><a href="../index.html">Sitting under a bodhi tree ...</a></p>
       <p><a href="yinyang-and-dao.html"><em>Yinyang</em> and <em>Dao</em></a></p>
       <p><a href="the-way-of-ren.html"><em>Rendao</em>: The Way of <em>Ren</em></a></p>
-      <p class="currentarticle"><a href="karma.html">Karma: We Are What We Do</a></p>
+      <p class="currentarticle"><a onclick="scrollToTop()">Karma: We Are What We Do</a></p>
       <p class="sectionlink"><a onclick="scrollToSecOne()">Karma, Rebirth and the Caste System</a></p>
       <p class="sectionlink"><a onclick="scrollToSecTwo()">Atman, Anatta and Rebirth</a></p>
       <p class="sectionlink"><a onclick="scrollToSecThree()">Transcending Reward and Punishment</a></p>
@@ -38,6 +38,7 @@
     </div>
     </div>
     <script type="text/javascript">
+
       // Get the nav menu
       var nav = document.getElementById("navmenu");
 
@@ -66,51 +67,74 @@
           navmenubtn.style.display = "block";
         }
       }
+
       // Show the button when scroll down
       window.onscroll = function() {scrollFunction()};
-
       function scrollFunction() {
-      if (document.body.scrollTop > 510 || document.documentElement.scrollTop > 510) {
-        if (nav.style.display === "block") {
-          navmenubtn.style.display = "none";
+        if (document.body.scrollTop > 510 || document.documentElement.scrollTop > 510) {
+            navmenubtn.style.display = "block";
         }
         else {
-          navmenubtn.style.display = "block";
+          navmenubtn.style.display = "none";
         }
-      } else {
-        navmenubtn.style.display = "none";
       }
+
+      // Go to Top
+      function scrollToTop() {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth"
+        });
+        if (window.outerWidth < 972) {
+          nav.style.display = "none";
+        }
       }
+
       // Go to Sections
       function scrollToSecOne() {
         var elmnt = document.getElementById("karma-rebirth-and-the-caste-system");
         elmnt.scrollIntoView({
           behavior: "smooth"
         });
+        if (window.outerWidth < 972) {
+          nav.style.display = "none";
+        }
       }
       function scrollToSecTwo() {
         var elmnt = document.getElementById("atman-anatta-and-rebirth");
         elmnt.scrollIntoView({
           behavior: "smooth"
         });
+        if (window.outerWidth < 972) {
+          nav.style.display = "none";
+        }
       }
         function scrollToSecThree() {
         var elmnt = document.getElementById("transcending-reward-and-punishment");
         elmnt.scrollIntoView({
           behavior: "smooth"
         });
+        if (window.outerWidth < 972) {
+          nav.style.display = "none";
+        }
       }
         function scrollToSecFour() {
         var elmnt = document.getElementById("karma-and-fairness-in-life");
         elmnt.scrollIntoView({
           behavior: "smooth"
         });
+        if (window.outerWidth < 972) {
+          nav.style.display = "none";
+        }
       }
         function scrollToSecFive() {
         var elmnt = document.getElementById("the-spiritual-teaching-of-karma");
         elmnt.scrollIntoView({
           behavior: "smooth"
         });
+        if (window.outerWidth < 972) {
+          nav.style.display = "none";
+        }
       }
     </script>
 
