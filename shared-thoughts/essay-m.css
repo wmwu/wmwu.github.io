@@ -6,19 +6,10 @@ body {
   min-width: 450px;
   max-width: 960px;
 }
-img {
-  position: absolute;
-  top: 0;
-  z-index: -1;
-  width: 100%;
-  max-width: 700px;
-  margin-left: 12px;
-}
 #header {
   width: 100%;
-  background-color: transparent;
 }
-header h1 {
+#header h1 {
   overflow: hidden;
   line-height: 36px;
   font-family: 'Crimson Pro', Georgia, serif;
@@ -29,11 +20,11 @@ header h1 {
   margin: 60px 12px 60px 12px;
   padding: 36px 12px 36px 12px;
 }
-header h1::first-letter {
+#header h1::first-letter {
   font-size: 200%;
   font-weight: 300;
 }
-header p {
+#header p {
   margin: 12px 12px 12px 60px;
   padding: 0 12px 0 12px;
   font-family: 'Crimson Pro', Georgia, serif;
