@@ -137,6 +137,9 @@ a:hover {
   margin: 0 12px 12px 12px;
   padding: 0 12px 0 12px;
 }
+.menucontent p.currentarticle {
+  cursor: pointer;
+  }  
 .menucontent p.currentarticle::before {
   content: "*   *   *";
   display: block;
