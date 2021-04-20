@@ -16,28 +16,37 @@
     <link rel="stylesheet" media="screen and (max-width: 1079px)" href="essay-m.css" type="text/css" />
   </head>
   <body>
-    <header id="header" id="title-block-header">
+    <div id="header">
       <h1 style="padding: 72px 0 0 72px;" class="title">Karma: We Are What We Do</h1>
       <p class="author" style="padding: 0 0 0 36px;">By Wu Weiming  <span class="tc">吳維明</span></p>
       <p class="date" style="padding: 0 0 0 36px;">January 18, 2021</p>
-      <img src="zen-stone-on-the-sand.png">
-    </header>
+      <img src="zen-stone-on-the-sand.png" style="position: absolute; top: 0; z-index: -1; width: 100%; max-width: 700px; max-height: 504px; margin-left: 36px;">
+    </div>
     <button id="navmenubtn"><i class="fa fa-chevron-left"></i></button>
     <div id="navmenu" class="nav">
       <div class="menucontent">
-      <div><span class="close">&times;</span></div>
-      <p><a href="../index.html">Sitting under a bodhi tree ...</a></p>
-      <p><a href="yinyang-and-dao.html"><em>Yinyang</em> and <em>Dao</em></a></p>
-      <p><a href="the-way-of-ren.html"><em>Rendao</em>: The Way of <em>Ren</em></a></p>
-      <p class="currentarticle"><a onclick="scrollToTop()">Karma: We Are What We Do</a></p>
-      <p class="sectionlink"><a onclick="scrollToSecOne()">Karma, Rebirth and the Caste System</a></p>
-      <p class="sectionlink"><a onclick="scrollToSecTwo()">Atman, Anatta and Rebirth</a></p>
-      <p class="sectionlink"><a onclick="scrollToSecThree()">Transcending Reward and Punishment</a></p>
-      <p class="sectionlink"><a onclick="scrollToSecFour()">Karma and Fairness in Life</a></p>
-      <p class="sectionlink"><a onclick="scrollToSecFive()">The Spiritual Teaching of Karma</a></p>
-    </div>
+        <div><span class="close">&times;</span></div>
+        <p><a href="../index.html">Sitting under a bodhi tree ...</a></p>
+        <p><a href="yinyang-and-dao.html"><em>Yinyang</em> and <em>Dao</em></a></p>
+        <p><a href="the-way-of-ren.html"><em>Rendao</em>: The Way of <em>Ren</em></a></p>
+        <p class="currentarticle"><a onclick="scrollToTop()">Karma: We Are What We Do</a></p>
+        <p class="sectionlink"><a onclick="scrollToSecOne()">Karma, Rebirth and the Caste System</a></p>
+        <p class="sectionlink"><a onclick="scrollToSecTwo()">Atman, Anatta and Rebirth</a></p>
+        <p class="sectionlink"><a onclick="scrollToSecThree()">Transcending Reward and Punishment</a></p>
+        <p class="sectionlink"><a onclick="scrollToSecFour()">Karma and Fairness in Life</a></p>
+        <p class="sectionlink"><a onclick="scrollToSecFive()">The Spiritual Teaching of Karma</a></p>
+      </div>
     </div>
     <script type="text/javascript">
+
+    window.onresize = function() {
+      if (window.outerWidth > 1079) {
+          nav.style.display = "block";
+        }
+        else {
+          nav.style.display = "none";
+        }
+    }
 
       // Get the nav menu
       var nav = document.getElementById("navmenu");
