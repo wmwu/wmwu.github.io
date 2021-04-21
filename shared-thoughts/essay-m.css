@@ -45,7 +45,9 @@ body {
   top: 0;
   left: 0;
   z-index: -1;
-  width: 509px;
+  width: 100%;
+  max-width: 700px;
+  opacity: 0.8;
 }
 #main {
   overflow: hidden;
