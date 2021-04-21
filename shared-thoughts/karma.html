@@ -39,6 +39,10 @@
     </div>
     <script type="text/javascript">
 
+    window.onorientationchange = function () {
+      window.location.reload();
+    }
+
     window.onresize = function() {
       if (window.outerWidth >= 1080) {
           nav.style.display = "block";
