@@ -12,6 +12,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;300;400;500;600&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@200;300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="jquery-3.5.1.min.js"></script>
   <link rel="stylesheet" media="screen and (min-width: 1080px)" href="essay.css" type="text/css" />
   <link rel="stylesheet" media="screen and (max-width: 1079px)" href="essay-m.css" type="text/css" />
   <style>
@@ -46,13 +47,17 @@
   </div>
   <script type="text/javascript">
 
-    window.addEventListener('orientationchange', function () {
-        var originalBodyStyle = getComputedStyle (document.body).getPropertyValue('display');
-        document.body.style.display='none';
-        setTimeout(function () {
-          document.body.style.display = originalBodyStyle;
-        }, 10);
-      });
+    jQuery(document).ready(function($){
+        orientationChange();
+    });
+
+    function orientationChange() {
+        if(window.addEventListener) {
+            window.addEventListener("orientationchange", function() {
+                location.reload();
+            });
+        }
+    }
 
     window.onresize = function() {
       if (window.outerWidth >= 1080) {
