@@ -14,7 +14,6 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" media="screen and (min-width: 1080px)" href="essay.css" type="text/css" />
   <link rel="stylesheet" media="screen and (max-width: 1079px)" href="essay-m.css" type="text/css" />
-  <script src="jquery-3.5.1.min.js"></script>
   <style>
     @font-face {
       font-family: Symbola;
@@ -56,17 +55,9 @@
         }
     }
 
-    jQuery(document).ready(function($){
-    orientationChange();
-    });
-
-    function orientationChange() {
-    if(window.addEventListener) {
-        window.addEventListener("orientationchange", function() {
-            location.reload();
-        });
-      }
-    }
+    window.onorientationchange = function() {
+        window.location.reload();
+    };
 
       // Get the nav menu
       var nav = document.getElementById("navmenu");
