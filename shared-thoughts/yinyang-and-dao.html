@@ -46,16 +46,14 @@
   </div>
   <script type="text/javascript">
 
-    window.onorientationchange = function() {
-        window.location.reload();
-    }
-
     window.onresize = function() {
       if (window.outerWidth >= 1080) {
-          nav.style.display = "block";
+          window.location.reload ();
+        //  nav.style.display = "block";
         }
         else {
-          nav.style.display = "none";
+          window.location.reload ();
+        //  nav.style.display = "none";
         }
     }
 
