@@ -40,6 +40,13 @@ body {
   width: 300px;
   z-index: -1;
 }
+#qing-ming-shang-he-tu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 509px;
+}
 #main {
   overflow: hidden;
   width: 100%;
