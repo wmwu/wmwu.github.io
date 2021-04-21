@@ -27,6 +27,13 @@ body {
   line-height: 140%;
   color: #0a2c02;
 }
+#yinyang-baqua {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 300px;
+}
 #main {
   overflow: hidden;
   width: 760px;
