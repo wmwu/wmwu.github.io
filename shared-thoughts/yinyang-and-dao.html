@@ -46,6 +46,10 @@
   </div>
   <script type="text/javascript">
 
+    window.onorientationchange = function() {
+        window.location.reload();
+    };
+
     window.onresize = function() {
       if (window.outerWidth >= 1080) {
           nav.style.display = "block";
@@ -54,10 +58,6 @@
           nav.style.display = "none";
         }
     }
-
-    window.onorientationchange = function() {
-        window.location.reload();
-    };
 
       // Get the nav menu
       var nav = document.getElementById("navmenu");
