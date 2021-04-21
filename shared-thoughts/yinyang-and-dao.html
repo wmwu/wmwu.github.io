@@ -23,11 +23,10 @@
 </head>
 <body>
   <div id="header">
-    <h1 class="title" style="margin: 36px 0 0 320px;"><em>Yinyang</em> and <em>Dao</em></h1>
-    <p class="author" style="margin: 36px 0 0 320px;">By Wu Weiming<br><span class="tc">     吳維明</span></p>
-    <p class="date" style="margin: 24px 0 0 320px;">January 30, 2021</p>
+    <h1 class="title" style="margin: 36px 0 0 calc(320px + 5%);"><em>Yinyang</em> and <em>Dao</em></h1>
+    <p class="author" style="margin: 36px 0 0 calc(320px + 5%);">By <span style="display: inline-flex; flex-direction: column;">Wu Weiming<span class="tc">吳維明</span></span></p>
+    <p class="date" style="margin: 24px 0 0 calc(320px + 5%);">January 30, 2021</p>
     <img id="yinyang-baqua" src="yinyang-baqua-color.png">
-  </header>
   </div>
   <button id="navmenubtn"><i class="fa fa-chevron-left"></i></button>
   <div id="navmenu" class="nav">
@@ -47,7 +46,7 @@
   <script type="text/javascript">
 
     window.onresize = function() {
-          window.location.reload ();
+      window.setTimeout(function(){location.reload()}, 1000);
     }
 
       // Get the nav menu
