@@ -126,7 +126,7 @@ a:hover {
 .menucontent {
   position: -webkit-sticky;
   position: sticky;
-  top: 24px;
+  top: 36px;
   width: 300px;
   background-color: #efefef;
   padding: 12px;
