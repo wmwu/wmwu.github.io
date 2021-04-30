@@ -7,47 +7,59 @@ body {
   max-width: 960px;
 }
 #header {
-  width: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  height: 60px;
+  background-color: #e6ebd0;
+  z-index: 99;
+  cursor: pointer;
 }
-#header h1 {
+#header .sitetitle {
   overflow: hidden;
-  line-height: 36px;
+  line-height: 28px;
   font-family: 'Crimson Pro', Georgia, serif;
-  font-size: 36px;
+  font-size: 24px;
   letter-spacing: 4px;
   font-weight: 300;
   color: #0a2c02;
-  margin: 60px 12px 60px 12px;
-  padding: 36px 12px 36px 12px;
+  margin: 0 12px 24px 120px;
+  padding: 18px 12px 12px 12px;
 }
-#header h1::first-letter {
+#header .sitetitle::first-letter {
   font-size: 200%;
   font-weight: 300;
 }
-#header p {
-  margin: 12px 12px 12px 60px;
-  padding: 0 12px 0 12px;
-  font-family: 'Crimson Pro', Georgia, serif;
-  font-size: 18px;
-  letter-spacing: 0;
-  line-height: 140%;
-  color: #0a2c02;
+#bodhi-leaf {
+  position: absolute;
+  top: 0;
+  left: 0px;
+  height: 120px;
+  z-index: 98;
+}
+#zen-stone-on-the-sand {
+  position: relative;
+  display: block;
+  margin: 36px auto;
+  z-index: -1;
+  width: 100%;
+  max-width: 500px;
 }
 #yinyang-baqua {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 300px;
+  position: relative;
+  display: block;
+  margin: 36px auto;
   z-index: -1;
+  width: 100%;
+  max-width: 300px;
 }
 #qing-ming-shang-he-tu {
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: relative;
+  display: block;
+  margin: 36px auto;
   z-index: -1;
   width: 100%;
   max-width: 700px;
-  opacity: 0.8;
 }
 #main {
   overflow: hidden;
@@ -55,9 +67,24 @@ body {
   max-width: 700px;
   background-color: transparent;
 }
+#main h1 {
+  margin: 72px auto;
+  padding: 12px;
+  text-align: center;
+  color: #0a2c02;
+  line-height: 100%;
+  font-family: 'Crimson Pro', serif;
+  font-size: 36px;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+#main h1::first-letter {
+  font-size: 200%;
+  font-weight: 300;
+}
 #main h2 {
-  margin: 24px 0 12px 60px;
-  padding: 12px 0 12px 12px;
+  margin: 24px 48px 12px 48px;
+  padding: 12px;
   text-align: left;
   color: #0a2c02;
   line-height: 100%;
@@ -67,8 +94,8 @@ body {
   letter-spacing: 1px;
 }
 #main h3 {
-  margin: 12px 0 12px 60px;
-  padding: 12px 0 12px 12px;
+  margin: 12px 48px 12px 48px;
+  padding: 12px;
   text-align: left;
   color: #0a2c02;
   line-height: 100%;
@@ -77,7 +104,7 @@ body {
   font-weight: 300;
 }
 #main p {
-  margin: 12px 36px 24px 60px;
+  margin: 12px 48px 24px 48px;
   padding: 0 12px 0 12px;
   font-family: 'Crimson Pro', Georgia, serif;
   font-size: 18px;
@@ -126,9 +153,9 @@ a:hover {
 .menucontent {
   position: -webkit-sticky;
   position: sticky;
-  top: 36px;
+  top: 60px;
   width: 300px;
-  background-color: #efefef;
+  background-color: #e6ebd0;
   padding: 12px;
   float: right;
   right: calc(6px + (100% - 720px));
@@ -169,7 +196,7 @@ a:hover {
 /* The Close Button */
 .menucontent .close {
   color: #0a2c02;
-  background-color: #efefef;
+  background-color: #e6ebd0;
   font-size: 24px;
   font-weight: 400;
   float: right;
@@ -184,11 +211,11 @@ a:hover {
 #navmenubtn {
   position: -webkit-sticky;
   position: sticky;
-  top: 36px;
+  top: 60px;
   display: none;
   width: 36px;
   height: 36px;
-  background-color: #efefef;
+  background-color: #e6ebd0;
   border: none;
   float: right;
   right: calc(6px + (100% - 720px));
@@ -199,15 +226,15 @@ a:hover {
 }
 hr {
   width: 35%;
-  margin: 24px 72px 0 72px;
+  margin: 24px 72px 0 60px;
 }
 #main .footnotes {
-  width: 100%;
+  width: 700px;
   margin: 0 0 36px 0;
-  padding: 12 0 12px 24px;
+  padding: 12 0 12px 0;
 }
 #main .footnotes ol li {
-  margin-left: 72px;
+  margin-left: 60px;
 }
 #main .footnotes p {
   padding: 0 12px 0 12px;
@@ -231,6 +258,5 @@ hr {
   font-family: 'Symbola', 'Noto Sans', sans-serif;
 }
 #footer {
-  margin-bottom: 60px;
-  width: 100%;
+  margin-bottom: 120px;
 }
