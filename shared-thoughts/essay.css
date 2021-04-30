@@ -3,44 +3,57 @@ body {
   padding: 0;
   background-color: #F7F8EE;
 }
-#header h1 {
+#header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  height: 60px;
+  background-color: #e6ebd0;
+  z-index: 99;
+  cursor: pointer;
+}
+#header .sitetitle {
   overflow: hidden;
-  line-height: 36px;
+  line-height: 28px;
   font-family: 'Crimson Pro', Georgia, serif;
-  font-size: 36px;
+  font-size: 24px;
   letter-spacing: 4px;
   font-weight: 300;
   color: #0a2c02;
-  margin: 60px 12px 60px 60px;
-  padding: 36px 12px 36px 8px;
+  margin: 0 12px 24px 120px;
+  padding: 18px 12px 12px 12px;
 }
-#header h1::first-letter {
+#header .sitetitle::first-letter {
   font-size: 200%;
   font-weight: 300;
 }
-#header p {
-  margin: 12px 12px 12px 60px;
-  padding: 0 12px 0 12px;
-  font-family: 'Crimson Pro', Georgia, serif;
-  font-size: 18px;
-  letter-spacing: 0;
-  line-height: 140%;
-  color: #0a2c02;
-}
-#yinyang-baqua {
+#bodhi-leaf {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 0px;
+  height: 120px;
+  z-index: 98;
+}
+#zen-stone-on-the-sand {
+  position: relative;
+  display: block;
+  margin: 36px auto;
+  z-index: -1;
+  width: 500px;
+}
+#yinyang-baqua {
+  position: relative;
+  display: block;
+  margin: 36px auto;
   z-index: -1;
   width: 300px;
 }
 #qing-ming-shang-he-tu {
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: relative;
+  display: block;
+  margin: 36px auto;
   z-index: -1;
   width: 700px;
-  opacity: 0.8;
 }
 #main {
   overflow: hidden;
@@ -48,9 +61,24 @@ body {
   background-color: transparent;
   left: 24px;
 }
+#main h1 {
+  margin: 72px auto;
+  padding: 12px;
+  text-align: center;
+  color: #0a2c02;
+  line-height: 100%;
+  font-family: 'Crimson Pro', serif;
+  font-size: 36px;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+#main h1::first-letter {
+  font-size: 200%;
+  font-weight: 300;
+}
 #main h2 {
-  margin: 24px 0 12px 60px;
-  padding: 12px 0 12px 12px;
+  margin: 24px 48px 12px 48px;
+  padding: 12px;
   text-align: left;
   color: #0a2c02;
   line-height: 100%;
@@ -60,8 +88,8 @@ body {
   letter-spacing: 1px;
 }
 #main h3 {
-  margin: 12px 0 12px 60px;
-  padding: 12px 0 12px 12px;
+  margin: 12px 48px 12px 48px;
+  padding: 12px;
   text-align: left;
   color: #0a2c02;
   line-height: 100%;
@@ -70,7 +98,7 @@ body {
   font-weight: 300;
 }
 #main p {
-  margin: 12px 12px 24px 60px;
+  margin: 12px 48px 24px 48px;
   padding: 0 12px 0 12px;
   font-family: 'Crimson Pro', Georgia, serif;
   font-size: 18px;
@@ -103,7 +131,7 @@ a:hover {
 .nav {
   position: -webkit-sticky;
   position: sticky;
-  top: 120px;
+  top: 240px;
   right: calc(24px + (100% - 1084px));
   width: 300px;
   float: right;
@@ -150,15 +178,15 @@ cursor: pointer;
 }
 hr {
   width: 35%;
-  margin: 24px 72px 0 72px;
+  margin: 24px 72px 0 60px;
 }
 #main .footnotes {
   width: 700px;
   margin: 0 0 36px 0;
-  padding: 12 0 12px 24px;
+  padding: 12 0 12px 0;
 }
 #main .footnotes ol li {
-  margin-left: 72px;
+  margin-left: 60px;
 }
 #main .footnotes p {
   padding: 0 12px 0 12px;
