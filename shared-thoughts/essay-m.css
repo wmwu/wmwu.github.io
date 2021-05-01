@@ -153,12 +153,13 @@ a:hover {
 .menucontent {
   position: -webkit-sticky;
   position: sticky;
-  top: 60px;
+  top: 90px;
   width: 300px;
   background-color: #e6ebd0;
-  padding: 12px;
+  padding: 24px 12px 24px 12px;
   float: right;
   right: calc(6px + (100% - 720px));
+  z-index: 101;
 }
 .menucontent p {
   overflow: hidden;
@@ -199,8 +200,11 @@ a:hover {
   background-color: #e6ebd0;
   font-size: 24px;
   font-weight: 400;
+  position: -webkit-sticky;
+  position: sticky;
+  display: block;
   float: right;
-  margin-top: -10px;
+  margin-top: -22px;
 }
 .close:hover,
 .close:focus {
@@ -211,7 +215,7 @@ a:hover {
 #navmenubtn {
   position: -webkit-sticky;
   position: sticky;
-  top: 60px;
+  top: 90px;
   display: none;
   width: 36px;
   height: 36px;
@@ -229,7 +233,8 @@ hr {
   margin: 24px 72px 0 60px;
 }
 #main .footnotes {
-  width: 700px;
+  width: 100%px;
+  max-width: 700px;
   margin: 0 0 36px 0;
   padding: 12 0 12px 0;
 }
@@ -238,7 +243,7 @@ hr {
 }
 #main .footnotes p {
   padding: 0 12px 0 12px;
-  margin: 12px 12px 12px 0;
+  margin: 12px 48px 12px 0;
   font-family: 'Crimson Pro', Georgia, serif;
   font-size: 18px;
   font-weight: 300;
