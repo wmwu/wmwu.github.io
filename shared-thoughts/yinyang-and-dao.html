@@ -99,47 +99,37 @@
 
       // Go to Sections
       function scrollToSecOne() {
-        var elmnt = document.getElementById("taiji-and-yinyang");
-        elmnt.scrollIntoView({
-          behavior: "smooth"
-        });
-        if (window.outerWidth < 1080) {
+        var y = document.getElementById("taiji-and-yinyang").offsetTop - 60;
+        window.scrollTo({ top: y, behavior: 'smooth' });
+        if (window.outerWidth < 972) {
           nav.style.display = "none";
         }
       }
       function scrollToSecTwo() {
-        var elmnt = document.getElementById("without-yinyang-no-change");
-        elmnt.scrollIntoView({
-          behavior: "smooth"
-        });
-        if (window.outerWidth < 1080) {
+        var y = document.getElementById("without-yinyang-no-change").offsetTop - 60;
+        window.scrollTo({ top: y, behavior: 'smooth' });
+        if (window.outerWidth < 972) {
           nav.style.display = "none";
         }
       }
-        function scrollToSecThree() {
-        var elmnt = document.getElementById("yinyang-and-harmony");
-        elmnt.scrollIntoView({
-          behavior: "smooth"
-        });
-        if (window.outerWidth < 1080) {
+      function scrollToSecThree() {
+        var y = document.getElementById("yinyang-and-harmony").offsetTop - 60;
+        window.scrollTo({ top: y, behavior: 'smooth' });
+        if (window.outerWidth < 972) {
           nav.style.display = "none";
         }
       }
-        function scrollToSecFour() {
-        var elmnt = document.getElementById("dao-tao");
-        elmnt.scrollIntoView({
-          behavior: "smooth"
-        });
-        if (window.outerWidth < 1080) {
+      function scrollToSecFour() {
+        var y = document.getElementById("dao-tao").offsetTop - 60;
+        window.scrollTo({ top: y, behavior: 'smooth' });
+        if (window.outerWidth < 972) {
           nav.style.display = "none";
         }
       }
-        function scrollToSecFive() {
-        var elmnt = document.getElementById("the-characteristics-of-the-chinese-worldview");
-        elmnt.scrollIntoView({
-          behavior: "smooth"
-        });
-        if (window.outerWidth < 1080) {
+      function scrollToSecFive() {
+        var y = document.getElementById("the-characteristics-of-the-chinese-worldview").offsetTop - 60;
+        window.scrollTo({ top: y, behavior: 'smooth' });
+        if (window.outerWidth < 972) {
           nav.style.display = "none";
         }
       }
