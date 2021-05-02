@@ -12,19 +12,21 @@ body {
   top: 0;
   height: 60px;
   background-color: #e6ebd0;
-  z-index: 99;
-  cursor: pointer;
+  z-index: 98;
 }
 #header .sitetitle {
   overflow: hidden;
-  line-height: 28px;
+  line-height: 24px;
   font-family: 'Crimson Pro', Georgia, serif;
-  font-size: 24px;
+  font-size: 20px;
   letter-spacing: 4px;
   font-weight: 300;
   color: #0a2c02;
-  margin: 0 12px 24px 120px;
-  padding: 18px 12px 12px 12px;
+  margin: 0 12px 24px 60px;
+  padding: 18px 24px 12px 24px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 #header .sitetitle::first-letter {
   font-size: 200%;
