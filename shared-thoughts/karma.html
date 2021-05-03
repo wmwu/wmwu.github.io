@@ -12,8 +12,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;300;400;500;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@200;300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" media="screen and (min-width: 1080px)" href="essay.css" type="text/css" />
-    <link rel="stylesheet" media="screen and (max-width: 1079px)" href="essay-m.css" type="text/css" />
+    <link rel="stylesheet" media="screen and (min-width: 1240px)" href="essay.css" type="text/css" />
+    <link rel="stylesheet" media="screen and (max-width: 1239px)" href="essay-m.css" type="text/css" />
   </head>
   <body>
     <div id="header">
@@ -72,7 +72,7 @@
       // Show the button when scroll down
       window.onscroll = function() {scrollFunction()};
       function scrollFunction() {
-        if (document.body.scrollTop > 510 || document.documentElement.scrollTop > 510) {
+        if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
             navmenubtn.style.display = "block";
         }
         else {
@@ -86,57 +86,57 @@
           top: 0,
           behavior: "smooth"
         });
-        if (window.outerWidth < 972) {
+        if (window.outerWidth < 1240) {
           nav.style.display = "none";
         }
       }
 
       // Go to Sections
       function scrollToSecOne() {
-        var y = document.getElementById("karma-rebirth-and-the-caste-system").offsetTop - 60;
+        var y = document.getElementById("karma-rebirth-and-the-caste-system").offsetTop - 72;
         window.scrollTo({ top: y, behavior: 'smooth' });
-        if (window.outerWidth < 972) {
+        if (window.outerWidth < 1240) {
           nav.style.display = "none";
         }
       }
       function scrollToSecTwo() {
-        var y = document.getElementById("atman-anatta-and-rebirth").offsetTop - 60;
+        var y = document.getElementById("atman-anatta-and-rebirth").offsetTop - 72;
         window.scrollTo({ top: y, behavior: 'smooth' });
-        if (window.outerWidth < 972) {
+        if (window.outerWidth < 1240) {
           nav.style.display = "none";
         }
       }
       function scrollToSecThree() {
-        var y = document.getElementById("transcending-reward-and-punishment").offsetTop - 60;
+        var y = document.getElementById("transcending-reward-and-punishment").offsetTop - 72;
         window.scrollTo({ top: y, behavior: 'smooth' });
-        if (window.outerWidth < 972) {
+        if (window.outerWidth < 1240) {
           nav.style.display = "none";
         }
       }
       function scrollToSecFour() {
-        var y = document.getElementById("karma-and-fairness-in-life").offsetTop - 60;
+        var y = document.getElementById("karma-and-fairness-in-life").offsetTop - 72;
         window.scrollTo({ top: y, behavior: 'smooth' });
-        if (window.outerWidth < 972) {
+        if (window.outerWidth < 1240) {
           nav.style.display = "none";
         }
       }
       function scrollToSecFive() {
-        var y = document.getElementById("the-spiritual-teaching-of-karma").offsetTop - 60;
+        var y = document.getElementById("the-spiritual-teaching-of-karma").offsetTop - 72;
         window.scrollTo({ top: y, behavior: 'smooth' });
-        if (window.outerWidth < 972) {
+        if (window.outerWidth < 1240) {
           nav.style.display = "none";
         }
       }
       function scrollToFootnote(clickedElement) {
         var fnref = clickedElement.id;
         var fn = fnref.replace('re', '');
-        var y = document.getElementById(fn).offsetTop - 72;
+        var y = document.getElementById(fn).offsetTop - 84;
         window.scrollTo({ top: y, behavior: 'smooth' });
       }
       function scrollToFootnoteRef(clickedElement) {
         var fn = clickedElement.parentNode.parentNode.id;
         var fnref = 're' + fn;
-        var y = document.getElementById(fnref).offsetTop - 84;
+        var y = document.getElementById(fnref).offsetTop - 96;
         window.scrollTo({ top: y, behavior: 'smooth' });
       }
     </script>
