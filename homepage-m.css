@@ -42,7 +42,7 @@ img {
   color: #0a2c02;
   line-height: 100%;
   font-family: 'Crimson Pro', serif;
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 300;
   letter-spacing: 2px;
 }
@@ -50,7 +50,7 @@ img {
   padding: 0 12px 0 12px;
   margin: 12px 24px 12px 60px;
   font-family: 'Crimson Pro', serif;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 300;
   letter-spacing: 0;
   line-height: 180%;
@@ -73,9 +73,9 @@ img {
 }
 #footer p {
   overflow: hidden;
-  line-height: 24px;
+  line-height: 28px;
   font-family: 'Crimson Pro', serif;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 300;
   color: #0a2c02;
   margin: 0 24px 12px 120px;
@@ -97,10 +97,10 @@ img {
 
 /* Animated links */
 #footer p.link a {
-  height: 24px;
+  height: 28px;
   position: relative;
-  line-height: 1;
-  font-size: 18px;
+  line-height: 28px;
+  font-size: 20px;
   font-weight: 300;
   letter-spacing: 2px;
   text-decoration: none;
