@@ -24,37 +24,6 @@ body {
   font-size: 400%;
   font-weight: 300;
 }
-#nav {
-  overflow: hidden;
-  background-color: #E6E6E6;
-  height: 48px;
-}
-#nav a {
-  display: block;
-  font-family: Arial, Helvetica, 'Open Sans', sans-serif;
-  font-size: 14px;
-  color: #336666;
-  line-height: 28px;
-  letter-spacing: 1px;
-  text-align: left;
-  margin: 10px 0px 0 20px;
-  text-decoration: none;
-}
-#nav a:hover {
-  color: #0a2c02;
-  background-color: #F7F8EE;
-  border-bottom: 1px solid #0a2c02;
-}
-#nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-#nav li {
-  display: block;
-  float: left;
-}
 #main {
   overflow: hidden;
   max-width: 900px;
@@ -66,7 +35,7 @@ body {
   color: #0a2c02;
   line-height: 100%;
   font-family: 'Crimson Pro', serif;
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 300;
   letter-spacing: 2px;
 }
@@ -74,7 +43,7 @@ body {
   padding: 0 12px 0 36px;
   margin: 12px 12px 12px 360px;
   font-family: 'Crimson Pro', serif;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 300;
   letter-spacing: 0;
   line-height: 180%;
@@ -112,9 +81,9 @@ body {
 }
 #footer p {
   overflow: hidden;
-  line-height: 24px;
+  line-height: 28px;
   font-family: 'Crimson Pro', serif;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 300;
   color: #0a2c02;
   margin: 0 12px 12px 420px;
@@ -136,10 +105,10 @@ body {
 
 /* Animated links */
 #footer p.link a {
-  height: 24px;
+  height: 28px;
   position: relative;
-  line-height: 1;
-  font-size: 18px;
+  line-height: 28px;
+  font-size: 20px;
   font-weight: 300;
   letter-spacing: 2px;
   text-decoration: none;
