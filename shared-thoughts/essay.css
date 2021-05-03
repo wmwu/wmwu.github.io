@@ -7,7 +7,7 @@ body {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  height: 60px;
+  height: 66px;
   background-color: #e6ebd0;
   z-index: 98;
 }
@@ -15,12 +15,12 @@ body {
   overflow: hidden;
   line-height: 24px;
   font-family: 'Crimson Pro', Georgia, serif;
-  font-size: 20px;
+  font-size: 22px;
   letter-spacing: 4px;
   font-weight: 300;
   color: #0a2c02;
-  margin: 0 12px 24px 48px;
-  padding: 18px 24px 12px 24px;
+  margin: 0 12px 18px 56px;
+  padding: 20px 24px 16px 24px;
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -32,23 +32,23 @@ body {
 #bodhi-leaf {
   position: absolute;
   top: 0;
-  left: 0px;
-  height: 120px;
+  left: 0;
+  height: 132px;
   z-index: 99;
 }
 #zen-stone-on-the-sand {
   position: relative;
   display: block;
-  margin: 36px auto;
+  margin: 60px auto;
   z-index: -1;
-  width: 500px;
+  width: 600px;
 }
 #yinyang-baqua {
   position: relative;
   display: block;
   margin: 36px auto;
   z-index: -1;
-  width: 300px;
+  width: 360px;
 }
 #qing-ming-shang-he-tu {
   position: relative;
@@ -59,7 +59,7 @@ body {
 }
 #main {
   overflow: hidden;
-  width: 760px;
+  width: 840px;
   background-color: transparent;
   left: 24px;
 }
@@ -70,7 +70,7 @@ body {
   color: #0a2c02;
   line-height: 100%;
   font-family: 'Crimson Pro', serif;
-  font-size: 36px;
+  font-size: 40px;
   font-weight: 300;
   letter-spacing: 2px;
 }
@@ -79,7 +79,18 @@ body {
   font-weight: 300;
 }
 #main h2 {
-  margin: 24px 48px 12px 48px;
+  margin: 36px 48px 12px 60px;
+  padding: 12px;
+  text-align: left;
+  color: #0a2c02;
+  line-height: 100%;
+  font-family: 'Crimson Pro', serif;
+  font-size: 28px;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+#main h3 {
+  margin: 24px 48px 12px 60px;
   padding: 12px;
   text-align: left;
   color: #0a2c02;
@@ -87,23 +98,12 @@ body {
   font-family: 'Crimson Pro', serif;
   font-size: 24px;
   font-weight: 300;
-  letter-spacing: 1px;
-}
-#main h3 {
-  margin: 12px 48px 12px 48px;
-  padding: 12px;
-  text-align: left;
-  color: #0a2c02;
-  line-height: 100%;
-  font-family: 'Crimson Pro', serif;
-  font-size: 20px;
-  font-weight: 300;
 }
 #main p {
-  margin: 12px 48px 24px 48px;
+  margin: 18px 48px 24px 60px;
   padding: 0 12px 0 12px;
   font-family: 'Crimson Pro', Georgia, serif;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 300;
   letter-spacing: 0;
   line-height: 140%;
@@ -117,7 +117,7 @@ body {
   font-weight: lighter;
 }
 #main p.quote {
-  margin: 0 10px 0 auto;
+  margin: 0 12px 0 auto;
 }
 a {
   color: #0a2c02;
@@ -134,8 +134,8 @@ a:hover {
   position: -webkit-sticky;
   position: sticky;
   top: 240px;
-  right: calc(24px + (100% - 1084px));
-  width: 300px;
+  right: calc(24px + (100% - 1260px));
+  width: 360px;
   float: right;
   background-color: transparent;
 }
@@ -143,7 +143,7 @@ a:hover {
   overflow: hidden;
   line-height: 28px;
   font-family: 'Crimson Pro', serif;
-  font-size: 18px;
+  font-size: 20px;
   letter-spacing: 1px;
   font-weight: 300;
   color: #0a2c02;
@@ -161,8 +161,8 @@ cursor: pointer;
 }
 .menucontent p.sectionlink {
   margin: 0 0 8px 30px;
-  line-height: 24px;
-  font-size: 16px;
+  line-height: 28px;
+  font-size: 18px;
   letter-spacing: 0;
   text-align: left;
   cursor: pointer;
@@ -170,7 +170,7 @@ cursor: pointer;
 .menucontent p.tc {
   font-family: 'Noto Serif TC', 'Crimson Pro', serif;
   letter-spacing: 2px;
-  font-size: 16px;
+  font-size: 18px;
 }
 .menucontent .close {
   display: none;
@@ -180,24 +180,24 @@ cursor: pointer;
 }
 hr {
   width: 35%;
-  margin: 24px 72px 0 60px;
+  margin: 24px 72px 0 72px;
 }
 #main .footnote {
   cursor: pointer;
 }
 #main .footnotes {
-  width: 700px;
+  width: 800px;
   margin: 0 0 36px 0;
   padding: 12 0 12px 0;
 }
 #main .footnotes ol li {
-  margin-left: 60px;
+  margin-left: 72px;
 }
 #main .footnotes p {
   padding: 0 12px 0 12px;
   margin: 12px 12px 12px 0;
   font-family: 'Crimson Pro', Georgia, serif;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 300;
   letter-spacing: 0;
   line-height: 140%;
@@ -205,11 +205,11 @@ hr {
 }
 .sc {
   font-family: 'Noto Serif SC', 'Crimson Pro', serif;
-  font-size: 16px;
+  font-size: 18px;
 }
 .tc {
   font-family: 'Noto Serif TC', 'Crimson Pro', serif;
-  font-size: 16px;
+  font-size: 18px;
 }
 .yy {
   font-family: 'Symbola', 'Noto Sans', sans-serif;
