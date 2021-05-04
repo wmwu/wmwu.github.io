@@ -58,10 +58,11 @@ body {
   width: 700px;
 }
 #main {
+  position: -webkit-sticky;
+  position: sticky;
   overflow: hidden;
   width: 840px;
-  background-color: transparent;
-  left: 24px;
+  left: calc((100% - 840px) * .2);
 }
 #main h1 {
   margin: 72px auto;
@@ -134,7 +135,7 @@ a:hover {
   position: -webkit-sticky;
   position: sticky;
   top: 240px;
-  right: calc(24px + (100% - 1260px));
+  right: calc((100% - 840px) * .75 - 360px);
   width: 360px;
   float: right;
   background-color: transparent;
