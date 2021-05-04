@@ -65,10 +65,12 @@ body {
   max-width: 700px;
 }
 #main {
+  position: -webkit-sticky;
+  position: sticky;
   overflow: hidden;
   width: 100%;
   max-width: 840px;
-  background-color: transparent;
+  left: calc((100% - 840px) * .2);
 }
 #main h1 {
   margin: 72px auto;
@@ -231,7 +233,8 @@ a:hover {
   background-color: #e6ebd0;
   border: none;
   float: right;
-  right: calc(6px + (100% - 860px));
+  right: calc((100% - 840px) * .75);
+  z-index: 2;
 }
 #navmenubtn:hover,
 #navmenubtn:focus {
