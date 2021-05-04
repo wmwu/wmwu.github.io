@@ -203,11 +203,14 @@ a:hover {
   background-color: #e6ebd0;
   font-size: 24px;
   font-weight: 400;
+  padding: 2px 10px 2px 10px;
+  border: none;
   position: -webkit-sticky;
   position: sticky;
   display: block;
   float: right;
-  margin-top: -22px;
+  margin-top: -24px;
+  margin-right: -12px;
 }
 .close:hover,
 .close:focus {
