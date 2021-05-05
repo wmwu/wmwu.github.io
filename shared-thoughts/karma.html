@@ -93,35 +93,35 @@
 
       // Go to Sections
       function scrollToSecOne() {
-        var y = document.getElementById("karma-rebirth-and-the-caste-system").offsetTop - 72;
+        var y = document.getElementById("karma-rebirth-and-the-caste-system").offsetTop;
         window.scrollTo({ top: y, behavior: 'smooth' });
         if (window.outerWidth < 1240) {
           nav.style.display = "none";
         }
       }
       function scrollToSecTwo() {
-        var y = document.getElementById("atman-anatta-and-rebirth").offsetTop - 72;
+        var y = document.getElementById("atman-anatta-and-rebirth").offsetTop;
         window.scrollTo({ top: y, behavior: 'smooth' });
         if (window.outerWidth < 1240) {
           nav.style.display = "none";
         }
       }
       function scrollToSecThree() {
-        var y = document.getElementById("transcending-reward-and-punishment").offsetTop - 72;
+        var y = document.getElementById("transcending-reward-and-punishment").offsetTop;
         window.scrollTo({ top: y, behavior: 'smooth' });
         if (window.outerWidth < 1240) {
           nav.style.display = "none";
         }
       }
       function scrollToSecFour() {
-        var y = document.getElementById("karma-and-fairness-in-life").offsetTop - 72;
+        var y = document.getElementById("karma-and-fairness-in-life").offsetTop;
         window.scrollTo({ top: y, behavior: 'smooth' });
         if (window.outerWidth < 1240) {
           nav.style.display = "none";
         }
       }
       function scrollToSecFive() {
-        var y = document.getElementById("the-spiritual-teaching-of-karma").offsetTop - 72;
+        var y = document.getElementById("the-spiritual-teaching-of-karma").offsetTop;
         window.scrollTo({ top: y, behavior: 'smooth' });
         if (window.outerWidth < 1240) {
           nav.style.display = "none";
@@ -130,13 +130,13 @@
       function scrollToFootnote(clickedElement) {
         var fnref = clickedElement.id;
         var fn = fnref.replace('re', '');
-        var y = document.getElementById(fn).offsetTop - 84;
+        var y = document.getElementById(fn).offsetTop;
         window.scrollTo({ top: y, behavior: 'smooth' });
       }
       function scrollToFootnoteRef(clickedElement) {
         var fn = clickedElement.parentNode.parentNode.id;
         var fnref = 're' + fn;
-        var y = document.getElementById(fnref).offsetTop - 96;
+        var y = document.getElementById(fnref).offsetTop - 24;
         window.scrollTo({ top: y, behavior: 'smooth' });
       }
     </script>
