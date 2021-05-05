@@ -190,7 +190,7 @@ hr {
   cursor: pointer;
 }
 #main .footnotes {
-  width: 800px;
+  width: 840px;
   margin: 0 0 36px 0;
   padding: 12 0 12px 0;
 }
@@ -198,8 +198,8 @@ hr {
   margin-left: 72px;
 }
 #main .footnotes p {
+  margin: 12px 48px 12px 0;
   padding: 0 12px 0 12px;
-  margin: 12px 12px 12px 0;
   font-family: 'Crimson Pro', Georgia, serif;
   font-size: 20px;
   font-weight: 300;
