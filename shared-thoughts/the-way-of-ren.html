@@ -92,28 +92,28 @@
     
           // Go to Sections
           function scrollToSecOne() {
-            var y = document.getElementById("the-confucian-way-of-knowing-dao").offsetTop - 72;
+            var y = document.getElementById("the-confucian-way-of-knowing-dao").offsetTop;
             window.scrollTo({ top: y, behavior: 'smooth' });
             if (window.outerWidth < 1240) {
               nav.style.display = "none";
             }
           }
           function scrollToSecTwo() {
-            var y = document.getElementById("the-cultivation-of-virtues").offsetTop - 72;
+            var y = document.getElementById("the-cultivation-of-virtues").offsetTop;
             window.scrollTo({ top: y, behavior: 'smooth' });
             if (window.outerWidth < 1240) {
               nav.style.display = "none";
             }
           }
           function scrollToSecThree() {
-            var y = document.getElementById("the-institution-of-li").offsetTop - 72;
+            var y = document.getElementById("the-institution-of-li").offsetTop;
             window.scrollTo({ top: y, behavior: 'smooth' });
             if (window.outerWidth < 1240) {
               nav.style.display = "none";
             }
           }
           function scrollToSecFour() {
-            var y = document.getElementById("the-renaissance-of-confucianism").offsetTop - 72;
+            var y = document.getElementById("the-renaissance-of-confucianism").offsetTop;
             window.scrollTo({ top: y, behavior: 'smooth' });
             if (window.outerWidth < 1240) {
               nav.style.display = "none";
@@ -122,13 +122,13 @@
           function scrollToFootnote(clickedElement) {
             var fnref = clickedElement.id;
             var fn = fnref.replace('re', '');
-            var y = document.getElementById(fn).offsetTop - 84;
+            var y = document.getElementById(fn).offsetTop;
             window.scrollTo({ top: y, behavior: 'smooth' });
           }
           function scrollToFootnoteRef(clickedElement) {
             var fn = clickedElement.parentNode.parentNode.id;
             var fnref = 're' + fn;
-            var y = document.getElementById(fnref).offsetTop - 96;
+            var y = document.getElementById(fnref).offsetTop - 24;
             window.scrollTo({ top: y, behavior: 'smooth' });
           }
         </script>
