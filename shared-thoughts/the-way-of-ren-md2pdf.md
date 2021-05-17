@@ -16,6 +16,11 @@ graphics: yes
 ---
 
 ::: {#main}
+
+\setlength{\parindent}{15pt}
+
+##
+
 The teachings of the Confucian school of thoughts, *rujia*
 ([儒家]{.tc}), can be summed up as *rendao* ([仁道]{.tc}), the way of
 *ren*. Kongzi ([孔子]{.tc}, Confucius) once recapitulated his core
