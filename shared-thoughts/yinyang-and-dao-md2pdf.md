@@ -4,7 +4,7 @@ author: Wu Weiming
 date: January 30, 2021
 mainfont: Crimson Pro
 sanfont: Symbola
-CJKmainfont: Noto Serif CJK TC
+CJKmainfont: Songti TC
 CJKsansfont: Symbola
 header-includes:
 - \usepackage{fontspec}
@@ -21,6 +21,10 @@ graphics: yes
 ---
 
 ::: {#main}
+
+\setlength{\parindent}{15pt}
+
+##
 
 *Yinyang* (陰陽，阴阳) and *dao* (*tao*, 道) are two of the most
 important concepts in the Chinese culture and philosophy. They constitute the
