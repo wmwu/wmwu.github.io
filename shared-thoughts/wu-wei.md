@@ -23,7 +23,7 @@ The Confucian way of knowing *dao* is through *de* ([德]{.tc}，virtues). Once 
 
 ::: {.footnotes}
 1.  ::: {#fn:1}
-    From now on in this article, the term "Daoism" is used to refer to *Daojia*.
+    From now on in this article, the term "Daoism" is used to refer to *daojia*.
     [↩︎]{onclick="scrollToFootnoteRef(this)" .footnote}
     :::
 :::
