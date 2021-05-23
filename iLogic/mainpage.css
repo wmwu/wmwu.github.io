@@ -10,7 +10,7 @@ body {
 #hwrap2 {
   margin: 0 auto;
   height: 80px;
-  width: 750px;
+  max-width: 750px;
   background-color: #F7F8EE;
 }
 #nwrap {
@@ -19,7 +19,7 @@ body {
 }
 #nwrap2 {
   margin: 0 auto;
-  width: 750px;
+  max-width: 750px;
   background-color: #E6E6E6;
 }
 #mwrap {
@@ -28,7 +28,7 @@ body {
 }
 #mwrap2 {
   margin: 0 auto;
-  width: 750px;
+  max-width: 750px;
   background-color: #FFFFFF;
 }
 #fwrap {
@@ -39,7 +39,7 @@ body {
 #fwrap2 {
   margin: 0 auto;
   height: 60px;
-  width: 750px;
+  max-width: 750px;
   background-color: #F7F8EE;
 }
 #header {
