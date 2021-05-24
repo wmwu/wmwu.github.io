@@ -320,6 +320,7 @@ button:active {
 #main hr {
 	width: 350px;
 	float: left;
+  margin-left: 24px;
 }
 #main td {
   padding: 0px 2px 0 2px;
@@ -705,20 +706,19 @@ button:active {
   min-width: 420px;
   margin: 10px 0 10px 60px;
   padding: 12px;
+  color: #0a2c02;
   background-color: #e6ecff;
   border: 1px solid gray;
   border-spacing: 0px;
+  font-size: 16px;
+  line-height: 24px;
 }
 .bluebox > .eq::before {
   content: "=";
   margin-left: -22px;
   padding-right: 12px;
   font-family: 'Noto Sans', sans-serif;
-}
-.bluebox td {
   font-size: 16px;
-  color: #0a2c02;
-  line-height: 24px;
 }
 .conclusion {
   border-top: 1px solid;
