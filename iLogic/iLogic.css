@@ -744,7 +744,7 @@ button:active {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
-  width: 75%;
+  width: 78%;
   margin: 18px 36px 6px 60px;
   line-height: 24px;
   font-size: 16px;
@@ -787,9 +787,14 @@ button:active {
   margin: 3px 0 3px 0;
   padding: 0 2px 3px 2px;
 }
-.labelBackground {
-  font-size: 90%;
+.label1 {
   background-color: #e6ecff;
+  font-family: 'Noto Mono', monospace;
+  font-size: 14px;
+  width: 18px;
+  height: 18px;
+  margin: 3px 0 3px 0;
+  padding: 0 2px 3px 2px;
 }
 .popup {
   position: absolute;
