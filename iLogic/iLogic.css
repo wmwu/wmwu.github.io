@@ -329,6 +329,7 @@ button:active {
   color: #0a2c02;
 }
 #main table.box {
+  width: 75%;
   border-collapse: collapse;
   margin: 0 0 0 52px;
   page-break-inside: avoid;
