@@ -729,17 +729,20 @@ button:active {
   width: 80%;
   margin: 6px 36px 6px 36px;
   line-height: 24px;
+  color: #0a2c02;
 }
 .display-eq {
   width: 80%;
   margin: 6px 36px 6px 36px;
   line-height: 24px;
+  color: #0a2c02;
 }
 .display-eq::before {
   content: "=";
   margin-left: -16px;
   padding-right: 8px;
   font-family: 'Noto Sans', sans-serif;
+  color: #0a2c02;
 }
 .display2 {
   display: flex;
@@ -749,20 +752,43 @@ button:active {
   margin: 18px 36px 6px 60px;
   line-height: 24px;
   font-size: 16px;
+  color: #0a2c02;
 }
 .display-formula {
   margin: 6px 36px 18px 60px;
   font-family: 'Noto Sans', sans-serif;
   font-style: italic;
+  color: #0a2c02;
 }
 .display-formula::before {
   content: "=";
   margin-left: -16px;
   padding-right: 8px;
   font-family: 'Noto Sans', sans-serif;
+  color: #0a2c02;
 }
 .display li {
-  margin: 10px 0 0 0;
+  margin: 12px 0 0 0;
+}
+.three-op {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  width: 90%;
+  margin: 18px 36px 6px 12px;
+  font-size: 16px;
+  color: #0a2c02;
+}
+.three-op-col {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  color: #0a2c02;
+}
+.three-op-item {
+  padding: 6px;
+  color: #0a2c02;
+  white-space: nowrap;
 }
 .figure {
   margin-left: 10px;
@@ -775,7 +801,7 @@ button:active {
   font-family: 'Noto Sans', 'Open Sans', sans-serif;
 }
 .line {
-  border-bottom: 1px solid #0a2c02;
+  box-shadow: 0 1px #0a2c02;
   padding: 0 4px 4px 8px;
   line-height: 24px;
 }
@@ -1017,25 +1043,28 @@ button:active {
 	margin: 0 0 0 -30px;
 }
 .form242f {
+  font-family: 'Noto Serif', sans-serif;
   font-size: 16px;
   font-style: normal;
   line-height: 20px;
 	text-align: left;
-  width: 56px;
+  width: 70%;
 }
 .form242o {
+  font-family: 'Noto Serif', sans-serif;
   font-size: 16px;
   font-style: normal;
   line-height: 20px;
 	text-align: center;
-  width: 100px;
+  width: 60%;
 }
 .form242s {
+  font-family: 'Noto Serif', sans-serif;
   font-size: 16px;
   font-style: normal;
   line-height: 20px;
 	text-align: left;
-  width: 200px;
+  width: 80%;
 }
 .mark242c {
   z-index: -1;
