@@ -839,7 +839,7 @@ function checkAnswers2()
 	$("#24214e5").css({ opacity: .7, "z-index": "2" });
   }
 	//#15
-  if ($('input[id="242151"]').val() == "Obv.")
+  if ($('input[id="242151"]').val() == "Conv. & Obv.")
   {
 	$("#24215c1").css({ opacity: .7, "z-index": "2" });
 	$("#24215e1").css({ opacity: .0 });
@@ -849,7 +849,7 @@ function checkAnswers2()
 	$("#24215c1").css({ opacity: .0 });
 	$("#24215e1").css({ opacity: .7, "z-index": "2" });
   }
-  if ($('input[id="242152"]').val() == "Some non-D are not non-E.")
+  if ($('input[id="242152"]').val() == "Some A are not E.")
   {
 	$("#24215c2").css({ opacity: .7, "z-index": "2" });
 	$("#24215e2").css({ opacity: .0 });
@@ -859,7 +859,7 @@ function checkAnswers2()
 	$("#24215c2").css({ opacity: .0 });
 	$("#24215e2").css({ opacity: .7, "z-index": "2" });
   }
-  if ($('input[id="242153"]').val() == "Contrapos.")
+  if ($('input[id="242153"]').val() == "")
   {
 	$("#24215c3").css({ opacity: .7, "z-index": "2" });
 	$("#24215e3").css({ opacity: .0 });
@@ -869,7 +869,7 @@ function checkAnswers2()
 	$("#24215c3").css({ opacity: .0 });
 	$("#24215e3").css({ opacity: .7, "z-index": "2" });
   }
-  if ($('input[id="242154"]').val() == "Some non-E are not non-A.")
+  if ($('input[id="242154"]').val() == "Some E are not D.")
   {
 	$("#24215c4").css({ opacity: .7, "z-index": "2" });
 	$("#24215e4").css({ opacity: .0 });
@@ -879,7 +879,7 @@ function checkAnswers2()
 	$("#24215c4").css({ opacity: .0 });
 	$("#24215e4").css({ opacity: .7, "z-index": "2" });
   }
-	  if ($('input[id="242155"]').val() == "Obv.")
+	  if ($('input[id="242155"]').val() == "Conv. & Obv.")
   {
 	$("#24215c5").css({ opacity: .7, "z-index": "2" });
 	$("#24215e5").css({ opacity: .0 });
@@ -889,7 +889,7 @@ function checkAnswers2()
 	$("#24215c5").css({ opacity: .0 });
 	$("#24215e5").css({ opacity: .7, "z-index": "2" });
   }
-  if ($('input[id="242156"]').val() == "Some non-A are not non-D.")
+  if ($('input[id="242156"]').val() == "Some D are not A.")
   {
 	$("#24215c6").css({ opacity: .7, "z-index": "2" });
 	$("#24215e6").css({ opacity: .0 });
