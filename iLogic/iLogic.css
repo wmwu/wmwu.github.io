@@ -1064,7 +1064,8 @@ button:active {
   font-style: normal;
   line-height: 20px;
 	text-align: left;
-  width: 80%;
+  width: 88%;
+  padding-left: 4px;
 }
 .mark242c {
   z-index: -1;
