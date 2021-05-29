@@ -739,7 +739,20 @@ button:active {
 }
 .display-eq::before {
   content: "=";
-  margin-left: -16px;
+  margin-left: -17px;
+  padding-right: 8px;
+  font-family: 'Noto Sans', sans-serif;
+  color: #0a2c02;
+}
+.display-neq {
+  width: 80%;
+  margin: 6px 36px 6px 36px;
+  line-height: 24px;
+  color: #0a2c02;
+}
+.display-neq::before {
+  content: "≠";
+  margin-left: -17px;
   padding-right: 8px;
   font-family: 'Noto Sans', sans-serif;
   color: #0a2c02;
@@ -790,6 +803,11 @@ button:active {
   color: #0a2c02;
   white-space: nowrap;
 }
+.three-op-ex {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
 .figure {
   margin-left: 10px;
 }
@@ -832,7 +850,7 @@ button:active {
   padding: 5px;
   font-size: x-small;
   background-color: #eeeeee;
-  color: #444444;
+  color: #424242;
 }
 .symb {
   font-family: 'Cambria Math Regular', 'DejaVu Sans', sans-serif;
@@ -966,20 +984,24 @@ button:active {
 	font-weight: bold;
 }
 .form231 {
+  font-family: 'Noto Serif', serif;
   font-size: 16px;
   font-style: normal;
-  width: 218px;
+  line-height: 20px;
+  width: 220px;
 }
 .form231o {
   font-size: 16px;
   font-style: normal;
-  width: 112px;
+  line-height: 20px;
+  width: 105px;
 }
 .form232 {
   font-family: 'Noto Sans', 'Open Sans', sans-serif;
   font-size: 16px;
   font-style: normal;
-	text-align: center;
+	text-align: left;
+  line-height: 20px;
   width: 20px;
 }
 .form23a {
