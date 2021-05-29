@@ -379,7 +379,7 @@ simplified and written as a list of steps:</p>
 <h4>Double Negation (DN)</h4>
 
 <div class="bluebox" style="margin-top: 24px;">
-  <div style="display: inline-table; padding-left: 24px;"><em>p</em>&nbsp;&nbsp;=&nbsp;&nbsp;<span class="symb">&sim;&sim;</span><em>p</em></div>
+  <div style="display: inline-table; padding-left: 24px;"><em>p</em><span style="padding: 0 12px;"> = </span><span class="symb">&sim;&sim;</span><em>p</em></div>
 </div>
 
 <p>We learned to use the rule of double negation in section 3.3 to identify the basic argument forms. This example shows how to use it to formally draw the conclusion <span class="symb">&sim;</span><span class="var">M </span>from <span class="var">M&nbsp;</span><span class="symb">&sup;</span><span class="symb">&nbsp;&sim;</span><span class="var2">(</span><span class="var">D&nbsp;</span><span class="symb">&or;</span><span class="var">&nbsp;L</span><span class="var2">)</span> and <span class="var">D&nbsp;</span><span class="symb">&or;</span><span class="var">&nbsp;L</span> using <em>modus tollens</em> (MT):</p>
@@ -394,8 +394,9 @@ simplified and written as a list of steps:</p>
 
 <h4>Tautology (Taut.)</h4>
 
-<div class="bluebox" style="margin-top: 24px;">
-  <div style="display: inline-table; padding-left: 24px;"><em>p</em>&nbsp;&nbsp;=&nbsp;&nbsp;<em>p</em>&nbsp;<span class="symb">&#x2022;</span>&nbsp;<em>p</em><br> <em>p</em>&nbsp;&nbsp;=&nbsp;&nbsp;<em>p</em>&nbsp;<span class="symb">&or;</span>&nbsp;<em>p</em></div>
+<div class="bluebox">
+	<div style="display: block; padding-left: 24px;"><em>p</em><span style="padding: 0 12px;"> = </span><em>p </em> <span class="symb">&#x2022;</span>&nbsp;<em>p</em></div>
+	<div style="display: block; padding: 6px 0 0 24px;"><em>p</em><span style="padding: 0 12px;"> = </span><em>p </em> <span class="symb">&or;</span>&nbsp;<em>p</em></div>
 </div>
 
 <p>This rule is quite self-explanatory and is typically used to contract <em>p</em> <span class="symb">&#x2022;</span> <em>p</em> or <em>p</em> <span class="symb">&or;</span> <em>p</em> to <em>p</em>, as illustrated in this example:</p>
@@ -410,8 +411,9 @@ simplified and written as a list of steps:</p>
 
 <h4>Commutativity (Com.)</h4>
 
-<div class="bluebox" style="margin-top: 24px;">
-  <div style="display: inline-table; padding-left: 24px;"><em>p</em>&nbsp;<span class="symb">&#x2022;</span>&nbsp;<em>q</em>&nbsp;&nbsp;=&nbsp;&nbsp;<em>q </em> <span class="symb">&#x2022;</span>&nbsp;<em>p</em><br><em>p</em>&nbsp;<span class="symb">&or;</span>&nbsp;<em>q</em>&nbsp;&nbsp;=&nbsp;&nbsp;<em>q</em >&nbsp;<span class="symb">&or;</span>&nbsp;<em>p</em></div>
+<div class="bluebox">
+	<div style="display: block; padding-left: 24px;"><em>p</em>&nbsp;<span class="symb">&#x2022;</span>&nbsp;<em>q</em><span style="padding: 0 12px;"> = </span><em>q </em> <span class="symb">&#x2022;</span>&nbsp;<em>p</em></div>
+	<div style="display: block; padding: 6px 0 0 24px;"><em>p</em>&nbsp;<span class="symb">&or;</span>&nbsp;<em>q</em><span style="padding: 0 10px;"> = </span><em>q </em> <span class="symb">&or;</span>&nbsp;<em>p</em></div>
 </div>
 
 <p>Commutativity allows us to switch the order of two conjuncts or disjuncts. The first example below shows the application of commutativity to a conjunction:</p>
@@ -438,7 +440,7 @@ simplified and written as a list of steps:</p>
 <h4>Transportation (Trans.)</h4>
 
 <div class="bluebox" style="margin-top: 24px;">
-  <div style="display: inline-table; padding-left: 24px;"><em>p</em>&nbsp;<span class="symb">&sup;</span>&nbsp;<em>q</em>&nbsp;&nbsp;=&nbsp;&nbsp;<span class="symb">&sim;</span><em>q</em>&nbsp;<span class="symb">&sup;</span>&nbsp;<span class="symb">&sim;</span><em>p</em></div>
+  <div style="display: inline-table; padding-left: 24px;"><em>p</em>&nbsp;<span class="symb">&sup;</span>&nbsp;<em>q</em><span style="padding: 0 12px;"> = </span><span class="symb">&sim;</span><em>q</em>&nbsp;<span class="symb">&sup;</span>&nbsp;<span class="symb">&sim;</span><em>p</em></div>
 </div>
 
 <p>In the conditional <em>p</em> <span class="symb">&sup;</span> <em>q</em>, <em>q</em> is a necessary condition for <em>p</em>. This means that if <em>q</em> is not true, then <em>p</em> cannot be true.</p>
@@ -455,7 +457,7 @@ simplified and written as a list of steps:</p>
 <h4>Material Implication (Impl.)</h4>
 
 <div class="bluebox" style="margin-top: 24px;">
-  <div style="display: inline-table; padding-left: 24px;"><em>p</em>&nbsp;<span class="symb">&sup;</span>&nbsp;<em>q</em>&nbsp;&nbsp;=&nbsp;&nbsp;<span class="symb">&sim;</span><em>p</em>&nbsp;<span class="symb">&or;</span>&nbsp;<em>q</em></div>
+  <div style="display: inline-table; padding-left: 24px;"><em>p</em>&nbsp;<span class="symb">&sup;</span>&nbsp;<em>q</em><span style="padding: 0 12px;"> = </span><span class="symb">&sim;</span><em>p</em>&nbsp;<span class="symb">&or;</span>&nbsp;<em>q</em></div>
 </div>
 
 <p>Material implication allows us to replace a conditional with a disjunction, and <em>vice versa</em>. In the following example, to use hypothetical syllogism (HS) to derive <span class="var">I </span><span class="symb">&sup;</span><span class="var"> U</span>, we first use material implication to replace <span class="symb">&sim;</span><span class="var">R </span><span class="symb">&or;</span><span class="var"> U </span> with <span class="var">R </span><span class="symb">&sup;</span><span class="var"> U</span>:</p>
@@ -479,7 +481,7 @@ simplified and written as a list of steps:</p>
 <h4>DeMorgan&rsquo;s Rule (DM)</h4>
 
 <div class="bluebox" style="margin-top: 24px;">
-  <div style="display: inline-table; padding-left: 24px;"><span class="symb">&sim;</span>(<em>p</em>&nbsp;<span class="symb">&#x2022;</span>&nbsp;<em>q</em>)&nbsp;&nbsp;=&nbsp;&nbsp;<span class="symb">&sim;</span><em>p</em>&nbsp;<span class="symb">&or;</span>&nbsp;<span class="symb">&sim;</span><em>q</em><br><span class="symb">&sim;</span>(<em>p</em>&nbsp;<span class="symb">&or;</span> <em>q</em>)&nbsp;&nbsp;=&nbsp;&nbsp;<span class="symb">&sim;</span><em>p</em>&nbsp;<span class="symb">&#x2022;</span>&nbsp;<span class="symb">&sim;</span><em>q</em></div>
+  <div style="display: inline-table; padding-left: 24px;"><span class="symb">&sim;</span>(<em>p</em>&nbsp;<span class="symb">&#x2022;</span>&nbsp;<em>q</em>)<span style="padding: 0 12px;"> = </span><span class="symb">&sim;</span><em>p</em>&nbsp;<span class="symb">&or;</span>&nbsp;<span class="symb">&sim;</span><em>q</em><br><span class="symb">&sim;</span>(<em>p</em>&nbsp;<span class="symb">&or;</span>&nbsp;<em>q</em>)<span style="padding: 0 10px;"> = </span><span class="symb">&sim;</span><em>p</em>&nbsp;<span class="symb">&#x2022;</span>&nbsp;<span class="symb">&sim;</span><em>q</em></div>
 </div>
 
 <p>DeMorgan&rsquo;s rule was introduced at the end of section 3.1. The rule enables us to turn the negation of a conjunction into a disjunction of two negations, and turn the negation of a disjunction into a conjunction of two negations:</p>
@@ -507,7 +509,7 @@ simplified and written as a list of steps:</p>
 <h4>Material Equivalence (Equiv.)</h4>
 
 <div class="bluebox" style="margin-top: 24px;">
-  <div style="display: inline-table; padding-left: 24px;"><em>p</em>&nbsp;<span class="symb">&equiv;</span>&nbsp;<em>q</em>&nbsp;&nbsp;=&nbsp;&nbsp;(<em>p </em>&nbsp;<span class="symb">&sup;</span>&nbsp;<em>q</em>) <span class="symb">&#x2022;</span>&nbsp;(<em>q</em>&nbsp;<span class="symb">&sup;</span>&nbsp;<em>p</em>)<br><em>p</em>&nbsp;<span class="symb">&equiv;</span>&nbsp;<em>q</em>&nbsp;&nbsp;=&nbsp;&nbsp;(<em>p </em>&nbsp;<span class="symb">&#x2022;</span>&nbsp;<em>q</em>)&nbsp;<span class="symb">&or;</span>&nbsp;(<span class="symb">&sim;</span><em>p</em>&nbsp;<span class="symb">&#x2022;</span>&nbsp;<span class="symb">&sim;</span><em>q</em>)</div>
+  <div style="display: inline-table; padding-left: 24px;"><em>p</em>&nbsp;<span class="symb">&equiv;</span>&nbsp;<em>q</em><span style="padding: 0 12px;"> = </span>(<em>p </em>&nbsp;<span class="symb">&sup;</span>&nbsp;<em>q</em>) <span class="symb">&#x2022;</span>&nbsp;(<em>q</em>&nbsp;<span class="symb">&sup;</span>&nbsp;<em>p</em>)<br><em>p</em>&nbsp;<span class="symb">&equiv;</span>&nbsp;<em>q</em><span style="padding: 0 12px;"> = </span>(<em>p </em>&nbsp;<span class="symb">&#x2022;</span>&nbsp;<em>q</em>)&nbsp;<span class="symb">&or;</span>&nbsp;(<span class="symb">&sim;</span><em>p</em>&nbsp;<span class="symb">&#x2022;</span>&nbsp;<span class="symb">&sim;</span><em>q</em>)</div>
 </div>
 
 <p>In section 3.1, we learned that the biconditional <em>p</em> <span class="symb">&equiv;</span> <em>q</em> is an abbreviation of (<em>p</em>&nbsp;<span class="symb">&sup;</span>&nbsp;<em>q</em>)&nbsp;<span class="symb">&#x2022;</span>&nbsp;(<em>q</em>&nbsp;<span class="symb">&sup;</span>&nbsp;<em>p</em>). This understanding gives us the first material equivalence: <em>p</em> <span class="symb">&equiv;</span> <em>q</em> is logically equivalent to (<em>p</em>&nbsp;<span class="symb">&sup;</span>&nbsp;<em>q</em>)&nbsp;<span class="symb">&#x2022;</span>&nbsp;(<em>q</em>&nbsp;<span class="symb">&sup;</span>&nbsp;<em>p</em>).</p>
@@ -539,7 +541,7 @@ simplified and written as a list of steps:</p>
 <h4>Associativity (Assoc.)</h4>
 
 <div class="bluebox" style="margin-top: 24px;">
-  <div style="display: inline-table; padding-left: 24px;">(<em>p</em>&nbsp;<span class="symb">&#x2022;</span>&nbsp;<em>q</em>)&nbsp;<span class="symb">&#x2022;</span>&nbsp;<em>r</em>&nbsp;&nbsp;=&nbsp;&nbsp;<em>p</em>&nbsp;<span class="symb">&#x2022;</span>&nbsp;(<em>q</em>&nbsp;<span class="symb">&#x2022;</span>&nbsp;<em>r</em>) <br> (<em>p</em>&nbsp;<span class="symb">&or;</span>&nbsp;<em>q</em>)&nbsp;<span class="symb">&or;</span>&nbsp;<em>r</em>&nbsp;&nbsp;=&nbsp;&nbsp;<em>p</em>&nbsp;<span class="symb">&or;</span>&nbsp;(<em>q</em>&nbsp;<span class="symb">&or;</span>&nbsp;<em>r</em>)</div>
+  <div style="display: inline-table; padding-left: 24px;">(<em>p</em>&nbsp;<span class="symb">&#x2022;</span>&nbsp;<em>q</em>)&nbsp;<span class="symb">&#x2022;</span>&nbsp;<em>r</em><span style="padding: 0 14px;"> = </span><em>p</em>&nbsp;<span class="symb">&#x2022;</span>&nbsp;(<em>q</em>&nbsp;<span class="symb">&#x2022;</span>&nbsp;<em>r</em>) <br> (<em>p</em>&nbsp;<span class="symb">&or;</span>&nbsp;<em>q</em>)&nbsp;<span class="symb">&or;</span>&nbsp;<em>r</em><span style="padding: 0 14px 0 9px;"> = </span><em>p</em>&nbsp;<span class="symb">&or;</span>&nbsp;(<em>q</em>&nbsp;<span class="symb">&or;</span>&nbsp;<em>r</em>)</div>
 </div>
 
 <p>The rule allows us to shift the position of parentheses. In the next proof, associativity is used with commutativity to get <span class="var2">(</span><span class="var">C </span><span class="symb">&or;</span><span class="var"> A</span><span class="var2">)</span> <span class="symb">&or;</span><span class="var"> P</span>, which enables us to use disjunctive syllogism (DS) to derive the conclusion <span class="var">P</span>:</p>
@@ -555,9 +557,9 @@ simplified and written as a list of steps:</p>
 <h4>Distribution (Dist.)</h4>
 
 <div class="bluebox" style="margin-top: 24px;">
-  <div style="display: inline-table; padding-left: 24px;"><em>p</em>&nbsp;<span class="symb">&#x2022;</span>&nbsp;(<em>q</em>&nbsp;<span class="symb">&or;</span>&nbsp;<em>r</em>)&nbsp;&nbsp;=&nbsp;&nbsp;(<em>p</em>&nbsp;<span class="symb">&#x2022;</span>&nbsp;<em>q</em>)&nbsp;<span class="symb">&or;</span>&nbsp;(<em>p</em>&nbsp;<span class="symb">&#x2022;</span>&nbsp;<em>r</em>)
+  <div style="display: inline-table; padding-left: 24px;"><em>p</em>&nbsp;<span class="symb">&#x2022;</span>&nbsp;(<em>q</em>&nbsp;<span class="symb">&or;</span>&nbsp;<em>r</em>)<span style="padding: 0 12px;"> = </span>(<em>p</em>&nbsp;<span class="symb">&#x2022;</span>&nbsp;<em>q</em>)&nbsp;<span class="symb">&or;</span>&nbsp;(<em>p</em>&nbsp;<span class="symb">&#x2022;</span>&nbsp;<em>r</em>)
     <br>
-    <em>p</em>&nbsp;<span class="symb">&or;</span>&nbsp;(<em>q</em>&nbsp;<span class="symb">&#x2022;</span>&nbsp;<em>r</em>)&nbsp;&nbsp;=&nbsp;&nbsp;(<em>p</em>&nbsp;<span class="symb">&or;</span>&nbsp;<em>q</em>) <span class="symb">&#x2022;</span>&nbsp;(<em>p</em>&nbsp;<span class="symb">&or;</span>&nbsp;<em>r</em>)</div>
+    <em>p</em>&nbsp;<span class="symb">&or;</span>&nbsp;(<em>q</em>&nbsp;<span class="symb">&#x2022;</span>&nbsp;<em>r</em>)<span style="padding: 0 12px;"> = </span>(<em>p</em>&nbsp;<span class="symb">&or;</span>&nbsp;<em>q</em>) <span class="symb">&#x2022;</span>&nbsp;(<em>p</em>&nbsp;<span class="symb">&or;</span>&nbsp;<em>r</em>)</div>
 </div>
 
 <p>If <em>p</em> <span class="symb">&#x2022;</span> (<em>q</em> <span class="symb">&or;</span> <em>r</em>) is true, then both <em>p</em> and <em>q</em> <span class="symb">&or;</span> <em>r</em> are true. If <em>q</em> <span class="symb">&or;</span> <em>r</em> is true, then either <em>q</em> is true or <em>r</em> is true. In the case that <em>q</em> is true, we would have both <em>p</em> and <em>q</em> true. On the other hand, in the case that <em>r</em> is true, we would have both <em>p</em> and <em>r</em> true. As a result, either <em>p</em> <span class="symb">&#x2022;</span> <em>q</em> is true or <em>p</em> <span class="symb">&#x2022;</span> <em>r</em> is true.</p>
@@ -578,7 +580,7 @@ simplified and written as a list of steps:</p>
 <h4>Exportation (Exp.)</h4>
 
 <div class="bluebox" style="margin-top: 24px;">
-  <div style="display: inline-table; padding-left: 24px;">(<em>p</em>&nbsp;<span class="symb">&#x2022;</span>&nbsp;<em>q</em>)&nbsp;<span class="symb">&sup;</span>&nbsp;<em>r</em>&nbsp;&nbsp;=&nbsp;&nbsp;<em>p</em>&nbsp;<span class="symb">&sup;</span>&nbsp;(<em>q</em>&nbsp;<span class="symb">&sup;</span>&nbsp;<em>r</em>)</div>
+  <div style="display: inline-table; padding-left: 24px;">(<em>p</em>&nbsp;<span class="symb">&#x2022;</span>&nbsp;<em>q</em>)&nbsp;<span class="symb">&sup;</span>&nbsp;<em>r</em><span style="padding: 0 12px;"> = </span><em>p</em>&nbsp;<span class="symb">&sup;</span>&nbsp;(<em>q</em>&nbsp;<span class="symb">&sup;</span>&nbsp;<em>r</em>)</div>
 </div>
 
 <p>To see that (<em>p</em> <span class="symb">&#x2022;</span> <em>q</em>) <span class="symb">&sup;</span> <em>r</em> is logically equivalent to <em>p</em> <span class="symb">&sup;</span> (<em>q</em> <span class="symb">&sup;</span> <em>r</em>) without constructing truth tables, let us suppose that <em>p</em> <span class="symb">&#x2022;</span> <em>q</em> is true and try to infer that <em>r</em> is true from both of them. First, from (<em>p</em> <span class="symb">&#x2022;</span> <em>q</em>) <span class="symb">&sup;</span> <em>r</em> and <em>p</em> <span class="symb">&#x2022;</span> <em>q</em>, we can conclude that <em>r</em> is true according to <em>modus ponens</em>. Now applying simplification to the assumption that <em>p</em> <span class="symb">&#x2022;</span> <em>q</em> is true, we can infer that <em>p</em> is true and <em>q</em> is also true. From <em>p</em> <span class="symb">&sup;</span> (<em>q</em> <span class="symb">&sup;</span> <em>r</em>) and <em>p</em>, we can derive <em>q</em> <span class="symb">&sup;</span> <em>r</em> with <em>modus ponens</em>. Then again from <em>q</em> <span class="symb">&sup;</span> <em>r</em> and <em>q</em> we can infer that <em>r</em> is true with <em>modus ponens</em>.</p>
