@@ -126,7 +126,7 @@ body {
   height: 1px;
   transition: width .5s ease;
 }
-img {
+#header img {
   position: absolute;
   left: 60px;
   top: 0px;
