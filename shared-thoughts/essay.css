@@ -62,7 +62,7 @@ body {
   display: block;
   margin: 36px auto;
   z-index: -1;
-  width: 640px;
+  width: 600px;
 }
 #main {
   position: -webkit-sticky;

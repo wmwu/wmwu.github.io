@@ -70,7 +70,7 @@ body {
   margin: 36px auto;
   z-index: -1;
   width: 100%;
-  max-width: 640px;
+  max-width: 600px;
 }
 #main {
   position: -webkit-sticky;
