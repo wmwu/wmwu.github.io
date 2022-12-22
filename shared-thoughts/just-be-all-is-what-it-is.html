@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Wu Weiming" />
+  <meta name="dcterms.date" content="2022-12-21" />
+  <meta name="description" content="Wuwei against the cultivation of virtues">
+  <title>Just Be: All Is What It Is</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" media="screen and (min-width: 1240px)" href="essay.css" type="text/css" />
+  <link rel="stylesheet" media="screen and (max-width: 1239px)" href="essay-m.css" type="text/css" />
+</head>
+<body>
+  <div id="header">
+    <button class="sitetitle" onclick="location.assign('../index.html');">Sitting under a bodhi tree ...</button>
+    <img id="bodhi-leaf" src="../bodhi-leaf.png">
+  </div>
+<button id="navmenubtn"><i class="fa fa-chevron-left"></i></button>
+  <div id="navmenu" class="nav">
+    <div class="menucontent">
+      <div><span class="close">&times;</span></div>
+      <p class="currentarticle"><a onclick="scrollToTop()">Just Be: All Is What It Is</a></p>
+      <p class="sectionlink"><a onclick="scrollToSecOne()">Against the Cultivation of
+        Virtue</a></p>
+      <p class="sectionlink"><a onclick="scrollToSecTwo()"><em>Wuwei</em> (<span
+        class="tc">無為</span>, <span class="sc">无为</span>, No Action)</a></p>
+      <p class="sectionlink"><a onclick="scrollToSecThree()">Transcending Virtue and
+        Morality</a></p>
+      <p class="article"><a href="karma.html">Karma: We Are What We Do</a></p>
+      <p><a href="yinyang-and-dao.html"><em>Yinyang</em> and <em>Dao</em></a></p>
+      <p><a href="the-way-of-ren.html"><em>Rendao</em>: The Way of <em>Ren</em></a></p>
+    </div>
+  </div>
+      <script type="text/javascript">
+
+        window.onresize = function() {
+          window.setTimeout(function(){location.reload()}, 1000);
+        }
+    
+          // Get the nav menu
+          var nav = document.getElementById("navmenu");
+    
+          // Get the button that opens the nav menu
+          var btn = document.getElementById("navmenubtn");
+    
+          // Get the <span> element that closes the nav menu
+          var span = document.getElementsByClassName("close")[0];
+    
+          // When the user clicks the button, open the nav menu 
+          btn.onclick = function() {
+            nav.style.display = "block";
+            navmenubtn.style.display = "none";
+          }
+    
+          // When the user clicks on <span> (x), close the nav menu
+          span.onclick = function() {
+            nav.style.display = "none";
+            navmenubtn.style.display = "block";
+          }
+    
+          // When the user clicks anywhere outside of the nav menu, close it
+          window.onclick = function(event) {
+            if (event.target == nav) {
+              nav.style.display = "none";
+              navmenubtn.style.display = "block";
+            }
+          }
+    
+          // Show the button when scroll down
+          window.onscroll = function() {scrollFunction()};
+          function scrollFunction() {
+            if (document.body.scrollTop > 360 || document.documentElement.scrollTop > 360) {
+                navmenubtn.style.display = "block";
+            }
+            else {
+              navmenubtn.style.display = "none";
+            }
+          }
+    
+          // Go to Top
+          function scrollToTop() {
+            window.scrollTo({
+              top: 0,
+              behavior: "smooth"
+            });
+            if (window.outerWidth < 1240) {
+              nav.style.display = "none";
+            }
+          }
+    
+          // Go to Sections
+          function scrollToSecOne() {
+            var y = document.getElementById("against-the-cultivation-of-virtue").offsetTop;
+            window.scrollTo({ top: y, behavior: 'smooth' });
+            if (window.outerWidth < 1240) {
+              nav.style.display = "none";
+            }
+          }
+          function scrollToSecTwo() {
+            var y = document.getElementById("wuwei").offsetTop;
+            window.scrollTo({ top: y, behavior: 'smooth' });
+            if (window.outerWidth < 1240) {
+              nav.style.display = "none";
+            }
+          }
+          function scrollToSecThree() {
+            var y = document.getElementById("transcending-virtue-and-morality").offsetTop;
+            window.scrollTo({ top: y, behavior: 'smooth' });
+            if (window.outerWidth < 1240) {
+              nav.style.display = "none";
+            }
+          }
+          function scrollToFootnote(clickedElement) {
+            var fnref = clickedElement.id;
+            var fn = fnref.replace('re', '');
+            var y = document.getElementById(fn).offsetTop;
+            window.scrollTo({ top: y, behavior: 'smooth' });
+          }
+          function scrollToFootnoteRef(clickedElement) {
+            var fn = clickedElement.parentNode.parentNode.id;
+            var fnref = 're' + fn;
+            var y = document.getElementById(fnref).offsetTop - 24;
+            window.scrollTo({ top: y, behavior: 'smooth' });
+          }
+        </script>
+    <div id="main">
+      <h1 class="title">Just Be: All Is What It Is</h1>
+      <p class="author"><span style="display: inline-flex; flex-direction: column;">Wu Weiming<span class="tc">吳維明</span></span></p>
+      <p class="date">December 21, 2022</p>
+      <div><img id="qing-ming-shang-he-tu" src="qing-ming-shang-he-tu.png"></div>
+      <p class="first"><em>Daojia</em> (<span class="tc">道家</span>) is another Chinese
+        school of thoughts that rivals Confucian philosophy and has had great
+        impact on the Chinese and the Asian culture. The two most important
+        Daoist philosophers are Laozi (<span class="tc">老子</span>) and
+        Zhuangzi (<span class="tc">莊子</span>，<span class="sc">庄子</span>).
+        The Daoist school of thoughts is sometimes referred to as <em>Lao Zhuang
+        zhexue</em> (<span class="tc">老莊哲學</span>, <span
+        class="sc">老庄哲学</span>), the philosophy of Laozi and Zhuangzi, so as
+        to distinguish it from <em>Daojiao</em> (<span class="tc">道教</span>,
+        religious Daoism).<sup><a onclick="scrollToFootnote(this)" id="refn:1" class="footnote">1</a></sup></p>
+      <h2 style="page-break-after: avoid"
+        id="against-the-cultivation-of-virtue">Against the Cultivation of
+        Virtue</h2>
+      <p>The Confucian way of knowing <em>dao</em> is through <em>de</em>
+        (<span class="tc">德</span>, virtue). Once a person becomes a
+        <em>junzi</em> (<span class="tc">君子</span>, a person of <em>ren</em>),
+        they would learn about <em>dao</em>. This is why the cultivation of
+        virtue is paramount in Confucianism. Strikingly, Daoism is against the
+        cultivation of virtue and regards it as the root of disharmony.</p>
+      <h3 style="page-break-after: avoid" id="Virtue-and-Degeneration">Virtue
+        and Degeneration</h3>
+      <p>The first reason Daoism is against the cultivation of virtue is that
+        <em>li</em> (<span class="tc">禮</span>, <span class="sc">礼</span>, the
+        norms of decorum and civility) leads to hypocrisy and moral
+        degeneration. When society tries to mold its people into <em>junzi</em>
+        by means of <em>li</em>, usually through rewards and punishments, people
+        would pretend to be virtuous to gain rewards and avoid punishments.
+        <sup><a onclick="scrollToFootnote(this)" id="refn:2" class="footnote">2</a></sup></p>
+      <p>In <em>Dao De Jing</em> (<span class="tc">《道德經》</span>, <span
+        class="sc">《道德经》</span>), Laozi clearly states why he is against
+        the cultivation of virtue:</p>
+      <blockquote>
+      <p>The higher <em>de</em> has merit because it has no concern with
+        virtue; the lesser <em>de</em> has no merit because it cares about not
+        to lose virtue. The higher <em>de</em> does not try to do good and does
+        not need to be driven by good intentions; the lesser <em>de</em> tries
+        to do good and is driven by good intentions. The higher <em>ren</em>
+        (仁, benevolence) tries to do good and does not need to be driven by
+        good intentions; the higher <em>yi</em> (<span class="tc">義</span>,
+        <span class="sc">义</span>, righteousness) tries to do good out of good
+        intentions. The higher <em>li</em> does good out of the expectation of
+        customs that compel people to behave. Accordingly <em>de</em> takes
+        center stage after <em>dao</em> is lost; <em>ren</em> is in play after
+        <em>de</em> is lost; <em>yi</em> is emphasized after <em>ren</em> is
+        lost; <em>li</em> becomes the game in town after <em>yi</em> is lost.
+        The focus on <em>li</em> reflects the lack of <em>zhong</em> (忠,
+        faithfulness) and <em>xin</em> (信, trust), and is the beginning of
+        disorder.”<sup>
+        <a onclick="scrollToFootnote(this)" id="refn:3" class="footnote">3</a></sup></p>
+      </blockquote>
+      <p>Laozi’s most profound insight is that if all things follow
+        <em>dao</em>, they would flourish and become the paragons of what they
+        are supposed to be. They would by nature thrive to reach their own kinds
+        of excellence in each of their own ways without the slightest idea that
+        they need to be virtuosos. They are virtuosos simply as a result of the
+        ways they thrive to be their best. They do not need moral concepts and
+        rules to tell them how they should behave.</p>
+        <p>A world where people care primarily about legality and civility would
+        already have been less just and righteous. When minority groups have to
+        fight in court against atrocious gerrymandering cases, how fair and just
+        is such a democracy? When people have to struggle for their fair shares,
+        what happens to kindness and generosity? Isn’t the call for compassion
+        toward disadvantaged and less fortunate people a reflection of the lack
+        thereof? And why would there be a need for compassion to begin with?
+        Would people in a virtuous and caring society end up being homeless?
+        Haven’t we already lost our way if we need virtue and morality to guide
+        and regulate our lives?</p>
+      <h3 style="page-break-after: avoid"
+        id="preference-and-prejudice">Preference and Prejudice</h3>
+      <p>A more serious charge Daoism levels against the cultivation of virtue
+        is that it perpetuates certain values that reflect a society’s
+        preferences and prejudices. Daoism sees <em>li</em> as a set of values
+        derived from societal and cultural preferences. It views the cultivation
+        of virtue with suspicion as a way to institutionalize and perpetuate
+        sanctioned values that would lead to systematic discrimination and
+        become the root of disharmony.</p>
+      <p>Truthful to the philosophical framework of <em>Yi Jing</em> (<span
+        class="tc">《易經》</span>, <span class="sc">《易经》</span>, <em>the
+        Book of Changes</em>), Daoism reminds us that differences in the world
+        are merely contrasts. They are represented as <em>yin</em> and
+        <em>yang</em>. <em>Yin</em> is not better than <em>yang</em> and
+        <em>yang</em> is not better than <em>yin</em>.<sup>
+        <a onclick="scrollToFootnote(this)" id="refn:4" class="footnote">4</a></sup> We
+        need to be careful not to favor <em>yin</em> over <em>yang</em>, or
+        <em>yang</em> over <em>yin</em>. Otherwise, preference would lead to
+        prejudice. Laozi’s insight is stated in <em>Dao De Jing</em>:</p>
+      <blockquote>
+      <p>When the world knows what beauty is, whence comes what it dislikes;
+        When it knows what is good, whence comes what is not good. In this way
+        the presence or absence of something yield each other; the difficult and
+        the easy correlate with each other; the long and the short contrast each
+        other; the high and the low distinguish each other; different sounds
+        accord each other; the anterior and the posterior put each other in
+        order<sup>
+        <a onclick="scrollToFootnote(this)" id="refn:5" class="footnote">5</a></sup>.<sup><a onclick="scrollToFootnote(this)" id="refn:6" class="footnote">6</a></sup></p>
+      </blockquote>
+      <p>When people like what is beautiful, such a preference is already a
+        prejudice against that which is not beautiful in the sense that they
+        like the latter less than the former. When a child is adored for being
+        beautiful, how would that affect other kids when they notice that they
+        are not getting the same amount of attention and praises? Moreover, can
+        we blame the child showered with adoration for vanity? Doesn’t the
+        problem with designer babies and eugenics stem from our preference for
+        the healthier, better-looking, more intelligent and more athletic
+        people?</p>
+      <p>Why do we prefer people with good health, attractive physical
+        appearance, talents and abilities? Isn’t it because we realize that they
+        have advantages and are more likely to succeed in the game of getting
+        ahead in life? Don’t they tend to be adored and treated favorably? If
+        this is the honest truth, can we blame parents for wanting their kids to
+        have these desirable traits? It is small wonder that our world would
+        face the problem of eugenics and designer babies.<sup><a onclick="scrollToFootnote(this)" id="refn:7" class="footnote">7</a></sup></p>
+      <h2 style="page-break-after: avoid" id="wuwei"><em>Wuwei</em> (<span
+        class="tc" style="font-size: 24px; font-weight: 600;">無為</span>, <span class="sc" style="font-size: 24px; font-weight: 600;">无为</span>, No Action)</h2>
+      <p>Laozi’s remedy for the ills rooted in preference and prejudice is
+        <em>wuwei</em>. And the key to <em>wuwei</em> is <em>wuyu</em> (<span
+        class="tc">無欲</span>, <span class="sc">无欲</span>, desireless).
+        Desire and preference are two sides of the same coin: to desire
+        something is to wish for what one prefers. Desires would incline people
+        to act with the intention to pursue what they want. Hence to act without
+        intention one needs to become desireless.</p>
+      <p>A common objection to the tenet of being desireless is that to desire
+        is human. It is simply impossible for humans not to desire. It is
+        natural to want to eat when hungry and want to drink when thirsty. There
+        is nothing wrong with such desires.</p>
+      <p>But of course Laozi would have no quarrel with such natural drives
+        and behaviors. On the contrary, he would include them as part of
+        <em>wuwei</em>. To live a life of <em>wuwei</em> is to simply be—to live
+        without preference and act without intention. It is to act in a natural
+        and spontaneous way: to eat when hungry, to drink when thirsty, to sleep
+        when drowsy and so on. In contrast to <em>wuwei</em>, actions with
+        intention are actions driven by human-contrived ideas and preference. To
+        crave delicate cuisines even when one is full, to hoard gold and jewels
+        to show off one’s wealth, or to grasp power to advance one’s status and
+        fame would be the opposite of <em>wuwei</em>.</p>
+      <p>Laozi points out that the best way to understand <em>wuwei</em> and
+        <em>wuyu</em> is to follow the course of nature:</p>
+      <blockquote>
+      <p>Hence the paragons of virtue conduct affairs in accordance with
+        <em>wuwei</em> and teach without using words;<sup><a onclick="scrollToFootnote(this)" id="refn:8" class="footnote">8</a></sup> let
+        all things flourish without interruption and produce without claiming
+        possession. Act without expecting certain consequences.<sup><a onclick="scrollToFootnote(this)" id="refn:9" class="footnote">9</a></sup></a>
+        When things are accomplished, do not dwell on and claim credit for them.
+        Since there is no attachment, there would be no sense of deprivation and
+        loss.<sup><a onclick="scrollToFootnote(this)" id="refn:10" class="footnote">10</a></sup></p>
+      </blockquote>
+      <p>He cautions us “not to prefer people with abilities and virtues so
+        that people would not engage in one-upmanship with each other; not to
+        value hard-to-obtain goods so that people would not steal; not to see
+        things as desirable so that people’s hearts would not be stirred.”<sup><a onclick="scrollToFootnote(this)" id="refn:11" class="footnote">11</a></sup> As an alternative, he advocates
+        “the paragon’s rule” that “humbles people’s hearts, fills their bellies,
+        weakens their wills, and strengthens their bones.” Laozi envisages that
+        a way of life under such rule would “make people, as a norm, have no
+        clue what is desirable, and hence have no desires. Keep those who know
+        what is desirable from daring to act upon their desires. When people act
+        without the will to act, then there would be no disorders.”<sup><a onclick="scrollToFootnote(this)" id="refn:12" class="footnote">12</a></sup></p>
+        <h2 style="page-break-after: avoid"
+        id="transcending-virtue-and-morality">Transcending Virtue and
+        Morality</h2>
+        <p>It is now clear why Daoism is against the cultivation of virtue.
+        Virtues and moral values are socially and culturally sanctioned
+        preference and prejudice. Their cultivation is the root of disorders and
+        unrest. Bothe Laozi and Zhuangzi see moral concepts and rules as human
+        contrivance that is at odds with the way of nature.<sup><a onclick="scrollToFootnote(this)" id="refn:13" class="footnote">13</a></sup>
+        Once humans acquire moral concepts and rules along with the
+        consciousness of pride/guilt, honor/shame and praise/condemnation, we
+        can’t help but anxiously assess our own moral worthiness and judge each
+        other without end.<sup><a onclick="scrollToFootnote(this)" id="refn:14" class="footnote">14</a></sup> We are entrapped in the cage of
+        moral judgment and have forgotten how to flourish by simply following
+        <em>dao</em>.</p>
+        <p>For Laozi, to truly live a life in accordance with <em>dao</em> we
+        need to transcend virtue and morality and live amorally. We have lived
+        under morality for so long that it has become unfathomable for most of
+        us that a life beyond morality is possible. To begin with, imagine that
+        humans have no concepts of morality and are so pure and innocent as not
+        to need them.<sup><a onclick="scrollToFootnote(this)" id="refn:15" class="footnote">15</a></sup> Alternatively, imagine Heaven where
+        all the faithful and spiritual rejoice. Would they still worry about
+        committing sins? Would there still be moral judgment? Would moral rules
+        still apply in Heaven?</p>
+        <p>If one finds it hard to imagine the Garden of Eden or Heaven, then
+        simply observe how living things interact with one another to form the
+        web of life in nature. A mother bear would watch over her cubs without
+        the need of being compelled by a moral sense to carry out a parent’s
+        duty. Lions would kill and eat gazelles without feeling guilty of being
+        savage and immoral.<sup><a onclick="scrollToFootnote(this)" id="refn:16" class="footnote">16</a></sup> It is only through the lens of
+        morality that we see natural animal behavior as morally praiseworthy or
+        condemnable. But nature on its own is amoral, without preference and
+        prejudice<sup><a onclick="scrollToFootnote(this)" id="refn:17" class="footnote">17</a></sup> and has no use for morality.</p>
+        <p>Daoism shuns human contrivance and advocates that humans follow the
+        way of nature and live in harmony with nature. In this sense it is one
+        of the oldest environmentalism. At a time when we are struggling with
+        the global unrest and terrorism, the likelihood of nuclear annihilation
+        and the collapse of ecosystems due to climate change, a renaissance of
+        the Daoist teachings can provide us insights on the way forward.</p>        
+      <hr />
+      <div class="footnotes">
+        <ol type="1">
+          <li id="fn:1">
+            <p>Preferably the term “<em>Daojia</em>” should be used in
+              place of “Daoism” so as to distinguish <em>Daojia</em> from
+              <em>Daojiao</em>. But in consideration of readers’ familiality with
+              these terms, “Daoism” is used in the article, but from now on it refers
+              to <em>Daojia</em>.<a onclick="scrollToFootnoteRef(this)" class="footnote">↩︎</a></p>
+          </li>
+          <li id="fn:2">
+            <p>By the same token, for people who seek Heaven as the
+              ultimate reward and fear Hell as the never-ending torture the desire for
+              eternal happy life becomes an ulterior motivation for following
+              Christianity or Islam.<a onclick="scrollToFootnoteRef(this)" class="footnote">↩︎</a></p>
+          </li>
+          <li id="fn:3">
+            <p><span
+              class="tc">「上德不德，是以有德；下德不失德，是以無德。上德無為而無以為；下德為之而有以為。上仁為之而無以為；上義為之而有以為。上禮為之而莫之應，則攘臂而扔之。故失道而後德，失德而後仁，失仁而後義，失義而後禮。夫禮者，忠信之薄，而亂之首。」</span>
+              <span class="tc">〈道德經第三十八章〉</span> (<em>Dao De Jing</em>,
+              Chapter 38).<a onclick="scrollToFootnoteRef(this)" class="footnote">↩︎</a></p>
+          </li>
+          <li id="fn:4">
+            <p>See the article “<a
+              href="https://wmwu.github.io/shared-thoughts/yinyang-and-dao.html"><em>Yinyang</em>
+              and <em>Dao</em></a>” for a more in-depth exposition of this point.<a onclick="scrollToFootnoteRef(this)" class="footnote">↩︎</a></p>
+          </li>
+          <li id="fn:5">
+            <p>The anterior is that which is ahead of the posterior and
+              the posterior is that which is after the anterior.<a onclick="scrollToFootnoteRef(this)" class="footnote">↩︎</a></p>
+          </li>
+          <li id="fn:6">
+            <p><span
+              class="tc">「天下皆知美之為美，斯惡已。皆知善之為善，斯不善已。故有無相生，難易相成，長短相較，高下相傾，音聲相和，前後相隨。」</span>
+              <span class="tc">〈道德經第二章〉</span> (<em>Dao De Jing</em>, Chapter
+              2).<a onclick="scrollToFootnoteRef(this)" class="footnote">↩︎</a></p>
+          </li>
+          <li id="fn:7">
+            <p>The movie <em>Gatacca</em> is a brilliant film that
+              addresses the issues of genetic ineqaulity and designer babies in a
+              serious and thought-provoking manner.<a onclick="scrollToFootnoteRef(this)" class="footnote">↩︎</a></p>
+          </li>
+          <li id="fn:8">
+            <p>The movie <em>Gatacca</em> is a brilliant film that
+              addresses the issues of genetic ineqaulity and designer babies in a
+              serious and thought-provoking manner.<a onclick="scrollToFootnoteRef(this)" class="footnote">↩︎</a></p>
+          </li>
+          <li id="fn:9">
+            <p>Isn’t this exactly Krishna’s teaching to Arjuna? The
+              resemblance between the Daoist teaching of <em>wuwei</em> and the Hindu
+              teaching of being free of karma is truly striking.<a onclick="scrollToFootnoteRef(this)" class="footnote">↩︎</a></p>
+          </li>
+          <li id="fn:10">
+            <p><span
+              class="tc">「是以聖人處無為之事，行不言之教；萬物作焉而不辭，生而不有。為而不恃，功成而弗居。夫唯弗居，是以不去。」</span>
+              <span class="tc">〈道德經第二章〉</span> (<em>Dao De Jing</em>, Chapter
+              2).<a onclick="scrollToFootnoteRef(this)" class="footnote">↩︎</a></p>
+          </li>
+          <li id="fn:11">
+            <p><span
+              class="tc">「不尚賢，使民不爭；不貴難得之貨，使民不為盜；不見可欲，使心不亂。」</span>
+              <span class="tc">〈道德經第三章〉</span> (<em>Dao De Jing</em>, Chapter
+              3).<a onclick="scrollToFootnoteRef(this)" class="footnote">↩︎</a></p>
+          </li>
+          <li id="fn:12">
+            <p><span
+              class="tc">「是以聖人之治，虛其心，實其腹，弱其志，強其骨。常使民無知無欲。使夫知者不敢為也。為無為，則無不治。」</span>
+              <span class="tc">〈道德經第三章〉</span> (<em>Dao De Jing</em>, Chapter
+              3). <a onclick="scrollToFootnoteRef(this)" class="footnote">↩︎</a></p>
+          </li>
+          <li id="fn:13">
+            <p>Zhuangzi illuminates the distinction between what is
+              natural and what is human-contrived through an exchange between Hebo,
+              the spirit of the Yellow River, and Ruo, the spirit of the North
+              Sea:</p>
+            <blockquote>
+              <p>Hebo asks: “What is natural and what is human-contrived?” Ruo of the
+              North Sea replies: “It is natural that cows and horses have four legs;
+              it is human-contrived to put a halter on a horse’s head and a ring on a
+              cow’s nose.” (<em>Zhuangzi</em>, Chapter <em>Qiushui</em>) (<span
+              class="tc">河伯曰：「何謂天？何謂人？」北海若曰：「牛馬四足，是謂天；落馬首，穿牛鼻，是謂人。」</span>
+              <span class="tc">〈莊子秋水〉 </span>)<a onclick="scrollToFootnoteRef(this)" class="footnote">↩︎</a></p>
+            </blockquote>
+          </li>
+          <li id="fn:14">
+            <p>Why do people worry about whether they can make it to
+              Heaven or whether their karma is good enough for a good rebirth? Even
+              for people who don’t believe in Heaven or rebirth, do they care about
+              how people see them or how they see themselves?<a onclick="scrollToFootnoteRef(this)" class="footnote">↩︎</a></p>
+          </li>
+          <li id="fn:15">
+            <p>This is akin to Adam and Eve in the Garden of Eden
+              before they ate the fruit of knowledge. Once their eyes were open to
+              good and evil, the paradise was lost.</p>
+              <p>The stock interpretation of the Genesis story does a great injustice
+              to God by casting Him as a harsh tyrannic father figure who kicked His
+              children out to punish their disobedience. Instead, an important and
+              profound question that should have been asked is why God did not want
+              Adam and Eve to know good from evil. Perhaps a deeper understanding of
+              Christianity can be achieved by delving deeper into its teachings and
+              not simply taking it as a religion centered on the struggle between good
+              and evil.<a onclick="scrollToFootnoteRef(this)" class="footnote">↩︎</a></p>
+          </li>
+          <li id="fn:16">
+            <p>Laozi would regard the ideal of peace expressed in
+              passages such as “The wolf and the lamb shall feed together, the lion
+              shall eat straw like the ox;…” (Isaiah 65:25) as a vision already
+              tainted by the moralist’s uneasiness with the way of nature. It begs the
+              question of why God would create carnivores in the first place.<a onclick="scrollToFootnoteRef(this)" class="footnote">↩︎</a></p>
+          </li>
+          <li id="fn:17">
+            <p>Nature does not favor peacocks over vultures, whales
+              over krills or sequoias over phytoplankton.<a onclick="scrollToFootnoteRef(this)" class="footnote">↩︎</a></p>
+          </li>
+        </ol>
+      </div>
+      <p xmlns:cc="http://creativecommons.org/ns#" >This work is licensed under <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-ND 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1"></a></p>
+    </div>
+  <div id="footer">
+  </div>
+</body>
+</html>
