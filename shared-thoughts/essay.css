@@ -57,6 +57,13 @@ body {
   z-index: -1;
   width: 700px;
 }
+#huang-shan {
+  position: relative;
+  display: block;
+  margin: 36px auto;
+  z-index: -1;
+  width: 640px;
+}
 #main {
   position: -webkit-sticky;
   position: sticky;
