@@ -126,6 +126,15 @@ body {
   line-height: 140%;
   color: #0a2c02;
 }
+#main blockquote {
+  margin: 18px 36px 24px 42px;
+  font-family: 'Crimson Pro', Georgia, serif;
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 0;
+  line-height: 140%;
+  color: #0a2c02;
+}
 #main p.first {
   margin-top: 60px;
 }
