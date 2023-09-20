@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #F7F8EE;
-  min-width: 480px;
+  min-width: 360px;
   max-width: 1240px;
 }
 #header {
