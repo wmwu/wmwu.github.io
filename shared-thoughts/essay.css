@@ -3,6 +3,7 @@ body {
   padding: 0;
   background-color: #F7F8EE;
 }
+/*
 #header {
   position: -webkit-sticky;
   position: sticky;
@@ -29,6 +30,7 @@ body {
   font-size: 200%;
   font-weight: 300;
 }
+*/
 #bodhi-leaf {
   position: absolute;
   top: 0;

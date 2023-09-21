@@ -6,6 +6,7 @@ body {
   min-width: 360px;
   max-width: 1240px;
 }
+/*
 #header {
   position: -webkit-sticky;
   position: sticky;
@@ -33,6 +34,7 @@ body {
   font-size: 200%;
   font-weight: 300;
 }
+*/
 #bodhi-leaf {
   position: absolute;
   top: 0;
