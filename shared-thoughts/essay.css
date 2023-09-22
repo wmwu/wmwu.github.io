@@ -1,15 +1,14 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #F7F8EE;
+  background-color: #f7f8ee;
 }
-/*
 #header {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
   height: 66px;
-  background-color: #e6ebd0;
+  background-color: #cddbd4;
   z-index: 98;
 }
 #header .sitetitle {
@@ -30,7 +29,6 @@ body {
   font-size: 200%;
   font-weight: 300;
 }
-*/
 #bodhi-leaf {
   position: absolute;
   top: 0;
