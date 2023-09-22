@@ -8,7 +8,7 @@ body {
   position: sticky;
   top: 0;
   height: 66px;
-  background-color: #cddbd4;
+  background-color: transparent;
   z-index: 98;
 }
 #header .sitetitle {
