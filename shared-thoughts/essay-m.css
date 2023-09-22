@@ -177,7 +177,7 @@ a:hover {
   position: sticky;
   top: 90px;
   width: 360px;
-  background-color: #e6ebd0;
+  background-color: #cddbd4;
   padding: 24px 12px 24px 12px;
   float: right;
   right: calc((100% - 840px) * .75);
@@ -247,7 +247,7 @@ a:hover {
   display: none;
   width: 36px;
   height: 36px;
-  background-color: #e6ebd0;
+  background-color: #cddbd4;
   border: none;
   float: right;
   right: calc((100% - 840px) * .75);
