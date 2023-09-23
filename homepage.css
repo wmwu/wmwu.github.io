@@ -11,7 +11,7 @@ body {
 }
 #header h1 {
   overflow: hidden;
-  line-height: 36px;
+  line-height:72px;
   font-family: 'Crimson Pro', serif;
   font-size: 36px;
   letter-spacing: 6px;
@@ -79,6 +79,11 @@ body {
   margin-top: 12px;
   padding-top: 36px;
 }
+#footer .container {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: flex-start;
+}
 #footer p {
   overflow: hidden;
   line-height: 28px;
@@ -88,7 +93,7 @@ body {
   color: #0a2c02;
   margin: 0 12px 12px 420px;
   padding: 0 12px 12px 36px;
-  float: right;
+  float: left;
 }
 #footer a {
   color: #0a2c02;
