@@ -64,16 +64,19 @@
             }
           }
     
-          // Show the button when scroll down
           window.onscroll = function() {scrollFunction()};
-          function scrollFunction() {
-            if (document.body.scrollTop > 360 || document.documentElement.scrollTop > 360) {
-                navmenubtn.style.display = "block";
-            }
-            else {
-              navmenubtn.style.display = "none";
-            }
-          }
+      function scrollFunction() {
+        nav.style.display = "none";
+        if (document.body.scrollTop > 800 && nav.style.display == "none") {
+          navmenubtn.style.display = "block";
+        }
+        else if (document.documentElement.scrollTop > 800 && nav.style.display == "none") {
+          navmenubtn.style.display = "block";
+        }
+        else {
+          navmenubtn.style.display = "none";
+        }
+      }
     
           // Go to Top
           function scrollToTop() {

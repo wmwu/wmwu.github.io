@@ -72,8 +72,12 @@
       // Show the button when scroll down
       window.onscroll = function() {scrollFunction()};
       function scrollFunction() {
-        if (document.body.scrollTop > 360 || document.documentElement.scrollTop > 360) {
-            navmenubtn.style.display = "block";
+        nav.style.display = "none";
+        if (document.body.scrollTop > 600 && nav.style.display == "none") {
+          navmenubtn.style.display = "block";
+        }
+        else if (document.documentElement.scrollTop > 600 && nav.style.display == "none") {
+          navmenubtn.style.display = "block";
         }
         else {
           navmenubtn.style.display = "none";
