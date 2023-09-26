@@ -18,8 +18,23 @@
   <link rel="stylesheet" media="screen and (max-width: 1920px)" href="essay-m.css" type="text/css" />
 </head>
 <body>
+  <div id="header">
+    <button class="sitetitle" onclick="location.assign('../index.html');">Under a bodhi tree</button>
+    <img id="bodhi-leaf" src="../bodhi-leaf.png">
+    <button id="articlemenubtn">&#x2630;</button>
+    <div id="articlemenu" class="nav" style="display: none;">
+      <div class="articlemenucontent">
+        <div><span class="articlemenuclose">&times;</span></div>
+        <p class="article"><a href="../index.html">Home</a></p>
+        <p class="article"><a href="karma.html">Karma: We Are What We Do</a></p>
+        <p class="article"><a href="yinyang-and-dao.html"><em>Yinyang</em> and <em>Dao</em></a></p>
+        <p class="currentarticle"><a onclick="scrollToTop()"><em>Rendao</em>: The Way of <em>Ren</em></a></p>
+        <p class="article"><a href="just-be-all-is-what-it-is.html">Just Be: All Is What It Is</a></p>
+        </div>
+    </div>
+    </div>
 <button id="navmenubtn"><i class="fa fa-chevron-left"></i></button>
-  <div id="navmenu" class="nav">
+  <div id="navmenu" class="nav" style="display: none;">
     <div class="menucontent">
       <div><span class="close">&times;</span></div>
       <p class="currentarticle"><a onclick="scrollToTop()"><em>Rendao</em>: The Way of <em>Ren</em></a></p>
@@ -31,9 +46,33 @@
   </div>
       <script type="text/javascript">
 
-        window.onresize = function() {
-          window.setTimeout(function(){location.reload()}, 1000);
+      // Get the article menu
+      var articlemenu = document.getElementById("articlemenu");
+
+      // Get the button that opens the article menu
+      var articlemenubtn = document.getElementById("articlemenubtn");
+
+      // Get the <span> element that closes the article menu
+      var span = document.getElementsByClassName("articlemenuclose")[0];
+
+      // When the user clicks the button, open the article menu 
+      articlemenubtn.onclick = function() {
+        articlemenu.style.display = "block";
+        articlemenubtn.style.display = "none";
+      }
+
+      // When the user clicks on <span> (x), close the article menu
+      span.onclick = function() {
+        articlemenu.style.display = "none";
+        articlemenubtn.style.display = "block";
+      }
+
+/*      // When the user clicks anywhere outside of the article menu, close it
+      window.onclick = function(event) {
+        if (event.target == articlemenu) {
+          articlemenu.style.display = "none";
         }
+      }*/
     
           // Get the nav menu
           var nav = document.getElementById("navmenu");
@@ -56,18 +95,17 @@
             navmenubtn.style.display = "block";
           }
     
-          // When the user clicks anywhere outside of the nav menu, close it
+/*          // When the user clicks anywhere outside of the nav menu, close it
           window.onclick = function(event) {
             if (event.target == nav) {
               nav.style.display = "none";
               navmenubtn.style.display = "block";
             }
-          }
+          }*/
     
       // Show the button when scroll down
       window.onscroll = function() {scrollFunction()};
       function scrollFunction() {
-        nav.style.display = "none";
         if (document.body.scrollTop > 800 && nav.style.display == "none") {
           navmenubtn.style.display = "block";
         }
@@ -85,6 +123,8 @@
               top: 0,
               behavior: "smooth"
             });
+        articlemenu.style.display = "none";
+        articlemenubtn.style.display = "block";
             if (window.outerWidth < 1921) {
               nav.style.display = "none";
             }
