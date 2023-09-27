@@ -48,10 +48,6 @@
 
     <script type="text/javascript">
       
-    function enableScroll() {
-        window.onscroll = function() {}
-    }
-
       // Get the article menu
       var articlemenu = document.getElementById("articlemenu");
 
@@ -82,7 +78,7 @@
       span.onclick = function() {
         articlemenu.style.display = "none";
         articlemenubtn.style.display = "block";
-        window.onscroll = function() {};
+        window.onscroll = function() {scrollFunction()};
       }
 
 /*      // When the user clicks anywhere outside of the article menu, close it
@@ -122,7 +118,7 @@
       span.onclick = function() {
         nav.style.display = "none";
         navmenubtn.style.display = "block";
-        window.onscroll = function() {};
+        window.onscroll = function() {scrollFunction()};
       }
 
 /*      // When the user clicks anywhere outside of the nav menu, close it
@@ -146,7 +142,7 @@
 
       // Go to Top
       function scrollToTop() {
-        window.onscroll = function() {};
+        window.onscroll = function() {scrollFunction()};
         window.scrollTo({
           top: 0,
           behavior: "smooth"
@@ -156,53 +152,47 @@
         if (window.outerWidth < 1921) {
           nav.style.display = "none";
         }
-        window.onscroll = function() {scrollFunction()};
       }
 
       // Go to Sections
       function scrollToSecOne() {
-        window.onscroll = function() {};
+        window.onscroll = function() {scrollFunction()};
         var y = document.getElementById("karma-rebirth-and-the-caste-system").offsetTop;
         window.scrollTo({ top: y, behavior: 'smooth' });
         if (window.outerWidth < 1921) {
           nav.style.display = "none";
-          window.onscroll = function() {scrollFunction()};
         }
       }
       function scrollToSecTwo() {
-        window.onscroll = function() {};
+        window.onscroll = function() {scrollFunction()};
         var y = document.getElementById("atman-anatta-and-rebirth").offsetTop;
         window.scrollTo({ top: y, behavior: 'smooth' });
         if (window.outerWidth < 1921) {
           nav.style.display = "none";
-          window.onscroll = function() {scrollFunction()};
         }
       }
       function scrollToSecThree() {
-        window.onscroll = function() {};
+        window.onscroll = function() {scrollFunction()};
         var y = document.getElementById("transcending-reward-and-punishment").offsetTop;
         window.scrollTo({ top: y, behavior: 'smooth' });
         if (window.outerWidth < 1921) {
           nav.style.display = "none";
-          window.onscroll = function() {scrollFunction()};
         }
       }
       function scrollToSecFour() {
-        window.onscroll = function() {};
+        window.onscroll = function() {scrollFunction()};
         var y = document.getElementById("karma-and-fairness-in-life").offsetTop;
         window.scrollTo({ top: y, behavior: 'smooth' });
         if (window.outerWidth < 1921) {
           nav.style.display = "none";
-          window.onscroll = function() {scrollFunction()};
         }
       }
       function scrollToSecFive() {
-        window.onscroll = function() {};
+        window.onscroll = function() {scrollFunction()};
         var y = document.getElementById("the-spiritual-teaching-of-karma").offsetTop;
         window.scrollTo({ top: y, behavior: 'smooth' });
         if (window.outerWidth < 1921) {
           nav.style.display = "none";
-          window.onscroll = function() {scrollFunction()};
         }
       }
       function scrollToFootnote(clickedElement) {

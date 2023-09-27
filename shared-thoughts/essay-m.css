@@ -264,7 +264,7 @@ a:hover {
   padding: 0 12px 0 12px;
 }
 .articlemenucontent p.currentarticle {
-  cursor: pointer;
+  cursor: default;
   font-weight: 600;
 }
 .articlemenucontent p.article {
