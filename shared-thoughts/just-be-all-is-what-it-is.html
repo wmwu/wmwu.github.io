@@ -29,11 +29,11 @@
         <p class="article"><a href="karma.html">Karma: We Are What We Do</a></p>
         <p class="article"><a href="yinyang-and-dao.html"><em>Yinyang</em> and <em>Dao</em></a></p>
         <p class="article"><a href="the-way-of-ren.html"><em>Rendao</em>: The Way of <em>Ren</em></a></p>
-        <p class="currentarticle"><a onclick="scrollToTop()">Just Be: All Is What It Is</a></p>
+        <p class="currentarticle">Just Be: All Is What It Is</p>
         </div>
     </div>
     </div>
-    <button id="navmenubtn"><i class="fa fa-chevron-left"></i></button>
+    <button id="navmenubtn" style="display: none;"><i class="fa fa-chevron-left"></i></button>
     <div id="navmenu" class="nav" style="display: none;">
     <div class="menucontent">
       <div><span class="close">&times;</span></div>
@@ -44,8 +44,9 @@
         class="tc">無為</span>, <span class="sc">无为</span>, No Action)</a></p>
       <p class="sectionlink"><a onclick="scrollToSecThree()">Transcending Virtue and
         Morality</a></p>
+      </div>
     </div>
-  </div>
+
       <script type="text/javascript">
 
       // Get the article menu
@@ -61,12 +62,24 @@
       articlemenubtn.onclick = function() {
         articlemenu.style.display = "block";
         articlemenubtn.style.display = "none";
+        // Get the current page scroll position
+        scrollTop =
+        window.pageYOffset || document.documentElement.scrollTop;
+        scrollLeft =
+        window.pageXOffset || document.documentElement.scrollLeft;
+      
+        // if any scroll is attempted,
+        // set this to the previous value
+        window.onscroll = function() {
+        window.scrollTo(scrollLeft, scrollTop);
+        }
       }
 
       // When the user clicks on <span> (x), close the article menu
       span.onclick = function() {
         articlemenu.style.display = "none";
         articlemenubtn.style.display = "block";
+        window.onscroll = function() {scrollFunction()};
       }
 
 /*      // When the user clicks anywhere outside of the article menu, close it
@@ -89,12 +102,24 @@
           btn.onclick = function() {
             nav.style.display = "block";
             navmenubtn.style.display = "none";
+            // Get the current page scroll position
+            scrollTop =
+            window.pageYOffset || document.documentElement.scrollTop;
+            scrollLeft =
+            window.pageXOffset || document.documentElement.scrollLeft;
+          
+            // if any scroll is attempted,
+            // set this to the previous value
+            window.onscroll = function() {
+            window.scrollTo(scrollLeft, scrollTop);
+            }
           }
     
           // When the user clicks on <span> (x), close the nav menu
           span.onclick = function() {
             nav.style.display = "none";
             navmenubtn.style.display = "block";
+            window.onscroll = function() {scrollFunction()};
           }
     
 /*          // When the user clicks anywhere outside of the nav menu, close it
@@ -105,12 +130,10 @@
             }
           }*/
     
-          window.onscroll = function() {scrollFunction()};
+      // Show the button when scroll down
+      window.onscroll = function() {scrollFunction()};
       function scrollFunction() {
-        if (document.body.scrollTop > 800 && nav.style.display == "none") {
-          navmenubtn.style.display = "block";
-        }
-        else if (document.documentElement.scrollTop > 800 && nav.style.display == "none") {
+        if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
           navmenubtn.style.display = "block";
         }
         else {
@@ -120,6 +143,7 @@
     
           // Go to Top
           function scrollToTop() {
+            window.onscroll = function() {scrollFunction()};
             window.scrollTo({
               top: 0,
               behavior: "smooth"
@@ -134,6 +158,7 @@
     
           // Go to Sections
           function scrollToSecOne() {
+            window.onscroll = function() {scrollFunction()};
             var y = document.getElementById("against-the-cultivation-of-virtue").offsetTop;
             window.scrollTo({ top: y, behavior: 'smooth' });
             if (window.outerWidth < 1921) {
@@ -141,6 +166,7 @@
             }
           }
           function scrollToSecTwo() {
+            window.onscroll = function() {scrollFunction()};
             var y = document.getElementById("wuwei").offsetTop;
             window.scrollTo({ top: y, behavior: 'smooth' });
             if (window.outerWidth < 1921) {
@@ -148,6 +174,7 @@
             }
           }
           function scrollToSecThree() {
+            window.onscroll = function() {scrollFunction()};
             var y = document.getElementById("transcending-virtue-and-morality").offsetTop;
             window.scrollTo({ top: y, behavior: 'smooth' });
             if (window.outerWidth < 1921) {
