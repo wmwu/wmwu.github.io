@@ -16,6 +16,7 @@ body {
   z-index: 98;
 }
 #header .sitetitle {
+  position: absolute;
   overflow: hidden;
   line-height: 24px;
   font-family: 'Crimson Pro', Georgia, serif;
@@ -23,9 +24,9 @@ body {
   letter-spacing: 0;
   font-weight: 300;
   color: #0a2c02;
-  margin: 0 12px 24px 54px;
-  padding: 16px 24px 16px 24px;
   background-color: transparent;
+  margin: 4px 0 0 0;
+  padding: 12px 12px 12px 12px;
   border: none;
   cursor: pointer;
 }
@@ -180,7 +181,7 @@ a:hover {
   padding: 24px 12px 24px 12px;
   float: right;
   right: calc((100% - 840px) * .75);
-  z-index: 101;
+  z-index: 1;
 }
 .menucontent p {
   overflow: hidden;
@@ -249,8 +250,8 @@ a:hover {
   background-color: #cddbd4;
   padding: 36px 12px 36px 12px;
   float: left;
-  left: 72px;
-  z-index: 101;
+  left: 66px;
+  z-index: 1;
 }
 .articlemenucontent p {
   overflow: hidden;
@@ -293,17 +294,7 @@ a:hover {
   cursor: pointer;
 }
 #articlemenubtn {
-  position: -webkit-sticky;
-  position: sticky;
-  font-family: 'Noto San', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-size: 28px;
-  top: 9px;
-  left: 72px;
-  width: 36px;
-  height: 36px;
-  background-color: #cddbd4;
-  border: none;
-  float: left;
+  position: relative;
   z-index: 2;
   cursor: pointer;
 }
@@ -363,4 +354,27 @@ hr {
 }
 #footer {
   margin-bottom: 120px;
+}
+.triplebar {
+  display: inline-block;
+  margin: 20px 0 0 84px;
+  cursor: pointer;
+  z-index: 2;
+}
+.bar1, .bar2, .bar3 {
+  width: 18px;
+  height: 2px;
+  background-color: #333;
+  margin: 3px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  transform: translate(0, 5px) rotate(135deg);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  transform: translate(0, -5px) rotate(225deg);
 }
