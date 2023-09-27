@@ -33,7 +33,7 @@
         <div><span class="articlemenuclose">&times;</span></div>
         <p class="article"><a href="../index.html">Home</a></p>
         <p class="article"><a href="karma.html">Karma: We Are What We Do</a></p>
-        <p class="currentarticle"><a onclick="scrollToTop()"><em>Yinyang</em> and <em>Dao</em></a></p>
+        <p class="currentarticle"><em>Yinyang</em> and <em>Dao</em></p>
         <p class="article"><a href="the-way-of-ren.html"><em>Rendao</em>: The Way of <em>Ren</em></a></p>
         <p class="article"><a href="just-be-all-is-what-it-is.html">Just Be: All Is What It Is</a></p>
         </div>
@@ -66,12 +66,24 @@
       articlemenubtn.onclick = function() {
         articlemenu.style.display = "block";
         articlemenubtn.style.display = "none";
+        // Get the current page scroll position
+        scrollTop =
+        window.pageYOffset || document.documentElement.scrollTop;
+        scrollLeft =
+        window.pageXOffset || document.documentElement.scrollLeft;
+      
+        // if any scroll is attempted,
+        // set this to the previous value
+        window.onscroll = function() {
+        window.scrollTo(scrollLeft, scrollTop);
+        }
       }
 
       // When the user clicks on <span> (x), close the article menu
       span.onclick = function() {
         articlemenu.style.display = "none";
         articlemenubtn.style.display = "block";
+        window.onscroll = function() {scrollFunction()};
       }
 
 /*      // When the user clicks anywhere outside of the article menu, close it
@@ -95,12 +107,24 @@
       btn.onclick = function() {
         nav.style.display = "block";
         navmenubtn.style.display = "none";
+        // Get the current page scroll position
+        scrollTop =
+        window.pageYOffset || document.documentElement.scrollTop;
+        scrollLeft =
+        window.pageXOffset || document.documentElement.scrollLeft;
+      
+        // if any scroll is attempted,
+        // set this to the previous value
+        window.onscroll = function() {
+        window.scrollTo(scrollLeft, scrollTop);
+        }
       }
 
       // When the user clicks on <span> (x), close the nav menu
       span.onclick = function() {
         nav.style.display = "none";
         navmenubtn.style.display = "block";
+        window.onscroll = function() {scrollFunction()};
       }
 
       /*      // When the user clicks anywhere outside of the nav menu, close it
@@ -114,10 +138,7 @@
       // Show the button when scroll down
       window.onscroll = function() {scrollFunction()};
       function scrollFunction() {
-        if (document.body.scrollTop > 600 && nav.style.display == "none") {
-          navmenubtn.style.display = "block";
-        }
-        else if (document.documentElement.scrollTop > 600 && nav.style.display == "none") {
+        if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
           navmenubtn.style.display = "block";
         }
         else {
@@ -127,6 +148,7 @@
 
       // Go to Top
       function scrollToTop() {
+        window.onscroll = function() {scrollFunction()};
         window.scrollTo({
           top: 0,
           behavior: "smooth"
@@ -140,6 +162,7 @@
 
       // Go to Sections
       function scrollToSecOne() {
+        window.onscroll = function() {scrollFunction()};
         var y = document.getElementById("taiji-and-yinyang").offsetTop;
         window.scrollTo({ top: y, behavior: 'smooth' });
         if (window.outerWidth < 1921) {
@@ -147,6 +170,7 @@
         }
       }
       function scrollToSecTwo() {
+        window.onscroll = function() {scrollFunction()};
         var y = document.getElementById("without-yinyang-no-change").offsetTop;
         window.scrollTo({ top: y, behavior: 'smooth' });
         if (window.outerWidth < 1921) {
@@ -154,6 +178,7 @@
         }
       }
       function scrollToSecThree() {
+        window.onscroll = function() {scrollFunction()};
         var y = document.getElementById("yinyang-and-harmony").offsetTop;
         window.scrollTo({ top: y, behavior: 'smooth' });
         if (window.outerWidth < 1921) {
@@ -161,6 +186,7 @@
         }
       }
       function scrollToSecFour() {
+        window.onscroll = function() {scrollFunction()};
         var y = document.getElementById("dao-tao").offsetTop;
         window.scrollTo({ top: y, behavior: 'smooth' });
         if (window.outerWidth < 1921) {
@@ -168,6 +194,7 @@
         }
       }
       function scrollToSecFive() {
+        window.onscroll = function() {scrollFunction()};
         var y = document.getElementById("the-characteristics-of-the-chinese-worldview").offsetTop;
         window.scrollTo({ top: y, behavior: 'smooth' });
         if (window.outerWidth < 1921) {
