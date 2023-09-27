@@ -26,7 +26,7 @@
         <div class="articlemenucontent">
           <div><span class="articlemenuclose">&times;</span></div>
           <p class="article"><a href="../index.html">Home</a></p>
-          <p class="currentarticle"><a onclick="scrollToTop()">Karma: We Are What We Do</a></p>
+          <p class="currentarticle">Karma: We Are What We Do</p>
           <p class="article"><a href="yinyang-and-dao.html"><em>Yinyang</em> and <em>Dao</em></a></p>
           <p class="article"><a href="the-way-of-ren.html"><em>Rendao</em>: The Way of <em>Ren</em></a></p>
           <p class="article"><a href="just-be-all-is-what-it-is.html">Just Be: All Is What It Is</a></p>
@@ -45,7 +45,12 @@
         <p class="sectionlink"><a onclick="scrollToSecFive()">The Spiritual Teaching of Karma</a></p>
       </div>
     </div>
+
     <script type="text/javascript">
+      
+    function enableScroll() {
+        window.onscroll = function() {}
+    }
 
       // Get the article menu
       var articlemenu = document.getElementById("articlemenu");
@@ -60,12 +65,24 @@
       articlemenubtn.onclick = function() {
         articlemenu.style.display = "block";
         articlemenubtn.style.display = "none";
+        // Get the current page scroll position
+        scrollTop =
+        window.pageYOffset || document.documentElement.scrollTop;
+        scrollLeft =
+        window.pageXOffset || document.documentElement.scrollLeft;
+      
+        // if any scroll is attempted,
+        // set this to the previous value
+        window.onscroll = function() {
+        window.scrollTo(scrollLeft, scrollTop);
+        }
       }
 
       // When the user clicks on <span> (x), close the article menu
       span.onclick = function() {
         articlemenu.style.display = "none";
         articlemenubtn.style.display = "block";
+        window.onscroll = function() {};
       }
 
 /*      // When the user clicks anywhere outside of the article menu, close it
@@ -88,12 +105,24 @@
       btn.onclick = function() {
         nav.style.display = "block";
         navmenubtn.style.display = "none";
+        // Get the current page scroll position
+        scrollTop =
+        window.pageYOffset || document.documentElement.scrollTop;
+        scrollLeft =
+        window.pageXOffset || document.documentElement.scrollLeft;
+      
+        // if any scroll is attempted,
+        // set this to the previous value
+        window.onscroll = function() {
+        window.scrollTo(scrollLeft, scrollTop);
+        }
       }
 
       // When the user clicks on <span> (x), close the nav menu
       span.onclick = function() {
         nav.style.display = "none";
         navmenubtn.style.display = "block";
+        window.onscroll = function() {};
       }
 
 /*      // When the user clicks anywhere outside of the nav menu, close it
@@ -107,10 +136,7 @@
       // Show the button when scroll down
       window.onscroll = function() {scrollFunction()};
       function scrollFunction() {
-        if (document.body.scrollTop > 1000 && nav.style.display == "none") {
-          navmenubtn.style.display = "block";
-        }
-        else if (document.documentElement.scrollTop > 1000 && nav.style.display == "none") {
+        if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
           navmenubtn.style.display = "block";
         }
         else {
@@ -120,6 +146,7 @@
 
       // Go to Top
       function scrollToTop() {
+        window.onscroll = function() {};
         window.scrollTo({
           top: 0,
           behavior: "smooth"
@@ -129,42 +156,53 @@
         if (window.outerWidth < 1921) {
           nav.style.display = "none";
         }
+        window.onscroll = function() {scrollFunction()};
       }
 
       // Go to Sections
       function scrollToSecOne() {
+        window.onscroll = function() {};
         var y = document.getElementById("karma-rebirth-and-the-caste-system").offsetTop;
         window.scrollTo({ top: y, behavior: 'smooth' });
         if (window.outerWidth < 1921) {
           nav.style.display = "none";
+          window.onscroll = function() {scrollFunction()};
         }
       }
       function scrollToSecTwo() {
+        window.onscroll = function() {};
         var y = document.getElementById("atman-anatta-and-rebirth").offsetTop;
         window.scrollTo({ top: y, behavior: 'smooth' });
         if (window.outerWidth < 1921) {
           nav.style.display = "none";
+          window.onscroll = function() {scrollFunction()};
         }
       }
       function scrollToSecThree() {
+        window.onscroll = function() {};
         var y = document.getElementById("transcending-reward-and-punishment").offsetTop;
         window.scrollTo({ top: y, behavior: 'smooth' });
         if (window.outerWidth < 1921) {
           nav.style.display = "none";
+          window.onscroll = function() {scrollFunction()};
         }
       }
       function scrollToSecFour() {
+        window.onscroll = function() {};
         var y = document.getElementById("karma-and-fairness-in-life").offsetTop;
         window.scrollTo({ top: y, behavior: 'smooth' });
         if (window.outerWidth < 1921) {
           nav.style.display = "none";
+          window.onscroll = function() {scrollFunction()};
         }
       }
       function scrollToSecFive() {
+        window.onscroll = function() {};
         var y = document.getElementById("the-spiritual-teaching-of-karma").offsetTop;
         window.scrollTo({ top: y, behavior: 'smooth' });
         if (window.outerWidth < 1921) {
           nav.style.display = "none";
+          window.onscroll = function() {scrollFunction()};
         }
       }
       function scrollToFootnote(clickedElement) {
