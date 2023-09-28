@@ -200,12 +200,6 @@ a:hover {
 .menucontent p.article {
   cursor: pointer;
 }
-.menucontent p.article::before {
-  content: "*   *   *";
-  display: block;
-  padding: 36px 0 36px 0;
-  text-align: center;
-}
 .menucontent p.sectionlink {
   margin: 0 0 8px 30px;
   line-height: 28px;
@@ -218,22 +212,6 @@ a:hover {
   font-family: 'Noto Serif TC', 'Crimson Pro', serif;
   letter-spacing: 2px;
   font-size: 18px;
-}
-/* The Close Button */
-.menucontent .close {
-  color: #0a2c02;
-  background-color: #cddbd4;
-  font-family: 'Noto San', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-size: 24px;
-  font-weight: 800;
-  padding: 2px 10px 2px 10px;
-  border: none;
-  position: -webkit-sticky;
-  position: sticky;
-  display: block;
-  float: right;
-  margin-top: -24px;
-  margin-right: -12px;
 }
 .close:hover,
 .close:focus {

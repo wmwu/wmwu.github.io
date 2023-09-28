@@ -38,10 +38,10 @@ body {
   z-index: -1;
 }
 #main {
-  max-width: 960px;
+  width: 100%;
+  max-width: 840px;
   margin: 12px 24px 0 0;
   padding-top: 12px;
-  background-color: transparent;
 }
 #main h1 {
   overflow: hidden;
