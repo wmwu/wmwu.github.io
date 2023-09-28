@@ -99,6 +99,7 @@ a {
   box-shadow: none;
   transition: box-shadow .33s ease-out;
   letter-spacing: 2px;
+  margin-left: 36px;
 }
 a:hover {
   box-shadow: 0 1px 0 0 #0a2c02;
