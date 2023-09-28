@@ -13,7 +13,7 @@ body {
   width: 100%;
   height: 56px;
   background-color: #cddbd4;
-  z-index: 98;
+  z-index: 2;
 }
 #header .sitetitle {
   position: absolute;
@@ -37,8 +37,8 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  height: 132px;
-  z-index: 99;
+  height: 120px;
+  z-index: 1;
 }
 #zen-stone-on-the-sand {
   position: relative;
@@ -244,13 +244,14 @@ a:hover {
 .articlemenucontent {
   position: fixed;
   top: 0;
-  width: 300px;
+  left: 0;
+  width: 60%;
+  max-width: 300px;
   height: 100%;
   overflow-x: hidden;
   background-color: #cddbd4;
-  padding: 36px 12px 36px 12px;
+  padding: 48px 12px 36px 12px;
   float: left;
-  left: 66px;
   z-index: 1;
 }
 .articlemenucontent p {
@@ -261,7 +262,7 @@ a:hover {
   letter-spacing: 1px;
   font-weight: 300;
   color: #0a2c02;
-  margin: 12px 12px 12px 36px;
+  margin: 12px 8px 12px 12px;
   padding: 0 12px 0 12px;
 }
 .articlemenucontent p.currentarticle {
@@ -357,7 +358,7 @@ hr {
 }
 .triplebar {
   display: inline-block;
-  margin: 20px 0 0 84px;
+  margin: 20px 0 0 24px;
   cursor: pointer;
   z-index: 2;
 }
