@@ -11,30 +11,71 @@
   <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;300;400;500;600&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@200;300;400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="homepage.css" type="text/css" />
-  <link rel="stylesheet" media="screen and (min-width: 961px)" href="homepage.css" type="text/css" />
-  <link rel="stylesheet" media="screen and (max-width: 960px)" href="homepage-m.css" type="text/css" />
+<!--  <link rel="stylesheet" media="screen and (min-width: 961px)" href="homepage.css" type="text/css" /> -->
+  <link rel="stylesheet" href="homepage-m.css" type="text/css" />
 </head>
 <body>
   <div>
     <div id="header">
-      <h1>Sitting under a bodhi tree ...</h1>
-      <img src="bodhi-leaf.png" alt="bodhi leaf" style="width: 100%; max-width: 471px;">
+      <div class="triplebar" id="articlemenubtn" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+      <button class="sitetitle" onclick="location.assign('index.html');">Under a bodhi tree</button>
+      <img id="bodhileaf" src="bodhi-leaf.png">
+      <div id="articlemenu" class="nav" style="display: none;">
+        <div class="articlemenucontent">
+          <p class="currentarticle">Home</p>
+          <p class="article"><a href="shared-thoughts/karma.html">Karma: We Are What We Do</a></p>
+          <p class="article"><a href="shared-thoughts/yinyang-and-dao.html"><em>Yinyang</em> and <em>Dao</em></a></p>
+          <p class="article"><a href="shared-thoughts/the-way-of-ren.html"><em>Rendao</em>: The Way of <em>Ren</em></a></p>
+          <p class="article"><a href="shared-thoughts/just-be-all-is-what-it-is.html">Just Be: All Is What It Is</a></p>
+          </div>
+      </div>
+      <script type="text/javascript">
+      
+        function myFunction(x) {
+            x.classList.toggle("change");
+            if (articlemenu.style.display == "none") {
+            articlemenu.style.display = "block";
+            // Get the current page scroll position
+            scrollTop =
+            window.pageYOffset || document.documentElement.scrollTop;
+            scrollLeft =
+            window.pageXOffset || document.documentElement.scrollLeft;
+          
+            // if any scroll is attempted,
+            // set this to the previous value
+            window.onscroll = function() {
+            window.scrollTo(scrollLeft, scrollTop);
+            }
+          }
+          else {
+            articlemenu.style.display = "none";
+            window.onscroll = function() {scrollFunction()};
+          }
+        }
+        // Get the article menu
+        var articlemenu = document.getElementById("articlemenu");
+  
+        // Get the button that opens the article menu
+        var articlemenubtn = document.getElementById("articlemenubtn");
+      </script>  
     </div>
     <div id="main">
+      <h1>Sitting under a bodhi tree ...</h1>
       <p>Visualizing dependent arising helps us see that we are interbeing in the ocean of karma. Mindful of how what we do and what we don’t do affect each other, we strive to do our best in life and nourish compassion for each person’s suffering and transgressions.</p>
-      <p style="margin: 36px 24px 0 280px; float: right;">Wu Weiming <br><span class="tc">吳維明</span></p>
-    </div>
-    <div id="footer">
+      <p style="margin: 36px 24px 36px 280px; float: right;">Wu Weiming <br><span class="tc">吳維明</span></p>
       <div class="container">
-      <p>The articles were revised and shared here in hopes of contributing to the understanding of our spiritual heritage and making the world a better place.</p>
-      <p><a href="shared-thoughts/karma.html">Karma: We Are What We Do</a></p>
-      <p><a href="shared-thoughts/yinyang-and-dao.html"><em>Yinyang</em> and <em>Dao</em></a></p>
-      <p><a href="shared-thoughts/the-way-of-ren.html"><em>Rendao</em>: The Way of <em>Ren</em></a></p>
-      <p><a href="shared-thoughts/just-be-all-is-what-it-is.html">Just Be: All Is What It Is</a></p>
+        <p>The articles were revised and shared here in hopes of contributing to the understanding of our spiritual heritage and making the world a better place.</p>
+        <p><a href="shared-thoughts/karma.html">Karma: We Are What We Do</a></p>
+        <p><a href="shared-thoughts/yinyang-and-dao.html"><em>Yinyang</em> and <em>Dao</em></a></p>
+        <p><a href="shared-thoughts/the-way-of-ren.html"><em>Rendao</em>: The Way of <em>Ren</em></a></p>
+        <p><a href="shared-thoughts/just-be-all-is-what-it-is.html">Just Be: All Is What It Is</a></p>
       </div>
-      <p style="margin: 48px 0 60px 36px;" xmlns:cc="http://creativecommons.org/ns#" >This work is licensed under <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block; letter-spacing: 0;">CC BY-NC-ND 4.0 <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1"></a></p>
-    </div>
+        <p style="margin: 600px 0 60px 24px;" xmlns:cc="http://creativecommons.org/ns#" >This work is licensed under <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block; letter-spacing: 0;">CC BY-NC-ND 4.0 <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1"></a></p>
   </div>
+  <img id="backgroundimage" src="bodhi-leaf.png" alt="bodhi leaf">
 </body>
 </html>

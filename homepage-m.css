@@ -1,40 +1,62 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #F7F8EE;
-  min-width: 360px;
-  max-width: 960px;
-}
-#header img {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  opacity: .8;
-  z-index: -1;
+  background-color: #f7f8ee;
 }
 #header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
   width: 100%;
+  height: 56px;
+  background-color: #cddbd4;
+}
+#header .sitetitle {
+  position: absolute;
+  overflow: hidden;
+  line-height: 24px;
+  font-family: 'Crimson Pro', Georgia, serif;
+  font-size: 20px;
+  letter-spacing: 0;
+  font-weight: 300;
+  color: #0a2c02;
+  background-color: transparent;
+  margin: 4px 0 0 0;
+  padding: 12px 12px 12px 12px;
+  border: none;
+  cursor: pointer;
+  z-index: 2;
+}
+#header .sitetitle::first-letter {
+  font-size: 24px;
+}
+#bodhileaf {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 120px;
+  z-index: -1;
+}
+#main {
+  max-width: 960px;
+  margin: 12px 24px 0 0;
+  padding-top: 12px;
   background-color: transparent;
 }
-#header h1 {
+#main h1 {
   overflow: hidden;
-  line-height: 72px;
+  line-height:72px;
   font-family: 'Crimson Pro', serif;
   font-size: 36px;
   letter-spacing: 6px;
   font-weight: 300;
   color: #0a2c02;
-  margin: 60px 0 12px 36px;
-  padding: 36px 0 24px 24px;
+  margin: 24px 0 12px 24px;
+  padding: 24px 0 24px 36px;
 }
-#header h1::first-letter {
+#main h1::first-letter {
   font-size: 400%;
   font-weight: 300;
-}
-#main {
-  overflow: hidden;
-  max-width: 900px;
-  background-color: transparent;
 }
 #main h2 {
   margin: 42px 0 24px 60px;
@@ -47,8 +69,8 @@ body {
   letter-spacing: 2px;
 }
 #main p {
-  padding: 0 12px 0 12px;
-  margin: 12px 24px 12px 60px;
+  padding: 0 12px 0 36px;
+  margin: 12px 12px 12px 24px;
   font-family: 'Crimson Pro', serif;
   font-size: 20px;
   font-weight: 300;
@@ -60,29 +82,16 @@ body {
   font-family: 'Noto Serif TC', 'Crimson Pro', serif;
   letter-spacing: 2px;
 }
-#footer {
-  width: 100%;
-  max-width: 900px;
-  margin-top: 12px;
-  padding-top: 36px;
+#main p.quote {
+  margin: 0 10px 0 auto;
 }
-#footer .container {
+#main .container {
+  float: right;
   display: flex;
   flex-flow: column wrap;
   align-items: flex-start;
 }
-#footer p {
-  overflow: hidden;
-  line-height: 28px;
-  font-family: 'Crimson Pro', serif;
-  font-size: 20px;
-  font-weight: 300;
-  color: #0a2c02;
-  margin: 0 24px 12px 120px;
-  padding: 0 12px 12px 36px;
-  float: left;
-}
-#footer a {
+a {
   color: #0a2c02;
   /* Distance from text */
   padding-bottom: 2px;
@@ -91,12 +100,12 @@ body {
   transition: box-shadow .33s ease-out;
   letter-spacing: 2px;
 }
-#footer a:hover {
+a:hover {
   box-shadow: 0 1px 0 0 #0a2c02;
 }
 
 /* Animated links */
-#footer p.link a {
+p.link a {
   height: 28px;
   position: relative;
   line-height: 28px;
@@ -117,4 +126,76 @@ body {
   width: 100%;
   height: 1px;
   transition: width .5s ease;
+}
+.articlemenucontent {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 60%;
+  max-width: 300px;
+  height: 100%;
+  overflow-x: hidden;
+  background-color: #cddbd4;
+  padding: 48px 12px 36px 12px;
+  float: left;
+  z-index: 2;
+}
+.articlemenucontent p {
+  overflow: hidden;
+  line-height: 28px;
+  font-family: 'Crimson Pro', serif;
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-weight: 300;
+  color: #0a2c02;
+  margin: 12px 8px 12px 12px;
+  padding: 0 12px 0 12px;
+}
+.articlemenucontent p.currentarticle {
+  cursor: default;
+  font-weight: 600;
+}
+.articlemenucontent p.article {
+  cursor: pointer;
+}
+.articlemenucontent .articlemenuclose:hover,
+.articlemenuclose:focus {
+  color: #0a2c02;
+  text-decoration: none;
+  cursor: pointer;
+}
+#articlemenubtn {
+  position: relative;
+  z-index: 3;
+  cursor: pointer;
+}
+#backgroundimage {
+  position: absolute;
+  left: 60px;
+  top: 56px;
+  width: 100%;
+  max-width: 471px;
+  z-index: -1;
+}
+.triplebar {
+  display: inline-block;
+  margin: 20px 0 0 24px;
+  cursor: pointer;
+}
+.bar1, .bar2, .bar3 {
+  width: 18px;
+  height: 2px;
+  background-color: #333;
+  margin: 3px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  transform: translate(0, 5px) rotate(135deg);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  transform: translate(0, -5px) rotate(225deg);
 }
