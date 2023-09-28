@@ -173,8 +173,9 @@ p.link a {
   position: absolute;
   left: 60px;
   top: 56px;
-  width: 100%;
+  width: calc(100% - 60px);
   max-width: 471px;
+  min-width: 300px;
   z-index: -1;
 }
 .triplebar {
