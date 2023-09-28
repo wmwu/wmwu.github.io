@@ -272,22 +272,6 @@ a:hover {
 .articlemenucontent p.article {
   cursor: pointer;
 }
-/* The Article Menu Close Button */
-.articlemenucontent .articlemenuclose {
-  color: #0a2c02;
-  background-color: transparent;
-  font-family: 'Noto San', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-size: 36px;
-  font-weight: 400;
-  padding: 2px 10px 2px 10px;
-  border: none;
-  position: -webkit-sticky;
-  position: sticky;
-  display: block;
-  float: left;
-  margin-top: -32px;
-  margin-left: -13px;
-}
 .articlemenucontent .articlemenuclose:hover,
 .articlemenuclose:focus {
   color: #0a2c02;
