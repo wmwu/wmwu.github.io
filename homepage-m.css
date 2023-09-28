@@ -57,7 +57,7 @@ p.link a {
   font-weight: 300;
   color: #0a2c02;
   background-color: transparent;
-  margin: 4px 0 0 0;
+  margin: 3px 0 0 2px;
   padding: 12px 12px 12px 12px;
   border: none;
   cursor: pointer;
@@ -183,7 +183,7 @@ p.link a {
 }
 .triplebar {
   display: inline-block;
-  margin: 20px 0 0 24px;
+  margin: 19px 0 0 15px;
   cursor: pointer;
 }
 .bar1, .bar2, .bar3 {
