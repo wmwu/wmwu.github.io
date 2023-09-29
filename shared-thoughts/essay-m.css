@@ -168,9 +168,9 @@ a:hover {
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
   -webkit-animation-name: fadeIn; /* Fade in the background */
-  -webkit-animation-duration: 0.4s;
+  -webkit-animation-duration: .4s;
   animation-name: fadeIn;
-  animation-duration: 0.4s;
+  animation-duration: .4s;
 }
 .menucontent {
   position: -webkit-sticky;
@@ -247,6 +247,15 @@ a:hover {
   padding: 48px 12px 36px 12px;
   float: left;
   z-index: 1;
+  animation: .4s slide-right;
+}
+@keyframes slide-right {
+  from {
+    margin-left: -100%;
+  }
+  to {
+    margin-left: 0%;
+  }
 }
 .articlemenucontent p {
   overflow: hidden;
