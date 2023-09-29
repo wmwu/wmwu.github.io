@@ -142,6 +142,15 @@ p.link a {
   padding: 48px 12px 36px 12px;
   float: left;
   z-index: 2;
+  animation: .4s slide-right;
+}
+@keyframes slide-right {
+  from {
+    margin-left: -100%;
+  }
+  to {
+    margin-left: 0%;
+  }
 }
 .articlemenucontent p {
   overflow: hidden;
