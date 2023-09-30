@@ -16,28 +16,30 @@
 <body>
   <div>
     <div id="header">
-      <div class="triplebar" id="articlemenubtn" onclick="myFunction(this)">
+      <div class="triplebar" id="articlemenubtn" onclick="menuToggle(this)">
         <div class="bar1"></div>
         <div class="bar2"></div>
         <div class="bar3"></div>
       </div>
       <button class="sitetitle" onclick="location.assign('index.html');">Under a bodhi tree</button>
       <img id="bodhileaf" src="bodhi-leaf.png">
-      <div id="articlemenu" class="nav" style="display: none;">
-        <div class="articlemenucontent">
+      <div id="articlemenu" style="display: none;">
+        <div id="articlemenucontent">
           <p class="currentarticle">Home</p>
           <p class="article"><a href="shared-thoughts/karma.html">Karma: We Are What We Do</a></p>
           <p class="article"><a href="shared-thoughts/yinyang-and-dao.html"><em>Yinyang</em> and <em>Dao</em></a></p>
           <p class="article"><a href="shared-thoughts/the-way-of-ren.html"><em>Rendao</em>: The Way of <em>Ren</em></a></p>
           <p class="article"><a href="shared-thoughts/just-be-all-is-what-it-is.html">Just Be: All Is What It Is</a></p>
-          </div>
+        </div>
       </div>
       <script type="text/javascript">
       
-        function myFunction(x) {
+        function menuToggle(x) {
             x.classList.toggle("change");
-            if (articlemenu.style.display == "none") {
-            articlemenu.style.display = "block";
+            if (articlemenucontent.className == "" || articlemenucontent.className == "hide" ) {
+              articlemenu.className = "nav";
+              articlemenucontent.className = "show";
+              articlemenu.style.display = "block";
             // Get the current page scroll position
             scrollTop =
             window.pageYOffset || document.documentElement.scrollTop;
@@ -51,15 +53,11 @@
             }
           }
           else {
-            articlemenu.style.display = "none";
+            articlemenucontent.className = "hide";
+            articlemenu.className = "";
             window.onscroll = function() {scrollFunction()};
           }
         }
-        // Get the article menu
-        var articlemenu = document.getElementById("articlemenu");
-  
-        // Get the button that opens the article menu
-        var articlemenubtn = document.getElementById("articlemenubtn");
       </script>  
     </div>
     <div id="main">

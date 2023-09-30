@@ -107,7 +107,7 @@ a:hover {
   margin-left: 36px;
   letter-spacing: 1px;
 }
-.articlemenucontent {
+#articlemenucontent {
   position: fixed;
   top: 0;
   left: 0;
@@ -119,6 +119,8 @@ a:hover {
   padding: 48px 12px 36px 12px;
   float: left;
   z-index: 2;
+}
+#articlemenucontent.show {
   animation: .4s slide-right;
 }
 @keyframes slide-right {
@@ -129,7 +131,12 @@ a:hover {
     margin-left: 0%;
   }
 }
-.articlemenucontent p {
+#articlemenucontent.hide {
+  transform: translate(-100%);
+  transition-property: transform;
+  transition-duration: .4s;
+}
+#articlemenucontent p {
   overflow: hidden;
   line-height: 28px;
   font-family: 'Crimson Pro', serif;
@@ -140,14 +147,14 @@ a:hover {
   margin: 12px 8px 12px 12px;
   padding: 0 12px 0 12px;
 }
-.articlemenucontent p.currentarticle {
+#articlemenucontent p.currentarticle {
   cursor: default;
   font-weight: 600;
 }
-.articlemenucontent p.article {
+#articlemenucontent p.article {
   cursor: pointer;
 }
-.articlemenucontent .articlemenuclose:hover,
+#articlemenucontent .articlemenuclose:hover,
 .articlemenuclose:focus {
   color: #0a2c02;
   text-decoration: none;
