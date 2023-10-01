@@ -13,15 +13,15 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@200;300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="homepage.css" type="text/css" />
 </head>
-<body>
+<body onload = "menuDisplay()" onresize = "menuDisplay()">
   <div>
-    <div id="header">
+    <div id="navmenu">
       <div class="triplebar" id="articlemenubtn" onclick="menuToggle(this)">
         <div class="bar1"></div>
         <div class="bar2"></div>
         <div class="bar3"></div>
       </div>
-      <button class="sitetitle" onclick="location.assign('index.html');">Under a bodhi tree</button>
+      <span id="sitetitle">Under a bodhi tree</span>
       <img id="bodhileaf" src="bodhi-leaf.png">
       <div id="articlemenu" style="display: none;">
         <div id="articlemenucontent">
@@ -33,13 +33,36 @@
         </div>
       </div>
       <script type="text/javascript">
-      
+
+        function menuDisplay () {
+          var windowWidth = window.innerWidth;
+          if (windowWidth > 1280) {
+            navmenu.style.backgroundColor = "transparent";
+            articlemenubtn.style.visibility = "hidden";
+            articlemenu.style.display = "block";
+            backgroundimage.style.left = "340px";
+            main.style.marginLeft = "280px";
+            sitetitle.style.visibility = "visible";
+            sitetitle.className = "sitetitleBig";
+          }
+          else {
+            navmenu.style.backgroundColor = "#cddbd4";
+            articlemenu.style.display = "none";
+            main.style.marginLeft = "0";
+            backgroundimage.style.left = "60px";
+            articlemenubtn.style.visibility = "visible";
+            sitetitle.style.visibility = "visible";
+            sitetitle.className = "sitetitle";
+          }
+        }
+
         function menuToggle(x) {
             x.classList.toggle("change");
             if (articlemenucontent.className == "" || articlemenucontent.className == "hide" ) {
               articlemenu.className = "nav";
               articlemenucontent.className = "show";
               articlemenu.style.display = "block";
+              sitetitle.style.visibility = "hidden";
             // Get the current page scroll position
             scrollTop =
             window.pageYOffset || document.documentElement.scrollTop;
@@ -55,6 +78,7 @@
           else {
             articlemenucontent.className = "hide";
             articlemenu.className = "";
+            sitetitle.style.visibility = "visible";
             window.onscroll = function() {scrollFunction()};
           }
         }

@@ -15,7 +15,7 @@ a {
 a:hover {
   box-shadow: 0 1px 0 0 #0a2c02;
 }
-#header {
+#navmenu {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -23,7 +23,7 @@ a:hover {
   height: 56px;
   background-color: #cddbd4;
 }
-#header .sitetitle {
+#navmenu .sitetitle {
   position: absolute;
   overflow: hidden;
   line-height: 24px;
@@ -36,10 +36,26 @@ a:hover {
   margin: 3px 0 0 2px;
   padding: 12px 12px 12px 12px;
   border: none;
-  cursor: pointer;
-  z-index: 1;
+  cursor: default;
+  z-index: 3;
 }
-#header .sitetitle::first-letter {
+#navmenu .sitetitleBig {
+  position: absolute;
+  overflow: hidden;
+  line-height: 24px;
+  font-family: 'Crimson Pro', Georgia, serif;
+  font-size: 24px;
+  letter-spacing: 0;
+  font-weight: 400;
+  color: #0a2c02;
+  background-color: transparent;
+  margin: 12px 0 12px 0;
+  padding: 12px 12px 12px 0;
+  border: none;
+  cursor: default;
+  z-index: 3;
+}
+#navmenu .sitetitle::first-letter {
   font-size: 24px;
 }
 #bodhileaf {
@@ -144,7 +160,7 @@ a:hover {
   letter-spacing: 1px;
   font-weight: 300;
   color: #0a2c02;
-  margin: 12px 8px 12px 12px;
+  margin: 12px 8px 12px 18px;
   padding: 0 12px 0 12px;
 }
 #articlemenucontent p.currentarticle {
