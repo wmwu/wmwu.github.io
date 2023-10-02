@@ -14,30 +14,30 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;300;400;500;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@200;300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="essay-m.css" type="text/css" />
+    <link rel="stylesheet" href="essay.css" type="text/css" />
   </head>
-  <body>
-    <div id="header">
-      <div class="triplebar" id="articlemenubtn" onclick="myFunction(this)">
+  <body onload = "menuDisplay()" onresize = "menuDisplay()">
+    <div id="navmenu">
+      <div class="triplebar" id="articlemenubtn" onclick="menuToggle(this)">
         <div class="bar1"></div>
         <div class="bar2"></div>
         <div class="bar3"></div>
       </div>
-      <button class="sitetitle" onclick="location.assign('../index.html');">Under a bodhi tree</button>
+      <span id="sitetitle" class="sitetitle">Under a bodhi tree</span>
       <img id="bodhi-leaf" src="../bodhi-leaf.png">
-      <div id="articlemenu" class="nav" style="display: none;">
-        <div class="articlemenucontent">
+      <div id="articlemenu" style="display: none;">
+        <div id="articlemenucontent">
           <p class="article"><a href="../index.html">Home</a></p>
           <p class="currentarticle">Karma: We Are What We Do</p>
           <p class="article"><a href="yinyang-and-dao.html"><em>Yinyang</em> and <em>Dao</em></a></p>
           <p class="article"><a href="the-way-of-ren.html"><em>Rendao</em>: The Way of <em>Ren</em></a></p>
           <p class="article"><a href="just-be-all-is-what-it-is.html">Just Be: All Is What It Is</a></p>
-          </div>
+        </div>
       </div>
-      </div>
-    <button id="navmenubtn" style="display: none;"><i class="fa fa-chevron-left"></i></button>
-    <div id="navmenu" class="nav" style="display: none;">
-      <div class="menucontent">
+    </div>
+    <button id="sectionmenubtn"><i class="fa fa-chevron-right"></i></button>
+    <div id="sectionmenu">
+      <div id="sectionmenucontent">
         <div><span class="close">&times;</span></div>
         <p class="currentarticle"><a onclick="scrollToTop()">Karma: We Are What We Do</a></p>
         <p class="sectionlink"><a onclick="scrollToSecOne()">Karma, Rebirth and the Caste System</a></p>
@@ -50,46 +50,95 @@
 
     <script type="text/javascript">
       
-      function myFunction(x) {
-          x.classList.toggle("change");
-          if (articlemenu.style.display == "none") {
-          articlemenu.style.display = "block";
-          // Get the current page scroll position
-          scrollTop =
-          window.pageYOffset || document.documentElement.scrollTop;
-          scrollLeft =
-          window.pageXOffset || document.documentElement.scrollLeft;
-        
-          // if any scroll is attempted,
-          // set this to the previous value
-          window.onscroll = function() {
-          window.scrollTo(scrollLeft, scrollTop);
+      function menuDisplay () {
+          var windowWidth = window.innerWidth;
+          if (windowWidth > 1280) {
+            navmenu.style.backgroundColor = "transparent";
+            articlemenubtn.style.visibility = "hidden";
+            articlemenu.style.display = "block";
+            articlemenucontent.classList.remove("hide");
+            articlemenucontent.classList.add("show");
+            sitetitle.style.visibility = "visible";
+            sitetitle.className = "sitetitleBig";
+            sectionmenubtn.style.visibility = "hidden";
+            sectionmenubtn.style.marginLeft = "304px";
+            sectionmenu.style.visibility = "hidden";
+            sectionmenucontent.style.marginLeft = "-600px";
+          }
+          else {
+            navmenu.style.backgroundColor = "#cddbd4";
+            articlemenu.style.display = "none";
+            articlemenucontent.classList.remove("show");
+            articlemenubtn.style.visibility = "visible";
+            sitetitle.style.visibility = "visible";
+            sitetitle.className = "sitetitle";
+            sectionmenubtn.style.visibility = "hidden";
+            sectionmenubtn.style.marginLeft = "0";
+            sectionmenu.style.visibility = "hidden";
+            sectionmenucontent.style.marginLeft = "-600px";
           }
         }
-        else {
-          articlemenu.style.display = "none";
-          window.onscroll = function() {scrollFunction()};
+
+        function menuToggle(x) {
+            x.classList.toggle("change");
+            if (articlemenucontent.className == "" || articlemenucontent.className == "hide" ) {
+              articlemenu.classList.add("nav");
+              articlemenucontent.classList.remove("hide");
+              articlemenucontent.classList.add("show");
+              articlemenu.style.display = "block";
+              sitetitle.style.visibility = "hidden";
+              sectionmenubtn.style.visibility = "hidden";
+            // Get the current page scroll position
+            scrollTop =
+            window.pageYOffset || document.documentElement.scrollTop;
+            scrollLeft =
+            window.pageXOffset || document.documentElement.scrollLeft;
+          
+            // if any scroll is attempted,
+            // set this to the previous value
+            window.onscroll = function() {
+            window.scrollTo(scrollLeft, scrollTop);
+            }
+          }
+          else {
+            articlemenucontent.classList.remove("show");
+            articlemenucontent.classList.add("hide");
+            articlemenu.classList.remove("nav");
+            sitetitle.style.visibility = "visible";
+            sectionmenu.style.visibility = "hidden";
+            scrollTop =
+            window.pageYOffset || document.documentElement.scrollTop;
+            scrollLeft =
+            window.pageXOffset || document.documentElement.scrollLeft;
+            if (scrollTop > 1000) {
+              sectionmenubtn.style.visibility = "visible";
+            }
+            else {
+              sectionmenubtn.style.visibility = "hidden";
+            }
+            window.onscroll = function() {scrollFunction()};
+          }
         }
-      }
-      // Get the article menu
-      var articlemenu = document.getElementById("articlemenu");
 
-      // Get the button that opens the article menu
-      var articlemenubtn = document.getElementById("articlemenubtn");
+      // Get the <span> element that closes the section menu
+      var closebtn = document.getElementsByClassName("close")[0];
 
-      // Get the nav menu
-      var nav = document.getElementById("navmenu");
-
-      // Get the button that opens the nav menu
-      var btn = document.getElementById("navmenubtn");
-
-      // Get the <span> element that closes the nav menu
-      var span = document.getElementsByClassName("close")[0];
-
-      // When the user clicks the button, open the nav menu 
-      btn.onclick = function() {
-        nav.style.display = "block";
-        navmenubtn.style.display = "none";
+      // When the user clicks the button, open the section menu 
+      sectionmenubtn.onclick = function() {
+        var windowWidth = window.innerWidth;
+        if (windowWidth >1280) {
+          sectionmenucontent.classList.remove("show");
+          sectionmenucontent.classList.remove("hide");
+          sectionmenucontent.classList.add("mshow");
+            }
+            else {
+          sectionmenucontent.classList.remove("mshow");
+          sectionmenucontent.classList.remove("hide");
+          sectionmenucontent.classList.add("show");
+            }
+        sectionmenu.classList.add("nav");
+        sectionmenu.style.visibility = "visible";
+        sectionmenubtn.style.visibility = "hidden";
         // Get the current page scroll position
         scrollTop =
         window.pageYOffset || document.documentElement.scrollTop;
@@ -103,10 +152,15 @@
         }
       }
 
-      // When the user clicks on <span> (x), close the nav menu
-      span.onclick = function() {
-        nav.style.display = "none";
-        navmenubtn.style.display = "block";
+      // When the user clicks on (x), close the section menu
+      closebtn.onclick = function() {
+        sectionmenucontent.classList.remove("mshow");
+        sectionmenucontent.classList.remove("show");
+        sectionmenucontent.classList.add("hide");
+        setTimeout(function() {
+          sectionmenu.classList.remove("nav");
+          }, 100);
+        sectionmenubtn.style.visibility = "visible";
         window.onscroll = function() {scrollFunction()};
       }
 
@@ -114,10 +168,10 @@
       window.onscroll = function() {scrollFunction()};
       function scrollFunction() {
         if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
-          navmenubtn.style.display = "block";
+          sectionmenubtn.style.visibility = "visible";
         }
         else {
-          navmenubtn.style.display = "none";
+          sectionmenubtn.style.visibility = "hidden";
         }
       }
 
@@ -128,51 +182,50 @@
           top: 0,
           behavior: "smooth"
         });
-        if (window.outerWidth < 1921) {
-          nav.style.display = "none";
-        }
+        sectionmenu.classList.remove("nav");
+        sectionmenucontent.classList.remove("mshow");
+        sectionmenucontent.classList.remove("show");
       }
-
       // Go to Sections
       function scrollToSecOne() {
         window.onscroll = function() {scrollFunction()};
         var y = document.getElementById("karma-rebirth-and-the-caste-system").offsetTop;
         window.scrollTo({ top: y, behavior: 'smooth' });
-        if (window.outerWidth < 1921) {
-          nav.style.display = "none";
-        }
+        sectionmenu.classList.remove("nav");
+        sectionmenucontent.classList.remove("mshow");
+        sectionmenucontent.classList.remove("show");
       }
       function scrollToSecTwo() {
         window.onscroll = function() {scrollFunction()};
         var y = document.getElementById("atman-anatta-and-rebirth").offsetTop;
         window.scrollTo({ top: y, behavior: 'smooth' });
-        if (window.outerWidth < 1921) {
-          nav.style.display = "none";
-        }
+        sectionmenu.classList.remove("nav");
+        sectionmenucontent.classList.remove("mshow");
+        sectionmenucontent.classList.remove("show");
       }
       function scrollToSecThree() {
         window.onscroll = function() {scrollFunction()};
         var y = document.getElementById("transcending-reward-and-punishment").offsetTop;
         window.scrollTo({ top: y, behavior: 'smooth' });
-        if (window.outerWidth < 1921) {
-          nav.style.display = "none";
-        }
+        sectionmenu.classList.remove("nav");
+        sectionmenucontent.classList.remove("mshow");
+        sectionmenucontent.classList.remove("show");
       }
       function scrollToSecFour() {
         window.onscroll = function() {scrollFunction()};
         var y = document.getElementById("karma-and-fairness-in-life").offsetTop;
         window.scrollTo({ top: y, behavior: 'smooth' });
-        if (window.outerWidth < 1921) {
-          nav.style.display = "none";
-        }
+        sectionmenu.classList.remove("nav");
+        sectionmenucontent.classList.remove("mshow");
+        sectionmenucontent.classList.remove("show");
       }
       function scrollToSecFive() {
         window.onscroll = function() {scrollFunction()};
         var y = document.getElementById("the-spiritual-teaching-of-karma").offsetTop;
         window.scrollTo({ top: y, behavior: 'smooth' });
-        if (window.outerWidth < 1921) {
-          nav.style.display = "none";
-        }
+        sectionmenu.classList.remove("nav");
+        sectionmenucontent.classList.remove("mshow");
+        sectionmenucontent.classList.remove("show");
       }
       function scrollToFootnote(clickedElement) {
         var fnref = clickedElement.id;
