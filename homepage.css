@@ -42,9 +42,9 @@ a:hover {
 #navmenu .sitetitleBig {
   position: absolute;
   overflow: hidden;
-  line-height: 24px;
+  line-height: 36px;
   font-family: 'Crimson Pro', Georgia, serif;
-  font-size: 24px;
+  font-size: 28px;
   letter-spacing: 0;
   font-weight: 400;
   color: #0a2c02;
@@ -162,6 +162,11 @@ a:hover {
   color: #0a2c02;
   margin: 12px 8px 12px 18px;
   padding: 0 12px 0 12px;
+}
+#articlemenucontent p.home {
+  cursor: default;
+  font-weight: 600;
+  padding: 12px 12px 0 12px;
 }
 #articlemenucontent p.currentarticle {
   cursor: default;

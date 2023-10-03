@@ -37,9 +37,9 @@ body {
 #navmenu .sitetitleBig {
   position: absolute;
   overflow: hidden;
-  line-height: 24px;
+  line-height: 36px;
   font-family: 'Crimson Pro', Georgia, serif;
-  font-size: 24px;
+  font-size: 28px;
   letter-spacing: 0;
   font-weight: 400;
   color: #0a2c02;
@@ -132,7 +132,7 @@ body {
   font-weight: 300;
 }
 #main p {
-  margin: 18px 48px 24px 72px;
+  margin: 18px 48px 24px 10%;
   padding: 0 12px 0 12px;
   font-family: 'Crimson Pro', Georgia, serif;
   font-size: 20px;
@@ -205,11 +205,16 @@ a:hover {
   line-height: 28px;
   font-family: 'Crimson Pro', serif;
   font-size: 20px;
-  letter-spacing: 1px;
+  letter-spacing: 0;
   font-weight: 300;
   color: #0a2c02;
-  margin: 12px 8px 12px 12px;
+  margin: 12px 8px 12px 18px;
   padding: 0 12px 0 12px;
+}
+#articlemenucontent p.home {
+  cursor: default;
+  font-weight: 400;
+  padding: 12px 12px 0 12px;
 }
 #articlemenucontent p.currentarticle {
   cursor: default;
