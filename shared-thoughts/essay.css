@@ -68,7 +68,7 @@ body {
   position: sticky;
   display: block;
   margin: 36px auto;
-  padding: 0 60px 0 60px;
+  padding: 0 10% 0 10%;
   width: 100%;
   max-width: 360px;
 }
