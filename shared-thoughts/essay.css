@@ -86,7 +86,25 @@ body {
   margin: 36px auto;
   z-index: -1;
   width: 100%;
-  max-width: 600px;
+  max-width: 640px;
+}
+#river-landscape-in-autumn {
+  position: relative;
+  display: block;
+  margin: 36px auto;
+  z-index: -1;
+  width: 100%;
+  max-width: 650px;
+}
+#river-landscape-in-autumn-caption {
+  font-family: 'Crimson Pro', Georgia, serif;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 0;
+  line-height: 100%;
+  color: #0a2c02;
+  float: right;
+  margin: -32px 60px 0 0;
 }
 #main {
   position: -webkit-sticky;
@@ -159,6 +177,26 @@ body {
 }
 #main p.quote {
   margin: 0 12px 0 auto;
+}
+#main ol li {
+  margin-left: 15%;
+  padding: 0 12px 0 12px;
+  font-family: 'Crimson Pro', Georgia, serif;
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 0;
+  line-height: 140%;
+  color: #0a2c02;
+}
+#mainol li p {
+  margin: 12px 48px 12px 0;
+  padding: 0 12px 0 12px;
+  font-family: 'Crimson Pro', Georgia, serif;
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 0;
+  line-height: 140%;
+  color: #0a2c02;
 }
 a {
   color: #0a2c02;

@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Wu Weiming" />
+  <meta name="dcterms.date" content="2022-12-21" />
+  <meta name="description" content="Wuwei against the cultivation of virtues">
+  <title>Just Be: All Is What It Is</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="essay.css" type="text/css" />
+</head>
+<body>
+  <body onload = "menuDisplay()" onresize = "menuDisplay()">
+    <div id="navmenu">
+<div class="triplebar" id="articlemenubtn" onclick="menuToggle(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+    <span id="sitetitle" class="sitetitle">Under a bodhi tree</span>
+    <img id="bodhi-leaf" src="../bodhi-leaf.png">
+    <div id="articlemenu" style="display: none;">
+      <div id="articlemenucontent">
+        <p class="home"><a href="../index.html">Home</a></p>
+        <p class="article"><a href="karma.html">Karma: We Are What We Do</a></p>
+        <p class="article"><a href="yinyang-and-dao.html"><em>Yinyang</em> and <em>Dao</em></a></p>
+        <p class="article"><a href="the-way-of-ren.html"><em>Rendao</em>: The Way of <em>Ren</em></a></p>
+        <p class="article"><a href="just-be-all-is-what-it-is.html">Just Be: All Is What It Is</a></p>
+        <p class="currentarticle">To Cross the River</p>
+        </div>
+    </div>
+    </div>
+    <button id="sectionmenubtn"><i class="fa fa-chevron-right"></i></button>
+    <div id="sectionmenu">
+    <div id="sectionmenucontent">
+      <div><span class="close">&times;</span></div>
+      <p class="currentarticle"><a onclick="scrollToTop()">To Cross the River</a></p>
+      <p class="sectionlink"><a onclick="scrollToSecOne()">The Four Noble Truths</a></p>
+      <p class="sectionlink"><a onclick="scrollToSecTwo()">The Noble Eightfold Path</a></p>
+      <p class="sectionlink"><a onclick="scrollToSecThree()">From the Near Shore to the Other Shore</a></p>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+
+      function menuDisplay () {
+        var windowWidth = window.innerWidth;
+        if (windowWidth > 1280) {
+          navmenu.style.backgroundColor = "transparent";
+          articlemenubtn.style.visibility = "hidden";
+          articlemenu.style.display = "block";
+          articlemenucontent.classList.remove("hide");
+          articlemenucontent.classList.add("show");
+          sitetitle.style.visibility = "visible";
+          sitetitle.className = "sitetitleBig";
+          sectionmenubtn.style.visibility = "hidden";
+          sectionmenubtn.style.marginLeft = "304px";
+          sectionmenu.style.visibility = "hidden";
+          sectionmenucontent.style.marginLeft = "-600px";
+        }
+        else {
+          navmenu.style.backgroundColor = "#cddbd4";
+          articlemenu.style.display = "none";
+          articlemenucontent.classList.remove("show");
+          articlemenubtn.style.visibility = "visible";
+          sitetitle.style.visibility = "visible";
+          sitetitle.className = "sitetitle";
+          sectionmenubtn.style.visibility = "hidden";
+          sectionmenubtn.style.marginLeft = "0";
+          sectionmenu.style.visibility = "hidden";
+          sectionmenucontent.style.marginLeft = "-600px";
+        }
+      }
+
+        function menuToggle(x) {
+          x.classList.toggle("change");
+          if (articlemenucontent.className == "" || articlemenucontent.className == "hide" ) {
+              articlemenu.classList.add("nav");
+              articlemenucontent.classList.remove("hide");
+              articlemenucontent.classList.add("show");
+              articlemenu.style.display = "block";
+              sitetitle.style.visibility = "hidden";
+              sectionmenubtn.style.visibility = "hidden";
+          // Get the current page scroll position
+          scrollTop =
+          window.pageYOffset || document.documentElement.scrollTop;
+          scrollLeft =
+          window.pageXOffset || document.documentElement.scrollLeft;
+        
+          // if any scroll is attempted,
+          // set this to the previous value
+          window.onscroll = function() {
+          window.scrollTo(scrollLeft, scrollTop);
+          }
+        }
+        else {
+          articlemenucontent.classList.remove("show");
+          articlemenucontent.classList.add("hide");
+          articlemenu.classList.remove("nav");
+          sitetitle.style.visibility = "visible";
+          sectionmenu.style.visibility = "hidden";
+          scrollTop =
+          window.pageYOffset || document.documentElement.scrollTop;
+          scrollLeft =
+          window.pageXOffset || document.documentElement.scrollLeft;
+          if (scrollTop > 1000) {
+            sectionmenubtn.style.visibility = "visible";
+          }
+          else {
+            sectionmenubtn.style.visibility = "hidden";
+          }
+        window.onscroll = function() {scrollFunction()};
+        }
+      }
+      
+      // Get the <span> element that closes the section menu
+      var closebtn = document.getElementsByClassName("close")[0];
+
+      // When the user clicks the button, open the section menu 
+      sectionmenubtn.onclick = function() {
+        var windowWidth = window.innerWidth;
+        if (windowWidth >1280) {
+          sectionmenucontent.classList.remove("show");
+          sectionmenucontent.classList.remove("hide");
+          sectionmenucontent.classList.add("mshow");
+            }
+            else {
+          sectionmenucontent.classList.remove("mshow");
+          sectionmenucontent.classList.remove("hide");
+          sectionmenucontent.classList.add("show");
+            }
+          sectionmenu.classList.add("nav");
+          sectionmenu.style.visibility = "visible";
+          sectionmenubtn.style.visibility = "hidden";
+            // Get the current page scroll position
+            scrollTop =
+            window.pageYOffset || document.documentElement.scrollTop;
+            scrollLeft =
+            window.pageXOffset || document.documentElement.scrollLeft;
+          
+            // if any scroll is attempted,
+            // set this to the previous value
+            window.onscroll = function() {
+            window.scrollTo(scrollLeft, scrollTop);
+            }
+          }
+    
+          // When the user clicks on (x), close the section menu
+          closebtn.onclick = function() {
+            sectionmenucontent.classList.remove("mshow");
+          sectionmenucontent.classList.remove("show");
+          sectionmenucontent.classList.add("hide");
+          setTimeout(function() {
+            sectionmenu.classList.remove("nav");
+            }, 100);
+          sectionmenubtn.style.visibility = "visible";
+            window.onscroll = function() {scrollFunction()};
+          }
+    
+      // Show the button when scroll down
+      window.onscroll = function() {scrollFunction()};
+      function scrollFunction() {
+        if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+          sectionmenubtn.style.visibility = "visible";
+        }
+        else {
+          sectionmenubtn.style.visibility = "hidden";
+        }
+      }
+    
+      // Go to Top
+      function scrollToTop() {
+        window.onscroll = function() {scrollFunction()};
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth"
+        });
+        sectionmenu.classList.remove("nav");
+        sectionmenucontent.classList.remove("mshow");
+        sectionmenucontent.classList.remove("show");
+      }
+      // Go to Sections
+      function scrollToSecOne() {
+        window.onscroll = function() {scrollFunction()};
+        var y = document.getElementById("the-four-noble-truths").offsetTop;
+        window.scrollTo({ top: y, behavior: 'smooth' });
+        sectionmenu.classList.remove("nav");
+        sectionmenucontent.classList.remove("mshow");
+        sectionmenucontent.classList.remove("show");
+        }
+      function scrollToSecTwo() {
+        window.onscroll = function() {scrollFunction()};
+        var y = document.getElementById("the-noble-eightfold-path").offsetTop;
+        window.scrollTo({ top: y, behavior: 'smooth' });
+        sectionmenu.classList.remove("nav");
+        sectionmenucontent.classList.remove("mshow");
+        sectionmenucontent.classList.remove("show");
+        }
+      function scrollToSecThree() {
+        window.onscroll = function() {scrollFunction()};
+        var y = document.getElementById("from-the-near-shore-to-the-other-shore").offsetTop;
+        window.scrollTo({ top: y, behavior: 'smooth' });
+        sectionmenu.classList.remove("nav");
+        sectionmenucontent.classList.remove("mshow");
+        sectionmenucontent.classList.remove("show");
+      }
+      function scrollToFootnote(clickedElement) {
+        var fnref = clickedElement.id;
+        var fn = fnref.replace('re', '');
+        var y = document.getElementById(fn).offsetTop;
+        window.scrollTo({ top: y, behavior: 'smooth' });
+      }
+      function scrollToFootnoteRef(clickedElement) {
+        var fn = clickedElement.parentNode.parentNode.id;
+        var fnref = 're' + fn;
+        var y = document.getElementById(fnref).offsetTop - 24;
+        window.scrollTo({ top: y, behavior: 'smooth' });
+      }
+  </script>
+<div id="main">
+<h1 class="title" id="to-cross-the-river">To Cross the River</h1>
+<p class="author" style="display: block; padding: 0 24px 36px 0; float: right;"><span style="display: inline-flex; flex-direction: column;">Wu Weiming<span class="tc">吳維明</span>December 20, 2024</span></p>
+<figure>
+  <img id="river-landscape-in-autumn" src="https://upload.wikimedia.org/wikipedia/commons/c/c6/Luo_Mu_-_River_Landscape_in_Autumn_-_51.13_-_Metropolitan_Museum_of_Art.jpg">
+  <figcaption id="river-landscape-in-autumn-caption">Luo Mu - River Landscape in Autumn - Metropolitan Museum of Art</figcaption>
+</figure>
+<p class="first">In Buddha dharma, to gain enlightenment is to leave the shore of
+samsara, cross the river, and reach the shore of nirvana. The raft that
+can carry us across the river is the Four Noble Truths. To be
+enlightened is to be awakened, open our eyes and <em>see</em><sup>
+<a onclick="scrollToFootnote(this)" id="refn:1" class="footnote">1</a></sup> the truths about how to live and
+experience life without discontent.</p>
+<h2 id="the-four-noble-truths">The Four Noble Truths</h2>
+<p>After Siddhartha Gautama awakened under a bodhi tree, he gained a
+profound insight into the human condition we struggle to cope with in
+our daily lives. He also found a way to transcend such a condition. The
+core of his teachings is the Four Noble Truths:</p>
+<ol type="1">
+<li>Life is marked with <em>dukkha</em> (restlessness and
+discontent).</li>
+<li><em>Dukkha</em> co-arises with <em>tanha</em> (desires or
+longings).</li>
+<li>The cessation of <em>dukkha</em> co-arises with the extinction of
+<em>tanha</em>.</li>
+<li>To extinguish <em>tanha</em>, follow the Noble Eightfold
+Path.</li>
+</ol>
+<h3 id="dukkha"><em>Dukkha</em></h3>
+<p>In the first Noble Truth, the Buddha points out that the human
+condition we struggle with is <em>dukkha</em>. Whether we realize it or
+not, we experience <em>dukkha</em> and are affected by it in everyday
+life. The term “<em>dukkha</em>” refers to a sense of uneasiness that
+one’s life is incomplete or out of balance, that something is missing in
+life and its absence is holding one back from being as content and happy
+as one could be. In modern culture, many people subscribe to the ethos
+of pursuing happiness in life. But if one pursues happiness, does that
+mean one is not as happy as one can be at the present moment? If so,
+then the very pursuit of happiness would betray the presence of
+<em>dukkha</em>.</p>
+<p>It is not uncommon that <em>dukkha</em> is translated as suffering,
+and the first Noble Truth is read as life is marked with suffering. This
+reading gives rise to the misperception that Buddha dharma has a very
+gloomy and negative view about life. But when <em>dukkha</em> is more
+properly understood as discontent and unfulfillment, the first Noble
+Truth is indeed an accurate depiction of our experiences with longings
+and struggles in life. Moreover, as we will see in the third and fourth
+Noble Truths, Buddha dharma teaches us that it is possible to live life
+without <em>dukkha</em>, and offers a way to achieve this. So far from
+being negative, it offers a positive way to live and experience
+life.</p>
+<h3 id="tanha"><em>Tanha</em></h3>
+<p>The second Noble Truth states that <em>dukkha</em> co-arises with
+<em>tanha</em>. The word “<em>tanha</em>” literally means burning
+thirst. Desires, cravings, yearnings, fixations and attachments are all
+<em>tanha</em>. <em>Dukkha</em> and <em>tanha</em> are two sides of the
+same coin. To desire something is to be in a state of discontent, and
+out of the restlessness of discontent desires would grow as a means to
+mend it.</p>
+<p>When one feels <em>dukkha</em> and thinks it is because something is
+missing in one’s life, it is only natural to want to get what is missing
+in order to gain happiness. The comedy movie <em>Bedazzled</em> (2000)
+portrays such a mindset in a comic yet thought-provoking way. The main
+character Elliot sells his soul to the Devil for seven wishes. He
+misguidedly thinks if he were handsome, talented, wealthy or powerful,
+<em>et cetera</em>, he would be able to sweep Allison, the girl he is
+secretly in love with, off her feet. However, each time his wish is
+granted, the mischievous Devil would foil his plan, and Elliot’s efforts
+in making Allison love him back would end up an exercise in futility.
+Elliot finally realizes that the key to happiness does not lie in
+getting what he wants. It is only after he selflessly uses his final
+wish to wish Allison a happy life does he get to keep his soul and find
+happiness in loving someone.</p>
+<p>The teaching of the seven deadly sins in Christianity parallels the
+teaching of <em>tanha</em> in Buddha dharma. The fire in hell is a vivid
+metaphor for desires. To be consumed by desires is to be burned by
+hellfire. Resisting the Devil’s temptations is a key step in the journey
+of spiritual growth.</p>
+<h3 id="the-cessation-of-dukkha">The Cessation of <em>Dukkha</em></h3>
+<p>The third Noble Truth announces the uplifting prospect of a life
+without <em>dukkha</em>. The key to the cessation of <em>dukkha</em>
+lies in the extinction of <em>tanha</em>. To extinguish <em>tanha</em>
+is to put out the fire of burning desires so that we would no longer be
+tormented by it.</p>
+<p>Since childhood we have been taught to control and even suppress our
+desires. Morality plays a major role in this. Labeling certain desires
+as immoral serves as a direct and effective way to denounce and inhibit
+them. The teaching of the seven deadly sins is a representative example.
+People are told to resist impure thoughts and suppress sinful urges.
+Failing to do so would bring about moral and spiritual condemnation and
+punishment.</p>
+<p>The approach of Buddha dharma to <em>tanha</em> does not center on
+whether a desire is good or bad, moral or immoral, for even a good
+desire can cause discontent and suffering. For example, it is natural
+for us to want to be with our loved ones. There is nothing wrong with
+that. But such a desire can still cause <em>dukkha</em> when we are
+separated from them. So instead, Buddha dharma focuses on how to free us
+from the vexation of <em>tanha</em>.</p>
+<p>The way Buddha dharma frees us from the torment of bad desires is
+also different from the common way of fighting temptations through
+willpower. An attempt to surpress a craving can backfire and end up
+amplifying it. This often results in the loss of self-control, which in
+turn can bring about shame for being weak-willed. As an example of how
+this can happen, imagine all of a sudden you feel like having a beer.
+Sensing it is too early to drink and you have work to do, you resist
+such an impulse. Yet somehow the hankering lingers. You try to put it
+out of your mind, but the harder you try, the more you think about how
+nice it would be to have a beer now. After a while, all you can think of
+is cracking open a cold one. You cave in and start drinking. Afterwards,
+you have regrets and feel bad about losing control.</p>
+<p>Instead of emphasizing the role of willpower, Buddha dharma teaches
+skills that free us from <em>tanha</em>. Having the required skills is
+essential, in addition to a strong motivation to succeed, to reach a
+goal. For example, to win a tennis match, it is not enough to have a
+strong motivation and mental strength, you also need a fit physical
+condition and the skills for various shots.</p>
+<h3 id="the-extinction-of-tanha">The Extinction of <em>Tanha</em></h3>
+<p>Rather than control and suppress desires through willpower, the
+fourth Noble Truth points out that the way to extinguish desires is to
+follow the Noble Eightfold Path. To follow the path is to learn and
+practice a set of skills that can lead to the fading away of
+<em>tanha</em> and free us from its grip. These skills are acquired
+through training, and their daily practice that forms a way of life is
+the key to the extinction of <em>tanha</em>.</p>
+<h2 id="the-noble-eightfold-path">The Noble Eightfold Path</h2>
+<p>To follow the Noble Eightfold Path is to practice right view, right
+thought, right speech, right action, right livelihood, right effort,
+right mindfulness and right concentration. The term “right” here does
+not mean “correct” or “morally good”. It is the translation of the Pali
+word “sammā,” which means “suitable, appropriate.”</p>
+<h3 id="right-view">Right View</h3>
+<p>Is there a way to see reality that is the only correct way? Take a
+look at the graphic in Figure 1.</p>
+<figure>
+<img style="display: block; margin-left: auto; margin-right: auto;" src="four-pacmans.svg"
+title="Four colored circles at the corners of a white rectangle or four Pac-Man shapes?"
+alt="Figure 1: What Do You See?" />
+<figcaption style="font-family: 'Crimson Pro'; font-size: 20px;  font-weight: 300; color: #0a2c02; margin-top: 36px; text-align: center">Figure 1: What Do You See?</figcaption>
+</figure>
+<p>Are there four colored circles partially covered by a rectangle? Or
+are there four shapes in the form of Pac-Man? Many would say that they
+see four circles and a rectangle while others would insist that they see
+four shapes of Pac-Man and the rectangle is just an optical illusion.
+Which view is correct? Can they simply be two different perspectives? As
+an exercise, try to see the pattern without any concepts such as shape
+and color, that is, try to see it <em>as such</em>.</p>
+<p>The Noble Eightfold Path is pragmatic. Its focus is not so much on
+whether something is correct as on whether it is suitable and useful in
+helping us develop skills to relieve <em>tanha</em>. The practice of
+right view aims to free us from a common perception of reality that
+leads to <em>dukkha</em>. We are accustomed to seeing reality as
+consisting of individual entities that subsist in spacetime. Such a view
+gives rise to self-centered grasping in life and also brings on the fear
+of death and the desire for immorality. Through the teachings of
+<em>anicca</em> (impermanence), <em>anatta</em> (no self) and
+<em>shunyata</em> (emptiness), Buddha dharma teaches us to see reality
+as interbeing in the ocean of karma. This perspective is appropriate and
+helpful because it would lead to the cessation of <em>dukkha</em>, and
+promote loving kindness toward all. We will take a deep look at
+interbeing in the section of <em>anicca</em>, <em>anatta</em> and
+<em>shunyata</em>.</p>
+<h3 id="right-thought">Right thought</h3>
+<p>Right thought stems from right view. Once learning to see reality as
+interbeing, and upon seeing the interfering of all the waves in the
+ocean of karma, we would cultivate the thought of renunciation and the
+thought of <em>ahimsa</em>. In modern context, the thought of
+renunciation can be understood as the resolve to, instead of playing the
+game of getting ahead in life, promote the wellbeing of all. The thought
+of <em>ahimsa</em> is the commitment to do no harm, realizing that to
+harm one is to harm all in the web of interbeing. It is worth
+contemplating whether by getting ahead in life one would have harmed
+those who are left behind.</p>
+<h3 id="right-speech">Right Speech</h3>
+<p>The heart of loving kindness and the thought of <em>ahimsa</em> would
+inspire us to refrain from lying, slandering, gossiping, speaking
+harshly or frivolously. Instead, we would be mindful and speak
+truthfully what is appropriate and useful. In the age of texting and
+social media, this skill and its practice are especially needed now more
+than ever.</p>
+<h3 id="right-action">Right Action</h3>
+<p>Mindful of doing no harm, we refrain from taking life, stealing,
+taking more than what we need when others are in need, and committing
+sexual misconduct. The use of the phrase “refrain from” is important. It
+indicates that Buddha dharma does not strictly prohibit taking life.
+There are circumstances in which not taking life would do a greater
+harm. The primary guideline for determining sexual misconduct is the
+principle of do-no-harm. For example, having an affair shatters the
+trust in relationships and harm the people involved. To think that there
+is no harm done as long as the affair is kept secret is a failure to see
+how it already damaged all the relationships being impacted and made the
+perpetrators untruthful. It is sad and unfortunate when people are blind
+to who they have become. It is also tragic, for such kind of thinking
+would prolong the suffering of all affected. The ripples of karma
+propagate whether one sees it or not.</p>
+<h3 id="right-livelihood">Right Livelihood</h3>
+<p>In making a living through a profession, we should choose our careers
+carefully so that we can avoid unwholesome places and situations. In our
+daily work, we should strive to serve and help people, and do our best
+not to harm ourselves and others. For people whose work makes it hard to
+avoid unwholesomeness, special training and support systems are needed
+to help them cope with the difficulties.</p>
+<h3 id="right-effort">Right Effort</h3>
+<p>In daily life, our focus should be on nourishing loving kindness in
+our hearts. Through mindfulness, we bring about and sustain wholesome
+mental states, and prevent or halt unwholesome mental states. Over time,
+the daily effort will internalize to form a calm temperament that is
+less susceptible to the agitation of <em>tanha</em>.</p>
+<h3 id="right-mindfulness">Right Mindfulness</h3>
+<p>To be mindful is to be aware of what is going on at the present
+moment and see things as they are so that there is no misunderstanding,
+distortion or self-deception. Mindfulness is especially an apt skill to
+ward off the amplification of <em>tanha</em>. Thich Nhat Hanh told a
+story that succinctly illuminates what mindfulness is and how to
+practice it in everyday life.</p>
+<blockquote>
+<p>When the Buddda was asked, “Sir, what do you and your monks
+practice?” he replied, “We sit, we walk and we eat.” The questioner
+continued, “But sir, everyone sits, walks, and eats,” and the Buddha
+told him, “When we sit, we <em>know</em> we are sitting. When we walk,
+we <em>know</em> we are walking. When we eat, we <em>know</em> we are
+eating.”<sup>
+  <a onclick="scrollToFootnote(this)" id="refn:2" class="footnote">2</a></sup></p>
+</blockquote>
+<h3 id="right-concentration">Right Concentration</h3>
+<p>Right concentration helps us quiet our minds. The daily practice of
+<em>jhāna</em> (concentration, meditation) can lead to the subsidence of
+thinking and pondering. It also helps us achieve calmness and evenness
+so that we would not get overexcited by sensory stimuli. When we are not
+distracted by all that is buzzing around us, we can then hone our skill
+of mindfulness and see all that inter-is as such.</p>
+<p>To be enlightened is to be reborn, to embark on a new way of living.
+Living is a matter of daily practices. To walk the Noble Eightfold Path
+is to live an enlightened life and no longer wander in the dark valley
+of <em>tanha</em>.</p>
+<h2 id="anicca-anatta-and-shunyata"><em>Anicca</em>, <em>Anatta</em>,
+and <em>Shunyata</em></h2>
+<p>The three marks of existence in Buddha dharma are <em>dukkha</em>,
+<em>anicca</em> (impermanence), and <em>anatta</em> (no self). To be
+able to <em>see</em> these three marks is to gain the right view that
+can help us let go of <em>tanha</em><sup>
+  <a onclick="scrollToFootnote(this)" id="refn:3" class="footnote">3</a></sup> and cross the river. To
+see <em>anicca</em> and <em>anatta</em> is to be awakened and see
+<em>shunyata</em> (emptiness) clearly and deeply. It is sudden
+enlightenment (<span class="tc">頓悟</span>, <em>dunwu</em> in Chinese; <em>satori</em> in
+Japanese) in the Chan (<span class="tc">禪</span>, <em>Zen</em> in Japanese) tradition.</p>
+<h3 id="anicca-impermanence"><em>Anicca</em> (Impermanence)</h3>
+<p>If you practice mindfulness while eating a piece of fine Belgium
+chocolate, you would notice that its flavor dissipates after a short
+moment. Missing the taste, you quickly have another bite. But soon the
+flavor would disappear again. If you try to keep the taste by eating the
+chocolate again and again, soon you would find the flavor changes. It
+would no longer taste as good, and could even turn sour. You may even
+feel sick after overeating it.</p>
+<p>It is not just our sense perception. Everything we observe and
+experience, the content of our consciousness, and every phenomenon in
+the world are always in a state of flux and thus impermanent. Everything
+comes and goes, appears and disappears. All is passing. Trying to hold
+on to things that are fleeing would lead to <em>dukkha</em>.</p>
+<h3 id="anatta-no-self"><em>Anatta</em> (No Self)</h3>
+<p>The Vedanta school of Hindu dharma teaches that the true self of each
+one of us is Brahman. Our individuality is merely a facade in the world
+of <em>maya</em>. In the West, many followers of Judaism, Christianity
+and Islam believe that an eternal individual soul is the true self of
+each human being. But regardless whether individuality is only an
+appearance or is fundamentally real, viewing each one of us as an
+individual being tends to bring attachment to one’s self and lead to
+<em>dukkha</em>.</p>
+<p>Instead of seeing each one of us as a separate being, Buddha dharma
+shows us a different perspective of seeing a human being as consisting
+of five <em>khandhas</em> (bundles, aggregates). The five
+<em>khandhas</em> are the physical form, feelings, perceptions, mental
+formations and consciousness. Looking deeper, we can see each bundle as
+a collection of physical and mental states. Each state in the collection
+is constantly affecting and being affected by all the other past and
+present physical and mental states in the world.<sup>
+  <a onclick="scrollToFootnote(this)" id="refn:4" class="footnote">4</a></sup>
+Without the ground beneath you, the sky and clouds above you, the tree,
+grass and people around you, you would not be you enjoying a pleasant
+walk in the park. This way of seeing reality is put poetically with the
+term “interbeing” by Thich Nhat Hanh.</p>
+<p>A well-known and beloved poem written by the sixth Chinese Chan
+grandmaster Huineng (<span class="tc">六祖慧能</span>) has served to illuminate <em>anatta</em>
+through the ages:</p>
+<blockquote>
+<p>The Bodhi tree is not a tree.</br>
+   The spotless mirror is not a mirror.</br>
+   There is not a thing to begin with.</br>
+   Where is the place to gather dust?<sup>
+    <a onclick="scrollToFootnote(this)" id="refn:5" class="footnote">5</a></sup></p>
+</blockquote>
+<p>We are used to seeing and thinking of reality as made up of objects.
+This new way of seeing <em>such</em> as bundles of ever-changing states
+requires a paradigm shift of perspective and frame of reference. The
+shift is so radical and profound that it opens our eyes to see
+interbeing and dependent arising.</p>
+<h3 id="shunyata-emptiness"><em>Shunyata</em> (Emptiness)</h3>
+<p><em>Shunyata</em> (<span class="tc">空</span>, <em>kong</em> in Chinese) means emptiness.
+Emptiness is the absence of <em>own-being</em>. “Emptiness simply means
+<em>no self-nature</em>.”<sup>
+  <a onclick="scrollToFootnote(this)" id="refn:6" class="footnote">6</a></sup> To see <em>shunyata</em> is to see
+there being no individual object, no separate entity, no permanent
+substance and no unchanging essence. Again, using the diagram or pattern
+in Figure 1 to illustrate, when you see <em>shunyata</em>, you would see
+no circle, no rectangle, no shape of Pac-Man, no color in itself, and so
+on. You see <em>such</em>. And if we continue and expand the scope of
+this exercise, there would be no diagram in front of you as the object
+of your perception, and there would be no you as the subject looking at
+the diagram.</p>
+<p>Reality is the collection of all phenomena; it is the ocean of karma.
+Each phenomenon is an ongoing, ever-changing bundle of physical and
+mental states, a wave in the ocean of karma. Once we see <em>anatta</em>
+and interbeing, we would see all the waves in the ocean of karma. When
+we see all the coming and going of waves, we would be awakened and see
+<em>shunyata</em>.</p>
+<p>The teaching of <em>shunyata</em> is not meant to be taken as the
+ultimate truth in metaphysical speculation. Its importance lies in its
+pragmatic usefulness in freeing us from <em>tanha</em>. If the self is
+not there, where can <em>tanha</em> be?</p>
+<h2 id="from-the-near-shore-to-the-other-shore">From the Near Shore to
+the Other Shore</h2>
+<p>The near shore is samsara. The other shore is nirvana. The original
+meaning of “nirvana” is “blowing out,” “extinguishing” or “quenching”.
+To be in nirvana is to be in the state in which all the burning desires
+are extinguished. Eating a hamburger with attachment is eating in
+samsara. Eating it without attachment is eating in nirvana. The
+hamburger is the same hamburger, but eating with attachment and eating
+without attachment are two very different states of experience.</p>
+<p>To cross the river is to go from the shore of samsara to the shore of
+nirvana. The river stands for the stream of life; the two shores are two
+ways of experiencing life. When one stands on the opposite shores, the
+river is still the river, but the sceneries of the river are quite
+different. Living with <em>dukkha</em> and <em>tanha</em> is living in
+samsara; living without <em>dukkha</em> and <em>tanha</em> is living in
+nirvana.</p>
+<hr />
+<div class="footnotes">
+<ol type="1">
+<li id="fn:1">
+  The word “see” is used throughout this article in the sense of <em>vipassana</em>. It means “gain a deep intellectual understanding and spiritual insight of”.<a onclick="scrollToFootnoteRef(this)" class="footnote">↩︎</a>
+</li>
+<li id="fn:2">
+  <p>Thich Nhat Hanh, <em>Living Buddha, Living Christ</em>, (New York: Riverhead Books, 1995), 14.<a onclick="scrollToFootnoteRef(this)" class="footnote">↩︎</a></p>
+</li>
+<li id="fn:3">
+  <p>Letting go of <em>tanha</em> means having no more wishes for oneself.<a onclick="scrollToFootnoteRef(this)" class="footnote">↩︎</a></p>
+</li>
+<li id="fn:4">
+  <p>In short, this is the gist of dependent arising. By the way, Robert M. Sapolsky’s book <em>Behave</em> (New York: Penguin Press, 2017) can serve as a modern-day scientific exposition of dependent arising.<a onclick="scrollToFootnoteRef(this)" class="footnote">↩︎</a></p>
+</li>
+<li id="fn:5">
+  <p>The original poem in the traditional Chinese:
+  <blockquote><span class="tc">菩提本無樹</br>
+    明鏡亦非臺</br>
+    本來無一物</br>
+    何處惹塵埃</span> <a onclick="scrollToFootnoteRef(this)" class="footnote">↩︎</a></blockquote></p>
+  </li>
+<li id="fn:6">
+  <p>Thich Nhat Hanh, <em>The Other Shore</em>, (Berkeley, CA: Palm Leaves Press, 2017), 40.<a onclick="scrollToFootnoteRef(this)" class="footnote">↩︎</a></p>
+</li>
+</ol>
+</div>
+<p xmlns:cc="http://creativecommons.org/ns#" >This work is licensed under <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-ND 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1"></a></p>
+</div>
+</body>
+</html>
