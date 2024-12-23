@@ -37,7 +37,8 @@
         <p class="currentarticle"><a onclick="scrollToTop()">To Cross the River</a></p>
         <p class="sectionlink"><a onclick="scrollToSecOne()">The Four Noble Truths</a></p>
         <p class="sectionlink"><a onclick="scrollToSecTwo()">The Noble Eightfold Path</a></p>
-        <p class="sectionlink"><a onclick="scrollToSecThree()">From the Near Shore to the Other Shore</a></p>
+        <p class="sectionlink"><a onclick="scrollToSecThree()"><em>Anicca</em>, <em>Anatta</em>, and <em>Shunyata</em></a></p>
+        <p class="sectionlink"><a onclick="scrollToSecFour()">From the Near Shore to the Other Shore</a></p>
       </div>
     </div>
 
@@ -146,6 +147,12 @@
         menuToggle(articlemenubtn);
         }
       function scrollToSecThree() {
+        window.onscroll = function() {scrollFunction()};
+        var y = document.getElementById("anicca-anatta-and-shunyata").offsetTop - 18;
+        window.scrollTo({ top: y, behavior: 'smooth' });
+        menuToggle(articlemenubtn);
+      }
+      function scrollToSecFour() {
         window.onscroll = function() {scrollFunction()};
         var y = document.getElementById("from-the-near-shore-to-the-other-shore").offsetTop - 18;
         window.scrollTo({ top: y, behavior: 'smooth' });
