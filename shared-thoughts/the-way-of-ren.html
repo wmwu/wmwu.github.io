@@ -98,15 +98,11 @@ articlemenu.classList.add("nav");
           }
         }
         else {
+              window.onscroll = function() {scrollFunction()};
           articlemenucontent.classList.remove("show");
             articlemenucontent.classList.add("hide");
             articlemenu.classList.remove("nav");
             sitetitle.style.visibility = "visible";
-            scrollTop =
-            window.pageYOffset || document.documentElement.scrollTop;
-            scrollLeft =
-            window.pageXOffset || document.documentElement.scrollLeft;
-          window.onscroll = function() {scrollFunction()};
         }
             }
             else {
