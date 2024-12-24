@@ -28,7 +28,7 @@
       <div id="articlemenu" style="display: none;">
         <div id="articlemenucontent">
         <img id="bodhi-leaf" src="../bodhi-leaf.png">
-        <p class="sitetitle">Under a bodhi tree</p>
+        <p id="sitetitle" class="sitetitle">Under a bodhi tree</p>
           <p class="home"><a href="../index.html">Home</a></p>
           <p class="currentarticle"><a onclick="scrollToTop()">Karma: We Are What We Do</a></p>
           <p class="sectionlink"><a onclick="scrollToSecOne()">Karma, Rebirth and the Caste System</a></p>
@@ -68,6 +68,7 @@
         else {
           navmenu.style.backgroundColor = "#cddbd4";
           articlemenubtn.style.visibility = "hidden";
+          sitetitle.style.visibility = "visible";
           articlemenu.style.display = "block";
           articlemenucontent.classList.remove("hide");
           articlemenucontent.classList.add("show");
@@ -94,7 +95,6 @@
             // set this to the previous value
             window.onscroll = function() {
             window.scrollTo(scrollLeft, scrollTop);
-              sitetitle.style.visibility = "hidden";
             }
           }
           else {
@@ -102,17 +102,17 @@
             articlemenucontent.classList.remove("show");
             articlemenucontent.classList.add("hide");
             articlemenu.classList.remove("nav");
-            sitetitle.style.visibility = "visible";
+              sitetitle.style.visibility = "hidden";
           }
             }
             else {
           if (articlemenu.className == "nav") {
           x.classList.toggle("change");
+          sitetitle.style.visibility = "visible";
           }
           articlemenucontent.classList.remove("hide");
           articlemenucontent.classList.add("show");
           articlemenu.classList.remove("nav");
-          sitetitle.style.visibility = "visible";
         scrollTop =
         window.pageYOffset || document.documentElement.scrollTop;
         scrollLeft =
