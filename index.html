@@ -21,10 +21,10 @@
         <div class="bar2"></div>
         <div class="bar3"></div>
       </div>
-      <span id="sitetitle">Under a bodhi tree</span>
       <img id="bodhileaf" src="bodhi-leaf.png">
       <div id="articlemenu" style="display: none;">
         <div id="articlemenucontent">
+          <img id="bodhileaf" src="bodhi-leaf.png">
           <p class="home">Home</p>
           <p class="article"><a href="shared-thoughts/karma.html">Karma: We Are What We Do</a></p>
           <p class="article"><a href="shared-thoughts/yinyang-and-dao.html"><em>Yinyang</em> and <em>Dao</em></a></p>
@@ -44,8 +44,6 @@
             backgroundimage.style.left = "360px";
             backgroundimage.style.top = "0";
             main.style.marginLeft = "360px";
-            sitetitle.style.visibility = "visible";
-            sitetitle.className = "sitetitleBig";
           }
           else {
             navmenu.style.backgroundColor = "#cddbd4";
@@ -54,8 +52,6 @@
             backgroundimage.style.left = "60px";
             backgroundimage.style.top = "56px";
             articlemenubtn.style.visibility = "visible";
-            sitetitle.style.visibility = "visible";
-            sitetitle.className = "sitetitle";
           }
         }
 
@@ -65,7 +61,6 @@
               articlemenu.className = "nav";
               articlemenucontent.className = "show";
               articlemenu.style.display = "block";
-              sitetitle.style.visibility = "hidden";
             // Get the current page scroll position
             scrollTop =
             window.pageYOffset || document.documentElement.scrollTop;
@@ -81,7 +76,6 @@
           else {
             articlemenucontent.className = "hide";
             articlemenu.className = "";
-            sitetitle.style.visibility = "visible";
             window.onscroll = function() {scrollFunction()};
           }
         }

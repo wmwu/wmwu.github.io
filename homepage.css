@@ -40,22 +40,23 @@ a:hover {
   z-index: 3;
 }
 #navmenu .sitetitleBig {
-  position: absolute;
-  overflow: hidden;
-  line-height: 36px;
-  font-family: 'Crimson Pro', Georgia, serif;
-  font-size: 28px;
-  letter-spacing: 0;
-  font-weight: 400;
-  color: #0a2c02;
-  background-color: transparent;
-  margin: 12px 0 12px 0;
-  padding: 12px 12px 12px 0;
-  border: none;
-  cursor: default;
-  z-index: 3;
-}
-#navmenu .sitetitle::first-letter {
+    position: absolute;
+    top: 22px;
+    overflow: hidden;
+    line-height: 24px;
+    font-family: 'Crimson Pro', Georgia, serif;
+    font-size: 24px;
+    letter-spacing: 0;
+    font-weight: 400;
+    color: #0a2c02;
+    background-color: transparent;
+    margin: 3px 0 12p 6px;
+    padding: 12px 12px 12px 9px;
+    border: none;
+    cursor: default;
+    z-index: 3;
+  }
+  #navmenu .sitetitle::first-letter {
   font-size: 24px;
 }
 #bodhileaf {
@@ -166,7 +167,7 @@ a:hover {
 #articlemenucontent p.home {
   cursor: default;
   font-weight: 600;
-  padding: 12px 12px 0 12px;
+  padding: 36px 12px 0 12px;
 }
 #articlemenucontent p.currentarticle {
   cursor: default;
