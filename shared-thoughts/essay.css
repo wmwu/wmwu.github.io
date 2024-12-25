@@ -15,41 +15,6 @@ body {
   background-color: #cddbd4;
   z-index: 2;
 }
-#navmenu .sitetitle {
-  position: absolute;
-  overflow: hidden;
-  line-height: 24px;
-  font-family: 'Crimson Pro', Georgia, serif;
-  font-size: 20px;
-  letter-spacing: 0;
-  font-weight: 300;
-  color: #0a2c02;
-  background-color: transparent;
-  margin: 3px 0 0 2px;
-  padding: 12px 12px 12px 12px;
-  border: none;
-  cursor: pointer;
-  z-index: 3;
-}
-#navmenu .sitetitle::first-letter {
-  font-size: 24px;
-}
-#navmenu .sitetitleBig {
-  position: absolute;
-  overflow: hidden;
-  line-height: 36px;
-  font-family: 'Crimson Pro', Georgia, serif;
-  font-size: 28px;
-  letter-spacing: 0;
-  font-weight: 400;
-  color: #0a2c02;
-  background-color: transparent;
-  margin: 12px 0 12px 0;
-  padding: 12px 12px 12px 0;
-  border: none;
-  cursor: default;
-  z-index: 3;
-}
 #bodhi-leaf {
   position: absolute;
   top: 0;
@@ -86,7 +51,25 @@ body {
   margin: 36px auto;
   z-index: -1;
   width: 100%;
-  max-width: 600px;
+  max-width: 640px;
+}
+#river-landscape-in-autumn {
+  position: relative;
+  display: block;
+  margin: 36px auto;
+  z-index: -1;
+  width: 100%;
+  max-width: 650px;
+}
+#river-landscape-in-autumn-caption {
+  font-family: 'Crimson Pro', Georgia, serif;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 0;
+  line-height: 100%;
+  color: #0a2c02;
+  float: right;
+  margin: -32px 60px 0 0;
 }
 #main {
   position: -webkit-sticky;
@@ -160,6 +143,26 @@ body {
 #main p.quote {
   margin: 0 12px 0 auto;
 }
+#main ol li {
+  margin-left: 15%;
+  padding: 0 12px 0 12px;
+  font-family: 'Crimson Pro', Georgia, serif;
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 0;
+  line-height: 140%;
+  color: #0a2c02;
+}
+#mainol li p {
+  margin: 12px 48px 12px 0;
+  padding: 0 12px 0 12px;
+  font-family: 'Crimson Pro', Georgia, serif;
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 0;
+  line-height: 140%;
+  color: #0a2c02;
+}
 a {
   color: #0a2c02;
   /* Distance from text */
@@ -211,16 +214,44 @@ a:hover {
   margin: 12px 8px 12px 18px;
   padding: 0 12px 0 12px;
 }
+#articlemenucontent p.sitetitle {
+  position: absolute;
+  top: 10px;
+  overflow: hidden;
+  line-height: 24px;
+  font-family: 'Crimson Pro', Georgia, serif;
+  font-size: 24px;
+  letter-spacing: 0;
+  font-weight: 400;
+  color: #0a2c02;
+  background-color: transparent;
+  margin: 3px 0 12p 6px;
+  padding: 12px 12px 12px 12px;
+  border: none;
+  cursor: default;
+  z-index: 3;
+}
+#articlemenucontent p.sitetitle::first-letter {
+  font-size: 24px;
+}
 #articlemenucontent p.home {
   cursor: default;
   font-weight: 400;
-  padding: 12px 12px 0 12px;
+  padding: 36px 12px 0 12px;
 }
 #articlemenucontent p.currentarticle {
-  cursor: default;
+  cursor: pointer;
   font-weight: 600;
 }
 #articlemenucontent p.article {
+  cursor: pointer;
+}
+#articlemenucontent p.sectionlink {
+  margin: 0 0 8px 36px;
+  line-height: 28px;
+  font-size: 18px;
+  letter-spacing: 0;
+  text-align: left;
   cursor: pointer;
 }
 #articlemenucontent .articlemenuclose:hover,
@@ -249,107 +280,6 @@ a:hover {
   -webkit-animation-duration: .4s;
   animation-name: fadeIn;
   animation-duration: .4s;
-}
-#sectionmenu {
-  display: block;
-}
-#sectionmenucontent {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 300px;
-  width: 360px;
-  background-color: #cddbd4;
-  padding: 24px 12px 24px 12px;
-  float: left;
-  left: -100%;
-  z-index: 1;
-}
-#sectionmenucontent.mshow {
-  visibility: visible;
-  left: 304px;
-  transform: translate(0%);
-  transition-property: transform;
-  transition-duration: .4s;
-}
-#sectionmenucontent.show {
-  visibility: visible;
-  left: 0;
-  transform: translate(0%);
-  transition-property: transform;
-  transition-duration: .4s;
-}
-#sectionmenucontent.hide {
-  transform: translate(-100%);
-  transition-property: transform;
-  transition-duration: .4s;
-}
-#sectionmenucontent p {
-  overflow: hidden;
-  line-height: 28px;
-  font-family: 'Crimson Pro', serif;
-  font-size: 20px;
-  letter-spacing: 1px;
-  font-weight: 300;
-  color: #0a2c02;
-  margin: 0 12px 12px 12px;
-  padding: 0 12px 0 12px;
-}
-#sectionmenucontent p.currentarticle {
-  cursor: pointer;
-}
-#sectionmenucontent p.article {
-  cursor: pointer;
-}
-#sectionmenucontent p.sectionlink {
-  margin: 0 0 8px 30px;
-  line-height: 28px;
-  font-size: 18px;
-  letter-spacing: 0;
-  text-align: left;
-  cursor: pointer;
-}
-#sectionmenucontent p.tc {
-  font-family: 'Noto Serif TC', 'Crimson Pro', serif;
-  letter-spacing: 2px;
-  font-size: 18px;
-}
-/* The Close Button */
-#sectionmenucontent .close {
-  color: #0a2c02;
-  background-color: #cddbd4;
-  font-family: 'Noto San', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-size: 24px;
-  font-weight: 800;
-  padding: 2px 10px 2px 10px;
-  border: none;
-  position: -webkit-sticky;
-  position: sticky;
-  display: block;
-  float: left;
-  margin-top: -24px;
-  margin-left: -9px;
-}
-.close:hover,
-.close:focus {
-  color: #0a2c02;
-  text-decoration: none;
-  cursor: pointer;
-}
-#sectionmenubtn {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 300px;
-  width: 36px;
-  height: 36px;
-  background-color: #cddbd4;
-  border: none;
-  float: left;
-  left: 0;
-  z-index: 2;
-}
-#sectionmenubtn:hover,
-#sectionmenubtn:focus {
-  cursor: pointer;
 }
 hr {
   width: 35%;

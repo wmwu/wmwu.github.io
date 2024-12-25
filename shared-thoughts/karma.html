@@ -23,71 +23,68 @@
         <div class="bar2"></div>
         <div class="bar3"></div>
       </div>
-      <span id="sitetitle" class="sitetitle">Under a bodhi tree</span>
       <img id="bodhi-leaf" src="../bodhi-leaf.png">
+    </div>
       <div id="articlemenu" style="display: none;">
         <div id="articlemenucontent">
+        <img id="bodhi-leaf" src="../bodhi-leaf.png">
+        <p id="sitetitle" class="sitetitle">Under a bodhi tree</p>
           <p class="home"><a href="../index.html">Home</a></p>
-          <p class="currentarticle">Karma: We Are What We Do</p>
-          <p class="article"><a href="yinyang-and-dao.html"><em>Yinyang</em> and <em>Dao</em></a></p>
+          <p class="currentarticle"><a onclick="scrollToTop()">Karma: We Are What We Do</a></p>
+          <p class="sectionlink"><a onclick="scrollToSecOne()">Karma, Rebirth and the Caste System</a></p>
+          <p class="sectionlink"><a onclick="scrollToSecTwo()"><em>Atman</em>, <em>Anatta</em> and Rebirth</a></p>
+          <p class="sectionlink"><a onclick="scrollToSecThree()">Transcending Reward and Punishment</a></p>
+          <p class="sectionlink"><a onclick="scrollToSecFour()">Karma and Fairness in Life</a></p>
+          <p class="sectionlink"><a onclick="scrollToSecFive()">The Spiritual Teaching of Karma</a></p>
+            <p class="article"><a href="yinyang-and-dao.html"><em>Yinyang</em> and <em>Dao</em></a></p>
           <p class="article"><a href="the-way-of-ren.html"><em>Rendao</em>: The Way of <em>Ren</em></a></p>
           <p class="article"><a href="just-be-all-is-what-it-is.html">Just Be: All Is What It Is</a></p>
+          <p class="article"><a href="to-cross-the-river.html">To Cross the River</a></p>
         </div>
       </div>
     </div>
-    <button id="sectionmenubtn"><i class="fa fa-chevron-right"></i></button>
-    <div id="sectionmenu">
-      <div id="sectionmenucontent">
-        <div><span class="close">&times;</span></div>
-        <p class="currentarticle"><a onclick="scrollToTop()">Karma: We Are What We Do</a></p>
-        <p class="sectionlink"><a onclick="scrollToSecOne()">Karma, Rebirth and the Caste System</a></p>
-        <p class="sectionlink"><a onclick="scrollToSecTwo()"><em>Atman</em>, <em>Anatta</em> and Rebirth</a></p>
-        <p class="sectionlink"><a onclick="scrollToSecThree()">Transcending Reward and Punishment</a></p>
-        <p class="sectionlink"><a onclick="scrollToSecFour()">Karma and Fairness in Life</a></p>
-        <p class="sectionlink"><a onclick="scrollToSecFive()">The Spiritual Teaching of Karma</a></p>
-      </div>
-    </div>
-
     <script type="text/javascript">
       
       function menuDisplay () {
           var windowWidth = window.innerWidth;
-          if (windowWidth > 1280) {
-            navmenu.style.backgroundColor = "transparent";
-            articlemenubtn.style.visibility = "hidden";
-            articlemenu.style.display = "block";
-            articlemenucontent.classList.remove("hide");
-            articlemenucontent.classList.add("show");
-            sitetitle.style.visibility = "visible";
-            sitetitle.className = "sitetitleBig";
-            sectionmenubtn.style.visibility = "hidden";
-            sectionmenubtn.style.marginLeft = "304px";
-            sectionmenu.style.visibility = "hidden";
-            sectionmenucontent.style.marginLeft = "-600px";
+        if (windowWidth <= 1280) {
+          if (articlemenu.className == "") {
+            navmenu.style.backgroundColor = "#cddbd4";
+            articlemenubtn.style.visibility = "visible";
+            articlemenu.style.display = "none";
+            articlemenucontent.classList.remove("show");
+            articlemenucontent.classList.add("hide");
+            document.getElementById("main").style.marginLeft = "0px";
           }
           else {
             navmenu.style.backgroundColor = "#cddbd4";
-            articlemenu.style.display = "none";
-            articlemenucontent.classList.remove("show");
             articlemenubtn.style.visibility = "visible";
-            sitetitle.style.visibility = "visible";
-            sitetitle.className = "sitetitle";
-            sectionmenubtn.style.visibility = "hidden";
-            sectionmenubtn.style.marginLeft = "0";
-            sectionmenu.style.visibility = "hidden";
-            sectionmenucontent.style.marginLeft = "-600px";
+            articlemenucontent.classList.remove("hide");
+            articlemenucontent.classList.add("show");
+            articlemenu.style.display = "block";          
+            document.getElementById("main").style.marginLeft = "0px";
+          }
+        }
+        else {
+          navmenu.style.backgroundColor = "#cddbd4";
+          articlemenubtn.style.visibility = "hidden";
+          sitetitle.style.visibility = "visible";
+          articlemenu.style.display = "block";
+          articlemenucontent.classList.remove("hide");
+          articlemenucontent.classList.add("show");
+          document.getElementById("main").style.marginLeft = "281px";
           }
         }
 
         function menuToggle(x) {
+        var windowWidth = window.innerWidth;
+        if (windowWidth <= 1280) {
             x.classList.toggle("change");
             if (articlemenucontent.className == "" || articlemenucontent.className == "hide" ) {
               articlemenu.classList.add("nav");
               articlemenucontent.classList.remove("hide");
               articlemenucontent.classList.add("show");
               articlemenu.style.display = "block";
-              sitetitle.style.visibility = "hidden";
-              sectionmenubtn.style.visibility = "hidden";
             // Get the current page scroll position
             scrollTop =
             window.pageYOffset || document.documentElement.scrollTop;
@@ -101,77 +98,26 @@
             }
           }
           else {
+              window.onscroll = function() {scrollFunction()};
             articlemenucontent.classList.remove("show");
             articlemenucontent.classList.add("hide");
             articlemenu.classList.remove("nav");
-            sitetitle.style.visibility = "visible";
-            sectionmenu.style.visibility = "hidden";
-            scrollTop =
-            window.pageYOffset || document.documentElement.scrollTop;
-            scrollLeft =
-            window.pageXOffset || document.documentElement.scrollLeft;
-            if (scrollTop > 1000) {
-              sectionmenubtn.style.visibility = "visible";
-            }
-            else {
-              sectionmenubtn.style.visibility = "hidden";
-            }
-            window.onscroll = function() {scrollFunction()};
+              sitetitle.style.visibility = "hidden";
           }
-        }
-
-      // Get the <span> element that closes the section menu
-      var closebtn = document.getElementsByClassName("close")[0];
-
-      // When the user clicks the button, open the section menu 
-      sectionmenubtn.onclick = function() {
-        var windowWidth = window.innerWidth;
-        if (windowWidth >1280) {
-          sectionmenucontent.classList.remove("show");
-          sectionmenucontent.classList.remove("hide");
-          sectionmenucontent.classList.add("mshow");
             }
             else {
-          sectionmenucontent.classList.remove("mshow");
-          sectionmenucontent.classList.remove("hide");
-          sectionmenucontent.classList.add("show");
-            }
-        sectionmenu.classList.add("nav");
-        sectionmenu.style.visibility = "visible";
-        sectionmenubtn.style.visibility = "hidden";
-        // Get the current page scroll position
+          if (articlemenu.className == "nav") {
+          x.classList.toggle("change");
+          sitetitle.style.visibility = "visible";
+          }
+          articlemenucontent.classList.remove("hide");
+          articlemenucontent.classList.add("show");
+          articlemenu.classList.remove("nav");
         scrollTop =
         window.pageYOffset || document.documentElement.scrollTop;
         scrollLeft =
         window.pageXOffset || document.documentElement.scrollLeft;
-      
-        // if any scroll is attempted,
-        // set this to the previous value
-        window.onscroll = function() {
-        window.scrollTo(scrollLeft, scrollTop);
-        }
-      }
-
-      // When the user clicks on (x), close the section menu
-      closebtn.onclick = function() {
-        sectionmenucontent.classList.remove("mshow");
-        sectionmenucontent.classList.remove("show");
-        sectionmenucontent.classList.add("hide");
-        setTimeout(function() {
-          sectionmenu.classList.remove("nav");
-          }, 100);
-        sectionmenubtn.style.visibility = "visible";
-        window.onscroll = function() {scrollFunction()};
-      }
-
-      // Show the button when scroll down
       window.onscroll = function() {scrollFunction()};
-      function scrollFunction() {
-        if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
-          sectionmenubtn.style.visibility = "visible";
-        }
-        else {
-          sectionmenubtn.style.visibility = "hidden";
         }
       }
 
@@ -182,50 +128,38 @@
           top: 0,
           behavior: "smooth"
         });
-        sectionmenu.classList.remove("nav");
-        sectionmenucontent.classList.remove("mshow");
-        sectionmenucontent.classList.remove("show");
+    menuToggle(articlemenubtn);
       }
       // Go to Sections
       function scrollToSecOne() {
         window.onscroll = function() {scrollFunction()};
-        var y = document.getElementById("karma-rebirth-and-the-caste-system").offsetTop;
+        var y = document.getElementById("karma-rebirth-and-the-caste-system").offsetTop - 18;
         window.scrollTo({ top: y, behavior: 'smooth' });
-        sectionmenu.classList.remove("nav");
-        sectionmenucontent.classList.remove("mshow");
-        sectionmenucontent.classList.remove("show");
+        menuToggle(articlemenubtn);
       }
       function scrollToSecTwo() {
         window.onscroll = function() {scrollFunction()};
-        var y = document.getElementById("atman-anatta-and-rebirth").offsetTop;
+        var y = document.getElementById("atman-anatta-and-rebirth").offsetTop - 18;
         window.scrollTo({ top: y, behavior: 'smooth' });
-        sectionmenu.classList.remove("nav");
-        sectionmenucontent.classList.remove("mshow");
-        sectionmenucontent.classList.remove("show");
+        menuToggle(articlemenubtn);
       }
       function scrollToSecThree() {
         window.onscroll = function() {scrollFunction()};
-        var y = document.getElementById("transcending-reward-and-punishment").offsetTop;
+        var y = document.getElementById("transcending-reward-and-punishment").offsetTop - 18;
         window.scrollTo({ top: y, behavior: 'smooth' });
-        sectionmenu.classList.remove("nav");
-        sectionmenucontent.classList.remove("mshow");
-        sectionmenucontent.classList.remove("show");
+        menuToggle(articlemenubtn);
       }
       function scrollToSecFour() {
         window.onscroll = function() {scrollFunction()};
-        var y = document.getElementById("karma-and-fairness-in-life").offsetTop;
+        var y = document.getElementById("karma-and-fairness-in-life").offsetTop - 18;
         window.scrollTo({ top: y, behavior: 'smooth' });
-        sectionmenu.classList.remove("nav");
-        sectionmenucontent.classList.remove("mshow");
-        sectionmenucontent.classList.remove("show");
+        menuToggle(articlemenubtn);
       }
       function scrollToSecFive() {
         window.onscroll = function() {scrollFunction()};
-        var y = document.getElementById("the-spiritual-teaching-of-karma").offsetTop;
+        var y = document.getElementById("the-spiritual-teaching-of-karma").offsetTop - 18;
         window.scrollTo({ top: y, behavior: 'smooth' });
-        sectionmenu.classList.remove("nav");
-        sectionmenucontent.classList.remove("mshow");
-        sectionmenucontent.classList.remove("show");
+        menuToggle(articlemenubtn);
       }
       function scrollToFootnote(clickedElement) {
         var fnref = clickedElement.id;
@@ -251,12 +185,12 @@
       <p style="margin: 0 0 0 120px"><em>The doer of good becomes good.</em></p>
       <p style="margin: 0 0 0 120px"><em>The doer of evil becomes evil.</em></p>
       <p style="margin: 0 0 0 180px"><em>&mdash;Brihad-aranyaka Upanishad 4.4.5</em></p>
-      <p class="first" style="margin-top: 48px">The term “karma” literally means “deeds,” and has become a commonly used word even among people who are not Hindus or Buddhists. Clichés such as “You reap what you sow” and “What goes around comes around” are often repeated to explain karma, but they capture only a fragment of what the idea of karma is meant to teach in Hindu and Buddha <em>dharma</em>. To gain a more complete and deeper understanding of karma, we need to study it against the background of the Hindu history. After all, it is an idea first developed in India.</p>
+      <p class="first" style="margin-top: 48px">The term “karma” literally means “deeds,” and has become a commonly used word even among people who are not Hindus or Buddhists. Clichés such as “You reap what you sow” and “What goes around comes around” are often repeated to explain karma, but they capture only a fragment of what the idea of karma is meant to teach in Hindu and Buddha <em>dharma</em>. To gain a more complete and deeper understanding of karma, we need to study it against the background of Hindu history. After all, it is an idea first developed in India.</p>
       <h2 style="page-break-after: avoid" id="karma-rebirth-and-the-caste-system">Karma, Rebirth and the Caste System</h2>
-      <p>After the Aryan people migrated to the India subcontinent, they set up the Caste system to consolidate their rule over the indigenous people in the Indus Valley. The rigid and unjust system caused tremendous suffering among people in the lower castes. Had you been born as a member of the lower castes or, worse, as an untouchable, not only would you have had a hard life, but your children, grandchildren and great-grandchildren would also have been members of the same caste or outcaste with no hope of improving their lot. It would be no surprise that the question of “Why me?” would cross your mind at some point in time. Wondering why you were born as an untouchable while others were born as princes or princesses would fill you with anguish and fury. What would you do if you found yourself born into such a bondage? Would you be willing to just accept your fate and toil all your life for a meager subsistence?</p>
+      <p>After the Aryan people migrated to the Indian subcontinent, they set up the Caste system to consolidate their rule over the indigenous people in the Indus Valley. The rigid and unjust system caused tremendous suffering among people in the lower castes. Had you been born as a member of the lower castes or, worse, as an untouchable, not only would you have had a hard life, but your children, grandchildren and great-grandchildren would also have been members of the same caste or outcaste with no hope of improving their lot. It would be no surprise that the question of “Why me?” would cross your mind at some point in time. Wondering why you were born as an untouchable while others were born as princes or princesses would fill you with anguish and fury. What would you do if you found yourself born into such a bondage? Would you be willing to just accept your fate and toil all your life for a meager subsistence?</p>
       <p>We can imagine the agony and wretchedness of such a life due to despair. There would be no hope that things would get better for you and your offspring. Thus, it is quite understandable that Hindus would turn to religion to find a way out. There is truth in the aphorism that religion gives people hope. One way to understand various spiritual traditions and religions is to see how they help their followers answer basic questions, address common concerns and cope with hardships in life.<sup> <a onclick="scrollToFootnote(this)" id="refn:1" class="footnote">1</a></sup> By looking into how the idea of karma and the belief in rebirth helped people of the lower classes cope with the injustice and brutality of the Caste system, we can gain a deeper appreciation of their significance in the Indian spiritual traditions.</p>
-      <p>At first glance, the doctrine of how karma affects rebirths seem to give the lower castes and the untouchable hope to escape the iron grip of the Caste system through good karma. Allegedly, by accumulating good karma in this life one could be reborn into a higher caste in the next life. Moreover, it seems to provide an explanation of why people are born into different castes. It is claimed that people are born into lower castes because of bad karma from previous lives.</p>
-      <p>However, this doctrine, widely attributed to the religious teachings of India, is a corrupted understanding of karma and rebirth that could be used to sustain the unjust Caste system. Hindu dharma is antithetical to the blatant unfairness, brutality and cruelty of the Case system.<sup><a onclick="scrollToFootnote(this)" id="refn:2" class="footnote">2</a></sup> <em>Alas</em>, the teaching of karma and rebirth is perverted by such a commonly repeated view to justify the status quo and add insult to injury. “You are born into a low caste because of your bad karma from the previous life. You deserve your lot in this life! It is all your own faults!” So instead of questioning the legitimacy of the Caste system and fighting against its injustice and cruelty, people in the lower castes were brainwashed into putting blame on their bad karma from their previous lives and accept their lot as punishment. They were told that if they wanted to have a better next life, then they should slave away in this life to accumulate good karma.<sup><a onclick="scrollToFootnote(this)" id="refn:3" class="footnote">3</a></sup> By telling members of the lower castes to place their hope in the next life, the corrupted teaching weakens their motivation to revolt against the cruel and inhumane system. In addition, it masks the fact that the Caste system was what casted them into such a miserable lot in the first place. Also, the belief that bad people will be punished in the next life drills fear into people’s hearts and serves as a deterrent so that they dare not rebel. This way, the ruling classes can minimize the likelihood of an uprising.</p>
+      <p>At first glance, the doctrine of how karma affects rebirth seems to give the lower castes and the untouchable hope to escape the iron grip of the Caste system through good karma. Allegedly, by accumulating good karma in this life one could be reborn into a higher caste in the next life. Moreover, it seems to provide an explanation of why people are born into different castes. It is claimed that people are born into lower castes because of bad karma from previous lives.</p>
+      <p>However, this doctrine, widely attributed to the religious teachings of India, is a corrupted understanding of karma and rebirth that could be used to sustain the unjust Caste system. Hindu dharma is antithetical to the blatant unfairness, brutality and cruelty of the Case system.<sup><a onclick="scrollToFootnote(this)" id="refn:2" class="footnote">2</a></sup> <em>Alas</em>, the teaching of karma and rebirth is perverted by such a commonly repeated view to justify the status quo and add insult to injury. “You are born into a low caste because of your bad karma from the previous life. You deserve your lot in this life! It is all your own fault!” So instead of questioning the legitimacy of the Caste system and fighting against its injustice and cruelty, people in the lower castes were brainwashed into putting blame on their bad karma from their previous lives and accepting their lot as punishment. They were told that if they wanted to have a better next life, then they should slave away in this life to accumulate good karma.<sup><a onclick="scrollToFootnote(this)" id="refn:3" class="footnote">3</a></sup> By telling members of the lower castes to place their hope in the next life, the corrupted teaching weakens their motivation to revolt against the cruel and inhumane system. In addition, it masks the fact that the Caste system was what cast them into such a miserable lot in the first place. Also, the belief that bad people will be punished in the next life drills fear into people’s hearts and serves as a deterrent so that they dare not rebel. This way, the ruling classes can minimize the likelihood of an uprising.</p>
       <p>Religions can give people hope and inspire people to strive for a better future, but they can also be turned into a powerful system of reward and punishment to control people and keep them subjugated.<sup><a onclick="scrollToFootnote(this)" id="refn:4" class="footnote">4</a></sup> The view that good karma will result in a higher rebirth and bad karma, a lower one should be rejected for three reasons. First, it is perverted to maintain the status quo. Second, the stance that the lower castes and the outcastes deserve their lot is detestable. Third, and more importantly, it is inconsistent with both Hindu and Buddha dharma.</p>
       <h2 style="page-break-after: avoid" id="atman-anatta-and-rebirth"><em>Atman</em>, <em>Anatta</em> and Rebirth</h2>
       <p>First of all, rebirth according to both Hindu and Buddha dharma is not the transmigration of an individual soul from body to body. The transmigration view presupposes a metaphysical dualism that claims that a person consists of a physical body and a non-physical soul.<sup><a onclick="scrollToFootnote(this)" id="refn:5" class="footnote">5</a></sup> Upon death, a person’s soul would leave the body. Later on, the soul would enter a new body and result in the rebirth of the person. This view is widespread and commonly held, but it is not what rebirth really is according to both spiritual traditions.</p>
