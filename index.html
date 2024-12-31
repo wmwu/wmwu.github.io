@@ -37,15 +37,17 @@
 
         function menuDisplay () {
           var windowWidth = window.innerWidth;
-          if (windowWidth > 1280) {
+          if (articlemenu.className != "nav") {
+            if (windowWidth > 1280) {
             navmenu.style.backgroundColor = "transparent";
             articlemenubtn.style.visibility = "hidden";
             articlemenu.style.display = "block";
+            articlemenucontent.className = "show";
             backgroundimage.style.left = "360px";
             backgroundimage.style.top = "0";
             main.style.marginLeft = "360px";
-          }
-          else {
+            }
+            else {
             navmenu.style.backgroundColor = "#cddbd4";
             articlemenu.style.display = "none";
             main.style.marginLeft = "0";
@@ -54,10 +56,30 @@
             articlemenubtn.style.visibility = "visible";
           }
         }
+        else {
+          if (windowWidth > 1280) {
+            navmenu.style.backgroundColor = "transparent";
+            articlemenubtn.style.visibility = "visible";
+            articlemenu.style.display = "block";
+            backgroundimage.style.left = "360px";
+            backgroundimage.style.top = "0";
+            main.style.marginLeft = "360px";
+            }
+            else {
+            navmenu.style.backgroundColor = "#cddbd4";
+            articlemenu.style.display = "block";
+            main.style.marginLeft = "0";
+            backgroundimage.style.left = "60px";
+            backgroundimage.style.top = "56px";
+            articlemenubtn.style.visibility = "visible";
+          }
+        }
+      }
 
         function menuToggle(x) {
+          var windowWidth = window.innerWidth;
             x.classList.toggle("change");
-            if (articlemenucontent.className == "" || articlemenucontent.className == "hide" ) {
+            if (articlemenu.className == "") {
               articlemenu.className = "nav";
               articlemenucontent.className = "show";
               articlemenu.style.display = "block";
@@ -74,9 +96,20 @@
             }
           }
           else {
+            if (windowWidth > 1280) {
+            articlemenucontent.className = "show";
+            articlemenu.className = "";
+            articlemenu.style.display = "block";
+            articlemenubtn.style.visibility = "hidden";
+            window.onscroll = function() {scrollFunction()};
+            }
+            else {
             articlemenucontent.className = "hide";
             articlemenu.className = "";
+            articlemenu.style.display= "block";
+            articlemenubtn.style.visibility = "visible";
             window.onscroll = function() {scrollFunction()};
+            }
           }
         }
       </script>  

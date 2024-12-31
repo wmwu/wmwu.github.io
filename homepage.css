@@ -23,42 +23,6 @@ a:hover {
   height: 56px;
   background-color: #cddbd4;
 }
-#navmenu .sitetitle {
-  position: absolute;
-  overflow: hidden;
-  line-height: 24px;
-  font-family: 'Crimson Pro', Georgia, serif;
-  font-size: 20px;
-  letter-spacing: 0;
-  font-weight: 300;
-  color: #0a2c02;
-  background-color: transparent;
-  margin: 3px 0 0 2px;
-  padding: 12px 12px 12px 12px;
-  border: none;
-  cursor: default;
-  z-index: 3;
-}
-#navmenu .sitetitleBig {
-    position: absolute;
-    top: 22px;
-    overflow: hidden;
-    line-height: 24px;
-    font-family: 'Crimson Pro', Georgia, serif;
-    font-size: 24px;
-    letter-spacing: 0;
-    font-weight: 400;
-    color: #0a2c02;
-    background-color: transparent;
-    margin: 3px 0 12p 6px;
-    padding: 12px 12px 12px 9px;
-    border: none;
-    cursor: default;
-    z-index: 3;
-  }
-  #navmenu .sitetitle::first-letter {
-  font-size: 24px;
-}
 #bodhileaf {
   position: absolute;
   top: 0;
