@@ -28,7 +28,7 @@
     <div id="articlemenu" style="display: none;">
       <div id="articlemenucontent">
         <img id="bodhi-leaf" src="../bodhi-leaf.png">
-        <p id="sitetitle" class="sitetitle">Under a bodhi tree</p>
+        <p id="sitetitle" class="sitetitle"></p>
         <p class="home"><a href="../index.html">Home</a></p>
         <p class="article"><a href="karma.html">Karma: We Are What We Do</a></p>
         <p class="article"><a href="yinyang-and-dao.html"><em>Yinyang</em> and <em>Dao</em></p>
@@ -66,9 +66,8 @@ function menuDisplay () {
           }
         }
         else {
-          navmenu.style.backgroundColor = "#cddbd4";
-          articlemenubtn.style.visibility = "hidden";
-          sitetitle.style.visibility = "visible";
+          navmenu.style.backgroundColor = "transparent";
+          articlemenubtn.style.visibility = "visible";
           articlemenu.style.display = "block";
           articlemenucontent.classList.remove("hide");
           articlemenucontent.classList.add("show");
@@ -81,10 +80,10 @@ function menuDisplay () {
         if (windowWidth <= 1280) {
           x.classList.toggle("change");
           if (articlemenucontent.className == "" || articlemenucontent.className == "hide" ) {
-articlemenu.classList.add("nav");
+              articlemenu.classList.add("nav");
               articlemenucontent.classList.remove("hide");
               articlemenucontent.classList.add("show");
-          articlemenu.style.display = "block";
+              articlemenu.style.display = "block";
           // Get the current page scroll position
           scrollTop =
           window.pageYOffset || document.documentElement.scrollTop;
@@ -98,11 +97,11 @@ articlemenu.classList.add("nav");
           }
         }
         else {
-              window.onscroll = function() {scrollFunction()};
-          articlemenucontent.classList.remove("show");
+            window.onscroll = function() {scrollFunction()};
+            articlemenucontent.classList.remove("show");
             articlemenucontent.classList.add("hide");
             articlemenu.classList.remove("nav");
-              sitetitle.style.visibility = "hidden";
+            sitetitle.style.visibility = "hidden";
         }
             }
             else {
@@ -132,26 +131,50 @@ articlemenu.classList.add("nav");
   }
       // Go to Sections
       function scrollToSecOne() {
+        var windowWidth = window.innerWidth;
         window.onscroll = function() {scrollFunction()};
-        var y = document.getElementById("the-confucian-way-of-knowing-dao").offsetTop - 18;
+        if (windowWidth <= 1280) {
+          var y = document.getElementById("the-confucian-way-of-knowing-dao").offsetTop - 2;
+        }
+        else {
+          var y = document.getElementById("the-confucian-way-of-knowing-dao").offsetTop - 2;
+        }
         window.scrollTo({ top: y, behavior: 'smooth' });
         menuToggle(articlemenubtn);
         }
       function scrollToSecTwo() {
+        var windowWidth = window.innerWidth;
         window.onscroll = function() {scrollFunction()};
-        var y = document.getElementById("the-cultivation-of-virtues").offsetTop - 18;
+        if (windowWidth <= 1280) {
+          var y = document.getElementById("the-cultivation-of-virtues").offsetTop - 2;
+        }
+        else {
+          var y = document.getElementById("the-cultivation-of-virtues").offsetTop - 2;
+        }
         window.scrollTo({ top: y, behavior: 'smooth' });
         menuToggle(articlemenubtn);
         }
       function scrollToSecThree() {
+        var windowWidth = window.innerWidth;
         window.onscroll = function() {scrollFunction()};
-        var y = document.getElementById("the-institution-of-li").offsetTop - 18;
+        if (windowWidth <= 1280) {
+          var y = document.getElementById("the-institution-of-li").offsetTop - 2;
+        }
+        else {
+          var y = document.getElementById("the-institution-of-li").offsetTop - 2;
+        }
         window.scrollTo({ top: y, behavior: 'smooth' });
         menuToggle(articlemenubtn);
         }
       function scrollToSecFour() {
+        var windowWidth = window.innerWidth;
         window.onscroll = function() {scrollFunction()};
-        var y = document.getElementById("the-renaissance-of-confucianism").offsetTop - 18;
+        if (windowWidth <= 1280) {
+          var y = document.getElementById("the-renaissance-of-confucianism").offsetTop - 2;
+        }
+        else {
+          var y = document.getElementById("the-renaissance-of-confucianism").offsetTop - 2;
+        }
         window.scrollTo({ top: y, behavior: 'smooth' });
         menuToggle(articlemenubtn);
         }
