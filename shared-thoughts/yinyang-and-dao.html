@@ -73,9 +73,8 @@ function menuDisplay () {
           }
         }
         else {
-          navmenu.style.backgroundColor = "#cddbd4";
-          articlemenubtn.style.visibility = "hidden";
-          sitetitle.style.visibility = "visible";
+          navmenu.style.backgroundColor = "transparent";
+          articlemenubtn.style.visibility = "visible";
           articlemenu.style.display = "block";
           articlemenucontent.classList.remove("hide");
           articlemenucontent.classList.add("show");
@@ -105,11 +104,11 @@ function menuDisplay () {
           }
         }
         else {
-              window.onscroll = function() {scrollFunction()};
-          articlemenucontent.classList.remove("show");
+            window.onscroll = function() {scrollFunction()};
+            articlemenucontent.classList.remove("show");
             articlemenucontent.classList.add("hide");
             articlemenu.classList.remove("nav");
-              sitetitle.style.visibility = "hidden";
+            sitetitle.style.visibility = "hidden";
           }
             }
             else {
@@ -139,32 +138,62 @@ function menuDisplay () {
       }
             // Go to Sections
       function scrollToSecOne() {
+        var windowWidth = window.innerWidth;
         window.onscroll = function() {scrollFunction()};
-        var y = document.getElementById("taiji-and-yinyang").offsetTop - 18;
+        if (windowWidth <= 1280) {
+          var y = document.getElementById("taiji-and-yinyang").offsetTop - 2;
+        }
+        else {
+          var y = document.getElementById("taiji-and-yinyang").offsetTop - 2;
+        }
         window.scrollTo({ top: y, behavior: 'smooth' });
         menuToggle(articlemenubtn);
       }
       function scrollToSecTwo() {
+        var windowWidth = window.innerWidth;
         window.onscroll = function() {scrollFunction()};
-        var y = document.getElementById("without-yinyang-no-change").offsetTop - 18;
+        if (windowWidth <= 1280) {
+          var y = document.getElementById("without-yinyang-no-change").offsetTop - 2;
+        }
+        else {
+          var y = document.getElementById("without-yinyang-no-change").offsetTop - 2;
+        }
         window.scrollTo({ top: y, behavior: 'smooth' });
         menuToggle(articlemenubtn);
       }
       function scrollToSecThree() {
+        var windowWidth = window.innerWidth;
         window.onscroll = function() {scrollFunction()};
-        var y = document.getElementById("yinyang-and-harmony").offsetTop - 18;
+        if (windowWidth <= 1280) {
+          var y = document.getElementById("yinyang-and-harmony").offsetTop - 2;
+        }
+        else {
+          var y = document.getElementById("yinyang-and-harmony").offsetTop - 2;
+        }
         window.scrollTo({ top: y, behavior: 'smooth' });
         menuToggle(articlemenubtn);
       }
       function scrollToSecFour() {
+        var windowWidth = window.innerWidth;
         window.onscroll = function() {scrollFunction()};
-        var y = document.getElementById("dao-tao").offsetTop - 18;
+        if (windowWidth <= 1280) {
+          var y = document.getElementById("dao-tao").offsetTop - 2;
+        }
+        else {
+          var y = document.getElementById("dao-tao").offsetTop - 2;
+        }
         window.scrollTo({ top: y, behavior: 'smooth' });
         menuToggle(articlemenubtn);
       }
       function scrollToSecFive() {
+        var windowWidth = window.innerWidth;
         window.onscroll = function() {scrollFunction()};
-        var y = document.getElementById("the-characteristics-of-the-chinese-worldview").offsetTop - 18;
+        if (windowWidth <= 1280) {
+          var y = document.getElementById("the-characteristics-of-the-chinese-worldview").offsetTop - 2;
+        }
+        else {
+          var y = document.getElementById("the-characteristics-of-the-chinese-worldview").offsetTop - 2;
+        }
         window.scrollTo({ top: y, behavior: 'smooth' });
         menuToggle(articlemenubtn);
       }
