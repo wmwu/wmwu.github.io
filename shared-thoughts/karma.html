@@ -66,9 +66,8 @@
           }
         }
         else {
-          navmenu.style.backgroundColor = "#cddbd4";
-          articlemenubtn.style.visibility = "hidden";
-          sitetitle.style.visibility = "visible";
+          navmenu.style.backgroundColor = "transparent";
+          articlemenubtn.style.visibility = "visible";
           articlemenu.style.display = "block";
           articlemenucontent.classList.remove("hide");
           articlemenucontent.classList.add("show");
@@ -132,32 +131,62 @@
       }
       // Go to Sections
       function scrollToSecOne() {
+        var windowWidth = window.innerWidth;
         window.onscroll = function() {scrollFunction()};
-        var y = document.getElementById("karma-rebirth-and-the-caste-system").offsetTop - 18;
+        if (windowWidth <= 1280) {
+          var y = document.getElementById("karma-rebirth-and-the-caste-system").offsetTop - 2;
+        }
+        else {
+          var y = document.getElementById("karma-rebirth-and-the-caste-system").offsetTop - 2;
+        }
         window.scrollTo({ top: y, behavior: 'smooth' });
         menuToggle(articlemenubtn);
       }
       function scrollToSecTwo() {
+        var windowWidth = window.innerWidth;
         window.onscroll = function() {scrollFunction()};
-        var y = document.getElementById("atman-anatta-and-rebirth").offsetTop - 18;
+        if (windowWidth <= 1280) {
+          var y = document.getElementById("atman-anatta-and-rebirth").offsetTop - 2;
+        }
+        else {
+          var y = document.getElementById("atman-anatta-and-rebirth").offsetTop - 2;
+        }
         window.scrollTo({ top: y, behavior: 'smooth' });
         menuToggle(articlemenubtn);
       }
       function scrollToSecThree() {
+        var windowWidth = window.innerWidth;
         window.onscroll = function() {scrollFunction()};
-        var y = document.getElementById("transcending-reward-and-punishment").offsetTop - 18;
+        if (windowWidth <= 1280) {
+          var y = document.getElementById("transcending-reward-and-punishment").offsetTop - 2;
+        }
+        else {
+          var y = document.getElementById("transcending-reward-and-punishment").offsetTop - 2;
+        }
         window.scrollTo({ top: y, behavior: 'smooth' });
         menuToggle(articlemenubtn);
       }
       function scrollToSecFour() {
+        var windowWidth = window.innerWidth;
         window.onscroll = function() {scrollFunction()};
-        var y = document.getElementById("karma-and-fairness-in-life").offsetTop - 18;
+        if (windowWidth <= 1280) {
+          var y = document.getElementById("karma-and-fairness-in-life").offsetTop - 2;
+        }
+        else {
+          var y = document.getElementById("karma-and-fairness-in-life").offsetTop - 2;
+        }
         window.scrollTo({ top: y, behavior: 'smooth' });
         menuToggle(articlemenubtn);
       }
       function scrollToSecFive() {
+        var windowWidth = window.innerWidth;
         window.onscroll = function() {scrollFunction()};
-        var y = document.getElementById("the-spiritual-teaching-of-karma").offsetTop - 18;
+        if (windowWidth <= 1280) {
+          var y = document.getElementById("the-spiritual-teaching-of-karma").offsetTop - 2;
+        }
+        else {
+          var y = document.getElementById("the-spiritual-teaching-of-karma").offsetTop - 2;
+        }
         window.scrollTo({ top: y, behavior: 'smooth' });
         menuToggle(articlemenubtn);
       }
