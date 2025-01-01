@@ -28,7 +28,7 @@
     <div id="articlemenu" style="display: none;">
       <div id="articlemenucontent">
         <img id="bodhi-leaf" src="../bodhi-leaf.png">
-        <p id="sitetitle" class="sitetitle">Under a bodhi tree</p>
+        <p id="sitetitle" class="sitetitle"></p>
         <p class="home"><a href="../index.html">Home</a></p>
         <p class="article"><a href="karma.html">Karma: We Are What We Do</a></p>
         <p class="article"><a href="yinyang-and-dao.html"><em>Yinyang</em> and <em>Dao</em></a></p>
@@ -65,9 +65,8 @@
           }
         }
         else {
-          navmenu.style.backgroundColor = "#cddbd4";
-          articlemenubtn.style.visibility = "hidden";
-          sitetitle.style.visibility = "visible";
+          navmenu.style.backgroundColor = "transparent";
+          articlemenubtn.style.visibility = "visible";
           articlemenu.style.display = "block";
           articlemenucontent.classList.remove("hide");
           articlemenucontent.classList.add("show");
@@ -131,26 +130,50 @@
       }
       // Go to Sections
       function scrollToSecOne() {
+        var windowWidth = window.innerWidth;
         window.onscroll = function() {scrollFunction()};
-        var y = document.getElementById("the-four-noble-truths").offsetTop - 18;
+        if (windowWidth <= 1280) {
+        var y = document.getElementById("the-four-noble-truths").offsetTop - 2;
+        }
+        else {
+          var y = document.getElementById("the-four-noble-truths").offsetTop - 2;
+        }
         window.scrollTo({ top: y, behavior: 'smooth' });
         menuToggle(articlemenubtn);
         }
       function scrollToSecTwo() {
+        var windowWidth = window.innerWidth;
         window.onscroll = function() {scrollFunction()};
-        var y = document.getElementById("the-noble-eightfold-path").offsetTop - 18;
+        if (windowWidth <= 1280) {
+        var y = document.getElementById("the-noble-eightfold-path").offsetTop - 2;
+        }
+        else {
+          var y = document.getElementById("the-noble-eightfold-path").offsetTop - 2;
+        }
         window.scrollTo({ top: y, behavior: 'smooth' });
         menuToggle(articlemenubtn);
         }
       function scrollToSecThree() {
+        var windowWidth = window.innerWidth;
         window.onscroll = function() {scrollFunction()};
-        var y = document.getElementById("anicca-anatta-and-shunyata").offsetTop - 18;
+        if (windowWidth <= 1280) {
+        var y = document.getElementById("anicca-anatta-and-shunyata").offsetTop - 2;
+        }
+        else {
+          var y = document.getElementById("anicca-anatta-and-shunyata").offsetTop - 2;
+        }
         window.scrollTo({ top: y, behavior: 'smooth' });
         menuToggle(articlemenubtn);
       }
       function scrollToSecFour() {
+        var windowWidth = window.innerWidth;
         window.onscroll = function() {scrollFunction()};
-        var y = document.getElementById("from-the-near-shore-to-the-other-shore").offsetTop - 18;
+        if (windowWidth <= 1280) {
+        var y = document.getElementById("from-the-near-shore-to-the-other-shore").offsetTop - 2;
+        }
+        else {
+          var y = document.getElementById("from-the-near-shore-to-the-other-shore").offsetTop - 2;
+        }
         window.scrollTo({ top: y, behavior: 'smooth' });
         menuToggle(articlemenubtn);
       }
