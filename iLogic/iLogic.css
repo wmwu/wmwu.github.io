@@ -625,76 +625,36 @@ button:active {
   margin: 0 0 0 36px;
 }
 .sc110 {
-    zoom: 1.1;
-    -moz-transform: scale(1.1);
-    -moz-transform-origin: 0 0;
-    -o-transform: scale(1.1);
-    -o-transform-origin: 0 0;
-    -webkit-transform: scale(1.1);
-    -webkit-transform-origin: 0 0;
+  transform: scale(1.1);
+  transform-origin: left top;
 }
 .sc90 {
-    zoom: 0.9;
-    -moz-transform: scale(0.9);
-    -moz-transform-origin: 0 0;
-    -o-transform: scale(0.9);
-    -o-transform-origin: 0 0;
-    -webkit-transform: scale(0.9);
-    -webkit-transform-origin: 0 0;
+  transform: scale(0.90);
+  transform-origin: left top;
 }
 .sc85 {
-    zoom: 0.85;
-    -moz-transform: scale(0.85);
-    -moz-transform-origin: 0 0;
-    -o-transform: scale(0.85);
-    -o-transform-origin: 0 0;
-    -webkit-transform: scale(0.85);
-    -webkit-transform-origin: 0 0;
+  transform: scale(0.85);
+  transform-origin: left top;
 }
 .sc80 {
-    zoom: 0.8;
-    -moz-transform: scale(0.8);
-    -moz-transform-origin: 0 0;
-    -o-transform: scale(0.8);
-    -o-transform-origin: 0 0;
-    -webkit-transform: scale(0.8);
-    -webkit-transform-origin: 0 0;
+  transform: scale(0.80);
+  transform-origin: left top;
 }
 .sc75 {
-    zoom: 0.75;
-    -moz-transform: scale(0.75);
-    -moz-transform-origin: 0 0;
-    -o-transform: scale(0.75);
-    -o-transform-origin: 0 0;
-    -webkit-transform: scale(0.75);
-    -webkit-transform-origin: 0 0;
+  transform: scale(0.75);
+  transform-origin: left top;
 }
 .sc70 {
-    zoom: 0.7;
-    -moz-transform: scale(0.7);
-    -moz-transform-origin: 0 0;
-    -o-transform: scale(0.7);
-    -o-transform-origin: 0 0;
-    -webkit-transform: scale(0.7);
-    -webkit-transform-origin: 0 0;
+  transform: scale(0.70);
+  transform-origin: left top;
 }
 .sc65 {
-    zoom: 0.65;
-    -moz-transform: scale(0.65);
-    -moz-transform-origin: 0 0;
-    -o-transform: scale(0.65);
-    -o-transform-origin: 0 0;
-    -webkit-transform: scale(0.65);
-    -webkit-transform-origin: 0 0;
+  transform: scale(0.65);
+  transform-origin: left top;
 }
 .sc60 {
-    zoom: 0.60;
-    -moz-transform: scale(0.60);
-    -moz-transform-origin: 0 0;
-    -o-transform: scale(0.60);
-    -o-transform-origin: 0 0;
-    -webkit-transform: scale(0.60);
-    -webkit-transform-origin: 0 0;
+  transform: scale(0.60);
+  transform-origin: left top;
 }
 
 /* Class Styles */
